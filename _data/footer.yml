@@ -1,0 +1,59 @@
+- links:
+  - name: Explorer
+    link: https://explorer.trekview.org
+  - name: Campfire
+    link: https://campfire.trekview.org
+  - name: Treehouse
+    link: https://treehouse.trekview.org
+  - name: Greenhouse
+    link: https://greenhouse.trekview.org
+  - name: Trek Pack
+    link: /tools/trek-pack
+  - name: Spotter a Trekker?
+    link: /subscribe
+  - name: Become a Trekker
+    link: /loan
+
+- links:
+  - name: Blog
+    link: /blog
+  - name: About
+    link: /about
+  - name: Case Studies
+    link: /case-studies
+  - name: Jobs
+    link: /jobs
+  - name: Newsroom
+    link: /newsroom
+  - name: Contact
+    link: /contact
+
+- links:
+  - name: Mapillary
+    link: https://www.mapillary.com/app/user/trekviewhq
+    social_icon: 
+    new_window: true
+  - name: Google Maps
+    link: https://www.google.co.uk/maps/contrib/115102135089238642129/photos/
+    social_icon: 
+    new_window: true
+  - name: Youtube
+    link: https://www.youtube.com/channel/UCEN0i9tuHK5Ccb83Q1iREag
+    social_icon: 
+    new_window: true
+  - name: Facebook
+    link: https://www.facebook.com/trekview/
+    social_icon: 
+    new_window: true
+  - name: Instagram
+    link: https://www.instagram.com/trekviewed/
+    social_icon: 
+    new_window: true
+  - name: LinkedIn
+    link: https://www.linkedin.com/company/52173673/
+    social_icon: 
+    new_window: true
+  - name: Gitlab
+    link: https://github.com/trek-view/
+    social_icon: 
+    new_window: true

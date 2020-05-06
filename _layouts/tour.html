@@ -1,0 +1,37 @@
+---
+layout: page
+---
+
+<section class="tour">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <p>View more tours submitted by people around the world in <a href="https://explorer.trekview.org">Explorer</a>.
+            </div>
+        </div>
+
+        <div class="row">   
+            {% for tour in site.categories.tours %}
+            {% if tour.published == true %}
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="{{ tour.featured_image }}" alt="{{ tour.title }}">
+                <div class="card-body">
+                    <a href="{{ tour.url }}"><h3 class="card-text">{{ tour.title }}</h3></a>
+                    <p class="small">{{ tour.description }}</p>
+                    <div class="badge-container">
+                        <span class="badge badge-primary">{{ tour.tour_country }}</span>
+                        <span class="badge badge-success">{{ tour.tour_type }}</span>
+                        <span class="badge badge-secondary">{{ tour.tour_year }}</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+    
+
