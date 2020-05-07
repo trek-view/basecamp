@@ -13,7 +13,7 @@ published: true
 
 **Share your 360-degree tours with the world.**
 
-_Update December 2019: [You can now access the Trek Pack Getting Started Guide online with all the latest information you need to create, process and publish your own Street View Tours](/tools/trek-pack)._
+_Update December 2019: [You can now access the Trek Pack Getting Started Guide online with all the latest information you need to create, process and publish your own Street View Tours](/trek-pack)._
 
 ## Existing Street View Upload options
 

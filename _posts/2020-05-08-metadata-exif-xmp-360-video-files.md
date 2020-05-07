@@ -31,7 +31,7 @@ For about a year now the [Google Street View app (Android version)](https://play
 
 [Google also support video uploads pragmatically via the Street View Publish API](https://developers.google.com/streetview/ready/specs-svready).
 
-All signals point to cameras now being at a point where they are able to handle high quality video content for outdoor virtual tour photography, and I’m now really starting to think about recommending shooting in video (vs. time lapse) in the next iteration of our [Trek Pack](/tools/trek-pack) (_coming soon!_).
+All signals point to cameras now being at a point where they are able to handle high quality video content for outdoor virtual tour photography, and I’m now really starting to think about recommending shooting in video (vs. time lapse) in the next iteration of our [Trek Pack](/trek-pack) (_coming soon!_).
 
 Though before I make a decision, the geek in me wants to get down into the nuts and bolts, I mean bits and bytes of 360 video files...
 

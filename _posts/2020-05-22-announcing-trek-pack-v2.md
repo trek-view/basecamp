@@ -78,7 +78,7 @@ Individuals, groups, or organisations looking to capture 360-degree tours of our
 
 If you want to do it yourself, all the information about the v2 Trek Pack, including self-build instruction, are available free of charge.
 
-[Read the Trek Pack v2 Getting Started Guide](/tools/trek-pack)
+[Read the Trek Pack v2 Getting Started Guide](/trek-pack)
 
 ## Get a great deal on our old kit
 

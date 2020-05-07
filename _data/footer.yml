@@ -1,28 +1,18 @@
 - links:
-  - name: Explorer
-    link: https://explorer.trekview.org
-  - name: Campfire
-    link: https://campfire.trekview.org
-  - name: Treehouse
-    link: https://treehouse.trekview.org
-  - name: Greenhouse
-    link: https://greenhouse.trekview.org
+  - name: Blog
+    link: /blog
   - name: Trek Pack
-    link: /tools/trek-pack
+    link: /trek-pack
   - name: Spotter a Trekker?
     link: /subscribe
   - name: Become a Trekker
     link: /loan
 
 - links:
-  - name: Blog
-    link: /blog
   - name: About
     link: /about
   - name: Case Studies
     link: /case-studies
-  - name: Jobs
-    link: /jobs
   - name: Newsroom
     link: /newsroom
   - name: Contact

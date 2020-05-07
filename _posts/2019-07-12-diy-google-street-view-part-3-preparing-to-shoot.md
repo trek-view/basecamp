@@ -13,7 +13,7 @@ published: true
 
 **Tips to help setup your kit and capture 360-degree tours.**
 
-_Update December 2019: [You can now access the Trek Pack Getting Started Guide online with all the latest information you need to create, process and publish your own Street View Tours](/tools/trek-pack)._
+_Update December 2019: [You can now access the Trek Pack Getting Started Guide online with all the latest information you need to create, process and publish your own Street View Tours](/trek-pack)._
 
 <img class="img-fluid" src="/assets/images/blog/2019-07-12/trek-view-pack-version-1-setup-sm.jpg" alt="Trek View Trek Pack version 1 setup" title="Trek View Trek Pack version 1 setup" />
 

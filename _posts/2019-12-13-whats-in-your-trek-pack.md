@@ -59,11 +59,11 @@ These posts led to many questions from people who embarked on building their own
 
 <img class="img-fluid" src="/assets/images/blog/2019-12-13/trek-pack-getting-started-google-docs.png" alt="Trek Pack Getting Started" title="Trek Pack Getting Started" />
 
-I used many of these questions to create a Trek Pack Getting Started Guide for those [who purchased](/tools/trek-pack), or [had received a loan of a Trek Pack](/loan/).
+I used many of these questions to create a Trek Pack Getting Started Guide for those [who purchased](/trek-pack), or [had received a loan of a Trek Pack](/loan/).
 
 To reduce amount of emails we receive containing similar questions, I wanted to make the guide public.
 
-[You can now access the Trek Pack Getting Started Guide online here](/tools/trek-pack).
+[You can now access the Trek Pack Getting Started Guide online here](/trek-pack).
 
 Hopefully it will inspire and help many more of you build your own Trek Pack.
 

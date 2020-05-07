@@ -56,7 +56,7 @@ There is a significant amount of data contained in the metadata of a photos, for
 
 **GoPro Fusion**
 
-First, let's take a look at the `.jpg` image from a GoPro Fusion, the camera used on the [Trek Pack v1](/tools/trek-pack):
+First, let's take a look at the `.jpg` image from a GoPro Fusion, the camera used on the [Trek Pack v1](/trek-pack):
 
 CLI input: 
 

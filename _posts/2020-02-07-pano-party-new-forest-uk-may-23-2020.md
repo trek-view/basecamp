@@ -60,7 +60,7 @@ Our plan is to start at 11AM (aim to arrive 15 minutes before this). The days wi
 
 The Monday (25th May) is also a bank holiday. Perhaps a long weekend for those travelling from further away?
 
-We'll provide the [Trek Packs](/tools/trek-pack), you need to provide the energy.
+We'll provide the [Trek Packs](/trek-pack), you need to provide the energy.
 
 Everyone is welcome to join us from children, pets, grandparents...
 
