@@ -57,7 +57,7 @@ In attempt to provide better answers, faster, we want to tap into the vast knowl
 
 To do this we've spun up a new public forum, [Campfire](https://campfire.trekview.org/).
 
-We make everything we do here at Trek View public and freely available, and we want that to include our knowledge. From the design of our [Trek Pack](/trek-pack) to the [software we build](https://gitlab.com/trekview).
+We make everything we do here at Trek View public and freely available, and we want that to include our knowledge. From the design of our [Trek Pack](/trek-pack) to the [software we build](https://github.com/trek-view).
 
 We want Campfire to be a further extension of this openness, allowing the community to come together, share information, and help each other out.
 

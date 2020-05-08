@@ -320,8 +320,12 @@ Unfortunately we don't have the budget to buy every single 360 camera to test th
 
 Whilst having standards like EXIF and XMP is very helpful, many manufacturers do things slightly differently (especially given the flexibility of fields in XMP data).
 
-In order to make sure our [free, open-source software works for everyone](https://gitlab.com/trekview/), we need to test it using 360 image and video files produced by a range of cameras and manufacturers.
+In order to make sure our [free, open-source software works for everyone](https://github.com/trek-view/), we need to test it using 360 image and video files produced by a range of cameras and manufacturers.
 
 And that's why we need your help.
 
 If you have a 360 camera and want to support our work, [please share more information about your camera with us using this form](https://docs.google.com/forms/d/e/1FAIpQLScgOk1W5jpyrQuDF5FuKqUpKK0EIpSlokckZd3OB-r_ZOjZmQ/viewform). Thank you!
+
+## Update 2020-05-01
+
+[A deeper look into a 360 video and the metadata it holds](/blog/2020/metadata-exif-xmp-360-video-files).

@@ -43,7 +43,7 @@ Though my general advice is; don't get lost reading too many internet posts, inc
 
 Have you heard about our camera loan program?
 
-Individuals, groups, or organisations looking to capture 360-degree tours of our natural world or in disaster situations for non-commercial purposes are encouraged to [submit an application to our camera loan program here](/loan).
+Individuals, groups, or organisations looking to capture 360-degree tours of our natural world for non-commercial purposes are encouraged to [submit an application to our camera loan program here](/loan).
 
 ## Update (2019-06-28)
 

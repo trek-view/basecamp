@@ -42,7 +42,7 @@ Mark your favourite photos as Viewpoints. [Discover some of the top rated photos
 
 Embed your favourite photos on your blog, ([remember all our imagery can be used for non-commercial purposes](/charters/image)), so your readers can pretend to be a rower as you virtually race the Henley Regatta course above (just me?).
 
-If you're a developer, [you can also build Trek View imagery into your own projects using the API](https://gitlab.com/trekview/explorer/-/wikis/API-Documentation).
+If you're a developer, [you can also build Trek View imagery into your own projects using the API](https://github.com/trek-view/explorer/wiki).
 
 We're slowly uploading the entire Trek View Tour library to Explorer. That's over 1 million photos.
 
@@ -58,13 +58,13 @@ Explorer is designed to work directly with the Explorer Desktop Uploader. Tours 
 
 If you choose to, the name, description, and tags you include when creating (or updating) your tours in the Explorer Desktop Uploader will now be visible to others to discover and explore your tours in Explorer.
 
-If you haven't already, you'll need to [update the Explorer Desktop Uploader](https://gitlab.com/trekview/explorer-desktop-uploader) to take advantage of the new Explorer integration.
+If you haven't already, you'll need to [update the Explorer Desktop Uploader](https://github.com/trek-view/explorer-desktop-uploader) to take advantage of the new Explorer integration.
 
 We're also excited to ship another integration in the new Explorer Desktop Uploader release, [OpenTrailView](https://opentrailview.org). OpenTrailView is a project to collect 360-degree 360-degree photos of walking trails, to provide a StreetView-like experience for the world's wild spaces.
 
-To grow the number of integrations we can support, the Explorer Desktop Uploader is now modularised so that new integration points can be added as modules by anyone. Do you have an idea for an integration? [Check out the the Explorer Desktop Uploader documentation for information on creating your own](https://gitlab.com/trekview/explorer-desktop-uploader/-/wikis/home).
+To grow the number of integrations we can support, the Explorer Desktop Uploader is now modularised so that new integration points can be added as modules by anyone. Do you have an idea for an integration? [Check out the the Explorer Desktop Uploader documentation for information on creating your own](https://github.com/trek-view/explorer-desktop-uploader/wiki).
 
-[Download the latest version of the Explorer Desktop Uploader now](https://gitlab.com/trekview/explorer-desktop-uploader).
+[Download the latest version of the Explorer Desktop Uploader now](https://github.com/trek-view/explorer-desktop-uploader).
 
 ## Share Your Tours with Us
 

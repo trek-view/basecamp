@@ -67,10 +67,10 @@ Building this into the Explorer Desktop Uploader, the following tour / photo cre
 3. The Explorer Desktop Uploader performs reverse geocoding (assigns country, location codes, etc.). The reverse geocoding also returns matching Places and assciated Place IDs for the user to select.
 4. The Explorer Desktop Uploader uploads to Google Street View (and/or other selected integrations)
 
-[You can read more about the Explorer Desktop Uploader's logic in the developer docs](https://gitlab.com/trekview/explorer-desktop-uploader/-/wikis/home).
+[You can read more about the Explorer Desktop Uploader's logic in the developer docs](https://github.com/trek-view/explorer-desktop-uploader/wiki).
 
 And with a Place ID now being submitted to Street View, you will earn every single Local Guide point you deserve when using the Explorer Desktop Uploader!
 
 ## Download the Explorer Desktop Uploader
 
-[Download now](https://gitlab.com/trekview/explorer-desktop-uploader).
+[Download now](https://github.com/trek-view/explorer-desktop-uploader).

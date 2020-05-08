@@ -70,7 +70,7 @@ We are currently accepting pre-orders for our the Trek Pack v2 (v1 has sold out
 
 **2. Join the Trekker Program**
 
-Individuals, groups, or organisations looking to capture 360-degree tours of our natural world or in disaster situations for non-commercial purposes are encouraged to our camera loan program.
+Individuals, groups, or organisations looking to capture 360-degree tours of our natural world for non-commercial purposes are encouraged to our camera loan program.
 
 [Submit an application to our camera loan program here](/loan).
 

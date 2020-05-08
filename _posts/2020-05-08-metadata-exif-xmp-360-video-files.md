@@ -3,12 +3,12 @@ date: 2020-05-08
 title: "A deeper look into a 360 video and the metadata it holds"
 description: "Every video you take, on any camera, is filled with metadata. Here's why it's important for outdoor 360 tour photography."
 categories: developers
-tags: [GPS, XMP, EXIF]
+tags: [GPS, XMP, EXIF, mp4]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2020-05-08/
-featured_image: /assets/images/blog/
+image: /assets/images/blog/2020-05-08/exif-tool-command-line-mp4-meta.jpg
+featured_image: /assets/images/blog/2020-05-08/exif-tool-command-line-mp4-sm.png
 layout: post
-published: false
+published: true
 ---
 
 **Video > Time lapse?**
@@ -851,9 +851,12 @@ I won't go to deep into the format. You can see the same directory structure of 
 
 [Google have created a comprehensive page detailing the CAMM data format here](https://developers.google.com/streetview/publish/camm-spec#data-format).
 
-New 360 cameras entering the market all appear to be writing metadata tracks in the in the `camm` format to support easy Google Street View integration. The one's I know of so far include:
+New 360 cameras entering the market all appear to be writing metadata tracks in the in the `camm` format to support easy Google Street View integration. The manufacturers I know that are building cameras 
 
-TODO -- ask brian?
+* Pilot
+* Ricoh 
+* Insta360
+* Kandao
 
 If you're manufacturer uses a different standard to this included in this post, good luck! And let us know about it...
 
@@ -863,7 +866,7 @@ Unfortunately we don't have the budget to buy every single 360 camera to test th
 
 Whilst having standards like EXIF and XMP is very helpful, many manufacturers do things slightly differently (especially given the flexibility of fields in XMP data).
 
-In order to make sure our [free, open-source software works for everyone](https://gitlab.com/trekview/), we need to test it using 360 image and video files produced by a range of cameras and manufacturers.
+In order to make sure our [free, open-source software works for everyone](https://github.com/trek-view/), we need to test it using 360 image and video files produced by a range of cameras and manufacturers.
 
 And that's why we need your help.
 

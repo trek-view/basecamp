@@ -31,15 +31,15 @@ The other alternative has been to get technical, with a good knowledge of progra
 
 To solve this problem, we have built a small piece of software to make it fairly simple (albeit for now with some technical knowledge) to upload a large number of 360-degree photos to Google Street View.
 
-[Today we're releasing it as open-source piece to the community](https://gitlab.com/trekview/explorer-desktop-uploader).
+[Today we're releasing it as open-source piece to the community](https://github.com/trek-view/explorer-desktop-uploader).
 
 Download and run it on your computer (Windows, Mac, and Linux) to publish 360-degree photos to Street View using your Google account.
 
-To help you get up up-and-running quickly with the Explorer Desktop Uploader we've [created a detailed guide describing how to use the software to publish your photos to Street View](https://gitlab.com/trekview/explorer-desktop-uploader/-/wikis/home).
+To help you get up up-and-running quickly with the Explorer Desktop Uploader we've [created a detailed guide describing how to use the software to publish your photos to Street View](https://github.com/trek-view/explorer-desktop-uploader/wiki).
 
 As noted, it does require some level of technical knowledge. The software is currently a set of command line tools.
 
-This release of the Explorer Desktop Uploader can be classed as an alpha version. Simply put, there will probably be bugs in the software. Please let us know if you encounter any errors by [contacting us via email](/contact) or [raising an issue on GitLab](https://gitlab.com/trekview/explorer-desktop-uploader/issues).
+This release of the Explorer Desktop Uploader can be classed as an alpha version. Simply put, there will probably be bugs in the software. Please let us know if you encounter any errors by [contacting us via email](/contact) or [raising an issue on GitLab](https://github.com/trek-view/explorer-desktop-uploader/issues).
 
 ## The Explorer Desktop Uploader Roadmap
 
@@ -53,7 +53,7 @@ Do you want to be the first to know when the next version of the Explorer Deskto
 
 If you're technical and have a few ideas up your sleeve; why not help improve the Explorer Desktop Uploader for everyone?
 
-The Explorer Desktop Uploader software is provided as open-source under an AGPL v3 license. The [source code for the Explorer Desktop Uploader can be accessed here](https://gitlab.com/trekview/explorer-desktop-uploader).
+The Explorer Desktop Uploader software is provided as open-source under an AGPL v3 license. The [source code for the Explorer Desktop Uploader can be accessed here](https://github.com/trek-view/explorer-desktop-uploader).
 
 ## Share Your Tours with Us
 

@@ -141,8 +141,8 @@ You will see there is no adjusted heading for the next photo by time (e.g P2 to 
 
 We are not geospacial experts and know these calculations can probably be improved in place of estimates. You can help us out...
 
-All the code for the Explorer Desktop Uploader is open source. [You can see how we calculate these values in the Explorer Desktop Uploader Gitlab repo -- and point out any mistakes we've made](https://gitlab.com/trekview/explorer-desktop-uploader).
+All the code for the Explorer Desktop Uploader is open source. [You can see how we calculate these values in the Explorer Desktop Uploader Gitlab repo -- and point out any mistakes we've made](https://github.com/trek-view/explorer-desktop-uploader).
 
 ## Download the Explorer Desktop Uploader
 
-[Download now](https://gitlab.com/trekview/explorer-desktop-uploader).
+[Download now](https://github.com/trek-view/explorer-desktop-uploader).

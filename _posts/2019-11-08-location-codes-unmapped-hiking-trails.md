@@ -65,4 +65,4 @@ _**Update January 2020**: [Call for Trekkers to "map the unmapped"](/blog/2020/m
 
 ## Download the Explorer Desktop Uploader
 
-[Download now](https://gitlab.com/trekview/explorer-desktop-uploader).
+[Download now](https://github.com/trek-view/explorer-desktop-uploader).
