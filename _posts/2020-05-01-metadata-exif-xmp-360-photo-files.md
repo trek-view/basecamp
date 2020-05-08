@@ -61,7 +61,7 @@ First, let's take a look at the `.jpg` image from a GoPro Fusion, the camera use
 CLI input: 
 
 ```
-$ exiftool -G -a  MULTISHOT_8302_000052.jpg
+$ exiftool -G -a  MULTISHOT_8302_000052.jpg > MULTISHOT_8302_000052_metadata.txt
 ```
 
 This command includes the following arguments:
@@ -114,13 +114,13 @@ CLI output:
 Return only `EXIF` data in a photo file:
 
 ```
-$ exiftool -G -a -exif:all MULTISHOT_8302_000052.jpg
+$ exiftool -G -a -exif:all MULTISHOT_8302_000052.jpg > MULTISHOT_8302_000052_exif_metadata.txt
 ```
 
 Return only `XMP` data with a `ProjectionType` tag in a photo file:
 
 ```
-$ exiftool -G -a -xmp:ProjectionType MULTISHOT_8302_000052.jpg
+$ exiftool -G -a -xmp:ProjectionType MULTISHOT_8302_000052.jpg > MULTISHOT_8302_000052_xmp_projectiontype_metadata.txt
 ```
 
 <img class="img-fluid" src="/assets/images/blog/2020-05-01/apolloone-example-sm.png" alt="ApolloOne XMP example" title="ApolloOne XMP example" />
@@ -162,7 +162,7 @@ Now for the metadata output of a `.jpg` image from a Ricoh Theta Z1:
 CLI input: 
 
 ```
-$ exiftool -G -a  exiftool R0013800.JPG 
+$ exiftool -G -a  exiftool R0013800.JPG > R0013800_metadata.txt
 ```
 
 CLI output:

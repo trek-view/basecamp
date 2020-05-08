@@ -665,7 +665,7 @@ However, to demonstrate the differences in the standards, and illustrate why the
 [Main]          Meta Format                     : gpmd
 ```
 
-Looking at it more deeply:
+Looking at the output of the `gpmd` track:
 
 CLI input: 
 
@@ -827,7 +827,7 @@ As such, the InstaPro2 uses the CAMM standard.
 [...]
 ```
 
-Looking at it more deeply:
+Looking at the output of the `camm` track:
 
 CLI input: 
 
@@ -877,7 +877,7 @@ camm6 (SubDirectory) -->
 
 I won't go too deep into the format. You can see the same directory structure of the data (`|`), the main difference being between `gmpd` and `camm` are the values and how they are reported in the track.
 
-T `camm` output is not as _human readable_ as the `gpmd` format because much of the data is in binary format `[BinaryData directory, 32 bytes]`.
+The `camm` output is not as _human readable_ as the `gpmd` format because much of the data is in binary format `[BinaryData directory, 32 bytes]`.
 
 [Google has created a comprehensive page detailing the `CAMM` data format you will find useful in understanding the decoded structure and content](https://developers.google.com/streetview/publish/camm-spec#data-format).
 
