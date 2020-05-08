@@ -13,31 +13,31 @@ published: true
 
 **Video > Time lapse?**
 
-[Last week I explained the metadata typically found in 360 photos](/blog/2020/metadata-exif-xmp-360-photo-files), and promised a post on video metadata. Well, here it is.
+[Last week I explained the metadata found in 360 photos](/blog/2020/metadata-exif-xmp-360-photo-files), and promised a post on video metadata. Well, here it is.
 
-_If you haven't already read that post, it is well worth wrapping your head around some of the concepts discussed before you jump into video data. You have been warned!_
+_If you haven't already read that post, it is well worth wrapping your head around some of the concepts discussed before you jump into this one. You have been warned!_
 
-The real benefit of capturing 360 sequences (like walks or bike rides) using video over time lapse is the larger amount of frames typically generated when compared to photo time lapses. 
+The real benefit of capturing 360 sequences (like walks or bike rides) using video over time lapse is the higher number of frames created when compared to photo time lapses. 
 
 More frames gives you (or software) the flexibility to cherry-pick the ones you want to use in your tour.
 
-For example, you might want to use frames that are 1 meter apart. Using the GPS in each frame, software can easily extract photos that are 1 meter apart.
+For example, you want to use frames that are (almost) exactly 1 meter apart. Using the GPS in each frame, software can easily extract photos that are 1 meter apart.
 
-When shooting in time lapse mode, especially if moving quickly, the capture interval will provide varying distances between photos (unless you're travelling at a constant speed), and photos might have larger distance between them than you might want.
+Compare that to shooting in time lapse mode, especially if moving quickly, where the capture interval will provide varying distances between photos (unless you're travelling at a constant speed), and photos might have larger distance between them than the 1 meter you're aiming for.
 
-You then have 2 options; 1) admit defeat then go back and re-shoot, 2) accept the uneven distances between photos and remember perfection is the enemy of done.
+You then have 2 options; 1) admit defeat and then go back and re-shoot or, 2) accept the uneven distances between photos and remember perfection is the enemy of done.
 
 For about a year now the [Google Street View app (Android version)](https://play.google.com/store/apps/details?id=com.google.android.street&hl=en_GB) has allowed users to [automatically connect their 360 camera filming video to their phone and publish it straight to Street View using the app](https://support.google.com/maps/answer/7546470?hl=en&ref_topic=6275604).
 
-[Google also support video uploads pragmatically via the Street View Publish API](https://developers.google.com/streetview/ready/specs-svready).
+[Google also support video uploads programmatically via the Street View Publish API](https://developers.google.com/streetview/ready/specs-svready).
 
-All signals point to cameras now being at a point where they are able to handle high quality video content for outdoor virtual tour photography, and I’m now really starting to think about recommending shooting in video (vs. time lapse) in the next iteration of our [Trek Pack](/trek-pack) (_coming soon!_).
+All signals point to 360-cameras now being at a point where they are able to handle high quality video content for outdoor virtual tour photography, and I’m now really starting to think about recommending shooting in video mode (vs. time lapse) in the next iteration of our [Trek Pack](/trek-pack) (_coming soon!_).
 
-Though before I make a decision, the geek in me wants to get down into the nuts and bolts, I mean bits and bytes of 360 video files...
+Though before I make a decision, the geek in me wants to get down into the nuts and bolts, I mean bits and bytes, of 360 video files...
 
 ## An introduction to video metadata
 
-[Like photos](/blog/2020/metadata-exif-xmp-360-photo-files.md), videos contain metadata.
+[Like photos](/blog/2020/metadata-exif-xmp-360-photo-files), videos contain metadata.
 
 Video files have metadata for the complete video (e.g. file name) and for different times in the video (e.g. GPS values at a specific time in the video).
 
@@ -51,7 +51,7 @@ If you've ever wanted to extract a GPS track or audio from a video file, you are
 
 All these tracks run in parallel so that the data matches up correctly; image with sound, with metadata (e.g. GPS), etc.
 
-Here's a visual example of the GoPro Metadata format (we'll cover more in this later in this post).
+Here's a visual example of the GoPro Metadata format (we'll cover more about that format later in this post).
 
 <img class="img-fluid" src="/assets/images/blog/2020-05-08/gopro-metadata-format-video-metadata-frame-diagram.png" alt="GoPro Metadata Format diagram" title="360 video frame metadata diagram" />
 
@@ -73,11 +73,11 @@ There is a significant amount of data contained in the metadata of a video, for 
 
 ### GoPro Fusion
 
-For this first example I'm going to use an `.mp4` video filmed using a GoPro Fusion with GPS enabled encoded using H.264 at 4K (@30 FPS).
+For this first example I'm going to use an `.mp4` video filmed using a GoPro Fusion with GPS enabled and the file encoded using H.264 at 4K (@30 FPS).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iyIkDRERzz8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-GoPro writes telemetry metadata to videos in their own open-source standard, the [GoPro Metadata Format](https://gopro.com/en/us/news/gopro-video-metadata-open-source-explained). Fortunately for us, [EXIF tool has the logic to understand this format natively](https://exiftool.org/TagNames/GoPro.html). More on that later.
+GoPro writes telemetry metadata to videos in their own open-source standard, the [GoPro Metadata Format](https://gopro.com/en/us/news/gopro-video-metadata-open-source-explained). Fortunately for us, [EXIF tool has the logic to understand this format natively](https://exiftool.org/TagNames/GoPro.html).
 
 **Extracting metadata for video level**
 
@@ -86,7 +86,7 @@ Lets start by looking at the video level metadata:
 CLI input: 
 
 ```
-$ exiftool -G -a VIDEO_7152.mp4 
+$ exiftool -G -a VIDEO_7152.mp4 > VIDEO_7152_metadata.txt
 ```
 
 This command includes the following arguments:
@@ -160,9 +160,9 @@ You can see there is `[Quicktime]` data (because the .mp4 is H.264 encoded). You
 
 Think of this output as a wrapper, or description, of the video. It is `Media Duration=15.98 s` long, was filmed on `Media Create Date=2020:04:15 09:14:04`, at `Video Frame Rate=29.97`, at an `Avg Bitrate=45.2 Mbps`, at `Megapixels=7.4`. We also know it's a 360 video because `Projection Type=equirectangular`.
 
-The eagle eyed might be wondering why `megapixels=7.4` (`Image Size=3840x1920`), which is less than the 4K the video was shot at. That requires another post entirely... which is already being drafted for next week.
+The eagle eyed might be wondering why `megapixels=7.4` (`Image Size=3840x1920`), which is less than the 4K the video was shot at. That requires another post entirely... coming soon!
 
-If you look at the full output you'll see different `Handlers` responsible for each of these tracks. Here's the handler being defined for the metadata track:
+If you look at the full output you'll see different `Handlers` responsible for each of the tracks I mentioned earlier. Here's the handler being defined for the metadata track:
 
 ```
 [QuickTime]     Handler Class                   : Data Handler
@@ -170,7 +170,7 @@ If you look at the full output you'll see different `Handlers` responsible for e
 [QuickTime]     Meta Format                     : gpmd
 ```
 
-This is how EXIF tool (and other software) knows it's in GoPro Metadata Format.
+This is how EXIF tool (and other software) knows it's in GoPro Metadata Format (`gmpd`).
 
 **Extracting metadata for track level**
 
@@ -179,7 +179,7 @@ Using the same video, let's expand on the original command so that we can see th
 CLI input: 
 
 ```
-exiftool -ee -G3 VIDEO_7152.mp4 
+$ exiftool -ee -G3 VIDEO_7152.mp4 > VIDEO_7152_track_metadata.txt
 ```
 
 This command includes the following flags:
@@ -300,9 +300,9 @@ Each [Doc] covers a defined period of time.
 
 `[Doc1]` starts at 0s (`Sample Time=0 s`) and covers 1 second of frames (`Sample Duration=1.00 s`)
 
-`[Doc2]` starts at 0s (`Sample Time=1 s`) and covers 1 second of frames (`Sample Duration=1.00 s`)
+`[Doc2]` starts at 1s (`Sample Time=1 s`) and covers 1 second of frames (`Sample Duration=1.00 s`)
 
-`[Doc16]` starts at 15s (`Sample Time=1 s`) and covers 1 second of frames (`Sample Duration=1.00 s`).
+`[Doc16]` starts at 15s (`Sample Time=15 s`) and covers 1 second of frames (`Sample Duration=1.00 s`).
 
 Covering the whole `Media Duration=15.98 s`.
 
@@ -330,15 +330,17 @@ For `[Doc1]` we have 19 GPS records (`GPS Longitude`, `GPS Latitude`, `GPS Altit
 
 GPS data is reported 291 times (or a mean average of 18.1875 times in each [Doc] between `[Doc1]` nd `[Doc16]`).
 
-You might be thinking; but the camera was shooting at a fixed rate of 30FPS, why are there not 30 entries for each frame?
+You might be thinking; but the camera was shooting at a fixed rate of 30FPS (`Video Frame Rate=29.97`), why are there not 30 entries for each frame?
 
 Three things might be going on here;
 
-1. GPS signal was lost for some of the frames,
-2. the frame rate was lower than 30FPS (consumer level the frame rates can slightly fluctuate during recordings for any number of reasons; heat, vibration, compute failures)
-3. not all camera manufacturers write metadata for every single frame, for 2 reasons), 1) some sensors can't report this data at the same rate as frames are being shot, 2) to reduce size and processing costs when this data is not really necessary. Think; "does the average consumer really need GPS in 30 frames every second?". Travelling at 100 km/h you are travelling 27.777... m/s. That would get one frame every meter at 30FPS... but how many of you are you shooting non road imagery at this speed? _Let me know, it sounds like fun!_
+1. GPS signal was lost for some of the frames so could not be reported,
+2. the frame rate was lower than 30FPS (consumer level camera frame rates can slightly fluctuate during recordings for any number of reasons; heat, vibration, compute failures)
+3. not all camera manufacturers write metadata for every single frame, for 2 reasons),
+    - some sensors can't report this data at the same rate as frames are being shot,
+    - to reduce size and processing costs when this data is not really necessary. Think; "does the average consumer really need GPS data reported for 30 frames every second?". Travelling at 100 km/h you are travelling 27.777... m/s. That would get one frame every meter at 30FPS... but how many of you are you shooting non road imagery at this speed? _Let me know, it sounds like fun!_
 
-One tell-tale sign that option 3.1 is the cause (_not all metadata is written to every frame and some sensors report at different speeds_), is looking at the reported shutter speeds:
+One tell-tale sign that option 3.1 is the cause (_not all metadata is written to every frame and some sensors report at different speeds_), is when looking at the reported shutter speeds:
 
 ```
 [Doc1]          Exposure Times                  : 1/517 1/517 1/517 1/517 1/517 1/517 1/517 1/517 1/517 1/517 1/517 1/517 1/517 1/517 1/517 1/517 1/517 1/517 1/517 1/517 1/517 1/517 1/517 1/517 1/517 1/517 1/517 1/517 1/517 1/517 
@@ -346,21 +348,21 @@ One tell-tale sign that option 3.1 is the cause (_not all metadata is written to
 
 Here we see 30 entries for `Exposure Times`, indicating that 30 frames were actually taken (30 distinct exposure times) across the 1 second of `[Doc 1]`. 30 entries are reported for `Exposure Times` in every [Doc], matching the 30FPS the camera was set to shoot. 
 
-Another example of variation across the amount of data reported by different sensors in the camera can be seen in values reported by the magnetometer; a device that measures magnetism—the direction, strength, or relative change of a magnetic field at a particular location. Usually the magnetometer is used to find the yaw or to act a digital compass.
+Another example of variation of the amount of data reported by different sensors in the camera can be seen in values reported by the magnetometer; a device that measures magnetism—the direction, strength, or relative change of a magnetic field at a particular location. Usually the magnetometer is used to find the yaw or to act a digital compass.
 
 ```
 [Doc1]          Magnetometer                    : 11.4000005722046 -4.59999990463257 7.30000019073486 11 -4.59999990463257 8.90000057220459 11 -4 8.10000038146973 11 -4 7.30000019073486 9.90000057220459 -2.90000009536743 7 9.90000057220459 -2.90000009536743 7 9.90000057220459 -2.90000009536743 7 9.90000057220459 -4.80000019073486 7.70000028610229 8.30000019073486 -4.70000028610229 8.5 8.30000019073486 -4.70000028610229 8.5 10.6000003814697 -4.70000028610229 7.30000019073486 9.5 -3.20000004768372 7 8.30000019073486 -2.40000009536743 8.90000057220459 8.30000019073486 -2.40000009536743 8.90000057220459 9.90000057220459 -3.90000009536743 8.60000038146973 11 -4.70000028610229 7.09999990463257 11 -4.70000028610229 7.09999990463257 13.3000001907349 -5 9.30000019073486 13.3000001907349 -5 9.30000019073486 12.6000003814697 -5.40000009536743 6.59999990463257 11.4000005722046 -5.70000028610229 9.40000057220459 13.3000001907349 -6.09999990463257 7.40000009536743 12.5 -7.20000028610229 5.80000019073486 13.6999998092651 -5.70000028610229 7 13.3000001907349 -4.5 8.19999980926514
 ```
 
-What you're looking at here requires another post to do it justice (coming soon!), but simply put, the  magnetometer reports 3 pieces of data each sample (for the x, y, z axes). The first measurement from the magnetometer sample taken from the Fusion video above is:
+What you're looking at here requires another post to do it justice (again, coming soon!), but simply put, the  magnetometer reports 3 pieces of data each sample (for the x, y, z axes). The first measurement from the magnetometer sample taken from the Fusion video above is:
 
 ```
 11.4000005722046 -4.59999990463257 7.30000019073486
 ```
 
-In total there are 25 values recorded by the magnetometer in `[Doc1]` (75 `[Magnetometer]` fields values / 3 = 25 records).
+In total there are 25 values recorded by the magnetometer during the `Sample Time=1 s` of `[Doc1]` (75 `[Magnetometer]` fields values / 3 = 25 records).
 
-Confused yet?
+_Confused yet?_
 
 Let's pause for a moment (grab a drink), and next we'll look at another camera, the Insta360 Pro2, for comparison.
 
@@ -370,14 +372,16 @@ For this example, I'll use a sample video shot earlier this year by Brian Redmon
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3oHaGPzzK4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-The Insta360 Pro2 writes telemetry metadata to videos in the [Camera Motion Metadata Spec Format](https://developers.google.com/streetview/publish/camm-spec) (clearly Insta360 would not use the GoPro Metadata format, even if it is open source). Fortunately for us, [EXIF tool has the logic to understand this format in a good level of detail](https://exiftool.org/models.html). Again, more on standards later.
+The Insta360 Pro2 writes telemetry metadata to videos in the [Camera Motion Metadata Spec Format](https://developers.google.com/streetview/publish/camm-spec) (Insta360 would not use the GoPro Metadata format, even if it is open source).
+
+Fortunately for us, [EXIF tool has the logic to understand this format in a good level of detail](https://exiftool.org/models.html).
 
 **Extracting metadata at frame level**
 
 CLI input: 
 
 ```
-exiftool -ee -G3 VID_20200420.mp4
+$ exiftool -ee -G3 VID_20200420.mp4 > VID_20200420_track_metadata.txt
 ```
 
 CLI output: 
@@ -579,7 +583,7 @@ CLI output:
 
 In this case we know the `Video Frame Rate=5` (FPS) covering `0:01:46` (1 min 46 seconds) shooting files at `Megapixels=29.5` with an `Avg Bitrate=255 Mbps`. Without seeing the video we know it is a 360 video because, again, `Projection Type=equirectangular`.
 
-Going back to video level, notice how on the Insta360 Pro2 `Other Format=camm` (vs. `Meta Format=gpmd` on the Fusion)
+Notice how on the Insta360 Pro2 `Other Format=camm` (vs. `Meta Format=gpmd` on the Fusion)
 
 ```
 [Main]          Handler Type                    : Camera Metadata
@@ -591,9 +595,9 @@ Going back to video level, notice how on the Insta360 Pro2 `Other Format=camm` (
 [Main]          Handler Vendor ID               : Apple
 ```
 
-You'll notice the output is slightly different to the Fusion. It includes a lot more telemetry data, and it reports the data slightly differently. This is because it is not using the GoPro Metadata Format, it is using the Camera Motion Metadata Spec (CAMM) -- a standard widely adopted by almost all 360 camera manufacturers (except GoPro), [mainly because it is the standard supported by Street View](https://developers.google.com/streetview/spherical-metadata).
+You'll also notice the output is slightly different to the Fusion. It includes a lot more telemetry data, and it reports the data slightly differently. This is because it is not using the GoPro Metadata Format, it is using the Camera Motion Metadata Spec (CAMM) -- a standard widely adopted by 360 camera manufacturers (except GoPro), [mainly because it is the standard supported by Street View](https://developers.google.com/streetview/spherical-metadata).
 
-As a result, this time we get a 2 telemetry block descriptors containing GPS:
+The Insta360 Pro2 gives 2 telemetry block descriptors containing GPS info:
 
 ```
 [Doc1]          Sample Time                     : 0 s
@@ -607,7 +611,7 @@ As a result, this time we get a 2 telemetry block descriptors containing GPS:
 [Doc2]          GPS Measure Mode                : 3-Dimensional Measurement
 ```
 
-Followed by many `Angular Velocity` samples (`[Doc3]` - `[Doc48]`:
+Followed by a number of `Angular Velocity` samples (`[Doc3]` - `[Doc48]`:
 
 ```
 [Doc3]          Sample Time                     : 0.00 s
@@ -639,20 +643,34 @@ The Fusion reported in 1 second blocks, with a block descriptor and all measurem
 
 The Insta360 Pro2 reports a GPS block descriptor, the first ones being `[Doc2]` and `[Doc3]` in 0.1s intervals (the next being `[Doc49]` and `[Doc50]`), with `Angular velocity` being reported at a higher sample rate (46 times over the each 0.1s interval).
 
-In this case, metadata is being recorded much faster than frames are being shot (5 FPS / 1 frame every 0.2s). 4 GPS measurements cover the time between the first frame and second frame. Why? This is advantageous in the case of erroneous GPS recordings, where software can identify and account for them (e.g. discard them).
+In this case, metadata is being recorded much faster than frames are being shot (`Video Frame Rate=5` (FPS) = 1 frame every 0.2s).
+
+For example, 4 GPS measurements cover the time between the first frame and second frame. Why? This is useful in the case of erroneous GPS recordings, where software can identify and account for them (e.g. discard them).
 
 Remember I mentioned space potentially being an issue for metadata. For this video of 1 minute and 46 second, 201675 lines of metadata were written in my uncompressed output (measuring about 15MB, [about the size of a 5.2K 360 image taken on a GoPro Fusion](/blog/2020/metadata-exif-xmp-360-photo-files)).
 
 ### A deeper look into telemetry metadata standards
 
-So far we've considered data being reported in `[Doc]`'s. I've done this to match the normalised output of EXIF tool, but to demonstrate the differences in the standards, and illustrate why the patterns of the `[Doc]` outputs differ we need to look at the design of the standard.
+So far I've considered the data being reported in `[Doc]`'s. I've done this to show the normalised output generated by the EXIF tool.
+
+However, to demonstrate the differences in the standards, and illustrate why the patterns of the `[Doc]` outputs differ between the GoPro Fusion and Insta360 Pro2 you need to look at the actual output of each standard.
 
 **GoPro Fusion GPMD**
+
+[Refresh your memory of the output earlier, where the meta format was defined](https://gitlab.com/snippets/1971839):
+
+```
+[Main]          Handler Class                   : Data Handler
+[Main]          Handler Type                    : Alias Data
+[Main]          Meta Format                     : gpmd
+```
+
+Looking at it more deeply:
 
 CLI input: 
 
 ```
-$ exiftool -ee -V2 -G3 VIDEO_7152.mp4 
+$ exiftool -ee -V2 -G3 VIDEO_7152.mp4 > VIDEO_7152_track_metadata_gpmd.txt
 ```
 
 This command includes the following arguments:
@@ -785,26 +803,36 @@ gpmd (SubDirectory) -->
 
 [Entire output for reference](https://gitlab.com/snippets/1972789).
 
-The data you see here is the same as that shown for the GoPro video frame output earlier in this post, however, it has not been normalised by EXIF tool for analysis.
+The data you see here is the same as that shown for the GoPro video frame output earlier in this post, however, it has not been normalised by EXIF tool into [Doc]'s for analysis.
 
-What this highlights is the nested structure of the data, the format defined by the GPMD. Try to visualise this output directories (folders) on your computer, from the enclosing directory, might more directories, `|`, and in them more directories, `| |`, etc
+This output highlights is the nested structure of the data, the format defined by the GPMD. Try to visualise this output as directories (folders) on your computer; you move from the top directory into a subdirectory `|`, and then into deeper subdirectories, `| |`, etc.
 
-Propriety formats like the GPMD make it difficult for software developers to develop new tools (like EXIF tool) as they need to develop the logic to understand the format (the field names, the nested structure, and all the other nuances).
+If every camera manufacturer brought in their own standards, not only would it require more time and effort from them to write their own software, but also more time and effort from the developers of 3rd-party software (like EXIF tool) because they need to develop the logic to understand the format (the field names, the nested structure, and all the other nuances).
 
-If every camera manufactured brought in their own standards, not only would it require more time and effort on their part, but also for the developers of software.
+For big brands like GoPro, developing their own format is not such a big issue -- they are a big company and 3rd-party developers will put in the work to reach their customer base. [Take Trailblazer](https://www.panoskin.com/trailblazer), a tool built specifically for uploading photos to Google Street View from the GoPro Fusion camera.
 
-For big brands like GoPro, proprietary formats are not a big problem -- developers will put in the work because they have a large amount of customers. [Take Trailblazer](https://www.panoskin.com/trailblazer), a tool built specifically for uploading photos to Google Street View from the GoPro Fusion camera.
-
-It's very unlikely anyone would put in a similar effort for smaller brands who might not be in existence a year later, thus making it hard for them to make their cameras attractive.
+It's very unlikely 3rd-party developers would put in a similar effort for smaller brands who might not be in existence in a years time.
 
 As such, the InstaPro2 uses the CAMM standard.
 
 ### Insta360 Pro2 CAMM
 
+[Refresh your memory of the output earlier, where the meta format was defined](https://gitlab.com/snippets/1972711):
+
+```
+[...]
+[Main]          Handler Type                    : Camera Metadata
+[Main]          Handler Description             : CameraMetadataMotionHandler
+[Main]          Other Format                    : camm
+[...]
+```
+
+Looking at it more deeply:
+
 CLI input: 
 
 ```
-$ exiftool -ee -V2 -G3 VIDEO_7152.mp4 
+$ exiftool -ee -V2 -G3 VID_20200420.mp4 > VID_20200420_track_metadata_camm.txt
 ```
 
 CLI output: 
@@ -847,18 +875,20 @@ camm6 (SubDirectory) -->
 
 [Entire output for reference](https://gitlab.com/snippets/1972792).
 
-I won't go to deep into the format. You can see the same directory structure of the data (`|`), the main difference being between `gmpd` and `camm` are the values and how they are reported in the metadata track.
+I won't go too deep into the format. You can see the same directory structure of the data (`|`), the main difference being between `gmpd` and `camm` are the values and how they are reported in the track.
 
-[Google have created a comprehensive page detailing the CAMM data format here](https://developers.google.com/streetview/publish/camm-spec#data-format).
+T `camm` output is not as _human readable_ as the `gpmd` format because much of the data is in binary format `[BinaryData directory, 32 bytes]`.
 
-New 360 cameras entering the market all appear to be writing metadata tracks in the in the `camm` format to support easy Google Street View integration. The manufacturers I know that are building cameras 
+[Google has created a comprehensive page detailing the `CAMM` data format you will find useful in understanding the decoded structure and content](https://developers.google.com/streetview/publish/camm-spec#data-format).
+
+New 360 cameras entering the market all appear to be writing metadata tracks in the `camm` standard, making it much easier to support Google Street View integrations. The major manufacturers I know that are using the `camm` standard include:
 
 * Pilot
 * Ricoh 
 * Insta360
 * Kandao
 
-If you're manufacturer uses a different standard to this included in this post, good luck! And let us know about it...
+If you know of a camera manufacturer using a different standard to those included in this post, good luck! And let us know about it...
 
 ## Help us Build Great Software
 
