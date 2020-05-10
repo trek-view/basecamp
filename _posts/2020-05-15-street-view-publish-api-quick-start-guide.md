@@ -1,17 +1,17 @@
 ---
 date: 2020-05-15
-title: "Uploading 360 Videos to the Street View API"
+title: "Google Street View Publish API Quick Start Guide"
 description: ""
 categories: developers
-tags: [GPS, XMP, EXIF]
+tags: []
 author_staff_member: dgreenwood
-image: /assets/images/blog/2020-05-01/apolloone-example-meta.jpg
-featured_image: /assets/images/blog/2020-05-01/apolloone-example-sm.png
+image: /assets/images/blog/2020-05-01/
+featured_image: /assets/images/blog/2020-05-01/
 layout: post
 published: false
 ---
 
-**
+** **
 
 A whole ecosystem has sprung up around Google Street View.
 
@@ -23,3 +23,8 @@ Both at hobby level through the Street View app, and at professional level where
 
 Last week.
 
+
+Please note that, as of May 2018, access to methods and documentation for 360 photo sequences in the Street View Publish API is by invitation only. For more information, please feel free to reach out via Street View Publish API Support.
+
+
+https://developers.google.com/streetview/ready

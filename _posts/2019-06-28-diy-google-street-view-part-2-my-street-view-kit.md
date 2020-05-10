@@ -25,7 +25,7 @@ _Update December 2019: [You can now access the Trek Pack Getting Started Guide o
 4. A backpack and mount that could easily be setup and taken down for travel;
 5. Software that could be used to easily process imagery on non-professional grade equipment; 
 
-**All for a total budget of under £300.**
+**All for a total budget of around £500.**
 
 ## The camera
 

@@ -370,7 +370,7 @@ Let's pause for a moment (grab a drink), and next we'll look at another camera, 
 
 For this example, I'll use a sample video shot earlier this year by Brian Redmond on the Insta360 Pro2 (as always, thanks Brian!).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y3oHaGPzzK4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!---<iframe width="560" height="315" src="https://www.youtube.com/embed/y3oHaGPzzK4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--->
 
 The Insta360 Pro2 writes telemetry metadata to videos in the [Camera Motion Metadata Spec Format](https://developers.google.com/streetview/publish/camm-spec) (Insta360 would not use the GoPro Metadata format, even if it is open source).
 
