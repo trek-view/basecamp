@@ -13,9 +13,9 @@ published: true
 
 **The cameras _behind_ the 360s.**
 
-It's hard to believe Google Street View has been around for over 12 years now, after launching in several cities in the United States - San Francisco, New York, Las Vegas, Miami and Denver - on May 25, 2007.
+It's hard to believe that Google Street View has been around for over 12 years now, after launching in several cities in the United States - San Francisco, New York, Las Vegas, Miami and Denver - [on May 25, 2007](https://techcrunch.com/2013/03/08/inside-google-street-view-from-larry-pages-car-to-the-depths-of-the-grand-canyon/).
 
-The cameras at that time produced 2.8 megapixel images, which is significantly less than most new smartphones on the market today. 
+The cameras at that time produced 2.8 megapixel images, which is significantly less than new smartphones on the market today. 
 
 But 12 years is a long time in technology.
 
@@ -41,27 +41,27 @@ Here's a look back on the history of the Street View cameras, and a glimpse at t
 
 The van included special shock absorbers, a custom axle with rotary encoders used for pose optimization, and a heavy-duty alternator from a fire truck.
 
-Enough imagery was captured to create demos, [which were deemed sufficiently compelling to enter the next phase of growth](https://techcrunch.com/2013/03/08/inside-google-street-view-from-larry-pages-car-to-the-depths-of-the-grand-canyon/).
+Enough imagery was captured to create demos, which were deemed sufficiently compelling to enter the next phase of growth.
 
-### 2007: Dodeca 360 (Immersive Media)
+### 2007: Dodeca 2360 (Immersive Media)
 
-<img class="img-fluid" src="/assets/images/blog/2019-11-22/google-street-view-dodeca-360.jpg" alt="Google Street View Immersive Media Dodeca 360" title="Google Street View Immersive Media Dodeca 360" />
+<img class="img-fluid" src="/assets/images/blog/2019-11-22/google-street-view-dodeca-2360.jpg" alt="Google Street View Immersive Media Dodeca 2360" title="Google Street View Immersive Media Dodeca 2360" />
 
-<img class="img-fluid" src="/assets/images/blog/2019-11-22/google-street-view-dodeca-360-mounted.jpg" alt="Google Street View Immersive Media Dodeca 360" title="Google Street View Immersive Media Dodeca 360" />
+<img class="img-fluid" src="/assets/images/blog/2019-11-22/google-street-view-dodeca-2360-mounted.jpg" alt="Google Street View Immersive Media Dodeca 2360" title="Google Street View Immersive Media Dodeca 2360" />
 
-[To help speed up the amount of coverage at launch](https://gizmodo.com/google-streetview-camera-vehicles-spotted-all-over-us-283159), Google hired a company called Immersive Media to drive the streets using a camera they had developed called [the Dodeca 360](https://www.wired.com/2007/06/immersive-media/).
+[To help speed up the amount of coverage at launch](https://gizmodo.com/google-streetview-camera-vehicles-spotted-all-over-us-283159), Google hired a company called Immersive Media to drive the streets using a camera they had developed called [the Dodeca 2360](https://www.wired.com/2007/06/immersive-media/).
 
-[The Dodeca 360 camera](https://360rumors.com/a-look-back-at-dodeca-first-camera/), mounted to a fleet of VW Beetles, could capture 100 megapixel still images, or record 360 video at 2400 x 1200 (2.8 megapixels) at 30 frames per second.
+[The Dodeca 2360 camera](https://360rumors.com/a-look-back-at-dodeca-first-camera/), mounted to a fleet of VW Beetles, could capture 100 megapixel still images, or record 360 video at 2400 x 1200 (2.8 megapixels) at 30 frames per second.
 
-[An early prototype of Google's Trekker Pack also used the Dodeca 360](https://www.popularmechanics.com/technology/gadgets/a2300/4232286/).
+[An early prototype of Google's Trekker Pack also used the Dodeca 2360](https://www.popularmechanics.com/technology/gadgets/a2300/4232286/).
 
-Estimated cost to buy new at the time (inc. mounting system): $65,000. ([Source:](https://www.videomaker.com/community/forums/topic/360-video-camera-immersive-media-system-for-sale-dodeca-2360))
+Estimated cost to buy new at the time (inc. mounting system): $65,000. ([Source](https://www.videomaker.com/community/forums/topic/360-video-camera-immersive-media-system-for-sale-dodeca-2360)).
 
 ### 2007: R2
 
 <img class="img-fluid" src="/assets/images/blog/2019-11-22/google-street-view-r2-camera.jpg" alt="Google Street View R2 Camera" title="Google Street View R2 Camera" />
 
-[Some of the earliest photos were captured by Google's own R2](https://boingboing.net/2007/06/01/google-street-view-w.html), a ring of eight 11-megapixel cameras with commercial photographic wide-angle lenses ([with the same specifications as those used for the Google Books project](https://en.wikipedia.org/wiki/Google_Street_View)).
+[Some of the earliest photos were captured by Google's own R2](https://boingboing.net/2007/06/01/google-street-view-w.html), a ring of eight 11 megapixel cameras with commercial photographic wide-angle lenses ([with the same specifications as those used for the Google Books project](https://en.wikipedia.org/wiki/Google_Street_View)).
 
 ### 2007: Ladybug2 (Point Grey Research now FLIR Systems)
 
@@ -69,9 +69,9 @@ Estimated cost to buy new at the time (inc. mounting system): $65,000. ([Source:
 
 <img class="img-fluid" src="/assets/images/blog/2019-11-22/ladybug2-camera-mounted.jpg" alt="Google Street View Point Grey Research Ladybug2 Camera Mounted" title="Google Street View Ladybug2 Camera Mounted" />
 
-The [Ladybug2 camera by Point Grey Research (now FLIR Systems)](https://www.youtube.com/watch?v=oOLB2n3rvUo) could shoot video at 30 frames per second at a resoltion of 1024x768 (0.8 megapixels).
+The Ladybug2 camera by Point Grey Research (now FLIR Systems) [could shoot video at 30 frames per second at a resoltion of 1024x768 (0.8 megapixels)]((https://www.youtube.com/watch?v=oOLB2n3rvUo)) and [capture 4.8 megapixel still images](https://mechatriks.in/pdf/PTGREY_Complete_Catalog.pdf).
 
-[_Now superseeded by the Ladybug5+_](https://www.flir.co.uk/products/ladybug5plus/). [_Estimated cost to buy new: $19,995_](https://360rumors.com/flir-ladybug5-8k-360-camera-has-six-23-inch-sony-sensors/).
+The latest FLIR Systems Ladybug camera is the [Ladybug5+](https://www.flir.co.uk/products/ladybug5plus/). Estimated cost to buy new: $19,995. [Source](https://360rumors.com/flir-ladybug5-8k-360-camera-has-six-23-inch-sony-sensors/).
 
 ### 2008: R5
 
@@ -85,13 +85,13 @@ This was one of the first cameras to be widely mounted to other forms of transpo
 
 Elphel also produced a camera, [the Eyesis](https://www.elphel.com/www3/eyesis), with a very similar design based on open-source hardware and software. The Eyesis has since been superseded by the [Elphel Eyesis4Pi](https://wiki.elphel.com/wiki/Elphel_Eyesis4Pi).
 
-Cost to buy new (Elphel Eysis): $33,000. ([Source:](https://www.elphel.com/www3/eyesis))
+Cost to buy new (Elphel Eysis): $33,000. ([Source](https://www.elphel.com/www3/eyesis)).
 
 ### 2011: R7
 
 <img class="img-fluid" src="/assets/images/blog/2019-11-22/google-street-view-r7-camera.png" alt="Google Street View R5 Camera" title="Google Street View R7 Camera" />
 
-<img class="img-fluid" src="/assets/images/blog/2019-11-22/google-street-view-r5-camera-computer-history-museum-trike.jpg" alt="Google Street View R7 Camera Trekker Pack" title="Google Street View R7 Camera Trekker Pack" />
+<img class="img-fluid" src="/assets/images/blog/2019-11-22/google-street-view-r7-camera-trekker-pack.jpg" alt="Google Street View R7 Camera Trekker Pack" title="Google Street View R7 Camera Trekker Pack" />
 
 The R7 was the first completely in-house Google built Street View camera, it used 15 of the same cameras and lenses as the R5 (but with no fisheye effect) to obtain high-resolution images over an increased field of view (to see down to sidewalks even on narrow streets).
 
@@ -99,9 +99,9 @@ The first widely available Trekker Pack used the R7 Camera. [The 1.2m tall, 20kg
 
 ### 2017: R?
 
-<img class="img-fluid" src="/assets/images/blog/2019-11-22/google-street-view-latest-camera" alt="Google Street View Latest Camera" title="Google Street View Latest Camera" />
+<img class="img-fluid" src="/assets/images/blog/2019-11-22/google-street-view-latest-camera.jpg" alt="Google Street View Latest Camera" title="Google Street View Latest Camera" />
 
-<img class="img-fluid" src="/assets/images/blog/2019-11-22/google-street-view-latest-camera-trekker.jpeg" alt="Google Street View Latest Camera Trekker Pack" title="Google Street View Latest Camera Trekker Pack" />
+<img class="img-fluid" src="/assets/images/blog/2019-11-22/google-street-view-latest-camera-trekker-sm.jpg" alt="Google Street View Latest Camera Trekker Pack" title="Google Street View Latest Camera Trekker Pack" />
 
 [The latest iteration of the Street View Camera](https://arstechnica.com/gadgets/2017/09/googles-street-view-cars-are-now-giant-mobile-3d-scanners/),  features just seven cameras (down from 15) fitted with 20 megapixel sensors (up from 5).
 
