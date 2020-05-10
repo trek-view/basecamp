@@ -1,6 +1,6 @@
 ---
 date: 2019-11-22
-title: "A Brief History of Street View Cameras"
+title: "A Brief History of Google's Street View Cameras"
 description: "Street View has come a long way in 13 years during which 360 camera technology has seen significant advancements too."
 categories: updates
 tags: [Street View]
@@ -61,7 +61,9 @@ Estimated cost to buy new at the time (inc. mounting system): $65,000. ([Source]
 
 <img class="img-fluid" src="/assets/images/blog/2019-11-22/google-street-view-r2-camera.jpg" alt="Google Street View R2 Camera" title="Google Street View R2 Camera" />
 
-[Some of the earliest photos were captured by Google's own R2](https://boingboing.net/2007/06/01/google-street-view-w.html), a ring of eight 11 megapixel cameras with commercial photographic wide-angle lenses ([with the same specifications as those used for the Google Books project](https://en.wikipedia.org/wiki/Google_Street_View)).
+Following the initial engagement with Immersive Media, Google has rolled out it's own fleet of cars to capture imagery.
+
+The earliest camera on Google's own cars [was the R2](https://boingboing.net/2007/06/01/google-street-view-w.html), a ring of eight 11 megapixel cameras with commercial photographic wide-angle lenses ([with the same specifications as those used for the Google Books project](https://en.wikipedia.org/wiki/Google_Street_View)).
 
 ### 2007: Ladybug2 (Point Grey Research now FLIR Systems)
 
@@ -81,13 +83,15 @@ The latest FLIR Systems Ladybug camera is the [Ladybug5+](https://www.flir.co.uk
 
 The R5 used a ring of eight small, outward-looking 5-megapixel [Ephel cameras](https://www.elphel.com/www3/eyesis) using custom, low-flare, controlled-distortion lenses, plus a fish-eye lens on top to capture the upper levels of buildings.
 
+The R5 design also mounted three laser scanners on the mast, thereby enabling the capture of rough 3D data alongside the imagery. Whilst fitted on the original prototype, laser scanners weren't present on the cars up until the release of the R5.
+
 This was one of the first cameras to be widely mounted to other forms of transport including the Street View Trike and the Street View Snowmobile.
 
 Elphel also produced a camera, [the Eyesis](https://www.elphel.com/www3/eyesis), with a very similar design based on open-source hardware and software. The Eyesis has since been superseded by the [Elphel Eyesis4Pi](https://wiki.elphel.com/wiki/Elphel_Eyesis4Pi).
 
 Cost to buy new (Elphel Eysis): $33,000. ([Source](https://www.elphel.com/www3/eyesis)).
 
-### 2011: R7
+### 2010: R7
 
 <img class="img-fluid" src="/assets/images/blog/2019-11-22/google-street-view-r7-camera.png" alt="Google Street View R5 Camera" title="Google Street View R7 Camera" />
 
@@ -100,6 +104,8 @@ The first widely available Trekker Pack used the R7 Camera. [The 1.2m tall, 20kg
 ### 2017: R?
 
 <img class="img-fluid" src="/assets/images/blog/2019-11-22/google-street-view-latest-camera.jpg" alt="Google Street View Latest Camera" title="Google Street View Latest Camera" />
+
+<img class="img-fluid" src="/assets/images/blog/2019-11-22/google-street-view-latest-camera-hd-side.jpg" alt="Google Street View Latest Camera side HD cameras" title="Google Street View Latest  Camera side HD cameras" />
 
 <img class="img-fluid" src="/assets/images/blog/2019-11-22/google-street-view-latest-camera-trekker-sm.jpg" alt="Google Street View Latest Camera Trekker Pack" title="Google Street View Latest Camera Trekker Pack" />
 
