@@ -5,7 +5,7 @@ description: "Street View cameras rigs do much more than just take photos."
 categories: updates
 tags: [Street View]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2019-12-20/google-street-view-2017-camera-mounted.jpg
+image: /assets/images/blog/2019-12-20/google-street-view-2017-camera-mounted-meta.jpg
 featured_image: /assets/images/blog/2019-12-20/google-street-view-2017-camera-mounted-sm.jpg
 layout: post
 published: true
