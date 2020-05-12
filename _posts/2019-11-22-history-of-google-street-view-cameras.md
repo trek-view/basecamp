@@ -123,7 +123,11 @@ The biggest challenge the Street View team faced was deploying the cameras at sc
 
 ## The future
 
-Google wants to map the world -- and they know they won't be able to do this with their own fleet of (very expensive) cameras.
+In 2012, [there were a reported 250 Street View cars on the road](https://petapixel.com/2012/10/15/a-glimpse-of-googles-fleet-of-camera-equipped-street-view-cars/). 
+
+Update 2019-12-20: [Google has just revealed that Street View has now captured more than 10 million miles of imagery from around the world](https://www.digitaltrends.com/web/google-reveals-how-many-miles-its-street-view-cars-have-driven-to-date/), a distance which, if driven in a straight line, would circle Earth more than 400 times.
+
+But Google wants more, and they know they won't be able to do this with their own fleet of (very expensive) cameras alone.
 
 The company is now actively encouraging third-party camera manufacturers to build "[Street View Ready](https://developers.google.com/streetview/ready)" products.
 
