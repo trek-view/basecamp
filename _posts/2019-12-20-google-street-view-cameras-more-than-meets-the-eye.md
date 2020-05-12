@@ -23,7 +23,7 @@ Well, here's more about the lasers, and the many other sensors that make up the 
 
 Street View imagery must be associated with accurate positioning.
 
-[Each camera is equipped with a combined DGPS (Digital Global Positioning System) / IMU (Inertial Measurement Unit)](https://books.google.co.uk/books?id=dGpQDwAAQBAJ&pg=PA83&lpg=PA83) system [from Topcon](https://www.topconpositioning.com/mapping), together with a wheel mounted odometer that, in conjunction with the IMU (accelerometers and gyroscopes), can help establish a position where GPS coverage is poor or has been lost in tunnels or within high-rise urban areas.
+[Each camera is equipped with a combined DGPS (Differential Global Positioning System) / IMU (Inertial Measurement Unit)](https://books.google.co.uk/books?id=dGpQDwAAQBAJ&pg=PA83&lpg=PA83) system [from Topcon](https://www.topconpositioning.com/mapping), together with a wheel mounted odometer that, in conjunction with the IMU (accelerometers and gyroscopes), can help establish a position where GPS coverage is poor or has been lost in tunnels or within high-rise urban areas.
 
 As part of the Street View processing pipeline, the company uses an open-sourced algorithm they developed, the [Google Pose Optimizer (GPO)](http://code.google.com/p/gpo/wiki/GPO).
 
