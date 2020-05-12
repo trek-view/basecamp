@@ -74,24 +74,15 @@ All other information is optional, but highly recommended to make sure your Stre
 * `level`: Level (the floor in a building) used to configure vertical navigation.
 * `accuracyMeters`: The estimated horizontal accuracy of this pose in meters with 68% confidence (one standard deviation).
 
-**A note on Google Maps Street View URLs**
-Have you every taken a close look at a Street View URL. Beware, they're very messy... at first glance...
 
-Let's look at a simplified example:
-
-```
-https://www.google.com/maps/@55.9061805,-2.1322842,2a,75y,107.91h,90t/
-```
-
-The first part (`@55.9061805,-2.1322842`) is the `latitude` and `longitude` of the photo.
-
-The field of view (`75y`)
-
-The heading (`107.91h`) can be seen next. Measured between >=0 and <360. 
-
-The final part (`90t`) is the pitch of the view (measured between 1 and 179). This changes as the user moves, but used the `pitch` submitted when uploading the photo.
 
 Each segment of the attribute is preceded by "!", a number from 1 - 5 (or more presumably), and a letter (m, e, etc).
+
+
+
+
+    %3D
+
 
 For some reason the fourth element (3rd, when counting from 0) is the pano attribute.
 
