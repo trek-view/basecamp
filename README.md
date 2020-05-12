@@ -6,7 +6,7 @@ Jekyll + GitHub pages site for https://www.trekview.org
 
 Clone the repo:
 
-`git clone https://github.com/trek-view/hq`
+`git clone https://github.com/trek-view/basecamp`
 
 Navigate to the repo directory:
 

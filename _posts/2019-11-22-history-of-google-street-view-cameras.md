@@ -13,11 +13,11 @@ published: true
 
 **The cameras _behind_ the 360s.**
 
-It's hard to believe that Google Street View has been around for over 12 years now, after launching in several cities in the United States - San Francisco, New York, Las Vegas, Miami and Denver - [on May 25, 2007](https://techcrunch.com/2013/03/08/inside-google-street-view-from-larry-pages-car-to-the-depths-of-the-grand-canyon/).
+It's hard to believe that Google Street View has been around for 13 years now, after launching in several cities in the United States - San Francisco, New York, Las Vegas, Miami and Denver - [on May 25, 2007](https://techcrunch.com/2013/03/08/inside-google-street-view-from-larry-pages-car-to-the-depths-of-the-grand-canyon/).
 
 The cameras at that time produced 2.8 megapixel images, which is significantly less than new smartphones on the market today. 
 
-But 12 years is a long time in technology.
+But 13 years is a long time in technology.
 
 The first generation of the iPhone was release one month after Street View, on 29 June 2007.
 
@@ -141,3 +141,7 @@ The program is split into two tiers:
 Our [Trek Packs](https://www.trekview.org/trek-pack/) are Street View Ready and designed to capture imagery on foot, by bicycle, paddle-boarding and even underwater whilst scuba-diving.
 
 They're no Google Trekker packs, granted. The upside being; they're **A LOT** more affordable and widely available. [Find out how to get your hands on one here](/trek-pack).
+
+## Update: 2019-12-20
+
+[Google's Street View Cameras - More Than Meets the Eye](/blog/2019/google-street-view-cameras-more-than-meets-the-eye)

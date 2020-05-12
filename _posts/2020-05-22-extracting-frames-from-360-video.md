@@ -12,7 +12,25 @@ published: false
 ---
 
 
-One of the reasons the first Trek Pack shot photos over video was because for most, working with individual photos is much easier than video files -- there is less technical skill and computer processing required.
+When I first started looking at thw 
+
+One of the reasons the first Trek Pack 
+
+## A quick overview to the workflow
+
+The a
+
+1. Extract metadata track from video file (for telemetry information)
+2. Split video into frames (individual photo files)
+3. Choose frames you want to use (distance between frames / frame count)
+4. Create the output
+    - Add telemetry data to selected frames and output inidividual images files (`.jpg), or;
+    - Create new video file (.`mp4`) using selected frames and original metadata track.
+
+
+
+
+shot photos over video was because for most, working with individual photos is much easier than video files -- there is less technical skill and computer processing required.
 
 Video files are essentially lots of photos played back at a set speed with sound added.
 

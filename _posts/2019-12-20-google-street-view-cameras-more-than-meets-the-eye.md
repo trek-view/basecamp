@@ -51,7 +51,7 @@ That spacial recognition is what helps Google patch all of its images together a
 
 <img class="img-fluid" src="/assets/images/blog/2019-12-20/google-street-view-camera-lidar-output.jpg" alt="Google Street View LIDAR render" title="Google Street View LIDAR render" />
 
-LIDAR scanners from Velodyne were added to the latest cameras.
+LIDAR scanners from Velodyne were added to the latest cameras (replacing the laser profilers).
 
 These are the ubiquitous [Velodyne VLP-16 "Puck" sensors](http://velodynelidar.com/products.html), allowing the to car "see" in 3D in 360 degrees. These $8,000 Lidar sensors are most commonly used in autonomous car prototypes
 
