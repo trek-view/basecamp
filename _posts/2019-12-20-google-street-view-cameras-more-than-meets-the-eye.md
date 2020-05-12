@@ -73,7 +73,7 @@ The Aclima sensors will capture air quality data by generating snapshots of carb
 
 After being made public, and receiving much criticism, [on June 9 2010 Google issued statement](https://googleblog.blogspot.com/2010/05/wifi-data-collection-update.html) that it had decided to stop its Street View cars from sniffing wireless networking data.
 
-The company still faced legal battles around the world as the data collection was deemed to be illegal, including a [$190,000 fine in Germany](https://www.engadget.com/2013-04-22-google-street-view-fine-germany.html).
+As it transpired the company was also, [_accidentally, in some cases,_](https://publicpolicy.googleblog.com/2010/05/wifi-data-collection-update.html), collecting network data packets (which could have potentially included any traffic on the network, including the websites being visited). As a result, Google faced legal battles around the world with the data collection being deemed to be illegal, including a [$190,000 fine in Germany](https://www.engadget.com/2013-04-22-google-street-view-fine-germany.html).
 
 ## Trek Pack
 
