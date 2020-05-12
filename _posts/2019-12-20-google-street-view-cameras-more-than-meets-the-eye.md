@@ -25,11 +25,22 @@ Street View imagery must be associated with accurate positioning.
 
 [Each camera is equipped with a combined DGPS (Differential Global Positioning System) / IMU (Inertial Measurement Unit)](https://books.google.co.uk/books?id=dGpQDwAAQBAJ&pg=PA83&lpg=PA83) system [from Topcon](https://www.topconpositioning.com/mapping), together with a wheel mounted odometer that, in conjunction with the IMU (accelerometers and gyroscopes), can help establish a position where GPS coverage is poor or has been lost in tunnels or within high-rise urban areas.
 
-As part of the Street View processing pipeline, the company uses an open-sourced algorithm they developed, the [Google Pose Optimizer (GPO)](http://code.google.com/p/gpo/wiki/GPO).
+As part of the Street View processing pipeline Google uses [Ceres Solver](http://ceres-solver.org), open-source library for modeling and solving large, complicated optimization problems.
 
-The GPO creates a reconstruction of the pose of a sensor platform (i.e. its position and orientation over time) based on information from the sensors.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z00ORu4bU-A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Once the pose is computed, Google aligns or snaps the pose to a map of the road (or path) network in Google Maps.
+Google Maps / Street View uses Ceres to:
+
+* Estimate the pose of Street View cars, aircrafts, and satellites
+* Build 3D models for PhotoTours
+* Estimate satellite image sensor characteristics
+* Stitch panoramas on Android and iOS
+
+Once the pose is computed by Ceres, Google aligns or snaps the pose to a map of the road (or path) network in Google Maps.
+
+Ceres replaced the [Google Pose Optimizer (GPO)](http://code.google.com/p/gpo/wiki/GPO) incorrectly referenced in a previous iteration of this post.
+
+_Thanks for the tip, Daniel Yu!_
 
 ### Range
 
