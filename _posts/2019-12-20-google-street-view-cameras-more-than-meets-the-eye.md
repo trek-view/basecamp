@@ -1,7 +1,7 @@
 ---
 date: 2019-12-20
 title: "Google's Street View Cameras - More Than Meets the Eye"
-description: "Street View cameras rigs do much more than just take photos."
+description: "Street View camera rigs do much more than just take photos."
 categories: updates
 tags: [Street View]
 author_staff_member: dgreenwood
@@ -67,9 +67,17 @@ Mounted at 45° to capture 3D depth information, they are also used for addition
 
 The Aclima sensors will capture air quality data by generating snapshots of carbon dioxide (CO2), carbon monoxide (CO), nitric oxide (NO), nitrogen dioxide (NO2), ozone (O3), and particulate matter (PM2.5) while the Google cars roam the streets.
 
+### WiFi
+
+[From 2008-2010](https://www.wired.com/2014/04/threatlevel_0401_streetview/), Google's fleet of cars were also equipped with WiFi hardware to record the names and MAC addresses of nearby routers (inc. houses) to improve Google geolocation services.
+
+After being made public, and receiving much criticism, [on June 9 2010 Google issued statement](https://googleblog.blogspot.com/2010/05/wifi-data-collection-update.html) that it had decided to stop its Street View cars from sniffing wireless networking data.
+
+The company still faced legal battles around the world as the data collection was deemed to be illegal, including a [$190,000 fine in Germany](https://www.engadget.com/2013-04-22-google-street-view-fine-germany.html).
+
 ## Trek Pack
 
-We believe air quality sensors are really importantto keep track of the health of our environment, and we're already forming plans to retrofit them to the [Trek Pack](/trek-pack).
+We believe air quality sensors are really important to keep track of the health of our environment, and we're already forming plans to retrofit them to the [Trek Pack](/trek-pack).
 
 Imagine being able to compare air quality at different locations or altitudes on a hike, and on different days or times!
 
