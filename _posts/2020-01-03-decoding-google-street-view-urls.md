@@ -1,6 +1,6 @@
 ---
 date: 2020-01-03
-title: "Decoding the Street View URL"
+title: "Decoding a Google Street View URL"
 description: "Trying to understand the structure of the URL's to better understand Street View's functionality"
 categories: updates
 tags: [Google, Street View]
@@ -11,11 +11,11 @@ layout: post
 published: true
 ---
 
-**Learning the Street View language**
+**Learning the Street View language.**
 
 _Word of warning: this post is accurate at the time of publication (2020-01-03) but may not be on the day your are reading this due to possible changes made by Google. If you do spot an error, [please email us to make us aware](/contact)._
 
-Have you every taken a close look at a Street View URL?
+Have you ever taken a closer look at a Street View URL?
 
 Beware, they're very messy... _at first glance..._
 
@@ -23,9 +23,7 @@ Let's look at a simplified example using a Google image:
 
 <iframe src="https://www.google.com/maps/embed?pb=!4v1589298805767!6m8!1m7!1sjJXYsBpPPqWuvSR5RUaIEQ!2m2!1d51.50836628841653!2d-0.1114930860638594!3f260.88663435168127!4f-11.683344096125651!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
-```
-https://www.google.com/maps/@51.5083663,-0.1114931,2a,75y,260.89h,78.32t/data=!3m7!1e1!3m5!1sjJXYsBpPPqWuvSR5RUaIEQ!2e0!6s%2F%2Fgeo2.ggpht.com%2Fcbk%3Fpanoid%3DjJXYsBpPPqWuvSR5RUaIEQ%26output%3Dthumbnail%26cb_client%3Dmaps_sv.tactile.gps%26thumb%3D2%26w%3D203%26h%3D100%26yaw%3D339.28687%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656
-```
+`https://www.google.com/maps/@51.5083663,-0.1114931,2a,75y,260.89h,78.32t/data=!3m7!1e1!3m5!1sjJXYsBpPPqWuvSR5RUaIEQ!2e0!6s%2F%2Fgeo2.ggpht.com%2Fcbk%3Fpanoid%3DjJXYsBpPPqWuvSR5RUaIEQ%26output%3Dthumbnail%26cb_client%3Dmaps_sv.tactile.gps%26thumb%3D2%26w%3D203%26h%3D100%26yaw%3D339.28687%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656`
 
 See what I mean about it being messy?
 
@@ -39,7 +37,7 @@ The field of view (`75y`) defines the zoom level between 1 (max) and 90 (min). 7
 
 The heading (`260.89h`) can be seen next. Measured between >=0 and <360. 
 
-The final part (`78.32t`) is the pitch of the view (measured between 1 and 179). This changes as the user moves, but used the `pitch` submitted when uploading the photo.
+The final part (`78.32t`) is the pitch of the view (measured between 1 and 179).
 
 Following the orientation and position information, the actual image data (`data=`) is defined.
 
@@ -61,7 +59,7 @@ data=
 
 ...only one that is _human readable_.
 
-[The `data` values are encoded](https://www.w3schools.com/tags/ref_urlencode.ASP).
+The `data` values are [encoded](https://www.w3schools.com/tags/ref_urlencode.ASP).
 
 For example, `%3D` decoded is `=`.
 
@@ -69,9 +67,7 @@ So; `panoid%3DjJXYsBpPPqWuvSR5RUaIEQ` when decoded is `panoid=jJXYsBpPPqWuvSR5RU
 
 [Fully decoded](https://www.urldecoder.org/) the Street View URL above becomes:
 
-```
-https://www.google.com/maps/@51.5083663,-0.1114931,2a,75y,260.89h,78.32t/data=!3m7!1e1!3m5!1sjJXYsBpPPqWuvSR5RUaIEQ!2e0!6s//geo2.ggpht.com/cbk?panoid=jJXYsBpPPqWuvSR5RUaIEQ&output=thumbnail&cb_client=maps_sv.tactile.gps&thumb=2&w=203&h=100&yaw=339.28687&pitch=0&thumbfov=100!7i13312!8i6656
-```
+`https://www.google.com/maps/@51.5083663,-0.1114931,2a,75y,260.89h,78.32t/data=!3m7!1e1!3m5!1sjJXYsBpPPqWuvSR5RUaIEQ!2e0!6s//geo2.ggpht.com/cbk?panoid=jJXYsBpPPqWuvSR5RUaIEQ&output=thumbnail&cb_client=maps_sv.tactile.gps&thumb=2&w=203&h=100&yaw=339.28687&pitch=0&thumbfov=100!7i13312!8i6656`
 
 _Decoded URL, hence will not load correctly._
 
@@ -89,23 +85,19 @@ Looking at the human-readable bang specifically (broken into new lines to make i
 &thumbfov=100
 ```
 
-You can see a url (`geo2.ggpht.com/cbk`) with a `panoid=` value. This is the unique reference to the panoramic image.
+You can see a host (`geo2.ggpht.com/cbk`) with a `panoid=` value. This is the unique reference to the panoramic image.
 
 After that we see `&output=thumbnail` followed by information that seems to be related to said output (a thumbnail image). I assume this because; `&w=203&h=100` looks to refer to width (203px) and height (100px) as well as values like `yaw=` and `pitch=` that remain static and likely set the view of the thumbnail, unlike the first part of the URL which changes when the user moves the view.
 
-Though I have no idea what the `&output=thumbnail` actually refers too. It can be entirely removed and the image will still load correctly;
+Though I have no idea what the `&output=thumbnail` actually refers too -- it can be entirely removed from the URL and the image will still load correctly in the browser;
 
-```
-https://www.google.co.uk/maps/@51.5083663,-0.1114931,2a,75y,260.89h,78.32t/data=!3m7!1e1!3m5!1sBUnezD_ki4oX_PDm2A1lWw!2e0!6s%2F%2Fgeo0.ggpht.com%2Fcbk%3Fpanoid%3DjJXYsBpPPqWuvSR5RUaIEQ!7i13312!8i6656
-```
+`https://www.google.co.uk/maps/@51.5083663,-0.1114931,2a,75y,260.89h,78.32t/data=!3m7!1e1!3m5!1sBUnezD_ki4oX_PDm2A1lWw!2e0!6s%2F%2Fgeo0.ggpht.com%2Fcbk%3Fpanoid%3DjJXYsBpPPqWuvSR5RUaIEQ!7i13312!8i6656`
 
-Let's compare another decoded URL on the same stretch of footpath, also captured by Google to see if it offers any clues.
+Let's compare another decoded URL on the same stretch of footpath, also captured by Google to see if it offers any clues to the missing information.
 
 <iframe src="https://www.google.com/maps/embed?pb=!4v1589301242144!6m8!1m7!1s7YsnZ32rM6gi8Ivi2k3viA!2m2!1d51.50821644339441!2d-0.1125885311008972!3f101.34177970356329!4f-1.4015445714555739!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
-```
-https://www.google.com/maps/@51.5082164,-0.1125885,2a,75y,101.34h,88.6t/data=!3m7!1e1!3m5!1s7YsnZ32rM6gi8Ivi2k3viA!2e0!6s//geo0.ggpht.com/cbk?panoid=7YsnZ32rM6gi8Ivi2k3viA&output=thumbnail&cb_client=maps_sv.tactile.gps&thumb=2&w=203&h=100&yaw=340.40964&pitch=0&thumbfov=100!7i13312!8i6656
-```
+`https://www.google.com/maps/@51.5082164,-0.1125885,2a,75y,101.34h,88.6t/data=!3m7!1e1!3m5!1s7YsnZ32rM6gi8Ivi2k3viA!2e0!6s//geo0.ggpht.com/cbk?panoid=7YsnZ32rM6gi8Ivi2k3viA&output=thumbnail&cb_client=maps_sv.tactile.gps&thumb=2&w=203&h=100&yaw=340.40964&pitch=0&thumbfov=100!7i13312!8i6656`
 
 _Decoded URL, hence will not load correctly._
 
@@ -133,9 +125,7 @@ Digging deeper, lets take another Street View image taken by Google and it's dec
 
 <iframe src="https://www.google.com/maps/embed?pb=!4v1589301813647!6m8!1m7!1sk92ptfUShdo9lKo5PYMGew!2m2!1d45.8326327182556!2d6.863465702885691!3f68.65211851159144!4f1.774614517468052!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
-```
-https://www.google.co.uk/maps/@45.8326327,6.8634657,2a,75y,68.65h,91.77t/data=!3m7!1e1!3m5!1sk92ptfUShdo9lKo5PYMGew!2e0!6s//geo1.ggpht.com/cbk?panoid=k92ptfUShdo9lKo5PYMGew&output=thumbnail&cb_client=maps_sv.tactile.gps&thumb=2&w=203&h=100&yaw=10.15913&pitch=0&thumbfov=100!7i13312!8i6656
-```
+`https://www.google.co.uk/maps/@45.8326327,6.8634657,2a,75y,68.65h,91.77t/data=!3m7!1e1!3m5!1sk92ptfUShdo9lKo5PYMGew!2e0!6s//geo1.ggpht.com/cbk?panoid=k92ptfUShdo9lKo5PYMGew&output=thumbnail&cb_client=maps_sv.tactile.gps&thumb=2&w=203&h=100&yaw=10.15913&pitch=0&thumbfov=100!7i13312!8i6656`
 
 _Decoded URL, hence will not load correctly._
 
@@ -158,13 +148,11 @@ Again, only the the 6th bang (`panoId` and `yaw`) and the 4th bang change (1st U
 
 I'm still non-the wiser.
 
-This time, let's take a look at user uploaded content, one of our panoramas (versus Google content):
+This time, let's take a look at user uploaded content -- one of our panoramas (versus Google content):
 
 <iframe src="https://www.google.com/maps/embed?pb=!4v1589302826707!6m8!1m7!1sCAoSLEFGMVFpcFA4VW1ydnlqNmp6N0hRRkNKMUlHeFVGbzR0U2ZaZGNpTkh5QnFY!2m2!1d51.2895639!2d-0.8214138999999999!3f1.74!4f0!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
-```
-https://www.google.co.uk/maps/@51.2895639,-0.8214139,3a,75y,1.74h,90t/data=!3m8!1e1!3m6!1sAF1QipP8Umrvyj6jz7HQFCJ1IGxUFo4tSfZdciNHyBqX!2e10!3e11!6shttps://lh5.googleusercontent.com/p/AF1QipP8Umrvyj6jz7HQFCJ1IGxUFo4tSfZdciNHyBqX=w203-h100-k-no-pi0-ya23.025953-ro0-fo100!7i5760!8i2880
-```
+`https://www.google.co.uk/maps/@51.2895639,-0.8214139,3a,75y,1.74h,90t/data=!3m8!1e1!3m6!1sAF1QipP8Umrvyj6jz7HQFCJ1IGxUFo4tSfZdciNHyBqX!2e10!3e11!6shttps://lh5.googleusercontent.com/p/AF1QipP8Umrvyj6jz7HQFCJ1IGxUFo4tSfZdciNHyBqX=w203-h100-k-no-pi0-ya23.025953-ro0-fo100!7i5760!8i2880`
 
 _Decoded URL, hence will not load correctly._
 
@@ -189,23 +177,19 @@ This time the 1st (`!3m8`), 3rd (`!3m6`), 4th (`!1sAF1QipP8Umrvyj6jz7HQFCJ1IGxUF
 
 The pano info (7th bang, equivalent to the 6th bang for Google uploaded images) is also considerably different:
 
-```
-!6shttps://lh5.googleusercontent.com/p/AF1QipP8Umrvyj6jz7HQFCJ1IGxUFo4tSfZdciNHyBqX=w203-h100-k-no-pi0-ya23.025953-ro0-fo100
-```
+`!6shttps://lh5.googleusercontent.com/p/AF1QipP8Umrvyj6jz7HQFCJ1IGxUFo4tSfZdciNHyBqX=w203-h100-k-no-pi0-ya23.025953-ro0-fo100`
 
-This time the host is different (`googleusercontent.com` vs `ggpht.com`). The `panoid` is defined after the `/p/` (in this case `AF1QipP8Umrvyj6jz7HQFCJ1IGxUFo4tSfZdciNHyBqX`), and the `output=thumbnail` argument is replaced with what looks to be a reference to a thumbnail but in a different structure containing references to (_I think_) width (`w203`), height (`h100`), pitch (`pi0`), yaw (`ya23.025953`), and field of view (`fo100`).
+This time the host is different (`googleusercontent.com` vs `ggpht.com`). The `panoid` is defined after the `/p/` (in this case `AF1QipP8Umrvyj6jz7HQFCJ1IGxUFo4tSfZdciNHyBqX` vs. `panoid=`), and the `output=thumbnail` argument is replaced with what looks to be a reference to a thumbnail but in a different structure containing references to (_I think_) width (`w203`), height (`h100`), pitch (`pi0`), yaw (`ya23.025953`), and field of view (`fo100`).
 
-I think `ro0` refers to the roll value (my assumption is that Google images omit this because roll is accounted for pre-upload and thus always equal to 0).
+I think `ro0` refers to the roll value (my assumption is that Google images omit this value because roll is accounted for by Google pre-upload and thus always equal to 0).
 
 I have no idea about what `k-no` defines though.
 
-OK, one more, this time from another piece of user contributed imagery, this time from Federico Debetto, and the Zanzibar Street View project:
+Now, one final Street View image to use as a comparison, this time another piece of user contributed imagery, this time from Federico Debetto, and the Zanzibar Street View project:
 
 <iframe src="https://www.google.com/maps/embed?pb=!4v1589304662264!6m8!1m7!1sCAoSLEFGMVFpcE5aeGdtQUxSSWpqa2J2VVdCQU9KWUxpNm5pVnMzcENvc1o1dWwz!2m2!1d-6.21590387225673!2d39.21198776535888!3f4.954602944381747!4f3.3421242977672563!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
-```
-https://www.google.co.uk/maps/@-6.2159039,39.2119878,3a,75y,4.95h,93.34t/data=!3m8!1e1!3m6!1sAF1QipNZxgmALRIjjkbvUWBAOJYLi6niVs3pCosZ5ul3!2e10!3e11!6shttps://lh5.googleusercontent.com/p/AF1QipNZxgmALRIjjkbvUWBAOJYLi6niVs3pCosZ5ul3=w203-h100-k-no-pi-18.636326-ya45.429626-ro-1.5321815-fo100!7i7680!8i3840
-```
+`https://www.google.co.uk/maps/@-6.2159039,39.2119878,3a,75y,4.95h,93.34t/data=!3m8!1e1!3m6!1sAF1QipNZxgmALRIjjkbvUWBAOJYLi6niVs3pCosZ5ul3!2e10!3e11!6shttps://lh5.googleusercontent.com/p/AF1QipNZxgmALRIjjkbvUWBAOJYLi6niVs3pCosZ5ul3=w203-h100-k-no-pi-18.636326-ya45.429626-ro-1.5321815-fo100!7i7680!8i3840`
 
 _Decoded URL, hence will not load correctly._
 
