@@ -5,8 +5,8 @@ description: "All third-party Street View tools are built around the Google Stre
 categories: developers
 tags: [Google, Street View]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2020-05-01/
-featured_image: /assets/images/blog/2020-05-01/
+image: /assets/images/blog/2020-05-01/google-street-view-documentation-meta.jpg
+featured_image: /assets/images/blog/2020-05-01/google-street-view-documentation-sm.jpg
 layout: post
 published: false
 ---
