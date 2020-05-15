@@ -5,8 +5,8 @@ description: "All third-party Street View tools are built around the Google Stre
 categories: developers
 tags: [Google, Street View]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2020-05-01/google-street-view-documentation-meta.jpg
-featured_image: /assets/images/blog/2020-05-01/google-street-view-documentation-sm.jpg
+image: /assets/images/blog/2020-05-15/google-street-view-documentation-meta.jpg
+featured_image: /assets/images/blog/2020-05-15/google-street-view-documentation-sm.jpg
 layout: post
 published: true
 ---
@@ -295,7 +295,11 @@ For more information about this standard, [read this post introducing the concep
 
 I'll talk more about working with video files and the Street View API in a future post.
 
-_Note: the endpoints required for video uploads to Street View Publish API require authorisation from Google to access._
+**A note on publishing videos**
+
+The endpoints required for video uploads to Street View Publish API require authorisation from Google to access. I emailed them earlier this week and recieved this response:
+
+> Due to the current situation we're not inviting new users to the Publish API's sequence methods. On the up side, your use case seems to already be covered - all of the Street View Ready cameras listed on [our website](https://www.google.com/streetview/contacts-tools/products/) have sequence integration. You will need to use the manufacturer recommended way of managing and publishing imagery. Please check back with us at a later date if you're still interested in using the sequence methods. I'm closing this request.
 
 ## Other Street View API's
 
