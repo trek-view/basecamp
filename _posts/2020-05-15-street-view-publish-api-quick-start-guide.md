@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2020-05-01/google-street-view-documentation-meta.jpg
 featured_image: /assets/images/blog/2020-05-01/google-street-view-documentation-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **POST my_beautiful_panorama.jpg**
