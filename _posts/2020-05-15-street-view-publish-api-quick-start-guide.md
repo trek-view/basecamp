@@ -29,7 +29,7 @@ The Street Publish API allows developers to publish 360 photos to Google Maps, a
 
 Using the Street Publish API endpoints, third-party apps can offer an interface for positioning, connecting, and uploading user-generated Street View images.
 
-The API is built around the `photo` resource.
+The API is built around the [`photo`](https://developers.google.com/streetview/publish/reference/rest/v1/photo#Photo) resource.
 
 ### PhotoId
 
@@ -37,7 +37,7 @@ Every Street View `photo` has a unique [`photoId`](https://developers.google.com
 
 Here's the `photoId` of a photo uploaded to Street View (by Trek View): `CAoSLEFGMVFpcE9GcDNYSFNMYmRGT0gtMktHQ3FpTXBpT2FSUFNlSlZyNklFRjNz`.
 
-When you [`create`](https://developers.google.com/streetview/publish/reference/rest/v1/photo/create) a photo a `photoId` is generated for your upload.
+When you [`create`](https://developers.google.com/streetview/publish/reference/rest/v1/photo/create), a photo a `photoId` is generated for your upload.
 
 ### Pose
 
@@ -88,9 +88,9 @@ A connection is the link from a source photo to a destination photo. This inform
 }
 ```
 
-You'll see that the target needs to be supplied as a `photoId`. As such, the connected photos need to exist in Street View.
+You'll see that the target needs to be supplied as a `photoId`. As such, the connected photos need to already exist in (have been uploaded to) Street View.
 
-Therefore, he best way to handle connections, is to first upload the images to Street View without defining the connection `target`, then [`update` each Street View record](https://developers.google.com/streetview/publish/reference/rest/v1/photo/update) with the correct connection information.
+Therefore, the best way to handle connections, is to first upload the images to Street View without defining the connection `target`, then [`update` each Street View record](https://developers.google.com/streetview/publish/reference/rest/v1/photo/update) with the correct connection information.
 
 In the example below, we're updating `pano_2` so that it is connected to `pano_1` and `pano_3`.
 
@@ -123,7 +123,7 @@ In the example below, we're updating `pano_2` so that it is connected to `pano_1
 
 Connections need to be defined in every photo record. Therefore you will need to update every Street View photo record like this.
 
-For example, in this example, `pano_1` would need to be update with `pano_2` as a `target`.
+In this example, `pano_1` would need to be update with `pano_2` as a `target`.
 
 **A note on auto connections**
 
@@ -269,7 +269,7 @@ Lets take a look at the output values...
 * `thumbnailUrl`: The thumbnail URL for showing a preview of the given photo. This is what you see when you hover over an image in Google Maps.
 * `shareLink`: The share link for the photo to share with anyone to view in Street View (e.g. `https://www.google.com/maps/@0,0,0a,90y,90t/data=!3m4!1e1!3m2!1sAF1QipMLgaiIjCzRWiqt05qITYaz9-NWOYe-zW13Zcag!2e10`)
 
-The following sample requests will allow you to grab this information;
+The following sample requests will allow you to grab this information at a later date;
 
 **Getting a list of your photos**
 
@@ -297,7 +297,7 @@ I'll talk more about working with video files and the Street View API in a futur
 
 **A note on publishing videos**
 
-The endpoints required for video uploads to Street View Publish API require authorisation from Google to access. I emailed them earlier this week and recieved this response:
+The endpoints required for video uploads to the Street View Publish API require authorisation from Google to access. I emailed them earlier this week and recieved this response:
 
 > Due to the current situation we're not inviting new users to the Publish API's sequence methods. On the up side, your use case seems to already be covered - all of the Street View Ready cameras listed on [our website](https://www.google.com/streetview/contacts-tools/products/) have sequence integration. You will need to use the manufacturer recommended way of managing and publishing imagery. Please check back with us at a later date if you're still interested in using the sequence methods. I'm closing this request.
 
@@ -312,4 +312,4 @@ If you're looking to use Street View images on your website or app without using
 
 ## Explorer Desktop Uploader
 
-Version 2, with improved Google Street View upload features is coming soon!
+Version 2 ([replacing version 1](blog/2019/announcing-explorer-360-degree-tours-natural-world)), with improved Google Street View upload features is coming soon!
