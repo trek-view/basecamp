@@ -1,7 +1,7 @@
 ---
-date: 2020-05-15
-title: "Extracting data "
-description: ""
+date: 2020-05-22
+title: "Extracting Frames From 360 Videos"
+description: "FFMPEG "
 categories: developers
 tags: [GPS, XMP, EXIF]
 author_staff_member: dgreenwood
@@ -12,6 +12,52 @@ published: false
 ---
 
 
+In the last few weeks I've covered topics on the metadata found in a 360 video and the approval required to publish videos to Street View.
+
+But at
+
+OK, so we're not allowed to upload video to the Google Street View Publish API for the next few months.
+
+No problem, we'll just convert our videos and the metadata they hold to images (with the help of [EXIFtool](https://exiftool.org/) and [FFmpeg](https://ffmpeg.org/)) and then upload as images instead.
+
+The workflow will look like this:
+
+1. Extract metadata track from video file (for telemetry information)
+2. Split video into frames (individual photo files)
+3. Choose frames you want to use (distance between frames / frame count)
+4. Add telemetry data to selected frames
+	- A note on vide
+5. Upload images to 360 platforms (Explorer, Google Street View, Mapillary, etc.)
+
+## 1. Extract metadata track from video file (for telemetry information)
+
+Inverse or reverse geotagging creates a GPS track file from a series of geotagged images. 
+
+Luckily for us, [the brillaint EXIFtool supports inverse geotagging](https://exiftool.org/geotag.html#Inverse).
+
+ExifTool also has the ability to The -p option may be used to output files in any number of formats. This section gives examples for creating GPX and KML output files from a set of geotagged images, or from a geotagged video file. (But note that the -ee option must be added to the commands below to extract the full track from a video file.)
+
+
+
+exiftool -p gpx.fmt -ee -ext mp4 -w OUTDIR/%f.gpx DIR
+
+## 2. Split video into frames (individual photo files)
+
+[FFmpeg](https://ffmpeg.org/) is a free and open-source project consisting of a vast software suite of libraries and programs for handling video, audio, and other multimedia files and streams.
+
+
+
+## 4. Add telemetry data to selected frames
+
+The ExifTool geotagging feature adds GPS tags to images based on data from a GPS track log file.
+
+The GPS track log file is loaded, and linear interpolation is used to determine the GPS position at the time of the image, then the following tags are written to the image (if the corresponding information is available):
+
+
+
+C:\Program Files\ffmpeg
+
+
 When I first started looking at thw 
 
 One of the reasons the first Trek Pack 
@@ -20,12 +66,6 @@ One of the reasons the first Trek Pack
 
 The a
 
-1. Extract metadata track from video file (for telemetry information)
-2. Split video into frames (individual photo files)
-3. Choose frames you want to use (distance between frames / frame count)
-4. Create the output
-    - Add telemetry data to selected frames and output inidividual images files (`.jpg), or;
-    - Create new video file (.`mp4`) using selected frames and original metadata track.
 
 
 
