@@ -21,9 +21,9 @@ In fact, [all signs point to Google increasing their reliance on external contri
 
 Getting panoramas into Street View relies on the Google Street View Publish API (application programming interface) that allows developers to interact with Street View's functionality programmatically.
 
-Here's a look at the _public_ endpoints. I stress the word public because some endpoints and functionality are private, for example; ([access to methods and documentation for 360 photo sequences in the Street View Publish API is by invitation only](https://developers.google.com/streetview/ready))
+Here's a look at the _public_ endpoints.
 
-## Street Publish API (photos / panoramas)
+## Street Publish API (photos)
 
 The Street Publish API allows developers to publish 360 photos to Google Maps, along with their position, orientation, and connectivity metadata.
 
@@ -287,19 +287,19 @@ $ curl --request GET \
     --header 'authorization: Bearer YOUR_ACCESS_TOKEN'
 ```
 
-## Street Publish API (videos)
+## Street Publish API (photoSequences)
+
+You might have noticed my emphasis on the word _public_ API endpoints earlier.
 
 The Street Publish API supports the [Camera Motion Metadata Spec (CAMM)](https://developers.google.com/streetview/publish/camm-spec) standard.
 
-For more information about this standard, [read this post introducing the concept of video metadata](/blog/2020/metadata-exif-xmp-360-video-files).
+For more information about the CAMM standard, [read this post introducing the concept of video metadata](/blog/2020/metadata-exif-xmp-360-video-files).
 
-I'll talk more about working with video files and the Street View API in a future post.
+The `photoSequence` method is required for video uploads to the Street View Publish API, but requires authorisation from Google to access. I emailed them earlier this week and received this response:
 
-**A note on publishing videos**
+> Due to the current situation we're not inviting new users to the Publish API's sequence methods. [...] You will need to use the manufacturer recommended way of managing and publishing imagery. Please check back with us at a later date if you're still interested in using the sequence methods. I'm closing this request.
 
-The endpoints required for video uploads to the Street View Publish API require authorisation from Google to access. I emailed them earlier this week and recieved this response:
-
-> Due to the current situation we're not inviting new users to the Publish API's sequence methods. On the up side, your use case seems to already be covered - all of the Street View Ready cameras listed on [our website](https://www.google.com/streetview/contacts-tools/products/) have sequence integration. You will need to use the manufacturer recommended way of managing and publishing imagery. Please check back with us at a later date if you're still interested in using the sequence methods. I'm closing this request.
+I'll talk more about working with video files and the Street View API in a future post. If you want a sneak peak at how the `photoSequence` method works, [check out some of the sample upload scripts in this repository on Github](https://github.com/smarquardt/samples-for-svpub).
 
 ## Other Street View API's
 

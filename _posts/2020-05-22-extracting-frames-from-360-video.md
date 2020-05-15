@@ -11,12 +11,11 @@ layout: post
 published: false
 ---
 
+**Video to images (_to video again_)**
 
-In the last few weeks I've covered topics on the metadata found in a 360 video and the approval required to publish videos to Street View.
+In the last few weeks I've covered topics [about the metadata found in a 360 video](/blog/2020/metadata-exif-xmp-360-video-files) and the [approval required to publish videos to the Street View Publish API](/blog/2020/street-view-publish-api-quick-start-guide).
 
-But at
-
-OK, so we're not allowed to upload video to the Google Street View Publish API for the next few months.
+tl;dr: we haven't got approval to upload video to the Google Street View Publish API.
 
 No problem, we'll just convert our videos and the metadata they hold to images (with the help of [EXIFtool](https://exiftool.org/) and [FFmpeg](https://ffmpeg.org/)) and then upload as images instead.
 
@@ -29,22 +28,111 @@ The workflow will look like this:
 	- A note on vide
 5. Upload images to 360 platforms (Explorer, Google Street View, Mapillary, etc.)
 
+For this post I'm going to use an `.mp4` video filmed using a GoPro Fusion with GPS enabled and the file encoded using H.264 at 4K (@30 FPS).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iyIkDRERzz8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ## 1. Extract metadata track from video file (for telemetry information)
 
 Inverse or reverse geotagging creates a GPS track file from a series of geotagged images. 
 
 Luckily for us, [the brillaint EXIFtool supports inverse geotagging](https://exiftool.org/geotag.html#Inverse).
 
-ExifTool also has the ability to The -p option may be used to output files in any number of formats. This section gives examples for creating GPX and KML output files from a set of geotagged images, or from a geotagged video file. (But note that the -ee option must be added to the commands below to extract the full track from a video file.)
+ExifTool also has the ability to The -p option can be used to [output files in variations of `.gpx` and `.kml` formats](https://github.com/exiftool/exiftool/tree/master/fmt_files).
 
+CLI input: 
 
+```
+$ exiftool -ee -p gpx.fmt VIDEO_7152.mp4 > VIDEO_7152.gpx
+```
 
-exiftool -p gpx.fmt -ee -ext mp4 -w OUTDIR/%f.gpx DIR
+This command includes the following arguments:
+
+* -ee: Extract embedded data from mp0 files (and others).
+* -p FMTFILE: Print output in specified format
+
+[Full reference here](https://exiftool.org/exiftool_pod.html).
+
+_Make sure you reference the correct path to the `fmt_file`. [This tripped mem up -- thanks, Phil](https://exiftool.org/forum/index.php?topic=11189.msg59877#msg59877)!_
+
+CLI output:
+
+```
+<?xml version="1.0" encoding="utf-8"?>
+<gpx version="1.0"
+ creator="ExifTool 11.99"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns="http://www.topografix.com/GPX/1/0"
+ xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<trk>
+<number>1</number>
+<trkseg>
+<trkpt lat="51.2485" lon="-0.7824">
+</trkpt>
+<trkpt lat="51.248479" lon="-0.782468">
+  <ele>156.968</ele>
+  <time>2020-04-13T15:37:22.444Z</time>
+</trkpt>
+<trkpt lat="51.2484785" lon="-0.7824932">
+  <ele>155.943</ele>
+  <time>2020-04-13T15:37:23.489Z</time>
+</trkpt>
+[...]
+<trkpt lat="51.2484698" lon="-0.7827668">
+  <ele>153.819</ele>
+  <time>2020-04-13T15:37:35.534Z</time>
+</trkpt>
+<trkpt lat="51.2484656" lon="-0.7827818">
+  <ele>154.364</ele>
+  <time>2020-04-13T15:37:36.524Z</time>
+</trkpt>
+<trkpt lat="51.2484591" lon="-0.7828009">
+  <ele>154.95</ele>
+  <time>2020-04-13T15:37:37.514Z</time>
+</trkpt>
+</trkseg>
+</trk>
+</gpx>
+```
+
+[Entire output for reference](https://gitlab.com/snippets/1971839).
 
 ## 2. Split video into frames (individual photo files)
 
 [FFmpeg](https://ffmpeg.org/) is a free and open-source project consisting of a vast software suite of libraries and programs for handling video, audio, and other multimedia files and streams.
 
+Taking the `.mp4` file, I can break it down into 1 second frames in `.png` format.
+
+CLI input:
+
+```
+ffmpeg -i VIDEO_7152.mp4 -r 1 FRAMES/img%04d.png
+```
+
+This command includes the following arguments:
+
+* -r: Set frame rate (Hz value, fraction or abbreviation).
+
+[Full reference here](https://www.ffmpeg.org/ffmpeg.html).
+
+_Make sure you reference an existing directory path for the output (e.g. `FRAMES`)._
+
+[In total this gives me 18 files](https://drive.google.com/drive/u/1/folders/1hPCYAluasG58moLQsFPo-On5IA6guRS9).
+
+So now 
+
+
+img0001
+
+CLI input: 
+
+```
+$ exiftool -G -a FRAMES/img0001.png > FRAMES/img0001_metadata.txt
+```
+
+
+exiftool -G -a exiftool img0001.png > img0001_metadata.txt
 
 
 ## 4. Add telemetry data to selected frames
