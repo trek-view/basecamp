@@ -76,7 +76,11 @@ Mounted at 45° to capture 3D depth information, they are also used for addition
 
 [In September 2018](https://techcrunch.com/2018/09/12/google-street-view-cars-are-now-roaming-around-the-planet-checking-our-atmosphere-with-these-sensors/), Google announced it would integrate air quality sensors from [Aclima](https://aclima.io/#products) into its global fleet of Street View vehicles.
 
-The Aclima sensors will capture air quality data by generating snapshots of carbon dioxide (CO2), carbon monoxide (CO), nitric oxide (NO), nitrogen dioxide (NO2), ozone (O3), and particulate matter (PM2.5) while the Google cars roam the streets.
+The Aclima sensors capture air quality data by generating snapshots of carbon dioxide (CO2), carbon monoxide (CO), nitric oxide (NO), nitrogen dioxide (NO2), ozone (O3), and particulate matter (PM2.5) while the Google cars roam the streets.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mssOGUbqVuc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[You can see some great analysis of the data from the 'Air View' project here](https://www.google.com/earth/outreach/special-projects/air-quality/).
 
 ### WiFi
 
@@ -84,8 +88,7 @@ The Aclima sensors will capture air quality data by generating snapshots of carb
 
 After being made public, and receiving much criticism, [on June 9 2010 Google issued statement](https://googleblog.blogspot.com/2010/05/wifi-data-collection-update.html) that it had decided to stop its Street View cars from sniffing wireless networking data.
 
-As it transpired the company was also, [_accidentally, in some cases,
-_](https://publicpolicy.googleblog.com/2010/05/wifi-data-collection-update.html), collecting network data packets (which could have potentially included any traffic on the network, including the websites being visited). As a result, Google faced legal battles around the world with the data collection being deemed to be illegal, including a [$190,000 fine in Germany](https://www.engadget.com/2013-04-22-google-street-view-fine-germany.html).
+As it transpired the company was also, [_accidentally, in some cases,_](https://publicpolicy.googleblog.com/2010/05/wifi-data-collection-update.html), collecting network data packets (which could have potentially included any traffic on the network, including the websites being visited). As a result, Google faced legal battles around the world with the data collection being deemed to be illegal, including a [$190,000 fine in Germany](https://www.engadget.com/2013-04-22-google-street-view-fine-germany.html).
 
 ## Trek Pack
 

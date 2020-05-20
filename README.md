@@ -36,4 +36,4 @@ Before merging any changes to master, check for 404's:
 
 ## License
 
-The code of this site is licensed under the [GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0.en.html).
+The code of this site is licensed under an [MIT License](https://github.com/trek-view/basecamp/blob/master/LICENSE.txt).
