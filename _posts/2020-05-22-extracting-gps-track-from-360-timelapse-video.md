@@ -5,8 +5,8 @@ description: "Here's how to use the GPS points inside your 360 timelapses or vid
 categories: developers
 tags: [GPS, XMP, EXIF]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2020-05-22/
-featured_image: /assets/images/blog/2020-05-22/
+image: /assets/images/blog/2020-05-22/google-kml-docs-meta.jpg
+featured_image: /assets/images/blog/2020-05-22/google-kml-docs-sm.jpg
 layout: post
 published: false
 ---
