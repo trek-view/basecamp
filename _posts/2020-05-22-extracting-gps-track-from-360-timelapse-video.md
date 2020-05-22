@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2020-05-22/google-kml-docs-meta.jpg
 featured_image: /assets/images/blog/2020-05-22/google-kml-docs-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 _Using GPS information from your tours with any mapping or location based tool._

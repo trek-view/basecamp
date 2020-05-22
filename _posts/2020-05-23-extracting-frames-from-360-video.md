@@ -41,7 +41,7 @@ Taking the `.mp4` file, I can break it down into 1 second frames in `.png` forma
 CLI input:
 
 ```
-ffmpeg -i VIDEO_7152.mp4 -r 1 -movflags use_metadata_tag FRAMES/img%04d.png
+$ ffmpeg -i VIDEO_7152.mp4 -r 1 -map_metadata 0:g FRAMES/img%04d.png
 ```
 
 This command includes the following arguments:
