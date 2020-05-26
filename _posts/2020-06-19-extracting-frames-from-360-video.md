@@ -1,5 +1,5 @@
 ---
-date: 2020-05-22
+date: 2020-06-19
 title: "Extracting A GPS Track from a 360 Video"
 description: "FFMPEG "
 categories: developers

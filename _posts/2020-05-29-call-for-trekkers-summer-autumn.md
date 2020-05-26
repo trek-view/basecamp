@@ -5,15 +5,15 @@ description: "The focus for the coming months is going to be virtual tours of lo
 categories: updates
 tags: [Camera Loans]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2020-05-29/
-featured_image: /assets/images/blog/2020-05-29/
+image: /assets/images/blog/2020-05-29/ceasers-camp-mtb-meta.jpg
+featured_image: /assets/images/blog/2020-05-29/ceasers-camp-mtb-sm.jpg
 layout: post
 published: false
 ---
 
 **Winter and Spring wasn't quite what we were expecting.**
 
-<img class="img-fluid" src="/assets/images/blog/2019-11-01/" alt="Chamonix Virtual Tour" title="Chamonix Virtual Tour" />
+<img class="img-fluid" src="/assets/images/blog/2020-05-29/ceasers-camp-mtb-sm.jpg" alt="Ceasers Camp Mountain Bike Virtual Tour" title="Ceasers Camp Mountain Bike Virtual Tour" />
 
 When we put call out our bi-annual call for Trekkers a the start of November we could never have expected what would unfold in the next few months.
 
@@ -31,13 +31,13 @@ But there are better times ahead. As we head into Summer, many people are dreami
 
 The lockdown gave me a long time to reflect on the work we do here at Trek View.
 
-And I realised something, some of the best escapes are on your doorstep.
+And I realised something, [some of the best escapes are on your doorstep](/case-studies/2020/gb/aldershot-byelaws-review).
 
 Even in big cities, small squares of greenery can offer huge respite from the inside of your home and your head.
 
 ## Become a Trekker
 
-I'm looking for Trekkers to help capture new 360-degree tours over the summer and autumn.
+We're looking for Trekkers to help capture new 360-degree tours over the summer and autumn.
 
 **The focus is virtual tours of your local area.**
 

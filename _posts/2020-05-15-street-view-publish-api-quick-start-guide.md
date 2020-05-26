@@ -139,9 +139,9 @@ This video from the Street View Conference in 2017 also [references the 3m inter
 
 > You need to have > 50 panoramas with a distance < 5m between two connected panoramas. After some days (weeks?) Google will convert them to a blue line in a separate processing step.
 
-It's safe to assume in some cases Google servers might automatically connect your images into a blue line even if a connection `target` is not defined.
+It's safe to assume in some cases Google servers might automatically connect your images into a blue line even if a connection `target` is not defined, [as addressed here](https://support.google.com/contributionpolicy/answer/7411351):
 
-Unfortunately I can't explain more about the behaviour of the Street View algorithms and how they create automatic connections because I have been unable to find any additional information on the subject ([_perhaps you can help?_](/contact)). As such, my advice would be to always explicitly define connections to remove any uncertainty.
+> When multiple 360 photos are published to one area, connections between them may be automatically generated. Whether your connections were created manually or automatically, we may adjust, remove, or create new connections — and adjust the position and orientation of your 360 photos — to ensure a realistic, connected viewing experience
 
 ### captureTime
 

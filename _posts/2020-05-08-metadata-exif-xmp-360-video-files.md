@@ -73,7 +73,7 @@ There is a significant amount of data contained in the metadata of a video, for 
 
 ### GoPro Fusion
 
-For this first example I'm going to use an `.mp4` video filmed using a GoPro Fusion with GPS enabled and the file encoded using H.264 at 4K (@30 FPS). The file size is 86.2MB and runs for 16 seconds.
+For this first example I'm going to use an `.mp4` video filmed using a GoPro Fusion with GPS enabled shot at 5.2K and the final file encoded using H.264 at 4K at 30 FPS using GoPro Fusion Studio (no protune). The file size is 86.2MB and runs for 16 seconds.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iyIkDRERzz8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -158,9 +158,9 @@ CLI output:
 
 You can see there is `[Quicktime]` data (because the .mp4 is H.264 encoded). You'll also see `[XMP]` metadata, and `[Composite]` metadata.
 
-Think of this output as a wrapper, or description, of the video. It is `Media Duration=15.98 s` long, was filmed on `Media Create Date=2020:04:15 09:14:04`, at `Video Frame Rate=29.97`, at an `Avg Bitrate=45.2 Mbps`, at `Megapixels=7.4`. We also know it's a 360 video because `Projection Type=equirectangular`.
+Think of this output as a wrapper, or description, of the video. It is `Media Duration` = `15.98 s` long, was filmed on `Media Create Date` = `2020:04:15 09:14:04`, at `Video Frame Rate` = `29.97`, at an `Avg Bitrate` = `45.2 Mbps`, at `Megapixels`= `7.4`. We also know it's a 360 video because `Projection Type` = `equirectangular`.
 
-The eagle eyed might be wondering why `megapixels=7.4` (`Image Size=3840x1920`), which is less than the 4K the video was shot at. That requires another post entirely... coming soon!
+The eagle eyed might be wondering why `megapixels` = `7.4` (`Image Size` = `3840x1920`), which is less than the 4K (8.5 megapixels) the video was shot at. That requires another post entirely... coming soon!
 
 If you look at the full output you'll see different `Handlers` responsible for each of the tracks I mentioned earlier. Here's the handler being defined for the metadata track:
 
@@ -298,13 +298,13 @@ You can see in addition to the `[Main]` section (the video level information we 
 
 Each [Doc] covers a defined period of time.
 
-`[Doc1]` starts at 0s (`Sample Time=0 s`) and covers 1 second of frames (`Sample Duration=1.00 s`)
+`[Doc1]` starts at 0s (`Sample Time` = `0 s`) and covers 1 second of frames (`Sample Duration` = `1.00 s`)
 
-`[Doc2]` starts at 1s (`Sample Time=1 s`) and covers 1 second of frames (`Sample Duration=1.00 s`)
+`[Doc2]` starts at 1s (`Sample Time` = `1 s`) and covers 1 second of frames (`Sample Duration` = `1.00 s`)
 
-`[Doc16]` starts at 15s (`Sample Time=15 s`) and covers 1 second of frames (`Sample Duration=1.00 s`).
+`[Doc16]` starts at 15s (`Sample Time` = `15 s`) and covers 1 second of frames (`Sample Duration` = `1.00 s`).
 
-Covering the whole `Media Duration=15.98 s`.
+Covering the whole `Media Duration` = `15.98 s`.
 
 `[Doc1]` starts at:
 
@@ -579,9 +579,9 @@ CLI output:
 
 [Entire output for reference](https://gitlab.com/snippets/1972711).
 
-In this case we know the `Video Frame Rate=5` (FPS) covering `0:01:46` (1 min 46 seconds) shooting files at `Megapixels=29.5` with an `Avg Bitrate=255 Mbps`. Without seeing the video we know it is a 360 video because, again, `Projection Type=equirectangular`.
+In this case we know the `Video Frame Rate` = `5` (FPS) covering `0:01:46` (1 min 46 seconds) shooting files at `Megapixels` = `29.5` with an `Avg Bitrate` = `255 Mbps`. Without seeing the video we know it is a 360 video because, again, `Projection Type` = `equirectangular`.
 
-Notice how on the Insta360 Pro2 `Other Format=camm` (vs. `Meta Format=gpmd` on the Fusion)
+Notice how on the Insta360 Pro2 `Other Format` = `camm` (vs. `Meta Format` = `gpmd` on the Fusion)
 
 ```
 [Main]          Handler Type                    : Camera Metadata
@@ -899,3 +899,7 @@ In order to make sure our [free, open-source software works for everyone](https:
 And that's why we need your help.
 
 If you have a 360 camera and want to support our work, [please share more information about your camera with us using this form](https://docs.google.com/forms/d/e/1FAIpQLScgOk1W5jpyrQuDF5FuKqUpKK0EIpSlokckZd3OB-r_ZOjZmQ/viewform). Thank you!
+
+## Support exiftool
+
+Exiftool is a free and very well supported bit of software from Phil Harvey. Let's make sure it stays that way. [You should consider a small donation to support it](https://exiftool.org/#donate) if this post has been useful to you.

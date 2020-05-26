@@ -129,11 +129,14 @@ If you're not comfortable with the command line, there is lots of software that 
 
 Back to the photo...
 
-You (and other software tools) can identify this photograph is 360 because it is defined by XMP tag; `Projection Type=equirectangular`.
+You (and other software tools) can identify this photograph is 360 because it is defined by XMP tag; `Projection Type` = `equirectangular`.
 
-We also know it was taken above sea level because of the EXIF tags; `GPS Altitude=467.03` and `GPS Altitude Ref=Above Sea Level`
+The image resolution is `Full Pano Width Pixels` = `5760` x `Full Pano Height Pixels` = `2880`, or 16.6 megapixels. _Note, the GoPro Fusion can shoot `.raw` files at 18 megapixels, but this example was stitched as a `.jpg` where 16.6 megapixels is the maximum resolution possible_.
 
-Defined and related EXIF GPS data tags include:
+
+We also know it was taken above sea level because of the EXIF tags; `GPS Altitude` = `467.03` and `GPS Altitude Ref` = `Above Sea Level`
+
+Other EXIF GPS data tags include:
 
 * GPSLatitude
 * GPSLongitude
@@ -262,7 +265,7 @@ Whilst the Fusion has a GPS receiver, along with an accelerometer, gyroscope and
 
 Having this information reported at time of capture by the Z1 is much more accurate than [manual calculations required when it's omitted](/blog/2020/what-direction-are-you-facing).
 
-Defined and related XMP 360 photo tags include:
+Other XMP 360 photo tags include:
 
 * UsePanoramaViewer
 * CaptureSoftware
@@ -325,6 +328,10 @@ In order to make sure our [free, open-source software works for everyone](https:
 And that's why we need your help.
 
 If you have a 360 camera and want to support our work, [please share more information about your camera with us using this form](https://docs.google.com/forms/d/e/1FAIpQLScgOk1W5jpyrQuDF5FuKqUpKK0EIpSlokckZd3OB-r_ZOjZmQ/viewform). Thank you!
+
+## Support exiftool
+
+Exiftool is a free and very well supported bit of software from Phil Harvey. Let's make sure it stays that way. [You should consider a small donation to support it](https://exiftool.org/#donate) if this post has been useful to you.
 
 ## Update 2020-05-01
 

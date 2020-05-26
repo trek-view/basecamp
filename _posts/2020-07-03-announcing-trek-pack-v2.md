@@ -1,5 +1,5 @@
 ---
-date: 2020-05-22
+date: 2020-07-03
 title: "Announcing the Trek Pack v2"
 description: "Over the Winter we've been experimenting with new cameras for an updated version of our Trek Pack."
 categories: updates

@@ -1,5 +1,5 @@
 ---
-date: 2020-06-05
+date: 2020-06-26
 title: "What sensors are found in a 360 camera?"
 description: ""
 categories: developers
