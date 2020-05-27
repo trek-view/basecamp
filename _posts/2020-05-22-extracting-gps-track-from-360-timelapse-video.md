@@ -1,4 +1,4 @@
-FF---
+---
 date: 2020-05-22
 title: "Extracting A GPS Track from a 360 Timelapse or Video"
 description: "Here's how to use the GPS points inside your 360 timelapses or videos with tools like Strava and Google Earth."
