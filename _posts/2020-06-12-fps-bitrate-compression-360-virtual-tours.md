@@ -45,17 +45,17 @@ Shooting single photos won't trouble the Fusion's maximum bit rate. But video is
 
  Cameras process tons of data about every single second of a video. After all, each second contains multiple frames composed of millions of bits of information.
 
-[The GoPro Fusion camera can shoot 360 video in 5.2k (no protune) at maximum bit rate of 60 Mbps per sensor](https://havecamerawilltravel.com/gopro/sd-card-recommendations-for-the-gopro-fusion/). Put another way, the sensors and other components in the camera cannot handle data transfer rates greater than 60 Mbps.S
+[The GoPro Fusion camera can shoot 360 video in 5.2k (no Protune) at maximum bit rate of 60 Mbps per sensor](https://havecamerawilltravel.com/gopro/sd-card-recommendations-for-the-gopro-fusion/). Put another way, the sensors and other components in the camera cannot handle data transfer rates greater than 60 Mbps.S
 
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>MODE / FPS</th><th>Bit rate (no protune)</th><th>Bit rate (protune)</th></tr></thead><tbody>
+<thead><tr class="tableizer-firstrow"><th>MODE / FPS</th><th>Bit rate (no Protune)</th><th>Bit rate (Protune)</th></tr></thead><tbody>
  <tr><td>5.2K30</td><td>45</td><td>60</td></tr>
  <tr><td>3K60</td><td>45</td><td>60</td></tr>
 </tbody></table>
 
 You can see the problem. If each photo at 18 megapixels is 20 Megabits we can only write 3 per second (20Mbps * 3 images per second = 60Mbps).
 
-And the bit rate of the main video stream isn’t the whole story when it comes to what’s being written to the SD cards. The main MP4 video stream also includes a 128Kbps stereo AAC audio stream. Recorded at the same time (only to the card in slot 1) is a 1 Mpbs, 32-bit, 4-channel PCM WAV audio stream. There’s also the preview version of the video, the LRV file, that records at about 2.8 Mpbs (variable bitrate, video stream target 2.5 Mbps with a 128 Kpbs stereo AAC audio stream.
+And the bit rate of the main video stream isn’t the whole story when it comes to what’s being written to the SD cards. The main MP4 video stream also includes a 128Kbps stereo AAC audio stream. Recorded at the same time (only to the card in slot 1) is a 1 Mpbs, 32-bit, 4-channel PCM WAV audio stream. There’s also the preview version of the video, the LRV file, that records at about 2.8 Mpbs (variable bit rate, video stream target 2.5 Mbps with a 128 Kpbs stereo AAC audio stream.
 
 [Though the GoPro Fusion will always capture [_almost (29.97 / 59.97)_](/blog/2020/metadata-exif-xmp-360-video-files) 30 or 60 frames per second, so how is this possible?
 
@@ -73,13 +73,13 @@ Here's the video I shot.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iyIkDRERzz8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Clue: It is an `.mp4` video filmed using a GoPro Fusion with GPS enabled shot at 5.2K and the final file encoded using H.264 at 4K at 30 FPS using GoPro Fusion Studio **(no protune)**. The file size is 86.2MB and runs for 16 seconds.
+Clue: It is an `.mp4` video filmed using a GoPro Fusion with GPS enabled shot at 5.2K and the final file encoded using H.264 at 4K at 30 FPS using GoPro Fusion Studio **(no Protune)**. The file size is 86.2MB and runs for 16 seconds.
 
 ## Compression algorithms
 
 Video compression algorithms (codecs) work in many interesting and unique ways to take a raw sensor input and produce an output of lower filesize, without reducing image quality at the same rate.
 
-One consideration that isn’t immediately apparent from the GoPro camera menu options is that enabling Protune for video usually switches to higher-bitrate recording. Basically, that means that the video has less compression applied, meaning that better image quality. 
+One consideration that isn’t immediately apparent from the GoPro camera menu options is that enabling Protune for video usually switches to higher bit rate recording. Basically, that means that the video has less compression applied, meaning that better image quality. 
 
 If you want the higest video quality on the Fusion (4K), Protune needs to be enabled for this reason.
 
@@ -97,9 +97,11 @@ Noise increases file sizes. A busy image with lots of trees and people will be l
 
 With compression (e.g. Protune), in images with less noise, there are more areas of consistent patterns (i.e. the clear blue sky) that can be compressed less agressively. Conversely, in noiseyr images more agressive compression needs to be complied to ensure the maximum bit rate is not exceeded.
 
-Without compression (e.g. raw files), no compression is applied. If the camera offered the maximum camera bitrate to the sensors in this scenario, there would be a high potential the absolute maximum bit rate (what the components in the camera can handle) would be exceeded.
+Without compression (e.g. raw files), no compression is applied. If the camera offered the maximum camera bit rate to the sensors in this scenario, there would be a high potential the absolute maximum bit rate (what the components in the camera can handle) would be exceeded.
 
-Consequently, the camera is advertised with a lower _advertised_ maxiumum bitrate when shooting raw files. In reality the bit rate will vary up and down, and the extra room means it is possible the _advertised_ maxiumum bitrate will be exceeded safely, without troubling the absolute maximum.
+Consequently, the camera is advertised with a lower _advertised_ maxiumum bit rate when shooting raw files. In reality the bit rate will vary up and down, and the extra room means it is possible the _advertised_ maxiumum bit rate will be exceeded safely, without troubling the absolute maximum.
+
+This is why average bit rate is reported in the metadata, because the bit rate at any point in time might differe.
 
 ## Avoiding loss in image quality
 

@@ -53,7 +53,7 @@ And whilst you might not [be downhill mountain biking when capturing 360 tours](
 
 If you're looking at cameras with CCD sensors (global shutters) you might also notice that they offer lower image resolutions than comparative cameras using CMOS sensors (rolling shutters).
 
-This is down to the data transmission limitation imposed by the sensor and other camera hardware (bitrate).
+This is down to the data transmission limitation imposed by the sensor and other camera hardware (bit rate).
 
 In order to transmit the data for the entire image at the same time (versus in chunks like a rolling shutter), the size of each pixel in a CCD sensor (global shutter) is normally bigger than in a CMOS sensor (rolling shutter). Larger pixels lower the image resolution (the sensor cannot hold as many) and consequently, the amount of data being transferred is lower.
 
