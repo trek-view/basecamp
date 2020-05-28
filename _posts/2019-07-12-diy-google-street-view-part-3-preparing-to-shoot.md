@@ -41,9 +41,9 @@ I've found the following time-lapse settings work well for each method of transp
 
 1. Road Bike (flat) - 0.5 second
 2. Mountain Bike (flat) - 1 second
-3. Walk (flat) - 5 seconds
-4. Stand-up Paddle-board (calm water) - 5 seconds
-5. Hike (lots of elevation) - 10 seconds
+3. Walk (flat) - 2 seconds
+4. Stand-up Paddle-board (calm water) - 2 seconds
+5. Hike (lots of elevation) - 5 seconds
 
 If you plan to shoot when moving at more than 30 km/h (8.333 metres /s), use video mode. At this speed the lowest time resolution of the Fusion's time-lapse mode (0.5s) will be too slow to capture at 5 metre intervals.
 
