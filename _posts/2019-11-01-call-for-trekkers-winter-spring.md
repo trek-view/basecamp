@@ -37,6 +37,10 @@ I can supply the waterproof 360-degree camera kit. You just need to supply the e
 
 If you have a great place that encompasses the theme of winter sports that you want to capture a virtual tour of for others to enjoy, please [apply to the Trek View camera loan program today](/loan) -- I have Trek Packs ready for Trekkers.
 
-Not a snow or ice person? That's OK too. I still encourage you to [submit an application to loan one of our Trek Packs](/loan).
-
 **Pro tip:** [Here's some advice when drafting your application](/blog/2019/how-to-make-successful-trek-pack-loan-application/).
+
+If you need a Trek Pack more urgently and are lucky enough to be able to afford to purchase one please do consider [buying one from our store](/store).
+
+[You can also build your own by following our DIY guides](/trek-pack).
+
+_Update May 2020: [Call for Trekkers: Summer / Autumn 2020](/blog/2020/call-for-trekkers-summer-autumn)._

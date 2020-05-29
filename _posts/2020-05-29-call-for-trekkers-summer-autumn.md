@@ -11,17 +11,17 @@ layout: post
 published: true
 ---
 
-**Winter and Spring were not quite what we were expecting.**
+**Winter and Spring were not quite what we expected.**
 
 <img class="img-fluid" src="/assets/images/blog/2020-05-29/ceasers-camp-mtb-sm.jpg" alt="Ceasers Camp Mountain Bike Virtual Tour" title="Ceasers Camp Mountain Bike Virtual Tour" />
 
-When we put call out our bi-annual call for Trekkers a the start of November we could never have expected what would unfold in the next few months.
+When we [put out our bi-annual call for Trekkers a the start of November](/blog/2019/call-for-trekkers-winter-spring) we could never have expected what would unfold in the following months.
 
 Not only did we see the warmest recorded Winter here in Europe (scary!), as of early February many places began to close as COVID-19 spread across the world (2x scary!).
 
 Whole ski resorts were closed over their busiest periods.
 
-Airlines cancelled their entire schedules.
+Airlines cancelled entire schedules.
 
 Families were isolated to their homes.
 
@@ -29,7 +29,7 @@ But there are better times ahead. As we head into Summer, many people are dreami
 
 The lockdown gave me a long time to reflect on the work we do here at Trek View.
 
-And I realised something, [some of the best escapes are on your doorstep](/case-studies/2020/gb/aldershot-byelaws-review).
+And I realised something, [some of the best escapes can be found on your doorstep](/case-studies/2020/gb/aldershot-byelaws-review).
 
 Even in big cities, small squares of greenery can offer a huge respite from the inside of your home and your head.
 
@@ -43,8 +43,12 @@ Parks, forests, fields, rooftop gardens...
 
 We can supply the 360-degree camera kit. You just need to supply the effort and mode of transport.
 
-If you have a great place you want to capture a virtual tour of for others to enjoy, please [apply to the Trek View camera loan program today](/loan) -- I have Trek Packs ready for Trekkers.
+If you have a local area you want to capture a virtual tour of for others to enjoy, please [apply to the Trek View camera loan program today](/loan) -- I have Trek Packs ready for Trekkers.
+
+Got another project in mind? That's OK too. I still encourage you to [submit an application to loan one of our Trek Packs](/loan).
+
+**Pro tip:** [Here's some advice when drafting your application](/blog/2019/how-to-make-successful-trek-pack-loan-application/).
 
 If you need a Trek Pack more urgently and are lucky enough to be able to afford to purchase one please do consider [buying one from our store](/store).
 
-Got another project in mind? That's OK too. I still encourage you to [submit an application to loan one of our Trek Packs](/loan).
+[You can also build your own by following our DIY guides](/trek-pack).
