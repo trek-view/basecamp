@@ -8,10 +8,10 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2020-05-29/ceasers-camp-mtb-meta.jpg
 featured_image: /assets/images/blog/2020-05-29/ceasers-camp-mtb-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
-**Winter and Spring wasn't quite what we were expecting.**
+**Winter and Spring were not quite what we were expecting.**
 
 <img class="img-fluid" src="/assets/images/blog/2020-05-29/ceasers-camp-mtb-sm.jpg" alt="Ceasers Camp Mountain Bike Virtual Tour" title="Ceasers Camp Mountain Bike Virtual Tour" />
 
@@ -25,15 +25,13 @@ Airlines cancelled their entire schedules.
 
 Families were isolated to their homes.
 
-And quite rightly.
-
-But there are better times ahead. As we head into Summer, many people are dreaming of earlier mornings and longer afternoons.
+But there are better times ahead. As we head into Summer, many people are dreaming of getting outside to enjoy the longer days and warmer weather (here in the northern hemisphere).
 
 The lockdown gave me a long time to reflect on the work we do here at Trek View.
 
 And I realised something, [some of the best escapes are on your doorstep](/case-studies/2020/gb/aldershot-byelaws-review).
 
-Even in big cities, small squares of greenery can offer huge respite from the inside of your home and your head.
+Even in big cities, small squares of greenery can offer a huge respite from the inside of your home and your head.
 
 ## Become a Trekker
 
