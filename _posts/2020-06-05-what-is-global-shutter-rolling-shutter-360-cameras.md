@@ -6,7 +6,7 @@ categories: guides
 tags: [camera]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-06-05/rolling-shutter-global-shutter-photo-comparison-meta.jpg
-featured_image: /assets/images/blog/2020-06-05/rolling-shutter-global-shutter-photo-comparisons.jpg
+featured_image: /assets/images/blog/2020-06-05/rolling-shutter-global-shutter-photo-comparison.jpg
 layout: post
 published: true
 ---
@@ -95,4 +95,4 @@ With camera manufacturers competing on both price and image quality, there are a
 
 If you’re shooting immersive VR content with lots of fast-moving motion, a 360 camera with CMOS sensors (global shutter) might be worth the cost to buy (most more than $10,000 USD+).
 
-For outdoor tours viewed on PC's, it's overkill.
+For outdoor tours viewed on PC's or phones, it's overkill.
