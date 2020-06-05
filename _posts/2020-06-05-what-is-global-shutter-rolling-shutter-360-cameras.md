@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2020-06-05/rolling-shutter-global-shutter-photo-comparison-meta.jpg
 featured_image: /assets/images/blog/2020-06-05/rolling-shutter-global-shutter-photo-comparisons-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Click, click, click.**
