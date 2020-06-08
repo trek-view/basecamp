@@ -1,5 +1,5 @@
 ---
-date: 2020-07-03
+date: 2020-07-22
 title: "Map the Paths"
 description: "Here's how you can take part."
 categories: updates
