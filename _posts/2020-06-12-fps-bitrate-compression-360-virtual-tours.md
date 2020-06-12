@@ -47,7 +47,9 @@ If you kept the bit rate constant and shot two videos – one at 1080p and one a
 
 Cameras process tons of data about every single second of a video. After all, each second contains multiple frames composed of millions of bits of information.
 
-And the bit rate of the main video stream isn’t the whole story when it comes to what’s being written to the SD cards. The main MP4 video stream also includes a 128Kbps stereo AAC audio stream. Recorded at the same time (only to the card in slot 1) is a 1 Mpbs, 32-bit, 4-channel PCM WAV audio stream. There’s also the preview version of the video, the LRV file, that records at about 2.8 Mpbs.
+And the bit rate of the main video stream isn’t the whole story when it comes to what’s being written to the SD cards.
+
+The main MP4 video stream of the GoPro Fusion also includes a 128Kbps stereo AAC audio stream. Recorded at the same time (only to the card in slot 1) is a 1 Mpbs, 32-bit, 4-channel PCM WAV audio stream. There’s also the preview version of the video, the LRV file, that records at about 2.8 Mpbs.
 
 When shooting a video, each frame (or period of time for sound and telemetry) captured by the sensor holds a differing amount of information.
 
@@ -67,9 +69,9 @@ You might hear terms like constant bit rate too. This is where the camera makes 
 
 One easiest ways to reduce bit rate limitation imposed by the camera is to shrink the image resolution (size) -- smaller images produce smaller amounts of data.
 
-It is for this reason many cameras on the market have lower resolution for videos when compared to photo functions.
+It is for this reason many cameras on the market have lower resolution for videos when compared to still photos.
 
-Video compression algorithms (codecs) also work to take an input and produce and output of lower file size, whilst minimising any reduction in image quality.
+Video compression algorithms (codecs) also work to take an input and produce an output of lower file size, whilst minimising any reduction in image quality.
 
 Common video codecs include:
 
@@ -79,7 +81,7 @@ Common video codecs include:
 * MPEG-2
 * HEVC (H.265)
 
-_Note: the video player must understand the codec in order to play the file. Most major players understand the above format, but more obscure formats might lead to incompatibility problems._
+_Note: the video player must understand the codec in order to play the file. Most major players understand the above formats, but more obscure formats might lead to incompatibility problems._
 
 Each compression algorithm works in a different way, and thus all produce differing outputs. Even images shot with exactly the same settings can look different if encoded (compressed) using different codecs [Read this article for a good overview of how video compression works](https://www.eetimes.com/how-video-compression-works/).
 
@@ -87,7 +89,7 @@ By applying these algorithms before the data is transmitted, you can reduce the 
 
 ## GoPro Example
 
-A single sensor on the GoPro Fusion shooting at the highest quality in photo mode ([18 megapixels](/blog/2020/metadata-exif-xmp-360-photo-files)) gives a final image of about 2.5 Megabytes or 20 Megabits. If I take one photo every second it would require a bit rate of 20 Megabit per second per sensor.
+A single sensor on the GoPro Fusion shooting at the highest quality in photo mode ([18 megapixels](/blog/2020/metadata-exif-xmp-360-photo-files)) gives a final image of about 2.5 Megabytes or 20 Megabits. If I take one photo every second it would require a bit rate of 20 Megabits per second per sensor.
 
 Shooting single photos won't trouble the Fusion's maximum bit rate. But video is a different story. 
 
@@ -111,7 +113,7 @@ This is not the case when shooting RAW photos where these settings can vary fram
 
 The extra room means it is possible to exceed the _advertised_ maximum bit rate safely, without troubling the _absolute_ maximum bit rate of the camera, resulting in lost information (frames, sound, telemetry, etc.). It allows for an additional buffer when larger frames are being shot.
 
-During stitching and encoding on your PC, [GoPro Fusion Studio allows you to choose a number of codecs](https://community.gopro.com/t5/en/How-to-Render-Videos-in-the-GoPro-Fusion-Studio-App/ta-p/388291).
+During stitching and encoding on your PC, [GoPro Fusion Studio allows you to choose a number of final codecs](https://community.gopro.com/t5/en/How-to-Render-Videos-in-the-GoPro-Fusion-Studio-App/ta-p/388291).
 
 <img class="img-fluid" src="/assets/images/blog/2020-06-12/gopro-fusion-video-codecs.png" alt="GoPro Fusion video codecs" title="GoPro Fusion video codecs" />
 
@@ -128,11 +130,11 @@ Even if your video is shot in 5.2K if you choose `.mp4` using the `H.264` codec,
 
 **When shooting**
 
-First of all, make sure any storage devices aren't causing a data bottleneck. It’s especially important that you have a SD card or external hard drive that’s fast enough to write the data generated by the camera (higher than the maximum bit rate).
+First of all, make sure any storage devices aren't causing a data bottleneck. It’s especially important that you have a SD card or external hard drive that’s fast enough to write the data generated by the camera (offering speeds higher than the maximum bit rate).
 
-[The SanDisk Extreme microSDXC UHS-I Memory Cards](https://www.amazon.co.uk/SanDisk-Extreme-microSDXC-Adapter-Performance/dp/B07FCMBLV6/) used in the [GoPro Fusion cameras on our Trek Packs](/trek-pack) write data up to 90Mbps.
+For example, [the SanDisk Extreme microSDXC UHS-I Memory Cards](https://www.amazon.co.uk/SanDisk-Extreme-microSDXC-Adapter-Performance/dp/B07FCMBLV6/) used in the [GoPro Fusion cameras on our Trek Packs](/trek-pack) write data up to 90Mbps.
 
-You might also be able to reduce the frames per second recorded by the camera.
+You could also reduce the frames per second recorded by the camera, if this feature is offered.
 
 At a high-level; more FPS = a smoother visual experience.
 
@@ -144,9 +146,9 @@ But for 360 virtual tours, such high frame rates are excessive.
 
 > If supported by your camera, consider setting the frame rate to 5 frames per second at driving or biking speeds and 1 frame per second for walking speeds.
 
-Therefore, one easy way to reduce data transfer is to lower the number of frames being captured, if possible. Unfortunately the GoPro Fusion offers two frame rate settings for videos, 30 or 60 FPS.
+Unfortunately the GoPro Fusion offers two fixed frame rate settings for videos, 30 or 60 FPS.
 
-You could reduce the compression on the camera, using settings like Protune on the Fusion. But be careful, [photos and videos are subject to various stylistic criteria, including](https://support.google.com/contributionpolicy/answer/7411351):
+Finally, you could reduce the compression on the camera, using settings like Protune on the Fusion. But be careful, [photos and videos are subject to various stylistic criteria, including](https://support.google.com/contributionpolicy/answer/7411351):
 
 > Stylistic adjustments (such as applied filters) are acceptable, provided that these stylistic changes are minimal and are not appended elements such as borders, text, collaged images, etc.
 
@@ -160,14 +162,14 @@ Beware of stitching software and video codecs that might further reduce the imag
 
 Beware of video hosting sites that apply their own additional compression.
 
-Ever noticed how YouTube uploads look worse than on your computer? YouTube, like many other streaming sites use specialised algorithms to compress videos to further reduce their file size (on top of any compressions you've already applied during encoding).
+Ever noticed how YouTube uploads look worse than the originals on your computer? YouTube, like many other streaming sites use specialised algorithms to compress videos to further reduce their file size (on top of any compressions you've already applied during encoding).
 
-While the compression algorithms YouTube use are very good, they're certainly not perfect. There is a trade off between image quality and file size to ensure the videos load as quickly as possible for viewers.S
+While the compression algorithms YouTube use are very good, they're certainly not perfect. There is a trade off between image quality and file size to ensure the videos load as quickly as possible for viewers.
 
-## Why we prefer timelapse for tour capture
+## Why we prefer timelapse for outdoor tour capture
 
 Alternatively, you can use timelapse imagery.
 
-You'll get higher image quality, it will be easier to process them, the real downside is that you won't have as much flexibility in the number of photos to choose from before upload.
+You'll get higher image quality, and it will be easier to process them. The downside is that you won't have as much flexibility in the number of photos to choose from before upload.
 
-[We currently recommend timelapse using the Trek Pack (GoPro Fusion) for tour capture](/trek-pack).
+[We currently recommend timelapse mode on the Trek Pack (GoPro Fusion) for tour capture](/trek-pack).
