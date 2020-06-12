@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2020-06-12/bit-rate-and-file-size-meta.jpg
 featured_image: /assets/images/blog/2020-06-12/bit-rate-and-file-size.jpg
 layout: post
-published: false
+published: true
 ---
 
 **"It said 5.2K (15.7 megapixels) on the box."**

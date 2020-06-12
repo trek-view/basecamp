@@ -59,6 +59,9 @@ Control points are points are regions of two camera photos that refer to the sam
 
 By including n overlap you can use these control points in the overlapped parts of the image and create a smooth transition (stitch) between photos. The better the overlap, the smoother the join. You might have seen 'stitching lines' where control points haven't worked as intended.
 
+
+“Stitch lines” in 360 are the areas of overlap between the lenses that have been stitched together, and appear as disconnected lines that are clearly meant to be continuous. The areas on either side of stitch lines might look a bit discolored in contrast to one another, because the cameras were automatically set to different light settings. In the picture below, the subject was standing directly in the overlap between two lenses, and his face got caught in a stitch line.
+
 ## Introducing Hugin
 
 And whilst many stitching software is propritry, many others have worked on open-source tools that are very good.

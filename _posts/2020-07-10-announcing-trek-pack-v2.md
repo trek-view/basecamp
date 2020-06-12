@@ -34,8 +34,7 @@ Trekkers in the field complained about the Fusion Studio software making their c
 
 ## The Trek Pack V2
 
-<img class="img-fluid" src="/assets/images/blog/2020-05-22/
-" alt="" title="" />
+<img class="img-fluid" src="/assets/images/blog/2020-05-22/" alt="" title="" />
 
 As such, I'm really excited to announce the next iteration of the Trek Pack today.
 
@@ -62,7 +61,7 @@ The MAX battery is a slightly different shape to the old Fusion ones meaning we'
 <img class="img-fluid" src="/assets/images/blog/2020-05-22/
 " alt="" title="" />
 
-**1. Buy one****
+**1. Buy one**
 
 We are currently accepting pre-orders for our the Trek Pack v2 (v1 has sold out
 

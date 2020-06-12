@@ -811,7 +811,7 @@ For big brands like GoPro, developing their own format is not such a big issue -
 
 It's very unlikely 3rd-party developers would put in a similar effort for smaller brands who might not be in existence in a years time.
 
-As such, the InstaPro2 uses the CAMM standard.
+As such, the Insta Pro2 uses the CAMM standard.
 
 ### Insta360 Pro2 (CAMM)
 
