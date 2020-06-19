@@ -1,7 +1,7 @@
 ---
 date: 2020-06-19
 title: "Adding a Custom Nadir to a 360 Photo or Video"
-description: "Branding your public images can be a great way to promote your other work. A custom nadir is perfect for this."
+description: "Branding your public images can be a great way to promote your 360 work. A custom nadir is perfect for this."
 categories: developers
 tags: [nadir]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Some shameless self-promotion**
+**Time for some shameless self-promotion.**
 
 Uploading your 360 imagery to Google Street View can be a great promotional tool for your business or project.
 
@@ -25,13 +25,13 @@ When clicking the "[View on Google Maps](https://www.google.com/maps/@37.7458457
 
 <img class="img-fluid" src="/assets/images/blog/2020-06-19/federico-google-maps-headshot.png" alt="Federico Google Maps headshot" title="Federico Google Maps headshot" />
 
-Sometimes you want something more striking. Or if you're not using Google, something that stands out.
+Sometimes you want something more striking. Or if you're not using Google, something that stands out in place of your name.
 
-A custom nadir is perfect for achieving this. What is a nadir? [This post explains more](2020-03-13-what-is-a-nadir).
+A custom nadir is perfect for achieving this. What is a nadir? [This post explains more](/blog/2020/what-is-a-nadir).
 
 Google allows custom nadirs in 360 imagery, [as long as they follow their branding guidelines](https://www.google.co.uk/streetview/sales/).
 
-Some manufacturer or propriety apps will allow you to do this in their own tools.
+Some manufacturer or propriety apps will allow you to do this in their own tools too.
 
 This post explains how the processing of adding a nadir works, and how to do it yourself for free. 
 
@@ -39,23 +39,25 @@ For those that have lots of photos to tag, we've built a free piece of software 
 
 ## Equirectangular and Cartesian projection 
 
-The worlds most famous equirectangular image -- the world map.
+The worlds most famous equirectangular projection -- the world map.
 
-But have you ever thought about how it was produced. If you've every looked at a flat equirectangular photo you will have seen how distorted it is at the top and bottom of the image, but less around the centre. Here's why:
+<img class="img-fluid" src="/assets/images/blog/2020-06-19/Equirectangular_projection_SW.jpg" alt="World equirectangular projection" title="World equirectangular projection" />
+
+As a child, I remember looking at Antarctica on a map and thinking it was huge, until a teacher explained it was 'stretched' as an equirectangular projection.
+
+If you've every looked at a equirectangular projected 360 photo you will have clearly seen how distorted it is at the top and bottom of the image, but less around the center. Here's why...
 
 <img class="img-fluid" src="/assets/images/blog/2020-06-19/equirectangular-image.jpg" alt="Equirectangular graph" title="Equirectangular graph" />
 
-Cartesian images are taken by regular single sensor cameras. They're less hard to get your head _around_. They produce 'flat' images on a 2D Cartesian plane (x,y). Here's a 3D Cartesian plane with (x,y,z axis).
+Cartesian images are taken by camera sensor (including all of the sensors in your 360 camera). They're less hard to get your head _around_. They produce 'flat' images on a 2D Cartesian plane (x,y). Here's a 3D Cartesian plane with (x,y,z axis).
 
 <img class="img-fluid" src="/assets/images/blog/2020-06-19/cartesian_coordinate_axes_3d.png" alt="Cartesian 3D graph" title="Cartesian 3D graph" />
 
-Your logo, for a proposed nadir will start out as a Cartesian image.
+Your logo, is a Cartesian image / projection.
 
-Overlaying the nadir around the middle of the photo won't cause too many issues -- there is less distortion.
+Simply overlaying this as a nadir or zenith (bottom or top) on a 360 equirectangular projection will cause distortion issues.
 
-Try adding a Cartesian image to the nadir or zenith (bottom or top) of the image and when rendered in a 360 viewer, will cause distortion of the overlaid nadir.
-
-To solve this problem, you first need to convert the proposed nadir image into an equirectangular projection and adjust to match the width of the original panoramic image for it to display as intended.
+To solve this problem, you first need to convert the proposed nadir image into an equirectangular projection and adjust to match the width of the original panoramic image for it to display without distortion.
 
 ## How to create your own nadir
 
@@ -63,7 +65,7 @@ Now you understand the problems associated with overlaying Cartesian projections
 
 ### Step 0: Download GIMP 2.10 (other programs are available)
 
-You can make little planets in most graphical programs, including Adobe Photoshop.
+You can overlay nadirs on 360 photos in most graphical programs, including Adobe Photoshop.
 
 In this example I'll us GIMP because it's completely free and easy to use.
 
@@ -83,9 +85,9 @@ I'll be using this one...
 
 ### Step 2: Turn the nadir image into an equirectangular projection
 
-Rotate the image 180 degrees (Image > Transform > Rotate 180).
-
 <img class="img-fluid" src="/assets/images/blog/2020-06-19/gimp-nadir-equirectangular-conversion.jpg" alt="GIMP create equirectangular nadir polar coordinates" title="GIMP create equirectangular nadir polar coordinates" />
+
+Rotate the image 180 degrees (Image > Transform > Rotate 180).
 
 And create the equirectangular projection (Filters > Distorts > Polar Coordinates...).
 
@@ -107,7 +109,7 @@ Copy the square equirectangular nadir you've just generated in GIMP and paste on
 
 Now we can adjust the width of the nadir to the width of the photo so that it appears as a circle again when loaded in a 360 viewer.
 
-First find the size of the photo (Image > Image Properties).
+First find the size of the 360 photo (Image > Image Properties).
 
 The photo I'm using is 5760 x 2880.
 
@@ -117,7 +119,11 @@ Now we can scale the nadir. First make sure you are working on the correct layer
 
 Then scale the image so that the width of the layer size matches the width of the equirectangular photo. Make sure to 'unlock' the aspect ratio, otherwise the height of the nadir will be increased by the same ratio.
 
-You can also adjust the height of the nadir. The greater the height of the nadir overlay, the more area at the bottom of the image will be covered. As a general rule a nadir height of between 5% to 15% of the photo image height looks best.
+You can also adjust the height of the nadir. The greater the height of the nadir overlay, the more area at the bottom of the image will be covered (the larger the circle, in the example, will be). As a general rule a nadir height of between 5% to 15% of the photo image height looks best.
+
+Note, [if uploading to Google Street View](https://support.google.com/contributionpolicy/answer/7411351?hl=en-GB):
+
+> For 360° photos, superimposed content must be limited to either the zenith or nadir (top or bottom 25% of the equirectangular image), but can't be present in both.
 
 Once adjusted, click scale. The overlaid nadir should now be as wide as the photo.
 
@@ -132,9 +138,9 @@ Now set it so that your nadir layer is aligned to your photo layer (target layer
 
 Save the image (Export > Save).
 
-Now open up the image in your favourite 360 viewer to check it's what you're expecting. Here's what mine looks like:
+Now open up the image in your favourite 360 viewer to check if it's the result you're expecting. Here's what mine looks like:
 
-<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2020-06-19/MULTISHOT_9698_000003-nadir.jpgg&amp;autoLoad=true"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2020-06-19/MULTISHOT_9698_000003-nadir.jpg&amp;autoLoad=true"></iframe>
 
 ## Nadir Patcher (automated processing)
 
@@ -142,7 +148,7 @@ Using GIMP is perfect for one or two photos. For a tour of hundreds of 360's, yo
 
 That's where Nadir Patcher comes in.
 
-It's a command line Python script that 1) takes logo file, 2) converts to equirectangular image, 3) transforms to desired size, and 4) overlays on-top of an equirectangular photo or video as a nadir.
+It's a command line Python script that 1) takes logo file, 2) converts to equirectangular image, 3) transforms to desired size, and 4) overlays on-top of one or more equirectangular photos or videos as a nadir.
 
 It'll brand 100's of 360 photos with custom nadirs in under a minute.
 
