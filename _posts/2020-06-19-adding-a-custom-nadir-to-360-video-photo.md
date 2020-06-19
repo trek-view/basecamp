@@ -3,12 +3,12 @@ date: 2020-06-19
 title: "Adding a Custom Nadir to a 360 Photo or Video"
 description: "Branding your public images can be a great way to promote your other work. A custom nadir is perfect for this."
 categories: developers
-tags: []
+tags: [nadir]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-06-19/gimp-create-nadir-meta.jpg
 featured_image: /assets/images/blog/2020-06-19/gimp-create-nadir-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Some shameless self-promotion**
@@ -53,7 +53,7 @@ Your logo, for a proposed nadir will start out as a Cartesian image.
 
 Overlaying the nadir around the middle of the photo won't cause too many issues -- there is less distortion.
 
-Try adding a Cartesian image to the nadir or zenith (bottom or top) of the image and when rendered in a 360 viewer, will cause distortion of the overlayed nadir.
+Try adding a Cartesian image to the nadir or zenith (bottom or top) of the image and when rendered in a 360 viewer, will cause distortion of the overlaid nadir.
 
 To solve this problem, you first need to convert the proposed nadir image into an equirectangular projection and adjust to match the width of the original panoramic image for it to display as intended.
 
@@ -119,7 +119,7 @@ Then scale the image so that the width of the layer size matches the width of th
 
 You can also adjust the height of the nadir. The greater the height of the nadir overlay, the more area at the bottom of the image will be covered. As a general rule a nadir height of between 5% to 15% of the photo image height looks best.
 
-Once adjusted, click scale. The overlayed nadir should now be as wide as the photo.
+Once adjusted, click scale. The overlaid nadir should now be as wide as the photo.
 
 All that's left to do is to snap the nadir to the bottom and left of the photo (Tools > Transform Tools Align).
 

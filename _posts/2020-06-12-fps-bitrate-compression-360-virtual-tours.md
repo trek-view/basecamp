@@ -1,6 +1,6 @@
 ---
 date: 2020-06-12
-title: "FPS, Bit rate, and 360 Video Quality"
+title: "FPS, Bit rate, Compression and 360 Video Quality"
 description: "The image quality of video frames can vary significantly between two cameras offering the same resolution, but why?"
 categories: guides
 tags: [cameras]

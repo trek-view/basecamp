@@ -71,6 +71,8 @@ As always, we needed a cheap and easy solution.
 
 After some experimentation we used a swim buoy tied to the diver with a waterproof GPS receiver watch tied to it. We simply chose a cheap [swim buoy](https://www.amazon.co.uk/gp/product/B07DDCMYYZ/) and [waterproof GPS receiver with a good chipset](https://www.amazon.com/Columbus-P-1-Professional-Data-Logger/dp/B07MD6TWW9).
 
+If your GPS reciever is not waterproof, you can also place it in the dry buoy ([GPS will work through plastic](https://blog.mapspeople.com/gps-the-complete-guide)).
+
 On the boat we turn on the GoPro Fusion, setting it to 5 second timelapse mode without GPS.
 
 When the diver gets in the water, we turn on the watch to capture location every second.

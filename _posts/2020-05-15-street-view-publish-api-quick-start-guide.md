@@ -291,7 +291,7 @@ $ curl --request GET \
 
 You might have noticed my emphasis on the word _public_ API endpoints earlier.
 
-The Street Publish API supports the [Camera Motion Metadata Spec (CAMM)](https://developers.google.com/streetview/publish/camm-spec) standard.
+The Street Publish API also supports video uploads if they use the [Camera Motion Metadata Spec (CAMM)](https://developers.google.com/streetview/publish/camm-spec) standard.
 
 For more information about the CAMM standard, [read this post introducing the concept of video metadata](/blog/2020/metadata-exif-xmp-360-video-files).
 
