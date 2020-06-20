@@ -41,7 +41,7 @@ To solve these problems, a clear barrier between the water and camera is require
 
 [Introducing the 360 Bubble](https://360bubble.co/).
 
-<img class="img-fluid" src="/assets/images/blog/2020-01-10/gopro-fusion-360-bubble-pole.jpg" alt="Trek View GoPro Fusion Bubble mount" title="Trek View GoPro Fusion Bubble mount" />
+<img class="img-fluid" src="/assets/images/blog/2020-01-10/gopro-fusion-360-bubble.jpg" alt="Trek View GoPro Fusion Bubble mount" title="Trek View GoPro Fusion Bubble mount" />
 
 It's suitable for GoPro Fusion, GoPro Max, Ricoh Theta S/V, Samsung Gear 360/Gear 360 2017, Garmin Virb, Insta360 ONE, Nikon Keymission 360 and many other consumer 360 cameras and rated for use to a depth of 10 meters.
 
@@ -67,11 +67,11 @@ As always, we needed a cheap and easy solution.
 
 <img class="img-fluid" src="/assets/images/blog/2020-01-10/trek-view-swim-buoy-gps-reciever-1.jpg" alt="Trek View GPS Swim Buoy" title="Trek View GPS Swim Buoy" />
 
-<img class="img-fluid" src="/assets/images/blog/2020-01-10/trek-view-swim-buoy-gps-reciever-2.jpg" alt="Trek View GPS Swim Buoy" title="Trek View GPS Swim Buoy" />
+After some experimentation we used a swim buoy with a GPS receiver watch inside it tied to the diver using a dive rope (we were diving in an open area).
 
-After some experimentation we used a swim buoy tied to the diver with a waterproof GPS receiver watch tied to it. We simply chose a cheap [swim buoy](https://www.amazon.co.uk/gp/product/B07DDCMYYZ/) and [waterproof GPS receiver with a good chipset](https://www.amazon.com/Columbus-P-1-Professional-Data-Logger/dp/B07MD6TWW9).
+We chose a cheap [swim buoy](https://www.amazon.co.uk/gp/product/B07DDCMYYZ/) and [GPS receiver with a good chipset](https://www.amazon.com/Columbus-P-1-Professional-Data-Logger/dp/B07MD6TWW9). You could also use a smartphone to track the surface GPS log (we were a little worried about getting ours wet!).
 
-If your GPS reciever is not waterproof, you can also place it in the dry buoy ([GPS will work through plastic](https://blog.mapspeople.com/gps-the-complete-guide)).
+Don't worry about placing the GPS tracker in the dry buoy -- [GPS will work through plastic](https://blog.mapspeople.com/gps-the-complete-guide).
 
 On the boat we turn on the GoPro Fusion, setting it to 5 second timelapse mode without GPS.
 
