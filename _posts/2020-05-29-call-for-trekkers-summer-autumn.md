@@ -52,3 +52,5 @@ Got another project in mind? That's OK too. I still encourage you to [submit an 
 If you need a Trek Pack more urgently and are lucky enough to be able to afford to purchase one please do consider [buying one from our store](/store).
 
 [You can also build your own by following our DIY guides](/trek-pack).
+
+_Update June 2020: [All camera loans will now use a Trek Pack v2](/blog/2020/announcing-trek-pack-v2)._
