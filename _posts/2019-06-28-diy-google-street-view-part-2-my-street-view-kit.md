@@ -13,8 +13,6 @@ published: true
 
 **Here's the kit I purchased to build the first Trek View Trek Pack...**
 
-_Update December 2019: [You can now access the Trek Pack Getting Started Guide online with all the latest information you need to create, process and publish your own Street View Tours](/trek-pack)._
-
 <img class="img-fluid" src="/assets/images/blog/2019-06-28/trek-view-pack-version-1-sm.jpg" alt="Trek View Trek Pack version 1" title="Trek View Trek Pack version 1" />
 
 ## The requirements
@@ -100,6 +98,10 @@ To help promote Trek View (and let passers by understand what the camera was for
 
 **Total Trek Pack cost: £245**
 
-## Update (2019-07-12)
+## Part 3
 
 Read Part 3 now: [Preparing to Shoot 360-Degree Tours for Google Street View](/blog/2019/diy-google-street-view-part-3-preparing-to-shoot)
+
+_Update December 2019: [You can now access the Trek Pack Getting Started Guide online with all the latest information you need to create, process and publish your own Street View Tours](/trek-pack/version-one)._
+
+_Update June 2020: [A newer version of the Trek Pack (v2) exists, that superseeds the pack (v1) described in this post](/blog/2020/announcing-trek-pack-v2)._

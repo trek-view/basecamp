@@ -13,8 +13,6 @@ published: true
 
 **The (many) things I've learned stitching 360-degree photos using GoPro Fusion Studio.**
 
-_Update December 2019: [You can now access the Trek Pack Getting Started Guide online with all the latest information you need to create, process and publish your own Street View Tours](/trek-pack)._
-
 <img class="img-fluid" src="/assets/images/blog/2019-07-26/gopro-fusion-studio-edit.jpg" alt="GoPro Fusion Studio settings" title="GoPro Fusion Studio settings" />
 
 ## GoPro Fusion Studio
@@ -102,6 +100,10 @@ _Note: Stitching video captures to video files is noticeably quicker and results
 
 In any case, time to make a cup of tea...
 
-## Update (2019-08-09)
+## Part 5
 
 Read Part 5 now: [Publish 360-Degree Photos to Street View](/blog/2019/diy-google-street-view-part-5-uploading-photos-using-your-computer)
+
+_Update December 2019: [You can now access the Trek Pack Getting Started Guide online with all the latest information you need to create, process and publish your own Street View Tours](/trek-pack/version-one)._
+
+_Update June 2020: [A newer version of the Trek Pack (v2) exists, that superseeds the pack (v1) described in this post](/blog/2020/announcing-trek-pack-v2)._

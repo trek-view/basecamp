@@ -13,8 +13,6 @@ published: true
 
 **Share your 360-degree tours with the world.**
 
-_Update December 2019: [You can now access the Trek Pack Getting Started Guide online with all the latest information you need to create, process and publish your own Street View Tours](/trek-pack)._
-
 ## Existing Street View Upload options
 
 Taking one or two 360-degree photos on your phone and uploading to Google Street View is simple. Google have built Street View apps for both [Android](https://play.google.com/store/apps/details?id=com.google.android.street) and [iOS](https://apps.apple.com/gb/app/google-street-view/id904418768) devices.
@@ -72,6 +70,10 @@ We'll happily promote them to the Trek View community.
 3. [Preparing to Shoot 360-Degree Tours for Google Street View](/blog/2019/diy-google-street-view-part-3-preparing-to-shoot)
 4. [Stitching 360-Degree Photos Using GoPro Fusion Studio](/blog/2019/diy-google-street-view-part-4-processing-photos/)
 
-## Update (2019-08-23)
+## Bonus: Part 6
 
 Read Part 6 now: [Increasing the Battery Life of Your GoPro Fusion](/blog/2019/diy-google-street-view-part-6-increasing-gopro-fusion-battery-life)
+
+_Update December 2019: [You can now access the Trek Pack Getting Started Guide online with all the latest information you need to create, process and publish your own Street View Tours](/trek-pack/version-one)._
+
+_Update June 2020: [A newer version of the Trek Pack (v2) exists, that superseeds the pack (v1) described in this post](/blog/2020/announcing-trek-pack-v2)._

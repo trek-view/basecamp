@@ -13,8 +13,6 @@ published: true
 
 **Tips to help setup your kit and capture 360-degree tours.**
 
-_Update December 2019: [You can now access the Trek Pack Getting Started Guide online with all the latest information you need to create, process and publish your own Street View Tours](/trek-pack)._
-
 <img class="img-fluid" src="/assets/images/blog/2019-07-12/trek-view-pack-version-1-setup-sm.jpg" alt="Trek View Trek Pack version 1 setup" title="Trek View Trek Pack version 1 setup" />
 
 ## Deciding how you're going to shoot
@@ -125,6 +123,10 @@ Make sure you comply to local laws around public photography too.
 
 _Disclaimer: I'm not a legal professional._
 
-## Update (2019-07-26)
+## Part 4
 
 Read Part 4 now: [Stitching 360-Degree Photos Using GoPro Fusion Studio](/blog/2019/diy-google-street-view-part-4-processing-photos/)
+
+_Update December 2019: [You can now access the Trek Pack Getting Started Guide online with all the latest information you need to create, process and publish your own Street View Tours](/trek-pack/version-one)._
+
+_Update June 2020: [A newer version of the Trek Pack (v2) exists, that superseeds the pack (v1) described in this post](/blog/2020/announcing-trek-pack-v2)._

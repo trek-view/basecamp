@@ -13,8 +13,6 @@ published: true
 
 **Some Trek Pack improvements for longer tours.**
 
-_Update December 2019: [You can now access the Trek Pack Getting Started Guide online with all the latest information you need to create, process and publish your own Street View Tours](/trek-pack)._
-
 <img class="img-fluid" src="/assets/images/blog/2019-08-23/trek-pack-external-power.jpg" alt="Trek Pack with external power" title="Trek Pack with external power" />
 
 I received lots of comments after posts [1](/blog/2019/diy-google-street-view-part-1-how-trek-view-started), [2](/blog/2019/diy-google-street-view-part-2-my-street-view-kit), [3](/blog/2019/diy-google-street-view-part-3-preparing-to-shoot), [4](/blog/2019/diy-google-street-view-part-4-processing-photos) and [5](/blog/2019/diy-google-street-view-part-5-uploading-photos-using-your-computer) detailing how to build a DIY Trek Pack.
@@ -84,3 +82,7 @@ In such cases, I ditch the Trek Pack in favour of a larger rucksack. My 40L Berg
 Granted, these straps are not as good at holding the monopod stable -- they're not the dedicated elastic straps for a monopod found on the GoPro Seeker pack. A few pieces of fastening tape or zip-ties (cut off the protruding ends to keep them out of the photos) and padding in the pocket (usually a pair of socks) solves this problem on more adventurous hikes where the monopod is liable to move around.
 
 I'm sure this solution will work with most hiking packs on the market with side pouches too.
+
+_Update December 2019: [You can now access the Trek Pack Getting Started Guide online with all the latest information you need to create, process and publish your own Street View Tours](/trek-pack/version-one)._
+
+_Update June 2020: [A newer version of the Trek Pack (v2) exists, that superseeds the pack (v1) described in this post](/blog/2020/announcing-trek-pack-v2)._
