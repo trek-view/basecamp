@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2020-06-26/trek-pack-v2-meta.jpg
 featured_image: /assets/images/blog/2020-06-26/trek-pack-v2-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **We're ready for summer. So is our kit.**

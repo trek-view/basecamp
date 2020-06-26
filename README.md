@@ -36,4 +36,4 @@ Before merging any changes to master, check for 404's:
 
 ## License
 
-The code of this site is licensed under a [MIT License](https://github.com/trek-view/basecamp/blob/master/LICENSE.txt).
+The code of this site is licensed under a [MIT License](/LICENSE.txt).
