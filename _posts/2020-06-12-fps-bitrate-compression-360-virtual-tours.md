@@ -2,7 +2,7 @@
 date: 2020-06-12
 title: "FPS, Bit rate, Compression and 360 Video Quality"
 description: "The image quality of video frames can vary significantly between two cameras offering the same resolution, but why?"
-categories: guides
+categories: developers
 tags: [cameras]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-06-12/bit-rate-and-file-size-meta.jpg

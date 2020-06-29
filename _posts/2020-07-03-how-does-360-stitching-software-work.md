@@ -2,7 +2,7 @@
 date: 2020-07-03
 title: "How Does 360 Stitching Software Work?"
 description: "From two or more sensors to one photo."
-categories: guides
+categories: developers
 tags: []
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-07-03/hugin-screenshot-meta.jpg
