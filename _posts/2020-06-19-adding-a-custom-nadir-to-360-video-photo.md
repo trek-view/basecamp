@@ -75,7 +75,9 @@ In this example I'll us GIMP because it's completely free and easy to use.
 
 Aim to create a logo with a large resolution. For 4K images 500 pixels x 500 pixels will suffice.
 
-If you want to create a circular image in the nadir, make sure to use a transparent background and to save as a `.png` image.
+For simplicity, the process below will always result in a circular nadir, whether you use a circular logo or square logo to start with.
+
+If you use as a circular image for the nadir, make sure to use a transparent background and to save as a `.png` image.
 
 [Here are some example nadir logos](https://github.com/trek-view/nadir-patcher/tree/master/nadir-library).
 

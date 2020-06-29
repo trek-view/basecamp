@@ -64,7 +64,7 @@ That spacial recognition is what helps Google patch all of its images together a
 
 LIDAR scanners from Velodyne were added to the latest cameras (replacing the laser profilers).
 
-These are the ubiquitous [Velodyne VLP-16 "Puck" sensors](http://velodynelidar.com/products.html), allowing the to car "see" in 3D in 360 degrees. These $8,000 Lidar sensors are most commonly used in autonomous car prototypes
+These are the ubiquitous [Velodyne VLP-16 "Puck" sensors](http://velodynelidar.com/products.html), allowing the to car "see" in 3D in 360 degrees. These $8,000 Lidar sensors are most commonly used in autonomous car prototypes.
 
 Mounted at 45° to capture 3D depth information, they are also used for additional positional information. Most of the LIDAR data is used to create [Google Earth's 3D imagery layers](https://support.google.com/earth/answer/148131?hl=en).
 

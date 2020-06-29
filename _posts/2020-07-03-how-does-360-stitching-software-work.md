@@ -6,7 +6,7 @@ categories: developers
 tags: []
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-07-03/hugin-screenshot-meta.jpg
-featured_image: /assets/images/blog/2020-07-03/hugin-screenshot-sm.jp
+featured_image: /assets/images/blog/2020-07-03/hugin-screenshot-sm.jpg
 layout: post
 published: false
 ---
