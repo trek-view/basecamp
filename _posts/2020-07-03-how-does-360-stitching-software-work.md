@@ -13,15 +13,17 @@ published: true
 
 **From sensors to 360 photo.**
 
-Most 360 cameras have stitching software to stitch the photos taken by your 360 camera.
+Most 360 cameras have stitching software to turn the photos it has taken into panoramas.
 
-This is either on the camera, or done using software on your computer.
+This is either done on the camera, or done using software on your computer.
 
-For example, to stitch photos from GoPro Fusion cameras on our [Trek Pack](/trek-pack) we use a piece of software called [GoPro Fusion Studio](https://gopro.com/en/us/shop/softwareandapp/gopro-fusion-studio-app/fusion-studio.html) to stitch photos. On the GoPro MAX this stitching is partly done on the camera and the [GoPro MAX Exporter software](https://community.gopro.com/t5/en/GoPro-MAX-Exporter/ta-p/413311).
+For example, to stitch photos from GoPro Fusion cameras on our [Trek Pack v1](/trek-pack) we use a piece of software called [GoPro Fusion Studio](https://gopro.com/en/us/shop/softwareandapp/gopro-fusion-studio-app/fusion-studio.html).
+
+On the GoPro MAX cameras we use for the [Trek Pack v2](/trek-pack) this stitching is done on the camera for photos and using the [GoPro MAX Exporter software for videos](https://community.gopro.com/t5/en/GoPro-MAX-Exporter/ta-p/413311).
 
 If you're anything like me, you will have pondered how this process actually works.
 
-[As I mentioned a few weeks ago](/blog/2020/what-is-global-shutter-rolling-shutter-360-cameras), software is often where many manufacturers are competing, and there asre some very good stitching tools that have been developed by manufacturer
+[As I mentioned a few weeks ago](/blog/2020/what-is-global-shutter-rolling-shutter-360-cameras), software is often where many manufacturers are competing, and there are some very good stitching tools that have been developed by manufacturers.
 
 Unfortunately all of this software is proprietary, but the general workflows to process images into 360 projections are all very similar.
 
@@ -37,36 +39,41 @@ The team at [Open Path View](https://openpathview.fr/) built their own 360 camer
 
 Source: [Bryan M Mathers](https://bryanmmathers.com/field-of-view/)
 
-The Hero 2 cameras offer a 170 degree horizontal field of view. I could not find vertical field of view, but would estimate it being somewhere between 50 - 70 degrees.
+The Hero 2 cameras offer a 170 degree horizontal field of view.
 
-Looking at horizontal field of view there is an overlap between the images (170 * 5 = 850 degrees). Simply put, cameras are catching part of the same image.
+I could not find data for the vertical field of view, but would estimate it being somewhere between 50 - 70 degrees.
+
+Looking at horizontal field of view there is an overlap between the images taken on the Open Path VIew camera (170 * 5 = 850 degrees). Simply put, the sensors (each GoPro) are catching parts of the same image (there is an overlap).
 
 The Open Path View cameras have roughly a 20% overlap.
 
-Generally you'll read for a very well stitched images for two consecutive photos to stitch easily and automatically, they must present an overlap surface of at least 15/20% - 30% being ideal. However, the higher overlap is really only required when shooting in enclosed places (especially indoor tour). For less detailed outdoor imagery, this is not such an issue,.
+Based on my experience, it seems for two consecutive photos to stitch easily and automatically, they must present an overlap surface of at least 15% with 20% - 30% being ideal.
+
+Generally speaking, a high overlap is really only required when shooting in enclosed places (especially indoor tours). For outdoor imagery, this is not such an issue.
 
 ### Control points
 
-So why is overlap important.
+Control points are the reason image overlap important.
 
 Imagine you have 6 photos taken by a 360 camera. 
 
-Creating a 360 projection is not as simple as putting the images side by side. Lighting, movement, timing and a whole host of other things make (even if the fields of view lined up perfectly).
+Creating a 360 projection is not as simple as putting the images side by side.
 
-Control points are points are regions of two camera photos that refer to the same point in space used to join images.
+Lighting, movement, timing and a whole host of other things (even if the fields of view lined up perfectly) make this a more complex task.
+
+Control points are points (or regions) of two images that refer to the same point in space and are used to stitch images.
 
 <img class="img-fluid" src="/assets/images/blog/2020-07-03/hugin-screenshot-02.jpg" alt="Hugin Screenshot Control Points Comparison" title="Hugin Screenshot Control Points Comparison" />
 
-By including n overlap you can use these control points in the overlapped parts of the image and create a smooth transition (stitch) between photos. The better the overlap, the smoother the join. You might have seen 'stitching lines' where control points haven't worked as intended.
+By including an overlap in each photo for each period of time, you can use these control points to create a smooth transition (stitch) between the photos. The better the overlap, the smoother the join.
 
-
-“Stitch lines” in 360 are the areas of overlap between the lenses that have been stitched together, and appear as disconnected lines that are clearly meant to be continuous. The areas on either side of stitch lines might look a bit discolored in contrast to one another, because the cameras were automatically set to different light settings. In the picture below, the subject was standing directly in the overlap between two lenses, and his face got caught in a stitch line.
+You might have seen "stitch lines" where control points haven't worked as intended. “Stitch lines” in 360 photos are the areas of overlap between the lenses that have been stitched together, and appear as disconnected lines that are clearly meant to be continuous. This is often caused by differences in lighting between images, or where a detailed subjects (for example a person) are very close to the camera.
 
 ## Introducing Hugin
 
-And whilst many stitching software is proprietary, many others have worked on open-source tools that are very good.
+Whilst a lot stitching software is proprietary, there are many open-source tools that are very good too (and in fact are used by many camera manufacturers in their own software).
 
-[Hugin can stitch any series of overlapping pictures into a complete immersive panorama](http://hugin.sourceforge.net/). The screenshot above is of Hugin.
+[Hugin can stitch a series of overlapping pictures into a complete immersive panorama](http://hugin.sourceforge.net/).
 
 Hugin is graphical front-end for [Helmut Dersch's Panorama Tools](https://www.panotools.org/dersch/) and [Andrew Mihal's Enblend and Enfuse](http://enblend.sourceforge.net/).
 
@@ -76,6 +83,6 @@ Enfuse is the part of Hugin that handles the stitching process.
 
 <img class="img-fluid" src="/assets/images/blog/2020-07-03/hugin-screenshot-03.jpg" alt="Hugin Screenshot Control Points Stitching" title="Hugin Screenshot Control Points Stitching" />
 
-What's more, Hugin is suitable for people who like tinkering both basic or advanced technical skills, with options from fully automated to manual stitching.
+What's more, Hugin is suitable for people who like tinkering with either basic or more advanced technical skills, with options from fully automated to manual stitching workflows.
 
-[Here's a great tutorial that will get you started quickly](http://hugin.sourceforge.net/tutorials/enfuse-360/en.shtml). All you need is a camera (and most of us all have one on our phone).
+[Here's a great tutorial that will get you started](http://hugin.sourceforge.net/tutorials/enfuse-360/en.shtml). All you need is a camera... and most of us all have one of those built into our phones.
