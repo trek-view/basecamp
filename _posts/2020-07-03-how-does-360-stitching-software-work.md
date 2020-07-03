@@ -1,17 +1,17 @@
 ---
 date: 2020-07-03
 title: "How Does 360 Stitching Software Work?"
-description: "From two or more sensors to one photo."
+description: "An ELI5 description of how a camera takes 2 or more photos to create a 360 image."
 categories: developers
 tags: []
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-07-03/hugin-screenshot-meta.jpg
 featured_image: /assets/images/blog/2020-07-03/hugin-screenshot-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
-**From sensors to photo.**
+**From sensors to 360 photo.**
 
 Most 360 cameras have stitching software to stitch the photos taken by your 360 camera.
 
@@ -64,7 +64,7 @@ By including n overlap you can use these control points in the overlapped parts 
 
 ## Introducing Hugin
 
-And whilst many stitching software is propritry, many others have worked on open-source tools that are very good.
+And whilst many stitching software is proprietary, many others have worked on open-source tools that are very good.
 
 [Hugin can stitch any series of overlapping pictures into a complete immersive panorama](http://hugin.sourceforge.net/). The screenshot above is of Hugin.
 
