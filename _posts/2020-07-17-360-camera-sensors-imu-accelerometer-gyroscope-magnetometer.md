@@ -1,7 +1,7 @@
 ---
 date: 2020-07-17
 title: "What is an IMU?"
-description: "Cameras are full of sensors (and not just image sensors)."
+description: "360 Cameras are full of sensors (and not just image sensors)."
 categories: developers
 tags: [imu, accelerometer, gyroscope, maggnetometer]
 author_staff_member: dgreenwood
@@ -13,7 +13,7 @@ published: true
 
 **IM Who?**
 
-What was once a device that simply exposed light to film, is now a device that [measures light hitting a sensor](/blogwhat-is-global-shutter-rolling-shutter-360-cameras) and a whole host of other things; location, direction of travel, temperature...
+What was once a device that simply exposed light to film, is now a device that [measures light hitting a sensor](/blog/what-is-global-shutter-rolling-shutter-360-cameras) and a whole host of other things; location, direction of travel, temperature...
 
 In the world of 360 tour photography, these sensors can be particularly important. For example, recording the pitch and roll of the camera at the time of capture can help improve stitching quality (e.g by making automatic horizon leveling possible).
 
@@ -33,7 +33,7 @@ The other three correspond to translational movement along those axes, which can
 
 Sometimes you can estimate this information using reported GPS information. For example, [calculating pitch, heading and speed between two photos](/blog/2020/what-direction-are-you-facing).
 
-As sensors become cheaper many cameras are also including sensors that can more accurately measure this telemetry. In order for a camera to be [Street View Ready, it requires six degrees of freedom (6-DOF) to be reported](https://developers.google.com/streetview/ready/specs-svready).
+As sensors become cheaper, many camera manufacturers are also including sensors that can more accurately measure this telemetry. In order for a camera to be [Street View Ready, it requires six degrees of freedom (6-DOF) to be reported](https://developers.google.com/streetview/ready/specs-svready).
 
 This information is usually reported by an Inertial Measurement Unit.
 
@@ -43,7 +43,7 @@ IMUs, or Inertial Measurement Units, can measure a variety of factors, including
 
 Technically, the term “IMU” refers to just the collection of sensors inside the component, but IMUs often include sensor fusion software which combines and processes data from multiple sensors to provide measures of orientation and heading. This combination of component and software is also referred to as an AHRS (Attitude Heading Reference System).
 
-An IMU can measure between a minimum of 2 DOF to a maximum of 6 DOF. This is dependent on the number and types of sensors used.
+An IMU can measure between a minimum of 2 DOF to a maximum of 6 DOF. This is dependent on the types of sensors used.
 
 Most modern IMUs are composed of a 3-axis accelerometer and a 3-axis gyroscope (often called a 6-axis IMU).
 
@@ -65,7 +65,7 @@ Accelerometers measure linear acceleration in a particular direction. An acceler
 
 Measures rotation and rotational rate.
 
-It's easy to confuse accelerometers and gyroscopes. The main difference between the two devices is simple: one can sense rotation, whereas the other cannot.
+It's easy to confuse accelerometers and gyroscopes. The main difference between the two devices is simple: one can sense rotation (gyroscope), whereas the other cannot (accelerometer).
 
 While accelerometers can measure linear acceleration, they can’t measure twisting or rotational movement. Gyroscopes, however, measure angular velocity about three axes: pitch (x axis), roll (y axis) and yaw (z axis).
 
@@ -87,7 +87,7 @@ As mentioned, the data is fused together to report telemetry.
 
 Once fused these values can be embedded into the metadata of an image or video.
 
-In the case of image files this is reported in either the EXIF or XMP fields for example; [XMP] `PoseHeadingDegrees`, [XMP] `PosePitchDegrees`...
+In the case of image files this is commonly reported in the XMP fields; [XMP] `PoseHeadingDegrees`, [XMP] `PosePitchDegrees`...
 
 [For videos this is written into the telemetry track](/blog/2020/metadata-exif-xmp-360-video-files). Typically telemetry formats for 360 cameras are reported in two standards, either [gpmf](https://github.com/trek-view/360-camera-metadata/blob/master/0-standards/gpmf.md) (GoPro) or [camm](https://github.com/trek-view/360-camera-metadata/blob/master/0-standards/camm.md) (most other cameras).
 
