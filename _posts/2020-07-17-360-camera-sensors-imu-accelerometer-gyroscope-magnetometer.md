@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2020-07-17/3dof-6dof-meta.jpg
 featured_image: /assets/images/blog/2020-07-17/3dof-6dof-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **IM Who?**
