@@ -3,18 +3,20 @@
     link: /blog
   - name: Trek Pack
     link: /trek-pack
+  - name: Map the Paths (virtual tours)
+    link: https://www.mapthepaths.com
   - name: Treehouse (school)
     link: https://treehouse.trekview.org
   - name: Campfire (forum)
     link: https://campfire.trekview.org
-  - name: Spotter a Trekker?
-    link: /subscribe
-  - name: Become a Trekker
-    link: /loan
 
 - links:
   - name: About
     link: /about
+  - name: Spotter a Trekker?
+    link: /subscribe
+  - name: Become a Trekker
+    link: /loan
   - name: Case Studies
     link: /case-studies
   - name: Newsroom
