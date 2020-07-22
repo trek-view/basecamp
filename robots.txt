@@ -3,5 +3,5 @@ layout: null
 sitemap: false
 ---
 User-agent: *
-Disallow:
+Disallow: /trek-pack/purchase/
 Sitemap: {{ site.url }}/sitemap.xml
