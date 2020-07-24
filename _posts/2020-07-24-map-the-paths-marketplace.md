@@ -11,23 +11,23 @@ layout: post
 published: true
 ---
 
-**Let's get exploring**
+**Let's get exploring.**
 
 Land, above sea level, [covers roughly 29 percent, of the earth's surface](https://www.usgs.gov/special-topic/water-science-school/science/how-much-water-there-earth?qt-science_center_objects=0#qt-science_center_objects).
 
 The surface area of the earth is 510.1 million km², with land covering 148.9 million km² of that.
 
-Estimates of how much we've explored, both above and below sea level, very wildly. In part this is because how "explored” is defined differs depending on who you ask.
+Estimates of how much we've explored, both above and below sea level, vary wildly. In part this is because how "explored” is defined differs depending on who you ask.
 
-How many have you explored?
+How much have you explored?
 
-Thanks to user submissions, OpenStreetMap often lists footpaths, bikepaths, waterways, and other places to explore on your doorstep you might never have discovered.
+Thanks to user submissions, [OpenStreetMap](https://www.openstreetmap.org/#map=14/21.0544/105.8194) is full of footpaths, bike paths, waterways, and other places to explore on your doorstep (in my case, many I never knew existed).
 
-Whilst these paths are mapped, very few have 360, street level imagery.
+Whilst these paths are mapped, very few have accompanying 360 degree street level imagery.
 
 ## Let's get mapping
 
-Today I'm really excited to officially announce the Map the Paths Marketplace.
+Today I'm really excited to officially announce the [Map the Paths Marketplace](https://www.mapthepaths.com/marketplace/).
 
 We built the Marketplace for two personas:
 
@@ -37,7 +37,7 @@ We built the Marketplace for two personas:
 
 To help photographers find work related to virtual tour and survey photography.
 
-Photographers, [create a business profile listing your skills and working area so that people looking for imagery capture can get in contact with you](https://www.mapthepaths.com/marketplace/hire/create).
+Photographers, [create a business profile detailing your skills and working area so that people looking for imagery capture can get in contact with you](https://www.mapthepaths.com/marketplace/hire/create).
 
 Alternatively, [browse and apply the growing number of projects being posted on the Marketplace](https://www.mapthepaths.com/marketplace/jobs/list).
 
@@ -47,18 +47,18 @@ Alternatively, [browse and apply the growing number of projects being posted on 
 
 To help organisations connect to the many talented photographers we have in our network.
 
-If you're thinking about virtual tour or survey photography, [create a job to showcase it to our database of skilled photographers](https://www.mapthepaths.com/marketplace/jobs/create).
+If you're thinking about virtual tour or survey photography, [create a job to showcase it to our database of skilled photographers and surveyors](https://www.mapthepaths.com/marketplace/jobs/create).
 
-Alternatively, [browse photographers in our database to find those near you and enquire about their services](https://www.mapthepaths.com/marketplace/hire/list).
+Alternatively, [browse photographers in our database to find those near you and inquire about their services](https://www.mapthepaths.com/marketplace/hire/list).
 
 ## What's next?
 
-Our overall aim of map the paths is to encourage and reward the collection of new street level 360 imagery.
+Our overall aim of Map the Paths is to encourage and reward the collection of new street level 360 imagery.
 
-We're currently working on a processing and upload tool for 360 outdoor tour imagery. Here's a sneak peak at two early mockups...
+We're currently working on a processing and upload tool for 360 outdoor tour imagery. Here's a sneak peak at two _very_ early mock-ups...
 
 <img class="img-fluid" src="/assets/images/blog/2020-07-24/map-the-paths-v2-mockup-1.jpg" alt="Map the Paths Create v2 Simple Mockup 1" title="Map the Paths Create v2 Simple Mockup 1" />
 
 <img class="img-fluid" src="/assets/images/blog/2020-07-24/map-the-paths-v2-mockup-2.jpg" alt="Map the Paths Create v2 Simple Mockup 2" title="Map the Paths Create v2 Simple Mockup 2" />
 
-Enter your email address into our mailing list form below and we'll keep you in the loop with the latest Map the Paths updates.
+Enter your email address into our mailing list form below to get an early preview of what we're working on.
