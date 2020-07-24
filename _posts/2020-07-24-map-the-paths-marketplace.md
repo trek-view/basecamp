@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2020-07-24/map-the-paths-marketplace-meta.jpg
 featured_image: /assets/images/blog/2020-07-24/map-the-paths-marketplace-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Let's get exploring**
@@ -49,7 +49,7 @@ To help organisations connect to the many talented photographers we have in our 
 
 If you're thinking about virtual tour or survey photography, [create a job to showcase it to our database of skilled photographers](https://www.mapthepaths.com/marketplace/jobs/create).
 
-Alternatively, [browse photographers in our database to find those near you and esquire about their services](https://www.mapthepaths.com/marketplace/hire/list).
+Alternatively, [browse photographers in our database to find those near you and enquire about their services](https://www.mapthepaths.com/marketplace/hire/list).
 
 ## What's next?
 
