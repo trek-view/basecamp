@@ -1,7 +1,7 @@
 ---
 date: 2019-05-31
 title: "Call for Trekkers: Summer / Autumn 2019"
-description: "The focus for the coming months is going to be virtual tours on the water."
+description: "The focus for the coming months is going to be 360 maps for water sports."
 categories: updates
 tags: [Camera Loans]
 author_staff_member: dgreenwood
@@ -25,13 +25,13 @@ As a Brit, now that I've made the obligatory reference to the weather, now I hav
 
 I'm looking for Trekkers to help capture new 360-degree tours over the summer and autumn.
 
-**The focus is virtual tours on the water.**
+**The focus is on 360 maps for water sports.**
 
 Sailing boats, kayaks, canoes, stand-up paddle boards...
 
 I can supply the waterproof 360-degree camera kit. You just need to supply the effort and mode of transport.
 
-If you have a great place on the water you want to capture a virtual tour of for others to enjoy, please [apply to the Trek View camera loan program today](/loan) -- I have Trek Packs ready for Trekkers.
+If you have a great place on the water you want to capture a 360 map of for others to enjoy, please [apply to the Trek View camera loan program today](/loan) -- I have Trek Packs ready for Trekkers.
 
 Not a water person? That's OK too. I still encourage you to [submit an application to loan one of our Trek Packs](/loan).
 

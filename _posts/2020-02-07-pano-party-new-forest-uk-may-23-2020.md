@@ -52,7 +52,7 @@ The name is different. The concept is the same.
 * **When**: Saturday 23rd May (start time 11AM)
 * **Where**: The New Forest (meeting at Ashurst (New Forest) Railway Station)
 
-On this first Pano Party we'll be following the same plan - to take 360-degree photos of as many paths as we can in the Ashurst area, to produce a virtual tour of the trails in this beautiful area which can be walked virtually in each direction.
+On this first Pano Party we'll be following the same plan - to take 360-degree photos of as many paths as we can in the Ashurst area, to produce a 360 map of the trails in this beautiful area which can be walked virtually in each direction.
 
 We chose the location with transport in mind. Regular trains run from London to Southampton, and then on to Ashurst (New Forest).
 

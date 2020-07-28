@@ -140,7 +140,7 @@ At a high-level; more FPS = a smoother visual experience.
 
 [Film and TV is shown at 24 FPS](https://en.wikipedia.org/wiki/Frame_rate). Super slow motion videos (like those from the [Slow Mo Guys](https://www.youtube.com/user/theslowmoguys)), are shot using cameras with a very high frame rate (this might seem counterintuitive at first).
 
-But for 360 virtual tours, such high frame rates are excessive.
+But for 360 mapping, such high frame rates are excessive.
 
 [For Street View tours Google recommends](https://support.google.com/maps/answer/7662671?hl=en-GB):
 

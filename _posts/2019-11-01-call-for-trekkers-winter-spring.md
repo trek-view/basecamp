@@ -1,7 +1,7 @@
 ---
 date: 2019-11-01
 title: "Call for Trekkers: Winter / Spring 2020"
-description: "The focus for the coming months is going to be winter sports."
+description: "The focus for the coming months is going to be 360 mapping for winter sports."
 categories: updates
 tags: [Camera Loans]
 author_staff_member: dgreenwood
@@ -25,7 +25,7 @@ Though there are plenty of opportunities for 360-degree photography over the col
 
 I'm looking for Trekkers to help capture new 360-degree tours over the winter and spring.
 
-**The focus is virtual tours of winter sports.**
+**The focus is on 360 maps for winter sports.**
 
 Ski resorts, mountain passes, glaciers...
 

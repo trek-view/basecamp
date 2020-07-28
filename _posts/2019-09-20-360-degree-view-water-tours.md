@@ -71,4 +71,4 @@ It might sound obvious, but speaking to [RNLI volunteers](https://rnli.org/suppo
 
 I can supply the waterproof 360-degree camera kit. You just need to supply the effort and mode of transport.
 
-If you have a great place on the water you want to capture a virtual tour of for others to enjoy, please [apply to the Trek View camera loan program today](/loan) -- I have Trek Packs ready for Trekkers.
+If you have a great place on the water you want to capture a 360 map of for others to enjoy, please [apply to the Trek View camera loan program today](/loan) -- I have Trek Packs ready for Trekkers.

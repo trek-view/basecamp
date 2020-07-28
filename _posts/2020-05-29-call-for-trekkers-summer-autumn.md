@@ -1,7 +1,7 @@
 ---
 date: 2020-05-29
 title: "Call for Trekkers: Summer / Autumn 2020"
-description: "The focus for the coming months is going to be virtual tours of local areas."
+description: "The focus for the coming months is going to be 360 mapping of local areas."
 categories: updates
 tags: [Camera Loans]
 author_staff_member: dgreenwood
@@ -37,7 +37,7 @@ Even in big cities, small squares of greenery can offer a huge respite from the 
 
 We're looking for Trekkers to help capture new 360-degree tours over the summer and autumn.
 
-**The focus is virtual tours of your local area.**
+**The focus is on 360 maps of your local area.**
 
 Parks, forests, fields, rooftop gardens...
 
