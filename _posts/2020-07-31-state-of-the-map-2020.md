@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2020-07-31/sotm2020-meta.jpg
 featured_image: /assets/images/blog/2020-07-31/sotm2020-meta-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Watch on YouTube now.**
