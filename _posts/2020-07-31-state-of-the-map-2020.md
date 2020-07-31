@@ -6,7 +6,7 @@ categories: guides
 tags: [OSM, OpenStreetMap]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-07-31/sotm2020-meta.jpg
-featured_image: /assets/images/blog/2020-07-31/sotm2020-meta-sm.jpg
+featured_image: /assets/images/blog/2020-07-31/sotm2020-sm.jpg
 layout: post
 published: true
 ---
@@ -17,7 +17,7 @@ published: true
 
 This years SOTM was a little different. Originally due to be held in Cape Town, South Africa, the conference was rescheduled to be held remotely for the first time ever due to COVID-19.
 
-There were some brilliant talks at this yeats conference, [now available to watch back on Youtube](https://www.youtube.com/watch?v=AeY6yU8uYPc&list=PLQNy8KsDknCoPMylvJhmF2z7qu1PQ47Nf).
+There were some brilliant talks at this years conference, [now available to watch back on Youtube](https://www.youtube.com/watch?v=AeY6yU8uYPc&list=PLQNy8KsDknCoPMylvJhmF2z7qu1PQ47Nf).
 
 I've documented some of my favourite talks most closely linked to the work we do here at Trek View that I know you'll enjoy.
 
@@ -49,7 +49,7 @@ Related OSM project: [OpenBuildingMap](http://obm.gfz-potsdam.de/)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qatvKNeIxB0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Drone technology is an evolving industry used in multi-disciplinary fields ranging from agriculture, marine conservation to real estate and films. There’s so much potential and possibilities on what drones could help people making work faster and more efficient. In mapping, aerial imagery uploaded to Open Aerial Map can be used as basemap for OSM editing.
+Drone technology is an evolving industry used in multi-disciplinary fields ranging from agriculture, marine conservation to real estate and films. There’s so much potential and possibilities on how drones could help people to make their work faster and more efficient. In mapping, aerial imagery uploaded to Open Aerial Map can be used as basemap for OSM editing.
 
 Related OSM project: [OpenAerialMap](https://openaerialmap.org/)
 
@@ -59,8 +59,6 @@ _Also see: [OpenDroneMap](https://www.opendronemap.org/)._
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rWZh_sudQF8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Privacy is always a big concern for us. And rightly so. When you have a 360 camera mounted to your backpack people will naturally get curious, ask questions and possibly become suspicious or hesitant to accept your data collection activities. This se
-
-This session explores one of the Humanitarian Open Street Map Teams field mapping projects implemented in Kampala. Despite all the correct steps taken, community entry in a specific jurisdiction felt impossible and field mapping could not be carried out. Find out why, and the lessons the team learned.
+Privacy is always a big concern for us. And rightly so. When you have a 360 camera mounted to your backpack people will naturally get curious, ask questions and possibly become suspicious or hesitant to accept your data collection activities. This session explores one of the Humanitarian Open Street Map Teams field mapping projects implemented in Kampala. Despite all the correct steps taken, community entry in a specific jurisdiction felt impossible and field mapping could not be carried out. Find out why, and the lessons the team learned.
 
 Related OSM project [Humanitarian Open Street Map Team](https://www.hotosm.org/)
