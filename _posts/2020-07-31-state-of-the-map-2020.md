@@ -1,6 +1,6 @@
 ---
 date: 2020-07-31
-title: "Our Favourite Talks from State of the Map 2020"
+title: "My Favourite Talks from State of the Map 2020"
 description: "360 cameras, 3D models, aerial imagery, and privacy."
 categories: guides
 tags: [OSM, OpenStreetMap]
