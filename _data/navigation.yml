@@ -2,10 +2,6 @@
   link: /about
   new_window: false
   highlight: false
-- name: Case Studies
-  link: /case-studies
-  new_window: false
-  highlight: false
 - name: Blog
   link: /blog
   new_window: false
