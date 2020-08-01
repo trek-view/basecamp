@@ -21,7 +21,7 @@ Here are some of the places I've shot this summer on my standup paddleboard.
 
 ## The River Thames, England
 
-<iframe width="600" height="450" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=SOTsvaRAXSNRnHFMOKr82w&x=0.47467241502181645&y=0.5420770116267879&client_id=cEc2TDVkajU3UEF1eGFFVVVnajloQTpiMzg1OWM4NzQ0MjViMDFl&style=classic" frameborder="0"></iframe>
+<iframe width="600" height="450" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=SOTsvaRAXSNRnHFMOKr82w&x=0.47467241502181645&y=0.5420770116267879&client_id=cEc2TDVkajU3UEF1eGFFVVVnajloQTpkNGUyMTY3ZjlhOTg0NTVl&style=classic" frameborder="0"></iframe>
 
 Transport type: SUP
 
@@ -31,7 +31,7 @@ Transport type: SUP
 
 ## Wey Navigations, England
 
-<iframe width="600" height="450" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=0_WR1EW7Hj14ox92JbDD6A&x=0.5156919286107203&y=0.4843298034399449&client_id=cEc2TDVkajU3UEF1eGFFVVVnajloQTpiMzg1OWM4NzQ0MjViMDFl&style=classic" frameborder="0"></iframe>
+<iframe width="600" height="450" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=0_WR1EW7Hj14ox92JbDD6A&x=0.5156919286107203&y=0.4843298034399449&client_id=cEc2TDVkajU3UEF1eGFFVVVnajloQTpkNGUyMTY3ZjlhOTg0NTVl&style=classic" frameborder="0"></iframe>
 
 Transport type: SUP
 
@@ -41,7 +41,7 @@ My "local" river. Passing through the beauty of the Surrey countryside from  God
 
 ## Basingstoke Canal, England
 
-<iframe width="600" height="450" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=w6xlGKfjBYrBJfZ8X3sCXA&x=0.423980062084064&y=0.6023622626509721&client_id=cEc2TDVkajU3UEF1eGFFVVVnajloQTpiMzg1OWM4NzQ0MjViMDFl&style=classic" frameborder="0"></iframe>
+<iframe width="600" height="450" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=w6xlGKfjBYrBJfZ8X3sCXA&x=0.423980062084064&y=0.6023622626509721&client_id=cEc2TDVkajU3UEF1eGFFVVVnajloQTpkNGUyMTY3ZjlhOTg0NTVl&style=classic" frameborder="0"></iframe>
 
 Transport type: SUP
 
@@ -51,7 +51,7 @@ The Basingstoke Canal runs for 51 kilometres, from Greywell Village in Hampshire
 
 ## Kennet and Avon Canal, England
 
-<iframe width="600" height="450" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=IZrbPt27BbN7GPFMTc_aww&x=0.4483640281565496&y=0.5233112318585865&client_id=cEc2TDVkajU3UEF1eGFFVVVnajloQTpiMzg1OWM4NzQ0MjViMDFl&style=classic" frameborder="0"></iframe>
+<iframe width="600" height="450" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=IZrbPt27BbN7GPFMTc_aww&x=0.4483640281565496&y=0.5233112318585865&client_id=cEc2TDVkajU3UEF1eGFFVVVnajloQTpkNGUyMTY3ZjlhOTg0NTVl&style=classic" frameborder="0"></iframe>
 
 Transport type: SUP
 

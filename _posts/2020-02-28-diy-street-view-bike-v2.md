@@ -41,7 +41,7 @@ One criticism of having the camera mounted on your head is weight. Before mounti
 
 As they say, the proof is in the pudding.
 
-<iframe width="600" height="450" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=QlbRnZKxW9hlIUuYfHWoCA&x=0.41181158799550754&y=0.5517572870153084&client_id=cEc2TDVkajU3UEF1eGFFVVVnajloQTpiMzg1OWM4NzQ0MjViMDFl&style=classic" frameborder="0"></iframe>
+<iframe width="600" height="450" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=QlbRnZKxW9hlIUuYfHWoCA&x=0.41181158799550754&y=0.5517572870153084&client_id=cEc2TDVkajU3UEF1eGFFVVVnajloQTpkNGUyMTY3ZjlhOTg0NTVl&style=classic" frameborder="0"></iframe>
 
 Here's a 360-degree photo shot on a trail ([Blue 16](https://www.trailforks.com/trails/blue-16/)) in Swinley Forest, Bracknell, UK.
 

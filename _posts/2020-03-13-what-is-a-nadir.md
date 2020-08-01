@@ -33,7 +33,7 @@ Similarly, more advanced software, notably Google Street View, can seemingly rem
 
 [Google also allows Street View trusted photographers to overlay their own branding in the nadir and zenith areas of their photos](https://www.google.com/streetview/sales/).
 
-<iframe width="600" height="450" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=B-Ofdr9jhsu0u1yfVdRKTQ&x=0.9182035601970593&y=0.890912642074368&client_id=cEc2TDVkajU3UEF1eGFFVVVnajloQTpiMzg1OWM4NzQ0MjViMDFl&style=classic" frameborder="0"></iframe>
+<iframe width="600" height="450" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=B-Ofdr9jhsu0u1yfVdRKTQ&x=0.9182035601970593&y=0.890912642074368&client_id=cEc2TDVkajU3UEF1eGFFVVVnajloQTpkNGUyMTY3ZjlhOTg0NTVl&style=classic" frameborder="0"></iframe>
 
 The GoPro Fusion's and MAX's we use with our trekker pack do have a partial blind spot in the nadir and zenith area -- evident in the "join lines" between the stitched photograph... but we still have enough space to point viewers and passers-by to [trekview.org](https://www.trekview.org).
 
