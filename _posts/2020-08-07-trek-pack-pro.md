@@ -13,7 +13,7 @@ published: true
 
 **We think so!**
 
-There are some very secret places in the globe.
+There are some very secret places around the globe.
 
 Area 51 (even if everyone knows where it is). Google X Labs, where Google creates things of the future. Apple has a very very secret lab for new devices they're developing.
 
@@ -27,11 +27,11 @@ What are we working on?
 
 We’re building the perfect tool to map the natural world at street level; the  Trek Pro Pack!
 
-Whilst out Trek Pack v2 is a consumer grade camera suitable for most people, we also know that special locations (we’ve got a few of these trips planned) where the highest possible image quality is required.
+Whilst [our Trek Pack v2](/trek-pack) is a consumer grade camera suitable for most people, we also know that special locations where the highest possible image quality is required (we’ve got a few of these trips planned) .
 
 When we decided to create a Pro version of the Trek Pack we knew it would have to be wearable for long periods and to let the trekker to move comfortably and stably on mountain paths or in the middle of the woods.
 
-We decided to choose the better cameras in terms of image quality, and we chose the Insta 360 Titan, an 8 lenses camera with micro four third sensors and unprecedented dynamic range (often is the Achilles heel of all the other 360 cameras I have tested before).
+We decided to choose the better cameras in terms of image quality, and we chose the Insta 360 Titan, an 8 lens camera with micro four third sensors and unprecedented dynamic range (often is the Achilles heel of all the other 360 cameras I have tested before).
 
 The Titan is an exceptional camera, but, as its marketing claims, “Built for cinematic VR” we needed to customise it a bit…
 
