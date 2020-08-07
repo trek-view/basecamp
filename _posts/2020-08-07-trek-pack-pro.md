@@ -8,7 +8,7 @@ author_staff_member: fdebetto
 image: /assets/images/blog/2020-08-07/trek-pack-pro-meta.jpg
 featured_image: /assets/images/blog/2020-08-07/trek-pack-pro-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **We think so!**
@@ -49,6 +49,12 @@ What I can say is that the weight is around 10Kg. All included (except for lunch
 
 To conclude, this solution is designed for special kinds of captures as the value of the whole equipment is around €20.000. However, it is able to create spectacular results that compete with Google’s own Street View cameras.
 
-Whilst it’s still in the testing phase, we’ll release a version ready to be loaned to those who need it for very special projects... like you!
+OK, I can't end without showing some photos. Here is some of the test footage from the Trek Pack Pro shot in the Italian Dolomites...
+
+<iframe src="https://www.google.com/maps/embed?pb=!4v1596739887623!6m8!1m7!1sCAoSLEFGMVFpcFBWZVdvaG1PNE1HVWw2Zkt4c01acU54WGpWMnNJX1E1azNOUnZs!2m2!1d46.4594670936016!2d11.62399097733896!3f291.61335247460335!4f-18.857608338626406!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+<iframe src="https://www.google.com/maps/embed?pb=!4v1596740045273!6m8!1m7!1sCAoSLEFGMVFpcE1vN0RFRHFVaW9SSDlwd3UzWHR3OXpCaFJrTzluUXRCVldWLS1x!2m2!1d46.45782990261847!2d11.63311149186629!3f139.59396111326615!4f-1.1238419233981034!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+Whilst the camera is still in the testing phase, we’ll release a version ready to be loaned to those who need it for very special projects... like you!
 
 Be sure to subscribe to our mailing list below to be the first to hear of Trek Pack Pro product updates.
