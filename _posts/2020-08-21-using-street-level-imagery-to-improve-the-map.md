@@ -1,12 +1,12 @@
 ---
-date: 2020-08-07
+date: 2020-08-21
 title: "Using Street-Level Imagery to improve the map"
 description: "Some useful tools to help you make additions or modifactions to OpenStreetMap using Mapillary images."
 categories: guides
 tags: [OSM, OpenStreetMap, Mapillary]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2020-08-14/osm-id-editor-meta.jpg
-featured_image: /assets/images/blog/2020-08-14/osm-id-editor-sm.jpg
+image: /assets/images/blog/2020-08-21/osm-id-editor-meta.jpg
+featured_image: /assets/images/blog/2020-08-21/osm-id-editor-sm.jpg
 layout: post
 published: false
 ---
@@ -19,7 +19,7 @@ Many thousands of contributors use it to add and update community submitted map 
 
 ## Why is street-level imagery important
 
-<img class="img-fluid" src="/assets/images/blog/2020-08-14/enable-sat-imagery-jsom.gif" alt="JOSM Mapbox satellite" title="JOSM Mapbox satellite" />
+<img class="img-fluid" src="/assets/images/blog/2020-08-21/enable-sat-imagery-jsom.gif" alt="JOSM Mapbox satellite" title="JOSM Mapbox satellite" />
 
 Looking at the Mapbox satielliet imagery above, you can see how it allows users to mark buildings and other large objects as seen from above, on the map. 
 
@@ -29,7 +29,7 @@ The reolution of satiellite imagery can often make it hard to identify the detai
 
 In these situations street-level imagery is incredibly helpful.
 
-<img class="img-fluid" src="/assets/images/blog/2020-08-14/assets/images/blog/2020-08-14/osm-id-editor-sm.jpg" alt="OSM iD editor street level images" title="OSM iD editor street level images" />
+<img class="img-fluid" src="/assets/images/blog/2020-08-21/assets/images/blog/2020-08-21/osm-id-editor-sm.jpg" alt="OSM iD editor street level images" title="OSM iD editor street level images" />
 
 Using our 360 images I can mark the surface type, the width of the path, the access rights, and many other settings allowing those using OSM data to navigate or plan their journeys.
 
@@ -37,7 +37,7 @@ For example, surface type, incline and obstructions can be vital to those with i
 
 ## How to add this information to OSM
 
-<img class="img-fluid" src="/assets/images/blog/2020-08-14/josm-street-level-image.jpg" alt="JOSM editor street level images" title="OSM iD editor street level images" />
+<img class="img-fluid" src="/assets/images/blog/2020-08-21/josm-street-level-image.jpg" alt="JOSM editor street level images" title="OSM iD editor street level images" />
 
 For JOSM, a desktop application, [there are lots available](https://josm.openstreetmap.de/wiki/Plugins). [The Mapillary plugin](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/Mapillary) that allows JSOM user to work with Mapillary images to provide additional context when editing the map.
 
@@ -45,7 +45,7 @@ Good news. The browser based editor, [OpenStreetMap iD Editor](https://wiki.open
 
 If you're new to editing OSM, go with the iD Editor to start with as it is the clearest.
 
-<img class="img-fluid" src="/assets/images/blog/2020-08-14/mapillary-open-jsom-id-editor.jpg" alt="Mapillary and OSM" title="Mapillary and OSM" />
+<img class="img-fluid" src="/assets/images/blog/2020-08-21/mapillary-open-jsom-id-editor.jpg" alt="Mapillary and OSM" title="Mapillary and OSM" />
 
 To get started, open up Mapillary, find the part of the map you want to edit ([maybe some of our images](https://www.mapillary.com/app/user/trekviewhq)), and click "..." > Editing > then selecting iD Editor.
 

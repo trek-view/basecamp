@@ -25,7 +25,7 @@ What are we working on?
 
 <img class="img-fluid" src="/assets/images/blog/2020-08-07/trek-pack-pro-sm.jpg" alt="Trek Pack Pro" title="Trek Pack Pro" />
 
-We’re building the perfect tool to map the natural world at street level; the  Trek Pro Pack!
+We’re building the perfect tool to map the natural world at street level; the Trek Pack Pro!
 
 Whilst [our Trek Pack v2](/trek-pack) is a consumer grade camera suitable for most people, we also know that special locations where the highest possible image quality is required (we’ve got a few of these trips planned) .
 
