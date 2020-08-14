@@ -1,5 +1,5 @@
 ---
-date: 2020-08-21
+date: 2020-08-14
 title: "Take a Virtually Guided Tour (or Create Your Own)"
 description: "Announcing Map the Path Guidebooks. Act as a local guide to your favourite places for everyone around the world to enjoy."
 categories: updates
