@@ -37,7 +37,7 @@ Keeping the ball rolling, today we're releasing a brand new feature, [Guidebooks
 
 Guidebooks allow you to curate any images uploaded to Mapillary as scenes in a virtual Guidebooks.
 
-<img class="img-fluid" src="/assets/images/blog/2020-08-14/" alt="Guidebook points of interest" title="Guidebook points of interest" />
+<img class="img-fluid" src="/assets/images/blog/2020-08-14/mapthepaths-points-of-interest.jpg" alt="Guidebook points of interest" title="Guidebook points of interest" />
 
 Each scene can be annotated with points of interest. For example, you might want to point out a great view, historical information, or that great bar.
 
