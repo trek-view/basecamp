@@ -166,7 +166,7 @@ There are 55 `<trkpt>`'s. This matches the count of timelapse photos (meaning al
 
 ### Insta360 Pro2 Video
 
-<!---<iframe width="560" height="315" src="https://www.youtube.com/embed/y3oHaGPzzK4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y3oHaGPzzK4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 For this next example, I'm going to use an `.mp4` video filmed using a Insta360 Pro2 with GPS at FPS in 8K. The file size is 4.02GB and runs for 1 minute 46 seconds.
 

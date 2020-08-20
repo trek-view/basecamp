@@ -13,6 +13,10 @@ published: true
 
 **This event has now been cancelled due to the COVID-19 outbreak.**
 
+**2020-08-19 Update**
+
+This event has been rescheduled for Sunday 13th September 2020. I hope to see you there. [Full details and RSVP can be found here](https://campfire.trekview.org/t/new-forest-pano-party-rescheduled-sunday-13th-september/325).
+
 **2020-03-13 Update**
 
 Hi everyone!
@@ -52,7 +56,7 @@ The name is different. The concept is the same.
 * **When**: Saturday 23rd May (start time 11AM)
 * **Where**: The New Forest (meeting at Ashurst (New Forest) Railway Station)
 
-On this first Pano Party we'll be following the same plan - to take 360-degree photos of as many paths as we can in the Ashurst area, to produce a 360 map of the trails in this beautiful area which can be walked virtually in each direction.
+During the Pano Party we'll be following a similar plan - to take 360-degree photos of as many paths as we can in the Ashurst area, to produce a 360 map of the trails in this beautiful area which can be walked virtually in each direction.
 
 We chose the location with transport in mind. Regular trains run from London to Southampton, and then on to Ashurst (New Forest).
 

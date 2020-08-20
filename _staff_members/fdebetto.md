@@ -1,6 +1,6 @@
 ---
 name: Federico Debetto
-position: Chief Photography Officer
+position: Guest Poster
 image_path: /assets/images/global/staff/federico-debetto.jpg
 twitter: 
 blurb: 

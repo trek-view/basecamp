@@ -1,12 +1,12 @@
 ---
-date: 2020-08-07
+date: 2020-09-04
 title: "An Introduction to Photogrammetry and LiDaR"
 description: "Here's how Google Maps make their satellite imagery look three-dimensional."
 categories: guides
 tags: [lidar, opensfm, photogrammetry]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2020-08-07/lidar-point-cloud-meta.jpg
-featured_image: /assets/images/blog/2020-08-07/lidar-point-cloud-sm.jpg
+image: /assets/images/blog/2020-09-04/lidar-point-cloud-meta.jpg
+featured_image: /assets/images/blog/2020-09-04/lidar-point-cloud-sm.jpg
 layout: post
 published: false
 ---
@@ -45,7 +45,7 @@ For example, they can be used to produce accurate 3D surveys. Here control point
 
 Mapillary uses photogrammetry in their [OpenSFM software](https://github.com/mapillary/OpenSfM) which is used in the Mapillary web app.
 
-<img class="img-fluid" src="/assets/images/blog/2020-08-07/openSFM.png" alt="Mapillary OpenSFM" title="openSFM" />
+<img class="img-fluid" src="/assets/images/blog/2020-09-04/openSFM.png" alt="Mapillary OpenSFM" title="openSFM" />
 
 OpenSfM to finds the relative positions of images and creates smooth transitions between them. That process is called [Structure from Motion](https://en.wikipedia.org/wiki/Structure_from_motion). It works using photogrammerty; by matching a few thousand points between images, and then figuring out the 3D positions of those points as well as the positions of the cameras simultaneously.
 
@@ -69,7 +69,7 @@ During a LiDaR survey, an active optical sensor transmits laser beams toward a t
 
 The receiver records the precise time from when the laser pulse left the system to when it is returned to the sensor. Using precise pulse time, the range distance between the sensor and the target may be calculated.
 
-<img class="img-fluid" src="/assets/images/blog/2020-08-07/lidar-pulse.png" alt="LiDaR pulse" title="LiDaR pulse" />
+<img class="img-fluid" src="/assets/images/blog/2020-09-04/lidar-pulse.png" alt="LiDaR pulse" title="LiDaR pulse" />
 
 LiDAR maps can be used to give positional accuracy – both absolute and relative, to allow viewers of the data to know where in the world the data was collected and how each point relates to objects terms of distance.
 
@@ -79,13 +79,13 @@ Engineers and earth scientists use LiDaR to accurately and precisely map and mea
 
 A 3D point cloud is a collection of data points analogous to the real world in three dimensions.
 
-<img class="img-fluid" src="/assets/images/blog/2020-08-07/lidar-point-cloud-sm.jpg" alt="LiDaR point cloud" title="LiDaR point cloud" />
+<img class="img-fluid" src="/assets/images/blog/2020-09-04/lidar-point-cloud-sm.jpg" alt="LiDaR point cloud" title="LiDaR point cloud" />
 
 Each point is defined by its own position. The points can then be rendered as pixels to create a highly accurate 3D model of the object.
 
 Point clouds can describe objects measuring just a few millimeters or objects as large as trees, and even entire forests, depending on the resolution (number of points collected) of the scanner.
 
-<img class="img-fluid" src="/assets/images/blog/2020-08-07/lidar-point-cloud-colour.jpg" alt="LiDaR point cloud colour" title="LiDaR point cloud colour" />
+<img class="img-fluid" src="/assets/images/blog/2020-09-04/lidar-point-cloud-colour.jpg" alt="LiDaR point cloud colour" title="LiDaR point cloud colour" />
 
 Point clouds are often stylised with colour for easier analysis (using software post capture), for example, colouring the points based on their vertical height to the ground to improve the 3D visualisation.
 
@@ -99,13 +99,13 @@ LiDaR does not 'see' in colour, but points in space.
 
 Using the two together gives a high degree of accuracy of the environment captured with the benefit of seeing it in colour (as you would with your eyes).
 
-<img class="img-fluid" src="/assets/images/blog/2020-08-07/lidar-point-cloud-photo.jpg" alt="LiDaR point cloud and photo" title="LiDaR point cloud and photo" />
+<img class="img-fluid" src="/assets/images/blog/2020-09-04/lidar-point-cloud-photo.jpg" alt="LiDaR point cloud and photo" title="LiDaR point cloud and photo" />
 
 Placing photos on top LiDaR point clouds creates a realistic 3D render of the world, making the photo look much more realistic and life-like.
 
 You've probably already seen an example of this output if you've ever looked at Google Maps satellite imagery.
 
-<img class="img-fluid" src="/assets/images/blog/2020-08-07/Google_Maps_lidar_photogrammetry.webm" alt="Google Maps LiDaR point cloud and photo satellite" title="Google Maps LiDaR point cloud and photo satellite" />
+<img class="img-fluid" src="/assets/images/blog/2020-09-04/Google_Maps_lidar_photogrammetry.webm" alt="Google Maps LiDaR point cloud and photo satellite" title="Google Maps LiDaR point cloud and photo satellite" />
 
 If not, [check it out for yourself](https://www.google.co.uk/maps/@51.4375236,-0.2691873,92m/data=!3m1!1e3).
 

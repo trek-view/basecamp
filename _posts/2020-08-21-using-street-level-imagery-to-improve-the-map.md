@@ -54,3 +54,5 @@ It will open up a new window where you can start to add context to the map.
 For example, click a path and look at how it has already been classified. Is the surface type noted? Are there any tags that might be useful?
 
 After a few minutes of editing, you'll get the hang of it and will be an expert map maker in no time.
+
+Expect to see this functionality make its way into Map the Paths over the coming weeks. Make sure you're subscribed to the newsletter by entering your details below to be the first to gain access.

@@ -35,7 +35,7 @@ Keeping the ball rolling, today we're releasing a brand new feature, [Guidebooks
 
 <img class="img-fluid" src="/assets/images/blog/2020-08-14/mapthepaths-guidebooks-sm.jpg" alt="Guidebook scenes" title="Guidebook scenes" />
 
-Guidebooks allow you to curate any images uploaded to Mapillary as scenes in a virtual Guidebooks.
+Guidebooks allow you to curate any images uploaded to Mapillary as scenes in a virtual Guidebooks, giving you the opportunity to act as a local expert using your own, or someone else's imagery.
 
 <img class="img-fluid" src="/assets/images/blog/2020-08-14/mapthepaths-points-of-interest.jpg" alt="Guidebook points of interest" title="Guidebook points of interest" />
 
@@ -49,6 +49,6 @@ Here are some I've created that hopefully provide some inspiration:
 * [The River Thames (on a paddleboard)](https://www.mapthepaths.com/guidebook/420e3f78-8c6d-4b9e-9c29-0217c8394570/detail/)
 * [Eastbourne to Alfriston (South Downs Way)](https://www.mapthepaths.com/guidebook/c49993e8-f75d-435d-9db5-658c6fdccadd/detail/)
 
-Please do share Guidebooks you've created with us on [Facebook](https://www.facebook.com/trekview/) and [Twitter](https://twitter.com/trekview). I'll make sure we repost as many as possible.
+Please do share Guidebooks you've created on Map the Paths with us on [Facebook](https://www.facebook.com/trekview/) and [Twitter](https://twitter.com/trekview). I'll make sure we repost as many as possible.
 
 Now, get exploring!
