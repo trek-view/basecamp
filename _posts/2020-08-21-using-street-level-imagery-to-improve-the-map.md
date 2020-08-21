@@ -1,7 +1,7 @@
 ---
 date: 2020-08-21
 title: "Using Street-Level Imagery to improve the map"
-description: "Some useful tools to help you make additions or modifactions to OpenStreetMap using Mapillary images."
+description: "Some useful tools to help you make additions or modifications to OpenStreetMap using Mapillary images."
 categories: guides
 tags: [OSM, OpenStreetMap, Mapillary]
 author_staff_member: dgreenwood
@@ -15,23 +15,23 @@ published: true
 
 Many of you might be familiar with the OpenStreetMap [iD Editor](https://wiki.openstreetmap.org/wiki/ID), the [Java OpenStreetMap (JSOM) editor](https://wiki.openstreetmap.org/wiki/Comparison_of_editors#JOSM), or perhaps [an entirely different editor altogether](https://wiki.openstreetmap.org/wiki/Comparison_of_editors).
 
-Many thousands of contributors use it to add and update community submitted map data that powers OpenStreetMap (OSM).
+Many thousands of contributors use them to add and update the community submitted map data that powers OpenStreetMap (OSM).
 
 ## Why is street-level imagery important
 
 <img class="img-fluid" src="/assets/images/blog/2020-08-21/enable-sat-imagery-jsom.gif" alt="JOSM Mapbox satellite" title="JOSM Mapbox satellite" />
 
-Looking at the Mapbox satielliet imagery above, you can see how it allows users to mark buildings and other large objects as seen from above, on the map. 
+Looking at the Mapbox satellite imagery above, you can see how it proves useful in helping users to mark buildings and other large objects as seen from above, on the map. 
 
 Street level imagery offers a different perspective to visual editing.
 
-The reolution of satiellite imagery can often make it hard to identify the detail at ground level (e.g path surface type), what the facade of objects look like (e.g signs on front of shops), or is useless where there is a canopy (e.g. under tree or building cover).
+The resolution of satellite imagery can often make it hard to identify the detail at ground level (e.g path surface type), what the facade of objects look like (e.g signs on front of shops), or is useless where there is a canopy (e.g. under tree or building cover).
 
-In these situations street-level imagery is incredibly helpful.
+In these situations street-level imagery is incredibly valuable to mappers.
 
 <img class="img-fluid" src="/assets/images/blog/2020-08-21/assets/images/blog/2020-08-21/osm-id-editor-sm.jpg" alt="OSM iD editor street level images" title="OSM iD editor street level images" />
 
-Using our 360 images I can mark the surface type, the width of the path, the access rights, and many other settings allowing those using OSM data to navigate or plan their journeys.
+Using our 360 images I can mark the surface type, the width of the path, the access rights, and many other settings giving those using OSM data better information to navigate or plan their journeys.
 
 For example, surface type, incline and obstructions can be vital to those with impairments.
 
@@ -51,8 +51,8 @@ To get started, open up Mapillary, find the part of the map you want to edit ([m
 
 It will open up a new window where you can start to add context to the map.
 
-For example, click a path and look at how it has already been classified. Is the surface type noted? Are there any tags that might be useful?
+For example, click a path and look at how it has already been classified. Is the surface type noted? Are there any additional tags that might be useful?
 
 After a few minutes of editing, you'll get the hang of it and will be an expert map maker in no time.
 
-Expect to see this functionality make its way into Map the Paths over the coming weeks. Make sure you're subscribed to the newsletter by entering your details below to be the first to gain access.
+Expect to see this functionality make its way into [Map the Paths](https://www.mapthepaths.com) over the coming weeks. Make sure you're subscribed to the newsletter by entering your details below to be the first to gain access.
