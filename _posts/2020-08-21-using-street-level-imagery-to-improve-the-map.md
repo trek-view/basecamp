@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2020-08-21/osm-id-editor-meta.jpg
 featured_image: /assets/images/blog/2020-08-21/osm-id-editor-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Mapillary, OpenStreetMap, JSOM, iD....**
