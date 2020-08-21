@@ -29,7 +29,7 @@ The resolution of satellite imagery can often make it hard to identify the detai
 
 In these situations street-level imagery is incredibly valuable to mappers.
 
-<img class="img-fluid" src="/assets/images/blog/2020-08-21/assets/images/blog/2020-08-21/osm-id-editor-sm.jpg" alt="OSM iD editor street level images" title="OSM iD editor street level images" />
+<img class="img-fluid" src="/assets/images/blog/2020-08-21/osm-id-editor-sm.jpg" alt="OSM iD editor street level images" title="OSM iD editor street level images" />
 
 Using our 360 images I can mark the surface type, the width of the path, the access rights, and many other settings giving those using OSM data better information to navigate or plan their journeys.
 
