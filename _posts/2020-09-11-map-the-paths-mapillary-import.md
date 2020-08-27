@@ -1,12 +1,12 @@
 ---
-date: 2020-08-14
+date: 2020-09-11
 title: "Categorise and Share Your Mapillary Imagery"
 description: ""
 categories: updates
 tags: []
 author_staff_member: dgreenwood
-image: /assets/images/blog/2020-08-28/
-featured_image: /assets/images/blog/2020-08-28/
+image: /assets/images/blog/2020-09-11/
+featured_image: /assets/images/blog/2020-09-11/
 layout: post
 published: false
 ---
@@ -37,7 +37,7 @@ But they didn't give the whole (_360 degree_) picture...
 
 From today, you'll also be able to import Mapillary sequence data into Map the Paths.
 
-<img class="img-fluid" src="/assets/images/blog/2020-08-28/" alt="" title="" />
+<img class="img-fluid" src="/assets/images/blog/2020-09-11/" alt="" title="" />
 
 First thing first, let me be clear; we're not trying to replace Mapillary, far from it.
 
