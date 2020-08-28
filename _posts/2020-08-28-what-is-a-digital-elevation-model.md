@@ -1,6 +1,6 @@
 ---
 date: 2020-08-28
-title: "What are digital elevation models?"
+title: "What is a digital elevation model?"
 description: "A DEM is a 3D computer graphics representation of elevation data to represent terrain"
 categories: guides
 tags: []
@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2020-08-28/digital-elevation-model-meta.png
 featured_image: /assets/images/blog/2020-08-28/digital-elevation-model-sm.png
 layout: post
-published: false
+published: true
 ---
 
 **Find the height of ANY location on the Earth's surface.**
