@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Find the height of ANY location on the Earth's surface.**
+**Find the elevation for ANY location on Earth's surface.**
 
 There are plenty of devices that can approximate your elevation (or depression) compared to sea level.
 
