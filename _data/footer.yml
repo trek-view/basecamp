@@ -1,14 +1,16 @@
 - links:
   - name: Blog
     link: /blog
-  - name: Trek Pack
+  - name: Trek Pack (camera)
     link: /trek-pack
-  - name: Map the Paths (360 mapping)
-    link: https://mtp.trekview.org
-  - name: Treehouse (school)
-    link: https://treehouse.trekview.org
   - name: Campfire (forum)
     link: https://campfire.trekview.org
+  - name: Map the Paths (maps)
+    link: https://mtp.trekview.org
+  - name: Expodition (podcast)
+    link: https://expodition.trekview.org
+  - name: Treehouse (school)
+    link: https://treehouse.trekview.org
 
 - links:
   - name: About
