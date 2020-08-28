@@ -1,7 +1,7 @@
 ---
 date: 2020-08-28
-title: "What is a digital elevation model?"
-description: "A DEM is a 3D computer graphics representation of elevation data to represent terrain"
+title: "What is a Digital Elevation Model?"
+description: "A Digital Elevation Model (DEM) is a 3D computer graphics representation of elevation data to represent terrain"
 categories: guides
 tags: []
 author_staff_member: dgreenwood
@@ -15,17 +15,17 @@ published: true
 
 There are plenty of devices that can approximate your elevation (or depression) compared to sea level.
 
-[You're probably most familiar with GPS receivers -- like the one in your phone and 360 camera -- recording your vertical position (altitude), as well as your horizontal position (latitude and longitude)](/blog/2020/gps-101).
+[You're probably most familiar with GPS receivers -- like the one in your phone or 360 camera -- recording your vertical position (altitude), as well as your horizontal position (latitude and longitude)](/blog/2020/gps-101).
 
 A 3 satellite fix gives your position on the face of the earth at sea level, whether or not you are at sea level.
 
 A 4 satellite fix gives your altitude, where you are in relation to sea level.
 
-You can usually _see_ 6 or more satellites above the horizon, so sufficient GPS fixes are usually easy to achieve. Generally the more satellites in direct line-of-sight to the receiver, the better the measurement.
+You can usually _see_ 6 or more satellites above the horizon, so sufficient GPS fixes are usually easy to achieve. Generally the more satellites in direct line-of-sight to the receiver, the better the measurements reported.
 
 In cases where only 4 satellites are fixed, perhaps due to high surrounding buildings, altitude can often be erroneous, despite horizontal position being fairly accurate.
 
-For very precise requirements, GPS is not very precise for elevation because a satellite must be directly overhead to calculate the measurement to within a high degree of accuracy.
+For very precise requirements, GPS is not very reliable for elevation because a satellite must be directly overhead to calculate the measurement to within a high degree of accuracy.
 
 But I won't start getting too geeky...
 
