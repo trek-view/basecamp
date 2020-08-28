@@ -27,7 +27,7 @@ Whilst these paths are mapped, very few have accompanying 360 degree street leve
 
 ## Let's get mapping
 
-Today I'm really excited to officially announce the [Map the Paths Marketplace](https://www.mapthepaths.com/marketplace/).
+Today I'm really excited to officially announce the [Map the Paths Marketplace](https://mtp.trekview.org/marketplace/).
 
 We built the Marketplace for two personas:
 
@@ -37,9 +37,9 @@ We built the Marketplace for two personas:
 
 To help photographers find work related to virtual tour and survey photography.
 
-Photographers, [create a business profile detailing your skills and working area so that people looking for imagery capture can get in contact with you](https://www.mapthepaths.com/marketplace/hire/create).
+Photographers, [create a business profile detailing your skills and working area so that people looking for imagery capture can get in contact with you](https://mtp.trekview.org/marketplace/hire/create).
 
-Alternatively, [browse and apply the growing number of projects being posted on the Marketplace](https://www.mapthepaths.com/marketplace/jobs/list).
+Alternatively, [browse and apply the growing number of projects being posted on the Marketplace](https://mtp.trekview.org/marketplace/jobs/list).
 
 **Organisations**
 
@@ -47,9 +47,9 @@ Alternatively, [browse and apply the growing number of projects being posted on 
 
 To help organisations connect to the many talented photographers we have in our network.
 
-If you're thinking about virtual tour or survey photography, [create a job to showcase it to our database of skilled photographers and surveyors](https://www.mapthepaths.com/marketplace/jobs/create).
+If you're thinking about virtual tour or survey photography, [create a job to showcase it to our database of skilled photographers and surveyors](https://mtp.trekview.org/marketplace/jobs/create).
 
-Alternatively, [browse photographers in our database to find those near you and inquire about their services](https://www.mapthepaths.com/marketplace/hire/list).
+Alternatively, [browse photographers in our database to find those near you and inquire about their services](https://mtp.trekview.org/marketplace/hire/list).
 
 ## What's next?
 

@@ -19,7 +19,7 @@ Our trekkers have submitted many more.
 
 The problem with holding such a large amount of imagery is making it easily searchable.
 
-Last year I took my paddleboard down the Thames ([you might have seen my Map the Path Guidebook](https://www.mapthepaths.com/guidebook/420e3f78-8c6d-4b9e-9c29-0217c8394570/detail/)). 
+Last year I took my paddleboard down the Thames ([you might have seen my Map the Path Guidebook](https://mtp.trekview.org/guidebook/420e3f78-8c6d-4b9e-9c29-0217c8394570/detail/)). 
 
 Keen paddleboarders might have found this imagery previously by browsing images of the River Thames on Mapillary.
 
