@@ -1,5 +1,5 @@
 ---
-date: 2020-09-19
+date: 2020-09-26
 title: "Extracting A GPS Track from a 360 Video"
 description: ""
 categories: developers
