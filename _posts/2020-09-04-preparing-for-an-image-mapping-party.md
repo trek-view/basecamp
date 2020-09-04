@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2020-09-04/bexhill-osm-mapping-meta.jpg
 featured_image: /assets/images/blog/2020-09-04/bexhill-osm-mapping-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Camera, check. Lunch, check. Good weather...**
