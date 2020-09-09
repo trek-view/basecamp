@@ -10,7 +10,7 @@ Clone the repo:
 
 Navigate to the repo directory:
 
-`cd hq`
+`cd basecamp`
 
 Install the dependencies with Bundler:
 
