@@ -14,7 +14,7 @@ show_drafts: false
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: assets/images/icons/siteicon.png
-description: Take a journey to sites of cultural, historical, and geographic significance.
+description: Trek View is using computer vision and street-level panoramic imagery of the natural world to help us better understand our environment.
 author:
   name:
 twitter:

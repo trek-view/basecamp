@@ -77,7 +77,7 @@ The classic pack. Designed for day-hikes.
 
 A helmet mounted camera for cyclists.
 
-### Dive Pack
+### Scuba Dive Pack
 
 <img class="img-fluid" src="/assets/images/blog/2020-06-26/trek-pack-dive.jpg" alt="Trek Pack v2 Dive" title="Trek Pack v2 Dive" />
 

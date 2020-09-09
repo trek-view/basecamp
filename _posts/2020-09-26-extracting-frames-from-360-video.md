@@ -1,33 +1,32 @@
 ---
 date: 2020-09-26
-title: "Extracting A GPS Track from a 360 Video"
-description: ""
+title: "Turning a geo-tagged 360 video into geo-tagged 360 photos"
+description: "Its easier to work with your street-level photos as individual photos rather than a single video."
 categories: developers
 tags: [GPS, XMP, EXIF]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2020-06-05/
-featured_image: /assets/images/blog/2020-06-05/
+image: /assets/images/blog/2020-09-26/map-the-paths-desktop-uploader-meta.jpg
+featured_image: /assets/images/blog/2020-09-26/map-the-paths-desktop-uploader.jpg
 layout: post
 published: false
 ---
 
-**Video to images**
+**Two solutions to convert videos to images**
 
-In the last few weeks I've covered topics [about the metadata found in a 360 video](/blog/2020/metadata-exif-xmp-360-video-files) and the [approval required to publish videos to the Street View Publish API](/blog/2020/street-view-publish-api-quick-start-guide).
+In the last year I've covered topics [about the metadata found in a 360 video](/blog/2020/metadata-exif-xmp-360-video-files) and [how to extract a GPS track from them](/blog/2020/extracting-gps-track-from-360-timelapse-video).
 
-tl;dr: we haven't got approval to upload video to the Google Street View Publish API.
+The problem with video files is they're often difficult to work with as a beginner. Let's say you wanted to cut the first 20 seconds of video from your capture whilst standing still. Removing the first 20 seconds is trivial in many programs. The problem; some software programs will completely strip the GPS telemetry from the video if you do this, others will remove other important metadata from the video, such as [XMP] ProjectionType (used by software to recognise the video as either 360 or 2D).
 
-No problem, videos are just a series of image after all.
+I'm yet to find the perfect 360 video editing tool for street-level imagery mapping. [This is one (or a few) reasons we don't recommend capturing in video mode](https://guides.trekview.org/mtp-web/user-guide/sequences/capture#camera-capture-mode-settings).
 
-Whilst we wait, we'll just convert our videos and the metadata they hold to images (with the help of [EXIFtool](https://exiftool.org/) and [FFmpeg](https://ffmpeg.org/)) and then upload as images instead.
+That said, sometimes you might have captured a brilliant video of a trail -- perhaps skiing a piste or a downhill MTB trail -- where your intention was not to use the images for mapping, but to share with friends on YouTube, however, now realise that video would be great to use on Mapillary.
 
-This is also useful for uploading to tools like Mapillary too.
+In such cases it's possible to convert the video and the metadata they hold to images (with the help of [EXIFtool](https://exiftool.org/) and [FFmpeg](https://ffmpeg.org/)).
 
 The workflow will look like this:
 
-1. Extract metadata track from video file
+1. Extract metadata track from video file (global data and GPS data)
 2. Split video into frames (individual photo files)
-	- A note on compression
 3. Add metadata to frames
 
 For this guide I'll be using [FFmpeg](https://ffmpeg.org/), a free and open-source project consisting of a vast software suite of libraries and programs for handling video, audio, and other multimedia files and streams.
@@ -87,7 +86,7 @@ This command includes the following arguments:
 
 [Here is the outputted file](https://gitlab.com/snippets/1977078).
 
-_Note, this a simple extraction and only preserves `GPSLatitude`, `GPSLongitude`, `GPSAltitude` and `GPSDateTime` values._
+_Note, this a simple extraction and only preserves `GPSLatitude`, `GPSLongitude`, `GPSAltitude` and `GPSDateTime` values. In many cases the telemetry track also includes other sensor data including pitch and heading._
 
 ## 2. Split video into frames (individual photo files)
 
@@ -277,8 +276,15 @@ exiftool -TagsFromFile fromImage.jpg toImage.jpg
 
 
 
+## Map the Paths Desktop Uploader
 
--
+<img class="img-fluid" src="/assets/images/blog/2020-09-26/" alt="Map the Paths Desktop Uploader" title="Map the Paths Desktop Uploader" />
+
+If you're not technical, or simply want an easy way to turn geo-tagged videos into geo-tagged photos, you should use the Map the Paths Desktop Uploader.
+
+You can use the Map the Paths Desktop Uploader to modify the resulting photos to be included in the sequence of images. For example, removing photos you don't need (perhaps at the start and end of the video). At the end, it's also possible to upload you images to a range of online platforms, including Map the Paths, Mapillary, and Google Street View.
+
+[**Download the Map the Paths Desktop Uploader for free**](http://mtp.trekview.org/uploader).
 
 
 
