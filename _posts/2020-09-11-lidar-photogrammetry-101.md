@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2020-09-11/lidar-point-cloud-meta.jpg
 featured_image: /assets/images/blog/2020-09-11/lidar-point-cloud-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **A closer look into point clouds.**
