@@ -1,12 +1,12 @@
 ---
-date: 2020-09-19
+date: 2020-10-03
 title: "Turning a geo-tagged 360 video into geo-tagged 360 photos"
 description: "Its easier to work with your street-level photos as individual photos rather than a single video."
 categories: developers
 tags: [GPS, XMP, EXIF]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2020-09-19/map-the-paths-desktop-uploader-meta.jpg
-featured_image: /assets/images/blog/2020-09-19/map-the-paths-desktop-uploader.jpg
+image: /assets/images/blog/2020-10-03/map-the-paths-desktop-uploader-meta.jpg
+featured_image: /assets/images/blog/2020-10-03/map-the-paths-desktop-uploader.jpg
 layout: post
 published: false
 ---
@@ -278,7 +278,7 @@ exiftool -TagsFromFile fromImage.jpg toImage.jpg
 
 ## Map the Paths Desktop Uploader
 
-<img class="img-fluid" src="/assets/images/blog/2020-09-19/" alt="Map the Paths Desktop Uploader" title="Map the Paths Desktop Uploader" />
+<img class="img-fluid" src="/assets/images/blog/2020-10-03/" alt="Map the Paths Desktop Uploader" title="Map the Paths Desktop Uploader" />
 
 If you're not technical, or simply want an easy way to turn geo-tagged videos into geo-tagged photos, you should use the Map the Paths Desktop Uploader.
 
