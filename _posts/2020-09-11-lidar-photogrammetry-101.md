@@ -105,8 +105,6 @@ Placing photos on top LiDaR point clouds creates a realistic 3D render of the wo
 
 You've probably already seen an example of this output if you've ever looked at Google Maps satellite imagery.
 
-<img class="img-fluid" src="" alt="Google Maps LiDaR point cloud and photo satellite" title="Google Maps LiDaR point cloud and photo satellite" />
-
 <video controls autoplay loop width="700">
 
 <source src="/assets/images/blog/2020-09-11/Google_Maps_lidar_photogrammetry.webm"
@@ -117,4 +115,4 @@ Sorry, your browser doesn't support embedded videos.
 
 If not, [check it out for yourself](https://www.google.co.uk/maps/@51.4375236,-0.2691873,92m/data=!3m1!1e3).
 
-With the cost of LiDaR having reduced significantly in recent years due to increased adoption and usage ([even the newest iPads include a low resolution LiDaR scanner](https://www.theverge.com/2020/4/16/21223626/ipad-pro-halide-camera-lidar-sensor-augmented-reality-scanning)), we don't think it will be long until this technology is bundled into 360 cameras too...
+With the cost of LiDaR having reduced significantly in recent years due to increased adoption and usage ([the latest iPads include a low resolution LiDaR scanner](https://www.theverge.com/2020/4/16/21223626/ipad-pro-halide-camera-lidar-sensor-augmented-reality-scanning)), we don't think it will be long until this technology is bundled into 360 cameras too...
