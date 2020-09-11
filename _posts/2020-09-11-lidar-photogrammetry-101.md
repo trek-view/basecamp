@@ -15,7 +15,7 @@ published: true
 
 360 images can often look 'flat'.
 
-Perhaps that huge, imposing tree that looked awe-inspiring to the eye, didn't quite turn out how you expected it in the image produced by your camera.
+Perhaps that huge, imposing canyon that looked awe-inspiring in-person, didn't quite turn out how you expected it in the image produced by your camera.
 
 Usually this is down to limitations with depth perception of a camera.
 
@@ -33,7 +33,7 @@ At its most basic, “photogrammetry” is measuring via photos.
 
 Again, the best way to visualise this is to use your eyes—literally. Your eyeballs are using photogrammetry all the time.
 
-You have two eyes (two cameras), processing a live feed of your surroundings. Because your eyes are slightly apart, you’re getting two different inputs at slightly different angles. 
+You have two eyes (two sensors), processing a live feed of your surroundings. Because your eyes are slightly apart, you’re getting two different inputs at slightly different angles. 
 
 Your brain knows how far apart your eyes are, which allows it to process this info into a sense of distance by merging both feeds into a single perspective.
 
@@ -43,11 +43,11 @@ Control points have more uses than just stitching photos taken by each sensor on
 
 For example, they can be used to produce accurate 3D surveys. Here control points between two or more photos might be used to build a 3D map by identifying the same objects (but at different angles) in each image.
 
-Mapillary uses photogrammetry in their [OpenSFM software](https://github.com/mapillary/OpenSfM) which is used in the Mapillary web app.
+Mapillary uses photogrammetry in their [OpenSFM software](https://github.com/mapillary/OpenSfM) which is used in the Mapillary web app when transitioning between photos (amongst other things).
 
 <img class="img-fluid" src="/assets/images/blog/2020-09-11/openSFM.png" alt="Mapillary OpenSFM" title="openSFM" />
 
-OpenSfM to finds the relative positions of images and creates smooth transitions between them. That process is called [Structure from Motion](https://en.wikipedia.org/wiki/Structure_from_motion). It works using photogrammerty; by matching a few thousand points between images, and then figuring out the 3D positions of those points as well as the positions of the cameras simultaneously.
+OpenSfM finds the relative positions of images and creates smooth transitions between them. That process is called [Structure from Motion](https://en.wikipedia.org/wiki/Structure_from_motion). It works using photogrammetry by matching a few thousand points between images, and then figuring out the 3D positions of those points as well as the positions of the cameras simultaneously.
 
 But there are limitations.
 
@@ -63,7 +63,7 @@ LiDaR can be likened to sonar or radar, which use sound and radio waves respecti
 
 Its hardware can be mounted on a plane, tripod, or automobile, as well as a drone. It’s sometimes called 3D laser scanning. [Google use a pair of LiDaR scanners on their Street View cars](/blog/2020/google-street-view-cameras-more-than-meets-the-eye).
 
-LiDAR mapping uses a laser scanning system with an integrated [Inertial Measurement Unit (IMU)](/blog/2020/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer) and GNSS receiver, which allows each measurement, or point in the resulting point cloud, to be georeferenced. Each ‘point’ combines to create a 3D representation of the target object or area.
+LiDAR mapping uses a laser scanning system with an integrated [Inertial Measurement Unit (IMU)](/blog/2020/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer) and GNSS receiver, which allows each measurement, or point in the resulting point cloud, to be geo-referenced. Each ‘point’ combines to create a 3D representation of the target object or area.
 
 During a LiDaR survey, an active optical sensor transmits laser beams toward a target (think millions of points for top-of-the-range scanners). The laser energy is reflected by the target and is detected and analyzed by receivers in the LiDaR sensor.
 
@@ -105,7 +105,15 @@ Placing photos on top LiDaR point clouds creates a realistic 3D render of the wo
 
 You've probably already seen an example of this output if you've ever looked at Google Maps satellite imagery.
 
-<img class="img-fluid" src="/assets/images/blog/2020-09-11/Google_Maps_lidar_photogrammetry.webm" alt="Google Maps LiDaR point cloud and photo satellite" title="Google Maps LiDaR point cloud and photo satellite" />
+<img class="img-fluid" src="" alt="Google Maps LiDaR point cloud and photo satellite" title="Google Maps LiDaR point cloud and photo satellite" />
+
+<video controls autoplay loop width="700">
+
+<source src="/assets/images/blog/2020-09-11/Google_Maps_lidar_photogrammetry.webm"
+			            type="video/webm">
+
+Sorry, your browser doesn't support embedded videos.
+</video>
 
 If not, [check it out for yourself](https://www.google.co.uk/maps/@51.4375236,-0.2691873,92m/data=!3m1!1e3).
 
