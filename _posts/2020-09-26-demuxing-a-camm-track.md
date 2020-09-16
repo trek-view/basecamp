@@ -66,18 +66,7 @@ $ exiftool -G -a MY_VIDEO.mp4 > MY_VIDEO_metadata.txt
 
 Looking at the resulting text file you will likely see either:
 
-
-**GoPro cameras**
-
-```
-...
-Handler Class                   : Data Handler
-Handler Type                    : Alias Data
-Meta Format                     : gpmd
-...
-```
-
-**Other cameras**
+**CAMM format**
 
 ```
 ...
@@ -162,7 +151,7 @@ $ cd doc/examples
 $ ./camm_demuxing ~/Downloads/MY_VIDEO.mp4 /dev/null ~/Downloads/camm_MY_VIDEO.txt
 ```
 
-Now, you can check ~/Downloads/camm_MY_VIDEO.txt for the GPS and the IMU tracks. Here is an example:
+Now, you can check `/Downloads/camm_MY_VIDEO.txt` for the GPS and the IMU tracks. Here is an example:
 
 ```
 pts:12001 pts_time:0.12001 time_gps_epoch: 1206301997.040372 gps_fix_type: 3 latitude: 37.390863 longitude: -122.083342 altitude: -8.667001 horizontal_accuracy: 0.517000 vertical_accuracy: 0.772000 vertical_east: -1.958000 vertical_north: 0.998000 vertical_up: -0.035000 speed_accuracy: 0.123000
