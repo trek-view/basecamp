@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2020-09-19/mapillary-object-detections-meta.jpg
 featured_image: /assets/images/blog/2020-09-19/mapillary-api-object-detections.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Filter and download map features programmatically.**

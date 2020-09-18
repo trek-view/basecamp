@@ -119,6 +119,8 @@ $ sudo apt-get install nasm yasm libx264-dev libx265-dev libvpx-dev libfdk-aac-d
 
 **Get the modified version of FFmpeg (camm branch)**
 
+The core version of ffmpeg does not contain the functionality to do this, therefore the following custom branch of ffmpeg is used.
+
 ```
 $ git clone https://github.com/lbobryan/FFmpeg
 $ cd FFmpeg
