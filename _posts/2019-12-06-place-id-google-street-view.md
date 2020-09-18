@@ -1,6 +1,6 @@
 ---
 date: 2019-12-06
-title: "What is the Place ID?"
+title: "What is a Place ID?"
 description: "How to make sure you're not missing out on Google Local Guide points from Street View photos."
 categories: developers
 tags: [Google, Street View, Google Street View, Explorer Desktop Uploader]

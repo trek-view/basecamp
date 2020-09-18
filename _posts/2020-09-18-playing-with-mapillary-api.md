@@ -1,12 +1,12 @@
 ---
-date: 2020-09-19
+date: 2020-09-18
 title: "Playing with the Mapillary API"
 description: "A quick look at some of the API queries we've use against the Mapillary API."
 categories: developers
 tags: [Mapillary]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2020-09-19/mapillary-object-detections-meta.jpg
-featured_image: /assets/images/blog/2020-09-19/mapillary-api-object-detections.jpg
+image: /assets/images/blog/2020-09-18/mapillary-object-detections-meta.jpg
+featured_image: /assets/images/blog/2020-09-18/mapillary-api-object-detections.jpg
 layout: post
 published: true
 ---
@@ -27,11 +27,11 @@ There are lots of tools to calculate coordinates for a bounding box programmatic
 
 A useful web tool for doing this is [boundingbox.klokantech.com](https://boundingbox.klokantech.com/).
 
-<img class="img-fluid" src="/assets/images/blog/2020-09-19/bounding-box-draw-web.jpg" alt="Draw a bounding box" title="Draw a bounding box" />
+<img class="img-fluid" src="/assets/images/blog/2020-09-18/bounding-box-draw-web.jpg" alt="Draw a bounding box" title="Draw a bounding box" />
 
 A bounding box is a rectangular box that can be determined by the x and y axis coordinates in the upper-left corner and the x and y  axis coordinates in the lower-right corner of the rectangle.
 
-<img class="img-fluid" src="/assets/images/blog/2020-09-19/Horizontal-Datums-620x322.png" alt="Latitude / Longitude x/y" title="Latitude / Longitude x/y" />
+<img class="img-fluid" src="/assets/images/blog/2020-09-18/Horizontal-Datums-620x322.png" alt="Latitude / Longitude x/y" title="Latitude / Longitude x/y" />
 
 In mapping terms we can use latitude and longitude for position. 
 
