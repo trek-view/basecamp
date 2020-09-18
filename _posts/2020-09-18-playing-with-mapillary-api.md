@@ -1,7 +1,7 @@
 ---
 date: 2020-09-18
 title: "Playing with the Mapillary API"
-description: "A quick look at some of the API queries we've use against the Mapillary API."
+description: "A quick look at some of the API queries we've used against the Mapillary API."
 categories: developers
 tags: [Mapillary]
 author_staff_member: dgreenwood
