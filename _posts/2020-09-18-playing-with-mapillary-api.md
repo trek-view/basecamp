@@ -19,19 +19,17 @@ I wanted to add some of our favourite API requests for uncovering interesting da
 
 [We recently ran a mapping party in the New Forest, UK](https://campfire.trekview.org/t/new-forest-pano-party-rescheduled-sunday-13th-september/325).
 
-The photos are great to explore visually to get a feel for the visual beauty of the area.
+The photos are great to explore interactively to get a feel for the visual beauty of the area.
 
 A location can be requested via the Mapillary API using a bounding box (`bbox`).
 
-There are lots of tools to calculate coordinates for a bounding box programmatically..
+There are lots of tools to calculate coordinates for a bounding box programmatically.
 
 A useful web tool for doing this is [boundingbox.klokantech.com](https://boundingbox.klokantech.com/).
 
 <img class="img-fluid" src="/assets/images/blog/2020-09-18/bounding-box-draw-web.jpg" alt="Draw a bounding box" title="Draw a bounding box" />
 
 A bounding box is a rectangular box that can be determined by the x and y axis coordinates in the upper-left corner and the x and y  axis coordinates in the lower-right corner of the rectangle.
-
-<img class="img-fluid" src="/assets/images/blog/2020-09-18/Horizontal-Datums-620x322.png" alt="Latitude / Longitude x/y" title="Latitude / Longitude x/y" />
 
 In mapping terms we can use latitude and longitude for position. 
 
@@ -52,15 +50,17 @@ Important note: I would not typically use a bounding box this large against the 
 I'd recommend:
 
 1. resize your bounding box (and make smaller systematic requests across an area) or,
-2. in the case of our mapping party where we know some vairables, you can use other parameters instead of bbox to filter images, like `image_keys`, `organization_keys`, `userkeys`, `usernames`, `start_time` or `end_time` where these values are known, then filtering images independently inside the large bounding box after getting a response.
+2. in the case of our mapping party where we know some variables, you can use other parameters instead of bbox to filter images, like `image_keys`, `organization_keys`, `userkeys`, `usernames`, `start_time` or `end_time` where these values are known, then filtering images locally on your machine after getting a response.
 
 Now we know where we want to analyse, we can run some queries against the Mapillary API.
 
 [I will assume you've already read Chris' post which will show you the basics of forming a request to the Mapillary API](https://blog.mapillary.com/update/2020/08/28/map-data-mapillary-api.html).
 
-One thing to note, you'll not I use the per_page=500 in my requests. This is saying, only show 500 records in the response and then paginate. In many cases, more than 500 total records will be returned. In which case you can increase to the maximum records allowed `per_page=1000` (it will be slower, and potentially still to small) or use some logic to iterate through each page.
+One thing to note, you'll see I use the `per_page=500` in my requests. This is saying, only show 500 records in the response and then paginate. In many cases, more than 500 total records will be returned. In which case you can increase to the maximum records allowed `per_page=1000` (it will be slower, and potentially still to small) or use some logic to iterate through each page.
 
 Let's start with the the map [`features_endpoint`](https://www.mapillary.com/developer/api-documentation/#map-features) that returns locations of objects as point features on the map. Put another way, the actual real-world position of the object.
+
+### Benches
 
 Walking takes up a lot of energy. Where can we find a bench (`object--bench`) to sit on?
 
@@ -115,11 +115,13 @@ Here's what the response might look like:
 }
 ```
 
-Here we see two `feature.detections` (`detection_key=o8kc5kth6o7m4f5eosebin7od5` and `detection_key=gq9da6nqktj5rklq5vrc4q8sul`) of an `object--bench`in two respective images (`"image_key": "tsWJOYler98YAmg97kUzLQ"` and `"image_key": "39JmaDL9LxsaijLV7n2Ccg"`).
+Here we see two `feature.detections` (`detection_key=o8kc5kth6o7m4f5eosebin7od5` and `detection_key=gq9da6nqktj5rklq5vrc4q8sul`) of an `object--bench` in two respective images (`"image_key": "tsWJOYler98YAmg97kUzLQ"` and `"image_key": "39JmaDL9LxsaijLV7n2Ccg"`).
 
-This entry is showing a single physical bench located at `latitude=1.774513671` and `longtitude=50.7038878539` and present in the two images listed.
+This entry is showing a single physical bench located at `latitude=1.774513671` and `longitude=50.7038878539` and present in the two images listed.
 
-More detections are returned, but for brevity I have omitted from the response printed here (`...`).
+More detections are returned, but for brevity I have omitted from the response printed in this post (`...`).
+
+### Cycling
 
 Cycling is a very popular activity in the New Forest. How many cyclist have been detected within the New Forest (`human--rider--bicyclist`)?
 
@@ -131,7 +133,9 @@ curl "https://a.mapillary.com/v3/map_features?client_id=<YOUR_CLIENT_ID>" \
 	&per_page=500
 ```
 
-This query only considers people riding bicyles, not all bicycles detected (e.g. parked bicycles). We could add `values=object--vehicle--bicycle` for this purpose or search for both cyclists and bikes with `values=object--vehicle--bicycle,human--rider--bicyclist`.
+This query only considers people riding bicycles, not all bicycles detected (e.g. parked bicycles). We could add `values=object--vehicle--bicycle` for this purpose or search for both cyclists and bikes with `values=object--vehicle--bicycle,human--rider--bicyclist`.
+
+### Wildlife
 
 Wild ponies can be found all over the New Forest and are a draw for visitors. Being so close to the coast, it's also a great place for bird watching. Let's take an _automated_ look, for them (`animal--bird&animal--ground-animal`):
 
@@ -148,7 +152,9 @@ The object detections endpoint offers a way to query by the content of images an
 
 Unlike the features endpoint, the object detections endpoint contains coordinates of the image detection (where object is in the photo), but not the specific location of the detected object on a map.
 
-If I wanted to filter only images belonging to partipants of the mapping party I could also use the parameter `usernames=`. Or should they all belong to the Mapillary Trek View organisation (they do), I could use the parameter `organization_keys=`.
+If I wanted to filter only images belonging to participants of the mapping party I could also use the parameter `usernames=`. Or should they all belong to the Mapillary Trek View organisation (they do), I could use the parameter `organization_keys=`.
+
+### Seasonal vegetation
 
 It's a truly beautiful place in the late-summer to visit, with the leaves still in full bloom.
 
@@ -170,7 +176,9 @@ curl "https://a.mapillary.com/v3/images?client_id=<YOUR_CLIENT_ID>"
 	&per_page=500
 ```
 
-Here's what the response might look like:
+Here I'm defining summer as the 6 months between the start of April (`2020-04-01`) and the last day of September (`2020-09-30`).
+
+And here's what the response might look like:
 
 ```
 {
@@ -202,9 +210,7 @@ Here's what the response might look like:
 }
 ```
 
-Here I'm defining summer as the 6 months between the start of April (`2020-04-01`) and the last day of September (`2020-09-30`).
-
-This will return a lot of images each with a `features.properties.key` value. This is the unique Mapillary image key.
+This will return a lot of images each with a `features.properties.key` value. This is the unique Mapillary image key of photos taken that match the specified criteria.
 
 We can now use these images keys against the `object_detections` endpoint.
 
@@ -273,15 +279,15 @@ A snippet of a response:
 }
 ```
 
-The features.coordinates show a polygon of the outline of the `nature--vegetation` object.
+The `features.shape.coordinates` shows a polygon of the outline of the `nature--vegetation` object.
 
-By calculating the area of all polygons we can get an idea of how much foliage blooms on deciduous vegetation in these areas over the summer months.
+By calculating the area of all polygons with this object we can get an idea of how much foliage blooms on deciduous vegetation in these areas over the summer months (and subsequently how much is shed during winter).
 
 IMPORTANT: as noted the `object_detections` endpoint returns detections in each photo (not by individual object). In almost all cases a tree will be covered in more than one photo. Therefore the sum of areas for every image will include the same object counted potentially many times.
 
 Our plan is to capture images of the same paths, however, this still makes a like-for-like comparison almost impossible -- unless you can capture images in the winter in exactly the same place.
 
-My _crude_ fix, take the count of photos returned by summer and winter and weight by number of images in the sample. For example, if 1000 photos are captured in summer and 500 in winter I will times the sum of area for summer by 0.5 (to account for the 50% reduction in image count in winter). Unless you can suggest an improved methodology (please!)?
+My _crude_ fix, take the count of photos returned in summer and winter and weight by number of images in the sample. For example, if 1000 photos are captured in summer and 500 in winter I will times the sum of area for summer by 0.5 (to account for the 50% reduction in image count in winter). Unless you can suggest an improved methodology (please!)?
 
 Hopefully this gives you a few more ideas to build on Chris' post. I also want to say a big thank you to Chris for proof-reading this post, and providing very valuable feedback.
 
