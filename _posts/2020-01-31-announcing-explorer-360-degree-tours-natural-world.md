@@ -3,7 +3,7 @@ date: 2020-01-31
 title: "Announcing Explorer, 360-Degree Tours of the Natural World"
 description: "Unleash your inner explorer and travel the globe without leaving home."
 categories: updates
-tags: [Trek Pack 1, Camera Loans, Explorer, Explorer Desktop Uploader]
+tags: [Trek Pack 1, Camera Loans, Explorer, Tourer]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-01-31/trek-view-explorer-meta.jpg
 featured_image: /assets/images/blog/2020-01-31/trek-view-explorer-sm.png
@@ -38,8 +38,6 @@ Curate Tourbooks of your favourite tours to inspire future adventures. [Have a l
 
 Mark your favourite photos as Viewpoints. [Discover some of the top rated photos on the Viewpoint ranking page](https://mtp.trekview.org/).
 
-<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://cdn.pannellum.org/2.5/pannellum.htm#panorama=https://backpack-explorer-trekview-org.s3.amazonaws.com/uploads/panoramas/13/med_MULTISHOT_0310_000034.jpg&amp;title=River%20Thames%20-%20Henley&amp;author=river_thames_trust&amp;autoLoad=true"></iframe><p><a href="https://mtp.trekview.org/photos/3062" target="_blank">View on Trek View Explorer</a></p>
-
 Embed your favourite photos on your blog, ([remember all our imagery can be used for non-commercial purposes](/charters/image)), so your readers can pretend to be a rower as you virtually race the Henley Regatta course above (just me?).
 
 If you're a developer, [you can also build Trek View imagery into your own projects using the API](https://github.com/trek-view/explorer-poc).
@@ -60,9 +58,9 @@ If you choose to, the name, description, and tags you include when creating (or 
 
 If you haven't already, you'll need to [update Tourer](https://github.com/trek-view/tourer) to take advantage of the new Explorer integration.
 
-We're also excited to ship another integration in the new Explorer Desktop Uploader release, [OpenTrailView](https://opentrailview.org). OpenTrailView is a project to collect 360-degree 360-degree photos of walking trails, to provide a StreetView-like experience for the world's wild spaces.
+We're also excited to ship another integration in the new Tourer release, [OpenTrailView](https://opentrailview.org). OpenTrailView is a project to collect 360-degree 360-degree photos of walking trails, to provide a StreetView-like experience for the world's wild spaces.
 
-To grow the number of integrations we can support, Tourer is now modularised so that new integration points can be added as modules by anyone. Do you have an idea for an integration? [Check out the Tourer documentation for information on creating your own](https://github.com/trek-view/tourer).
+To grow the number of integrations we can support, Tourer is now modularised so that new integration points can be added as modules by anyone. Do you have an idea for an integration? [Check out Tourer documentation for information on creating your own](https://github.com/trek-view/tourer).
 
 [Download the latest version of Tourer now](https://github.com/trek-view/tourer).
 

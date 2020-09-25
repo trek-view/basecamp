@@ -136,3 +136,5 @@ Find us on:
 
 * [Instagram](https://www.instagram.com/trekviewed/)
 * [Facebook](https://www.facebook.com/trekview/)
+
+_Update August 2020: [You can now create virtual guidebooks in Map the Paths too](/blog/2020/map-the-paths-guidebooks)._
