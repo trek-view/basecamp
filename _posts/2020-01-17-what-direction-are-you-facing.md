@@ -3,10 +3,10 @@ date: 2020-01-17
 title: "What Direction are you Facing?"
 description: "Hello class! Welcome to Trigonometry 101."
 categories: developers
-tags: [Explorer Desktop Uploader, Explorer, Trek Pack]
+tags: [Tourer, Explorer, Trek Pack]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2020-01-17/explorer-desktop-uploader-connection-heading-calculation-meta.jpg
-featured_image: /assets/images/blog/2020-01-17/explorer-desktop-uploader-connection-heading-calculation-sm.png
+image: /assets/images/blog/2020-01-17/tourer-connection-heading-calculation-meta.jpg
+featured_image: /assets/images/blog/2020-01-17/tourer-connection-heading-calculation-sm.png
 layout: post
 published: true
 ---
@@ -33,7 +33,7 @@ Though in some case it's life or death. This is no exaggeration.
 
 [Take Bellingcat](https://www.bellingcat.com/category/resources/case-studies/). Their crowdsourced work often involves taking a photograph and determining the location, heading, and even time (using shadows) it was taken to aid their investigations ([like the downing of MH17](https://www.bellingcat.com/news/uk-and-europe/2017/07/17/mh17-open-source-investigation-three-years-later/)).
 
-Because the Trek Pack camera (GoPro Fusion) does not support heading or pitch when shooting timelapse tours, we needed to manually calculate this information when building the Explorer Desktop Uploader.
+Because the Trek Pack camera (GoPro Fusion) does not support heading or pitch when shooting timelapse tours, we needed to manually calculate this information when building Tourer.
 
 Now you might be wondering why pitch or heading is important. _"Surely a user can define where they want to be looking using a 360-degree photo viewer?"_, you might be asking. This is true. Though when trying to link 360-degree photos in a tour (e.g what direction is the next photo?), this information is vital.
 
@@ -57,7 +57,7 @@ Two things to note: 1) this is probably overkill as the curvature of the earth i
 
 ## Pitch
 
-<img class="img-fluid" src="/assets/images/blog/2020-01-17/explorer-desktop-uploader-pitch-calculation.png" alt="Explorer Desktop Uploader Pitch Calculation" title="Explorer Desktop Uploader Pitch Calculation" />
+<img class="img-fluid" src="/assets/images/blog/2020-01-17/tourer-pitch-calculation.png" alt="Tourer Pitch Calculation" title="Tourer Pitch Calculation" />
 
 [Download this diagram](https://docs.google.com/presentation/d/1otcjbxGghKLqzOcEjfzHsXf22VG8zQVvknpMOKcccDY/edit#slide=id.g76849fa222_0_36).
 
@@ -77,13 +77,13 @@ The GPS logs the elevation, so you can work this out; `source photo elevation - 
 
 So now you have; `pitch(θ) = tan(θ) = opposite / adjacent = elevation change / distance`.
 
-You'll notice in the diagram the Explorer Desktop Uploader generates a forward and backward connection (P1 - P2 and P2 - P1) for each connected photo. This is so you can move forward and backwards between photos.
+You'll notice in the diagram Tourer generates a forward and backward connection (P1 - P2 and P2 - P1) for each connected photo. This is so you can move forward and backwards between photos.
 
 ## Heading (Azimuth)
 
 <img class="img-fluid" src="/assets/images/blog/2020-01-17/azimuth-altitude-schematic.png" alt="Heading / Azimuth" title="Heading / Azimuth" />
 
-<img class="img-fluid" src="/assets/images/blog/2020-01-17/explorer-desktop-uploader-photo-heading-calculation.png" alt="Explorer Desktop Uploader Heading / Azimuth Calculation" title="Explorer Desktop Uploader Heading / Azimuth Calculation" />
+<img class="img-fluid" src="/assets/images/blog/2020-01-17/tourer-photo-heading-calculation.png" alt="Tourer Heading / Azimuth Calculation" title="Tourer Heading / Azimuth Calculation" />
 
 [Download this diagram](https://docs.google.com/presentation/d/1otcjbxGghKLqzOcEjfzHsXf22VG8zQVvknpMOKcccDY/edit#slide=id.g769735d1b6_0_1).
 
@@ -97,11 +97,11 @@ Given photos are generally less than 3m apart and our Trek Pack cameras are alwa
 
 Now you can calculate the heading of the current photo by measuring the heading (angle) from North to the next photo (by time), as shown in the diagram.
 
-There is a slight problem with this approach, you cannot get the heading of the last photo (because there is not a next photo by time). As a simple fix, we built the Explorer Desktop Uploader to assign the previous photo heading (by time) to the last photo in the tour.
+There is a slight problem with this approach, you cannot get the heading of the last photo (because there is not a next photo by time). As a simple fix, we built Tourer to assign the previous photo heading (by time) to the last photo in the tour.
 
 ## Multiple Headings
 
-<img class="img-fluid" src="/assets/images/blog/2020-01-17/explorer-desktop-uploader-connection-heading-calculation.png" alt="Explorer Desktop Uploader Connection Photo Heading Calculation" title="Explorer Desktop Uploader Connection Photo Heading Calculation" />
+<img class="img-fluid" src="/assets/images/blog/2020-01-17/tourer-connection-heading-calculation.png" alt="Tourer Connection Photo Heading Calculation" title="Tourer Connection Photo Heading Calculation" />
 
 [Download this diagram](https://docs.google.com/presentation/d/1otcjbxGghKLqzOcEjfzHsXf22VG8zQVvknpMOKcccDY/edit#slide=id.g76849fa222_0_0).
 
@@ -111,21 +111,21 @@ In some cases, you might have multiple connections. For example, at a fork where
 
 So you not only need to know the heading to the next photo based on time, but also the direction to all connected photos so that a user can move through a tour virtually (think Google Street View).
 
-First you need to consider what photos are connected. In the Explorer Desktop Uploader photos are considered connected if the horizontal distance between photos is <=10 metres of the elevation change is <=+/-5 (both these values calculated earlier).
+First you need to consider what photos are connected. In Tourer photos are considered connected if the horizontal distance between photos is <=10 metres of the elevation change is <=+/-5 (both these values calculated earlier).
 
 So you can use the same logic as before to work out heading for all connected photos.
 
-As with pitch, you'll notice in the diagram the Explorer Desktop Uploader generates a forward and backward connection heading (P1 - P2 and P2 - P1) for each connected photo. And like with pitch, it is so you can move forward and backwards between photos.
+As with pitch, you'll notice in the diagram Tourer generates a forward and backward connection heading (P1 - P2 and P2 - P1) for each connected photo. And like with pitch, it is so you can move forward and backwards between photos.
 
 ## Adjusted Headings
 
-<img class="img-fluid" src="/assets/images/blog/2020-01-17/explorer-pannellum-scene-connection.png" alt="Explorer Pannellum Scene" title="Explorer Pannellum Scene" />
+<img class="img-fluid" src="/assets/images/blog/2020-01-17/tourer-pannellum-scene-connection.png" alt="Explorer Pannellum Scene" title="Explorer Pannellum Scene" />
 
 One final calculation (I promise); adjusted heading.
 
-This is useful for some software, including [Explorer](https://explorer.trekview.org), where the 360-degree photos are rendered visually, as shown above, and where the software has no concept of North. That is the software simply assumes the centre of the 360-degree photo is always facing North (0°).
+This is useful for some software, including [Explorer](https://mtp.trekview.org), where the 360-degree photos are rendered visually, as shown above, and where the software has no concept of North. That is the software simply assumes the centre of the 360-degree photo is always facing North (0°).
 
-<img class="img-fluid" src="/assets/images/blog/2020-01-17/explorer-desktop-uploader-adjusted-connection-heading-calculation.png" alt="Explorer Desktop Uploader Adjusted Connection Photo Heading Calculation" title="Explorer Desktop Uploader Adjusted Connection Photo Heading Calculation" />
+<img class="img-fluid" src="/assets/images/blog/2020-01-17/tourer-adjusted-connection-heading-calculation.png" alt="Tourer Adjusted Connection Photo Heading Calculation" title="Tourer Adjusted Connection Photo Heading Calculation" />
 
 [Download this diagram](https://docs.google.com/presentation/d/1otcjbxGghKLqzOcEjfzHsXf22VG8zQVvknpMOKcccDY/edit#slide=id.g76a265887b_0_0).
 
@@ -141,8 +141,10 @@ You will see there is no adjusted heading for the next photo by time (e.g P2 to 
 
 We are not geospacial experts and know these calculations can probably be improved in place of estimates. You can help us out...
 
-All the code for the Explorer Desktop Uploader is open source. [You can see how we calculate these values in the Explorer Desktop Uploader Gitlab repo -- and point out any mistakes we've made](https://github.com/trek-view/explorer-desktop-uploader).
+All the code for Tourer is open source. [You can see how we calculate these values in Tourer Gitlab repo -- and point out any mistakes we've made](https://github.com/trek-view/tourer).
 
-## Download the Explorer Desktop Uploader
+## Download Tourer
 
-[Download now](https://github.com/trek-view/explorer-desktop-uploader).
+[Download now](https://github.com/trek-view/tourer).
+
+_Update October 2020: Tourer has been replaced with the Map the Paths Desktop Uploader. [More information and download links are here](/blog/2020/map-the-paths-desktop-uploader)._

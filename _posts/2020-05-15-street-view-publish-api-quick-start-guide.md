@@ -310,6 +310,4 @@ If you're looking to use Street View images on your website or app without using
 * [Street View Static API](https://developers.google.com/maps/documentation/streetview/intro): The Street View Static API lets you embed a static (non-interactive) Street View panorama or thumbnail into your web page.
 * [Google Maps JavaScript API (Street View Service)](https://developers.google.com/maps/documentation/javascript/streetview): The Maps JavaScript API provides a Street View service for obtaining and manipulating the imagery used in Google Maps Street View. This Street View service is supported natively within the browser.
 
-## Explorer Desktop Uploader
-
-Version 2 ([replacing version 1](blog/2019/announcing-explorer-360-degree-tours-natural-world)), with improved Google Street View upload features is coming soon!
+_Update October 2020: Map the Paths Desktop Uploader now contains a full implementation of these Google API's. [More information and links to code are here](/blog/2020/map-the-paths-desktop-uploader)._

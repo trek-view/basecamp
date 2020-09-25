@@ -38,3 +38,5 @@ We want YOU to help us capture images of your city, town, or even village by bic
 We're also inviting cities to work with us under our [Safer.Bike](https://www.safer.bike/) initiative. Using what we learn from locations around the world we want to help to design bicycle lanes that will eliminate all cyclist deaths caused by road vehicles.
 
 What are you waiting for? ON YOUR BIKE!
+
+p.s. Challenges can be set for other 20 other activities, if cycling isn't your thing.

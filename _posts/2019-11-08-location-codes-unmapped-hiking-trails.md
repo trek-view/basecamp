@@ -3,7 +3,7 @@ date: 2019-11-08
 title: "Trails Don't have Addresses"
 description: "Using location codes to map even the most remote hiking trails."
 categories: developers
-tags: [Explorer Desktop Uploader, Camera Loans]
+tags: [Tourer, Camera Loans]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2019-11-08/open-location-code-plus-code-glenmore-scotland-meta.jpg
 featured_image: /assets/images/blog/2019-11-08/open-location-code-plus-code-glenmore-scotland-sm.png
@@ -53,16 +53,18 @@ A Plus Code looks like this: [`5894+3W`](https://plus.codes/9C9R5894+3W).
 
 Not quite as intuitive as What3Words codes, but they are used in and by Google Maps, which makes them more accessible.
 
-[Enter a location and the online Plus Code tool will generate a code]([Plus Codes](https://plus.codes/)).
+Enter a location and the online Plus Code tool will generate a code[Plus Codes](https://plus.codes/).
 
 Enter a Plus Code and Google Maps will return the exact location -- perfect for the millions of people with the Google Maps app installed on their phones.
 
-The Explorer Desktop Uploader currently takes advantage of [the open-source Python Open Location Code library available on Github that converts co-ordinates into Plus Codes](https://github.com/google/open-location-code).
+Tourer currently takes advantage of [the open-source Python Open Location Code library available on Github that converts co-ordinates into Plus Codes](https://github.com/google/open-location-code).
 
-Every photo you now add to the Explorer Desktop Uploader will be tagged with a Plus Code allowing you to easily share even the most remote locations you've captured 360-degree photos in.
+Every photo you now add to Tourer will be tagged with a Plus Code allowing you to easily share even the most remote locations you've captured 360-degree photos in.
 
 _**Update January 2020**: [Call for Trekkers to "map the unmapped"](/blog/2020/mapping-the-unmapped-using-360-degree-photos)_.
 
-## Download the Explorer Desktop Uploader
+## Download Tourer
 
-[Download now](https://github.com/trek-view/explorer-desktop-uploader).
+[Download now](https://github.com/trek-view/tourer).
+
+_Update October 2020: Tourer has been replaced with the Map the Paths Desktop Uploader. [More information and download links are here](/blog/2020/map-the-paths-desktop-uploader)._

@@ -3,7 +3,7 @@ date: 2019-12-06
 title: "What is a Place ID?"
 description: "How to make sure you're not missing out on Google Local Guide points from Street View photos."
 categories: developers
-tags: [Google, Street View, Google Street View, Explorer Desktop Uploader]
+tags: [Google, Street View, Google Street View, Tourer]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2019-12-06/unknown-place-google-street-view-meta.jpg
 featured_image: /assets/images/blog/2019-12-06/unknown-place-google-street-view-sm.png
@@ -28,7 +28,7 @@ If you're interested, you can find the Place ID of a particular location using [
 
 Whilst it might not have much use outside of Google, it is an important part of Google Street View uploads.
 
-When we started publishing photos to Street View using the Explorer Desktop Uploader [we we're just passing `photo.pose` information along with the photo to the Street View Publish API (latitude, longitude and altitude)](https://developers.google.com/streetview/publish/reference/rest/v1/photo#pose).
+When we started publishing photos to Street View using Tourer [we we're just passing `photo.pose` information along with the photo to the Street View Publish API (latitude, longitude and altitude)](https://developers.google.com/streetview/publish/reference/rest/v1/photo#pose).
 
 This was enough information for the photo to be published, but not enough to locate the photo to a place against the Google Places database.
 
@@ -60,17 +60,19 @@ Google will usually return a number of `place_id`'s for each place that matches 
 
 You can filter the response to include / exclude certain place levels. For example, passing using the `result_type=locality` only returns results for places at locality level (usually towns / cities).
 
-Building this into the Explorer Desktop Uploader, the following tour / photo creation logic is performed:
+Building this into Tourer, the following tour / photo creation logic is performed:
 
 1. User defines tour (photos and meta-data)
-2. The Explorer Desktop Uploader photo validation (does it have GPS? correct size? correct format?)
-3. The Explorer Desktop Uploader performs reverse geocoding (assigns country, location codes, etc.). The reverse geocoding also returns matching Places and assciated Place IDs for the user to select.
-4. The Explorer Desktop Uploader uploads to Google Street View (and/or other selected integrations)
+2. Tourer photo validation (does it have GPS? correct size? correct format?)
+3. Tourer performs reverse geocoding (assigns country, location codes, etc.). The reverse geocoding also returns matching Places and assciated Place IDs for the user to select.
+4. Tourer uploads to Google Street View (and/or other selected integrations)
 
-[You can read more about the Explorer Desktop Uploader's logic in the developer docs](https://github.com/trek-view/explorer-desktop-uploader/wiki).
+[You can read more about Tourer's logic in the developer docs](https://github.com/trek-view/tourer).
 
-And with a Place ID now being submitted to Street View, you will earn every single Local Guide point you deserve when using the Explorer Desktop Uploader!
+And with a Place ID now being submitted to Street View, you will earn every single Local Guide point you deserve when using Tourer!
 
-## Download the Explorer Desktop Uploader
+## Download Tourer
 
-[Download now](https://github.com/trek-view/explorer-desktop-uploader).
+[Download now](https://github.com/trek-view/tourer).
+
+_Update October 2020: Tourer has been replaced with the Map the Paths Desktop Uploader. [More information and download links are here](/blog/2020/map-the-paths-desktop-uploader)._

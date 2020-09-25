@@ -1,14 +1,14 @@
 ---
-date: 2020-10-16
+date: 2020-09-25
 title: "How to blur your house on street-level maps"
 description: "If you see that your face or license plate requires additional blurring, here's how you can do it, and why you should."
 categories: guides
 tags: [Google, Street View, Microsoft, Bing, Streetside, Facebook, Mapillary]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2020-10-16/google-street-view-blur-meta.jpg
-featured_image: /assets/images/blog/2020-10-16/google-street-view-blur-sm.jpg
+image: /assets/images/blog/2020-09-25/google-street-view-blur-meta.jpg
+featured_image: /assets/images/blog/2020-09-25/google-street-view-blur-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **We're a big believer in privacy.**
@@ -39,7 +39,7 @@ Here's how to submit a blur request to Google:
 
 3. With the person or object in view, click "Report a problem" in the bottom-right corner of the screen
 
-<img class="img-fluid" src="/assets/images/blog/2020-10-16/blur-requst-google-street-view.jpg" alt="Google Street View Blur Request" title="Google Street View Blur Request" />
+<img class="img-fluid" src="/assets/images/blog/2020-09-25/blur-requst-google-street-view.jpg" alt="Google Street View Blur Request" title="Google Street View Blur Request" />
 
 4. Center the red box on the person or object, and select the correct option in the "Request blurring" field
 
@@ -66,7 +66,7 @@ To do this from the Bing Maps website (www.bing.com/maps/):
 
 2. Click “Report a privacy concern with this image” text in the lower left corner.
 
-<img class="img-fluid" src="/assets/images/blog/2020-10-16/bing-streetside-blur-form.png" alt="Microsoft Bing Streetside Blur Request" title="Microsoft Bing Streetside Blur Request" />
+<img class="img-fluid" src="/assets/images/blog/2020-09-25/bing-streetside-blur-form.png" alt="Microsoft Bing Streetside Blur Request" title="Microsoft Bing Streetside Blur Request" />
 
 4. Click on the part of the image below that concerns you.
 
@@ -82,7 +82,7 @@ To do this from the Bing Maps website (www.bing.com/maps/):
 
 [Facebook's Mapillary also employ state of the art blurring algorithms, in fact, according to this analysis it's much better than Google's or Microsoft's offerings](https://blog.mapillary.com/update/2019/09/12/protecting-privacy-better-maps.html)/
 
-<img class="img-fluid" src="/assets/images/blog/2020-10-16/mapillary-blurring-benchmark-reverse.png" alt="Mapillary blurring benchmark" title="Mapillary blurring benchmark" />
+<img class="img-fluid" src="/assets/images/blog/2020-09-25/mapillary-blurring-benchmark-reverse.png" alt="Mapillary blurring benchmark" title="Mapillary blurring benchmark" />
 
 Mapillary also offer the most flexibility when it comes to user submitted blurring.
 
@@ -109,7 +109,7 @@ To submit blur edits in the Mapillary web app:
 
 2. Click "Edit privacy blurs".
 
-<img class="img-fluid" src="/assets/images/blog/2020-10-16/mapillary-blur-editor.png" alt="Mapillary blur editor" title="Mapillary blur editor" />
+<img class="img-fluid" src="/assets/images/blog/2020-09-25/mapillary-blur-editor.png" alt="Mapillary blur editor" title="Mapillary blur editor" />
 
 3. You will enter the blur editor mode where you can add and review the blurs applied to the image. All blurs related to the image are marked and numbered in the sidebar as well as in the image. [Full information on how to use the Mapillary blur editor can be found in the Mapillary documentation here](https://help.mapillary.com/hc/en-us/articles/115001663705-Blurring-images).
 

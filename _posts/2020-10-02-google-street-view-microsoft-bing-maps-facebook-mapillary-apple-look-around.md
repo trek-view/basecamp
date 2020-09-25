@@ -1,12 +1,12 @@
 ---
-date: 2020-10-23
+date: 2020-10-02
 title: "Street View vs. Streetside vs. Look Around vs. Mapillary"
 description: "How do the major street-level mapping products compare?"
 categories: guides
 tags: [Google Street View]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2020-10-23/google-street-view-coverage-sept-2020-meta.jpg
-featured_image: /assets/images/blog/2020-10-23/google-street-view-coverage-sept-2020-sm.jpg
+image: /assets/images/blog/2020-10-02/google-street-view-coverage-sept-2020-meta.jpg
+featured_image: /assets/images/blog/2020-10-02/google-street-view-coverage-sept-2020-sm.jpg
 layout: post
 published: false
 ---

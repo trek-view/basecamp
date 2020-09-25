@@ -1,12 +1,12 @@
 ---
 date: 2019-08-09
 title: "DIY Google Street View (5/5): Publish 360-Degree Photos to Street View"
-description: "Use the Explorer Desktop Uploader to upload 360-degree photo tours to Google Street View from your computer."
+description: "Use Tourer to upload 360-degree photo tours to Google Street View from your computer."
 categories: guides
-tags: [Explorer Desktop Uploader, Trek Pack 1]
+tags: [Tourer, Trek Pack 1]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2019-08-09/UKRT049-MULTISHOT_8120_000036-meta.jpg
-featured_image: /assets/images/blog/2019-08-09/explorer-desktop-uploader-command-line-tools-example.jpg
+featured_image: /assets/images/blog/2019-08-09/tourer-command-line-tools-example.jpg
 layout: post
 published: true
 ---
@@ -23,35 +23,35 @@ Though when it comes to uploading a larger number of photos or streaming video f
 
 The other alternative has been to get technical, with a good knowledge of programming required to interact with the [Google Street View publish API](https://developers.google.com/streetview/publish/).
 
-## Introducing the Explorer Desktop Uploader
+## Introducing Tourer
 
-<img class="img-fluid" src="/assets/images/blog/2019-08-09/explorer-desktop-uploader-command-line-tools-example.jpg" alt="Trek View  Explorer Desktop Uploader CLI Example" title="Trek View Explorer Desktop Uploader CLI Example" />
+<img class="img-fluid" src="/assets/images/blog/2019-08-09/tourer-command-line-tools-example.jpg" alt="Trek View  Tourer CLI Example" title="Trek View Tourer CLI Example" />
 
 To solve this problem, we have built a small piece of software to make it fairly simple (albeit for now with some technical knowledge) to upload a large number of 360-degree photos to Google Street View.
 
-[Today we're releasing it as open-source piece to the community](https://github.com/trek-view/explorer-desktop-uploader).
+[Today we're releasing it as open-source piece to the community](https://github.com/trek-view/tourer).
 
 Download and run it on your computer (Windows, Mac, and Linux) to publish 360-degree photos to Street View using your Google account.
 
-To help you get up up-and-running quickly with the Explorer Desktop Uploader we've [created a detailed guide describing how to use the software to publish your photos to Street View](https://github.com/trek-view/explorer-desktop-uploader/wiki).
+To help you get up up-and-running quickly with Tourer we've [created a detailed guide describing how to use the software to publish your photos to Street View](https://github.com/trek-view/tourer).
 
 As noted, it does require some level of technical knowledge. The software is currently a set of command line tools.
 
-This release of the Explorer Desktop Uploader can be classed as an alpha version. Simply put, there will probably be bugs in the software. Please let us know if you encounter any errors by [contacting us via email](/contact) or [raising an issue on GitLab](https://github.com/trek-view/explorer-desktop-uploader/issues).
+This release of Tourer can be classed as an alpha version. Simply put, there will probably be bugs in the software. Please let us know if you encounter any errors by [contacting us via email](/contact) or [raising an issue on GitLab](https://github.com/trek-view/tourer/issues).
 
-## The Explorer Desktop Uploader Roadmap
+## Tourer Roadmap
 
-I'm working hard to make the Explorer Desktop Uploader easier to use for non-technical users. The next release will provide a friendlier installation process and a visual interface to manage tours.
+I'm working hard to make Tourer easier to use for non-technical users. The next release will provide a friendlier installation process and a visual interface to manage tours.
 
-Do you want to be the first to know when the next version of the Explorer Desktop Uploader is released?
+Do you want to be the first to know when the next version of Tourer is released?
 
 [Register for our newsletter and we'll keep you posted](/subscribe).
 
-## Help us Improve the Explorer Desktop Uploader
+## Help us Improve Tourer
 
-If you're technical and have a few ideas up your sleeve; why not help improve the Explorer Desktop Uploader for everyone?
+If you're technical and have a few ideas up your sleeve; why not help improve Tourer for everyone?
 
-The Explorer Desktop Uploader software is provided as open-source under an AGPL v3 license. The [source code for the Explorer Desktop Uploader can be accessed here](https://github.com/trek-view/explorer-desktop-uploader).
+Tourer software is provided as open-source under an AGPL v3 license. The [source code for Tourer can be accessed here](https://github.com/trek-view/tourer).
 
 ## Share Your Tours with Us
 
@@ -77,3 +77,5 @@ Read Part 6 now: [Increasing the Battery Life of Your GoPro Fusion](/blog/2019/d
 _Update December 2019: [You can now access the Trek Pack Getting Started Guide online with all the latest information you need to create, process and publish your own Street View Tours](/trek-pack/version-one)._
 
 _Update June 2020: [A newer version of the Trek Pack (v2) exists, that superseeds the pack (v1) described in this post](/blog/2020/announcing-trek-pack-v2)._
+
+_Update October 2020: Tourer has been replaced with the Map the Paths Desktop Uploader. [More information and download links are here](/blog/2020/map-the-paths-desktop-uploader)._

@@ -57,6 +57,10 @@ And Trek View. Our lesson on rivers show children show how they change from sour
 
 We're in the process of uploading all our public to Mapillary, and you'll see links to it in [Explorer](https://explorer.trekview.org) (in addition to Google Street View and OpenTrailView).
 
-There is also a potential integration with Mapillary and the [Explorer Desktop Uploader](https://github.com/trek-view/explorer-desktop-uploader) in the works to make uploading 360-degree photos to multiple street-level imagery platforms a breeze.
+There is also a potential integration with Mapillary and [Tourer](https://github.com/trek-view/tourer) in the works to make uploading 360-degree photos to multiple street-level imagery platforms a breeze.
 
 Please do send me links to other Mapillary users who have uploaded trails, rivers, and other outdoor areas -- it's still winter here and I'd like to explore somewhere warm!
+
+_Update August 2020: [Explorer has been replaced with the Map the Paths](https://mtp.trekview.org)._
+
+_Update October 2020: Tourer has been replaced with the Map the Paths Desktop Uploader. [More information and download links are here](/blog/2020/map-the-paths-desktop-uploader)._
