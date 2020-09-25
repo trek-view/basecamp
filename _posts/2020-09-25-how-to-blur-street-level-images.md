@@ -1,6 +1,6 @@
 ---
 date: 2020-09-25
-title: "How to Blur your House on Street-Level Mapping Platforms (and Why You Should)"
+title: "How to Blur your House on Street-Level Mapping Platforms"
 description: "If you see that your face or license plate requires additional blurring after being captured by a camera car, here's how you can do it."
 categories: guides
 tags: [Google, Street View, Microsoft, Bing, Streetside, Facebook, Mapillary]
