@@ -1,6 +1,4 @@
 - links:
-  - name: Blog
-    link: /blog
   - name: Trek Pack (camera)
     link: /trek-pack
   - name: Campfire (forum)
@@ -15,6 +13,8 @@
     link: https://guides.trekview.org
 
 - links:
+  - name: Blog
+    link: /blog
   - name: About
     link: /about
   - name: Spotted a Trekker?

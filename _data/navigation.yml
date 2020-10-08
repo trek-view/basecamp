@@ -6,11 +6,15 @@
   link: /blog
   new_window: false
   highlight: false
-- name: Spotted a Trekker?
-  link: /subscribe
-  new_window: false
-  highlight: true
 - name: Become a Trekker
   link: /loan
   new_window: false
+  highlight: false
+- name: Spotted a Trekker
+  link: /subscribe
+  new_window: false
+  highlight: false
+- name: Upload Imagery
+  link: https://mtp.trekview.org
+  new_window: true
   highlight: true
