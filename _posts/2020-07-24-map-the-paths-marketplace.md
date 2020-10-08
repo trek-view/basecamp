@@ -27,29 +27,15 @@ Whilst these paths are mapped, very few have accompanying 360 degree street leve
 
 ## Let's get mapping
 
-Today I'm really excited to officially announce the [Map the Paths Marketplace](https://mtp.trekview.org/marketplace/).
-
-We built the Marketplace for two personas:
-
-**Contributors**
+Today I'm really excited to officially announce the [Map the Paths Marketplace](https://mtp.trekview.org/hire/list/).
 
 <img class="img-fluid" src="/assets/images/blog/2020-07-24/map-the-paths-marketplace-sm.jpg" alt="Map the Paths Marketplace" title="Map the Paths Marketplace" />
 
 To help photographers find work related to virtual tour and survey photography.
 
-Photographers, [create a business profile detailing your skills and working area so that people looking for imagery capture can get in contact with you](https://mtp.trekview.org/marketplace/hire/create).
+Photographers, [create a business profile detailing your skills and working area so that people looking for imagery capture can get in contact with you](https://mtp.trekview.org/hire/create).
 
-Alternatively, [browse and apply the growing number of projects being posted on the Marketplace](https://mtp.trekview.org/marketplace/jobs/list).
-
-**Organisations**
-
-<img class="img-fluid" src="/assets/images/blog/2020-07-24/map-the-paths-marketplace-create.jpg" alt="Map the Paths Create a Job" title="Map the Paths Create a Job" />
-
-To help organisations connect to the many talented photographers we have in our network.
-
-If you're thinking about virtual tour or survey photography, [create a job to showcase it to our database of skilled photographers and surveyors](https://mtp.trekview.org/marketplace/jobs/create).
-
-Alternatively, [browse photographers in our database to find those near you and inquire about their services](https://mtp.trekview.org/marketplace/hire/list).
+Alternatively, [browse and apply the growing number of projects being posted on the Marketplace](https://mtp.trekview.org/hire/list/).
 
 ## What's next?
 
@@ -62,3 +48,7 @@ We're currently working on a processing and upload tool for 360 outdoor tour ima
 <img class="img-fluid" src="/assets/images/blog/2020-07-24/map-the-paths-v2-mockup-2.jpg" alt="Map the Paths Create v2 Simple Mockup 2" title="Map the Paths Create v2 Simple Mockup 2" />
 
 Enter your email address into our mailing list form below to get an early preview of what we're working on.
+
+_Update August 2020: [Take a Virtually Guided Tour (or Create Your Own)](/blog/2020/map-the-paths-guidebooks)._
+
+_Update October 2020: [Curate and share your street-level images](/blog/2020/map-the-paths-mapillary-import)._

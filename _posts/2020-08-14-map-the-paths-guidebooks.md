@@ -52,3 +52,5 @@ Here are some I've created that hopefully provide some inspiration:
 Please do share Guidebooks you've created on Map the Paths with us on [Facebook](https://www.facebook.com/trekview/) and [Twitter](https://twitter.com/trekview). I'll make sure we repost as many as possible.
 
 Now, get exploring!
+
+_Update October 2020: [Curate and share your street-level images](/blog/2020/map-the-paths-mapillary-import)._
