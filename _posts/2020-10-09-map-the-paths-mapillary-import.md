@@ -19,7 +19,7 @@ Over the past 1.5 years, we've submitted about 100's of thousands of images to M
 
 The problem with holding such a large amount of imagery is making it easily searchable and being able to share the best moments from the journey.
 
-[When we announced Map the Paths Guidebooks in August](/blog/2020/map-the-paths-guidebooks), many of you dropped me an email to share things you've learned from our Guidebooks in line with our aim -- keep them coming.
+[When we announced Map the Paths Guidebooks in August](/blog/2020/map-the-paths-guidebooks), many of you dropped me an email to share your suggested improvements -- keep them coming.
 
 But they didn't give the whole (_360 degree_) picture...
 
