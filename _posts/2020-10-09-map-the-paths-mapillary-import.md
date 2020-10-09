@@ -1,14 +1,14 @@
 ---
 date: 2020-10-09
 title: "Make your street-level images easily searchable"
-description: "We have 100's of thousands of on Street View, Mapillary, and other places on the web. Here's how we manage them."
+description: "We have 100's of thousands of street-level photos on Street View, Mapillary, and other places on the web. Here's how we manage them."
 categories: updates
 tags: [Mapillary]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-10-09/mtp-sequences-meta.jpg
 featured_image: /assets/images/blog/2020-10-09/mtp-sequences-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Curate and share your street-level images**
