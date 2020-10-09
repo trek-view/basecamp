@@ -11,29 +11,27 @@ layout: post
 published: true
 ---
 
-**Curate and share your street-level images**
+**Curate and share your street-level images.**
 
 Over the past 1.5 years, we've submitted about 100's of thousands of images to Mapillary.
 
-Our trekkers have submitted many more.
+[Our trekkers have submitted many more](/loan).
 
-The problem with holding such a large amount of imagery is making it easily searchable and finding the best moments from the journey.
+The problem with holding such a large amount of imagery is making it easily searchable and being able to share the best moments from the journey.
 
-Last year I took my paddleboard down the Thames ([you might have seen my Map the Path Guidebook](https://mtp.trekview.org/guidebook/b27cb503-89f7-4e75-8fd0-9ba11444e8fb/detail/)). 
-
-We are continuing our mission to direct these people to our imagery they're most interested in.
-
-[When we announced Map the Paths Guidebooks in August](/blog/2020/map-the-paths-guidebooks), many of you dropped me an email to share things you've learned from our Guidebooks -- keep them coming.
+[When we announced Map the Paths Guidebooks in August](/blog/2020/map-the-paths-guidebooks), many of you dropped me an email to share things you've learned from our Guidebooks in line with our aim -- keep them coming.
 
 But they didn't give the whole (_360 degree_) picture...
 
+Today we are continuing our mission to help people share their own street-level tours and direct viewers to the imagery they're most interested in.
+
 ## Introducing Sequences and Tours
 
-From today, you'll also be able to import Mapillary images into Map the Paths.
+From today, you are able to import Mapillary images into Map the Paths.
 
 <img class="img-fluid" src="/assets/images/blog/2020-10-09/mtp-sequences-sm.jpg" alt="Map the Paths Sequences" title="Map the Paths Sequences" />
 
-First thing first, let me be clear; we're not trying to replace Mapillary, far from it.
+First-things-first, let me be clear; we're not trying to replace Mapillary, far from it (we love Mapillary).
 
 Think of imported sequences as a discovery tool for your Mapillary images.
 
@@ -45,7 +43,7 @@ This means any Map the Paths visitor can then discover your sequences through se
 
 [Here's the link you'll need](https://mtp.trekview.org/sequence/list?page=1&username=&name=&transport_type=12&tag=netherlands).
 
-You can also group Sequence as Tours. Tours are groups of Sequences.
+You can also group Sequences as Tours. Tours are groups of Sequences.
 
 For example, if you have 10 distinct sequences of a trail you've hiked, you can group them as a Tour.
 
@@ -57,7 +55,7 @@ Once you've imported your imagery, share you Map the Paths profile on social med
 
 [Shameless plug](https://mtp.trekview.org/user/himynamesdave/profile/).
 
-And every Mapillary sequence imported boosts you're position on the new Map the Paths leaderboard.
+And every Mapillary sequence imported boosts your position on the new Map the Paths leaderboard.
 
 You'll score leaderboard points for the number of photos imported to Map the Paths based on quality and capture method.
 

@@ -1,18 +1,20 @@
 - links:
-  - name: Trek Pack (camera)
+  - name: Trek Pack
     link: /trek-pack
-  - name: Campfire (forum)
-    link: https://campfire.trekview.org
-  - name: Map the Paths (maps)
+  - name: Make a Map
     link: https://mtp.trekview.org
-  - name: Expodition (podcast)
+  - name: Podcast
     link: https://expodition.trekview.org
-  - name: Treehouse (school)
+  - name: School
     link: https://treehouse.trekview.org
-  - name: Guides (documentation)
+  - name: Docs
     link: https://guides.trekview.org
+  - name: Support
+    link: https://campfire.trekview.org
 
 - links:
+  - name: Upload Imagery
+    link: https://mtp.trekview.org/sequence/list
   - name: Blog
     link: /blog
   - name: About
