@@ -14,7 +14,7 @@
   link: /subscribe
   new_window: false
   highlight: false
-- name: Upload Imagery
+- name: View / Upload Photos
   link: https://mtp.trekview.org/sequence/list
   new_window: true
   highlight: true
