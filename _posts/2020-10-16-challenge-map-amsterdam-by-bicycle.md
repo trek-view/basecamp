@@ -51,4 +51,4 @@ We're also inviting cities to work with us under our [Safer.Bike](https://www.sa
 
 What are you waiting for? ON YOUR BIKE! [Here's some inspiration for you](https://mtp.trekview.org/sequence/list?page=1&username=&name=&transport_type=12&tag=).
 
-Not a cyclist? Challenges can be set for other 20 other activities too, if cycling isn't your thing.
+Not a cyclist? [Challenges can be set for other 20 other activities too, if cycling isn't your thing](https://mtp.trekview.org/challenge/capture/create).
