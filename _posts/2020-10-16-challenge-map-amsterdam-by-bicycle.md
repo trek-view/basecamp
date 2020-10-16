@@ -41,7 +41,7 @@ Poor line markings, broken pavements, confusing signing are all things we'll be 
 
 <img class="img-fluid" src="/assets/images/blog/2020-10-16/map-the-paths-cycle-label.jpg" alt="Map the Paths Amsterdam label challenge" title="Map the Paths Amsterdam label challenge" />
 
-Users can also take part in a corresponding labeling challenge, where they can earn points for labeling common hazards not detected automatically. Every label will help improve our detection models and in turn the ability to identify areas of improvements.
+[Users can also take part in a corresponding labeling challenge](https://mtp.trekview.org/challenge/label/de0157ce-8081-42d9-9569-b05de6660325/), where they can earn points for labeling common hazards not detected automatically. Every label will help improve our detection models and in turn the ability to identify areas of improvements.
 
 But it doesn't just stop at Amsterdam.
 
