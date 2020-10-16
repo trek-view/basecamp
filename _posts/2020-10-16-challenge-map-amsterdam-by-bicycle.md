@@ -1,12 +1,12 @@
 ---
-date: 2020-10-09
+date: 2020-10-16
 title: "Crowdsourcing safer bicycle lane design"
 description: "Abstracting data from images of bicycle lanes to create a blueprint for the safest bicycle infrastructure."
 categories: updates
 tags: [Amsterdam, Map the Paths]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2020-10-09/map-the-paths-cycle-meta.jpg
-featured_image: /assets/images/blog/2020-10-09/map-the-paths-cycle-sm.jpg
+image: /assets/images/blog/2020-10-16/map-the-paths-cycle-meta.jpg
+featured_image: /assets/images/blog/2020-10-16/map-the-paths-cycle-sm.jpg
 layout: post
 published: true
 ---
@@ -30,6 +30,8 @@ And many of the people I spoke to were keen to play there part. So we decided to
 <img class="img-fluid" src="/assets/images/blog/2020-10-16/map-the-paths-amsterdam.jpg" alt="Map the Paths Amsterdam challenge" title="Map the Paths Amsterdam challenge" />
 
 [Every Sequence uploaded to Map the Paths in the Amsterdam area by bicycle (inc. eBikes) will earn you points on the Challenge Leaderboard](https://mtp.trekview.org/challenge/capture/4d431bb5-a72a-40b8-92a0-46aadec28d55/).
+
+[Check out last weeks post if you haven't seen Map the Paths yet](/blog/2020/map-the-paths-mapillary-import/).
 
 We're going to use every image uploaded to abstract data from them using computer vision to identify areas of improvements.
 
