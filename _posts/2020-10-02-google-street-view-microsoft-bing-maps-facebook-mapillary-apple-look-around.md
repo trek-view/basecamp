@@ -15,7 +15,7 @@ published: true
 
 [Google first launched Street View in 2007](/blog/2019/history-of-google-street-view-cameras). 
 
-The tech giants -- Microsoft, Apple and Facebook -- now all products built around street-level imagery.
+The tech giants -- Microsoft, Apple and Facebook -- now all have products built around street-level imagery.
 
 Here's a short comparison of them:
 
@@ -30,7 +30,7 @@ Here's a short comparison of them:
 
 Google wins hands down. [According to the CNET article posted December 2019](https://www.cnet.com/news/google-maps-has-now-photographed-10-million-miles-in-street-view/), there is 10 million miles (16.1 million km) of Street View imagery online.
 
-At the time of writing the [Mapillary home page](https://www.mapillary.com/) proudly claims 1,289,873,858 images uploaded. It is unclear how many kilometers this represents. As a reference point, [in July 2018 Mapillary claimed 5 million kilometers (but sadly no image count)](https://blog.mapillary.com/update/2018/07/31/five-million-km-mapillary-coverage.html). Unlike Street View, this count assumes all user uploaded images not unique kilometers where in some cases roads have been captured multiple times.
+At the time of writing the [Mapillary home page](https://www.mapillary.com/) proudly claims 1,289,873,858 images uploaded. It is unclear how many kilometers this represents. As a reference point, [in July 2018 Mapillary claimed 5 million kilometers (but sadly no image count)](https://blog.mapillary.com/update/2018/07/31/five-million-km-mapillary-coverage.html). Unlike Street View, this count assumes all user uploaded images and not unique kilometers (in many cases roads have been captured multiple times).
 
 Apple's look around is the newest street-level offering on the market. [In April 2020](https://9to5mac.com/2020/04/21/apple-maps-look-around-cities), the sevice covered 10 areas in the US. As of August 2020, [this site claims Look Around now covers 14 metropolitan areas, with the addition of Seatle, Nagoya, Osaka/Kyoto, Tokyou](https://www.justinobeirne.com/look-around-coverage-areas).
 
