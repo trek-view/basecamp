@@ -1,12 +1,12 @@
 ---
-date: 2020-10-30
+date: 2020-11-06
 title: "Extracting CAMM Telemetry"
 description: "How to get a raw, human readable Camera Motion Metadata track from a video with a CAMM track."
 categories: developers
 tags: [CAMM]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2020-10-30/
-featured_image: /assets/images/blog/2020-10-30/
+image: /assets/images/blog/2020-11-06/
+featured_image: /assets/images/blog/2020-11-06/
 layout: post
 published: false
 ---
