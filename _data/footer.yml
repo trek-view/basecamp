@@ -25,7 +25,9 @@
     link: /loan
   - name: Contact
     link: /contact
-
+  - name: SUPPORT US
+    link: https://www.patreon.com/
+    
 - links:
   - name: Mapillary
     link: https://www.mapillary.com/app/user/trekviewhq
