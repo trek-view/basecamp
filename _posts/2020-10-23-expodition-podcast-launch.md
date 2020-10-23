@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2020-10-23/expodition-yukon-assignment-meta.jpg
 featured_image: /assets/images/blog/2020-10-23/expodition-yukon-assignment-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Climb. Ski. Hike. Bike. Paddle. Run. Travel.**
