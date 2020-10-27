@@ -1,12 +1,12 @@
 ---
-date: 2020-10-30
+date: 2020-11-06
 title: "How to upload your imagery to Google Street View, Mapillary, and more!"
 description: "Modify, process, and upload your panoramic tours using the Map the Paths Desktop Uploader"
 categories: updates
-tags: []
+tags: [Map the Paths]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2020-10-30/
-featured_image: /assets/images/blog/2020-10-30/
+image: /assets/images/blog/2020-11-06/
+featured_image: /assets/images/blog/2020-11-06/
 layout: post
 published: false
 ---
