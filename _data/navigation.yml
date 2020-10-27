@@ -15,6 +15,6 @@
   new_window: false
   highlight: false
 - name: View / Upload Photos
-  link: https://mtp.trekview.org/sequence/list
+  link: https://mtp.trekview.org
   new_window: true
   highlight: true
