@@ -35,4 +35,6 @@ If you have a great place on the water you want to capture a 360 map of for othe
 
 Not a water person? That's OK too. I still encourage you to [submit an application to loan one of our Trek Packs](/loan).
 
+Alternatively, [you can build your own Trek Pack by following these instructions](/trek-pack).
+
 _Update November 2019: [Call for Trekkers: Winter / Spring 2020](/blog/2019/call-for-trekkers-winter-spring)._
