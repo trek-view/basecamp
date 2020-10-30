@@ -25,12 +25,12 @@ For as little as $6.50 a month you will be critical part of our projects. Each m
 
 * $300 funds a new camera that we can use to [continue our free loan program](https://www.trekview.org/loan/). We have cameras currently summiting Kilimanjaro and documenting the Great Barrier Reef. People like you put them there.
 * $100 keeps Map the Paths online and updated. As more users sign up, the costs to run the project increase. Namely, storage costs and software costs, like looking up weather data for your sequences using [WeatherStack](https://weatherstack.com/). Your support helps me keeps Map the Paths ad free and full of new (good) surprises.
-* $10 covers the costs to host and distribute the [ExPODition podcast](http://www.expodition.org/). A single Patreon could essentially keep this going indefinitely. There are still lots of interesting people we're lining up to speak with.
+* $10 covers the costs to host and distribute the [ExPODition podcast](/blog/2020/2020-10-23-expodition-podcast-launch). A single Patreon could essentially keep this going indefinitely. There are still lots of interesting people we're lining up to speak with.
 
 <img class="img-fluid" src="/assets/images/blog/2020-10-30/map-the-paths-hall-of-fame.jpg" alt="Map the Paths Hall of Fame" title="Map the Paths Hall of Fame" />
 
 Not only will you be doing good, [you'll also make it onto the Map the Paths Hall of Fame](https://mtp.trekview.org/hall-of-fame/).
 
-Tweets, likes and posts also go a long way, in lieu of financial donations.
+[Tweets](https://twitter.com/trekview), [likes](https://www.facebook.com/trekview/) and [follows](https://www.instagram.com/trekviewed/) of our photos also goes a long way too!
 
-If you know a business that might be interested in supporting our work, [please do let me know by getting in contact](https://www.trekview.org/contact/).
+Thanks for your continued support trekkers!
