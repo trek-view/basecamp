@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2020-10-30/trek-view-patreon-meta.jpg
 featured_image: /assets/images/blog/2020-10-30/trek-view-patreon-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Support the Cause**
