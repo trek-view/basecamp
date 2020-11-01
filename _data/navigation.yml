@@ -13,7 +13,7 @@
 - name: Spotted a Trekker?
   link: /subscribe
   new_window: false
-  highlight: false
+  highlight: true
 - name: View / Upload Photos
   link: https://mtp.trekview.org
   new_window: true
