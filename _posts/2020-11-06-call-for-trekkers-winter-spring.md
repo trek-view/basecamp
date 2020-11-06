@@ -19,7 +19,7 @@ Recapping on the previous calls:
 * [Winter / Spring 2020: Winter Sports](/blog/2019/call-for-trekkers-winter-spring)
 * [Summer / Autumn 2020: Local Areas](/blog/2020/call-for-trekkers-summer-autumn)
 
-You might notice this is somewhat biased to people living in the higher Northern Hemisphere.
+Previous calls have been somewhat biased to people living in the higher Northern Hemisphere.
 
 Well, [for anyone below the 30 parrallel](https://en.wikipedia.org/wiki/Latitude), good news.
 
@@ -31,7 +31,7 @@ I'm looking for Trekkers to help capture new 360-degree tours over the winter an
 
 **The focus is on winter sun.**
 
-My focus is on environmentally focused business that have veen hit hard due to the drop in tourism.
+My focus is on environmentally focused business that have been hit hard due to the drop in tourism.
 
 Perhaps you have a small business on a beautiful beach front or nested deep in a forest and want to show it off to the world.
 

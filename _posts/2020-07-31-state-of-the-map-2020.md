@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Watch on YouTube now.**
+**All available to watch now.**
 
 [State of the Map](https://stateofthemap.org/) is the annual conference of the [OpenStreetMap Foundation](https://wiki.osmfoundation.org/wiki/Main_Page).
 
