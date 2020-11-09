@@ -47,7 +47,7 @@ But it doesn't just stop at Amsterdam.
 
 We want YOU to help us capture images of your city, town, village, and everything in-between by bicycle. [Create a Cycling Challenge on Map the Paths and get your community involved in capturing photos](https://mtp.trekview.org/challenge/capture/create).
 
-We're also inviting cities to work with us under our [Safer.Bike](https://www.safer.bike/) initiative. Using what we learn from locations around the world we want to create a blueprint for the safest bicycle infrastructure to eliminate all avoidable cyclist deaths caused by road vehicles.
+We're also inviting cities to work with us under our [Safer.Bike](https://www.safer.bike/) initiative. Using what we learn from locations around the world we want to provide local governments with the best data to make the best investment decisions for new bicycle infrastructure in their districts to eliminate all avoidable cyclist deaths caused by road vehicles.
 
 What are you waiting for? ON YOUR BIKE! [Here's some inspiration for you](https://mtp.trekview.org/sequence/list?page=1&username=&name=&transport_type=12&tag=).
 
