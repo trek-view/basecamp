@@ -32,7 +32,7 @@ Perhaps you have footage you've already shared on YouTube:
 
 <img class="img-fluid" src="/assets/images/blog/2020-11-13/map-the-paths-uploader-viewer.jpg" alt="Map the Paths Desktop Uploader" title="Map the Paths Desktop Uploader" />
 
-Well, now you can share it with others in map form, so that they cannot only relive your awe inspiring lines, but also help them plan their route by committing your adventures to the map.
+Now you can share it with others in map form, so that they cannot only relive your awe inspiring lines, but also help them plan their route by committing your adventures as lines to the map.
 
 All you need is the footage and the Map the Paths Uploader will do the rest.
 
