@@ -19,7 +19,6 @@ You can view all of the videos from Connect 2020 on the [OSM US YouTube channel 
 
 Here are my picks.
 
-
 ## Open Street Art (Bond Harper)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rDCrppENjo0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
