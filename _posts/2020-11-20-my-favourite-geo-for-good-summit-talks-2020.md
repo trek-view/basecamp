@@ -6,7 +6,7 @@ categories: guides
 tags: [Google, Google Earth]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-11-20/geo-for-good-conference-meta.jpg
-featured_image: /assets/images/blog/2020-11-20geo-for-good-conference-sm.jpg
+featured_image: /assets/images/blog/2020-11-20/geo-for-good-conference-sm.jpg
 layout: post
 published: true
 ---
@@ -57,7 +57,7 @@ Christian Thomas from SkyTruth discusses the issue of mining in the Appalachia r
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1tx5HbttnwQ?start=659" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Isabelle Tingzon talks about the migration crisis in Venezuela and the settlements that arise on migrant routes as. She talks about how Thinking Machines is using lower-quality satellite images with the help of artificial intelligence and photos taken on the ground using mobile phones to detect settlements so the aid organisations like USAID can plan effective responses.
+Isabelle Tingzon talks about the migration crisis in Venezuela and the settlements that arise on migrant routes as. She talks about how Thinking Machines is using lower-quality satellite images (due to cost) with the help of artificial intelligence and photos taken on the ground using mobile phones to detect settlements so the aid organisations like USAID can plan effective responses.
 
 [More about the project here](https://stories.thinkingmachin.es/mapping-new-informal-settlements/).
 
