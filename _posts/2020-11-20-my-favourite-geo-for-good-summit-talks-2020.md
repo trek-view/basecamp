@@ -3,12 +3,12 @@ date: 2020-11-20
 title: "My Favourite Geo For Good Summit 2020 Talks"
 description: "Seascapes, PlusCodes, Reforestation, Migrant Settlements, and Map Lessons"
 categories: guides
-tags: [Google]
+tags: [Google, Google Earth]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-11-20/geo-for-good-conference-meta.jpg
 featured_image: /assets/images/blog/2020-11-20geo-for-good-conference-sm.jpg
 layout: post
-published: False
+published: true
 ---
 
 **Using mapping tools for a positive impact in the world**
