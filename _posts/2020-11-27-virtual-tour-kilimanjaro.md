@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2020-11-27/map-the-paths-kilimanjaro-macheme-route-guidebook-meta.jpg
 featured_image: /assets/images/blog/2020-11-27/map-the-paths-kilimanjaro-macheme-route-guidebook-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Rainforests, moorland, glaciers, and volcanic craters.**
@@ -21,7 +21,7 @@ For many Kilimanajro is high-up-there on such lists.
 
 There are two distinct trekking seasons which constitute the best time to climb Kilimanjaro. They are January-March and June-October.
 
-We sent a camera up the mountain a few weeks ago as the rainy season began. When the next climbing window starts in January, we'll be hoping for a few more drier days to capture more imagery with our [Trek Pack](/trek-pack).
+We sent a camera up the mountain a few weeks ago as the rainy season began. When the next climbing window starts in January, we'll be hoping for a few more drier days to [capture more imagery with our Trek Pack](/trek-pack).
 
 ## Explore the Guidebook
 
