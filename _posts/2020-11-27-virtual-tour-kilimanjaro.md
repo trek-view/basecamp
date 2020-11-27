@@ -1,7 +1,7 @@
 ---
 date: 2020-11-27
 title: "Climb Mount Kilimanjaro Virtually"
-description: "Spend your Friday afternoon on the highest mountain in Africa and the highest single free-standing mountain in the world."
+description: "Spend few minutes on the highest mountain in Africa and the highest single free-standing mountain in the world."
 categories: updates
 tags: [Kilimanjaro]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Rainforests, moorland, glaciers, and volcanic craters.**
+**Rainforest's, moorland, glaciers, and volcanic craters.**
 
 It's been a tough year for tourism based businesses.
 
@@ -21,9 +21,13 @@ For many Kilimanajro is high-up-there on such lists.
 
 There are two distinct trekking seasons which constitute the best time to climb Kilimanjaro. They are January-March and June-October.
 
-We sent a camera up the mountain a few weeks ago as the rainy season began. When the next climbing window starts in January, we'll be hoping for a few more drier days to [capture more imagery with our Trek Pack](/trek-pack).
+We sent a [Trek Pack](/trek-pack) up the mountain with [Altezza Travel](https://en.altezza.travel/) a few weeks ago... as the rainy season began.
 
-## Explore the Guidebook
+Sadly the weather meant we couldn't film the entire route. Nonetheless, there's still some great images.
+
+When the next climbing window starts in January, we'll be hoping for a few more drier days to [capture more imagery with our Trek Pack](/trek-pack).
+
+## Explore the mountain virtually
 
 <img class="img-fluid" src="/assets/images/blog/2020-11-27/map-the-paths-kilimanjaro-macheme-route-guidebook-sm.jpg" alt="Map the Paths Kilimanjaro Macheme Route Guidebook" title="Map the Paths Kilimanjaro Macheme Route Guidebook" />
 
@@ -35,5 +39,7 @@ https://mtp.trekview.org/guidebook/c73475b3-bf7c-4137-8e95-c784ebbfe927/detail/?
 This Guidebook would not have been possible without the studious team at Altezza Travel.
 
 They're taking bookings for the 2021 season so you can see the variety this mountain offers to the senses in a wonderful part of the world.
+
+Did I mention they have a Black Friday sale now on offering discounted treks?
 
 [See the Altezza Travel website for more details](https://en.altezza.travel/).
