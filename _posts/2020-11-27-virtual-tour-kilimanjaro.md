@@ -23,7 +23,7 @@ There are two distinct trekking seasons which constitute the best time to climb 
 
 We sent a [Trek Pack](/trek-pack) up the mountain with [Altezza Travel](https://en.altezza.travel/) a few weeks ago... as the rainy season began.
 
-Sadly the weather meant we couldn't film the entire route. Nonetheless, there's still some great images.
+Sadly the weather meant we couldn't film the entire route. Nonetheless, there are still tons great images.
 
 When the next climbing window starts in January, we'll be hoping for a few more drier days to [capture more imagery with our Trek Pack](/trek-pack).
 
