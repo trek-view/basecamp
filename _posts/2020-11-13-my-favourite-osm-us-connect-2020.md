@@ -1,12 +1,12 @@
 ---
-date: 2020-11-06
+date: 2020-11-13
 title: "My Favourite OSM Connect 2020 Talks"
 description: "Street art, 3D maps, reinventing the wheel, and saving cyclists."
 categories: guides
 tags: [OSM, OpenStreetMap]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2020-11-06/osm-us-connect-2020-meta.jpg
-featured_image: /assets/images/blog/2020-11-06/osm-us-connect-2020-sm.jpg
+image: /assets/images/blog/2020-11-13/osm-us-connect-2020-meta.jpg
+featured_image: /assets/images/blog/2020-11-13/osm-us-connect-2020-sm.jpg
 layout: post
 published: true
 ---

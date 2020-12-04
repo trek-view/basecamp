@@ -1,12 +1,12 @@
 ---
 date: 2020-10-23
-title: "ExPODition Podcast"
+title: "Announcing the ExPODition Podcast"
 description: "Stories from 'everyday people' who have embarked on amazing adventures."
 categories: updates
 tags: [ExPODition]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2020-10-23/expodition-yukon-assignment-meta.jpg
-featured_image: /assets/images/blog/2020-10-23/expodition-yukon-assignment-sm.jpg
+image: /assets/images/blog/2020-10-23/expodition-episode-1-yukon-assignment-meta.jpg
+featured_image: /assets/images/blog/2020-10-23/expodition-episode-1-yukon-assignment-sm.jpg
 layout: post
 published: true
 ---
@@ -27,8 +27,7 @@ And the first episode is a corker!
 
 In the first episode of ExPODition I talk with British adventurer Chris Lucas about canoing down one of the most remote rivers in Canada with his father.
 
-<div id="buzzsprout-player-5728852"></div>
-<script src="https://www.buzzsprout.com/1377817/5728852-ep-1-the-yukon-assignment.js?container_id=buzzsprout-player-5728852&player=small" type="text/javascript" charset="utf-8"></script>
+<iframe src="https://open.spotify.com/embed-podcast/episode/0VhvB3JAOq6CcJJRmj9hf3" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
 I hope you enjoy listening as much as I enjoyed recording.
 
