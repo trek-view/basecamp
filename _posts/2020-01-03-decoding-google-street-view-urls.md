@@ -2,7 +2,7 @@
 date: 2020-01-03
 title: "Decoding a Google Street View URL"
 description: "Trying to understand the structure of the URL's to better understand Street View's functionality"
-categories: updates
+categories: guides
 tags: [Google, Street View]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-01-03/google-street-view-url-meta.jpg

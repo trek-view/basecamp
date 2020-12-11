@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2020-12-11/map-the-paths-kilimanjaro-macheme-route-guidebook-meta.jpg
 featured_image: /assets/images/blog/2020-12-11/map-the-paths-kilimanjaro-macheme-route-guidebook-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Rainforest's, moorland, glaciers, and volcanic craters.**
