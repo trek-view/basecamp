@@ -30,13 +30,13 @@ Many of the feature requests we've received revolved around:
 
 <img class="img-fluid" src="/assets/images/blog/2020-01-31/trek-view-explorer-sm.png" alt="Trek View Explorer Screenshot" title="Trek View Explorer Screenshot" />
 
-[Today we're announcing Explorer, an online web application that can do all the above, and more](https://mtp.trekview.org).
+[Today we're announcing Explorer, an online web application that can do all the above, and more](https://www.mapthepaths.com).
 
 All tours you create can be discovered under your profile using the search function making it easy to share your adventures with friends, family... and the whole world.
 
-Curate Tourbooks of your favourite tours to inspire future adventures. [Have a look at this one created by the Basingstoke Canal Society](https://mtp.trekview.org/).
+Curate Tourbooks of your favourite tours to inspire future adventures. [Have a look at this one created by the Basingstoke Canal Society](https://www.mapthepaths.com/).
 
-Mark your favourite photos as Viewpoints. [Discover some of the top rated photos on the Viewpoint ranking page](https://mtp.trekview.org/).
+Mark your favourite photos as Viewpoints. [Discover some of the top rated photos on the Viewpoint ranking page](https://www.mapthepaths.com/).
 
 Embed your favourite photos on your blog, ([remember all our imagery can be used for non-commercial purposes](/charters/image)), so your readers can pretend to be a rower as you virtually race the Henley Regatta course above (just me?).
 
@@ -46,7 +46,7 @@ We're slowly uploading the entire Trek View Tour library to Explorer. That's ove
 
 You don't need to keep refreshing Explorer to check for new tours. [You can register to receive tour updates via email](/subscribe).
 
-[Start exploring now](https://mtp.trekview.org).
+[Start exploring now](https://www.mapthepaths.com).
 
 ## Tourer Updates
 
@@ -75,6 +75,6 @@ Find us on:
 * [Instagram](https://www.instagram.com/trekviewed/)
 * [Facebook](https://www.facebook.com/trekview/)
 
-_Update August 2020: [Explorer has been replaced with the Map the Paths](https://mtp.trekview.org)._
+_Update August 2020: [Explorer has been replaced with the Map the Paths](https://www.mapthepaths.com)._
 
 _Update October 2020: Tourer has been replaced with the Map the Paths Desktop Uploader. [More information and download links are here](/blog/2020/map-the-paths-desktop-uploader)._

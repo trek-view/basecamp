@@ -29,7 +29,7 @@ For as little as $6.50 a month you will be critical part of our projects. Each m
 
 <img class="img-fluid" src="/assets/images/blog/2020-10-30/map-the-paths-hall-of-fame.jpg" alt="Map the Paths Hall of Fame" title="Map the Paths Hall of Fame" />
 
-Not only will you be doing good, [you'll also make it onto the Map the Paths Hall of Fame](https://mtp.trekview.org/hall-of-fame/).
+Not only will you be doing good, [you'll also make it onto the Map the Paths Hall of Fame](https://www.mapthepaths.com/hall-of-fame/).
 
 [Tweets](https://twitter.com/trekview), [likes](https://www.facebook.com/trekview/) and [follows](https://www.instagram.com/trekviewed/) of our photos also goes a long way too!
 

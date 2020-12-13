@@ -83,7 +83,7 @@ Who uploads imagery will all depend on your aims.
 
 For us, our aim is to get the imagery onto Mapillary. Therefore, we assign leaders to each team. These leaders are responsible for making sure the imagery is uploaded.
 
-Leaders (or those they've nominated) upload the imagery to their own Mapillary account using the [Map the Paths Uploader](https://mtp.trekview.org/uploader). We invite these Mapillary accounts to join the [Trek View Mapillary organisation](https://www.mapillary.com/app/org/trekview?) in order to keep track of all the images centrally.
+Leaders (or those they've nominated) upload the imagery to their own Mapillary account using the [Map the Paths Uploader](https://www.mapthepaths.com/uploader). We invite these Mapillary accounts to join the [Trek View Mapillary organisation](https://www.mapillary.com/app/org/trekview?) in order to keep track of all the images centrally.
 
 People are busy, so don't expect them to get the images online overnight, but you should set a reasonable deadline for imagery upload that the team leader is responsible for meeting.
 

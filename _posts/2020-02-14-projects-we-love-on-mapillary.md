@@ -61,6 +61,6 @@ There is also a potential integration with Mapillary and [Tourer](https://github
 
 Please do send me links to other Mapillary users who have uploaded trails, rivers, and other outdoor areas -- it's still winter here and I'd like to explore somewhere warm!
 
-_Update August 2020: [Explorer has been replaced with the Map the Paths](https://mtp.trekview.org)._
+_Update August 2020: [Explorer has been replaced with the Map the Paths](https://www.mapthepaths.com)._
 
 _Update October 2020: Tourer has been replaced with the Map the Paths Desktop Uploader. [More information and download links are here](/blog/2020/map-the-paths-desktop-uploader)._

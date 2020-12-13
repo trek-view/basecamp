@@ -27,15 +27,15 @@ Whilst these paths are mapped, very few have accompanying 360 degree street leve
 
 ## Let's get mapping
 
-Today I'm really excited to officially announce the [Map the Paths Marketplace](https://mtp.trekview.org/hire/list/).
+Today I'm really excited to officially announce the [Map the Paths Marketplace](https://www.mapthepaths.com/hire/list/).
 
 <img class="img-fluid" src="/assets/images/blog/2020-07-24/map-the-paths-marketplace-sm.jpg" alt="Map the Paths Marketplace" title="Map the Paths Marketplace" />
 
 To help photographers find work related to virtual tour and survey photography.
 
-Photographers, [create a business profile detailing your skills and working area so that people looking for imagery capture can get in contact with you](https://mtp.trekview.org/hire/create).
+Photographers, [create a business profile detailing your skills and working area so that people looking for imagery capture can get in contact with you](https://www.mapthepaths.com/hire/create).
 
-Alternatively, [browse and apply the growing number of projects being posted on the Marketplace](https://mtp.trekview.org/hire/list/).
+Alternatively, [browse and apply the growing number of projects being posted on the Marketplace](https://www.mapthepaths.com/hire/list/).
 
 ## What's next?
 

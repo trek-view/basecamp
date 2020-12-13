@@ -123,7 +123,7 @@ As with pitch, you'll notice in the diagram Tourer generates a forward and backw
 
 One final calculation (I promise); adjusted heading.
 
-This is useful for some software, including [Explorer](https://mtp.trekview.org), where the 360-degree photos are rendered visually, as shown above, and where the software has no concept of North. That is the software simply assumes the centre of the 360-degree photo is always facing North (0°).
+This is useful for some software, including [Explorer](https://www.mapthepaths.com), where the 360-degree photos are rendered visually, as shown above, and where the software has no concept of North. That is the software simply assumes the centre of the 360-degree photo is always facing North (0°).
 
 <img class="img-fluid" src="/assets/images/blog/2020-01-17/tourer-adjusted-connection-heading-calculation.png" alt="Tourer Adjusted Connection Photo Heading Calculation" title="Tourer Adjusted Connection Photo Heading Calculation" />
 

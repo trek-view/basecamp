@@ -67,7 +67,7 @@ Make sure you turn of the constrain proportions setting is unlocked (chain icon 
 
 Finally, make sure the offset lines up with the middle of your little planet.
 
-You can now save the image to share with the world.
+You can now save ("Export" option in GIMP) the image to share with the world.
 
 ### Step 4: Share your creations with us
 

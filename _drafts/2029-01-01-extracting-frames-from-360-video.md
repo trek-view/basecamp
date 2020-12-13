@@ -284,7 +284,7 @@ If you're not technical, or simply want an easy way to turn geo-tagged videos in
 
 You can use the Map the Paths Desktop Uploader to modify the resulting photos to be included in the sequence of images. For example, removing photos you don't need (perhaps at the start and end of the video). At the end, it's also possible to upload you images to a range of online platforms, including Map the Paths, Mapillary, and Google Street View.
 
-[**Download the Map the Paths Desktop Uploader for free**](http://mtp.trekview.org/uploader).
+[**Download the Map the Paths Desktop Uploader for free**](https://www.mapthepaths.com/uploader).
 
 
 

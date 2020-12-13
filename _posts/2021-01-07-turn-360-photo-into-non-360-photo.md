@@ -19,11 +19,11 @@ However, sometimes you just want to share a "normal", flat photo with someone, w
 
 Many 360 camera manufacturers bundle software with their cameras that allow you to take grabs of your 360 photos and videos.
 
-In GoPro Player you can use the "Export" option to grab an image in a resolution of your choosing.
+In [GoPro Player](https://community.gopro.com/t5/en/GoPro-Player/ta-p/413305) you can use the "Export" option to grab an image in a resolution of your choosing.
 
 <img class="img-fluid" src="/assets/images/blog/2021-01-07/gopro-player-export.jpeg" alt="GoPro Player Export" title="GoPro Player Export" />
 
-In the Insta360 Studio it’s done by selecting "Snapshot" and then the "Normal View" option.
+In the [Insta360 Studio](https://www.insta360.com/download) it’s done by selecting "Snapshot" and then the "Normal View" option.
 
 <img class="img-fluid" src="/assets/images/blog/2021-01-07/insta360-studio-snapshot.jpg" alt="Insta360 Studio Snapshot" title="Insta360 Studio Snapshot" />
 
@@ -48,7 +48,7 @@ You'll need an image file.
 
 The manufacturers software often supports grabbing part of a video frame.
 
-[The Map the Paths Desktop Uploader allows you to convert 360 videos into 360 photo frames](https://mtp.trekview.org/uploader), which could be another solution to get a 360 image from a video to use with GIMP.
+[The Map the Paths Desktop Uploader allows you to convert 360 videos into 360 photo frames](https://www.mapthepaths.com/uploader), which could be another solution to get a 360 image from a video to use with GIMP.
 
 ### Step 2: Convert to a flat image
 
