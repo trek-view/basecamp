@@ -13,6 +13,8 @@ published: true
 
 **No technical knowledge required.**
 
+**Update November 2020: Tour Creator will no longer be available on June 30, 2021. Please see the Help Center for guidance on how to export your published tours.**
+
 You might have seen the launch of our Treehouse virtual classes for students during the COVID-19 outbreak last week -- we've had some brilliant lessons so far [(you can still register)](/blog/2020/treehouse-academy-emergency-timetable).
 
 To deliver these classes we rely on a variety of online tools, [including Google Tour Creator](https://arvr.google.com/tourcreator/).
