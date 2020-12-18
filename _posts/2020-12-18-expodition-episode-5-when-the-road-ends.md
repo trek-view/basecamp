@@ -6,7 +6,7 @@ categories: updates
 tags: [ExPODition]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-12-18/expodition-episode-5-when-the-road-ends-video-meta.jpg
-featured_image: /assets/images/blog/2020-11-18/expodition-episode-5-when-the-road-ends-video-sm.jpg
+featured_image: /assets/images/blog/2020-12-18/expodition-episode-5-when-the-road-ends-video-sm.jpg
 layout: post
 published: true
 ---
