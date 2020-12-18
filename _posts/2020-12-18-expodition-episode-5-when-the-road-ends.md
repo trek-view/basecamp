@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2020-12-18/expodition-episode-5-when-the-road-ends-video-meta.jpg
 featured_image: /assets/images/blog/2020-11-18/expodition-episode-5-when-the-road-ends-video-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Motorcycle + Raft + Pacific Ocean = ???**
@@ -21,4 +21,4 @@ In this episode of ExPODition, David talks with Dylan Wickrama about what it's l
 
 The conversation was recorded remotely on November 5th, 2020.
 
-SPOTIFY
+<iframe src="https://open.spotify.com/embed-podcast/episode/2NaZ5ffYnrlfzfnN6RjfCA" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
