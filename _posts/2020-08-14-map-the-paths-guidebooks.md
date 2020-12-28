@@ -31,7 +31,7 @@ Last month we launched the Map the Paths marketplace. [Don't forget to post a li
 
 <img class="img-fluid" src="/assets/images/blog/2020-08-14/mapthepaths-guidebooks-list.jpg" alt="Guidebook list" title="Guidebook list" />
 
-Keeping the ball rolling, today we're releasing a brand new feature, [Guidebooks](https://mtp.trekview.org/guidebook).
+Keeping the ball rolling, today we're releasing a brand new feature, [Guidebooks](https://www.mapthepaths.com/guidebook/list/).
 
 <img class="img-fluid" src="/assets/images/blog/2020-08-14/mapthepaths-guidebooks-sm.jpg" alt="Guidebook scenes" title="Guidebook scenes" />
 
@@ -45,9 +45,8 @@ You can start creating your own Guidebooks on Map the Paths now.
 
 Here are some I've created that hopefully provide some inspiration:
 
-* [Hiking Mount Teide](https://mtp.trekview.org/guidebook/569c03d4-ec3a-4881-add8-4977ebf4dc3e/detail/)
-* [Paddleboarding the Thames](https://mtp.trekview.org/guidebook/b27cb503-89f7-4e75-8fd0-9ba11444e8fb/detail/)
-* [Bike Route Blue - Amstel River](https://mtp.trekview.org/guidebook/e7946dbe-fcf8-49d5-97f4-ebfe52f4edde/detail/)
+* [Mount Teide Hike](https://www.mapthepaths.com/guidebook/860e52a3-6935-4fb8-8ba0-6360c0e80fa2/detail/)
+* [Bridges of the River Thames](https://www.mapthepaths.com/guidebook/26016af4-1a00-4073-9f45-940cf95ea24f/detail/)
 
 Please do share Guidebooks you've created on Map the Paths with us on [Facebook](https://www.facebook.com/trekview/) and [Twitter](https://twitter.com/trekview). I'll make sure we repost as many as possible.
 

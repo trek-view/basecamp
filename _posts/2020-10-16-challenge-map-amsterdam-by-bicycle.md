@@ -29,7 +29,7 @@ And many of the people I spoke to were keen to play there part. So we decided to
 
 <img class="img-fluid" src="/assets/images/blog/2020-10-16/map-the-paths-amsterdam.jpg" alt="Map the Paths Amsterdam challenge" title="Map the Paths Amsterdam challenge" />
 
-[Every Sequence uploaded to Map the Paths in the Amsterdam area by bicycle (including eBikes) will earn you points on the Challenge Leaderboard](https://mtp.trekview.org/challenge/capture/4d431bb5-a72a-40b8-92a0-46aadec28d55/).
+[Every Sequence uploaded to Map the Paths in the Amsterdam area by bicycle (including eBikes) will earn you points on the Challenge Leaderboard](https://www.mapthepaths.com/challenge/capture/6804d9dd-80a7-406c-8f83-27dc01fb377f/).
 
 [Check out last weeks post if you haven't seen Map the Paths yet](/blog/2020/map-the-paths-mapillary-import/).
 
@@ -41,16 +41,16 @@ Poor line markings, broken pavements, confusing signing are all things we'll be 
 
 <img class="img-fluid" src="/assets/images/blog/2020-10-16/map-the-paths-cycle-label.jpg" alt="Map the Paths Amsterdam label challenge" title="Map the Paths Amsterdam label challenge" />
 
-[Users can also take part in a corresponding labeling challenge](https://mtp.trekview.org/challenge/label/de0157ce-8081-42d9-9569-b05de6660325/), where they can earn points for labeling common hazards not detected automatically. Every label will help improve our detection models and in turn the ability to identify areas of improvements.
+[Users can also take part in a corresponding labeling challenge](https://www.mapthepaths.com/challenge/label/list/), where they can earn points for labeling common hazards not detected automatically. Every label will help improve our detection models and in turn the ability to identify areas of improvements.
 
 But it doesn't just stop at Amsterdam.
 
-We want YOU to help us capture images of your city, town, village, and everything in-between by bicycle. [Create a Cycling Challenge on Map the Paths and get your community involved in capturing photos](https://mtp.trekview.org/challenge/capture/create).
+We want YOU to help us capture images of your city, town, village, and everything in-between by bicycle. [Create a Cycling Challenge on Map the Paths and get your community involved in capturing photos](https://www.mapthepaths.com/challenge/capture/list/).
 
 We're also inviting cities to work with us under our [Safer.Bike](https://www.safer.bike/) initiative. Using what we learn from locations around the world we want to provide local governments with the best data to make the best investment decisions for new bicycle infrastructure in their districts to eliminate all avoidable cyclist deaths caused by road vehicles.
 
-What are you waiting for? ON YOUR BIKE! [Here's some inspiration for you](https://mtp.trekview.org/sequence/list?page=1&username=&name=&transport_type=12&tag=).
+What are you waiting for? ON YOUR BIKE! [Here's some inspiration for you](https://www.mapthepaths.com/sequence/list?page=1&username=&name=&transport_type=Bicycle&tag=&start_time=&end_time=).
 
 All you need to get started is a bike, mobile phone, and mount to hold it. [View our recommended mobile phone setup (and action/360 camera alternatives) here](https://guides.trekview.org/mtp-web/user-guide/sequences/capture).
 
-Not a cyclist? [Challenges can be set for other 20 other activities too, if cycling isn't your thing](https://mtp.trekview.org/challenge/capture/create).
+Not a cyclist? [Challenges can be set for other 20 other activities too, if cycling isn't your thing](https://www.mapthepaths.com/challenge/capture/list/).

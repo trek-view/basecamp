@@ -32,7 +32,7 @@ When the next climbing window starts in January, we'll be hoping for a few more 
 <img class="img-fluid" src="/assets/images/blog/2020-12-11/map-the-paths-kilimanjaro-macheme-route-guidebook-sm.jpg" alt="Map the Paths Kilimanjaro Macheme Route Guidebook" title="Map the Paths Kilimanjaro Macheme Route Guidebook" />
 
 [**You can explore the full Macheme Route Guidebook now on Map the Paths here**](
-https://mtp.trekview.org/guidebook/c73475b3-bf7c-4137-8e95-c784ebbfe927/detail/?image_key=nqxkUt9huzyk0KiKzax1rF).
+https://www.mapthepaths.com/guidebook/6e613819-fe76-4516-8ac3-508ff0591cf7/detail/).
 
 ## Altezza Travel
 

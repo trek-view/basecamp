@@ -41,19 +41,19 @@ This means any Map the Paths visitor can then discover your sequences through se
 
 > "Show me images captured in the Netherlands by bicycle"
 
-[Here's the link you'll need](https://mtp.trekview.org/sequence/list?page=1&username=&name=&transport_type=12&tag=netherlands).
+[Here's the link you'll need](https://www.mapthepaths.com/sequence/list?page=1&username=&name=&transport_type=12&tag=netherlands).
 
 You can also group Sequences as Tours. Tours are groups of Sequences.
 
 For example, if you have 10 distinct sequences of a trail you've hiked, you can group them as a Tour.
 
-[Here's a Tour of my hike to the Buenavista del Norte Lighthouse in Tenerife, Canary Islands, Spain](https://mtp.trekview.org/tour/69cca732-1400-4392-b04a-5be19bf524a4/detail).
+[Here's my Tour covering the River Thames (UK) on a paddleboard from Oxford to Richmond I shot in 2019](https://www.mapthepaths.com/tour/017fec4a-42f4-4339-b8a9-c1ca8c471509/detail).
 
 Once you've imported your imagery, share you Map the Paths profile on social media so your network can recreate the adventures you've been on.
 
 <img class="img-fluid" src="/assets/images/blog/2020-10-09/mtp-user-profile-himynamesdave.jpg" alt="David Greenwood Map the Paths" title="David Greenwood Map the Paths" />
 
-[Shameless plug](https://mtp.trekview.org/user/himynamesdave/profile/).
+[Shameless plug](https://www.mapthepaths.com/user/himynamesdave/profile/).
 
 And every Mapillary sequence imported boosts your position on the new Map the Paths leaderboard.
 
@@ -63,11 +63,11 @@ We've also added the ability for Map the Paths users to mark individual photos a
 
 <img class="img-fluid" src="/assets/images/blog/2020-10-09/mtp-leaderboard.jpg" alt="Map the Paths leaderboards" title="Map the Paths leaderboards" />
 
-[Check out the leaderboards to see where you rank](https://mtp.trekview.org/leaderboard/).
+[Check out the leaderboards to see where you rank](https://www.mapthepaths.com/leaderboard/).
 
 And points win prizes... more on that soon.
 
-[You can start importing your Mapillary images to Map the Paths NOW](https://mtp.trekview.org/sequence/import-sequence).
+[You can start importing your Mapillary images to Map the Paths NOW](https://www.mapthepaths.com/sequence/import-sequence).
 
 Please do share Sequences and Tours you've imported to Map the Paths with us on [Facebook](https://www.facebook.com/trekview/) and [Twitter](https://twitter.com/trekview). I'll make sure we repost as many as possible.
 
