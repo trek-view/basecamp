@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2021-01-01/expodition-episode-6-break-free-meta.jpg
 featured_image: /assets/images/blog/2021-01-01/expodition-episode-6-break-free-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Hamburg to South Africa in a Land Rover. In 6 months?**
@@ -21,5 +21,4 @@ In this episode of ExPODition, David talks with  Ulrich Stirnat and Lena Wendt a
 
 The conversation was recorded remotely on November 20th, 2020.
 
-
-SPOTIFY
+<iframe src="https://open.spotify.com/embed-podcast/episode/4CbTHVhuS9vk5fncJBkUiu" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
