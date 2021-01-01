@@ -58,6 +58,8 @@ Here's what it can currently do:
 	- Strava (`.gpx` track)
 	- Developer? [Add your own...](https://guides.trekview.org/mtp-desktop-uploader/developer-docs/integrations)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LVdMTahhnBA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 [You can download the latest version of the Desktop Uploader (always FREE) on Map the Paths here](https://www.mapthepaths.com/uploader).
 
 Merry Christmas!
