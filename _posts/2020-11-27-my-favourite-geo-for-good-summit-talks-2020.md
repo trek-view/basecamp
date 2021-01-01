@@ -19,7 +19,7 @@ Google's Geo for Good Summit is an annual conference intended for nonprofits, sc
 
 You can view all of the videos from the Geo for Good Summit on the [Google Earth YouTube channel here](https://www.youtube.com/playlist?list=PLLW-qoCMKQsze8jjRsfbXurFm3wUyOerb).
 
-Here are my picks from the lightning talks.
+Here are my personal favourites from the lightning talks.
 
 ## Seascape mapping in the cloud (WWF)
 
