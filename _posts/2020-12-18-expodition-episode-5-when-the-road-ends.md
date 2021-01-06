@@ -2,8 +2,8 @@
 date: 2020-12-18
 title: "ExPODition Ep.5 - When the Road Ends"
 description: "The story of one mans journey from Central to South America on the Pacific on a raft, powered by a motorcycle."
-categories: updates
-tags: [ExPODition]
+categories: expodition
+tags: []
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-12-18/expodition-episode-5-when-the-road-ends-video-meta.jpg
 featured_image: /assets/images/blog/2020-12-18/expodition-episode-5-when-the-road-ends-video-sm.jpg
@@ -22,3 +22,9 @@ In this episode of ExPODition, David talks with Dylan Wickrama about what it's l
 The conversation was recorded remotely on November 5th, 2020.
 
 <iframe src="https://open.spotify.com/embed-podcast/episode/2NaZ5ffYnrlfzfnN6RjfCA" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+**Related links**
+
+* Ride2xplore website: [https://www.ride2xplore.com/](https://www.ride2xplore.com/)
+Ride2xplore Instagram: [https://www.instagram.com/ride2xplore/](https://www.instagram.com/ride2xplore/)
+Ride2xplore Facebook: [https://www.facebook.com/ride2xplore/](https://www.facebook.com/ride2xplore/)

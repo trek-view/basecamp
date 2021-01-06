@@ -2,7 +2,7 @@
 date: 2020-07-22
 title: "Find your Next 360 Mapping Job"
 description: "Find or offer help on image collection projects to create fresh street level map data in locations where it's needed for Google Street View, Mapillary, and more..."
-categories: updates
+categories: mapthepaths
 tags: []
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-07-24/map-the-paths-marketplace-meta.jpg

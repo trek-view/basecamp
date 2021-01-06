@@ -2,7 +2,7 @@
 date: 2020-12-11
 title: "Climb Mount Kilimanjaro Virtually"
 description: "Spend few minutes on the highest mountain in Africa and the highest single free-standing mountain in the world."
-categories: updates
+categories: mapthepaths
 tags: [Kilimanjaro]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-12-11/map-the-paths-kilimanjaro-macheme-route-guidebook-meta.jpg

@@ -2,7 +2,7 @@
 date: 2020-12-25
 title: "Upload your action camera photos and videos to Google Street View, Mapillary, and more!"
 description: "Modify, process, upload your photos and videos using the Map the Paths Desktop Uploader"
-categories: updates
+categories: mapthepaths
 tags: [Map the Paths]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-12-25/map-the-paths-uploader-meta.jpg
