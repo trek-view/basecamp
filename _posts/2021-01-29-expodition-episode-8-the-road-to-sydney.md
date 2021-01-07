@@ -1,12 +1,12 @@
 ---
-date: 2021-01-28
+date: 2021-01-29
 title: "ExPODition Ep.8 - The Road to Sydney"
 description: "The Solo Cyclist (Zac Newham) embarks on a 25,000 mile ride from his home in Ifield (England) to Sydney (Australia)."
 categories: expodition
 tags: []
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-01-28/
-featured_image: /assets/images/blog/2021-01-28/
+image: /assets/images/blog/2021-01-29/
+featured_image: /assets/images/blog/2021-01-29/
 layout: post
 published: false
 ---

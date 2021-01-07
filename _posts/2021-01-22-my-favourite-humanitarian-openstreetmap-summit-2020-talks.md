@@ -1,12 +1,12 @@
 ---
-date: 2021-01-21
+date: 2021-01-22
 title: "My Favourite Humanitarian OpenStreetMap Summit 2020 Talks"
 description: "Trashsites, Land Rights and Resources, Wildfires and Cycling."
 categories: guides
 tags: [OpenStreetMap, HOSM]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-01-21/hot-logo-meta.jpg
-featured_image: /assets/images/blog/2021-01-21/hot-logo-sm.jpg
+image: /assets/images/blog/2021-01-22/hot-logo-meta.jpg
+featured_image: /assets/images/blog/2021-01-22/hot-logo-sm.jpg
 layout: post
 published: false
 ---
