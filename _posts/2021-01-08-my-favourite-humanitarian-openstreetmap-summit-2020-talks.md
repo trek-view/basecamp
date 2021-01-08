@@ -42,7 +42,7 @@ Chad Blevins from [Critigen](https://www.critigen.com/) talks about trash manage
 
 Americas block.
 
-Katie Pickett from the [Cadasta Foundation](https://cadasta.org/) discusses the issues of land rights and resources ownership that communities in different parts of the world face. In many cases their land is under customary ownership and many governments do not legally recognise this ownership, which is where mapping can help.
+Katie Pickett from the [Cadasta Foundation](https://cadasta.org/) discusses the issues of land rights and resources ownership that communities in different parts of the world face. In many cases their land is under customary ownership which governments do not legally recognise, which is where mapping can help.
 
 ## Mapping Against Wildfires in Bolivia 
 
@@ -58,6 +58,6 @@ Leon Lizon Romano from [Practical Action](https://practicalaction.org/) talks ab
 
 Americas block.
 
-Natalia da Silveria from the [GeoLab at the Universidad de Antioquia](http://www.udea.edu.co/) discusses the SIG en Bici (GIS in Bike) project that is researching how people navigate through cities on back to identify ways to optimise their routes (for speed, safety, etc.).
+Natalia da Silveria from the [GeoLab at the Universidad de Antioquia](http://www.udea.edu.co/) discusses the SIG en Bici (GIS in Bike) project that is researching how cyclists navigate through cities to identify ways to optimise their routes (for speed, safety, etc.).
 
-This is project is particularity close to our hearts, [with our ongoing crowdsourced initiatives to build safer bicycle lanes in cities](/blog/2020/challenge-map-amsterdam-by-bicycle). I've already emailed the SIG en Bici team...
+This project is particularity close to our hearts, [with our ongoing crowdsourced initiatives to build safer bicycle lanes in cities](/blog/2020/challenge-map-amsterdam-by-bicycle). I've already emailed the SIG en Bici team...
