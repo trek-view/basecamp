@@ -1,14 +1,14 @@
 ---
-date: 2021-01-22
+date: 2021-01-08
 title: "My Favourite Humanitarian OpenStreetMap Summit 2020 Talks"
 description: "Trashsites, Land Rights and Resources, Wildfires and Cycling."
 categories: guides
 tags: [OpenStreetMap, HOSM]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-01-22/hot-logo-meta.jpg
-featured_image: /assets/images/blog/2021-01-22/hot-logo-sm.jpg
+image: /assets/images/blog/2021-01-08/hot-logo-meta.jpg
+featured_image: /assets/images/blog/2021-01-08/hot-logo-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Mapping projects to improve disaster and development outcomes.**
@@ -18,7 +18,7 @@ On the 4th of December 2020, [the humanitarian OpenStreetMap community convened 
 
 [You can browse the full programs from each of the three world blocks here](https://summit2020.hotosm.org/program/).
 
-Here are my personal favourites.
+Here are my personal favourites...
 
 ## An Homage to the Projects of #map2020
 
@@ -60,4 +60,4 @@ Americas block.
 
 Natalia da Silveria from the [GeoLab at the Universidad de Antioquia](http://www.udea.edu.co/) discusses the SIG en Bici (GIS in Bike) project that is researching how people navigate through cities on back to identify ways to optimise their routes (for speed, safety, etc.).
 
-This is project is particularity close to our hearts, [with our ongoing crowdsourced initiatives to build safer bicycle lanes in cities](/blog/2020/challenge-map-amsterdam-by-bicycle). I've already emailed the SIG en Bici team!
+This is project is particularity close to our hearts, [with our ongoing crowdsourced initiatives to build safer bicycle lanes in cities](/blog/2020/challenge-map-amsterdam-by-bicycle). I've already emailed the SIG en Bici team...
