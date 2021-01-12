@@ -1,7 +1,7 @@
 ---
 date: 2021-01-29
 title: "ExPODition Ep.8 - The Road to Sydney"
-description: "The Solo Cyclist (Zac Newham) embarks on a 25,000 mile ride from his home in Ifield (England) to Sydney (Australia)."
+description: "Zac Newham embarks on a 25,000 mile ride from his home in Ifield, England to Sydney, Australia."
 categories: expodition
 tags: []
 author_staff_member: dgreenwood
@@ -13,9 +13,9 @@ published: false
 
 **573 days. 27 countries. 3 continents. 25,000 miles.**
 
-In 2013 Zac embarked on a 25,000 mile solo cycle ride from his home in England to Sydney on his budget childhood bicycle.
+In 2013 Zac Newham embarked on a 25,000 mile solo cycle ride from his home in England to Sydney, Australia on his budget childhood bicycle.
 
-The Road to Sydney portrays a truthful (albeit whirlwind!) snapshot of this epic year and a half long journey on two wheels and palpably puts us all in the saddle as he pedals his way east.
+His film, The Road to Sydney, portrays a truthful (albeit whirlwind!) snapshot of this epic year and a half long journey on two wheels and palpably puts us all in the saddle as he pedals his way east.
 
 Funny, simple, unpretentious and full of good cheer.
 
@@ -27,4 +27,5 @@ SPORIFY
 
 **Related links**
 
+* Watch The Road to Sydney on YouTube: [https://youtu.be/eb5B1P5DEXM](https://youtu.be/eb5B1P5DEXM)
 * Zac's website: [https://www.natural-art.uk/](https://www.natural-art.uk/)
