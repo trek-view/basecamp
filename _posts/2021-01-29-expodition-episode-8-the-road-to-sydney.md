@@ -5,26 +5,26 @@ description: "The Solo Cyclist (Zac Newham) embarks on a 25,000 mile ride from h
 categories: expodition
 tags: []
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-01-29/
-featured_image: /assets/images/blog/2021-01-29/
+image: /assets/images/blog/2021-01-29/expodition-road-to-sydney-meta.jpg
+featured_image: /assets/images/blog/2021-01-29/expodition-road-to-sydney-sm.jpg
 layout: post
 published: false
 ---
 
-**England to Australia. On a bicycle.**
+**573 days. 27 countries. 3 continents. 25,000 miles.**
 
-In xxx Zac embarked on a 25,000 mile solo cycle ride from his home in England to Sydney on his budget childhood bicycle.
+In 2013 Zac embarked on a 25,000 mile solo cycle ride from his home in England to Sydney on his budget childhood bicycle.
 
 The Road to Sydney portrays a truthful (albeit whirlwind!) snapshot of this epic year and a half long journey on two wheels and palpably puts us all in the saddle as he pedals his way east.
 
 Funny, simple, unpretentious and full of good cheer.
 
-In this episode of ExPODition, David talks with Zac Newham about his bike ride half way round the world.
+In this episode of ExPODition, David talks with Zac Newham about his bicycle ride half way round the world.
 
-The conversation was recorded remotely on XXXX
+The conversation was recorded remotely on January 11th, 2021.
 
 SPORIFY
 
 **Related links**
 
-* 
+* Zac's website: [https://www.natural-art.uk/](https://www.natural-art.uk/)
