@@ -3,7 +3,7 @@ date: 2020-11-20
 title: "ExPODition EP.3 - Sea Gypsies"
 description: "A crew of 16 left New Zealand on an 8,000 mile pacific crossing to Patagonia, with a stop in Antarctica."
 categories: expodition
-tags: []
+tags: [Nico Edwards, Antarctica, David Greenwood, Trek View, Infinity, Clemens Gabriel Oestreich]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-11-20/expodition-episode-3-sea-gypsies-meta.jpg
 featured_image: /assets/images/blog/2020-11-20/expodition-episode-3-sea-gypsies-sm.jpg

@@ -3,7 +3,7 @@ date: 2021-01-01
 title: "ExPODition Ep.6 - Break Free"
 description: "Two totally different characters, jammed together in two square meters of space for almost two years as they travel across Africa."
 categories: expodition
-tags: []
+tags: [David Greenwood, Trek View, Ulrich Stirnat, Lena Wendt, Africa, Land Rover, overland]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-01-01/expodition-episode-6-break-free-meta.jpg
 featured_image: /assets/images/blog/2021-01-01/expodition-episode-6-break-free-sm.jpg

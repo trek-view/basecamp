@@ -3,7 +3,7 @@ date: 2020-12-18
 title: "ExPODition Ep.5 - When the Road Ends"
 description: "The story of one mans journey from Central to South America on the Pacific on a raft, powered by a motorcycle."
 categories: expodition
-tags: []
+tags: [David Greenwood, Trek View, Columbia, Panama, Dylan Wickrama, Pacific Ocean]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-12-18/expodition-episode-5-when-the-road-ends-video-meta.jpg
 featured_image: /assets/images/blog/2020-12-18/expodition-episode-5-when-the-road-ends-video-sm.jpg

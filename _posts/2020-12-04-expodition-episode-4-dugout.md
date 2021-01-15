@@ -3,7 +3,7 @@ date: 2020-12-04
 title: "ExPODition Ep.4 - Dugout"
 description: "A journey through the Ecuadorian rainforest in a self-made dugout canoe."
 categories: expodition
-tags: []
+tags: [Benjamin Sadd, James Trundle, Amazon, Ecuador, David Greenwood, Trek View, rainforest]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-12-04/expodition-episode-4-dugout-meta.jpg
 featured_image: /assets/images/blog/2020-12-04/expodition-episode-4-dugout-meta.jpg

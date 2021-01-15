@@ -3,7 +3,7 @@ date: 2020-10-23
 title: "Announcing the ExPODition Podcast"
 description: "Stories from 'everyday people' who have embarked on amazing adventures."
 categories: expodition
-tags: []
+tags: [Chris Lucas, Niall Lucas, Canada, Yukon, David Greenwood, Trek View]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-10-23/expodition-episode-1-yukon-assignment-meta.jpg
 featured_image: /assets/images/blog/2020-10-23/expodition-episode-1-yukon-assignment-sm.jpg

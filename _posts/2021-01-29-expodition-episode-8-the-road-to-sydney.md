@@ -3,7 +3,7 @@ date: 2021-01-29
 title: "ExPODition Ep.8 - The Road to Sydney"
 description: "Zac Newham embarks on a 25,000 mile ride from his home in Ifield, England to Sydney, Australia."
 categories: expodition
-tags: []
+tags: [Trek View, David Greenwood, Zac Newham, China, Thailand, England, Australia, bicycle]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-01-29/expodition-road-to-sydney-meta.jpg
 featured_image: /assets/images/blog/2021-01-29/expodition-road-to-sydney-sm.jpg

@@ -3,7 +3,7 @@ date: 2020-11-06
 title: "ExPODition EP.2 - Unbounded"
 description: "A young, unaided crew of four as they hike and pack-raft for four months into the infinite region known as Patagonia."
 categories: expodition
-tags: []
+tags: [David Greenwood, Trek View, Patagonia, Argentina, Chile, Garrett Martin]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-11-06/expodition-episode-2-unbounded-meta.jpg
 featured_image: /assets/images/blog/2020-11-06/expodition-episode-2-unbounded-sm.jpg
