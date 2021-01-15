@@ -1,7 +1,7 @@
 ---
 date: 2021-01-15
 title: "ExPODition Ep.7 - Broken Roads to Siberia"
-description: "A 10,000 km, one month long journey through Russian wilderness."
+description: "A 10,000 km, one month long journey through the Russian wilderness."
 categories: expodition
 tags: [David Greenwood, Trek View, Siberia, BAM road, Jyri Koski, Tuukka Josefsson, Russia, Mongolia, Altai mountains]
 author_staff_member: dgreenwood
