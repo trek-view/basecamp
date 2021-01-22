@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Rivers, mountains, Royal parks...**
+**Rivers, mountains, royal parks...**
 
 In the last few weeks, over 100,000 panoramic images have been uploaded to Map the Paths.
 
