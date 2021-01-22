@@ -1,12 +1,12 @@
 ---
-date: 2021-01-08
+date: 2021-01-22
 title: "Take a Virtual Tour With Map the Paths"
 description: "As new lockdowns take continue, take a trip to explore new places around the world."
 categories: mapthepaths
 tags: [River Thames, Windsor, UK]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-01-08/river-thames-tour-meta.jpg
-featured_image: /assets/images/blog/2021-01-08/river-thames-tour-sm.jpg
+image: /assets/images/blog/2021-01-22/river-thames-tour-meta.jpg
+featured_image: /assets/images/blog/2021-01-22/river-thames-tour-sm.jpg
 layout: post
 published: true
 ---
@@ -21,7 +21,7 @@ Here are a few I've created...
 
 ## The River Thames
 
-<img class="img-fluid" src="/assets/images/blog/2021-01-08/river-thames-tour-sm.jpg" alt="The River Thames tour" title="The River Thames tour" />
+<img class="img-fluid" src="/assets/images/blog/2021-01-22/river-thames-tour-sm.jpg" alt="The River Thames tour" title="The River Thames tour" />
 
 Oxford to Richmond.
 
@@ -31,7 +31,7 @@ Oxford to Richmond.
 
 ## Roque del Conde
 
-<img class="img-fluid" src="/assets/images/blog/2021-01-08/roque-del-conde-tour-sm.jpg" alt="Roque del Conde tour" title="Roque del Conde tour" />
+<img class="img-fluid" src="/assets/images/blog/2021-01-22/roque-del-conde-tour-sm.jpg" alt="Roque del Conde tour" title="Roque del Conde tour" />
 
 Roque del Conde is a tabletop mountain with a huge plateau on its top. While only barely above 1000m of elevation, Roque del Conde is one of the landmarks of the island Tenerife.
 
@@ -41,7 +41,7 @@ Roque del Conde is a tabletop mountain with a huge plateau on its top. While onl
 
 ## Windsor Great Park
 
-<img class="img-fluid" src="/assets/images/blog/2021-01-08/windsor-great-park-tour-sm.jpg" alt="Windsor Great Park tour" title="Windsor Great Park tour" />
+<img class="img-fluid" src="/assets/images/blog/2021-01-22/windsor-great-park-tour-sm.jpg" alt="Windsor Great Park tour" title="Windsor Great Park tour" />
 
 Windsor Great Park is a Royal Park of 2,020 hectares, including a deer park, to the south of the town of Windsor on the border of Berkshire and Surrey in England.
 
