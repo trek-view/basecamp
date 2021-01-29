@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2021-01-29/expodition-road-to-sydney-meta.jpg
 featured_image: /assets/images/blog/2021-01-29/expodition-road-to-sydney-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **573 days. 27 countries. 3 continents. 25,000 miles.**
@@ -23,7 +23,7 @@ In this episode of ExPODition, David talks with Zac Newham about his bicycle rid
 
 The conversation was recorded remotely on January 11th, 2021.
 
-SPORIFY
+<iframe src="https://open.spotify.com/embed-podcast/episode/4l4o5xHBmY6CoNyu9db6bW" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
 **Related links**
 
