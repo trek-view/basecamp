@@ -10,10 +10,6 @@
   link: /loan
   new_window: false
   highlight: false
-- name: Spotted a Trekker?
-  link: https://www.mapthepaths.com
-  new_window: false
-  highlight: true
 - name: View / Upload Photos
   link: https://www.mapthepaths.com
   new_window: true
