@@ -14,7 +14,7 @@ show_drafts: false
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: assets/images/icons/siteicon.png
-description: Trek View is using computer vision and street-level panoramic imagery of the natural world to help us better understand our environment.
+description: Trek View is using street-level panoramic imagery of the natural world to inspire everyone to start exploring it.
 author:
   name:
 twitter:
