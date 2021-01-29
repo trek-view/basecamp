@@ -44,7 +44,7 @@ If you're a developer, [you can also build Trek View imagery into your own proje
 
 We're slowly uploading the entire Trek View Tour library to Explorer. That's over 1 million photos.
 
-You don't need to keep refreshing Explorer to check for new tours. [You can register to receive tour updates via email](/subscribe).
+You don't need to keep refreshing Explorer to check for new tours. [You can register to receive tour updates via email](https://www.mapthepaths.com).
 
 [Start exploring now](https://www.mapthepaths.com).
 

@@ -45,7 +45,7 @@ I'm working hard to make Tourer easier to use for non-technical users. The next 
 
 Do you want to be the first to know when the next version of Tourer is released?
 
-[Register for our newsletter and we'll keep you posted](/subscribe).
+[Register for our newsletter and we'll keep you posted](https://www.mapthepaths.com).
 
 ## Help us Improve Tourer
 

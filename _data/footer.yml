@@ -20,7 +20,7 @@
   - name: About
     link: /about
   - name: Spotted a Trekker?
-    link: /subscribe
+    link: https://www.mapthepaths.com
   - name: Become a Trekker
     link: /loan
   - name: Contact

@@ -87,8 +87,4 @@ If you want to follow some of our field work, we publish "[little planet](/blog/
 
 * [Instagram](https://www.instagram.com/trekviewed/)
 
-Finally, you can stay abreast of our latest projects by signing up for our mailing list (a maximum of 1 email every 2 weeks)
-
-* [Mailing List](/subscribe)
-
 Speak to you all again very soon!
