@@ -8,14 +8,14 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2021-02-05/gimp-transform-360-meta.jpg
 featured_image: /assets/images/blog/2021-02-05/gimp-transform-360.jpg
 layout: post
-published: false
+published: true
 ---
 
 **_Sometimes_ a 360 image is too much (sometimes)**
 
-360 images are amazing views of the world.
+360 images offer amazing views of the world.
 
-However, sometimes you just want to share a "normal", flat photo with someone, without needing a 360 viewer.
+However, sometimes you just want to share a "normal", flat photo with someone, without the need for a 360 viewer.
 
 Many 360 camera manufacturers bundle software with their cameras that allow you to take grabs of your 360 photos and videos.
 
