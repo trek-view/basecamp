@@ -1,7 +1,7 @@
 ---
 date: 2021-02-12
 title: "Map the Paths: What's New (January 2021)"
-description: ""
+description: "A quick look at some of the things we've been working on over the last few months."
 categories: mapthepaths
 tags: [OSM, Wikipedia, altitude, weather, Facebook Comments]
 author_staff_member: dgreenwood
@@ -15,7 +15,7 @@ published: true
 
 Firstly I’d like to say a big thank you to everyone who has uploaded their off-road 360 tours to [Map the Paths](https://www.mapthepaths.com/).
 
-We’ve passed 100,000 panoramas at the start of the year. Onto 1 million!
+We passed a milestone of 100,000 panoramas uploaded at the start of the year. Onto 1 million!
 
 I’d like to use this post to share some of the recent features we’ve shipped.
 
@@ -31,7 +31,6 @@ See what's nearby to an image on Map the Paths using OpenStreetMap and Wikipedia
 
 View the weather at the time of capture for any Map the Paths image.
 
-
 ## Commenting on photos
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rgqwtLu8Wvs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -46,22 +45,20 @@ Find the best views using the altitude navigation on Map the Paths.
 
 [p.s. You can so sort photos by viewpoint to find the very best views](https://www.mapthepaths.com/sequence/photo).
 
-## Add photos and videos to Guidebooks
+## Custom banners
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sGwGBPUWtXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oy_FZNnj6ho" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Create a Map the Paths Guidebook of street-level photos to show people around a location. View others people have created to help plan your next adventure.
-
-[Create a Guidebook here](https://www.mapthepaths.com/guidebook/list/).
+Overlay custom messages and URLs as banners to your sequences on Map the Paths.
 
 ## Augmented reality sequences
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ovaSCWqCR7U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Track an entire Map the Paths Sequence as an image overlay showing the next and previous photos.
+Track an entire Map the Paths Sequence by showing the entire route augmented over each photo.
 
 ## Do you have an idea for a new feature?
 
-[You can see more demos of Map the Paths here](https://www.youtube.com/playlist?list=PLxOPOff2hYWNW7kUguDy4eRgH1WjKPGZd).
+[See more demos of Map the Paths here](https://www.youtube.com/playlist?list=PLxOPOff2hYWNW7kUguDy4eRgH1WjKPGZd).
 
-If there's something missing you'd like to see, [let us know on the forum](https://campfire.trekview.org/c/support/8).
+If there's something missing you'd like to added to Map the Paths, [let us know on the forum](https://campfire.trekview.org/c/support/8).
