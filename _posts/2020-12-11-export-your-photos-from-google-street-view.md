@@ -15,9 +15,9 @@ published: true
 
 Many of you have been uploading to Google Street View for years.
 
-I know this because many of you have also asked if it’s possible to sync Google Street View data with Map the Paths because you don't have a backup of the uploads.
+I know this because many of you have also asked if it’s possible to sync Google Street View data with Map the Paths because you don't have a backup of the original uploads.
 
-Whilst a direct sync between Map the Paths and Street View is not possible due to limitations imposed by Google, you can download images from Google to your computer, and the reupload to Map the Paths.
+Whilst a direct sync between Map the Paths and Street View is not possible due to limitations imposed by Google, you can download images from Google to your computer, and then reupload to Map the Paths.
 
 Here's how to download all of your own imagery that is hosted on Google Street View:
 
@@ -27,9 +27,9 @@ Here's how to download all of your own imagery that is hosted on Google Street V
 
 Google allow you download all your data, from any Google tool, using Takeout.
 
-You can access Google Takeout here: https://takeout.google.com/settings/takeout
+[You can access Google Takeout here](https://takeout.google.com/settings/takeout).
 
-In this case of downloading your Street View data, make sure Google Street View is checked and then select how you want to recieve the data (keep in mind you might have 100's of GB's of data on Street View).
+When logged in make sure Google Street View is checked and then select how you want to receive the data (keep in mind you might have 100's of GB's of data on Street View).
 
 ## Understanding the data
 
@@ -41,24 +41,22 @@ Depending on the size of the Street View data you've uploaded this process can t
 
 <img class="img-fluid" src="/assets/images/blog/2020-12-11/google-takeout-file-output.jpg" alt="Google Takeout Street View files" title="Google Takeout Street View files" />
 
-For photo files uploaded to Street View you'll recieve a mix of `.jpg` and `.json` files in the `.zip` file that Google sends you.
+For photo files uploaded to Street View you'll receive a mix of `.jpg` and `.json` files in the `.zip` file that Google sends you.
 
 The `.jpg`'s are the photos you originally uploaded to Street View. They are named with [the unique Street View Photo ID of the photo](https://developers.google.com/streetview/publish/reference/rest/v1/photo), for example; `photo_CAoSLEFGMVFpcE5UejF0Q1kzNl9zV1IxZV9fekpZU.jpg`
 
-If you open up the corresponding `.json` document for the photo (e.g `photo_CAoSLEFGMVFpcE5UejF0Q1kzNl9zV1IxZV9fekpZU.jpg` -> `meta_CAoSLEFGMVFpcE5UejF0Q1kzNl9zV1IxZV9fekpZU.json`).
+You'll also notice a corresponding `.json` document for the photo (e.g `photo_CAoSLEFGMVFpcE5UejF0Q1kzNl9zV1IxZV9fekpZU.jpg` -> `meta_CAoSLEFGMVFpcE5UejF0Q1kzNl9zV1IxZV9fekpZU.json`).
 
-This file contains the Photo ID of other Street View photos that your Street View is connected to (connections that generate blue lines). Here's an example:
+This file contains the Photo ID's of other Street View photos that your Street View is connected to (connections that generate blue lines). Here's an example:
 
 ```
 {"id":"CAoSLEFGMVFpcE5UejF0Q1kzNl9zV1IxZV9fekpZU","connections":["CAoSLEFGMVFpcE53RmVqeS16QXlwMGlnZFpxdENaRnV4akZhZUZZellFeWNDNVpm","CAoSLEFGMVFpcE13LUdPcFl5ZWl6Y3F3cUZtd0dORDQ2QXNMUjZjRHFyTzFXRmlo"]}
 ```
 
-For those who regularly use the Street View UI, you might be interested in this post to better understand other Street View variables: [Decoding a Google Street View URL](/blog/2020/decoding-google-street-view-urls)
+_For those who regularly use the Street View UI, you might be interested in this post to better understand other Street View variables: [Decoding a Google Street View URL](/blog/2020/decoding-google-street-view-urls)._
 
 **Video uploads**
 
 Update January 2021: [It appears takeout is not possible if your account has uploaded videos to Google Street View](https://campfire.trekview.org/t/downloading-your-own-images-from-google-street-view/505).
 
-Let me know in the thread how you get on with this process.
-
-I'm especially keen to hear from people who have uploaded video and/or have a significant amount of content on Street View (100GB+).
+Let me know in that thread how you get on with this process. I'm especially keen to hear if Takeout works for people who have uploaded video and/or have a significant amount of content on Street View (100GB+).
