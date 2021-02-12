@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2020-12-11/google-takout-street-view-meta.jpg
 featured_image: /assets/images/blog/2020-12-11/google-takout-street-view.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Backup your Google Street View images**
