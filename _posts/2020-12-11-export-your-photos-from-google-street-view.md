@@ -1,12 +1,12 @@
 ---
-date: 2021-02-19
+date: 2020-12-11
 title: "Export your Photos From Google Street View"
 description: "Use Google Takeout to get a copy of all your imagery hosted on Google Street View"
 categories: 
 tags: [Street View, Google]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-02-19/google-takout-street-view-meta.jpg
-featured_image: /assets/images/blog/2021-02-19/google-takout-street-view.jpg
+image: /assets/images/blog/2020-12-11/google-takout-street-view-meta.jpg
+featured_image: /assets/images/blog/2020-12-11/google-takout-street-view.jpg
 layout: post
 published: false
 ---
@@ -23,7 +23,7 @@ Here's how to download all of your own imagery that is hosted on Google Street V
 
 ## Google Takeout data download instructions
 
-<img class="img-fluid" src="/assets/images/blog/2021-02-19/google-takout-street-view.jpg" alt="Google Takeout Street View" title="Google Takeout Street View" />
+<img class="img-fluid" src="/assets/images/blog/2020-12-11/google-takout-street-view.jpg" alt="Google Takeout Street View" title="Google Takeout Street View" />
 
 Google allow you download all your data, from any Google tool, using Takeout.
 
@@ -39,7 +39,7 @@ Depending on the size of the Street View data you've uploaded this process can t
 
 **Photo uploads**
 
-<img class="img-fluid" src="/assets/images/blog/2021-02-19/google-takeout-file-output.jpg" alt="Google Takeout Street View files" title="Google Takeout Street View files" />
+<img class="img-fluid" src="/assets/images/blog/2020-12-11/google-takeout-file-output.jpg" alt="Google Takeout Street View files" title="Google Takeout Street View files" />
 
 For photo files uploaded to Street View you'll recieve a mix of `.jpg` and `.json` files in the `.zip` file that Google sends you.
 
@@ -57,13 +57,8 @@ For those who regularly use the Street View UI, you might be interested in this 
 
 **Video uploads**
 
+Update January 2021: [It appears takeout is not possible if your account has uploaded videos to Google Street View](https://campfire.trekview.org/t/downloading-your-own-images-from-google-street-view/505).
 
+Let me know in the thread how you get on with this process.
 
-
-## Join the discussion
-
-This blog post was inspired by a suggestion from Jim Gayes and [a discussion on the forum](https://campfire.trekview.org/t/downloading-your-own-images-from-google-street-view/505).
-
-Let me know how you get on with this process. I'm especially keen to hear from people who have a significant amount of content on Street View (100GB+).
-
-[Read and contribute to the original thread on the forum here](https://campfire.trekview.org/t/downloading-your-own-images-from-google-street-view/505).
+I'm especially keen to hear from people who have uploaded video and/or have a significant amount of content on Street View (100GB+).

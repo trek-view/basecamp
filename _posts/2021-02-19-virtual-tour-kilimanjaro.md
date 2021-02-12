@@ -1,12 +1,12 @@
 ---
-date: 2020-12-11
+date: 2021-02-19
 title: "Climb Mount Kilimanjaro Virtually"
 description: "Spend few minutes on the highest mountain in Africa and the highest single free-standing mountain in the world."
 categories: mapthepaths
 tags: [Kilimanjaro]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2020-12-11/map-the-paths-kilimanjaro-macheme-route-guidebook-meta.jpg
-featured_image: /assets/images/blog/2020-12-11/map-the-paths-kilimanjaro-macheme-route-guidebook-sm.jpg
+image: /assets/images/blog/2021-02-19/map-the-paths-kilimanjaro-macheme-route-guidebook-meta.jpg
+featured_image: /assets/images/blog/2021-02-19/map-the-paths-kilimanjaro-macheme-route-guidebook-sm.jpg
 layout: post
 published: true
 ---
@@ -29,7 +29,7 @@ When the next climbing window starts in January, we'll be hoping for a few more 
 
 ## Explore the mountain virtually
 
-<img class="img-fluid" src="/assets/images/blog/2020-12-11/map-the-paths-kilimanjaro-macheme-route-guidebook-sm.jpg" alt="Map the Paths Kilimanjaro Macheme Route Guidebook" title="Map the Paths Kilimanjaro Macheme Route Guidebook" />
+<img class="img-fluid" src="/assets/images/blog/2021-02-19/map-the-paths-kilimanjaro-macheme-route-guidebook-sm.jpg" alt="Map the Paths Kilimanjaro Macheme Route Guidebook" title="Map the Paths Kilimanjaro Macheme Route Guidebook" />
 
 [**You can explore the full Macheme Route Guidebook now on Map the Paths here**](
 https://www.mapthepaths.com/guidebook/6e613819-fe76-4516-8ac3-508ff0591cf7/detail/).
