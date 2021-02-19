@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Convert Videos to images**
+**Grab the perfect frame**
 
 In the last year I've covered topics [about the metadata found in a 360 video](/blog/2020/metadata-exif-xmp-360-video-files), [how to extract a GPS track from them](/blog/2020/extracting-gps-track-from-360-timelapse-video), and [video compression](/blog/2020/fps-bitrate-compression-360-virtual-tours).
 
@@ -19,17 +19,17 @@ The problem with video files is they're often difficult to work with as a beginn
 
 Let's say you wanted to cut the first 20 seconds of video from your capture whilst standing still. Removing the first 20 seconds is trivial in many programs.
 
-The problem; some software programs will completely strip the GPS telemetry from the video if you do this, others will remove other important metadata from the video, [such as [XMP] ProjectionType](/blog/2020/metadata-exif-xmp-360-video-files) (used by software to recognise the video as either 360 or 2D).
+The problem; many software programs will completely strip the GPS telemetry from the video if you do this, others will remove other important metadata from the video, [such as [XMP] ProjectionType](/blog/2020/metadata-exif-xmp-360-video-files) (used by software to recognise the video as either 360 or 2D).
 
-I'm yet to find the perfect 360 video editing tool for street-level imagery mapping. [This is one of the reasons we don't recommend capturing virtual tours in video mode](https://guides.trekview.org/mtp-web/user-guide/sequences/capture#camera-capture-mode-settings).
+I'm yet to find the perfect 360 video editing tool for mapping. [This is one of the reasons we don't recommend capturing virtual tours in video mode using the Trek Pack](https://guides.trekview.org/mtp-web/user-guide/sequences/capture#camera-capture-mode-settings).
 
-That said, sometimes you might have captured a brilliant video of a trail -- perhaps skiing a piste or a downhill MTB trail -- where your intention was not to use the images for mapping, but to share with friends on YouTube, however, now realise that video would be great to use on Mapillary.
+That said, sometimes you might have captured a brilliant video of a trail -- perhaps skiing a piste or a downhill MTB trail -- where your intention was not to use the images for mapping, but to share with friends on YouTube, however, now realise that video would be great to use on Mapillary or Google Street View.
 
-In such cases it's possible to convert the video to images (with the help of [FFmpeg](https://ffmpeg.org/)).
+In such cases it's possible to convert the video to images (with the help of [ffmpeg](https://ffmpeg.org/)).
 
 ## 1. Preperation
 
-For this guide I'll be using [FFmpeg](https://ffmpeg.org/), a free and open-source project consisting of a vast software suite of libraries and programs for handling video, audio, and other multimedia files and streams.
+For this guide I'll be using [ffmpeg](https://ffmpeg.org/), a free and open-source project consisting of a vast software suite of libraries and programs for handling video, audio, and other multimedia files and streams.
 
 The demo video will be an `.mp4` video filmed using a GoPro Fusion with GPS enabled shot at 5.2K and the final file encoded using H.264 at 4K at 30 FPS using GoPro Fusion Studio (no Protune). The file size is 86.2MB and runs for 16 seconds.
 
@@ -55,9 +55,9 @@ This command includes the following arguments:
 
 <img class="img-fluid" src="/assets/images/blog/2021-02-19/img0001-sm.jpg" alt="ffmpeg extracted frame example" title="ffmpeg extracted frame exampler" />
 
-[In total this gives me 18 `.jpg` files](https://drive.google.com/drive/u/1/folders/1hPCYAluasG58moLQsFPo-On5IA6guRS9).
+[In total this gives me 18 `.jpg` files (img0001.jpg..., img0018.jpg)](https://drive.google.com/drive/u/1/folders/1hPCYAluasG58moLQsFPo-On5IA6guRS9).
 
-If you want a higher (or lower) sampling rate, just change the `-r` value (e.g. `-r 0.5` = 2 frames per second).
+If you want a higher (or lower) sampling rate, just change the `-r` value (e.g. `-r 0.5` = 2 frames per second). Don't forget to check the sampling rate is not greater than the framerate of the video.
 
 **A note on video capture and quality**
 
@@ -75,10 +75,10 @@ Looking at the metadata of the video, the reported image size is 3840x1920 or 7.
 [Main]          AvgBitrate                      : 45.2 Mbps
 ```
 
-[The reason why is described in this post](/blog/2020/fps-bitrate-compression-360-virtual-tours).
+[The reason why this happens is described in this post](/blog/2020/fps-bitrate-compression-360-virtual-tours).
 
 ## 3. Re-embed metadata
 
-ffmpeg strips frames of metadata when converting from a video file. The metadata includes things like timestamps and GPS which are crucial pieces of information when mapping.
+ffmpeg strips frames of metadata when converting from a video file. The metadata includes things like timestamps and GPS, both are crucial pieces of information when mapping.
 
-I'll show how to do that next week...
+I'll show how to re-embed metadata next week...

@@ -11,17 +11,7 @@ layout: post
 published: false
 ---
 
-**Two solutions to convert videos to images**
 
-In the last year I've covered topics [about the metadata found in a 360 video](/blog/2020/metadata-exif-xmp-360-video-files) and [how to extract a GPS track from them](/blog/2020/extracting-gps-track-from-360-timelapse-video).
-
-The problem with video files is they're often difficult to work with as a beginner. Let's say you wanted to cut the first 20 seconds of video from your capture whilst standing still. Removing the first 20 seconds is trivial in many programs. The problem; some software programs will completely strip the GPS telemetry from the video if you do this, others will remove other important metadata from the video, such as [XMP] ProjectionType (used by software to recognise the video as either 360 or 2D).
-
-I'm yet to find the perfect 360 video editing tool for street-level imagery mapping. [This is one (or a few) reasons we don't recommend capturing in video mode](https://guides.trekview.org/mtp-web/user-guide/sequences/capture#camera-capture-mode-settings).
-
-That said, sometimes you might have captured a brilliant video of a trail -- perhaps skiing a piste or a downhill MTB trail -- where your intention was not to use the images for mapping, but to share with friends on YouTube, however, now realise that video would be great to use on Mapillary.
-
-In such cases it's possible to convert the video and the metadata they hold to images (with the help of [EXIFtool](https://exiftool.org/) and [FFmpeg](https://ffmpeg.org/)).
 
 The workflow will look like this:
 
@@ -29,11 +19,7 @@ The workflow will look like this:
 2. Split video into frames (individual photo files)
 3. Add metadata to frames
 
-For this guide I'll be using [FFmpeg](https://ffmpeg.org/), a free and open-source project consisting of a vast software suite of libraries and programs for handling video, audio, and other multimedia files and streams.
 
-The demo video will be an `.mp4` video filmed using a GoPro Fusion with GPS enabled shot at 5.2K and the final file encoded using H.264 at 4K at 30 FPS using GoPro Fusion Studio (no Protune). The file size is 86.2MB and runs for 16 seconds.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iyIkDRERzz8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 1. Extract metadata track from video file (for telemetry information)
 
@@ -88,52 +74,9 @@ This command includes the following arguments:
 
 _Note, this a simple extraction and only preserves `GPSLatitude`, `GPSLongitude`, `GPSAltitude` and `GPSDateTime` values. In many cases the telemetry track also includes other sensor data including pitch and heading._
 
-## 2. Split video into frames (individual photo files)
-
-Taking the `.mp4` file, I can break it down into 1 second frames at desired intervals using ffmpeg.
-
-I'm going to use `.jpg` for the output. 
-
-CLI input:
-
-```
-ffmpeg -i VIDEO_7152.mp4 -r 1 FRAMES/img%04d.jpg
-```
 
 
-```
-$ ffmpeg -i VIDEO_7152.mp4 -r 1 -vsync 0 -frame_pts true FRAMES/img%d.jpg
-```
 
-This command includes the following arguments:
-
-* -r: Set frame rate (Hz value, fraction or abbreviation).
-
-[Full reference here](https://www.ffmpeg.org/ffmpeg.html).
-
-_Make sure you reference an existing directory path for the image file output (e.g. `FRAMES/`)._
-
-<img class="img-fluid" src="/assets/images/blog/2020-06-05/img0001-sm.jpg" alt="ffmpeg extracted frame example" title="ffmpeg extracted frame exampler" />
-
-[In total this gives me 18 `.jpg` files](https://drive.google.com/drive/u/1/folders/1hPCYAluasG58moLQsFPo-On5IA6guRS9).
-
-If you want a higher (or lower) sampling rate, just change the `-r` value (e.g. `-r 0.5` = 2 frames per second).
-
-**A note on video capture and quality**
-
-I mentioned at the start this video was show in 4K.
-
-> 4K (3840 x 2160 or 4096 x 2160) is about 8.5 megapixels.
-
-[Source](https://www.lifewire.com/4k-resolution-overview-and-perspective-1846842)
-
-Looking at the metadata of the video, the reported image size is 3840x1920 or 7.4MP.
-
-```
-[Main]          ImageSize                       : 3840x1920
-[Main]          Megapixels                      : 7.4
-[Main]          AvgBitrate                      : 45.2 Mbps
-```
 
 So why is this happening?
 
