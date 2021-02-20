@@ -27,7 +27,7 @@ That said, sometimes you might have captured a brilliant video of a trail -- per
 
 In such cases it's possible to convert the video to images (with the help of [ffmpeg](https://ffmpeg.org/)).
 
-## 1. Preperation
+## 1. Preparation
 
 For this guide I'll be using [ffmpeg](https://ffmpeg.org/), a free and open-source project consisting of a vast software suite of libraries and programs for handling video, audio, and other multimedia files and streams.
 
