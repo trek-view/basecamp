@@ -13,7 +13,7 @@ published: false
 
 **Giving everyone the confidence to explore**
 
-Originally Map the Paths was designed to scratch an itch here at Trek View. To have a way to easily classify the 360 outdoor virtual tour imagery our Trekkers captured.
+Originally Map the Paths was designed to scratch an itch here at Trek View; to have a way to easily classify the 360 outdoor virtual tour imagery our Trekkers captured.
 
 We're coming up to the nine month mark, and in the past few months we've seen a number of innovative ways organisations are using the software to improve.
 
