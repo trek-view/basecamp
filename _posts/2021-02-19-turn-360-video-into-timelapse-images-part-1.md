@@ -82,3 +82,11 @@ Looking at the metadata of the video, the reported image size is 3840x1920 or 7.
 ffmpeg strips frames of metadata when converting from a video file. The metadata includes things like timestamps and GPS, both are crucial pieces of information when mapping.
 
 I'll show how to re-embed metadata next week...
+
+## Map the Paths Uploader
+
+<img class="img-fluid" src="/assets/images/blog/2021-02-19/mtpu-screenshot.jpg" alt="Map the Paths Uploader" title="Map the Paths Uploader" />
+
+You can use the Map the Paths Uploader to split videos into meta/geotagged images (without having to upload them).
+
+[Download the Map the Paths Uploader for free here](https://www.mapthepaths.com/uploader).
