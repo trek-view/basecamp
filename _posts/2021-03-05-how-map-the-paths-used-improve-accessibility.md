@@ -1,12 +1,12 @@
 ---
-date: 2021-03-19
+date: 2021-03-05
 title: "How Map the Paths is being used to improve accessibility"
 description: "Show, don't tell. We believe in giving people the right information to make their own decisions."
 categories: mapthepaths
 tags: [OSM, accessibility, disabilities]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-03-19/map-the-paths-amenities-meta.jpg
-featured_image: /assets/images/blog/2021-03-19/map-the-paths-amenities-sm.jpg
+image: /assets/images/blog/2021-03-05/map-the-paths-amenities-meta.jpg
+featured_image: /assets/images/blog/2021-03-05/map-the-paths-amenities-sm.jpg
 layout: post
 published: false
 ---
@@ -21,13 +21,13 @@ I've received some lovely emails from people telling me Map the Paths has given 
 
 ## Surface type
 
-<img class="img-fluid" src="/assets/images/blog/2021-03-19/map-the-paths-surface.png" alt="Map the Paths Surface Type" title="Map the Paths Surface Type" />
+<img class="img-fluid" src="/assets/images/blog/2021-03-05/map-the-paths-surface.png" alt="Map the Paths Surface Type" title="Map the Paths Surface Type" />
 
 Flat, even and predictable surfaces are not always guaranteed. Map the Paths automatically classifies what's inside an image, including objects and surfaces to help people make a decision on whether they can tackle it.
 
 ## Gradients
 
-<img class="img-fluid" src="/assets/images/blog/2021-03-19/map-the-paths-gradients.png" alt="Map the Paths Gradients" title="Map the Paths Gradients" />
+<img class="img-fluid" src="/assets/images/blog/2021-03-05/map-the-paths-gradients.png" alt="Map the Paths Gradients" title="Map the Paths Gradients" />
 
 _[South Downs Way - East Lavington to Upwaltham](https://www.mapthepaths.com/sequence/d6b4d458-4532-4592-936a-27ed25eb54a9/detail?page=1)_
 
@@ -35,7 +35,7 @@ Uneven or steep gradients also pose a challenge. Map the Paths shows the gradien
 
 ## Obstruction and dangers
 
-<img class="img-fluid" src="/assets/images/blog/2021-03-19/map-the-paths-obstructions.png" alt="Map the Paths Obstructions" title="Map the Paths Obstructions" />
+<img class="img-fluid" src="/assets/images/blog/2021-03-05/map-the-paths-obstructions.png" alt="Map the Paths Obstructions" title="Map the Paths Obstructions" />
 
 _[River Itchen - Shawford to Southampton](https://www.mapthepaths.com/sequence/f380b8ae-4fd5-4327-9744-b40c7346c820/detail?page=1)_
 
@@ -45,7 +45,7 @@ Narrow paths, stiles, barriers can stop people in their tracks. Map the Paths ta
 
 ## Amenities
 
-<img class="img-fluid" src="/assets/images/blog/2021-03-19/map-the-paths-amenities.png" alt="Map the Paths Amenities" title="Map the Paths Amenities" />
+<img class="img-fluid" src="/assets/images/blog/2021-03-05/map-the-paths-amenities.png" alt="Map the Paths Amenities" title="Map the Paths Amenities" />
 
 _[Amsterdam - Vondelpark](https://www.mapthepaths.com/sequence/e7c448fb-f8d0-486a-93ac-386e0974ed43/detail?image_key=68lL5WyePMpclVk7Qn99eQ&view_mode=original&show_gpx=false)_
 
