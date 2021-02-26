@@ -87,7 +87,7 @@ I'll show how to re-embed metadata next week...
 
 <img class="img-fluid" src="/assets/images/blog/2021-02-19/mtpu-screenshot.jpg" alt="Map the Paths Uploader" title="Map the Paths Uploader" />
 
-You can use the Map the Paths Uploader to split videos into meta/geotagged images (without having to upload them).
+You can use the Map the Paths Uploader to easily split videos into meta/geotagged images (without having to upload them).
 
 [Download the Map the Paths Uploader for free here](https://www.mapthepaths.com/uploader).
 
