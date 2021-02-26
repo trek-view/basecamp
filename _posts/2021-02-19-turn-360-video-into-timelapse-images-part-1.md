@@ -90,3 +90,7 @@ I'll show how to re-embed metadata next week...
 You can use the Map the Paths Uploader to split videos into meta/geotagged images (without having to upload them).
 
 [Download the Map the Paths Uploader for free here](https://www.mapthepaths.com/uploader).
+
+## Update 2021-02-26
+
+[Turning a 360 Video into Timelapse Images (Part 2/2)](/blog/2021/turn-360-video-into-timelapse-images-part-2)

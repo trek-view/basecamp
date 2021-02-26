@@ -1,93 +1,69 @@
 ---
 date: 2021-02-26
 title: "Turning a 360 Video into Timelapse Images (Part 2/2)"
-description: ""
-categories: 
+description: "In the second part of this post I will show you how to add metadata to images previously extracted from frames."
+categories: guides
 tags: [FFMpeg]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-02-26/
-featured_image: /assets/images/blog/2021-02-26/
+image: /assets/images/blog/2021-02-26/image-metadata-exiftool-meta.jpg
+featured_image: /assets/images/blog/2021-02-26/image-metadata-exiftool-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
+**Embedding metadata into images.**
+
+[Last week I showed you how to split a 360 video into frames](/blog/2020/turn-360-video-into-timelapse-images-part-1).
+
+However, the frames extracted using ffmpeg did not copy over vital metadata like capture time and GPS data used for mapping.
+
+The next step is to re-embed the video metadata into the extracted frames.
+
+I'll be using the same video to demonstrate this process as the one used last week.
+
+[You'll need EXIFtool installed to manipulate the telemetry](https://exiftool.org/geotag.html#Inverse).
 
 ## 1. Extract metadata track from video file (for telemetry information)
 
-ffmpeg strips frames of metadata when converting from a video file (step 2).
-
-Therefore the first step is to extract the metadata from the video file so we have a copy of it to re-embed into the extracted frames (step 3).
-
-[The details of this are detailed here (and you should read this before continuing)](/blog/2020/metadata-exif-xmp-360-video-files).
-
-In short we can use exiftool to do this.
-
-I'll do it in two part.
-
-### Extract global metadata
-
-Described in more detail in the section of this post titled, [extracting metadata for video level](/blog/2020/metadata-exif-xmp-360-video-files):
-
-CLI input: 
-
-```
-$ exiftool -ee -G3 -s VIDEO_7152.mp4 > VIDEO_7152_track_metadata_tagnames_full.txt
-```
-
-This command includes the following arguments:
-
-* -ee: Extract embedded data from mp0 files (and others).
-* -G3: Identify the originating document for extracted information. Embedded documents containing sub-documents are indicated with dashes in the family 3 group name. (eg. Doc2-3 is the 3rd sub-document of the 2nd embedded document.)
-* -s: Descriptions, not tag names, are shown by default when extracting information. Use the -s option to see the tag names instead.
-
-[Full reference here](https://exiftool.org/exiftool_pod.html).
-
-[Here is the outputted file](https://gitlab.com/snippets/1979531).
-
-### Extract GPS track
-
-[The command below is described in more detail in this post](/blog/2020/extracting-gps-track-from-360-timelapse-video):
-
-CLI input: 
+[The finer details of this process are detailed here (and you should read this before continuing)](/blog/2020//extracting-gps-track-from-360-timelapse-video/).
 
 ```
 $ exiftool -ee -p gpx.fmt VIDEO_7152.mp4 > VIDEO_7152.gpx
 ```
 
-This command includes the following arguments:
-
-* -ee: Extract embedded data from mp0 files (and others).
-* -p FMTFILE: Print output in specified format
-
-[Full reference here](https://exiftool.org/exiftool_pod.html).
-
-[Here is the outputted file](https://gitlab.com/snippets/1977078).
+[This will give you a `.gpx` file names `VIDEO_7152.gpx`](https://gitlab.com/snippets/1977078).
 
 _Note, this a simple extraction and only preserves `GPSLatitude`, `GPSLongitude`, `GPSAltitude` and `GPSDateTime` values. In many cases the telemetry track also includes other sensor data including pitch and heading._
 
+## 2. Extract global metadata (for camera info, etc.)
 
+This process is described in more detail in the section of this post titled, [extracting metadata for video level](/blog/2020/metadata-exif-xmp-360-video-files):
 
-## 3. Add telemetry data to selected frames
-
-[You'll notice if you examine the metadata in the extracted frames](/blog/2020/metadata-exif-xmp-360-photo-files), it does not contain the metadata from the video file.
-
-CLI input:
+CLI input: 
 
 ```
-$ exiftool -G -a -s FRAMES/img0001.jpg > FRAMES/img0001_metadata.txt
+$ exiftool -G -a VIDEO_7152.mp4 > VIDEO_7152_metadata.txt
 ```
 
-[Here is the outputted file](https://gitlab.com/snippets/1979421).
+[This will give you a text file called `VIDEO_7152_metadata.txt`](https://gitlab.com/-/snippets/1971842)
 
-Now this is problematic for a few reasons, namely because we don't know when the time image was captured which makes it impossible to re-embed timestamped GPS positions.
+## 3. Add timestamps to frames
 
-To calculate the time the image was taken two pieces of information are needed, the start time of the video, and the spacing (time) between frames defined when splitting the videos into frames. In this example, it's 1 second (`-r 1`).
+Before we can add the GPS track we need to add the time each frame was taken (the `datetimeoriginal` EXIF value of the image).
+
+To calculate the time the image was taken, two pieces of information are needed; the start time of the video, and the spacing (time) between frames defined when splitting the videos into frames.
+
+In last weeks example the spacing of frames is 1 second (`-r 1`).
+
+```
+$ ffmpeg -i VIDEO_7152.mp4 -r 1 FRAMES/img%d.jpg
+```
 
 **WARNING**
 
-Videos are stiched on the GoPro Fusion, and many other cameras, after the date the time they shot.
+Videos are stitched on the GoPro Fusion, and a number of other cameras, after the date the time they shot (using desktop software).
 
-This is also problematic.
+This can be problematic.
 
 The `CreateDate` of the video (extracted during step 1) shows:
 
@@ -113,23 +89,21 @@ But if we look at the first GPS sample time:
 [Doc1]          GPSDateTime                     : 2020:04:13 15:37:22.444
 ```
 
-The GPS shows 2 days prior to the `CreateDate`. The `GPSDateTime` is the time I actually shot the video.
+The GPS shows two days previous to the `CreateDate`. The `GPSDateTime` is the time I actually shot the video.
 
 Therefore, be careful not to use the `CreateDate` before being absolutely sure it's correct.
 
 **End of warning**
 
-
 Using this logic, you know `img0001.jpg`, the first frame, was captured within +/-1 second of `2020:04:13 15:37:22.444` because the `SampleTime` = `0 s` and `SampleDuration` = `1.00 s`.
 
-Using this as video start data time, we can therefore assume (given frames extracted 1 second apart using `-r 1`) that
-
+Using `2020:04:13 15:37:22.444` as the video start data time, we know (given frames extracted 1 second apart using `-r 1`) that all following frames increment by +1 second.
 
 `img0002.jpg` at `2020:04:13 15:37:23.444`, `img0003.jpg` at `2020:04:13 15:37:24.444` ..., `img0018.jpg` at `2020:04:13 15:37:39` which matches the video `Duration` of `15.98 s` (`2020:04:13 15:37:39.444` - `2020:04:13 15:37:22.444` =  `00:00:17`. _Don't forget to count from 0 (0s to 16s = 17s_).
 
-We can use exiftool to do pragmatically this in two steps ([as I discovered thanks to this answer on the exiftool forum](https://exiftool.org/forum/index.php?topic=5621.0))
+We can use exiftool to do this pragmatically in two steps ([as I discovered thanks to this answer on the exiftool forum](https://exiftool.org/forum/index.php?topic=5621.0))
 
-1) First set all images to the same date/time:
+### 3.1 First set all images to the same date/time
 
 ```
 $ exiftool -datetimeoriginal="2020:04:13 15:37:22" FRAMES/
@@ -139,7 +113,7 @@ Which will create 18 files with the same `DateTimeOriginal` = `2020:04:13 15:37:
 
 You'll also notice exiftool preserved the original data creating a set of files with the extension `.jpg_original`. This is important to consider for step 2.
 
-2) Increment the times by one additional minute for each file:
+### 3.2 Increment the times by one additional minute for each file:
 
 ```
 $ exiftool -fileorder FileName -ext jpg "-datetimeoriginal+<0:0:$filesequence" FRAMES/
@@ -155,15 +129,24 @@ The response gives:
     1 image files unchanged
 ```
 
-`1 image files unchanged` because this is the first file (`img0001.jpg`) in the sequence with the correct date (set by making sure files are in ascending alphanumeric order using `-fileorder FileName)`. The original files were omitted because we only wanted files with `.jgp` extensions (`-ext jpg`) not the originals with `.jpg_original` extensions.
+`1 image files unchanged` because this is the first file (`img0001.jpg`) in the sequence with the correct date (set by making sure files are in ascending alphanumeric order using `-fileorder FileName)`. The original files were omitted because we only wanted files with `.jpg` extensions (`-ext jpg`) not the originals with `.jpg_original` extensions.
 
 If you check the `datetimeoriginal` in the subsequent files (`img0002.jpg` - `img0018.jpg`) you should see they all update by +1, with `img0018.jpg` ending at `DateTimeOriginal` = `2020:04:13 15:37:39`.
 
-Now we can geotag the photos, [again using exiftool](https://exiftool.org/geotag.html).
+### 3.2 Geotag the frames
 
-Currently exiftool supports the following GPS track log file formats:
+Now we can geotag the photos, [again using exiftool](https://exiftool.org/geotag.html), using the track file extracted during step one.
 
-* GPX
+```
+exiftool -ext jpg -geotag VIDEO_7152.gpx FRAMES/
+```
+
+exiftool loads the GPS track log file, and matches the GPS position time with the time of the image to determine and tag its location.
+
+**Other track formats**
+
+[exiftool also supports the following telemetry track formats in addition to `.gpx`](https://exiftool.org/geotag.html), should you have used a separate GPS logger.
+
 * NMEA (RMC, GGA, GLL and GSA sentences)
 * KML
 * IGC (glider format)
@@ -175,32 +158,32 @@ Currently exiftool supports the following GPS track log file formats:
 * GPS/IMU .CSV
 * [ExifTool .CSV file](https://exiftool.org/geotag.html#CSVFormat)
 
-And now you know why we extracted the metadata during step one.
+## 4 AddEXIF/XMP tags
 
-Using exiftool we can re-embed this data.]
+There are a variety of other fields in the original video metadata you will want to include into each image file.
 
+For example, the cameras make or model. For 360 images this will also include  XMP tags to define the projection type (so it's loaded correctly by 360 viewing software).
 
-exiftool -ext jpg -geotag VIDEO_7152.gpx FRAMES/
+[You can see a full list of tag formats and the exiftool supported tags here](https://exiftool.org/TagNames/).
 
+During step 2, we captured the original metadata from the video. e.g.
 
+```
+[Composite]     Image Size                      : 3840x1920
+```
 
-exiftool -TagsFromFile fromImage.jpg toImage.jpg
+You can now use these values to determine the tag values to inject.
 
+```
+exiftool -make="GoPro" -model=Fusion -ProjectionType=equirectangular -UsePanoramaViewer=True -CroppedAreaImageWidthPixels=3840 -CroppedAreaImageHeightPixels=1920 -FullPanoWidthPixels=3840 -FullPanoHeightPixels=1920 -CroppedAreaLeftPixels=0 -CroppedAreaTopPixels=0 
+```
 
+These EXIF and XMP values provide enough metadata to upload to Map the Paths, Mapillary, and Google Street View... though you can add others if you wish ([perhaps copyright tags](https://campfire.trekview.org/t/how-do-i-copyright-my-images-using-the-exif-data/233).
 
-## Map the Paths Desktop Uploader
+## Map the Paths Uploader (the easy way)
 
-<img class="img-fluid" src="/assets/images/blog/2020-11-06/" alt="Map the Paths Desktop Uploader" title="Map the Paths Desktop Uploader" />
+<img class="img-fluid" src="/assets/images/blog/2021-02-19/mtpu-screenshot.jpg" alt="Map the Paths Uploader" title="Map the Paths Uploader" />
 
-If you're not technical, or simply want an easy way to turn geo-tagged videos into geo-tagged photos, you should use the Map the Paths Desktop Uploader.
+You can use the Map the Paths Uploader to split videos into meta/geotagged images (without having to upload them).
 
-You can use the Map the Paths Desktop Uploader to modify the resulting photos to be included in the sequence of images. For example, removing photos you don't need (perhaps at the start and end of the video). At the end, it's also possible to upload you images to a range of online platforms, including Map the Paths, Mapillary, and Google Street View.
-
-[**Download the Map the Paths Desktop Uploader for free**](https://www.mapthepaths.com/uploader).
-
-
-
-
-
-
-https://superuser.com/questions/1421133/extract-i-frames-to-images-quickly/1421195#1421195
+[Download the Map the Paths Uploader for free here](https://www.mapthepaths.com/uploader).
