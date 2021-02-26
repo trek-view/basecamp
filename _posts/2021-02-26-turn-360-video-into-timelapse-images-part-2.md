@@ -103,7 +103,7 @@ Using `2020:04:13 15:37:22.444` as the video start data time, you know (given fr
 
 You can use exiftool to do this pragmatically in two steps ([as I discovered thanks to this answer on the exiftool forum](https://exiftool.org/forum/index.php?topic=5621.0))
 
-### 3.1 First set all images to the same date/time
+### 3.1. First set all images to the same date/time
 
 Set time
 
@@ -115,7 +115,7 @@ Which will create 18 files with the same `DateTimeOriginal` = `2020:04:13 15:37:
 
 You'll also notice exiftool preserved the original data creating a set of files with the extension `.jpg_original`. This is important to consider for step 2.
 
-### 3.2 Increment the `datetimeoriginal` values
+### 3.2. Increment the `datetimeoriginal` values
 
 Now you need to increase each file by +1 seconds from the previous image:
 
@@ -137,7 +137,7 @@ The response gives:
 
 If you check the `datetimeoriginal` in the subsequent files (`img0002.jpg` - `img0018.jpg`) you should see they all update by +1, with `img0018.jpg` ending at `DateTimeOriginal` = `2020:04:13 15:37:39`.
 
-### 3.2 Geotag the frames
+## 4, Geotag the frames
 
 Now that the frames have `datetimeoriginal` values you can geotag the photos, [again using exiftool](https://exiftool.org/geotag.html), using the track file extracted during step one.
 
@@ -162,7 +162,7 @@ exiftool loads the GPS track log file, and matches the GPS position time with th
 * GPS/IMU .CSV
 * [ExifTool .CSV file](https://exiftool.org/geotag.html#CSVFormat)
 
-## 4 Add EXIF/XMP tags
+## 5. Add EXIF/XMP tags
 
 There are a variety of other fields in the original video metadata you will want to include into each image file.
 
