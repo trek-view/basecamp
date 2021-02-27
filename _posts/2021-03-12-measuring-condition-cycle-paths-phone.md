@@ -34,8 +34,7 @@ The DMAMPO team used a five point grading system for the quality of each trail:
 4. Rough
 5. Very Rough
 
-<img class="img-fluid" src="/assets/images/blog/2021-03-12/dmampo-data-bike-trail-quality-2019.png
-" alt="DMAMPO Data Bike report 2019" title="DMAMPO Data Bike report 2019" />
+<img class="img-fluid" src="/assets/images/blog/2021-03-12/dmampo-data-bike-trail-quality-2019.png" alt="DMAMPO Data Bike report 2019" title="DMAMPO Data Bike report 2019" />
 
 For each trail captured, this grading system provides a very easy way to identify the trails in best and worst conditions.
 
@@ -45,20 +44,17 @@ This information is captured from the rRuf ('Road Roughness') app which  measure
 
 The app is available for [iOS](https://apps.apple.com/us/app/rruf/id968766794) and [Android](https://play.google.com/store/apps/details?id=com.rivalsolutions.rRuf) phones.
 
-<img class="img-fluid" src="/assets/images/blog/2021-03-12/rruf-app-setup.png
-" alt="rruf app" title="rruf app" />
+<img class="img-fluid" src="/assets/images/blog/2021-03-12/rruf-app-setup.png" alt="rruf app" title="rruf app" />
 
 Once installed you can set the transport type. The app seems mainly designed for use with cars, but it does allow you to select Bike as a method of transport.
 
-<img class="img-fluid" src="/assets/images/blog/2021-03-12/Quadlock-iPhone-Bike-Mount-and-Cycling-Case.jpg
-" alt="Quadlock iPhone Bike Mount" title="Quadlock iPhone Bike Mount" />
+<img class="img-fluid" src="/assets/images/blog/2021-03-12/Quadlock-iPhone-Bike-Mount-and-Cycling-Case.jpg" alt="Quadlock iPhone Bike Mount" title="Quadlock iPhone Bike Mount" />
 
 You'll want to find a secure and snug mount for your phone so that the data recording is captured in the most controlled way.
 
 If you're planning to capture the quality of paved roads, [I can personally recommend the Qualock mount]https://www.quadlockcase.co.uk/products/bike-mount?variant=347933016082).
 
-<img class="img-fluid" src="/assets/images/blog/2021-03-12/rruf-app-graph.png
-" alt="rruf app" title="rruf app" />
+<img class="img-fluid" src="/assets/images/blog/2021-03-12/rruf-app-graph.png" alt="rruf app" title="rruf app" />
 
 As you ride, the app captures the vibration recorded over time. Once complete, the app saves the following pieces of data into a `.txt` file:
 
@@ -85,8 +81,7 @@ As you ride, the app captures the vibration recorded over time. Once complete, t
 * PavementType
 * PavementCondition
 
-<img class="img-fluid" src="/assets/images/blog/2021-03-12/dmampo-data-bike-trail-quality-2019.png
-" alt="DMAMPO Data Bike report 2019 Data Bike report 2019 Clive Greenbelt" title="DMAMPO Data Bike report 2019 Data Bike report 2019 Clive Greenbelt" />
+<img class="img-fluid" src="/assets/images/blog/2021-03-12/dmampo-data-bike-trail-quality-2019.png" alt="DMAMPO Data Bike report 2019 Data Bike report 2019 Clive Greenbelt" title="DMAMPO Data Bike report 2019 Data Bike report 2019 Clive Greenbelt" />
 
 The time, GPS and pavement fields make it very useful in visualising the data.
 
