@@ -1,12 +1,12 @@
 ---
-date: 2021-03-12
+date: 2021-03-19
 title: "Using the Google Street View app to publish your panoramic photos"
 description: "Over the past few months the Street View mobile app has a number of updates. Here's a quick start guide to publish your photos to the map."
 categories: guides
 tags: [Google, Street View]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-03-12/google-street-view-app-screens-meta.jpg
-featured_image: /assets/images/blog/2021-03-12/google-street-view-app-screens-sm.jpg
+image: /assets/images/blog/2021-03-19/google-street-view-app-screens-meta.jpg
+featured_image: /assets/images/blog/2021-03-19/google-street-view-app-screens-sm.jpg
 layout: post
 published: false
 ---
@@ -19,7 +19,7 @@ For this post I'll take a quick look at the management and upload functionality 
 
 ## Overview
 
-<img class="img-fluid" src="/assets/images/blog/2021-03-12/google-street-view-app.png" alt="Google Street View App" title="Google Street View App" />
+<img class="img-fluid" src="/assets/images/blog/2021-03-19/google-street-view-app.png" alt="Google Street View App" title="Google Street View App" />
 
 * **Cost**: Free
 * **Type**: Mobile App ([iOS](https://apps.apple.com/gb/app/google-street-view/id904418768) / [Android](https://play.google.com/store/apps/details?id=com.google.android.street&hl=en_GB&gl=US))
@@ -38,13 +38,13 @@ The Google Street View mobile app allows users to:
 
 ## Capture a Panorama
 
-<img class="img-fluid" src="/assets/images/blog/2021-03-12/" alt="Google Street View App Capture a Panorama" title="Google Street View App Capture a Panorama" />
+<img class="img-fluid" src="/assets/images/blog/2021-03-19/" alt="Google Street View App Capture a Panorama" title="Google Street View App Capture a Panorama" />
 
 If you want to capture a panorama and add it to Google Maps / Street View on the fly, you can use the app to create one.
 
 ## Use Existing Panoramas
 
-<img class="img-fluid" src="/assets/images/blog/2021-03-12/google-street-view-app-select-photos.png" alt="Google Street View App Upload Existing Panoramas" title="Google Street View App Upload Existing Panoramas" />
+<img class="img-fluid" src="/assets/images/blog/2021-03-19/google-street-view-app-select-photos.png" alt="Google Street View App Upload Existing Panoramas" title="Google Street View App Upload Existing Panoramas" />
 
 If you've already taken panoramas, either with your phone or a separate 360 camera, it's possible to use the app to upload these too.
 
@@ -67,27 +67,27 @@ This list has not been update for over a year. Some of these cameras have been s
 
 ## Uploading Images
 
-<img class="img-fluid" src="/assets/images/blog/2021-03-12/google-street-view-app-publish-0.png" alt="Google Street View App Uploading Panoramas" title="Google Street View App Uploading Panoramas" />
+<img class="img-fluid" src="/assets/images/blog/2021-03-19/google-street-view-app-publish-0.png" alt="Google Street View App Uploading Panoramas" title="Google Street View App Uploading Panoramas" />
 
 Once you've captured your images, you can prepare them to upload to Street View.
 
 The "auto-connect 360 photos" feature is a setting that can be very useful. It will join your photos and automatically connect them to create a blue line.
 
-<img class="img-fluid" src="/assets/images/blog/2021-03-12/google-street-view-app-publish-1.png" alt="Google Street View App Uploading Panoramas" title="Google Street View App Uploading Panoramas" />
+<img class="img-fluid" src="/assets/images/blog/2021-03-19/google-street-view-app-publish-1.png" alt="Google Street View App Uploading Panoramas" title="Google Street View App Uploading Panoramas" />
 
-<img class="img-fluid" src="/assets/images/blog/2021-03-12/google-street-view-app-publish-2.png" alt="Google Street View App Uploading Panoramas" title="Google Street View App Uploading Panoramas" />
+<img class="img-fluid" src="/assets/images/blog/2021-03-19/google-street-view-app-publish-2.png" alt="Google Street View App Uploading Panoramas" title="Google Street View App Uploading Panoramas" />
 
-<img class="img-fluid" src="/assets/images/blog/2021-03-12/google-street-view-app-publish-3.png" alt="Google Street View App Uploading Panoramas" title="Google Street View App Uploading Panoramas" />
+<img class="img-fluid" src="/assets/images/blog/2021-03-19/google-street-view-app-publish-3.png" alt="Google Street View App Uploading Panoramas" title="Google Street View App Uploading Panoramas" />
 
 Before you hit the publish button, you can also blur parts of the photo that contain personally identifiable information (like faces or license plates).
 
 ## Managing images
 
-<img class="img-fluid" src="/assets/images/blog/2021-03-12/google-street-view-app-view.png" alt="Google Street View App View Photo" title="Google Street View App View Photo" />
+<img class="img-fluid" src="/assets/images/blog/2021-03-19/google-street-view-app-view.png" alt="Google Street View App View Photo" title="Google Street View App View Photo" />
 
 Once you've uploaded content to Street View, you can track how many times they've been viewed.
 
-<img class="img-fluid" src="/assets/images/blog/2021-03-12/google-street-view-app-badges.png" alt="Google Street View App Badges" title="Google Street View App Badges" />
+<img class="img-fluid" src="/assets/images/blog/2021-03-19/google-street-view-app-badges.png" alt="Google Street View App Badges" title="Google Street View App Badges" />
 
 The app also includes gamification of image capture in the form of badges. You can currently earn the following badges:
 
@@ -97,7 +97,7 @@ The app also includes gamification of image capture in the form of badges. You c
 
 ## 3rd Party Software
 
-<img class="img-fluid" src="/assets/images/blog/2021-03-12/mtpu-screenshot.jpg" alt="Map the Paths Uploader" title="Map the Paths Uploader" />
+<img class="img-fluid" src="/assets/images/blog/2021-03-19/mtpu-screenshot.jpg" alt="Map the Paths Uploader" title="Map the Paths Uploader" />
 
 There's a variety of other bits of software also available offering additional functionality over the Street View app for off-road photographers, including the [Map the Paths Uploader](https://www.mapthepaths.com/uploader).
 
