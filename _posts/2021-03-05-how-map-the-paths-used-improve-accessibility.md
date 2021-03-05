@@ -25,9 +25,9 @@ Here are some of the reason why...
 
 <img class="img-fluid" src="/assets/images/blog/2021-03-05/map-the-paths-surface.png" alt="Map the Paths Surface Type" title="Map the Paths Surface Type" />
 
-Smooth surfaces are not always guaranteed. Map the Paths automatically classifies what's inside an image, including objects and surfaces to help people make a decision on whether they can tackle it.
-
 _[El Cotillo - Fuerteventura](https://www.mapthepaths.com/sequence/4c87c552-6c9a-4991-b0b0-175ca3a5366a/detail)_
+
+Smooth surfaces are not always guaranteed. Map the Paths automatically classifies what's inside an image, including objects and surfaces to help people make a decision on whether they can tackle it.
 
 ## Gradients
 
