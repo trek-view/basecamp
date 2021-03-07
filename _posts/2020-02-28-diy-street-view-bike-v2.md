@@ -1,6 +1,6 @@
 ---
 date: 2020-02-28
-title: "DIY Street View Bike V2"
+title: "DIY Street View Bike v2"
 description: "The second iteration of my Street View bike, this time designed for downhill trails."
 categories: guides
 tags: [Bike, Trek Pack 1]
