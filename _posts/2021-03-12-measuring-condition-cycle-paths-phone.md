@@ -24,7 +24,7 @@ The [Data Bike](https://dmampo.org/data-bike/) specifications:
 3. iPhone with [rRuf app](https://apps.apple.com/us/app/rruf/id968766794) installed
 4. A rear facing GoPro Hero camera aimed at the ground
 
-Not only is the 360 imagery used [on Google Street View](https://www.google.com/maps/contrib/104211468250721497845), the rRuf app and GoPro cameras are used to capture trail quality data which in turn is used to identify areas of maintenance and help set future trail budgets.
+The 360 imagery captured by the Data Bike is used [on Google Street View](https://www.google.com/maps/contrib/104211468250721497845), the rRuf app and GoPro cameras are used to capture trail quality data which in turn is used to identify areas of maintenance and help set future trail budgets.
 
 You can see an example of the augmented data in the [DMAMPO Central Iowa Trail Condition 2019 Report](https://dmampo.org/wp-content/uploads/2020/02/2019-Data-Bike-Report-1.pdf).
 
@@ -38,9 +38,9 @@ The DMAMPO team used a five point grading system for the quality of each trail:
 
 <img class="img-fluid" src="/assets/images/blog/2021-03-12/dmampo-data-bike-trail-quality-2019.png" alt="DMAMPO Data Bike report 2019" title="DMAMPO Data Bike report 2019" />
 
-For each trail captured, this grading system provides a very easy way to identify the trails in best and worst conditions.
+For each trail captured, this grading system provides a very easy way to identify the trails in the best and worst conditions.
 
-This information is captured from the rRuf ('Road Roughness') app which  measures the roughness of a road using [the phones IMU](/blog/2020/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer) and reports it in a scale known as a Riding Comfort Index (RCI).
+This information is captured from the rRuf ('Road Roughness') app which  measures the roughness of a road using [the phones IMU](/blog/2020/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer) and reports it on a scale known as a Riding Comfort Index (RCI).
 
 ## rRuf app
 
@@ -48,7 +48,7 @@ The app is available for [iOS](https://apps.apple.com/us/app/rruf/id968766794) a
 
 <img class="img-fluid" src="/assets/images/blog/2021-03-12/rruf-app-setup.png" alt="rruf app" title="rruf app" />
 
-Once installed you can set the transport type. The app seems mainly designed for use with cars, but it does allow you to select Bike as a method of transport.
+Once installed you can set the transport type. The app seems to be predominantly designed for use with cars, but it does allow you to select Bike as a method of transport.
 
 <img class="img-fluid" src="/assets/images/blog/2021-03-12/Quadlock-iPhone-Bike-Mount-and-Cycling-Case.jpg" alt="Quadlock iPhone Bike Mount" title="Quadlock iPhone Bike Mount" />
 
@@ -87,9 +87,9 @@ As you ride, the app captures the vibration recorded over time. Once complete, t
 
 The time, GPS and pavement fields make it very useful in visualising the data.
 
-As you can see in DMAMPO 2019 report extract above, the 1-5 grading system (PavementCondition) has been overlaid directly on the trail, highlighting the parts in worst condition.
+As you can see in DMAMPO 2019 report extract above, the 1-5 grading system (`PavementCondition`) has been overlaid directly on the trail, highlighting the parts in worst condition.
 
-The addition of the GoPro camera pointing at the trail surface the captures GPS tagged photos means that the areas of the trail in worst condition cannot only be quickly identified, but there is also high-quality images of what Very Rough actually means (is the paving meant to end, or is the paving broken>)
+The addition of the GoPro camera pointing at the trail surface capturing GPS tagged photos gives the DMAMPO team a visual reference of what the rRuf app has recorded, translating what Very Rough actually means ("does the paving need to be fixed?").
 
 ## Data Bikes Around the World
 
