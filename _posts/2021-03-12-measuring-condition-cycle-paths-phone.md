@@ -1,15 +1,17 @@
 ---
 date: 2021-03-12
 title: "Measuring the Condition of Cycle Paths With Only Your Phone"
-description: ""
+description: "Use the rRuf mobile app to measure the surface of your ride."
 categories: guides
-tags: []
+tags: [rRuf, data bike, DMAMPO]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-03-12/dmampo-data-bike-trail-quality-2019-meta.jpg
 featured_image: /assets/images/blog/2021-03-12/dmampo-data-bike-trail-quality-2019-sm.jpg
 layout: post
-published: false
+published: true
 ---
+
+**Some new features for your data bike**
 
 In 2019 I briefly mentioned the Des Moines Area Metropolitan Planning Organization Data Bike in my [DIY Street View Bike post](/blog/2019/diy-street-view-bike-tours).
 

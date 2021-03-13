@@ -123,10 +123,10 @@ Which is about right for most of Central and Northern Europe / America / Asia fo
 
 ## Final verdict
 
-We stumped up the £150 and purchased one.
+Sounds promising!
+
+[We stumped up the £150 and purchased one](https://atmotube.com/products/atmotube-pro?view=en).
 
 We're not expecting the results to be perfect, but hope they can provide some general understanding of the environment around our trekkers.
 
-I'll report back on our experiences as we start using it with the [Trek Packs](/trek-pack).
-
-https://atmotube.com/
+I'll report back on our experiences as we start using it with the [Trek Packs](/trek-pack). Check back soon!
