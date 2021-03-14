@@ -1,15 +1,17 @@
 ---
 date: 2020-02-28
-title: "Measuring the Air Quality of Your Trek"
-description: "s"
-categories: 
-tags: []
+title: "Measuring the Air Quality of Your Trek (Part 1)"
+description: "Our hunt for a device that could measure air quality during adventures."
+categories: guides
+tags: [Atmotube]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-04-09/
 featured_image: /assets/images/blog/2020-04-09/
 layout: post
 published: false
 ---
+
+**Searching for a portable air quality monitor.**
 
 We've been on the hunt for a mobile air quality sensor [since we discovered they were fitted to Google Street View cars](/blog/2019/google-street-view-cameras-more-than-meets-the-eye
 ).

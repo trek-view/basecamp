@@ -1,8 +1,8 @@
 ---
 date: 2021-03-26
-title: ""
+title: "Apps for Uploading Your Photos to Google Street View"
 description: ""
-categories: 
+categories: guides
 tags: []
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-02-26/
@@ -11,6 +11,7 @@ layout: post
 published: false
 ---
 
+**2021 off-road edition**
 
 A lot of guidance exists around creating virtual tours of businesses.
 

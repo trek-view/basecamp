@@ -2,7 +2,7 @@
 date: 2020-02-28
 title: "Street View Bike Professional Edition"
 description: "s"
-categories: 
+categories: guides
 tags: []
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-04-09/
