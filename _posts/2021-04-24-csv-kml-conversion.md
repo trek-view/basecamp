@@ -56,8 +56,8 @@ You create an element with `createElement` or `createElementNS`, and append to a
 7. Append it to the `<kml>` element using `appendChild`.
 8. For each row, create a `<Placemark>` element, and append it to the` <Document>` element. The `<Placemark>` element captures all the data from a single row of the `.csv` (in this example, a measurement from the Atmotube).
 9. For each column in each row, create an `<ExtendedData>` element and append it to the `<Placemark>` element you created in step 8 (see next section for notes on `<ExtendedData>`).
-10. Create a `<Data>` element, and append it to the `<ExtendedData>` element. Give the `<Data>` element an attribute of name, and assign it the value of the column name using `setAttribute`.
-11. Create a `<value>` element and append it to the `<Data>` element. Create a text node, and assign it the value of the column using `createTextNode`. Append the text node to the `<value>` element.
+10. Create a `<SimpleData>` element for columns 1 (A) to 9 (I) in the spreadsheet, and append it to the `<ExtendedData>` element. Give the `<SimpleData>` element an attribute of name, and assign it the value of the column name using `setAttribute`.
+11. Create a text node, and assign it the value of the column using `createTextNode`. Append the text node to the `<SimpleData>` element.
 12. Create a `<Point>` element and append it to the `<Placemark>` element. Create a `<coordinates>` element and append it to the `<Point>` element.
 13. Create a text node and assign it the value of the coordinates in columns 10 (J) and 11 (K), then append it to the `<coordinates>` element.
 14. Write the KML document to a file.
@@ -78,26 +78,37 @@ The following shows a template for the way my script will represent the data fro
 <?xml version="1.0" encoding="utf-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 	<Document>
+		<!-- First row of data -->
 		<Placemark>
 			<ExtendedData>
 				<SchemaData schemaUrl="#AtmotubeData">        
-					<SimpleData name="date">"Date"</SimpleData>
-					<SimpleData name="voc_ppm">"VOC, ppm"</SimpleData>
-					<SimpleData name="aqs">"AQS"</SimpleData>
-					<SimpleData name="temperature_c">"Temperature, °C"</SimpleData>
-					<SimpleData name="humidity_pc">"Humidity, %"</SimpleData>
-					<SimpleData name="pressure_mbar">"Pressure, mbar"</SimpleData>
-					<SimpleData name="pm1_ug3">"PM1, ug/m³"</SimpleData>
-					<SimpleData name="pm2_5_ug3">"PM2.5, ug/m³"</SimpleData>
-					<SimpleData name="pm10_ug3">"PM10, ug/m³"</SimpleData>
+					<SimpleData name="date" type="string">"Date"</SimpleData>
+					<SimpleData name="voc_ppm" type="integer">"VOC, ppm"</SimpleData>
+					<SimpleData name="aqs" type="integer">"AQS"</SimpleData>
+					<SimpleData name="temperature_c" type="float">"Temperature, °C"</SimpleData>
+					<SimpleData name="humidity_pc" type="integer">"Humidity, %"</SimpleData>
+					<SimpleData name="pressure_mbar" type="float">"Pressure, mbar"</SimpleData>
+					<SimpleData name="pm1_ug3" type="integer">"PM1, ug/m³"</SimpleData>
+					<SimpleData name="pm2_5_ug3" type="integer">"PM2.5, ug/m³"</SimpleData>
+					<SimpleData name="pm10_ug3" type="integer">"PM10, ug/m³"</SimpleData>
 				</SchemaData>
 			</ExtendedData>
 			<Point>
 				<coordinates>"Latitude","Longitude"</coordinates>
 			</Point>
 		</Placemark>
+		<!-- Second row of data -->
 		<Placemark>
+			<ExtendedData>
+			...
+			</ExtendedData>
+			<Point>
+			...
+			</Point>
+		</Placemark>
+		<!-- Third row of data -->
 		...
+		<!-- End of CSV data -->
 ```
 
 ## The code
@@ -110,5 +121,7 @@ A sample of the KML that this script created from my Atmotube `.csv` can be seen
 
 ## Working with the KML file
 
-Lot's of GIS do
+Lot's of mapping tools can use `.kml` files natively, including Google Earth.
+
+To ingest 
 
