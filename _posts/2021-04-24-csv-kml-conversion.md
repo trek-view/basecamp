@@ -123,5 +123,7 @@ A sample of the KML that this script created from my Atmotube `.csv` can be seen
 
 Lot's of mapping tools can use `.kml` files natively, including Google Earth.
 
-To ingest 
+Note: You can also import `.csv` files to Google Earth, but it requires a level of effort on the user to assign the fields correctly.
+
+We can also write out to Google Maps JS>
 

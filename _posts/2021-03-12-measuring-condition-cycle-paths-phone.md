@@ -52,9 +52,9 @@ Once installed you can set the transport type. The app seems to be predominantly
 
 <img class="img-fluid" src="/assets/images/blog/2021-03-12/Quadlock-iPhone-Bike-Mount-and-Cycling-Case.jpg" alt="Quadlock iPhone Bike Mount" title="Quadlock iPhone Bike Mount" />
 
-You'll want to find a secure and snug mount for your phone so that the data recording is captured in the most controlled way.
+You'll want to find a secure and snug mount for your phone so that the data recording is captured in the most controlled way. If you have front suspension, locking it will give a more accurate recording of true ride quality.
 
-If you're planning to capture the quality of paved roads, [I can personally recommend the Qualock mount]https://www.quadlockcase.co.uk/products/bike-mount?variant=347933016082).
+If you're planning to capture the quality of paved roads, [I can personally recommend the Qualock mount](https://www.quadlockcase.co.uk/products/bike-mount?variant=347933016082).
 
 <img class="img-fluid" src="/assets/images/blog/2021-03-12/rruf-app-graph.png" alt="rruf app" title="rruf app" />
 
