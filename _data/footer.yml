@@ -27,6 +27,10 @@
     link: https://www.patreon.com/
     
 - links:
+  - name: Google
+    link: https://www.google.co.uk/maps/contrib/118105140852825431306/photos/
+    social_icon: 
+    new_window: true
   - name: Mapillary
     link: https://www.mapillary.com/app/user/trekviewhq
     social_icon: 
