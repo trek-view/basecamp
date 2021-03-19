@@ -24,7 +24,7 @@ For this post I'll take a quick look at the management and upload functionality 
 * **Cost**: Free
 * **Type**: Mobile App ([iOS](https://apps.apple.com/gb/app/google-street-view/id904418768) / [Android](https://play.google.com/store/apps/details?id=com.google.android.street&hl=en_GB&gl=US))
 * **Version reviewed**: Android 2.0.0.350158636 (publish date: 5th Jan 2021)
-* **Camera Support**: Multiple cameras
+* **Camera Support**: Phone camera and multiple external 360 cameras connected via Bluetooth
 * **Ease of use**: Easy
 * **Functionality**: Limited
 
@@ -38,9 +38,9 @@ The Google Street View mobile app allows users to:
 
 ## Capture a Panorama
 
-<img class="img-fluid" src="/assets/images/blog/2021-03-19/" alt="Google Street View App Capture a Panorama" title="Google Street View App Capture a Panorama" />
+<img class="img-fluid" src="/assets/images/blog/2021-03-19/google-street-view-app-capture.png" alt="Google Street View App Capture a Panorama" title="Google Street View App Capture a Panorama" />
 
-If you want to capture a panorama and add it to Google Maps / Street View on the fly, you can use the app to create one.
+If you want to capture a panorama and add it to Google Maps / Street View on the fly, you can use the app to create one using your phones camera.
 
 ## Use Existing Panoramas
 
@@ -48,11 +48,11 @@ If you want to capture a panorama and add it to Google Maps / Street View on the
 
 If you've already taken panoramas, either with your phone or a separate 360 camera, it's possible to use the app to upload these too.
 
-In the screenshot above you can see photos captured on a GoPro MAX and stored in a Google Drive folder. 
+In the screenshot above you can see photos captured on a GoPro MAX (from our recent adventure to Kilimanjaro) and stored in a Google Drive folder. 
 
 ## External Camera Support
 
-Many manufactures build support for the official Street View app into their cameras.
+Many manufacturers build support for the official Street View app into their cameras' software.
 
 This works by connecting the camera (usually over WiFi) to your phone. As the camera takes photos, or shoots video, the app automatically picks it up and captures it in the app.
  
@@ -63,7 +63,7 @@ This works by connecting the camera (usually over WiFi) to your phone. As the ca
 * [YI 360 VR Camera](https://support.google.com/maps/answer/6281877?hl=en-GB#zippy=%2Cyi-vr-camera)
 * [Samsung Gear 360](https://support.google.com/maps/answer/6281877?hl=en-GB#zippy=%2Csamsung-gear)
 
-This list has not been update for over a year. Some of these cameras have been since discontinued. If anyone has a camera that the app supports, please drop me a message on the forum. LINK HERE
+This list has not been update for over a year. Some of these cameras have since been discontinued. If anyone has a camera that the app supports not listed above, [please let me know on the forum](https://campfire.trekview.org/t/using-the-google-street-view-app-to-publish-your-panoramic-photos/552).
 
 ## Uploading Images
 
@@ -99,6 +99,6 @@ The app also includes gamification of image capture in the form of badges. You c
 
 <img class="img-fluid" src="/assets/images/blog/2021-03-19/mtpu-screenshot.jpg" alt="Map the Paths Uploader" title="Map the Paths Uploader" />
 
-There's a variety of other bits of software also available offering additional functionality over the Street View app for off-road photographers, including the [Map the Paths Uploader](https://www.mapthepaths.com/uploader).
+There is a variety of other bits of software also available offering additional functionality over the Street View app for off-road photographers wanting to upload their photos to Street View, including the [Map the Paths Uploader](https://www.mapthepaths.com/uploader).
 
-Stay tuned for a post next week comparing them...
+Stay tuned for a post next week comparing software to upload off-road images and videos to Google Street View...
