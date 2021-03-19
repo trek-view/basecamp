@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Support the Cause**
+**Support the cause.**
 
 Trek View is currently run as a side-project to my day job. 
 

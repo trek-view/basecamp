@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Some new features for your data bike**
+**Some new features for your data bike.**
 
 In 2019 I briefly mentioned the Des Moines Area Metropolitan Planning Organization Data Bike in my [DIY Street View Bike post](/blog/2019/diy-street-view-bike-tours).
 
@@ -84,6 +84,8 @@ As you ride, the app captures the vibration recorded over time. Once complete, t
 * PavementCondition
 
 <img class="img-fluid" src="/assets/images/blog/2021-03-12/dmampo-data-bike-trail-quality-2019.png" alt="DMAMPO Data Bike report 2019 Data Bike report 2019 Clive Greenbelt" title="DMAMPO Data Bike report 2019 Data Bike report 2019 Clive Greenbelt" />
+
+Note: `PavementType` and `PavementCondition` values are only reported if you are a paying customer (otherwise they show as 0).
 
 The time, GPS and pavement fields make it very useful in visualising the data.
 

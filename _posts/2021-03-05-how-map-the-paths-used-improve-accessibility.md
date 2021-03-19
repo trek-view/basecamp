@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Giving everyone the confidence to explore**
+**Giving everyone the confidence to explore.**
 
 Originally [Map the Paths](https://www.mapthepaths.com/) was designed to scratch an itch here at Trek View; to have a way to easily classify the 360 outdoor virtual tour imagery our Trekkers captured.
 

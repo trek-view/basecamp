@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Backup your Google Street View images**
+**Backup your Google Street View images.**
 
 Many of you have been uploading to Google Street View for years.
 

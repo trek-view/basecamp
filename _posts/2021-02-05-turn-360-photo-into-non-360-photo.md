@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**_Sometimes_ a 360 image is too much (sometimes)**
+**_Sometimes_ a 360 image is too much (sometimes).**
 
 360 images offer amazing views of the world.
 

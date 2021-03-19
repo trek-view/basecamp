@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Using mapping tools for a positive impact in the world**
+**Using mapping tools for a positive impact in the world.**
 
 Google's Geo for Good Summit is an annual conference intended for nonprofits, scientists and other change-makers who want to leverage technology and use mapping tools for a positive impact in the world.
 

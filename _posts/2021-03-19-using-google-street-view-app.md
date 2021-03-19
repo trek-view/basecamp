@@ -8,10 +8,10 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2021-03-19/google-street-view-app-screens-meta.jpg
 featured_image: /assets/images/blog/2021-03-19/google-street-view-app-screens-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
-**Effortlessly upload your panoramas**
+**A quick look at the official Street View app.**
 
 The Google Street View mobile app is designed for both viewing and managing Street View images.
 

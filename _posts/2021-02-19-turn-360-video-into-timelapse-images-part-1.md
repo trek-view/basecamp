@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Grab the perfect frame**
+**Grab the perfect frame.**
 
 In the last year I've covered topics [about the metadata found in a 360 video](/blog/2020/metadata-exif-xmp-360-video-files), [how to extract a GPS track from them](/blog/2020/extracting-gps-track-from-360-timelapse-video), and [video compression](/blog/2020/fps-bitrate-compression-360-virtual-tours).
 
