@@ -1,12 +1,12 @@
 ---
-date: 2020-02-28
+date: 2021-04-02
 title: "Measuring the Air Quality of Your Trek (Part 1)"
 description: "Our hunt for a device that could measure air quality during adventures."
 categories: guides
 tags: [Atmotube]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2020-04-09/
-featured_image: /assets/images/blog/2020-04-09/
+image: /assets/images/blog/2020-04-09/uk-air-quality-meta.jpg
+featured_image: /assets/images/blog/2020-04-09/uk-air-quality-sm.jpg
 layout: post
 published: false
 ---
@@ -55,7 +55,7 @@ And Atomotube also [publish the sensor specifications (which include parts from 
 
 A VOC (Volatile Organic Compounds) sensor directly measures ambient concentrations of a broad range of “reducing gases” associated with bad air quality. 
 
-<img class="img-fluid" src="/assets/images/blog/2021-04-14/atmotube-voc-sensor.gif" alt="Atmotube VOC sensor" title="Atmotube VOC sensor" />
+<img class="img-fluid" src="/assets/images/blog/2021-04-02/atmotube-voc-sensor.gif" alt="Atmotube VOC sensor" title="Atmotube VOC sensor" />
 
 The sensing principle is based on a heated film of metal-oxide (MOx) nanoparticles. Adsorbed oxygen on the metal-oxide particles reacts with the target gas and thereby releases electrons. This results in a change of the electrical resistance of the metal-oxide layer that is measured by the sensor.
 
@@ -71,11 +71,24 @@ These particles vary greatly in size. To help classify particulate matter in the
 * PM2.5 – particles <2.5 μm in size. Examples: pollen, spoors and other organic particles.
 PM10 – particles <10 μm in size. Examples: coarser fine dust and organic particles.
 
-<img class="img-fluid" src="/assets/images/blog/2021-04-14/atmotube-pm-sensor.png" alt="Atmotube PM sensor" title="Atmotube PM sensor" />
+<img class="img-fluid" src="/assets/images/blog/2021-04-02/atmotube-pm-sensor.png" alt="Atmotube PM sensor" title="Atmotube PM sensor" />
 
 The PM sensor uses [a laser scattering principle](https://en.wikipedia.org/wiki/Light_scattering_by_particles), which works by using a laser to radiate suspending particles in the air. Then scattering light is collected in a certain degree, and finally the curve of scattering light change with time is obtained. In the end, equivalent particle diameter and the number of particles with different diameter per unit volume can be calculated by microprocessor based on [MIE theory](https://en.wikipedia.org/wiki/Mie_scattering).
 
 [More details can be found here](https://help.atmotube.com/technical/3-atmotube-pm/).
+
+
+## AQS
+
+TO help make all these reported measurements easier to understand at a glance, [AtmoTube have created an accumulative parameter called Air Quality Score (AQS)](https://help.atmotube.com/faq/9-atmotube-aqs/) that can instantly give you an understanding of the quality of the air around you. The reported value is a function of VOC and all PM measurements.
+
+The AtmoTube AQS ranges from 0 (severely polluted air) to 100 (very clean) points.
+
+* Air is good (81-100)
+* Air is moderate (61-80)
+* Air is polluted (41-60)
+* Air is very polluted (21-40)
+* Air is severely polluted (0-20)
 
 ## Data / Storage
 

@@ -29,6 +29,8 @@ _[El Cotillo - Fuerteventura](https://www.mapthepaths.com/sequence/4c87c552-6c9a
 
 Smooth surfaces are not always guaranteed. Map the Paths automatically classifies what's inside an image, including objects and surfaces to help people make a decision on whether they can tackle it.
 
+_Update 2021-03-12: [See how you can measure surface quality using only vibrations recorded bu your phone](/blog/2021/measuring-condition-cycle-paths-phone)._
+
 ## Gradients
 
 <img class="img-fluid" src="/assets/images/blog/2021-03-05/map-the-paths-gradients.png" alt="Map the Paths Gradients" title="Map the Paths Gradients" />

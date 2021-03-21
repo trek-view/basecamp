@@ -24,9 +24,9 @@ The [Data Bike](https://dmampo.org/data-bike/) specifications:
 3. iPhone with [rRuf app](https://apps.apple.com/us/app/rruf/id968766794) installed
 4. A rear facing GoPro Hero camera aimed at the ground
 
-The 360 imagery captured by the Data Bike is used [on Google Street View](https://www.google.com/maps/contrib/104211468250721497845), the rRuf app and GoPro cameras are used to capture trail quality data which in turn is used to identify areas of maintenance and help set future trail budgets.
+The 360 imagery captured by the Data Bike is used [on Google Street View](https://www.google.com/maps/contrib/104211468250721497845), the rRuf app and GoPro cameras are used to capture ride quality data which in turn is used to identify areas of maintenance and help set future trail budgets.
 
-You can see an example of the augmented data in the [DMAMPO Central Iowa Trail Condition 2019 Report](https://dmampo.org/wp-content/uploads/2020/02/2019-Data-Bike-Report-1.pdf).
+You can see an example of the augmented data for ride quality in the [DMAMPO Central Iowa Trail Condition 2019 Report](https://dmampo.org/wp-content/uploads/2020/02/2019-Data-Bike-Report-1.pdf).
 
 The DMAMPO team used a five point grading system for the quality of each trail:
 
@@ -92,6 +92,10 @@ The time, GPS and pavement fields make it very useful in visualising the data.
 As you can see in DMAMPO 2019 report extract above, the 1-5 grading system (`PavementCondition`) has been overlaid directly on the trail, highlighting the parts in worst condition.
 
 The addition of the GoPro camera pointing at the trail surface capturing GPS tagged photos gives the DMAMPO team a visual reference of what the rRuf app has recorded, translating what Very Rough actually means ("does the paving need to be fixed?").
+
+## Update 2021-03-19
+
+We have 
 
 ## Data Bikes Around the World
 
