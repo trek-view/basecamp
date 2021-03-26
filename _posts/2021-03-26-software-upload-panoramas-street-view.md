@@ -1,7 +1,7 @@
 ---
 date: 2021-03-26
-title: "Software for Uploading Your Photos to Google Street View"
-description: "Four options you can use to upload your 360 photos to Street View."
+title: "Software for Uploading Your Off-Road Imagery to Google Street View"
+description: "Here are four options you can use to upload your 360 photos to Street View."
 categories: guides
 tags: [Google, Street View, Mapillary, Strava]
 author_staff_member: dgreenwood
@@ -124,7 +124,7 @@ What I really like about Trailblazer is its ability to add local metadata to con
 
 We know outdoor photographers shoot with a wide variety of different cameras to match the conditions, they create a large volume of content, that requires a high degree of post-processing, all on a shoestring budget.
 
-OK, I'm biased on this one, however, the Map the Paths Uploader was built to solve the problems outdoor street-level photographers face by allowing you to:
+OK, I'm biased on this one, however, the Map the Paths Uploader was built to solve these problems outdoor street-level photographers face by allowing them to:
 
 * Add metadata to sequences for easy management and discovery
 * Convert 360 video to 360 photo frames to store locally for photo editing
