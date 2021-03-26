@@ -1,6 +1,6 @@
 ---
 date: 2021-04-24
-title: "Trek View Ride Quality Index"
+title: "Trek View Trail Quality Index"
 description: ""
 categories: guides
 tags: [rRuf, data bike, DMAMPO]
@@ -23,20 +23,12 @@ These reports contain a Trail Roughness Index (TRI), an aggregated score created
 
 > Trail Roughness Index is measured by riding a trail with a device called an accelerometer mounted on the bike’s handle bars. When the bicyclist hits a crack or bump in the trail, the accelerometer measures the force of the jolt felt by the bicyclist. The TRI is a statistical summary of the accelerometer data that indicates the roughness of the ride. Low TRI scores indicate trails in excellent condition (TRI < 30) and high TRI scores indicate trails in very poor condition (TRI > 75) 
 
-The TRI measures the variation in g-forces felt by a bicyclist riding on a trail on the vertical (Z) axis.
-
 <img class="img-fluid" src="/assets/images/blog/2021-04-24/cartesian_coordinate_axes_3d.png" alt="Six degrees of freedom" title="Six degrees of freedom" />
 
-[I strongly recommend reading about Acceleromers in this post](/blog/2020/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer/).
+[I strongly recommend reading about Acceleromers in this post if you're new to their functionality](/blog/2020/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer/).
 
-
-
->
-> When a bicycle rides along a smooth trail, the accelerometer shows a relatively �lat line.
-As trails age, bumps and cracks start to form in the pavement. The accelerometer records these imperfections when the bicycle rides over them.
-When a trail is nearing the end of its useful life, bumps and cracks are prevalent. Accelerometer readings on such trails show a rocky, jagged line.
-
-
+The TRI created by the Parks & Trails Council of Minnesota measures the variation in g-forces felt by a bicyclist (and accelerometer) riding on a trail on the vertical (Z) axis.
+I use 10Hz (ten measurements every second), which is a nice trade-off between measurement interval and battery life (as more measurements results in shorted battery life due to the extra powered required).
 
 
 To create these reports they use [the SensorLog app](/blog/2021/measuring-condition-cycle-paths-phone-update).

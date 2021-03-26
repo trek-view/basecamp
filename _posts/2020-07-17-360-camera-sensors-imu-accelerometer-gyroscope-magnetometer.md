@@ -27,7 +27,6 @@ Degrees of freedom (DoF) refer to the number of basic ways a rigid object can mo
 
 Three correspond to rotational movement around the x, y, and z axes, commonly termed pitch, yaw, and roll (3-DOF for orientation).
 
-<img class="img-fluid" src="/assets/images/blog/2020-07-17/cartesian_coordinate_axes_3d.png" alt="Six degrees of freedom" title="Six degrees of freedom" />
 
 The other three correspond to translational movement along those axes, which can be thought of as moving forward or backward, moving left or right, and moving up or down (3-DOF for position).
 
@@ -51,7 +50,7 @@ Some also include an additional 3-axis magnetometer (considered a 9-axis IMU).
 
 ### Accelerometer
 
-<img class="img-fluid" src="/assets/images/blog/2020-07-17/accelerometer-illustration.png" alt="Accelerometer illustration" title="Accelerometer illustration" />
+<img class="img-fluid" src="/assets/images/blog/2020-07-17/cartesian_coordinate_axes_3d.png" alt="Six degrees of freedom" title="Six degrees of freedom" />
 
 Measures velocity and acceleration.
 
