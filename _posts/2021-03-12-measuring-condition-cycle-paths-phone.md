@@ -40,7 +40,7 @@ The DMAMPO team used a five point grading system for the quality of each trail:
 
 For each trail captured, this grading system provides a very easy way to identify the trails in the best and worst conditions.
 
-This information is captured from the rRuf ('Road Roughness') app which  measures the roughness of a road using [the phones IMU](/blog/2020/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer) and reports it on a scale known as a Riding Comfort Index (RCI).
+This information is captured from the rRuf ('Road Roughness') app which  measures the roughness of a road using [the phones IMU (Inertial Measurement Unit)](/blog/2020/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer) and reports it on a scale known as a Riding Comfort Index (RCI).
 
 ## rRuf app
 
@@ -92,10 +92,6 @@ The time, GPS and pavement fields make it very useful in visualising the data.
 As you can see in DMAMPO 2019 report extract above, the 1-5 grading system (`PavementCondition`) has been overlaid directly on the trail, highlighting the parts in worst condition.
 
 The addition of the GoPro camera pointing at the trail surface capturing GPS tagged photos gives the DMAMPO team a visual reference of what the rRuf app has recorded, translating what Very Rough actually means ("does the paving need to be fixed?").
-
-## Update 2021-03-19
-
-We have 
 
 ## Data Bikes Around the World
 
