@@ -1,5 +1,5 @@
 ---
-date: 2020-04-21
+date: 2020-05-06
 title: "Converting CSV files to KML"
 description: "Lot's of devices, including the Atmotube, allow you to export data to CSV files. Here's how you can turn it into a map friendly format."
 categories: developers
@@ -41,38 +41,21 @@ Date,"VOC, ppm",AQS,"Temperature, °C","Humidity, %","Pressure, mbar","PM1, ug/m
 
 Notice how each line is a series of text strings separated by commas. Each comma delimits a field; each line has the same number of commas.
 
-The first line contains the names of the fields in order. For instance, the first block of text in each row is the "Date" field, the second "VOC, ppm", etc. 
+The first line contains the names of the fields in order. For instance, the first block of text in each row is the "Date" field, the second "VOC, ppm", etc.
 
-Python's `xml.dom.minidom` module provides great tools for creating XML documents, and since KML is XML, you'll use it pretty heavily in this tutorial.
+Essentially we need to turn the `.csv` into an `XML` file (`kml` is a flavour of XML).
 
-You create an element with `createElement` or `createElementNS`, and append to another element with `appendChild`. These are the steps for parsing the CSV file and creating a KML file.
+[Google have a generic write-up of how this can be achieved here](https://developers.google.com/kml/articles/csvtokml), though given the custom fields in the AtmoTube data we need to do a bit of customisation to the script.
 
-1. Import geocoding_for_kml.py into your module.
-2. Create a `DictReader` for the CSV files. The `DictReader` is a collection of dicts, one for each row.
-3. Create the document using Python's `xml.dom.minidom.Document()`.
-4. Create the root `<kml>` element using `createElementNS`.
-5. Append it to the document.
-6. Create a `<Document>` element using `createElement`.
-7. Append it to the `<kml>` element using `appendChild`.
-8. For each row, create a `<Placemark>` element, and append it to the` <Document>` element. The `<Placemark>` element captures all the data from a single row of the `.csv` (in this example, a measurement from the Atmotube).
-9. For each column in each row, create an `<ExtendedData>` element and append it to the `<Placemark>` element you created in step 8 (see next section for notes on `<ExtendedData>`).
-10. Create a `<SimpleData>` element for columns 1 (A) to 9 (I) in the spreadsheet, and append it to the `<ExtendedData>` element. Give the `<SimpleData>` element an attribute of name, and assign it the value of the column name using `setAttribute`.
-11. Create a text node, and assign it the value of the column using `createTextNode`. Append the text node to the `<SimpleData>` element.
-12. Create a `<Point>` element and append it to the `<Placemark>` element. Create a `<coordinates>` element and append it to the `<Point>` element.
-13. Create a text node and assign it the value of the coordinates in columns 10 (J) and 11 (K), then append it to the `<coordinates>` element.
-14. Write the KML document to a file.
-
-## KML `<ExtendedData>` (step 9)
-
-The `<ExtendedData>` element offers three techniques for adding custom data to a KML Feature: [These techniques are](https://developers.google.com/kml/documentation/kmlreference#extendeddata):
+We'll make use `<ExtendedData>` element that offers three techniques for adding custom data to a KML Feature: [These techniques are](https://developers.google.com/kml/documentation/kmlreference#extendeddata):
 
 1. [Adding untyped data/value pairs using the `<Data>` element](https://developers.google.com/kml/documentation/extendeddata#adding-untyped-namevalue-pairs) (basic)
 2. [Declaring new typed fields using the `<Schema>` element and then instancing them using the `<SchemaData>` element](https://developers.google.com/kml/documentation/extendeddata#adding-typed-data-to-a-feature) (advanced)
 3. [Referring to XML elements defined in other namespaces by referencing the external namespace within the KML file](https://developers.google.com/kml/documentation/extendeddata#adding-arbitrary-xml-data-to-a-feature) (basic)
 
-Adding new typed fields (option 2) is most suited to the Atmotube `.csv` data because it contains fields with values we might want to visualise later on (e.g. `"Temperature, °C"`) in other applications.
+Adding new typed fields (option 2) is most suited to the Atmotube `.csv` data because it contains fields with values we might want to visualise later on (e.g. `"Temperature, °C"`) in other applications. The ability to define a `type` attribute for the `SimpleData` data attribute will allow us to do this.
 
-The following shows a template for the way my script will represent the data from the `.csv` inside each `<Placemark>` of the `.kml` file:
+The following shows a template/sample for the way the script will represent the data from the AtmoTube `.csv` inside each `<Placemark>` of the `.kml` file:
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -82,28 +65,38 @@ The following shows a template for the way my script will represent the data fro
 		<Placemark>
 			<ExtendedData>
 				<SchemaData schemaUrl="#AtmotubeData">        
-					<SimpleData name="date" type="string">"Date"</SimpleData>
-					<SimpleData name="voc_ppm" type="integer">"VOC, ppm"</SimpleData>
-					<SimpleData name="aqs" type="integer">"AQS"</SimpleData>
-					<SimpleData name="temperature_c" type="float">"Temperature, °C"</SimpleData>
-					<SimpleData name="humidity_pc" type="integer">"Humidity, %"</SimpleData>
-					<SimpleData name="pressure_mbar" type="float">"Pressure, mbar"</SimpleData>
-					<SimpleData name="pm1_ug3" type="integer">"PM1, ug/m³"</SimpleData>
-					<SimpleData name="pm2_5_ug3" type="integer">"PM2.5, ug/m³"</SimpleData>
-					<SimpleData name="pm10_ug3" type="integer">"PM10, ug/m³"</SimpleData>
+					<SimpleData name="date" type="string">2021-03-14 10:38:00</SimpleData>
+					<SimpleData name="voc_ppm" type="integer">0</SimpleData>
+					<SimpleData name="aqs" type="integer">98</SimpleData>
+					<SimpleData name="temperature_c" type="float">9.5</SimpleData>
+					<SimpleData name="humidity_pc" type="integer">48</SimpleData>
+					<SimpleData name="pressure_mbar" type="float">1007.2</SimpleData>
+					<SimpleData name="pm1_ug3" type="integer">1</SimpleData>
+					<SimpleData name="pm2_5_ug3" type="integer">2</SimpleData>
+					<SimpleData name="pm10_ug3" type="integer">3</SimpleData>
 				</SchemaData>
 			</ExtendedData>
 			<Point>
-				<coordinates>"Latitude","Longitude"</coordinates>
+				<coordinates>51.2725253,-0.8453277</coordinates>
 			</Point>
 		</Placemark>
 		<!-- Second row of data -->
 		<Placemark>
 			<ExtendedData>
-			...
+				<SchemaData schemaUrl="#AtmotubeData">        
+					<SimpleData name="date" type="string">2021-03-14 10:39:00</SimpleData>
+					<SimpleData name="voc_ppm" type="integer">0</SimpleData>
+					<SimpleData name="aqs" type="integer">98</SimpleData>
+					<SimpleData name="temperature_c" type="float">7.7</SimpleData>
+					<SimpleData name="humidity_pc" type="integer">55</SimpleData>
+					<SimpleData name="pressure_mbar" type="float">1007</SimpleData>
+					<SimpleData name="pm1_ug3" type="integer">1</SimpleData>
+					<SimpleData name="pm2_5_ug3" type="integer">2</SimpleData>
+					<SimpleData name="pm10_ug3" type="integer">3</SimpleData>
+				</SchemaData>
 			</ExtendedData>
 			<Point>
-			...
+				<coordinates>51.272167,-0.8337347</coordinates>
 			</Point>
 		</Placemark>
 		<!-- Third row of data -->

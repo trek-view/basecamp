@@ -1,5 +1,5 @@
 ---
-date: 2021-04-16
+date: 2021-04-30
 title: "Street View Bike Professional Edition (v3)"
 description: ""
 categories: guides
@@ -60,7 +60,7 @@ Yes, they're much heavier, more expensive, and will require charging everyday bu
 
 After testing a few bikes, we really started to like the Canyon PATHLITE:ON series.
 
-<img class="img-fluid" src="/assets/images/blog/2021-04-16/full_2021_pathlite-on-7.jpg" alt="PATHLITE:ON 7.0 2021" title="PATHLITE:ON 7.0 2021" />
+<img class="img-fluid" src="/assets/images/blog/2021-04-30/full_2021_pathlite-on-7.jpg" alt="PATHLITE:ON 7.0 2021" title="PATHLITE:ON 7.0 2021" />
 
 The top of the line [PATHLITE:ON 9.0](https://www.canyon.com/en-gb/electric-bikes/electric-touring-bikes/pathlite-on/pathlite-on-9.0/2343.html) (£4,999) offers two batteries giving you a range of up to 150km from a single charge. Plus a smorgasbord of clever accessories.
 

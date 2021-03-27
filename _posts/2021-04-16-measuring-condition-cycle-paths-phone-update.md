@@ -29,7 +29,7 @@ So here are two cheap but reliable options that do a similar thing, one for iOS 
 
 This is a really flexible app and offers lots of advanced features to integrate raw data from the sensors onto your iPhone, iPad or Apple Watch into other software. 
 
-Sensor data can be sampled with up to 100Hz (depending on the version of your iOS device and fore or background mode).
+Sensor data can be sampled with up to 100Hz (depending on the version of your iOS device and fore or background mode). Note, not all sensors on the device can sample at such a high rate. For example, almost all mobile devices including all Apple devices receive GPS at the rate of 1Hz.
 
 The raw sensor data can then be exported into csv or JSON files for analysis in other products. Critically the raw sensor data contains `acceleration.x`, `acceleration.y`, `acceleration.z` reported by the accelerometer.
 
@@ -49,7 +49,7 @@ The raw sensor data can then be exported into csv or JSON files for analysis in 
 
 Another very powerful app with the ability to capture raw data from all the sensors on your Android phone or tablet and display it in many beautiful visualisations.
 
-This app can sample at a very high resolution, up to 409Hz on my phone (which is overkill for what I want to measure). You can set the frequency manually between 1Hz - 409Hz (or whatever your device can support). 
+This app can sample at a very high resolution, up to 409Hz on my phone (which is overkill for what I want to measure). You can set the frequency manually between 1Hz - 409Hz (or whatever your device can support). Somewhere between 1Hz and 10Hz suits most requirements. As with iOS devices, not all sensors on the phone can sample at the maximum resolution (noteably, GPS for our requirements).
 
 The raw sensor data can then be exported into a csv file for analysis in other products. [Here's a sample (in multi-record mode with g-Force, linear accelerometer and GPS enabled)](https://docs.google.com/spreadsheets/d/1IkbSO9RulsnjQ96o9nOZjmstZ1gmCnF9bo5q22K5ASQ/edit#gid=1315472714).
 

@@ -27,7 +27,6 @@ Degrees of freedom (DoF) refer to the number of basic ways a rigid object can mo
 
 Three correspond to rotational movement around the x, y, and z axes, commonly termed pitch, yaw, and roll (3-DOF for orientation).
 
-
 The other three correspond to translational movement along those axes, which can be thought of as moving forward or backward, moving left or right, and moving up or down (3-DOF for position).
 
 Sometimes you can estimate this information using reported GPS information. For example, [calculating pitch, heading and speed between two photos](/blog/2020/what-direction-are-you-facing).
