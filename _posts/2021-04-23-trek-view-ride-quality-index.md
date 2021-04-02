@@ -51,13 +51,16 @@ I setup the app to record data at 10Hz (ten measurements every second), which is
 
 The linear accelerometer measures acceleration in a straight line in three different dimensions. Linear acceleration changes whenever the mobile device speeds up, slows down, or changes direction. When the mobile device is at rest with respect to the surface of the earth, it reads acceleration values of 0, 0, 0.
 
-The linear accelerometer measures acceleration as m/s^2 along the three planes:
+The linear accelerometer measures acceleration (m/s^2) and g-force (g) along the three planes; x, y, z.
 
 1. `ax`
 2. `ay`
 3. `az`
 
 [Here's a sample I recorded riding around my neg](https://docs.google.com/spreadsheets/d/1kcVHjkM5s-gFTnoz6k-BmhGYMtucfQSvzbmXQIT9ZKo/edit#gid=401179418).
+
+. The concept of G’s, or “G-forces,” refers to multiples of the acceleration due to gravity and the concept applies to acceleration in any direction, not just toward the Earth. Scientists sometimes use G-forces to express the forces on the human body during acceleration. A person’s “weight” represent the downward force that results from the force of gravity acting on his body mass. This force bears a directly proportional relationship to acceleration. Thus, if you experience an acceleration of 64 ft/s², or twice the acceleration due to gravity,your weight doubles compared to weight at rest.
+
 
 You can see where the phone is laid down flat on the first few rows measuring 0 across all axes, then is picked up causing changes in acceleration, to being violently shaken alone the z axis at 20:36:49:127.
 

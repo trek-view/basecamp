@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2020-04-09/uk-air-quality-meta.jpg
 featured_image: /assets/images/blog/2020-04-09/uk-air-quality-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Searching for a portable air quality monitor.**
