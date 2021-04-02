@@ -5,8 +5,8 @@ description: "Our hunt for a device that could measure air quality during advent
 categories: guides
 tags: [Atmotube]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2020-04-02/uk-air-quality-meta.jpg
-featured_image: /assets/images/blog/2020-04-02/uk-air-quality-sm.jpg
+image: /assets/images/blog/2021-04-02/uk-air-quality-meta.jpg
+featured_image: /assets/images/blog/2021-04-02/uk-air-quality-sm.jpg
 layout: post
 published: true
 ---
