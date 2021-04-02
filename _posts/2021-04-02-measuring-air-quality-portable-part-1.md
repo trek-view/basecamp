@@ -20,24 +20,24 @@ The [Aclima](https://www.aclima.io/) sensors fitted to Street View offer a very 
 
 Speaking to experts in the field we quickly realised that to achieve a high degree of accuracy we would need to spend a lot of money. To quote one person I spoke to:
 
-> Trying to monitor AQ accurately you are looking into the £1000's  to do it properly. Low cost PM sensors are really indoor dust monitors only and without a heated element for high humidity readings the accuracy is less than 20%.
+> Trying to monitor air quality accurately you are looking into the £1000's  to do it properly. Low cost particulate matter sensors are really indoor dust monitors only and without a heated element for high humidity readings the accuracy is less than 20%.
 
-And even if we could afford it, such sensors require a large amount of power thus making them unsuitable for our [Trek Packs](https://guides.trekview.org/trek-pack/).
+And even if we could afford one, such sensors require a large amount of power thus making them unsuitable for our [Trek Packs](https://guides.trekview.org/trek-pack/v2).
 
-Though accuracy is indeed important, we are looking for more aggregate statistics. Questions like:
+Though accuracy is indeed important, we are looking to capture aggregate statistics to answer questions like:
 
 * Did we observe significant increases pollution during the journey
 * In what areas?
 * Did pollution change as we climbed to higher altitudes?
 
-So we decided to see if consumer grade air quality sensors could answer these questions, with the consideration of accuracy at the forefront of our minds.
+So we decided to see if consumer grade air quality sensors could help answer these questions.
 
 Our main requirements dictated the sensor:
 
 * detected PM1, PM2.5, and PM10 pollutants
 * could record data at defined interval, ideally up to 1 second apart
-* had long battery life, ideally longer than 8 hours when in maximum use, and the ability to connect a powerpack to charge on the go
-* data that could be exported in a generic format (like `.csv`) so that it could be used with other tool
+* had a long battery life, ideally longer than 8 hours when in constant use, and the ability to connect a powerpack to charge on the go
+* data that could be exported in a generic format (like `.csv`) so that it could be used with other software easily
 
 [Looking at reviews online](https://www.which.co.uk/news/2019/10/my-week-with-the-atmotube-pro-air-quality-monitor/), we found the [Atmotube Pro](https://atmotube.com/products/atmotube-pro?view=en).
 
@@ -45,7 +45,7 @@ Our main requirements dictated the sensor:
 
 Sounds good! But remembering the advice from experts we dug a little deeper.
 
-[Some reports for (seemingly) independent sources look promising](https://seetheair.wordpress.com/2020/02/18/low-cost-portable-monitors-vs-reference-monitors-part1/).
+[Some reports from (seemingly) independent sources look promising](https://seetheair.wordpress.com/2020/02/18/low-cost-portable-monitors-vs-reference-monitors-part1/).
 
 [The device also has a number of certifications](https://help.atmotube.com/technical/15-certification/).
 
@@ -77,10 +77,9 @@ The PM sensor uses [a laser scattering principle](https://en.wikipedia.org/wiki/
 
 [More details can be found here](https://help.atmotube.com/technical/3-atmotube-pm/).
 
-
 ## AQS
 
-TO help make all these reported measurements easier to understand at a glance, [AtmoTube have created an accumulative parameter called Air Quality Score (AQS)](https://help.atmotube.com/faq/9-atmotube-aqs/) that can instantly give you an understanding of the quality of the air around you. The reported value is a function of VOC and all PM measurements.
+To help make all these reported measurements easier to understand at a glance, [AtmoTube have created an aggregated measurement, Air Quality Score (AQS)](https://help.atmotube.com/faq/9-atmotube-aqs/), that can instantly give you an understanding of the quality of the air around you. The reported value is a function of VOC and all PM measurements.
 
 The AtmoTube AQS ranges from 0 (severely polluted air) to 100 (very clean) points.
 
@@ -90,15 +89,15 @@ The AtmoTube AQS ranges from 0 (severely polluted air) to 100 (very clean) point
 * Air is very polluted (21-40)
 * Air is severely polluted (0-20)
 
-## Data / Storage
+## Data Captured
 
-The Atmotube PRO has an accompanying app for [iOS](https://itunes.apple.com/us/app/atmotube/id1080310110?ls=1&mt=8) and [Android](https://play.google.com/store/apps/details?id=com.atmotube.app). Both allow
+The Atmotube PRO has an accompanying app for [iOS](https://itunes.apple.com/us/app/atmotube/id1080310110?ls=1&mt=8) and [Android](https://play.google.com/store/apps/details?id=com.atmotube.app).
 
 > If you need to dive deeper into analysis all your gathered data always can be exported in basic CSV format. 
 
 [Both allow you to export data](https://help.atmotube.com/app/6-atmotube-csv/).
 
-The data is perfect because it reports the raw result, the date/time of the result which can be used to link it to a photo, and GPS positioning information at the time of the measurements allowing for easy mapping (the only thing missing is altitude, but I can use a [Digital Elevation Model](what-is-a-digital-elevation-model))  for that.
+The data is perfect because it reports the raw result, the date/time of the result which can be used to link it to a photo (taken en route), and GPS positioning information at the time of the measurements allowing for easy mapping.
 
 Here's a sample of the data reported:
 
@@ -112,19 +111,23 @@ Here's a sample of the data reported:
 
 In the table above, the measurement interval is every 1 minute, which is too far apart for our use-case.
 
-The VOC sensor can measure at [2 second intervals](https://help.atmotube.com/technical/2-atmotube-voc/) which is much closer to our needs.
+The VOC sensor can measure at [2 second intervals](https://help.atmotube.com/technical/2-atmotube-voc/) which is much more suited to our needs.
 
-PM sensor....
+The PM sensor appears to be able to record at the same interval, though I could find nothing confirming this.
 
-Increasing the amount of measurements will reduce battery life. [According to Atmotube's specifications the PRO will last](https://help.atmotube.com/technical/1-atmotube-specs/):
+Memory is a consideration when increasing the measurement intervals. The PRO has 256kB storage which Atmotube say equates to a 10 days worth of data (though they do not specify the measurement interval setting this is based on).
+
+## Battery Life
+
+Increasing the amount of measurements captured will reduce battery life. [According to Atmotube's specifications the PRO will last](https://help.atmotube.com/technical/1-atmotube-specs/):
 
 > up to 10 days (depending on the measurement intervals)
 
-Though this which report notes it "[will last two and a half days with the PM set to five-minute intervals](https://www.which.co.uk/news/2019/10/my-week-with-the-atmotube-pro-air-quality-monitor/)".
+Though this Which report notes the devices battery "[will last two and a half days with the PM set to five-minute intervals](https://www.which.co.uk/news/2019/10/my-week-with-the-atmotube-pro-air-quality-monitor/)".
 
-Luckily [the Atmotube has a USB-C port the can be connected to external power on the move](https://help.atmotube.com/technical/6-atmotube-charging/), like a powerpack, thus significantly increasing the devices' range.
+So it's very likely the battery will last about half day when recording at 2 second intervals.
 
-Memory is also a consideration when increasing interval. The PRO has 256kB storage which Atmotube say equates to a 10 days worth of data.
+[The Atmotube PRO has a USB-C port that can be connected to external power on the move](https://help.atmotube.com/technical/6-atmotube-charging/), like a powerpack, thus significantly increasing the devices' range.
 
 ## Other considerations
 
@@ -134,7 +137,7 @@ Memory is also a consideration when increasing interval. The PRO has 256kB stora
 
 > Product can be used at a temperatures between -5°C and 50°C (23°F and 122°F). Avoid any extreme temperature changes. Recommended conditions for accurate readings are: 0°C to 30°C at less than 85% humidity.
 
-Which is about right for most of Central and Northern Europe / America / Asia for the Spring, Summer, and Autumn months.
+Which is about right for most of Central and Northern Europe, America, and Asia for the Spring, Summer, and Autumn months.
 
 ## Final verdict
 
@@ -142,6 +145,6 @@ Sounds promising!
 
 [We stumped up the £150 and purchased one](https://atmotube.com/products/atmotube-pro?view=en).
 
-We're not expecting the results to be perfect, but hope they can provide some general understanding of the environment around our trekkers.
+We're not expecting the results to be perfect, but hope they can provide a general understanding of the environment around our trekkers.
 
 I'll report back on our experiences as we start using it with the [Trek Packs](/trek-pack). Check back soon!

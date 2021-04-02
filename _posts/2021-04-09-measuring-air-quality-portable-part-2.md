@@ -133,7 +133,7 @@ The receiver also seems to struggle to stay locked to satellites in places with 
 
 For us this is not a deal breaker. If you use a reliable GPS tracker (like your phone) to record your journey, you can use time of each measurement on each device to overwrite the incorrect GPS points in the AtmoTube output.
 
-We also notice altitude was not reported in the output file, despite claims on the box and instructions that this was captured. Though again, using an external tracker will solve this problem.
+We also notice altitude was not reported in the output file, despite claims on the box and instructions that this was captured. Using an external tracker or [Digital Elevation Model](what-is-a-digital-elevation-model) will solve this problem.
 
 ## Coming soon...
 
