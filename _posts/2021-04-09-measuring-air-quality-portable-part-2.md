@@ -13,7 +13,7 @@ published: true
 
 **Monitoring air quality on the move.**
 
-[My AtmoTube Pro arrived recently](/blog/2020/measuring-air-quality-portable-part-1). It didn't take long before I started testing it out.
+[My AtmoTube Pro arrived recently](/blog/2021/measuring-air-quality-portable-part-1). It didn't take long before I started testing it out.
 
 This post is a short review of what I've liked and disliked so far.
 
