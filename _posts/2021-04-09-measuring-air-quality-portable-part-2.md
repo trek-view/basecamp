@@ -1,12 +1,12 @@
 ---
-date: 2020-04-09
+date: 2021-04-09
 title: "Measuring the Air Quality of Your Trek (Part 2)"
 description: "Our initial thoughts after testing the AtmoTube Pro."
 categories: guides
 tags: [AtmoTube]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2020-04-09/AQS-map-Farnborough-Airport-Loop-2021-03-14-meta.jpg
-featured_image: /assets/images/blog/2020-04-09/AQS-map-Farnborough-Airport-Loop-2021-03-14-sm.jpg
+image: /assets/images/blog/2021-04-09/AQS-map-Farnborough-Airport-Loop-2021-03-14-meta.jpg
+featured_image: /assets/images/blog/2021-04-09/AQS-map-Farnborough-Airport-Loop-2021-03-14-sm.jpg
 layout: post
 published: true
 ---
@@ -19,7 +19,7 @@ This post is a short overview of what I found, and why we'll be adding the  Pro 
 
 ## Unboxing
 
-<img class="img-fluid" src="/assets/images/blog/2020-04-09/atmotube-size.jpg" alt="AtmoTube size" title="AtmoTube size" />
+<img class="img-fluid" src="/assets/images/blog/2021-04-09/atmotube-size.jpg" alt="AtmoTube size" title="AtmoTube size" />
 
 The device itself is about length and width of a credit card, and has a depth of two modern smartphones (exact measurements: 86 x 50 x 22 mm).
 
@@ -29,7 +29,7 @@ Inside the box you'll receive:
 * USB-A to USB-C wire (for charging)
 * Caribiner (to attach the device to something)
 
-<img class="img-fluid" src="/assets/images/blog/2020-04-09/atmotube-app-home-screen.png" alt="AtmoTube App Home Screen" title="AtmoTube App Home Screen" />
+<img class="img-fluid" src="/assets/images/blog/2021-04-09/atmotube-app-home-screen.png" alt="AtmoTube App Home Screen" title="AtmoTube App Home Screen" />
 
 You'll need to download the accompanying AtmoTube mobile app to get it working:
 
@@ -38,7 +38,7 @@ You'll need to download the accompanying AtmoTube mobile app to get it working:
 
 Unlike some devices, the AtmoTube Pro paired (over Bluetooth) with my phone seamlessly.
 
-<img class="img-fluid" src="/assets/images/blog/2020-04-09/atmotube-backpack-clip.jpg" alt="AtmoTube caribiner" title="AtmoTube caribiner" />
+<img class="img-fluid" src="/assets/images/blog/2021-04-09/atmotube-backpack-clip.jpg" alt="AtmoTube caribiner" title="AtmoTube caribiner" />
 
 In the box is also a caribiner that works perfectly to attach the device to a bag. The holes in the casing are on the front so I made sure these were facing forward to capture the airflow.
 
@@ -52,9 +52,9 @@ The app itself is nicely designed, and generally quite friendly when trying to f
 
 I wanted to first set the data capture interval to be as granular as possible.
 
-<img class="img-fluid" src="/assets/images/blog/2020-04-09/atmotube-settings-1.png" alt="AtmoTube App Settings" title="AtmoTube App Settings" />
+<img class="img-fluid" src="/assets/images/blog/2021-04-09/atmotube-settings-1.png" alt="AtmoTube App Settings" title="AtmoTube App Settings" />
 
-<img class="img-fluid" src="/assets/images/blog/2020-04-09/atmotube-set-measurement-interval.png" alt="AtmoTube App Set measurement interval" title="AtmoTube App Set measurement interval" />
+<img class="img-fluid" src="/assets/images/blog/2021-04-09/atmotube-set-measurement-interval.png" alt="AtmoTube App Set measurement interval" title="AtmoTube App Set measurement interval" />
 
 Under setting you can adjust the PM (Particulate Matter) sensor measurement measurement interval to 4 defined settings:
 
@@ -77,13 +77,13 @@ The results from inside my house, shown in the app screenshot earlier, indicate 
 
 Though I was keen to understand what it's like outside, and as I moved closer to the airport.
 
-<img class="img-fluid" src="/assets/images/blog/2020-04-09/atmotube-settings-2.png" alt="AtmoTube App Settings" title="AtmoTube App Settings" />
+<img class="img-fluid" src="/assets/images/blog/2021-04-09/atmotube-settings-2.png" alt="AtmoTube App Settings" title="AtmoTube App Settings" />
 
-<img class="img-fluid" src="/assets/images/blog/2020-04-09/atmotube-set-data-export-time.png" alt="AtmoTube App Data Export Settings" title="AtmoTube App Data Export Settings" />
+<img class="img-fluid" src="/assets/images/blog/2021-04-09/atmotube-set-data-export-time.png" alt="AtmoTube App Data Export Settings" title="AtmoTube App Data Export Settings" />
 
 To export the logged data from the app, you can navigate to setting page and select the date range you want the data for.
 
-<img class="img-fluid" src="/assets/images/blog/2020-04-09/atmotube-csv-save-android.png" alt="AtmoTube App Data Export Android" title="AtmoTube App Data Export Android" />
+<img class="img-fluid" src="/assets/images/blog/2021-04-09/atmotube-csv-save-android.png" alt="AtmoTube App Data Export Android" title="AtmoTube App Data Export Android" />
 
 Once you've selected a date, the app will save a `.csv` file to your phones internal storage. On Android devices, to get to the file go to: `Files` > `Internal Storage` > `AtmoTube`.
 
@@ -109,15 +109,15 @@ Open the `.csv` on your computer and you'll find the following values recorded:
 
 The above map shows AQS by position. 
 
-<img class="img-fluid" src="/assets/images/blog/2020-04-09/AQS-pollution-Farnborough-Airport-Loop-2021-03-14.png" alt="AQS on Farnborough Airport Loop (2021-03-14)" title="AQS on Farnborough Airport Loop (2021-03-14)" />
+<img class="img-fluid" src="/assets/images/blog/2021-04-09/AQS-pollution-Farnborough-Airport-Loop-2021-03-14.png" alt="AQS on Farnborough Airport Loop (2021-03-14)" title="AQS on Farnborough Airport Loop (2021-03-14)" />
 
 [The mean average AQS for my ride was 96.22](https://docs.google.com/spreadsheets/d/1tK9C1pA1FxVW1fkH60rmpfiiPejtUFvzMo-nDWwZfaw/edit#gid=2042347909), which is very good.
 
 Overall the AtmoTube reported the air quality as I would expect. For example, during the middle of the journey I rode through thick, visible smoke in the air coming from a bonfire about 20 meters away. At this point you can see the AWS dip to 46.
 
-<img class="img-fluid" src="/assets/images/blog/2020-04-09/PM-pollution-Farnborough-Airport-Loop-2021-03-14.png" alt="PM1, PM2.5, PM10 on Farnborough Airport Loop (2021-03-14)" title="PM1, PM2.5, PM10 on Farnborough Airport Loop (2021-03-14)" />
+<img class="img-fluid" src="/assets/images/blog/2021-04-09/PM-pollution-Farnborough-Airport-Loop-2021-03-14.png" alt="PM1, PM2.5, PM10 on Farnborough Airport Loop (2021-03-14)" title="PM1, PM2.5, PM10 on Farnborough Airport Loop (2021-03-14)" />
 
-<img class="img-fluid" src="/assets/images/blog/2020-04-09/VOC-pollution-Farnborough-Airport-Loop-2021-03-14" alt="VOC on Farnborough Airport Loop (2021-03-14)" title="VOC on Farnborough Airport Loop (2021-03-14)" />
+<img class="img-fluid" src="/assets/images/blog/2021-04-09/VOC-pollution-Farnborough-Airport-Loop-2021-03-14" alt="VOC on Farnborough Airport Loop (2021-03-14)" title="VOC on Farnborough Airport Loop (2021-03-14)" />
 
 Looking at the two graphs above you can see the fire caused a massive spike in PM1, PM2.5 and PM10 pollution (having a slight effect on VOC in the air).
 
