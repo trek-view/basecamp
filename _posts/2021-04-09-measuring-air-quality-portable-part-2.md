@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2020-04-09/AQS-map-Farnborough-Airport-Loop-2021-03-14-meta.jpg
 featured_image: /assets/images/blog/2020-04-09/AQS-map-Farnborough-Airport-Loop-2021-03-14-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Monitoring air quality on the move.**
