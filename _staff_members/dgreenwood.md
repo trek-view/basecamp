@@ -1,7 +1,7 @@
 ---
 name: David Greenwood
-position: Chief Exploration Officer
-image_path: /assets/images/global/staff/david-greenwood.jpg
+position: Founder
+image_path: /assets/images/global/staff/david-greenwood.png
 twitter: himynamesdave
-blurb: Professional explorer.
+blurb: Founder, Trek View
 ---
