@@ -1,12 +1,12 @@
 ---
-date: 2021-05-06
+date: 2021-05-07
 title: "Climb Mount Kilimanjaro Virtually (Part 1: Planning)"
 description: "In 2020/21 we set out to Map the Mountain. Here's an insight into our planning."
 categories: mapthepaths
 tags: [Kilimanjaro, Altezza Travel]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-05-06/kilimanjaro-summit-little-planet-meta.jpeg
-featured_image: /assets/images/blog/2021-05-06/kilimanjaro-summit-little-planet-sm.jpeg
+image: /assets/images/blog/2021-05-07/kilimanjaro-summit-little-planet-meta.jpeg
+featured_image: /assets/images/blog/2021-05-07/kilimanjaro-summit-little-planet-sm.jpeg
 layout: post
 published: false
 ---
@@ -29,9 +29,9 @@ The aim was to capture a complete set of street level imagery for Kilimanjaro’
 
 Like everyone else, we quickly realised we’d need to work (and explore) remotely.
 
-So we teamed up with a sherpa friendly and environmentally conscious travel company, [Altezza Travel](http://altezza.travel/), who organise guided treks up the mountain and from time-to-time organise special projects on Kilimanjaro. In the past Altezza Travel collaborated with Red Bull on their first and to date - the only wingsuit BASE-jump from Mount Kilimanjaro.
+So we teamed up with an environmentally conscious travel company, [Altezza Travel](http://altezza.travel/), who organise guided treks up the mountain and from time-to-time organise special projects on Kilimanjaro. In the past Altezza Travel collaborated with Red Bull on their first and to date - the only wingsuit BASE-jump from Mount Kilimanjaro.
 
-<img class="img-fluid" src="/assets/images/blog/2021-05-06/kilimanjaro-routes.png" alt="Kilimanjaro Routes" title="Kilimanjaro Routes" />
+<img class="img-fluid" src="/assets/images/blog/2021-05-07/kilimanjaro-routes.png" alt="Kilimanjaro Routes" title="Kilimanjaro Routes" />
 
 Each route starts at the edge of Kilimanjaro National Park. Given the size and ecosystem of the park we knew a rugged kit-setup was required.
 
@@ -47,13 +47,13 @@ The trail up the mountain is made up of five distinct climate zones;
 
 Our Trek Pack is designed for conditions exactly like these.
 
-<img class="img-fluid" src="/assets/images/blog/2021-05-06/IMG_20200702_164256.jpeg" alt="Trek View Trek Pack v2" title="Trek View Trek Pack v2" />
+<img class="img-fluid" src="/assets/images/blog/2021-05-07/IMG_20200702_164256.jpeg" alt="Trek View Trek Pack v2" title="Trek View Trek Pack v2" />
 
 For those unfamiliar, our [Trek Pack v2](https://guides.trekview.org/trek-pack/v2/about), built around the GoPro MAX is designed for just these conditions.
 
 Most Kilimanjaro treks last between 6-8 days of walking to complete. There is also no places to recharge devices. Our kit needed to be self-powered, running for up to 9 hours of walking each day.
 
-<img class="img-fluid" src="/assets/images/blog/2021-05-06/IMG_20200620_111520.jpeg" alt="Trek View GoPro MAX external power pack" title="Trek View GoPro MAX external power pack" />
+<img class="img-fluid" src="/assets/images/blog/2021-05-07/IMG_20200620_111520.jpeg" alt="Trek View GoPro MAX external power pack" title="Trek View GoPro MAX external power pack" />
 
 [The good news is that the GoPro supports an external power pack](https://guides.trekview.org/trek-pack/v2/kit-setup#multi-day-pack-add-ons). One 26000 Anker powerpack was more than adequate for a 7 day trek when shooting in timelapse mode on the MAX (at 5 second intervals).
 
@@ -69,10 +69,10 @@ Outside of these windows, the probability of rain significantly increases. Sadly
 
 It was good to hear the team at Altezza Travel have been busy with a surge in bookings at the end of last year and into this year, despite the pandemic. However, this meant delaying some of planned trips.
 
-<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-05-06/GSAA9832.JPG&amp;autoLoad=true"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-05-07/GSAA9832.JPG&amp;autoLoad=true"></iframe>
 
 Luckily, Joshua, our brilliant cameraman, managed to capture two routes, Macheme and Rongai, around an already busy schedule (thanks to Anatolii and Aleksandr for their help with this).
 
-When the good weather returns in June, we plan to shoot the 5 remaining routes and complete our mission to Map the Mountain.
+When the good weather returns in June, we plan to shoot the 5 remaining routes and complete our mission to map the mountain.
 
 Over the coming weeks I'll be sharing images from our completed and upcoming treks. Stay tuned!
