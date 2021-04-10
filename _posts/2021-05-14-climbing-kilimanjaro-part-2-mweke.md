@@ -1,12 +1,12 @@
 ---
-date: 2021-04-02
+date: 2021-05-14
 title: "Climb Mount Kilimanjaro Virtually"
 description: "Spend few minutes on the highest mountain in Africa and the highest single free-standing mountain in the world."
 categories: mapthepaths
 tags: [Kilimanjaro]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-04-02/map-the-paths-kilimanjaro-macheme-route-guidebook-meta.jpg
-featured_image: /assets/images/blog/2021-04-02/map-the-paths-kilimanjaro-macheme-route-guidebook-sm.jpg
+image: /assets/images/blog/2021-05-14/machame-route-kilimanjaro-guidebook-meta.jpeg
+featured_image: /assets/images/blog/2021-05-14/machame-route-kilimanjaro-guidebook-sm.jpeg
 layout: post
 published: false
 ---
@@ -61,24 +61,27 @@ Now you have arrived at an altitude of about 4,000 meters (around 13,100 ft). Th
 
 Kilimanjaro has three volcanic cones: Kibo, Mawenzi and Shira. Kibo, the youngest and highest, retains the form of a typical volcanic cone and crater.
 
-[View points of interest in the Map the Paths Guidebook](https://www.mapthepaths.com/guidebook/6e613819-fe76-4516-8ac3-508ff0591cf7/detail/?image_key=acDWP4j4Al6MwKgU1wUdBm
-)
+[View points of interest in the Map the Paths Guidebook](https://www.mapthepaths.com/guidebook/6e613819-fe76-4516-8ac3-508ff0591cf7/detail/?image_key=acDWP4j4Al6MwKgU1wUdBm)
 
-## Summit
+## Uhuru Peak (5,895m)
 
+<iframe width="800" height="600" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=lyi8NGDt2yZs4qLmUd7Hzq&client_id=M1E0WHVYcHZUdUI3Q0l0VThuNnU0ajo2OTY0ZWUzZDZlODY2OWI3&style=classic" frameborder="0"></iframe>
 
+Congratulations you are now at Uhuru Peak, Tanzania. 5895 AMSL.
+
+[View points of interest in the Map the Paths Guidebook](https://www.mapthepaths.com/guidebook/6e613819-fe76-4516-8ac3-508ff0591cf7/detail/?image_key=lyi8NGDt2yZs4qLmUd7Hzq)
 
 ## End of the Trek
 
-
-https://www.mapthepaths.com/guidebook/6e613819-fe76-4516-8ac3-508ff0591cf7/detail/?image_key=m17jqnyuuoPgifvrau1hEl
+<iframe width="800" height="600" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=m17jqnyuuoPgifvrau1hEl&client_id=M1E0WHVYcHZUdUI3Q0l0VThuNnU0ajo2OTY0ZWUzZDZlODY2OWI3&style=classic" frameborder="0"></iframe>
 
 6 or 7 days later, we leave the park just outside the town of Mweka. Time for a well deserved rest in one of the many hotels and resorts in Tanzania.
 
+[View points of interest in the Map the Paths Guidebook](https://www.mapthepaths.com/guidebook/6e613819-fe76-4516-8ac3-508ff0591cf7/detail/?image_key=m17jqnyuuoPgifvrau1hEl)
 
 ## Explore the complete Macheme Guidebook
 
-<img class="img-fluid" src="/assets/images/blog/2021-04-02/map-the-paths-kilimanjaro-macheme-route-guidebook-sm.jpg" alt="Map the Paths Kilimanjaro Macheme Route Guidebook" title="Map the Paths Kilimanjaro Macheme Route Guidebook" />
+<img class="img-fluid" src="/assets/images/blog/2021-05-14/map-the-paths-kilimanjaro-macheme-route-guidebook-sm.jpg" alt="Map the Paths Kilimanjaro Macheme Route Guidebook" title="Map the Paths Kilimanjaro Macheme Route Guidebook" />
 
 [**You can explore the full Macheme Route Guidebook now on Map the Paths here**](
 https://www.mapthepaths.com/guidebook/6e613819-fe76-4516-8ac3-508ff0591cf7/detail/).
