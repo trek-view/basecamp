@@ -73,7 +73,7 @@ Such a large gap between recorded measurements is not ideal, we'd prefer a resol
 
 The holes in the casing are on the front so I made sure these were facing forward to capture the airflow. I'm not sure if this is recommended, especially when traveling fairly quickly on a bicycle as I did for this test. 
 
-Living close to a number of airports, air quality is always at the back of my mind as planes fly over. I decided to take a quick bike ride with my AtmoTube Pro to capture some measurements. 
+Living close to a number of airports, air quality is always at the back of my mind as planes fly over so I decided to take a quick bike ride with my AtmoTube Pro to capture some measurements. 
 
 <img class="img-fluid" src="/assets/images/blog/2021-04-09/atmotube-settings-2.png" alt="AtmoTube App Settings" title="AtmoTube App Settings" />
 
