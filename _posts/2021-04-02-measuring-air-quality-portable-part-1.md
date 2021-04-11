@@ -148,3 +148,7 @@ Sounds promising!
 We're not expecting the results to be perfect, but hope they can provide a general understanding of the environment around our trekkers.
 
 I'll report back on our experiences as we start using it with the [Trek Packs](/trek-pack). Check back soon!
+
+## Update 2021-04-09
+
+[Here are three more options you can use to upload your 360 photos to Street View.](/blog/2021/measuring-air-quality-portable-part-2).

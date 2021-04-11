@@ -102,3 +102,7 @@ The app also includes gamification of image capture in the form of badges. You c
 There is a variety of other bits of software also available offering additional functionality over the Street View app for off-road photographers wanting to upload their photos to Street View, including the [Map the Paths Uploader](https://www.mapthepaths.com/uploader).
 
 Stay tuned for a post next week comparing software to upload off-road images and videos to Google Street View...
+
+## Update 2021-03-19
+
+[Here are our initial thoughts after testing the AtmoTube Pro](/blog/2021/software-upload-panoramas-street-view).
