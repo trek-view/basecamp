@@ -1,7 +1,7 @@
 ---
 date: 2021-03-12
 title: "Measuring the Condition of Cycle Paths With Only Your Phone"
-description: "Use the rRuf mobile app on your bicycle to measure the quality of the trails surface."
+description: "Use the rRuf mobile app on your bicycle to measure the ride quality."
 categories: guides
 tags: [rRuf, data bike, DMAMPO]
 author_staff_member: dgreenwood
@@ -24,9 +24,9 @@ The [Data Bike](https://dmampo.org/data-bike/) specifications:
 3. iPhone with [rRuf app](https://apps.apple.com/us/app/rruf/id968766794) installed
 4. A rear facing GoPro Hero camera aimed at the ground
 
-The 360 imagery captured by the Data Bike is used [on Google Street View](https://www.google.com/maps/contrib/104211468250721497845), the rRuf app and GoPro cameras are used to capture trail quality data which in turn is used to identify areas of maintenance and help set future trail budgets.
+The 360 imagery captured by the Data Bike is used [on Google Street View](https://www.google.com/maps/contrib/104211468250721497845), the rRuf app and GoPro cameras are used to capture ride quality data which in turn is used to identify areas of maintenance and help set future trail budgets.
 
-You can see an example of the augmented data for trail quality in the [DMAMPO Central Iowa Trail Condition 2019 Report](https://dmampo.org/wp-content/uploads/2020/02/2019-Data-Bike-Report-1.pdf).
+You can see an example of the augmented data for ride quality in the [DMAMPO Central Iowa Trail Condition 2019 Report](https://dmampo.org/wp-content/uploads/2020/02/2019-Data-Bike-Report-1.pdf).
 
 The DMAMPO team used a five point grading system for the quality of each trail:
 
@@ -52,7 +52,7 @@ Once installed you can set the transport type. The app seems to be predominantly
 
 <img class="img-fluid" src="/assets/images/blog/2021-03-12/Quadlock-iPhone-Bike-Mount-and-Cycling-Case.jpg" alt="Quadlock iPhone Bike Mount" title="Quadlock iPhone Bike Mount" />
 
-You'll want to find a secure, flat and snug mount for your phone so that the data recording is captured in the most controlled way. If you have front suspension, locking it will give a more accurate recording of true trail quality.
+You'll want to find a secure, flat and snug mount for your phone so that the data recording is captured in the most controlled way. If you have front suspension, locking it will give a more accurate recording of true ride quality.
 
 If you're planning to capture the quality of paved roads, [I can personally recommend the Qualock mount](https://www.quadlockcase.co.uk/products/bike-mount?variant=347933016082).
 
@@ -97,8 +97,12 @@ The addition of the GoPro camera pointing at the trail surface capturing GPS tag
 
 We're designing a universal data bike that can be used by local communities  around the world.
 
-The bike will be cost effective, and have similar functions to the Iowa data bike offering the ability to capture 360 photos and record trail quality.
+The bike will be cost effective, and have similar functions to the Iowa data bike offering the ability to capture 360 photos and record ride quality.
 
 If you think a data bike could be a valuable addition to your local area, [please contact us for an early look at what we're planning](/contact).
 
 In the meantime, avid cyclists should [see how Map the Paths can help improve accessibility](/blog/2021/how-map-the-paths-used-improve-accessibility), [take part in our safer.bike initiative](https://www.safer.bike/), or [grab some inspiration to build your own data bike](/blog/2019/diy-street-view-bike-tours).
+
+## Update 2021-04-16
+
+[Here are two other consumer mobile apps that can measure sensor data on your phone to record ride quality](/blog/2021/measuring-condition-cycle-paths-phone-update).

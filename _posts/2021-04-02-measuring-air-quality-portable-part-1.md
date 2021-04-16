@@ -151,4 +151,4 @@ I'll report back on our experiences as we start using it with the [Trek Packs](/
 
 ## Update 2021-04-09
 
-[Here are three more options you can use to upload your 360 photos to Street View.](/blog/2021/measuring-air-quality-portable-part-2).
+[Here are three more options you can use to upload your 360 photos to Street View](/blog/2021/measuring-air-quality-portable-part-2).
