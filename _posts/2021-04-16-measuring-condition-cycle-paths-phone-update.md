@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2021-04-16/physics-toolbox-sensor-suite-pro-meta.jpeg
 featured_image: /assets/images/blog/2021-04-16/physics-toolbox-sensor-suite-pro-sm.jpeg
 layout: post
-published: false
+published: true
 ---
 
 **Two alternative apps to rRuf.**
@@ -49,7 +49,7 @@ The raw sensor data can then be exported into csv or JSON files for analysis in 
 
 Another very powerful app with the ability to capture raw data from all the sensors on your Android phone or tablet and display it in many beautiful visualisations.
 
-This app can sample at a very high resolution, up to 409Hz on my phone (which is overkill for what I want to measure). You can set the frequency manually between 1Hz - 409Hz (or whatever your device can support). Somewhere between 1Hz and 10Hz suits most requirements. As with iOS devices, not all sensors on the phone can sample at the maximum resolution (noteably, GPS for our requirements).
+This app can sample at a very high resolution, up to 409Hz on my phone (which is overkill for what I want to measure). You can set the frequency manually between 1Hz - 409Hz (or whatever your device can support). Somewhere between 1Hz and 10Hz suits most requirements. As with iOS devices, not all sensors on the phone can sample at the maximum resolution (notably, GPS for our requirements).
 
 The raw sensor data can then be exported into a csv file for analysis in other products. [Here's a sample (in multi-record mode with g-Force, linear accelerometer and GPS enabled)](https://docs.google.com/spreadsheets/d/1IkbSO9RulsnjQ96o9nOZjmstZ1gmCnF9bo5q22K5ASQ/edit#gid=1315472714).
 
