@@ -1,7 +1,7 @@
 ---
 date: 2021-04-23
 title: "Trek View Trail Quality Index"
-description: "We continue to build out our Data Bike standard and are now trying to establish a global standard to measure trail quality."
+description: "We continue to build out our Data Bike and are now trying to establish a global standard to measure cycle trail quality."
 categories: guides
 tags: [rRuf, data bike, DMAMPO]
 author_staff_member: dgreenwood
