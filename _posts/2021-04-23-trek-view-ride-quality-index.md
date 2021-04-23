@@ -1,7 +1,7 @@
 ---
 date: 2021-04-23
 title: "Trek View Trail Quality Index"
-description: "We continue to build out our data bike standard and are now trying to find a global standard to measure trail quality."
+description: "We continue to build out our Data Bike standard and are now trying to establish a global standard to measure trail quality."
 categories: guides
 tags: [rRuf, data bike, DMAMPO]
 author_staff_member: dgreenwood
@@ -11,19 +11,19 @@ layout: post
 published: true
 ---
 
-**Putting the data bike to work**
+**Putting our Data Bike to work.**
 
 [In the previous post I considered some apps that can be used to record raw data from your phones IMU](/blog/2021/measuring-condition-cycle-paths-phone-update).
 
 <img class="img-fluid" src="/assets/images/blog/2021-04-23/ResearchBikeInfographic-sm.jpeg" alt="Minnesota Research Bike" title="Minnesota Research Bike" />
 
-[The Parks & Trails Council of Minnesota operate a Research Bike that documents the state of their bike trails](https://www.parksandtrails.org/mn-state-trails/). In addition to their intractive maps, [you can view their previous State of the Trails reports here](https://www.parksandtrails.org/advocacy/research/ptc/state-of-the-trails-report/).
+[The Parks & Trails Council of Minnesota operate a Research Bike that documents the state of their cycling trails](https://www.parksandtrails.org/mn-state-trails/). In addition to their interactive maps, [you can view their previous State of the Trails reports here](https://www.parksandtrails.org/advocacy/research/ptc/state-of-the-trails-report/).
 
 These reports contain a Trail Roughness Index (TRI), an aggregated score created by the Parks & Trails Council of Minnesota:
 
 > Trail Roughness Index is measured by riding a trail with a device called an accelerometer mounted on the bike’s handle bars. When the bicyclist hits a crack or bump in the trail, the accelerometer measures the force of the jolt felt by the bicyclist. The TRI is a statistical summary of the accelerometer data that indicates the roughness of the ride. Low TRI scores indicate trails in excellent condition (TRI < 30) and high TRI scores indicate trails in very poor condition (TRI > 75).
 
-This posts aims will outline a Trail Quality Index you can use yourself using your phone and an app to measure data from its accelerometer. 
+This posts details my attempt at creating a Trail Quality Index using a similar approach.
 
 ## Orientation
 
@@ -31,21 +31,19 @@ This posts aims will outline a Trail Quality Index you can use yourself using yo
 
 <img class="img-fluid" src="/assets/images/blog/2021-04-23/accelerometer-axes.png" alt="Accelerometer Phone Orientation" title="Accelerometer Phone Orientation" />
 
-An accelerometer measures change in velocity across 3 planes; x, y, and z. The diagram shows how these planes are orientated in relation to your phone or tablet. This orientation is uniform across devices, so apps can read the data in an expected standard.
+An accelerometer measures change in velocity across 3 planes; x, y, and z. The diagram shows how these planes are orientated in relation to your phone or tablet. Orientation is uniform across devices, so all apps can read the data in an expected standard.
 
-The orientation of the phone has an impact on the way we measure trail quality. The main data point we're looking to identify is the vertical (up and down) motion caused by uneven surface trail.
+The orientation of the phone has an impact on the measurements recorded. The main data point we're looking to identify is the vertical (up and down) motion caused by uneven surface trail (assuming the phone is laid flat).
 
-If we were to lay the phone on its side, we would be measuring change in velocity along the x axis to measure change in vertical acceleration whilst bumping up and down.
+If you were to lay the phone on its side, we would be measuring change in velocity along the x axis to measure change in vertical acceleration whilst bumping up and down. If the phone was standing up-right this measurement would be taken from the y axis.
 
-If the phone was standing up-right this measurement would be taken from the y axis, and lastly, if the phone was on its back, we would be measuring the z axis.
+A more complex calculation would consider change across all axis against the orientation of the phone (captured by the gyroscope). However, because our capture conditions are somewhat controlled on fairly level trails and such a calculation involves a certain level of mathematical complexity, I'm keeping it simple for now.
 
-A more complex calculation would consider change across all axis against the orientation of the phone (captured by the gyroscope). However, because our capture conditions are somewhat controlled on fairly level trails, I'm keeping it simple for now.
-
-What this does require is for us to mount the phone in secure and snug mount as flat as possible to the ground as I'll be measuring change in velocity along the z axis.
+To ensure accuracy with this approach requires the phone to be mounted in a secure and snug mount as flat as possible to the ground because I'll be measuring change in velocity exclusively along the z axis.
 
 ## Choosing what data to measure
 
-To capture data I used [the Physics Toolbox Sensor Suite Pro app on my phone](/blog/2021/measuring-condition-cycle-paths-phone-update), but any raw accelerometer data, regardless of the app used to capture it, should work.
+To capture data I used [the Physics Toolbox Sensor Suite Pro app on my phone](/blog/2021/measuring-condition-cycle-paths-phone-update). Any app that can measure raw accelerometer data will work using my approach.
 
 The linear accelerometer measures acceleration in a straight line in three different dimensions. Linear acceleration changes whenever the mobile device speeds up, slows down, or changes direction. When the mobile device is at rest with respect to the surface of the earth, it reads acceleration values of 0, 0, 0.
 
@@ -57,9 +55,9 @@ The linear accelerometer measures acceleration (m/s^2) and g-force (G) along the
 
 The concept of G’s, or “G-forces,” refers to multiples of the acceleration due to gravity and the concept applies to acceleration in any direction, not just toward the Earth. 1G is the acceleration we feel due to the force of gravity.
 
-For example, let's say you accelerate from 0-100km/h in 2.3 seconds. 100kph is 28m/s, 28 / 2.3 = 12m/s^2, 12 / 9.8 = 1.2G.
+For example, let's say you accelerate from 0-100km/h in 2.3 seconds. 100kph is 28m/s, 28 / 2.3 = 12m/s^2, 12 / 9.8 = 1.2G (y).
 
-G-force is often used express the forces on the human body during acceleration, and is perfect to measure change in forces on the bike and it's rider as it travels across a trail.
+G-force is often used express the forces on the human body during acceleration, and is a perfect measure of change in force on the bike and its rider across the z axis as they travel along the trail.
 
 ## Capturing the data
 
@@ -77,7 +75,7 @@ I setup the app to record data at 100Hz (100 measurements every second), which i
 
 ## Interpreting the data
 
-Below are aggregated results for a 20 second stretch of gravel path. [You can view the imagery on Map the Paths here](https://www.mapthepaths.com/sequence/97e30969-119c-4350-807d-f8469328de75/detail?image_key=4UFwdlSC9MynUdUQ8xXhnA&view_mode=original&show_gpx=false) (note, I did not have a camera during this ride and the linked imagery is from a seperate capture on foot).
+Below are the aggregated results for a 20 second stretch of the gravel path. [You can view the imagery on Map the Paths here](https://www.mapthepaths.com/sequence/97e30969-119c-4350-807d-f8469328de75/detail?image_key=4UFwdlSC9MynUdUQ8xXhnA&view_mode=original&show_gpx=false) (_note, I did not have a camera during this ride and the linked imagery is from a seperate capture on foot_).
 
 <table>
 <thead><tr><th>time</th>
@@ -249,7 +247,7 @@ Below are aggregated results for a 20 second stretch of gravel path. [You can vi
 </tr>
 </tbody></table>
 
-I calculated a moving average of by taking a mean of the last 10 measurements (equal to 0.1 second) for gFz and speed (m/s). The co-ordinates shown above show the final point of the 10 measurement average.
+The aggregated stats include a calculated moving average by taking a mean of the last 10 measurements (equal to 0.1 second) for gFz and speed (m/s). The co-ordinates shown above show the final location of the 10 measurement average.
 
 For G-Force (z) I multiplied by 100 for scale, so I could use a comparative scale to The Parks & Trails Council of Minnesota:
 
@@ -259,36 +257,36 @@ For G-Force (z) I multiplied by 100 for scale, so I could use a comparative scal
 * (gFz * 100) 60 - 75 = Poor
 * (gFz * 100) > 75 = Very Poor
 
-Finally, I took the value closest to every whole second for a more manageable dataset. This is what you see above.
+Finally, I took the value closest to every whole second for a more manageable dataset (1 measurement every second vs. 100 raw measurements). This is what you see above.
 
-All my measurements from the above capture fall into the Poor category, which is expected given the measurements above were taken from a woodland gravel path.
+All measurements from this capture fall into the Poor category which is expected given the measurements above were taken from a woodland gravel path.
 
-When measuring on smooth roads, I was getting readings between 15 - 25. Subsequence rides have generally produced results in line with expectations, even where speed does vary by +/- 10km/h.
+When measuring on smooth roads I was getting readings between 15 - 25 ave gFz * 100. Subsequence rides have generally produced results in line with expectations, even where cycling speed varies by +/- 10km/h.
 
 ## Limitations
 
 The TRI only measures the smoothness of the path taken by the bicycle, and as such likely underestimates the overall condition of trails with easily avoidable bumps and cracks (i.e. those forming along pavement edges or longitudinally down the center).
 
-Similarly, there are an almost infinite number of paths a cyclists could take. These measurements only consider one unique path. Ideally a trail would be measured multiple times to account for different lines taken by the bicycle, error associated with the speed adjustment, and random noise associated with vibrations in the bicycle frame and rider movements.
+Similarly, there are an almost infinite number of paths a cyclists could take. These measurements only consider one unique path. Ideally a trail would be measured multiple times to account for different lines taken by the bicycle, errors associated with speed adjustments, and random noise associated with vibrations in the bicycle frame and rider movements.
 
-Additionally, the TRI is a summary statistic for a given segment of trail. Over the course of a kilometer, a trail may be in excellent condition for one stretch and in poor condition for another. In this case I choose sections of about 2 meters over a timeline of 2 seconds (which is very granular). 
+TRI is a summary statistic for a given segment of trail. Over the course of a kilometer, a trail may be in excellent condition for one stretch and in poor condition for another.
 
-For a large trail network making sense of this data will take more effort. Riders are going to want details of the best and worst parts of the trail but are not going to want to sift through data at 2 second intervals.
+In this case I choose sections of about 2 meters over a timeline of 1 second (which is very granular). For a large trail network, presenting this data will take more processing to prove valuable. Riders are going to want details of the best and worst parts of the trail but are not going to want to sift through data at 2 meter intervals.
 
-For a cheap and fairly reliable way to measure trail quality this methodology is surprisingly quite accurate. However, rolling this out on a global scale will be difficult.
+For a cheap and fairly reliable way to measure trail quality this methodology is surprisingly accurate. However, rolling this out on a global scale is a different story.
 
 ## A global standard
 
 Making a solution affordable for anyone to capture measurements is critical, though a standard level of accuracy is just as important.
 
-It's clear variables of using a phones' accelerometer to capture measurements -- the phone, its holder, the bicycle, its rider, their riding style -- make it very difficult to normalise measurements so a global TRI can be established.
+It's clear the variables of using a phones' accelerometer to capture measurements -- the phone, its holder, the bicycle, its rider, their riding style -- make it very difficult to normalise measurements.
 
-Often, the solution to a problem is staring you in the face.
+Therefore, I can't see any way a phone is a viable in pursuit of a global TRI. But a camera, already fitted to the Data Bike, might offer a solution.
 
 A quick search of the internet returns lots of research, for example; [Automatic Road Pavement Assessment with Image Processing : Review and Comparison](https://hal.archives-ouvertes.fr/hal-00612165/document).
 
 Digging deeper I discovered there is a whole industry using cameras to automatically measure roadway quality using computer vision.
 
-The cameras, the first key part of the data bike seem like a potential solution. If it's possible to use the 360 imagery to measure cycle path quality, they might prove even more valaalbe (and lower the amount of kit needed for the data bike).
+If it's possible to use the 360 imagery from the Data Bike to measure cycle path quality, they might prove even more valuable (and lower the amount of kit needed for the Data Bike).
 
-If you have any experience in this area, I'd love to hear from you in pursuit of a global standard for measuring cycle trail quality.
+If you have any experience in this area, [I'd love to hear from you](/contact/).
