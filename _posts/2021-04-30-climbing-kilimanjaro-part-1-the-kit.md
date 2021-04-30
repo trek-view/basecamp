@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2021-04-30/kilimanjaro-summit-little-planet-meta.jpeg
 featured_image: /assets/images/blog/2021-04-30/kilimanjaro-summit-little-planet-sm.jpeg
 layout: post
-published: false
+published: true
 ---
 
 **Preparing to climb Kilimanjaro**
