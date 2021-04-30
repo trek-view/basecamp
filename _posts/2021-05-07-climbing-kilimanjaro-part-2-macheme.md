@@ -1,12 +1,12 @@
 ---
-date: 2021-05-14
+date: 2021-05-07
 title: "Climb Mount Kilimanjaro Virtually (Part 2: Macheme Route)"
 description: "The second most popular route on Mount Kilimanjaro can now be hiked from home."
 categories: mapthepaths
 tags: [Kilimanjaro, Altezza Travel]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-05-14/machame-route-kilimanjaro-guidebook-meta.jpeg
-featured_image: /assets/images/blog/2021-05-14/machame-route-kilimanjaro-guidebook-sm.jpeg
+image: /assets/images/blog/2021-05-07/machame-route-kilimanjaro-guidebook-meta.jpeg
+featured_image: /assets/images/blog/2021-05-07/machame-route-kilimanjaro-guidebook-sm.jpeg
 layout: post
 published: false
 ---
@@ -19,7 +19,7 @@ For our first trek our guide and cameraman, Joshua, would be tackling the Machem
 
 Also known as the _Whiskey_ route, it is the second most popular route on Mount Kilimanjaro.
 
-<img class="img-fluid" src="/assets/images/blog/2021-05-14/machame-route-kilimanjaro.jpeg" alt="Kilimanjaro Macheme route" title="Kilimanjaro Macheme route" />
+<img class="img-fluid" src="/assets/images/blog/2021-05-07/machame-route-kilimanjaro.jpeg" alt="Kilimanjaro Macheme route" title="Kilimanjaro Macheme route" />
 
 It starts in the tropical rainforest, approaches the peak area through the southern face of Mt Kilimanjaro and summit is done through Barafu Summit Camp. Descent is done through Mweka Route. 
 
@@ -65,7 +65,7 @@ Congratulations you are now at Uhuru Peak, Tanzania. 5895 AMSL.
 
 ## Explore the complete Macheme Guidebook
 
-<img class="img-fluid" src="/assets/images/blog/2021-05-14/map-the-paths-kilimanjaro-macheme-route-guidebook-sm.jpeg" alt="Map the Paths Kilimanjaro Macheme Route Guidebook" title="Map the Paths Kilimanjaro Macheme Route Guidebook" />
+<img class="img-fluid" src="/assets/images/blog/2021-05-07/map-the-paths-kilimanjaro-macheme-route-guidebook-sm.jpeg" alt="Map the Paths Kilimanjaro Macheme Route Guidebook" title="Map the Paths Kilimanjaro Macheme Route Guidebook" />
 
 You've missed 3 scenes and many more points of interest showing more about the geography of Mount Kilimanjaro and the Macheme Route.
 

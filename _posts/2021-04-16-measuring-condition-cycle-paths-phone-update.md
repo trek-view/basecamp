@@ -3,7 +3,7 @@ date: 2021-04-16
 title: "Measuring the Condition of Cycle Paths With Only Your Phone (an update)"
 description: "Two consumer apps that can measure sensor data on your phone to record ride quality."
 categories: guides
-tags: [rRuf, data bike, DMAMPO]
+tags: [SensorLog, Data Bike, DMAMPO, Physics Toolbox Sensor Suite Pro]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-04-16/physics-toolbox-sensor-suite-pro-meta.jpeg
 featured_image: /assets/images/blog/2021-04-16/physics-toolbox-sensor-suite-pro-sm.jpeg
@@ -73,3 +73,7 @@ Both of these apps provide raw data from a phones [IMU (Inertial Measurement Uni
 Paid subscriptions on apps like rRuf provide `PavementCondition` or similar values that are an aggregated measurements of sensor data.
 
 Next week I'll share a post detailing how we turn raw accelerometer data into a Trek View ride quality Index to provide a similar measure to rRuf's `PavementCondition` score.
+
+## Update 2021-04-23
+
+[My attempt at creating a Trail Quality Index using data from the Physics Toolbox Sensor Suite Pro app](/blog/2021/trek-view-ride-quality-index).

@@ -1,12 +1,12 @@
 ---
-date: 2021-05-21
+date: 2021-05-14
 title: "Climb Mount Kilimanjaro Virtually (Part 3: Rongai Route)"
 description: "Trek one of the quitest trails up Kilimanjaro from home."
 categories: mapthepaths
 tags: [Kilimanjaro, Altezza Travel]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-05-21/rongai-route-kilimanjaro-guidebook-meta.jpeg
-featured_image: /assets/images/blog/2021-05-21/rongai-route-kilimanjaro-guidebook-sm.jpeg
+image: /assets/images/blog/2021-05-14/rongai-route-kilimanjaro-guidebook-meta.jpeg
+featured_image: /assets/images/blog/2021-05-14/rongai-route-kilimanjaro-guidebook-sm.jpeg
 layout: post
 published: false
 ---
@@ -17,7 +17,7 @@ published: false
 
 This week we'll be tackling the Rongai Route.
 
-<img class="img-fluid" src="/assets/images/blog/2021-05-21/rongai-route-kilimanjaro.jpeg" alt="Kilimanjaro Rongai route" title="Kilimanjaro Rongai route" />
+<img class="img-fluid" src="/assets/images/blog/2021-05-14/rongai-route-kilimanjaro.jpeg" alt="Kilimanjaro Rongai route" title="Kilimanjaro Rongai route" />
 
 Due to the remote location of its trailhead, Rongai is seldom visited by the trekkers.
 
@@ -65,7 +65,7 @@ Congratulations you are now at Uhuru Peak, Tanzania. 5895 AMSL.
 
 ## Explore the complete Rogai Guidebook
 
-<img class="img-fluid" src="/assets/images/blog/2021-05-21/" alt="Map the Paths Kilimanjaro Rogai Route Guidebook" title="Map the Paths Kilimanjaro Rogai Route Guidebook" />
+<img class="img-fluid" src="/assets/images/blog/2021-05-14/" alt="Map the Paths Kilimanjaro Rogai Route Guidebook" title="Map the Paths Kilimanjaro Rogai Route Guidebook" />
 
 You've missed 5 scenes and many more points of interest showing more about the geography of Mount Kilimanjaro and the Rongai Route.
 

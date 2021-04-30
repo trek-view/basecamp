@@ -3,7 +3,7 @@ date: 2021-04-23
 title: "Trek View Trail Quality Index"
 description: "We continue to build out our Data Bike and are now trying to establish a global standard to measure cycle trail quality."
 categories: guides
-tags: [rRuf, data bike, DMAMPO]
+tags: [Data Bike, DMAMPO, Minnesota]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-04-23/trail-roughness-index-meta.jpg
 featured_image: /assets/images/blog/2021-04-23/trail-roughness-index-sm.jpg
@@ -283,10 +283,8 @@ It's clear the variables of using a phones' accelerometer to capture measurement
 
 Therefore, I can't see any way a phone is a viable in pursuit of a global TRI. But a camera, already fitted to the Data Bike, might offer a solution.
 
-A quick search of the internet returns lots of research, for example; [Automatic Road Pavement Assessment with Image Processing : Review and Comparison](https://hal.archives-ouvertes.fr/hal-00612165/document).
+A quick search of the internet returns lots of research, for example the [IEEE Global Road Damage Detection Challenge 2020](https://rdd2020.sekilab.global/).
 
-Digging deeper I discovered there is a whole industry using cameras to automatically measure roadway quality using computer vision.
-
-If it's possible to use the 360 imagery from the Data Bike to measure cycle path quality, they might prove even more valuable (and lower the amount of kit needed for the Data Bike).
+If it's possible to use the 360 imagery from the Data Bike to measure cycle path quality, the cameras might prove even more valuable (and lower the amount of kit needed for the Data Bike).
 
 If you have any experience in this area, [I'd love to hear from you](/contact/).
