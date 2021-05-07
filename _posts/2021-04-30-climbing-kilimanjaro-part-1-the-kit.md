@@ -71,8 +71,12 @@ Outside of these windows, the probability of rain significantly increases. Sadly
 
 Luckily, Joshua, our brilliant cameraman, managed to capture two routes, Macheme and Rongai, around an already busy schedule (thanks to Anatolii and Aleksandr for their help to organise).
 
-Over the coming weeks I'll be sharing images from our completed treks.
+Over the coming weeks I'll be sharing images from our completed treks and more details about how the GoPro cameras performed.
 
 When the good weather returns in June, we plan to shoot the 5 remaining routes and complete our mission to map the mountain.
 
 Stay tuned!
+
+## Update 2021-05-07
+
+[Part 2: the Macheme Route)](/blog/2021/climbing-kilimanjaro-part-2-macheme)
