@@ -27,13 +27,13 @@ Mapillary contributors are producing some brilliant content.
 
 ## Bicycle Advocacy in Canada
 
-<iframe width="600" height="450" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=H_5IHb2OpUIyrdgPxotFkw&x=0.46627044312092814&y=0.6462236482000605&client_id=M1E0WHVYcHZUdUI3Q0l0VThuNnU0ajo2OTY0ZWUzZDZlODY2OWI3&style=classic" frameborder="0"></iframe>
+<img class="img-fluid" src="/assets/images/blog/2020-02-14/canada.jpeg" alt="Bicycle Advocacy in Canada" title="Bicycle Advocacy in Canada" />
 
 [Bike Ottawa members captured 450,000 images across 2,000 km in just a little over a month to gather data for bicycle advocacy work](https://blog.mapillary.com/update/2017/11/17/completing-the-map-for-bicycle-advocacy-in-ottawa.html). Determining the need for infrastructure creation and maintenance, building a model for traffic stress levels, and monitoring progress are just some of the ways they are now using the imagery.
 
 ## Field Research in Norway
 
-<iframe width="600" height="450" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=YgKelw0zzXDyF6rOtx9ikw&x=0.5&y=0.5&client_id=M1E0WHVYcHZUdUI3Q0l0VThuNnU0ajo2OTY0ZWUzZDZlODY2OWI3&style=classic" frameborder="0"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2020-02-14/norway.jpeg&amp;autoLoad=true"></iframe>
 
 Wild salmon in Norwegian rivers is on the decline with numbers nearly half what they were 30 years ago. Anders Foldvik, Research Scientist at the Norwegian Institute for Nature Research (NINA), [is working to understand salmon habitats in Norway and to help hydropower companies mitigate their impacts](https://blog.mapillary.com/update/2020/01/02/innovative-uses-for-mapillary-in-field-research.html). 
 
@@ -41,7 +41,7 @@ We love the handle, Anders (_riverview_).
 
 ## Disaster Response around the World
 
-<iframe width="600" height="450" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=VK930eto4fz8sxOFb7zZ8w&x=0.5&y=0.5&client_id=M1E0WHVYcHZUdUI3Q0l0VThuNnU0ajo2OTY0ZWUzZDZlODY2OWI3&style=classic" frameborder="0"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2020-02-14/dominica.jpeg&amp;autoLoad=true"></iframe>
 
 [The Red Cross collects and uses street-level imagery in disaster response, where time is critical](https://blog.mapillary.com/update/2018/03/21/how-red-cross-uses-data-during-global-disasters.html). For example in Dominica after the devastation wrought by hurricane Irma, imagery provides a glimpse into the challenges faced by communities impacted by the storm, situational awareness for organisations responding to the disaster, and created a baseline which could be used to examine changes during the recovery process.
 
@@ -49,9 +49,11 @@ We love the handle, Anders (_riverview_).
 
 ## Lesson on Rivers in the UK
 
-<iframe width="600" height="450" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=elX3ThFu-Xm5UHDYBJFWyQ&x=0.41298674536452207&y=0.6456447314530038&client_id=M1E0WHVYcHZUdUI3Q0l0VThuNnU0ajo2OTY0ZWUzZDZlODY2OWI3&style=classic" frameborder="0"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2020-02-14/river-thames-lesson.jpeg&amp;autoLoad=true"></iframe>
 
-And Trek View. Our lesson on rivers show children show how they change from source to mouth, and why so many towns and cities grew up around them (like Hampton Court, above). [Read more in the accompanying case study](/case-studies/2019/gb/river-thames/).
+And Trek View. Our lesson on rivers show children show how they change from source to mouth, and why so many towns and cities grew up around them (like Hampton Court, above). 
+
+[View the full tour on Map the Paths here](https://www.mapthepaths.com/tour/017fec4a-42f4-4339-b8a9-c1ca8c471509/detail).
 
 [**Don't forget to enrol in for to access our Treehouse content**](https://treehouse.trekview.org).
 
