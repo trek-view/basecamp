@@ -79,4 +79,4 @@ Stay tuned!
 
 ## Update 2021-05-07
 
-[Part 2: the Macheme Route)](/blog/2021/climbing-kilimanjaro-part-2-macheme)
+[Part 2: the Macheme Route. The second most popular route on Mount Kilimanjaro can now be hiked from home](/blog/2021/climbing-kilimanjaro-part-2-macheme).

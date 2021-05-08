@@ -25,7 +25,7 @@ It starts in the tropical rainforest, approaches the peak area through the south
 
 ## Rainforest (1,800m)
 
-<iframe width="800" height="600" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=xF0ZHcGPd5jMi8WW0fDzkq&client_id=M1E0WHVYcHZUdUI3Q0l0VThuNnU0ajo2OTY0ZWUzZDZlODY2OWI3&style=classic" frameborder="0"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-05-07/kili-rainforest.jpeg&amp;autoLoad=true"></iframe>
 
 Moss-covered trees, seas of ferns and elusive monkeys abound in the rainforests that surround the mountain.
 
@@ -33,7 +33,7 @@ Moss-covered trees, seas of ferns and elusive monkeys abound in the rainforests 
 
 ## Moorland (3,000m)
 
-<iframe width="800" height="600" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=PCXLvfrqSkxDkKF6NBrW1J&client_id=M1E0WHVYcHZUdUI3Q0l0VThuNnU0ajo2OTY0ZWUzZDZlODY2OWI3&style=classic" frameborder="0"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-05-07/kili-moorland.jpeg&amp;autoLoad=true"></iframe>
 
 The thick rainforest starts to thin out. At an altitude of almost 3,000 meters (around 9,800 ft) you have arrived at the beginning of the moorland. Shorter trees as well as an increasing number of ferns and mosses are typical for this vegetation zone.
 
@@ -41,7 +41,7 @@ The thick rainforest starts to thin out. At an altitude of almost 3,000 meters (
 
 ## Alpine desert (4,000m)
 
-<iframe width="800" height="600" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=thDxDIT4RebAMqDmC10wKx&client_id=M1E0WHVYcHZUdUI3Q0l0VThuNnU0ajo2OTY0ZWUzZDZlODY2OWI3&style=classic" frameborder="0"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-05-07/kili-alpine-desert.jpg&amp;autoLoad=true"></iframe>
 
 Now you have arrived at an altitude of about 4,000 meters (around 13,100 ft). The ascent is mostly less steep than before, and you’re walking on paths across seemingly endless expanses and scree fields.
 
@@ -49,7 +49,7 @@ Now you have arrived at an altitude of about 4,000 meters (around 13,100 ft). Th
 
 ## Volcanic Craters (5,000m)
 
-<iframe width="800" height="600" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=acDWP4j4Al6MwKgU1wUdBm&client_id=M1E0WHVYcHZUdUI3Q0l0VThuNnU0ajo2OTY0ZWUzZDZlODY2OWI3&style=classic" frameborder="0"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-05-07/kili-volcanic-craters.jpeg&amp;autoLoad=true"></iframe>
 
 Kilimanjaro has three volcanic cones: Kibo, Mawenzi and Shira. Kibo, the youngest and highest, retains the form of a typical volcanic cone and crater.
 
@@ -57,7 +57,7 @@ Kilimanjaro has three volcanic cones: Kibo, Mawenzi and Shira. Kibo, the younges
 
 ## Uhuru Peak (5,895m)
 
-<iframe width="800" height="600" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=lyi8NGDt2yZs4qLmUd7Hzq&client_id=M1E0WHVYcHZUdUI3Q0l0VThuNnU0ajo2OTY0ZWUzZDZlODY2OWI3&style=classic" frameborder="0"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-05-07/kili-uhuru-peak.jpeg&amp;autoLoad=true"></iframe>
 
 Congratulations you are now at Uhuru Peak, Tanzania. 5895 AMSL.
 
