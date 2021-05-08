@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Rainforest's, moorland, glaciers, and volcanic craters.**
+**Rainforests, moorland, glaciers, and volcanic craters.**
 
 If you missed last weeks post, [we're in the process of mapping Kilimanjaro with our Trek Packs](/blog/2021/climbing-kilimanjaro-part-1-the-kit).
 
@@ -65,7 +65,7 @@ Congratulations you are now at Uhuru Peak, Tanzania. 5895 AMSL.
 
 ## Explore the complete Macheme Guidebook
 
-<img class="img-fluid" src="/assets/images/blog/2021-05-07/map-the-paths-kilimanjaro-macheme-route-guidebook-sm.jpeg" alt="Map the Paths Kilimanjaro Macheme Route Guidebook" title="Map the Paths Kilimanjaro Macheme Route Guidebook" />
+<img class="img-fluid" src="/assets/images/blog/2021-05-07/machame-route-kilimanjaro-guidebook-sm.jpeg" alt="Map the Paths Kilimanjaro Macheme Route Guidebook" title="Map the Paths Kilimanjaro Macheme Route Guidebook" />
 
 You've missed 3 scenes and many more points of interest showing more about the geography of Mount Kilimanjaro and the Macheme Route.
 
