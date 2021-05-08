@@ -15,7 +15,7 @@ published: true
 
 If you missed last weeks post, [we're in the process of mapping Kilimanjaro with our Trek Packs](/blog/2021/climbing-kilimanjaro-part-1-the-kit).
 
-For our first trek our guide and cameraman, Joshua, would be tackling the Macheme route.
+For our first trek our guide and cameraman, Joshua, will be tackling the Macheme route.
 
 Also known as the _Whiskey_ route, it is the second most popular route on Mount Kilimanjaro.
 
