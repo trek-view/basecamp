@@ -21,41 +21,51 @@ Here are some of the places I've shot this summer on my standup paddleboard.
 
 ## The River Thames, England
 
-<iframe width="600" height="450" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=SOTsvaRAXSNRnHFMOKr82w&x=0.47467241502181645&y=0.5420770116267879&client_id=cEc2TDVkajU3UEF1eGFFVVVnajloQTpkNGUyMTY3ZjlhOTg0NTVl&style=classic" frameborder="0"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2019-10-04/river-thames.jpeg&amp;autoLoad=true"></iframe>
+
+[View on Map the Paths](https://www.mapthepaths.com/sequence/224a9437-abea-4998-b053-b3a6e7d4c8c2/tour/017fec4a-42f4-4339-b8a9-c1ca8c471509?image_key=ol4UeRtcM2xAXY5qiteVdw&view_mode=original&show_gpx=false).
 
 Transport type: SUP
 
 346 km in total. I covered about 100 km this year between Oxford and Kew on a paddle-board. From big cities and million Pound mansions to rolling hills and farm yards.
 
-[Read the full case study](/case-studies/2019/gb/river-thames/).
+[**View the full tour on Map the Paths here**](https://www.mapthepaths.com/tour/017fec4a-42f4-4339-b8a9-c1ca8c471509/detail).
 
 ## Wey Navigations, England
 
-<iframe width="600" height="450" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=0_WR1EW7Hj14ox92JbDD6A&x=0.5156919286107203&y=0.4843298034399449&client_id=cEc2TDVkajU3UEF1eGFFVVVnajloQTpkNGUyMTY3ZjlhOTg0NTVl&style=classic" frameborder="0"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2019-10-04/river-wey.jpeg&amp;autoLoad=true"></iframe>
+
+[View on Map the Paths](https://www.mapthepaths.com/sequence/b8e1781c-8900-4291-ae7e-ba38c9ff9675/tour/def4c732-60e8-4d86-b0d6-355d07f8edef?image_key=x75lYeHt8eY9i6J4ObFNxQ&view_mode=original&show_gpx=false).
 
 Transport type: SUP
 
 My "local" river. Passing through the beauty of the Surrey countryside from  Godalming to Weybridge where it joins the Thames. My only complaint -- navigating through the many locks! Life could be worse.
 
-[Read the full case study](/case-studies/2019/gb/wey-navigations/).
+[**View the full tour on Map the Paths here**](https://www.mapthepaths.com/tour/def4c732-60e8-4d86-b0d6-355d07f8edef/detail).
 
 ## Basingstoke Canal, England
 
-<iframe width="600" height="450" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=w6xlGKfjBYrBJfZ8X3sCXA&x=0.423980062084064&y=0.6023622626509721&client_id=cEc2TDVkajU3UEF1eGFFVVVnajloQTpkNGUyMTY3ZjlhOTg0NTVl&style=classic" frameborder="0"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2019-10-04/basingstoke-canal.jpeg&amp;autoLoad=true"></iframe>
+
+[View on Map the Paths](https://www.mapthepaths.com/sequence/0c1bfd80-18fa-4d50-9eaa-439c25ec6f44/detail?image_key=juJnzYihz-4Q35NIjvw3bg&view_mode=original&show_gpx=false).
 
 Transport type: SUP
 
 The Basingstoke Canal runs for 51 kilometres, from Greywell Village in Hampshire to Woodham in Surrey. My only complaint -- more locks!
 
-[Read the full case study](/case-studies/2019/gb/basingstoke-canal/).
+[**View the full tour on Map the Paths here**](https://www.mapthepaths.com/tour/aa6abb27-5390-4433-a981-d793025561dc/detail).
 
 ## Kennet and Avon Canal, England
 
-<iframe width="600" height="450" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=IZrbPt27BbN7GPFMTc_aww&x=0.4483640281565496&y=0.5233112318585865&client_id=cEc2TDVkajU3UEF1eGFFVVVnajloQTpkNGUyMTY3ZjlhOTg0NTVl&style=classic" frameborder="0"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2019-10-04/kennet-avon-canal.jpeg&amp;autoLoad=true"></iframe>
+
+[View on Map the Paths](https://www.mapthepaths.com/sequence/c80194ac-29cd-4f90-9cb3-7792a0e75130/tour/27b243c6-5e27-4b57-979f-4169d08bd188?page=1).
 
 Transport type: SUP
 
 The Kennet and Avon Canal is a waterway in southern England with an overall length of 140 kilometres, made up of two lengths of navigable river linked by a canal. My only complaint -- even more locks!
+
+[**View the full tour on Map the Paths here**](https://www.mapthepaths.com/tour/27b243c6-5e27-4b57-979f-4169d08bd188/detail).
 
 ## Call for Winter trekkers
 

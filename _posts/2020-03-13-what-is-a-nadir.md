@@ -33,8 +33,10 @@ Similarly, more advanced software, notably Google Street View, can seemingly rem
 
 [Google also allows Street View trusted photographers to overlay their own branding in the nadir and zenith areas of their photos](https://www.google.com/streetview/sales/).
 
-<iframe width="600" height="450" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=B-Ofdr9jhsu0u1yfVdRKTQ&x=0.9182035601970593&y=0.890912642074368&client_id=cEc2TDVkajU3UEF1eGFFVVVnajloQTpkNGUyMTY3ZjlhOTg0NTVl&style=classic" frameborder="0"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2019-03-13/teide.jpeg&amp;autoLoad=true"></iframe>
 
-The GoPro Fusion's and MAX's we use with our trekker pack do have a partial blind spot in the nadir and zenith area -- evident in the "join lines" between the stitched photograph... but we still have enough space to point viewers and passers-by to [trekview.org](https://www.trekview.org).
+[View on Map the Paths](https://www.mapthepaths.com/sequence/faa0b0a3-43b0-4a12-97ff-8a96c11dc845/tour/3444c03c-b184-4ab0-8ed7-ad86da3e8cbc).
+
+The GoPro Fusion's and MAX's we use with our trekker pack do have a partial blind spot in the nadir and zenith area -- evident in the "join lines" between the stitched photograph (look down in the image above)... but we still have enough space to point viewers and passers-by to [trekview.org](https://www.trekview.org) using the Trek Pack branding!
 
 Perhaps that's how you found us?

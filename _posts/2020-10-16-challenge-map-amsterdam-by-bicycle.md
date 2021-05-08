@@ -19,7 +19,9 @@ One of the first things I did was buy a bicycle (and a good lock).
 
 With my helmet mounted GoPro Max I took to the streets to explore the city.
 
-<iframe width="800" height="600" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=o7ll1XqLOM9LyW4J0k54x6&x=0.06313410231801286&y=0.504368242057061&client_id=M1E0WHVYcHZUdUI3Q0l0VThuNnU0ajo2OTY0ZWUzZDZlODY2OWI3&style=classic" frameborder="0"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2020-10-16/amsterdam-bicycle-lane.jpg&amp;autoLoad=true"></iframe>
+
+[View on Map the Paths](https://www.mapthepaths.com/sequence/30db2fd2-87a1-4b77-b263-49f1f3e86ea6/detail).
 
 After a week spent riding a little over 75km and speaking to other cyclists (pretty much everyone!) it became clear there were many improvements that could be made.
 
