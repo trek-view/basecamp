@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Time for another virtual 7 day hike**
+**Time for another virtual 7 day hike.**
 
 [Last week saw us embark on a virtual expedition on the Macheme Route](/blog/2021/climbing-kilimanjaro-part-2-macheme).
 
@@ -25,7 +25,7 @@ It takes a long four-hour drive from the Moshi town (a popular travel hub) to ge
 
 ## Rainforest zone
 
-<iframe width="800" height="600" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=bWMjR9RLwe7bTM1z2AuS5A&client_id=M1E0WHVYcHZUdUI3Q0l0VThuNnU0ajo2OTY0ZWUzZDZlODY2OWI3&style=classic" frameborder="0"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-05-14/rainforest.jpeg&amp;autoLoad=true"></iframe>
 
 The rainforest zone on the Rongai route is somewhat special from this zone in the south, east of west - it does not receive so much rainfall, and here the hikers have a chance to see coniferous trees.
 
@@ -33,7 +33,7 @@ The rainforest zone on the Rongai route is somewhat special from this zone in th
 
 ## Heather and Moorland 
 
-<iframe width="800" height="600" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=m5R6J6c1OOBy3sSEVRT2sQ&client_id=M1E0WHVYcHZUdUI3Q0l0VThuNnU0ajo2OTY0ZWUzZDZlODY2OWI3&style=classic" frameborder="0"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-05-14/moorland.jpg&amp;autoLoad=true"></iframe>
 
 At around 2800 m the heather and moorland zone begins. This is where the rainforest zone recedes, eventually giving way to heather. The higher we go, the less thick vegetation becomes.  
 
@@ -41,7 +41,7 @@ At around 2800 m the heather and moorland zone begins. This is where the rainfor
 
 ## Alpine desert 
 
-<iframe width="800" height="600" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=ZCpmzEEdrGTbVmXzfTpdTR&client_id=M1E0WHVYcHZUdUI3Q0l0VThuNnU0ajo2OTY0ZWUzZDZlODY2OWI3&style=classic" frameborder="0"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-05-14/alpine.jpg&amp;autoLoad=true"></iframe>
 
 Alpine (or Highland) desert starts at 4000 m. These fields look empty and desolated. This area gets the least rainfall of all - less than 8 inches every year. The vegetation is meagre, as very few plants can handle burning say at daytime and subzero temperatures at night.
 
@@ -49,7 +49,7 @@ Alpine (or Highland) desert starts at 4000 m. These fields look empty and desola
 
 ## Arctic Zone
 
-<iframe width="800" height="600" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=uHjX6CHTzySqoRYbC5kPyV&client_id=M1E0WHVYcHZUdUI3Q0l0VThuNnU0ajo2OTY0ZWUzZDZlODY2OWI3&style=classic" frameborder="0"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-05-14/arctic-zone.jpeg&amp;autoLoad=true"></iframe>
 
 The Arctic zone starts at 5000m and tops at Uhuru Peak at 5,895m. Its lower area is known as “scree” - the mass of loose pebble, gravel and soil. It is one of the reasons why all summits start at night - low temperatures freeze pieces of this scree together, making it less loose and allowing the boots to have better traction. 
 
@@ -57,7 +57,7 @@ The Arctic zone starts at 5000m and tops at Uhuru Peak at 5,895m. Its lower area
 
 ## Uhuru Peak (5,895m)
 
-<iframe width="800" height="600" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&map_style=Mapillary streets&image_key=lyi8NGDt2yZs4qLmUd7Hzq&client_id=M1E0WHVYcHZUdUI3Q0l0VThuNnU0ajo2OTY0ZWUzZDZlODY2OWI3&style=classic" frameborder="0"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-05-14/kili-uhuru-peak.jpeg&amp;autoLoad=true"></iframe>
 
 Congratulations you are now at Uhuru Peak, Tanzania. 5895 AMSL.
 
@@ -65,7 +65,7 @@ Congratulations you are now at Uhuru Peak, Tanzania. 5895 AMSL.
 
 ## Explore the complete Rogai Guidebook
 
-<img class="img-fluid" src="/assets/images/blog/2021-05-14/" alt="Map the Paths Kilimanjaro Rogai Route Guidebook" title="Map the Paths Kilimanjaro Rogai Route Guidebook" />
+<img class="img-fluid" src="/assets/images/blog/2021-05-14/rongai-route-kilimanjaro-guidebook-sm.jpeg" alt="Map the Paths Kilimanjaro Rogai Route Guidebook" title="Map the Paths Kilimanjaro Rogai Route Guidebook" />
 
 You've missed 5 scenes and many more points of interest showing more about the geography of Mount Kilimanjaro and the Rongai Route.
 
