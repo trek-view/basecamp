@@ -21,7 +21,7 @@ This week we'll be tackling the Rongai Route.
 
 Due to the remote location of its trailhead, Rongai is seldom visited by the trekkers.
 
-It takes a long four-hour drive from the Moshi town (a popular travel hub) to get there. Yet, the experiences on Rongai are rewarding - the only route approaching Kilimanjaro from the North, it offers sheerly different vegetation and landscapes from what a one can see on the other Kilimanjaro route.   
+It takes a long four-hour drive from the Moshi town (a popular travel hub) to get there. Yet, the experiences on Rongai are rewarding - the only route approaching Kilimanjaro from the North, it offers sheerly different vegetation and landscapes from what a one can see on the other Kilimanjaro route.
 
 ## Rainforest zone
 
@@ -35,7 +35,7 @@ The rainforest zone on the Rongai route is somewhat special from this zone in th
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-05-14/moorland.jpg&amp;autoLoad=true"></iframe>
 
-At around 2800 m the heather and moorland zone begins. This is where the rainforest zone recedes, eventually giving way to heather. The higher we go, the less thick vegetation becomes.  
+At around 2800 m the heather and moorland zone begins. This is where the rainforest zone recedes, eventually giving way to heather. The higher we go, the less thick vegetation becomes.
 
 [View points of interest in the Map the Paths Guidebook](https://www.mapthepaths.com/guidebook/1d8221a5-20f1-4b8d-ad2d-cd69604d70d2/detail/?image_key=m5R6J6c1OOBy3sSEVRT2sQ)
 
@@ -51,7 +51,7 @@ Alpine (or Highland) desert starts at 4000 m. These fields look empty and desola
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-05-14/arctic-zone.jpeg&amp;autoLoad=true"></iframe>
 
-The Arctic zone starts at 5000m and tops at Uhuru Peak at 5,895m. Its lower area is known as “scree” - the mass of loose pebble, gravel and soil. It is one of the reasons why all summits start at night - low temperatures freeze pieces of this scree together, making it less loose and allowing the boots to have better traction. 
+The Arctic zone starts at 5000m and tops at Uhuru Peak at 5,895m. Its lower area is known as “scree” - the mass of loose pebble, gravel and soil. It is one of the reasons why all summits start at night - low temperatures freeze pieces of this scree together, making it less loose and allowing the boots to have better traction.
 
 [View points of interest in the Map the Paths Guidebook](https://www.mapthepaths.com/guidebook/1d8221a5-20f1-4b8d-ad2d-cd69604d70d2/scene/?image_key=EYWw0gC3SJtOOPw5ezWpMF)
 
