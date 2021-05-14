@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2021-05-14/rongai-route-kilimanjaro-guidebook-meta.jpeg
 featured_image: /assets/images/blog/2021-05-14/rongai-route-kilimanjaro-guidebook-sm.jpeg
 layout: post
-published: false
+published: true
 ---
 
 **Time for another virtual 7 day hike**
