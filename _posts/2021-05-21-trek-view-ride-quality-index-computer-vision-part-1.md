@@ -1,7 +1,7 @@
 ---
 date: 2021-05-21
 title: "Trek View Trail Quality Index: An Alternative Method Using Computer Vision"
-description: "Mobile apps "
+description: "Using the imagery captured by the Data Bike to measure cycle path quality."
 categories: guides
 tags: [rRuf, Data Bike, DMAMPO, Minnesota]
 author_staff_member: dgreenwood
@@ -13,13 +13,15 @@ published: true
 
 **Using images to determine trail quality.**
 
-Last month I shared a link to the [IEEE Global Road Damage Detection Challenge 2020](https://rdd2020.sekilab.global/), [after realising measuring the surface quality of a bike path from sensors in a phone was not particularly accurate at scale](/blog/2021/trek-view-ride-quality-index)).
+Last month I shared a link to the [IEEE Global Road Damage Detection Challenge 2020](https://rdd2020.sekilab.global/), [after realising measuring the surface quality of a bike path from sensors in a phone was not particularly accurate at scale](/blog/2021/trek-view-ride-quality-index).
+
+## Damage detection
+
+<img class="img-fluid" src="/assets/images/blog/2021-05-21/sample2.jpeg" alt="IEEE Global Road Damage Detection Challenge 2020" title="IEEE Global Road Damage Detection Challenge 2020" />
 
 [You can see the results of this years Global Road Damage Detection Challenge in this paper](https://www.researchgate.net/publication/345989816_Global_Road_Damage_Detection_State-of-the-art_Solutions).
 
 What I really like about this challenge is that [all entries are required to be open-sourced](https://rdd2020.sekilab.global/submissions/).
-
-## Damage detection
 
 There were 12 submissions to the 2020 challenge, [as detailed in the report](https://www.researchgate.net/publication/345989816_Global_Road_Damage_Detection_State-of-the-art_Solutions):
 
@@ -116,13 +118,11 @@ There were 12 submissions to the 2020 challenge, [as detailed in the report](htt
 </tr>
 </tbody></table>
 
-<img class="img-fluid" src="/assets/images/blog/2021-05-21/sample2.jpeg" alt="IEEE Global Road Damage Detection Challenge 2020" title="IEEE Global Road Damage Detection Challenge 2020" />
+The aim of the competition was to build models that could identify areas of a road where damage is present and the severity.
 
-The aim of the project was to build models that could identify areas of a road where damage is identified and severity calculated.
+Though I realised this wasn't completely suited to our aims for two main reasons.
 
-Though I realised this wasn't perfectly suited to our aims for two main reasons.
-
-Firstly, many cycle paths cover a range of terrain in addition to asphalt roads.
+Firstly, many cycle paths cover a range of terrain in addition to asphalt roads (which is what these models were built around).
 
 Secondly, although single areas of damage are important, a large pothole can be very dangerous to a cyclist, ride quality, in my mind, is more about the condition of an entire area of a path. Yes, a large pothole lowers ride quality and should be fixed, but if the path is wide, smooth and the pothole can be easily avoided, then I'd say the overall quality is pretty good.
 
@@ -138,4 +138,4 @@ I then stumbled across another research paper titled; [Road Surface Classificati
 
 As you can see from the above video, the software detects the class of road (either asphalt, paved, or unpaved) and also determines a quality score (either good, regular or bad). The numbers shown in the video indicate probability of correct detection.
 
-Over the next few weeks I'm going to dig further into these models, and see how they perform with images from the data bikes.
+Over the next few weeks I'm going to dig further into these models and code, see how they perform with images from various data bikes, and see if they're suited for use at scale.
