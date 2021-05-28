@@ -1,12 +1,12 @@
 ---
-date: 2021-06-01
+date: 2021-05-28
 title: "Crowdsourcing safer bicycle lane design (a 8 month update)"
 description: "Time to dust off the helmet cameras and take part in some cycling capture challenges."
 categories: guides
 tags: [Data Bike, DMAMPO, Minnesota, Sustrans]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-06-01/map-the-paths-devonshire-tunnel-meta.jpg
-featured_image: /assets/images/blog/2021-06-01/map-the-paths-devonshire-tunnel-sm.jpg
+image: /assets/images/blog/2021-05-28/map-the-paths-devonshire-tunnel-meta.jpg
+featured_image: /assets/images/blog/2021-05-28/map-the-paths-devonshire-tunnel-sm.jpg
 layout: post
 published: true
 ---
