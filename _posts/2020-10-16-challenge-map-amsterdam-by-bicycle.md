@@ -57,4 +57,4 @@ Not a cyclist? [Challenges can be set for other 20 other activities too, if cycl
 
 ## Update 2021-05-28
 
-[Crowdsourcing safer bicycle lane design (a 8 month update)](/blog/2021/crowdsourcing-safer-bicyle-lane-design)
+[Crowdsourcing safer bicycle lane design (an eight month update)](/blog/2021/crowdsourcing-safer-bicyle-lane-design)
