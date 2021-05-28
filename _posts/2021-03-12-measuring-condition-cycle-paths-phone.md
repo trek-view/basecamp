@@ -17,14 +17,14 @@ In 2019 I briefly mentioned the Des Moines Area Metropolitan Planning Organizati
 
 <img class="img-fluid" src="/assets/images/blog/2021-03-12/dmampo-data-bike.jpg" alt="DMAMPO Data Bike report 2019 Data Bike" title="DMAMPO Data Bike report 2019 Data Bike" />
 
-The [Data Bike](https://dmampo.org/data-bike/) specifications:
+Their [Data Bike](https://dmampo.org/data-bike/) specifications:
 
 1. Yuba Spice Curry electric bike
 2. Samsung Gear 360 degree camera
 3. iPhone with [rRuf app](https://apps.apple.com/us/app/rruf/id968766794) installed
 4. A rear facing GoPro Hero camera aimed at the ground
 
-The 360 imagery captured by the Data Bike is used [on Google Street View](https://www.google.com/maps/contrib/104211468250721497845), the rRuf app and GoPro cameras are used to capture ride quality data which in turn is used to identify areas of maintenance and help set future trail budgets.
+The 360 imagery captured by the DMAMPO Data Bike is used [on Google Street View](https://www.google.com/maps/contrib/104211468250721497845), the rRuf app and GoPro cameras are used to capture ride quality data which in turn is used to identify areas of maintenance and help set future trail budgets.
 
 You can see an example of the augmented data for ride quality in the [DMAMPO Central Iowa Trail Condition 2019 Report](https://dmampo.org/wp-content/uploads/2020/02/2019-Data-Bike-Report-1.pdf).
 

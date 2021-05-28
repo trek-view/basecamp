@@ -54,3 +54,7 @@ What are you waiting for? ON YOUR BIKE! [Here's some inspiration for you](https:
 All you need to get started is a bike, mobile phone, and mount to hold it. [View our recommended mobile phone setup (and action/360 camera alternatives) here](https://guides.trekview.org/mtp-web/user-guide/sequences/capture).
 
 Not a cyclist? [Challenges can be set for other 20 other activities too, if cycling isn't your thing](https://www.mapthepaths.com/challenge/capture/list/).
+
+## Update 2021-05-28
+
+[Crowdsourcing safer bicycle lane design (a 8 month update)](/blog/2021/crowdsourcing-safer-bicyle-lane-design)
