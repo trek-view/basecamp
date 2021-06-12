@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**From kit setup to publish in 4 simple steps.**
+**From kit setup to publishing in 4 simple steps.**
 
 A little over 2 years ago, I discovered anyone could upload images to Google Street View.
 
@@ -32,7 +32,7 @@ If you own a GoPro Fusion, or want to buy a cheap second-hand one from Ebay, the
 
 Though in the years that have passed, we've covered 1000's of km's, [including up one of the Seven Summits](/blog/2021/climbing-kilimanjaro-part-1-the-kit), [using the new GoPro MAX and v2 Trek Pack announced back in June 2020](/blog/2020/announcing-trek-pack-v2).
 
-I realised, unlike the posts above, I hadn't detailed much about using the Trek Pack v2 ([except for the detailed setup guide](https://guides.trekview.org/trek-pack/v2), so I thought I'd take the opportunity of this weeks blog post to show you just how easy it is to get your images and videos _on the map_ in an easy to read format...
+[After writing a recent post for the Mapillary blog](https://blog.mapillary.com/update/2021/05/26/trekking-kilimanjaro.html) I realised that, unlike the posts above, I hadn't detailed much about using the Trek Pack v2 ([except for the detailed setup guide](https://guides.trekview.org/trek-pack/v2), so I thought I'd take the opportunity of this weeks blog post to show you just how easy it is to get your images and videos _on the map_ in an easy to read format...
 
 ## Quick Start
 
@@ -50,7 +50,7 @@ _Note: We use the GoPro Seeker backpack, but this has since been replaced by the
 
 At present we use photos (timelapse mode @ 2 second intervals) to create panoramic tours (versus video).
 
-This is for 4 a few reasons;
+This is for a few reasons;
 
 * Video is energy intensive and quickly drains the battery
 * Video files are large and are hard to edit without professional equipment (and the required GoPro Player app only supports GPS on Mac)
@@ -63,13 +63,13 @@ _Note: The Map the Paths Uploader (mentioned in step 3) will still work with vid
 
 <img class="img-fluid" src="/assets/images/blog/2021-06-04/map-the-paths-uploader-integrations-sm.jpg" alt="Map the Paths Uploader Integrations" title="Map the Paths Uploader Integrations" />
 
-[Now download the Map the Paths Uploader](https://www.mapthepaths.com/uploader).
+[Start by downloading the Map the Paths Uploader](https://www.mapthepaths.com/uploader).
 
 You can use the Uploader to:
 
 * remove all the frames you don't want (many times I've left the camera running whilst nipping for a pee in some bushes on a hike... people don't want to see that!).
 * add a nadir to the base of your 360 images to show off a logo or your company name.
-* then upload to Map the Paths, Mapillary, Google Street View, Strava (GPS track)
+* then upload to Map the Paths, Mapillary, Google Street View, and Strava (GPS track only)
 * [plus a whole host of other features...](https://www.mapthepaths.com/uploader)
 
 **Sneak peak:** We're also working on an integration with [KartaView (formerly OpenStreetCam)](https://kartaview.org/map/@-6.407518221863476,107.04770438649952,8z). Watch out for an announcement soon!
