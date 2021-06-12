@@ -67,7 +67,7 @@ They are January to March and June to October. June to October is generally cold
 
 Outside of these windows, the probability of rain significantly increases. Sadly the GoPro MAX's used on our Trek Packs don't work in the rain, so we needed to work around the good weather periods.
 
-<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-04-30/GSAA9832.JPG&amp;autoLoad=true"></iframe>
+<img class="img-fluid" src="/assets/images/blog/2021-04-30/altezza-joshua.jpeg" alt="Joshua at Altezza Travel" title="Joshua at Altezza Travel" />
 
 Luckily, Joshua, our brilliant cameraman, managed to capture two routes, Macheme and Rongai, around an already busy schedule (thanks to Anatolii and Aleksandr for their help to organise).
 

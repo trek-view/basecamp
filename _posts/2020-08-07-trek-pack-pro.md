@@ -11,39 +11,31 @@ layout: post
 published: true
 ---
 
-**We think so!**
+**I think so!**
 
-There are some very secret places around the globe.
-
-Area 51 (even if everyone knows where it is). Google X Labs, where Google creates things of the future. Apple has a very very secret lab for new devices they're developing.
-
-But there is a place more secret than anywhere else…
-
-The S.T.S.V.S.R.S.L.S. or Secret Trek Secret View Secret Research Secret Labs Secret… but you are lucky, because we decided to open up the doors of the S.T.S.V.S.R.S.L.S. for you today!
-
-What are we working on?
+_This is a guest post by Federico Debetto._
 
 <img class="img-fluid" src="/assets/images/blog/2020-08-07/trek-pack-pro-sm.jpg" alt="Trek Pack Pro" title="Trek Pack Pro" />
 
-We’re building the perfect tool to map the natural world at street level; the Trek Pack Pro!
+I'm building the perfect tool to map the natural world at street level; the Trek Pack Pro!
 
-Whilst [our Trek Pack v2](/trek-pack) is a consumer grade camera suitable for most people, we also know that special locations where the highest possible image quality is required (we’ve got a few of these trips planned) .
+Trek View's [Trek Pack v2](/trek-pack) is a consumer grade camera suitable for most people, but I also know that special locations often require the highest possible image quality to do them justice (I’ve got a few of these trips planned) .
 
-When we decided to create a Pro version of the Trek Pack we knew it would have to be wearable for long periods and to let the trekker to move comfortably and stably on mountain paths or in the middle of the woods.
+When I decided to create a Pro version of the Trek Pack I knew it would have to be wearable for long periods and to let the trekker to move comfortably and stably on mountain paths or in the middle of the woods.
 
-We decided to choose the better cameras in terms of image quality, and we chose the Insta 360 Titan, an 8 lens camera with micro four third sensors and unprecedented dynamic range (often is the Achilles heel of all the other 360 cameras I have tested before).
+I decided to choose the better cameras in terms of image quality, and I chose the Insta 360 Titan, an 8 lens camera with micro four third sensors and unprecedented dynamic range (often is the Achilles heel of all the other 360 cameras I have tested before).
 
-The Titan is an exceptional camera, but, as its marketing claims, “Built for cinematic VR” we needed to customise it a bit…
+The Titan is an exceptional camera, but, as its marketing claims, “Built for cinematic VR” I needed to customise it a bit...
 
-These modifications are still a secret, and will be announced later in the year, but what I can say is that after making them, we created a very nice mapping toy.
+These modifications are still a secret, and will be announced later in the year, but what I can say is that after making them, I created a very nice mapping toy.
 
-The Titan uses 9 (8+1) SD cards and we opted for a few sets of 128Gb cards. Each set of cards is able to record just under 2 hours of video footage in Street View mode, so 11K, 5fps..
+The Titan uses 9 (8+1) SD cards and I opted for a few sets of 128Gb cards. Each set of cards is able to record just under 2 hours of video footage in Street View mode, so 11K, 5fps..
 
 The camera comes with a stock battery able to power and capture for around 3 hours, but beware, the replacement batteries have less power than the stock one.
 
 <img class="img-fluid" src="/assets/images/blog/2020-08-07/trek-pack-pro-downhill.jpg" alt="Trek Pack Pro" title="Trek Pack Pro" />
 
-About the backpack. We selected a military one, with a rigid frame, but as light and comfortable as possible. It’s not finished yet, and we are still working to improve it daily, fine tuning small parts after every hike done.
+About the backpack. I selected a military one, with a rigid frame, but as light and comfortable as possible. It’s not finished yet, and I are still working to improve it daily, fine tuning small parts after every hike done.
 
 What I can say is that the weight is around 10Kg. All included (except for lunch). So easy and comfortable to carry all day long.
 
@@ -55,6 +47,6 @@ OK, I can't end without showing some photos. Here is some of the test footage fr
 
 <iframe src="https://www.google.com/maps/embed?pb=!4v1596740045273!6m8!1m7!1sCAoSLEFGMVFpcE1vN0RFRHFVaW9SSDlwd3UzWHR3OXpCaFJrTzluUXRCVldWLS1x!2m2!1d46.45782990261847!2d11.63311149186629!3f139.59396111326615!4f-1.1238419233981034!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
-Whilst the camera is still in the testing phase, we’ll release a version ready to be loaned to those who need it for very special projects... like you!
+Whilst the camera is still in the testing phase, I’ll release a version ready to be loaned to those who need it for very special projects... like you!
 
-Be sure to subscribe to our mailing list below to be the first to hear of Trek Pack Pro product updates.
+[Be sure to follow Federico on Facebook for updates on his Trek Pack Pro](https://www.facebook.com/Google.Maps.Business.View.Livorno/).

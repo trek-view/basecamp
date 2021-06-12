@@ -15,7 +15,13 @@ published: true
 
 <img class="img-fluid" src="/assets/images/blog/2019-08-23/trek-pack-external-power.jpg" alt="Trek Pack with external power" title="Trek Pack with external power" />
 
-I received lots of comments after posts [1](/blog/2019/diy-google-street-view-part-1-how-trek-view-started), [2](/blog/2019/diy-google-street-view-part-2-my-street-view-kit), [3](/blog/2019/diy-google-street-view-part-3-preparing-to-shoot), [4](/blog/2019/diy-google-street-view-part-4-processing-photos) and [5](/blog/2019/diy-google-street-view-part-5-uploading-photos-using-your-computer) detailing how to build a DIY Trek Pack.
+I received lots of comments after previos posts detailing how to build a DIY Trek Pack:
+
+* [DIY Google Street View (1/5): How I (Trek View) Started Capturing 360-Degree Tours](/blog/2019/diy-google-street-view-part-1-how-trek-view-started)
+* [DIY Google Street View (2/5): My Basic Kit for Creating Outdoor Street View Tours](/blog/2019/diy-google-street-view-part-2-my-street-view-kit)
+* [DIY Google Street View (3/5): Preparing to Shoot 360-Degree Tours](/blog/2019/diy-google-street-view-part-3-preparing-to-shoot)
+* [DIY Google Street View (4/5): Stitching 360-Degree Photos Using GoPro Fusion Studio](/blog/2019/diy-google-street-view-part-4-processing-photos)
+* [DIY Google Street View (5/5): Publish 360-Degree Photos to Street View](/blog/2019/diy-google-street-view-part-5-uploading-photos-using-your-computer) 
 
 Keep them coming in the comments.
 
