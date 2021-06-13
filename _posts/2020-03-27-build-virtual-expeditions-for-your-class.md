@@ -140,3 +140,8 @@ Find us on:
 * [Facebook](https://www.facebook.com/trekview/)
 
 _Update August 2020: [You can now create virtual guidebooks in Map the Paths too](/blog/2020/map-the-paths-guidebooks)._
+
+
+## Update (2021-06-13)
+
+Google Tour Creator will shutdown on June 30th 2021. [Map the Paths now offers alternative tour creation software](/blog/2021/google-tour-creator-alternatives).

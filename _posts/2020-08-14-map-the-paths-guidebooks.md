@@ -52,4 +52,4 @@ Please do share Guidebooks you've created on Map the Paths with us on [Facebook]
 
 Now, get exploring!
 
-_Update October 2020: [Curate and share your street-level images](/blog/2020/map-the-paths-mapillary-import)._
+_Update October 2020: [Upload and share your own street-level images in Guidebooks](/blog/2020/map-the-paths-mapillary-import)._
