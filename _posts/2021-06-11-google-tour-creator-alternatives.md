@@ -5,8 +5,8 @@ description: "Map the Paths now offers the ability to create guided virtual tour
 categories: mapthepaths
 tags: [Google, Tour Creator, Map the Paths]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2020-04-09/map-the-paths-guidebook-kilimanjaro-meta.jpg
-featured_image: /assets/images/blog/2020-04-09/map-the-paths-guidebook-kilimanjaro-sm.jpg
+image: /assets/images/blog/2021-06-11/map-the-paths-guidebook-kilimanjaro-meta.jpg
+featured_image: /assets/images/blog/2021-06-11/map-the-paths-guidebook-kilimanjaro-sm.jpg
 layout: post
 published: true
 ---
