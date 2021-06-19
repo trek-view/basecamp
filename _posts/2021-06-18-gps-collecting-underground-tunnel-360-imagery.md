@@ -61,10 +61,10 @@ Inertial sensor fusion algorithms are used to estimate orientation and position 
 
 Using the IMU measurements (such as acceleration, roll, pitch.), the algorithms try to assume where you've been to find your current position.
 
-The algorithms can get complex, but at they're most simplistic they are easy to understand. If you move 10 m/s due North with no elevation or pitch, you will be 10 meters north of your original position (ignoring curvature of the earth) -- the algorithms takes the sensor measurements to perform this same calculation logic.
+The algorithms can get complex, but at they're most simplistic they are easy to understand. If you move 10 m/s due North with no elevation or pitch, you will be 10 meters north of your original position (ignoring curvature of the earth) -- the algorithms take the sensor measurements to perform this same calculation logic.
 
-It seems this simpleRTK2B-F9R has been quite a popular choice amongst those mapping street-level images of roads from their cars (where tunnels are often an issue).
+It seems the simpleRTK2B-F9R has been quite a popular choice amongst those mapping street-level images of roads from their cars (where tunnels are often an issue).
 
-Whilst consumer 360 camera's have IMU's they don't have the inertial sensor fusion elements (mainly due to added cost and size), or if they do, they are nowhere near advanced (manufacturers tend to focus on image quality and these algorithms require a lot of processing power).
+Whilst consumer 360 camera's have IMU's they don't have the inertial sensor fusion elements (mainly due to added cost and size), or if they do, they are nowhere near advanced (manufacturers tend to focus on image quality and these algorithms require a lot of processing power for which image processing takes precedence).
 
-I can't see this technology being implemented in consumer cameras anytime soon, but as prices for this technology starts come down and/or dedicated mapping cameras enter the market we might start seeing improved telemetry capture from 360 cameras.
+As such, I can't see this technology being implemented in consumer cameras anytime soon, but as prices for this technology start to come down and/or dedicated mapping cameras enter the market we might start seeing improved telemetry capture from 360 cameras.
