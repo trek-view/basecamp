@@ -1,74 +1,70 @@
 ---
-date: 2021-06-11
-title: "Solutions for GPS when underground or under-canopy"
-description: "How to keep track of your position when line-of-sight to the sky is impeded."
+date: 2021-06-18
+title: "Solutions for tracking your position when underground or under-canopy"
+description: "How to keep track of your position when your line-of-sight to the sky is impeded."
 categories: guides
-tags: []
+tags: [mapthepaths, GPS, Jim Gayes, ArduSimple, GoPro, LabPano]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-06-11/
-featured_image: /assets/images/blog/2021-06-11/
+image: /assets/images/blog/2021-06-18/jim-david-bath-to-bristol-tunnel-sm.png
+featured_image: /assets/images/blog/2021-06-18/jim-david-bath-to-bristol-tunnel-sm.png
 layout: post
-published: false
+published: true
 ---
 
-**N
+**GPS signal, where there is no GPS signal.**
 
-I've talked many times about the minor problems of GPS recievers built into cameras.
+I've talked many times about the minor problems of GPS receivers built into cameras.
 
 Overall they're very good. Especially when you consider almost all 360 cameras were not designed with mapping in mind.
 
-However, in situations where your under a tree canopy, or even worse, a tunnel, it is very likely you'll see a few erronous positioning measurements. [This is because GPS recievers need a clear line of site to a minimum of 4 GPS satellites](/blog/2020/gps-101).
+However, in situations where your under a tree canopy, or even worse, a tunnel, it is very likely you'll see a few erroneous positioning measurements.
 
-For our work, accurate positioning is important, but in most cases we can allow for some anomolous points, either discarding the image entierly or guessing what path it was taken on using existing OSM map data.
+This is not an issue with GPS receiver per se. [It is because GPS receivers need a clear line of site to a minimum of 4 GPS satellites](/blog/2020/gps-101).
 
-However, recently I've bumped into a number of occassions where this was not so easy.
+For our work, accurate positioning is important, but in most cases we can allow for some anomalous points, either discarding the image entirely or guessing what path it was taken on using existing OSM map data.
+
+However, recently I've bumped into a number of occasions where this was not so easy.
 
 Take for example the Bath to Bristol Railway Path. It's an immensely popular traffic-free route providing a mainly tranquil walking and cycling path between the two cities.
 
-Shortly after leaving Bristol (or about to arrive in Bristol, depending on direction) you'll find the 0.5 km long Staple Hill Tunnel.
+Shortly after leaving Bristol (or about to arrive in Bristol, depending on direction) you'll find the 0.5 km long Staple Hill Tunnel. It's part of the [Sustrans National Cycle Network](https://www.sustrans.org.uk/national-cycle-network) -- [Route 4](https://www.sustrans.org.uk/find-a-route-on-the-national-cycle-network/route-4).
 
+The tunnel was originally built for trains carrying coal. With the requirements for inner city coal a thing of the past, and the trainline now removed, it now makes for an brilliant cycle path (even if you do get a bit wet from groundwater dripping from the roof in place).
 
-About 
+Though 0.5 km, and fairly deep underground it introduces problems of GPS tracking.
 
-This ride was inspired by Map the Paths user Jim Gayes who has been working with [Sustrans](https://www.sustrans.org.uk/national-cycle-network), the charity responsible for the UK’s national cycle network.
+I rode the route a few weeks ago. I did not manage to get one accurate GPS position from my GoPro MAX in the tunnel.
 
-Not only did he covered this route, he also covered another famous nearby route, also on disused railway tracks, [the Bath Two Tunnels Circuit](https://www.sustrans.org.uk/find-a-route-on-the-national-cycle-network/bath-two-tunnels-circuit).
+My inspiration for this ride came from [Map the Paths user Jim Gayes](https://www.mapthepaths.com/user/JG360/profile/) who has recently been working with Sustrans.
 
-The Combe Down Tunnel, the longest of the two tunnels at an impressive 1,672 metres, is the UK's longest cycling and walking tunnel.
+Thanks to some careful planning and forethought to equipment, Jim was able to capture a GPS track through the entire tunnel, as shown below!
 
-Over 3 times longer than Staple Hill Tunnel.
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-06-18/staple-hill-tunnel-jim-gayes.jpeg&amp;autoLoad=true"></iframe>
 
-Thanks to some careful planning and forethought to equipment, Jim was able to capture a GPS track through the entire tunnel! Wow.
+Wow.
 
-So how did he do it? 
+Here you can clearly see the difference between my ride (blue) and Jim's ride (green)
 
-tl;dr, with the help of an external [IMU](/blog/2020/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer).
+<img class="img-fluid" src="/assets/images/blog/2021-06-18/jim-david-bath-to-bristol-tunnel.png" alt="Bath to Bristol Railway Path - Staple Hill Tunnel" title="Bath to Bristol Railway Path - Staple Hill Tunnel" />
 
+But how did he do it? 
 
-Jim’s solution was to pair up his Labpano Pilot One 360° camera with the [ArduSimple simpleRTK2B-F9R module](https://www.ardusimple.com/product/simplertk2b-f9r-v3/) (yes, it's not cheap).
+Jim’s solution was to pair up his Labpano Pilot One 360° camera with the [ArduSimple simpleRTK2B-F9R module](https://www.ardusimple.com/product/simplertk2b-f9r-v3/) (_yes, it's not cheap_).
 
-The ArduSimple simpleRTK2B-F9R's IMU combined with it's Inertial Sensor Fusion calculates a reasonably accurate location when all statilliet signals are lost.
+<img class="img-fluid" src="/assets/images/blog/2021-06-18/jim-gayes-bike.jpg" alt="Jim Gayes ArduSimple simpleRTK2B-F9R" title="Jim Gayes ArduSimple simpleRTK2B-F9R" />
 
-The module is well protected from the British weather in Jim's custom built enclosure, also housing a battery as a power source.
+The ArduSimple simpleRTK2B-F9R's [IMU](/blog/2020/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer) combined with it's Inertial Sensor Fusion calculates a reasonably accurate location when all satellite signals are lost.
 
-It seems this simpleRTK2B-F9R has been quite a popular choice amongst those mapping street-level images of roads
+To be clear, this is not GPS resolving the position.
 
-Hopefully over time we;
+Inertial sensor fusion algorithms are used to estimate orientation and position over time. 
 
+Using the IMU measurements (such as acceleration, roll, pitch.), the algorithms try to assume where you've been to find your current position.
 
+The algorithms can get complex, but at they're most simplistic they are easy to understand. If you move 10 m/s due North with no elevation or pitch, you will be 10 meters north of your original position (ignoring curvature of the earth) -- the algorithms takes the sensor measurements to perform this same calculation logic.
 
+It seems this simpleRTK2B-F9R has been quite a popular choice amongst those mapping street-level images of roads from their cars (where tunnels are often an issue).
 
+Whilst consumer 360 camera's have IMU's they don't have the inertial sensor fusion elements (mainly due to added cost and size), or if they do, they are nowhere near advanced (manufacturers tend to focus on image quality and these algorithms require a lot of processing power).
 
-
-
-Travelling through the Combe Down Tunnel for the first time is an incredible experience, heightened by the extraordinary audio-visual installation, ‘Passage’ by United Visual Artists. A Portrait Bench sits at the entrance of the Devonshire Tunnel.
-
-He recently rode the Ba
-
-
-Along the route you'
-
-
- we believe the value
-
-Jim’s solution was to pair up his Labpano Pilot One 360 camera with the ArduSimple simpleRTK2B-F9R module. The IMU and Fusion processing resolves this challenge as it can have a reasonably accurate location calculated by the IMU when all GNSS signals are lost.
+I can't see this technology being implemented in consumer cameras anytime soon, but as prices for this technology starts come down and/or dedicated mapping cameras enter the market we might start seeing improved telemetry capture from 360 cameras.

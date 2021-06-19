@@ -21,7 +21,7 @@ We're particularity saddened by Google's decision to remove Tour Creator as it b
 
 With the help of Tour Creator we ran our [Treehouse virtual adventures for children](/blog/2020/treehouse-academy-emergency-timetable) and [locally guided tours of historic sites for adults](/blog/2020/virtual-tours-guided-by-local-experts).
 
-[At that point we also wrote a detailed post about how you can use the Tour Maker with your own class or, as many did, with friends and family](/blog/2020/build-virtual-expeditions-for-your-class).
+[At that point we also wrote a detailed post about how you can use the Tour Creator with your own class or, as many did, with friends and family](/blog/2020/build-virtual-expeditions-for-your-class).
 
 [Google's support page recommends you download your tour data before the shutdown date](https://support.google.com/tourcreator/):
 
