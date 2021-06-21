@@ -64,4 +64,8 @@ The beauty of it being, you don't need too much kit to get started, nor do you n
 
 Using what we learn analysing the images from locations around the world, our aim is to provide local governments with the data to make the best investment decisions for new bicycle infrastructure to eliminate all avoidable cyclist deaths.
 
-We can provide the tech, but we need groups who can help us to promote this initiative amongst their local cycling communities. If you manage or are involved in managing cycling infrastructure, [please do get in contact](/contact).
+We can provide the software, but we need groups who can help us to promote this initiative amongst their local cycling communities. If you manage or are involved in managing cycling infrastructure, [please do get in contact](/contact).
+
+## Update 2021-06-25
+
+[Collecting street-level imagery of the UK's cycle networks](/blog/2021/sustrans-uk-national-cycle-network-360-street-level-imagery)

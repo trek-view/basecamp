@@ -65,6 +65,10 @@ The algorithms can get complex, but at they're most simplistic they are easy to 
 
 It seems the simpleRTK2B-F9R has been quite a popular choice amongst those mapping street-level images of roads from their cars (where tunnels are often an issue).
 
+In fact, Jim notes some issues leading to inaccuracy with the ArduSimple simpleRTK2B-F9R being mounted to a bike due to ride vibrations, not seen so much on a car or other transportation types with full suspension. I am told that ArduSimple are planning a firmware update to account for vibration issues like this soon.
+
 Whilst consumer 360 camera's have IMU's they don't have the inertial sensor fusion elements (mainly due to added cost and size), or if they do, they are nowhere near advanced (manufacturers tend to focus on image quality and these algorithms require a lot of processing power for which image processing takes precedence).
 
 As such, I can't see this technology being implemented in consumer cameras anytime soon, but as prices for this technology start to come down and/or dedicated mapping cameras enter the market we might start seeing improved telemetry capture from 360 cameras.
+
+Whilst we've got no plans for such advanced positioning technology on our [Trek Packs](/trek-pack), if you're planning to do a professional job, you should seriously consider this technology.

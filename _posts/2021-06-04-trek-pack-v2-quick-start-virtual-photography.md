@@ -44,6 +44,8 @@ _Note: We use the GoPro Seeker backpack, but this has since been replaced by the
 
 [View more details about how to assemble the kit in the full setup guide](https://guides.trekview.org/trek-pack/v2/kit-setup).
 
+Want to use a bicycle to capture? All you need is a helmet and GoPro mount, [as detailed here](https://guides.trekview.org/trek-pack/v2/the-kit#whats-in-the-box).
+
 ### 2. Shoot
 
 <img class="img-fluid" src="/assets/images/blog/2021-06-04/trek-pack-2-gopro-max-timelapse.jpeg" alt="Trek Pack v2 Timelapse mode" title="Trek Pack v2 Timelapse mode" />
