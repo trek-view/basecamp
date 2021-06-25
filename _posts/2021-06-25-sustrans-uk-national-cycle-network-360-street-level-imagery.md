@@ -58,7 +58,7 @@ More info: [Sustrans website](https://www.sustrans.org.uk/find-a-route-on-the-na
 
 [View on Map the Paths](https://www.mapthepaths.com/).
 
-[Drake’s Trail is a 22-mile walking and cycling route, starting in the maritime city of Plymouth and ending in Tavistock, on the wild western edges of Dartmoor.
+Drake’s Trail is a 22-mile walking and cycling route, starting in the maritime city of Plymouth and ending in Tavistock, on the wild western edges of Dartmoor.
 
 More info: [Sustrans website](https://www.sustrans.org.uk/find-a-route-on-the-national-cycle-network/drakes-trail)
 
