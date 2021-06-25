@@ -34,13 +34,13 @@ When you're on route, you can see the signposts indicating the number, direction
 * £1.64 billion was spent in local businesses by leisure and tourist users
 * £21.5 million was saved by the NHS through the Network's impact on people's health
 
-May and June gave us some brilliant weather here in the UK. Me and my friends decided to make the best of it by taking to our bikes to explore some of the UK's cycle network, and take part in some Map the Paths challenges along the way.
+With May and June gave us some brilliant weather here in the UK, me and my friends decided to make the best of it by taking to our bikes to explore some of the cycle network, and take part in some [Map the Paths challenges](https://www.mapthepaths.com/challenge/capture/list/) along the way.
 
 Here are some of the captures...
 
 ## Bristol and Bath Railway Path (Path numbers: 4)
 
-<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-06-25/&amp;autoLoad=true"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-06-25/bristol-bath-railway-path.jpeg&amp;autoLoad=true"></iframe>
 
 [View on Map the Paths](https://www.mapthepaths.com/).
 
@@ -54,7 +54,7 @@ More info: [Sustrans website](https://www.sustrans.org.uk/find-a-route-on-the-na
 
 ## Drakes Trail (Path numbers: 2, 27)
 
-<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-06-25/&amp;autoLoad=true"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-06-25/drakes-trail-gem-bridge.jpeg&amp;autoLoad=true"></iframe>
 
 [View on Map the Paths](https://www.mapthepaths.com/).
 
@@ -64,7 +64,7 @@ More info: [Sustrans website](https://www.sustrans.org.uk/find-a-route-on-the-na
 
 ## New Forest Ride (Path numbers: 2)
 
-<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-06-25/&amp;autoLoad=true"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-06-25/new-forest-ride.jpeg&amp;autoLoad=true"></iframe>
 
 [View on Map the Paths](https://www.mapthepaths.com/).
 
