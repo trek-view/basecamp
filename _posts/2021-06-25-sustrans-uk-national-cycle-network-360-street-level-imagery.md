@@ -72,7 +72,7 @@ This ride follows a section of the railway line between Brockenhurst and Wimborn
 
 More info: [Sustrans website](https://www.sustrans.org.uk/find-a-route-on-the-national-cycle-network/new-forest-ride)
 
-## <Your ride here>
+## Your ride here?
 
 [Upload your imagery to Map the Paths to take part in a capture challenge](https://www.mapthepaths.com/challenge/capture/list/).
 
