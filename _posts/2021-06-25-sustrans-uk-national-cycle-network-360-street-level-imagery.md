@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2021-06-25/national-cycle-network-uk-map-meta.jpg
 featured_image: /assets/images/blog/2021-06-25/national-cycle-network-uk-map-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Inspiration to get cycling this summer.**
