@@ -11,11 +11,13 @@ layout: post
 published: true
 ---
 
-For the past few weeks I've been sharing a lot about 360 tours captured on bikes. Don't worry, this is not another one.
+**Inspiration to get hiking this summer.**
 
-Instead, I thought I'd go back to our roots and share some of my hiking adventures on National Trails here in the UK over the past few years.
+[For the past few weeks I've been sharing a lot about 360 tours captured on bikes](/blog/2021/sustrans-uk-national-cycle-network-360-street-level-imagery). Don't worry, this is not another one.
 
-For those unfamiliar, the UK National Trails are long distance walking routes through the best landscapes in England and Wales. In Scotland the equivalent trails are called [Scotland’s Great Trails](https://www.scotlandsgreattrails.com/).
+Instead, I thought I'd go back to [Trek View's roots](/blog/2019/hello-trekkers) and share some of my hiking adventures of National Trails here in the UK over the past few years. Hopefully it will inspire you to get out-and-about this summer.
+
+For those unfamiliar, the UK National Trails are long distance walking routes through the best landscapes in England and Wales.
 
 <img class="img-fluid" src="/assets/images/blog/2021-07-02/uk-national-trails.jpeg" alt="UK National Trails" title="UK National Trails" />
 
@@ -29,7 +31,7 @@ There are 16 National Trails in the UK:
 * [North Downs Way (England)](https://www.nationaltrail.co.uk/en_GB/trails/north-downs-way/)
 * [Offa's Dyke Path (England/Wales)](https://www.nationaltrail.co.uk/en_GB/trails/offas-dyke-path/)
 * [Peddar's Way and Norfolk Coast Path (England)](https://www.nationaltrail.co.uk/en_GB/trails/peddars-way-and-norfolk-coast-path/)
-* [Pembrokeshire Coast Path in Wales](https://www.nationaltrail.co.uk/en_GB/trails/pembrokeshire-coast-path/)
+* [Pembrokeshire Coast Path (Wales)](https://www.nationaltrail.co.uk/en_GB/trails/pembrokeshire-coast-path/)
 * [Pennine Bridleway (England)](https://www.nationaltrail.co.uk/en_GB/trails/pennine-bridleway/)
 * [Pennine Way (England/Scotland)](https://www.nationaltrail.co.uk/en_GB/trails/pennine-way/)
 * [The Ridgeway (England)](https://www.nationaltrail.co.uk/en_GB/trails/the-ridgeway/)
@@ -38,9 +40,9 @@ There are 16 National Trails in the UK:
 * [Thames Path (England)](https://www.nationaltrail.co.uk/en_GB/trails/thames-path/)
 * [Yorkshire Wolds Way (England)](https://www.nationaltrail.co.uk/en_GB/trails/yorkshire-wolds-way/)
 
-In total, these trails in England and Wales cover around 4,000 Km.
+In total, these trails cover around 4,000 Km.
 
-Here are some snippets of this kilometers that I've covered...
+Here are some snippets of the kilometers that I've covered of some...
 
 ## South West Coast Path
 
@@ -50,7 +52,7 @@ Here are some snippets of this kilometers that I've covered...
 
 The South West Coast Path (England's longest National Trail) follows the UK's rugged coastline through Somerset, Devon, Cornwall and Dorset .
 
-The photo above was taken above the picturesque harbour of Boscastle, Cornwall (just one of many along the route).
+This tour was captured above the picturesque harbour of Boscastle, Cornwall (just one of many along the route).
 
 More info: [National Trails website](https://www.nationaltrail.co.uk/en_GB/trails/south-west-coast-path/)
 
@@ -60,7 +62,7 @@ More info: [National Trails website](https://www.nationaltrail.co.uk/en_GB/trail
 
 [View on Map the Paths](https://www.mapthepaths.com/).
 
-The South Downs Way is another spectacular trail, starting inland at the UK's first capital city, Winchester, and ending in Eastbourne, close to the Seven Sisters cliffs shown in the photo above.
+The South Downs Way is another spectacular trail, starting inland at the UK's first capital city, Winchester, and ending in Eastbourne, close to the Seven Sisters cliffs shown in the image above.
 
 More info: [National Trails website](https://www.nationaltrail.co.uk/en_GB/trails/south-downs-way/)
 
@@ -70,13 +72,15 @@ More info: [National Trails website](https://www.nationaltrail.co.uk/en_GB/trail
 
 [View on Map the Paths](https://www.mapthepaths.com/).
 
-The North Downs Way follows ancient routes on a modern-day pilgrimage through starting in Farnham, Surrey, to the Kent Coast at Dover.
+The North Downs Way follows ancient routes on a modern-day pilgrimage starting in Farnham, Surrey, and finishing on the Kent Coast at Dover.
 
-Following a ridgeline for much of the trail, it offers some stunning views en route, as you can see in the photo above taken at Saint Martha's Church, on the trail about 3 km outside of Guildford, Surrey.
+Following a ridgeline for much of the trail, the trail offers some stunning views en route. The image above taken at Saint Martha's Church on the trail, about 3 km outside of Guildford, Surrey.
+
+More info: [National Trails website](https://www.nationaltrail.co.uk/en_GB/trails/north-downs-way/)
 
 ## Your walk here?
 
-[Upload your imagery of the UK's National Trails (or your own local hikes) to Map the Paths to take part in a capture challenge](https://www.mapthepaths.com/challenge/capture/list/).
+[Take part in a Map the Paths capture challenge by uploading your imagery of the UK's National Trails (or your own local hikes)](https://www.mapthepaths.com/challenge/capture/list/).
 
 Not sure how to get started? [This post will explain everything](/blog/2021/trek-pack-v2-quick-start-virtual-photography).
 
