@@ -74,7 +74,7 @@ More info: [Sustrans website](https://www.sustrans.org.uk/find-a-route-on-the-na
 
 ## Your ride here?
 
-[Upload your imagery to Map the Paths to take part in a capture challenge](https://www.mapthepaths.com/challenge/capture/list/).
+[Upload your imagery of the UK's cycle network (or your own local rides) to Map the Paths to take part in a capture challenge](https://www.mapthepaths.com/challenge/capture/list/).
 
 Not sure how to get started? [This post will explain everything](/blog/2021/trek-pack-v2-quick-start-virtual-photography).
 
