@@ -1,7 +1,7 @@
 ---
 date: 2020-05-15
 title: "Google Street View Publish API - Quick Start Guide"
-description: "All third-party Street View tools are built around the Google Street View Publish API. Here's a closer look at how it works."
+description: "All third-party Street View tools are built around the Google Street View Publish API. Here's a closer look at how it works for uploading short sequences."
 categories: developers
 tags: [Google, Street View]
 author_staff_member: dgreenwood
@@ -311,3 +311,5 @@ If you're looking to use Street View images on your website or app without using
 * [Google Maps JavaScript API (Street View Service)](https://developers.google.com/maps/documentation/javascript/streetview): The Maps JavaScript API provides a Street View service for obtaining and manipulating the imagery used in Google Maps Street View. This Street View service is supported natively within the browser.
 
 _Update October 2020: Map the Paths Desktop Uploader now contains a full implementation of these Google API's. [More information and links to code are here](/blog/2020/map-the-paths-desktop-uploader)._
+
+_Update July 2021: As more Map the Paths trekkers upload longer tours (30+ images), it became clear we needed to take a look at alternative Street View upload methods to the `photo` resource. [This post describes a more scalable approach to uploading longer sequences using the `photoSequence` resource available on the Google Street View Publish API](/blog/2021/preparing-360-video-upload-street-view-publish-api).
