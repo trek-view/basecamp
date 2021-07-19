@@ -11,32 +11,32 @@ layout: post
 published: true
 ---
 
-**POST my_beautiful_panoramas.mp4**
+**`POST my_beautiful_panoramas.mp4`**
 
-Those who use our Map the Paths Uploader will be familiar with [its ability to upload your sequences to Google Street View](https://www.mapthepaths.com/).
+Those who use our Map the Paths Uploader will be familiar with [its ability to upload your sequences to Google Street View](https://www.mapthepaths.com/uploader).
 
-Those of you who are even more techie might know we use the [Google Street View Publish API](https://developers.google.com/streetview/publish) using the `photo` resource to upload each image ([developer docs here](https://guides.trekview.org/mtp-desktop-uploader/developer-docs/integrations/google-street-view)).
+Those of you who are even more techie might know we use the [Google Street View Publish API's](https://developers.google.com/streetview/publish) `photo` resource to upload each image ([developer docs here](https://guides.trekview.org/mtp-desktop-uploader/developer-docs/integrations/google-street-view)).
 
 Those of you who like to take things apart might enjoy [a previous post of mine introducing exactly how the Street View API and `photo` resource works](/blog/2020/street-view-publish-api-quick-start-guide/).
 
 In short, currently the Map the Paths Uploader works with the Google Street View Publish API like so:
 
 1. The Uploader creates a sequence of photo files from videos/photos selected
-2. User selects to the Street View integration, and assigns a [placeID](/blog/2019/place-id-google-street-view/) to the sequence
-2. If the Street View integration is selected, the Uploader uploads all photos in a sequence 1-by-1 to Street View using the [`photo` resource](https://developers.google.com/streetview/publish/alpha/reference/rest/v1/photo?authuser=1#resource:-photo)
-4. This returns information about the `photo` on Google (including its `photoId`. The Uploader stores returned ID of the image
-5. Around 72 hours later the [`mapsPublishStatus`](https://developers.google.com/streetview/publish/alpha/reference/rest/v1/photo?authuser=1#mapspublishstatus) of each photo moves to `PUBLISHED` or `REJECTED_UNKNOWN` 
+2. User selects to the Street View integration, and assigns a [placeID](/blog/2019/place-id-google-street-view/) to the sequence.
+2. The Uploader uploads all photos in a sequence 1-by-1 to Street View using the [`photo` resource](https://developers.google.com/streetview/publish/alpha/reference/rest/v1/photo?authuser=1#resource:-photo).
+4. The Street View API returns information about the `photo` on Google (including its `photoId`. The Uploader stores the returned `photoId` for each image in the sequence.
+5. Around 72 hours later the [`mapsPublishStatus`](https://developers.google.com/streetview/publish/alpha/reference/rest/v1/photo?authuser=1#mapspublishstatus) of each photo moves to `PUBLISHED` or `REJECTED_UNKNOWN`.
 6. The Uploader syncs this information with [Map the Paths Web](https://www.mapthepaths.com/).
 
 This process has worked _fairly_ well to date, but it starts to cause issues for tours of 30+ images. There are a few reasons for this:
 
-* [Google imposed API limits put limits on the amount of data that can be uploaded per day](https://stackoverflow.com/a/59987499)
+* [Google imposed API limits put restrictions on the amount of data that can be uploaded per day](https://stackoverflow.com/a/59987499)
 * Blue line connections don't work particularly well (resulting in lots of single photos on the Google Maps)
 * Lots of black images returned (the `photoId` returned by Street View does not resolve to a photo and presents a black screen to a user)
 
 As more Map the Paths trekkers upload longer tours, it became clear we needed to take a look at alternative methods, and discovered Google offered an alternative resource named [`photoSequence`](https://developers.google.com/streetview/publish/alpha/reference/rest/v1/photoSequence) on the Street View Publish API.
 
-Officially this is still in alpha phase, but there are some good examples of how it's used, [including this example on GitHub](https://github.com/smarquardt/samples-for-svpub/blob/master/video_upload/gopro_fusion_timelapse_uploader.py). 
+Officially this is still in alpha phase (you will need to request access), but there are some good examples of how it's used in the wild, [including this example on GitHub](https://github.com/smarquardt/samples-for-svpub/blob/master/video_upload/gopro_fusion_timelapse_uploader.py). 
 
 That `gopro_fusion_timelapse_uploader.py` script converts a series of timelapse photos into a `photoSequence` (packaging all the photos into a single `.mp4` file for uploading).
 
@@ -81,9 +81,9 @@ The full `photoSequence` resource looks like this.
 }
 ```
 
-After successful upload a full `photoSequence` will be returned with an `id` and nested `photo` object information (including `photoId`'s) for each image in your sequence.
+After successful upload a full `photoSequence` blob will be returned with an `id` and nested `photos` object information (including `photoId`'s) for each image in your sequence.
 
-The `photoSequence` enters `ProcessingState`: `PENDING` or `PROCESSING`. This indicates it is going through all the backend Street View checks and processing steps before being published to Google Maps.
+The `photoSequence` then enters `ProcessingState`: `PENDING` or `PROCESSING`. This indicates it is going through all the backend Street View checks and processing steps before being published to Google Maps.
 
 After the Street View processing completes (usually 72 hours, but potentially longer), the `photoSequence` should enter `ProcessingState`: `PROCESSED`.
 
@@ -105,16 +105,16 @@ However, processing can, and often does fail, producing one of the following pot
  <tr><td>INVALID_VIDEO_FORMAT</td><td>The video format is invalid or unsupported.</td></tr>
 </tbody></table>
 
-One downside of using the `photoSequence` upload is that if one image fails the Street View server side processing, the entire `photoSequence` will fail. As opposed to `photo` upload, where a single photo failure will not result in an entire failure for all photos uploaded in the sequence.
+One downside of using the `photoSequence` upload is that if one image in the uploaded video fails the Street View server side checks, the entire `photoSequence` will fail. As opposed to `photo` upload, where a single photo failure will not result in an entire failure for all photos uploaded in the sequence.
 
-Ultimately, if you're working with a sequence with more than 30 images, go with the `photoSequence` method (and make sure any bad images are removed before submission), otherwise the `photo` approach [described here](/blog/2020/street-view-publish-api-quick-start-guide/) will work just fine.
+Ultimately, if you're working with a sequence with more than 30 images, go with the `photoSequence` method (and make sure any bad images are removed before submission to reduce the likelihood of failed checks), otherwise the `photo` approach [described here](/blog/2020/street-view-publish-api-quick-start-guide/) will work just fine.
 
 ## Coming soon to Map the Paths Uploader...
 
 <img class="img-fluid" src="/assets/images/blog/2021-07-09/mapthepaths-uploader-spacing-sm.jpg" alt="Map the Paths Uploader image spacing" title="Map the Paths Uploader image spacing" />
 
-We're planning to offer a choice to users between `photo` and `photoSequence` resources when uploading their sequence.
+We're planning to offer a choice to users between `photo` and `photoSequence` resources when uploading their final sequences to Google Street View after making any desired edits or deletions.
 
-As noted, the Uploaded currently supports the `photo` upload method only at present, but if you've got a slightly longer sequence it is worth holding out for a few more weeks when we'll ship the `photoSequence` option in the next version (v0.4) of the [Map the Paths Uploader](https://www.mapthepaths.com/uploader).
+As noted, the Uploader currently only supports the `photo` upload method at present, but if you've got a slightly longer sequence it is worth holding out for a few more weeks when we'll ship the `photoSequence` option in the next version (v0.4) of the [Map the Paths Uploader](https://www.mapthepaths.com/uploader).
 
-[Stay tuned by signing up for Trek View updates](https://landing.mailerlite.com/webforms/landing/i5h6l6)!
+[Stay tuned for the announcement by signing up for Trek View updates](https://landing.mailerlite.com/webforms/landing/i5h6l6)!

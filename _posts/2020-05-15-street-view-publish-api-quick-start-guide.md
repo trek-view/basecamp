@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**POST my_beautiful_panorama.jpg**
+**`POST my_beautiful_panorama.jpg`**
 
 A whole ecosystem has sprung up around Google Street View.
 
