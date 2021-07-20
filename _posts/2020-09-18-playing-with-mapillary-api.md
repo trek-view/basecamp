@@ -292,3 +292,7 @@ My _crude_ fix, take the count of photos returned in summer and winter and weigh
 Hopefully this gives you a few more ideas to build on Chris' post. I also want to say a big thank you to Chris for proof-reading this post, and providing very valuable feedback.
 
 Please do share the use-cases you're using the Mapillary API for -- I can’t wait to see what new projects will be built on top of it.
+
+## Update 2021-06-16
+
+v4 of the Mapillary API is here. [In this post I take a brief look at the changes we've made to Map the Paths to support the move from v3, described above, to the new v4 API](/blog/2021/migrating-from-mapillary-api-v3-to-v4).
