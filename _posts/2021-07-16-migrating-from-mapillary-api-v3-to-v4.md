@@ -21,7 +21,7 @@ Our apps, [Map the Paths Web](https://www.mapthepaths.com/) and [Map the Paths U
 
 As some of the new API documentation is yet to be published by Mapillary and the shutdown of v3 on August 18, 2021 is rapidly approaching ([evolving Mapillary API v4 documentation here](https://www.mapillary.com/developer/api-documentation)), I wanted to use this weeks post to document our migration path from v3 to v4, should it prove useful to anyone else.
 
-## Autorization
+## Authorization
 
 This still follows an Oauth 2.0 flow in v4, as was the case in v3.
 
@@ -74,7 +74,7 @@ Whilst this new endpoint is not documented at the time of writing, it's fairly e
 [The actual upload flow, beyond endpoint change, remains unchanged between v3 and v4](https://github.com/mapillary/mapillary_tools/blob/a0716c0a5f9ebce451ec1ef362bacb460c4737f9/mapillary_tools/upload_api_v4.py):
 
 1. open upload session
-2. start upload using users oauth token
+2. start upload using users Oauth token
 3. close upload session
 
 ## Mapping Images / Sequences
