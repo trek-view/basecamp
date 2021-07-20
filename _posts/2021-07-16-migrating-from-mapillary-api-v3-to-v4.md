@@ -102,8 +102,6 @@ The endpoint for coverage tiles is `https://tiles.mapillary.com/maps/vtp/mly1_pu
 
 ## Mapillary Detections / Features
 
-<img class="img-fluid" src="/assets/images/blog/2021-07-16/mapthepaths-detections-sm.jpg" alt="Map the Paths Web Detections" title="Map the Paths Web Detections" />
-
 We have used Mapillary detections and features and in Map the Paths Web since its first release.
 
 [If you're new to these Mapillary concepts, I would first recommend taking a look at a previous post from last year which describes the v3 API endpoints for these functions in detail and also defines the difference between detections and features](/blog/2020/playing-with-mapillary-api).
@@ -111,6 +109,8 @@ We have used Mapillary detections and features and in Map the Paths Web since it
 For our usage, the changes are not significantly different between v3 and v4.
 
 ### Features
+
+<img class="img-fluid" src="/assets/images/blog/2021-07-16/mapthepaths-photo-feature-filter-sm.jpg" alt="Map the Paths Web Photo Features" title="Map the Paths Web Photo Features" />
 
 * [Mapillary v4 API docs -- map features](https://www.mapillary.com/developer/api-documentation/#map-feature)
 
@@ -130,7 +130,9 @@ _The response is a JSON object:_
 
 _A small note; for our use in Map the Paths, we lookup features on a per image basis (we only display features when a user is viewing a single image). However, I should also point out that to search for features in a given map area (not single image), [the tile endpoint is what you need](https://www.mapillary.com/developer/api-documentation/#point-tiles): `https://tiles.mapillary.com/maps/vtp/mly_map_feature_point/2/{z}/{x}/{y}`._
 
-### Detections
+### Object Detections
+
+<img class="img-fluid" src="/assets/images/blog/2021-07-16/mapthepaths-detections-sm.jpg" alt="Map the Paths Web Object Detections" title="Map the Paths Web Object Detections" />
 
 * [Mapillary v4 API docs -- map detections](https://www.mapillary.com/developer/api-documentation/#detection)
 
