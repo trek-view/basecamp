@@ -21,6 +21,8 @@ Our apps, [Map the Paths Web](https://www.mapthepaths.com/) and [Map the Paths U
 
 As some of the new API documentation is yet to be published by Mapillary and the shutdown of v3 on August 18, 2021 is rapidly approaching ([evolving Mapillary API v4 documentation here](https://www.mapillary.com/developer/api-documentation)), I wanted to use this weeks post to document our migration path from v3 to v4, should it prove useful to anyone else.
 
+Mapillary have removed all v3 API documentation from their site, [luckily the Wayback Machine allowed me to cross-reference the old docs](https://web.archive.org/web/20201106093440/https://www.mapillary.com/developer/api-documentation/).
+
 ## Authorization
 
 This still follows an Oauth 2.0 flow in v4, as was the case in v3.
