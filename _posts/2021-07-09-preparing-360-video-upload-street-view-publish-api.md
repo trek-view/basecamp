@@ -22,7 +22,7 @@ Those of you who like to take things apart might enjoy [a previous post of mine 
 In short, currently the Map the Paths Uploader works with the Google Street View Publish API like so:
 
 1. The Uploader creates a sequence of photo files from videos/photos selected
-2. User selects to the Street View integration, and assigns a [placeID](/blog/2019/place-id-google-street-view/) to the sequence.
+2. User selects to the Street View integration, and assigns a [`placeID`](/blog/2019/place-id-google-street-view/) to the sequence.
 2. The Uploader uploads all photos in a sequence 1-by-1 to Street View using the [`photo` resource](https://developers.google.com/streetview/publish/alpha/reference/rest/v1/photo?authuser=1#resource:-photo).
 4. The Street View API returns information about the `photo` on Google (including its `photoId`. The Uploader stores the returned `photoId` for each image in the sequence.
 5. Around 72 hours later the [`mapsPublishStatus`](https://developers.google.com/streetview/publish/alpha/reference/rest/v1/photo?authuser=1#mapspublishstatus) of each photo moves to `PUBLISHED` or `REJECTED_UNKNOWN`.
@@ -89,7 +89,6 @@ After the Street View processing completes (usually 72 hours, but potentially lo
 
 However, processing can, and often does fail, producing one of the following potential [`ProcessingFailureReason` error](https://developers.google.com/streetview/publish/alpha/reference/rest/v1/photoSequence/create?authuser=1#processingfailurereason)
 
-
 <table>
 <thead><tr><th>`ProcessingFailureReason` value</th><th>Error Description</th></tr></thead><tbody>
  <tr><td>PROCESSING_FAILURE_REASON_UNSPECIFIED</td><td>The failure reason is unspecified, this is the default value.</td></tr>
@@ -107,14 +106,16 @@ However, processing can, and often does fail, producing one of the following pot
 
 One downside of using the `photoSequence` upload is that if one image in the uploaded video fails the Street View server side checks, the entire `photoSequence` will fail. As opposed to `photo` upload, where a single photo failure will not result in an entire failure for all photos uploaded in the sequence.
 
+One final thing to be aware of; the `photoSequence` upload does not allow you to directly assign a `placeID` to photos. Thus, this needs to be done manually using the `photo` resource. Once the `photoSequence` upload is complete and `photoId`'s are returned, [you can update each `photo` 1-by-1 with the `place` information](https://developers.google.com/streetview/publish/reference/rest/v1/photo/update).
+
 Ultimately, if you're working with a sequence with more than 30 images, go with the `photoSequence` method (and make sure any bad images are removed before submission to reduce the likelihood of failed checks), otherwise the `photo` approach [described here](/blog/2020/street-view-publish-api-quick-start-guide/) will work just fine.
 
 ## Coming soon to Map the Paths Uploader...
 
 <img class="img-fluid" src="/assets/images/blog/2021-07-09/mapthepaths-uploader-spacing-sm.jpg" alt="Map the Paths Uploader image spacing" title="Map the Paths Uploader image spacing" />
 
-We're planning to offer a choice to users between `photo` and `photoSequence` resources when uploading their final sequences to Google Street View after making any desired edits or deletions.
+We're planning to migrate from `photo` to `photoSequence` when uploading final sequences to Google Street View in the Map the Paths Uploader after making any desired edits or deletions.
 
-As noted, the Uploader currently only supports the `photo` upload method at present, but if you've got a slightly longer sequence it is worth holding out for a few more weeks when we'll ship the `photoSequence` option in the next version (v0.4) of the [Map the Paths Uploader](https://www.mapthepaths.com/uploader).
+As noted, the Uploader supports the `photo` upload resource at present, but if you've got a slightly longer sequence it is worth holding out for a few more weeks when we'll ship the more stable `photoSequence` approach in the next version (v0.4) of the [Map the Paths Uploader](https://www.mapthepaths.com/uploader).
 
 [Stay tuned for the announcement by signing up for Trek View updates](https://landing.mailerlite.com/webforms/landing/i5h6l6)!
