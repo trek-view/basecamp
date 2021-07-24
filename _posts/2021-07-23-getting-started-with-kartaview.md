@@ -52,6 +52,8 @@ KartaView also runs three types of object detections on uploaded images:
 
 That said, I have not been able to get this to display on the UI, [nor do I see detection data exposed via the KartaView API](http://doc.kartaview.org/#tag/Photo).
 
-All of their codebase is open on GitHub, including the [core website](https://github.com/kartaview) and mobile apps ([Android](https://github.com/kartaview/android) and [iOS](https://github.com/kartaview/ios)), and are all offered under [MIT licenses](https://kartaview.org/terms#terms4).
+All of their codebase is open on GitHub, including the [core app](https://github.com/kartaview) and mobile apps ([Android](https://github.com/kartaview/android) and [iOS](https://github.com/kartaview/ios)), and are all offered under [MIT licenses](https://kartaview.org/terms#terms4).
+
+_Update 2021-07-24_: [As @nickw pointed out on the forum](https://campfire.trekview.org/t/an-introduction-to-kartaview/618/2?u=dgreenwood-trekview), the latest commit of the core app only contains the front end. [The old version (with backend included) is still available via commit history here](https://github.com/kartaview/openstreetcam.org/tree/7f9da68eafa1adbcc49ce46827328baf5a1a4166).
 
 I'm going to spend a few hours in the coming week exploring the KartaView codebase and the KartaView API. Check back next Friday when I should have a detailed technical write up of my findings.
