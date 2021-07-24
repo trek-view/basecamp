@@ -17,20 +17,18 @@ Trek View is currently run as a side-project to my day job.
 
 I love working on it, and keeping it running is something I'm working hard on.
 
-However, sadly, my pockets are not deep enough to cover $1000's each year to keep it going.
-
-That's why I'm calling for your support.
-
-For as little as $6.50 a month you will be critical part of our projects. Each month:
+However, I need some help each year to keep it going.
 
 * $300 funds a new camera that we can use to [continue our free loan program](https://www.trekview.org/loan/). We have cameras currently summiting Kilimanjaro and documenting the Great Barrier Reef. People like you put them there.
 * $100 keeps Map the Paths online and updated. As more users sign up, the costs to run the project increase. Namely, storage costs and software costs, like looking up weather data for your sequences using [WeatherStack](https://weatherstack.com/). Your support helps me keeps Map the Paths ad free and full of new (good) surprises.
-* $10 covers the costs to host and distribute the [ExPODition podcast](/blog/2020/2020-10-23-expodition-podcast-launch). A single Patreon could essentially keep this going indefinitely. There are still lots of interesting people we're lining up to speak with.
+* $10 covers the costs to host and distribute the [ExPODition podcast](/blog/2020/2020-10-23-expodition-podcast-launch). There are still lots of interesting people we're lining up to speak with.
 
 <img class="img-fluid" src="/assets/images/blog/2020-10-30/map-the-paths-hall-of-fame.jpg" alt="Map the Paths Hall of Fame" title="Map the Paths Hall of Fame" />
 
-Not only will you be doing good, [you'll also make it onto the Map the Paths Hall of Fame](https://www.mapthepaths.com/hall-of-fame/).
+[Every sequence you upload or share](https://www.mapthepaths.com/uploader), [every pull request to our open-source repositories on GitHub](https://github.com/trek-view/), [every time you share an idea with us on the forum](https://campfire.trekview.org/)... it all helps.
 
-[Tweets](https://twitter.com/trekview), [likes](https://www.facebook.com/trekview/) and [follows](https://www.instagram.com/trekviewed/) of our photos also goes a long way too!
+<img class="img-fluid" src="/assets/images/blog/2020-10-30/map-the-paths-hall-of-fame.jpg" alt="Map the Paths Hall of Fame" title="Map the Paths Hall of Fame" />
 
-Thanks for your continued support trekkers!
+As such, today I'd like to announce the [Map the Paths Hall of Fame](https://www.mapthepaths.com/hall-of-fame/), where those making significant contributions to our mission to inspire people to explore the world will be highlighted.
+
+Thanks for your continued support trekkers! See you in the Hall of Fame soon!
