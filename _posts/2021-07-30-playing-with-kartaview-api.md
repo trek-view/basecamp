@@ -2,7 +2,7 @@
 date: 2021-07-16
 title: "A Quick Start Guide to the KartaView API"
 description: "Here's notes from my research of the KartaView API whilst planning an integration for Map the Paths."
-categories: guides
+categories: developers
 tags: [KartaView, Map the Paths]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-07-30/

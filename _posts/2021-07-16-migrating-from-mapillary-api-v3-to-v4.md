@@ -2,7 +2,7 @@
 date: 2021-07-16
 title: "Migrating from version 3 to version 4 of the Mapillary API"
 description: "The Mapillary v3 API is being shutdown on August 18. Here's a summary of the updates we're making to Map the Paths to support the changes."
-categories: guides
+categories: developers
 tags: [Mapillary, Map the Paths]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-07-16/mapillary-js-docs-meta.jpg
