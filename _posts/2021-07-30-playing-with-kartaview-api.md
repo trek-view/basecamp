@@ -147,6 +147,10 @@ Once you start adding content to KartaView the [`usermetrics`](http://doc.kartav
 
 ```
 
+## Protip for existing Mapillary contributors
+
+[SviMik has built a Mapillary to OpenStreetCam synchronisation tool allowing you to clone your existing images automatically between the two products without having to re-upload anything](https://forum.mapillary.com/t/mapillary-openstreetcam-synchronization-tool/4246).
+
 ## Coming soon to Map the Paths Uploader...
 
 <img class="img-fluid" src="/assets/images/blog/2021-07-30/mapthepaths-uploader-integrations-sm.jpg" alt="Map the Paths Uploader integrations" title="Map the Paths Uploader integrations" />
