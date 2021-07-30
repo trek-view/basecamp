@@ -21,7 +21,7 @@ In my research of the KartaView API [I've been exploring their documentation](ht
 
 Authentication is done using an auth token passed as `X-Auth-Token` in the header of each request. It seems the generation of new tokens is currently limited (I am waiting for a response from KartaView about this).
 
-The core principal of KartaView are [`sequence`](http://doc.kartaview.org/#tag/Sequence)'s.
+The core resource of KartaView are [`sequence`](http://doc.kartaview.org/#tag/Sequence)'s.
 
 A sequence is a collection of photos captured continuously by an OpenStreetCam user. 
 
@@ -32,13 +32,13 @@ The upload flow for an `photo` works like so:
 1. Optional. [`POST` a new `sequence`](http://doc.kartaview.org/#operation/sequenceCreate). This will return an ID for the sequence (`result.data.id`).
 2. [POST a new `photo`](http://doc.kartaview.org/#operation/photoCreate) by posing the required parameters in the request, including the sequence ID returned in step one.
 
-It appears KartaView prefers `photo` uploads, noting for the POST `video` endpoint:
+[It appears KartaView prefers `photo` uploads, noting for the POST `video` endpoint](http://doc.kartaview.org/#tag/Video):
 
 > Mobile clients upload imagery data as video files to optimize compression. Data will be available after processing as photos.
 >
 > Usage of this resource for retrieving imagery is advisable only for debugging purposes.
 
-KartaView processes videos to photos server side, as Street View does. So once a video is uploaded the `photo` objects it produces can be obtained by:
+KartaView processes videos to photos server side, [as Street View does](/blog/2021/preparing-360-video-upload-street-view-publish-api). So once a video is uploaded the `photo` objects it produces can be obtained by:
 
 1. querying the `GET /video?id=X` endpoint using the `id` of video provided in the upload response which returns the `sequenceid`
 2. then querying the `GET /photo?sequenceId=X` endpoint using the `sequenceid` returned from step one which returns all the `photo.id`'s in the `sequenceid` 
@@ -111,7 +111,7 @@ Looking inside the `photo` object gives a good overview of what's exposed:
 }
 ```
 
-The `photo` object contains the map position, projection, dates and oath to download the  processed AND raw images ([something Mapillary removed in their v4 API](/blog/2021/migrating-from-mapillary-api-v3-to-v4)).
+The `photo` object contains the map position, projection, dates and path to download the processed and raw images ([something Mapillary removed in their v4 API](/blog/2021/migrating-from-mapillary-api-v3-to-v4)).
 
 The `photo` endpoint also offers [`DELETE`](http://doc.kartaview.org/#operation/photoDeleteById) and [`UPDATE`](http://doc.kartaview.org/#operation/photoUpdateById) methods, including the ability to `UPDATE` the `payload` (the actual photo file).
 
