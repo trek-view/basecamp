@@ -1,5 +1,5 @@
 ---
-date: 2021-07-16
+date: 2021-07-30
 title: "A Quick Start Guide to the KartaView API"
 description: "Here's notes from my research of the KartaView API whilst planning an integration for Map the Paths."
 categories: developers
