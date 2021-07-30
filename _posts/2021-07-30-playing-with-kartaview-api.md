@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2021-07-30/kartaview-api-docs-meta.jpg
 featured_image: /assets/images/blog/2021-07-30/kartaview-api-docs-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **`POST KartaView`**
@@ -19,7 +19,7 @@ You will have read my recent posts documenting the [Google Street View Publish](
 
 In my research of the KartaView API [I've been exploring their documentation](http://doc.kartaview.org/). This post is a short write up of what I've found.
 
-...Authentication info here...
+Authentication is done using an auth token passed as `X-Auth-Token` in the header of each request. It seems the generation of new tokens is currently limited (I am waiting for a response from KartaView about this).
 
 The core principal of KartaView are [`sequence`](http://doc.kartaview.org/#tag/Sequence)'s.
 
