@@ -1,9 +1,9 @@
 ---
 date: 2021-08-06
 title: "How to Create a 360 Video from a Timelapse of 360 Images"
-description: ""
+description: "A lesson, mostly, in wrangling metadata to ensure proper playback of 360 videos you've just created from a series of photos."
 categories: developers
-tags: [ffmpeg, exiftool]
+tags: [ffmpeg, exiftool, xmp, exif, google, youtube, video]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-08-06
 featured_image: /assets/images/blog/2021-08-06
@@ -11,26 +11,25 @@ layout: post
 published: false
 ---
 
+**A lesson, mostly, in wrangling metadata to ensure proper playback of 360 videos you've just created from a series of photos.**
 
-
-In previous posts I've covered, turning 360 videos into a series of timelapse images ([part 1](turn-360-video-into-timelapse-images-part-1) and part 2)
+In previous posts I've covered, turning 360 videos into a series of timelapse images ([part 1](/blog/2021/turn-360-video-into-timelapse-images-part-1) and [part 2](/blog/2021/turn-360-video-into-timelapse-images-part-2))
 
 You might also want to do the reverse; turn photos into a 360 video.
 
 For example, [when you want to upload them to the Street View Publish API](/blog/2021/preparing-360-video-upload-street-view-publish-api).
 
-In this post I want to outline the process of turning your timelapse 360's into a video for Street View, Facebook, YouTube, or whereever else you might want to share them.
-
-
-
+In this post I want to outline the process of turning your timelapse 360's into a video and some of the additional considerations to be aware of for Street View, Facebook, YouTube, or wherever else you might want to share them.
 
 ## 1. Preparation
 
 For this guide I'll be using [ffmpeg](https://ffmpeg.org/), a free and open-source project consisting of a vast software suite of libraries and programs for handling video, audio, and other multimedia files and streams.
 
-You'll also need [EXIFtool](https://exiftool.org/) to write the correct metadata (e.g. `ProjectionType`) into the resulting video.
+You'll also need [EXIFtool](https://exiftool.org/) to write metadata (e.g. `ProjectionType`) into the resulting video.
 
-You can follow this tutorial using the sample images here. I'll use a series of 55 timelapse photos shot using a GoPro Fusion at 5 second intervals and stitched as `.jpg` files at 5.8K. [Grab them here](https://drive.google.com/drive/u/1/folders/10IUugn77hfiUjPG-p70knRdZb_u37TB5).
+As exiftool cannot write in `XMP-GSpherical` tags (more on that later), [you'll also need a copy of this set of scripts from Google on your machine](https://github.com/google/spatial-media).
+
+I'll use a series of 55 timelapse photos shot using a GoPro Fusion at 5 second intervals and stitched as `.jpg` files at 5.8K. [Grab them here if you want to follow along](https://drive.google.com/drive/u/1/folders/10IUugn77hfiUjPG-p70knRdZb_u37TB5).
 
 Of course, you are free to use your own too.
 
@@ -41,7 +40,7 @@ If you choose to use your own images, be aware this post assumes your images are
 
 ## 2. Create the video
 
-Now we can convert to a video called `demo-video-no-meta.mp4`:
+Now we can create a video called `demo-video-no-meta.mp4` using all the images in the directory:
 
 ```
 $ ffmpeg -start_number 000000 -framerate 1 -i MULTISHOT_9698_%06d.jpg -pix_fmt yuv420p demo-video-no-meta.mp4
@@ -60,24 +59,24 @@ It's looking good. There are 55 images in my sequence and the video is 55 second
 
 **A note on framerate**
 
-You will see I set framerate at 1 second, when the actual time spacing in the `datetimeoriginal` is 5 seconds between photos. I set this to reduce length of video.
+You will see I set framerate at 1 second, when the actual time spacing in the `datetimeoriginal` is 5 seconds between photos.
 
-The video will still include all images, but playback will be faster than actual time spacing.
+The video will still include all images, but playback will be faster than actual time spacing. 1 second, instead of 5 seconds (so 80% faster)
 
-It is important that if you want to retain positional information with the video, for example, [to upload to Street View](/blog/2021/preparing-360-video-upload-street-view-publish-api), you also correctly modify GPS to match settings. In this case, I would rewrite the GPS times to be spaced 1 second apart, rather than 5. 
+It is important that if you want to retain positional information with the video, for example, [to upload to Street View](/blog/2021/preparing-360-video-upload-street-view-publish-api), you also correctly modify the accompanying GPS track. In this case, I would rewrite the GPS times to be spaced 1 second apart, rather than 5. 
 
-For example if the origianl spacing was 5 seconds between GPS times (e.g. 12:00:00, 12:00:05, 12:00:10, 12:00:15, 12:00:20), I would modify the times to increment by one second (e.g. 12:00:00, 12:00:01, 12:00:02, 12:00:03, 12:00:04, 12:00:05).
+For example if the original spacing was 5 seconds between GPS times (e.g. 12:00:00, 12:00:05, 12:00:10, 12:00:15, 12:00:20), I would modify the times to increment by one second (e.g. 12:00:00, 12:00:01, 12:00:02, 12:00:03, 12:00:04, 12:00:05).
 
-Of course, this will artifically increase travel speed between photos, but will ensure positional information is correct (which is the most important for street-level image platforms).
+Of course, this will artificially increase travel speed between photos (as I said earlier -- 80% quicker), but will ensure positional information is correct (which is the most important for street-level image platforms).
 
 ## 3. Add the required metadata
 
-[As I talked about last year](/blog/2020/metadata-exif-xmp-360-video-files), video files, and specifically 360 video files, hold metadata that's important for video players to render and display the video correctly. For example, 360 players will look for `ProjectionType=equirectangular` to display 360 controls.
+[As I talked about last year](/blog/2020/metadata-exif-xmp-360-video-files), video files, and specifically 360 video files, hold metadata that's important for video players to render and display the video correctly. For example, 360 players will look for `ProjectionType=equirectangular` (amongst other things) to display 360 controls.
 
-Looking at the current video metadata:
+Looking at the metadata of the video I just created using exiftool:
 
 ```
-$ exiftool -G -a demo-video-no-meta.mp4 > demo-video-no-meta.txt
+$ exiftool -G -a demo-video-no-meta.mp4 > demo-video-no-meta-metadata.txt
 ```
 
 Gives a .txt file with the contents:
@@ -153,12 +152,12 @@ Gives a .txt file with the contents:
 [Composite]     Rotation                        : 0
 ```
 
-There's already a lot here. We can see the video resoliton, the duration, and other default fields that are not required for our use-case.
+There's already a lot here. We can see the video resolution, the duration, and lots of other default fields that are not really required for our use-case.
 
-[Let's start by looking inside the first photo to see some of the EXIF data we need to add to the video](/blog/2020/metadata-exif-xmp-360-photo-files).
+[Let's start by looking inside the first photo to see some of the EXIF data we'll need to add to the video](/blog/2020/metadata-exif-xmp-360-photo-files).
 
 ```
-$ exiftool -G -a MULTISHOT_9698_000000.jpg > MULTISHOT_9698_000000.jpg_metadata.txt
+$ exiftool -G -a MULTISHOT_9698_000000.jpg > MULTISHOT_9698_000000_metadata.txt
 ```
 Gives a .txt file with the contents:
 
@@ -225,12 +224,15 @@ Gives a .txt file with the contents:
 Values needed for our requirements are:
 
 * [EXIF] GPS Time Stamp / GPS Date Stamp: gives us start time (note Modify Date shows stitching date, not capture date, so GPS Date/Time is most accurate)
-* [XMP] Stitching Software 
-* [XMP] Source Photos Count 
-* [XMP] Use Panorama Viewer
-* [XMP] Projection Type 
+* [XMP] Source Photos Count: tells us the number of cameras originally used to create the image
+* [XMP] Stitching Software: defines the software used to stitch images into a 360 image
+* [XMP] Projection Type: tells us it's a panorama if `equirectangular` (more useful when automating this process, and this needs to be validated)
+* [XMP]Cropped Area Image Height Pixels/Cropped Area Image Width Pixels
 
-Of course, other values like `[EXIF] Make`, `[EXIF] Camera Model Name`, etc. would also be a good idea to write to ensure viewers have the full information about the video, however, I'll omit this for the blog post.
+
+
+
+Of course, other values like `[EXIF] Make`, `[EXIF] Camera Model Name`, etc. are also a good idea to write into the metadata ensure viewers have the full information about the video, however, I'll omit this for the blog post.
 
 Video and photo metadata is slightly different. We need to use these values to write the following video metadata:
 
@@ -249,13 +251,13 @@ https://exiftool.org/forum/index.php?topic=12024.0
 I'll start by making a copy of the video file:
 
 ```
-$ cp demo-video-no-meta.mp4 demo-video-some-meta.mp4
+$ cp demo-video-no-meta.mp4 demo-video-with-meta.mp4
 ```
 
 We will start by adding the following tag:
 
 ```
-$ exiftool -XMP-GSpherical:Spherical=true demo-video-some-meta.mp4
+$ exiftool -XMP-GSpherical:Spherical=true demo-video-with-meta.mp4
 ```
 
 To get it working on YouTube, [we need to Google's required metadata for sperichal videos](https://github.com/google/spatial-media/blob/master/docs/spherical-video-rfc.md#allowed-global-metadata-elements).
@@ -263,13 +265,13 @@ To get it working on YouTube, [we need to Google's required metadata for sperich
 For completeness, I'll demonstrate adding all required and optional `XMP-GSpherical` tags.
 
 ```
-$ exiftool -XMP-GSpherical:Stitched=true -XMP-GSpherical:StitchingSoftware='Fusion Studio / GStreamer' -XMP-GSpherical:ProjectionType=equirectangular -XMP-GSpherical:StereoMode=mono -XMP-GSpherical:SourceCount=2 -XMP-GSpherical:InitialViewHeadingDegrees=0 -XMP-GSpherical:InitialViewPitchDegrees=0 -XMP-GSpherical:InitialViewRollDegrees=0 -XMP-GSpherical:TimeStamp='2019:11:29 13:06:48+00:00' -XMP-GSpherical:FullPanoWidthPixels=5760 -XMP-GSpherical:FullPanoHeightPixels=2880 -XMP-GSpherical:CroppedAreaImageWidthPixels=0 -XMP-GSpherical:CroppedAreaImageHeightPixels=0 -XMP-GSpherical:CroppedAreaLeftPixels=0 -XMP-GSpherical:CroppedAreaTopPixels=0 demo-video-some-meta.mp4
+$ exiftool -XMP-GSpherical:Stitched=true -XMP-GSpherical:StitchingSoftware='Fusion Studio / GStreamer' -XMP-GSpherical:ProjectionType=equirectangular -XMP-GSpherical:StereoMode=mono -XMP-GSpherical:SourceCount=2 -XMP-GSpherical:InitialViewHeadingDegrees=0 -XMP-GSpherical:InitialViewPitchDegrees=0 -XMP-GSpherical:InitialViewRollDegrees=0 -XMP-GSpherical:TimeStamp='2019:11:29 13:06:48+00:00' -XMP-GSpherical:FullPanoWidthPixels=5760 -XMP-GSpherical:FullPanoHeightPixels=2880 -XMP-GSpherical:CroppedAreaImageWidthPixels=0 -XMP-GSpherical:CroppedAreaImageHeightPixels=0 -XMP-GSpherical:CroppedAreaLeftPixels=0 -XMP-GSpherical:CroppedAreaTopPixels=0 demo-video-with-meta.mp4
 ```
 
 Let's check these commands worked as intended:
 
 ```
-$ exiftool -G -a demo-video-some-meta.mp4 > demo-video-some-meta.txt
+$ exiftool -G -a demo-video-with-meta.mp4 > demo-video-with-meta-metadata.txt
 ```
 
 Success:
@@ -292,13 +294,9 @@ I've noticed some manufacturerer viewers (e.g. GoPro Player) will only render 36
 
 StitchingSoftware	
 
+## A note on telemetry
+
 
 I'm only adding video level data, and not telemetry in this video as this becomes a lot more complex, and is generally not required. It's a good idea to create a GPS track from your images that can be used alongside your video though.
 
 2020-05-08-metadata-exif-xmp-360-video-files.md
-
-
-[XMP] Initial View Heading Degrees    : 0
-[XMP] Initial View Pitch Degrees      : 0
-[XMP] Initial View Roll Degrees       : 0
-

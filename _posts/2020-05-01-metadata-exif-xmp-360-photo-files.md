@@ -341,6 +341,6 @@ If you have a 360 camera and want to support our work, [please share more inform
 
 [A deeper look into a 360 video and the metadata it holds](/blog/2020/metadata-exif-xmp-360-video-files).
 
-## Update 2021-08-13
+## Update 2021-08-06
 
 If you'd like to read more about XMP namespaces, [read my latest introductory post here](/blog/2021/introduction-to-xmp-namspaces).

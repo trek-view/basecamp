@@ -1,7 +1,7 @@
 ---
 date: 2021-07-30
 title: "A Quick Start Guide to the KartaView API"
-description: "Here's notes from my research of the KartaView API whilst planning an integration for Map the Paths."
+description: "Here's my notes about the KartaView API from my research planning an integration for Map the Paths."
 categories: developers
 tags: [KartaView, Map the Paths]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**`POST KartaView`**
+**Here's my notes about the KartaView API from my research planning an integration for Map the Paths.**
 
 [Last week I took a brief look at KartaView, a street-level imagery platform](/blog/2021/getting-started-with-kartaview).
 
