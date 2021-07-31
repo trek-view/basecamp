@@ -1,0 +1,31 @@
+---
+title: Blog
+heading: Blog
+description: The latest from the Trek View team.
+image: /assets/images/global/trek-view-360-degree-tour.jpg
+layout: page
+---
+
+<div class="text-container">
+  <p align="center"><a href="/blog/category/guides/">Guides</a> | <a href="/blog/category/updates/">Updates</a> | <a href="/blog/category/developers/">Developers</a> | <a href="/blog/category/mapthepaths/">Map the Paths</a> | <a href="/blog/category/expodition/">ExPODition</a></p>
+
+  <!-- Html Elements for Search -->
+  <div id="search-container">
+  <input type="text" id="search-input" placeholder="search...">
+  <ul id="results-container"></ul>
+  </div>
+
+  <!-- Script pointing to search-script.js -->
+  <script src="/assets/js/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    searchResultTemplate: '<div><a href="{url}"><h1>{title}</h1></a><span>{date}</span><span>{description}</span></div>',
+    json: '/search.json'
+  })
+  </script>
+
+</div>

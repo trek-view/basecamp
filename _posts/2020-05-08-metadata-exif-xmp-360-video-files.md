@@ -71,6 +71,14 @@ _Note, if your file is encoded in some proprietary format it might not be [prope
 
 There is a significant amount of data contained in the metadata of a video, for this post I've only included the most relevant data. Where I've deleted part of the output you'll see a `[...]`. The full output is linked below each snippet should you want to take a deeper look.
 
+### A note on XMP namespaces
+
+This post is only intended as a brief introduction to the topic.
+
+[Their are many XMP namespaces with differing XMP tags](https://exiftool.org/TagNames/XMP.html). For example, [`XMP-GPano`](https://exiftool.org/TagNames/XMP.html#GPano) for photos and [`XMP-GSpherical`](https://exiftool.org/TagNames/XMP.html#GSpherical) for video. 
+
+I have omitted discussing XMP namespaces in this post as they are mostly important when writing metadata to files.
+
 ### GoPro Fusion
 
 For this first example I'm going to use an `.mp4` video filmed using a GoPro Fusion with GPS enabled shot at 5.2K and the final file encoded using H.264 at 4K at 30 FPS using GoPro Fusion Studio (no Protune). The file size is 86.2MB and runs for 16 seconds.
@@ -368,7 +376,7 @@ Let's pause for a moment (grab a drink), and next we'll look at another camera, 
 
 For this example, I'll use a sample video shot earlier this year by Brian Redmond on the Insta360 Pro2 (as always, thanks Brian!). It was shot at at FPS in 8K. The file size is 4.02GB and runs for 1 minute 46 seconds.
 
-<!---<iframe width="560" height="315" src="https://www.youtube.com/embed/y3oHaGPzzK4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y3oHaGPzzK4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The Insta360 Pro2 writes telemetry metadata to videos in the [Camera Motion Metadata Spec Format](https://developers.google.com/streetview/publish/camm-spec) (Insta360 would not use the GoPro Metadata format, even if it is open source).
 
@@ -900,6 +908,6 @@ And that's why we need your help.
 
 If you have a 360 camera and want to support our work, [please share more information about your camera with us using this form](https://docs.google.com/forms/d/e/1FAIpQLScgOk1W5jpyrQuDF5FuKqUpKK0EIpSlokckZd3OB-r_ZOjZmQ/viewform). Thank you!
 
-## Support exiftool
+## Update 2021-08-13
 
-Exiftool is a free and very well supported bit of software from Phil Harvey. Let's make sure it stays that way. [You should consider a small donation to support it](https://exiftool.org/#donate) if this post has been useful to you.
+If you'd like to read more about XMP namespaces, [read my latest introductory post here](/blog/2021/introduction-to-xmp-namspaces).

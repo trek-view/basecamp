@@ -165,7 +165,7 @@ Now for the metadata output of a `.jpg` image from a Ricoh Theta Z1:
 CLI input: 
 
 ```
-$ exiftool -G -a  exiftool R0013800.JPG > R0013800_metadata.txt
+$ exiftool -G -a exiftool R0013800.JPG > R0013800_metadata.txt
 ```
 
 CLI output:
@@ -307,7 +307,15 @@ _Cylindrical projections_
 
 _Diagrams: [Google](https://developers.google.com/streetview/spherical-metadata)_
 
-...again, I stess, manufactures don't need to write all of them (or any of them).
+...again, I stress, manufactures don't need to write all of them (or any of them... although this will cause compatibility issues with software).
+
+### A note on XMP namespaces
+
+This post is only intended as a brief introduction to the topic.
+
+[Their are many XMP namespaces with differing XMP tags](https://exiftool.org/TagNames/XMP.html). For example, [`XMP-GPano`](https://exiftool.org/TagNames/XMP.html#GPano) for photos and [`XMP-GSpherical`](https://exiftool.org/TagNames/XMP.html#GSpherical) for video. 
+
+I have omitted discussing XMP namespaces in this post as they are mostly important when writing metadata to files.
 
 ## Reading metadata in video files
 
@@ -329,10 +337,10 @@ And that's why we need your help.
 
 If you have a 360 camera and want to support our work, [please share more information about your camera with us using this form](https://docs.google.com/forms/d/e/1FAIpQLScgOk1W5jpyrQuDF5FuKqUpKK0EIpSlokckZd3OB-r_ZOjZmQ/viewform). Thank you!
 
-## Support exiftool
-
-Exiftool is a free and very well supported bit of software from Phil Harvey. Let's make sure it stays that way. [You should consider a small donation to support it](https://exiftool.org/#donate) if this post has been useful to you.
-
 ## Update 2020-05-01
 
 [A deeper look into a 360 video and the metadata it holds](/blog/2020/metadata-exif-xmp-360-video-files).
+
+## Update 2021-08-13
+
+If you'd like to read more about XMP namespaces, [read my latest introductory post here](/blog/2021/introduction-to-xmp-namspaces).
