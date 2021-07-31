@@ -1,7 +1,7 @@
 ---
 date: 2021-06-11
 title: "Google Tour Creator Alternatives"
-description: "Map the Paths now offers the ability to create guided virtual tours complete with annotations and videos."
+description: "Map the Paths offers the ability to create guided virtual tours complete with annotations and videos."
 categories: mapthepaths
 tags: [Google, Tour Creator, Map the Paths]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Make sure you don't lose your old tours.**
+**Map the Paths offers the ability to create guided virtual tours complete with annotations and videos.**
 
 Sadly, Google is shutting down [Tour Creator](https://poly.google.com/creator/tours) on June 30th (2021). That's less than 3 weeks before any tours you've created there will disappear.
 
@@ -29,7 +29,7 @@ With the help of Tour Creator we ran our [Treehouse virtual adventures for child
 > 
 > * Image files, including panorama photos
 > * Sound files
-> * JSON files with scene descriptions, text references, and StreetView panorama references
+> * JSON files with scene descriptions, text references, and Street View panorama references
 
 But where do you use this exported content instead?
 

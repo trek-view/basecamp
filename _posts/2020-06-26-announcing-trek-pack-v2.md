@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**We're ready for summer. So is our kit.**
+**Over the Winter we've been experimenting with new cameras for an updated version of our Trek Pack.**
 
 [In addition to a whole heap of other things](/blog/2020/what-are-you-working-on), we've spent the last few months improving the Trek Pack for 2020.
 

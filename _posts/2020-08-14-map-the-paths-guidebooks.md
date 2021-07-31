@@ -1,7 +1,7 @@
 ---
 date: 2020-08-14
 title: "Take a Virtually Guided Tour (or Create Your Own)"
-description: "Announcing Map the Path Guidebooks. Act as a local guide to your favourite places for everyone around the world to enjoy."
+description: "Announcing Map the Path Guidebooks. Act as a local guide of your favourite places for everyone around the world to enjoy."
 categories: mapthepaths
 tags: []
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Let's go exploring.**
+**Announcing Map the Path Guidebooks. Act as a local guide of your favourite places for everyone around the world to enjoy.**
 
 I love to explore new places online. In fact, I am often guilty of spending more time looking online than exploring in person on occasion.
 

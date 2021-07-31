@@ -1,7 +1,7 @@
 ---
 date: 2020-03-13
-title: "What is a Nadir?"
-description: "What is a zenith?"
+title: "What is a Nadir? What is a Zenith?"
+description: "In short, directly below, and directly above, respectively."
 categories: developers
 tags: [Trek Pack 1, Trek Pack 2]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Nope, it's not an animal.**
+**In short, directly below, and directly above, respectively.**
 
 [The Oxford English Dictionary defines a nadir as](https://www.lexico.com/definition/nadir):
 

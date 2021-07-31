@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Here's the kit I purchased to build the first Trek View Trek Pack...**
+**The bare minimum you'll need, and some recommended accessories for building a Trek Pack to shoot 360-degree tours.**
 
 <img class="img-fluid" src="/assets/images/blog/2019-06-28/trek-view-pack-version-1-sm.jpg" alt="Trek View Trek Pack version 1" title="Trek View Trek Pack version 1" />
 

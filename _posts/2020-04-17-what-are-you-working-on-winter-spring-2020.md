@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Winter and Spring didn't turn out quite how we envisaged.**
+**It has been over 6 months since I last gave you an update about what we're working on. I think you're well overdue an update. Albeit a short one.**
 
 ## A change of plans
 

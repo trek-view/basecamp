@@ -1,7 +1,7 @@
 ---
 date: 2019-10-18
 title: "Our House is on Fire"
-description: "We can all play a small part in tackling runaway global warming"
+description: "We can all play a small part in tackling runaway global warming."
 categories: updates
 tags: [environment]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**We're committed to a positive impact on our environment.**
+**We can all play a small part in tackling runaway global warming.**
 
 <img class="img-fluid" src="/assets/images/blog/2019-10-18/extinction-rebellion-london-sm.jpg" alt="Extinction Rebellion London" title="Extinction Rebellion London" />
 

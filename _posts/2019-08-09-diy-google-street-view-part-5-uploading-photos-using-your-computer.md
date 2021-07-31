@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Share your 360-degree tours with the world.**
+**Use Tourer to upload 360-degree photo tours to Google Street View from your computer.**
 
 ## Existing Street View Upload options
 

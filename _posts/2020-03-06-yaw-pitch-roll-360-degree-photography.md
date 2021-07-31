@@ -1,7 +1,7 @@
 ---
 date: 2020-03-06
 title: "Yaw, Pitch, Roll"
-description: "Manipulating the original field of view for your photos."
+description: "Three spatial concepts that are important to understand in 360 photography."
 categories: developers
 tags: [processing]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**No, this is not an advertisement for a fitness bootcamp.**
+**Three spatial concepts that are important to understand in 360 photography.**
 
 [Last year in my DIY Google Street View post](/blog/2019/diy-google-street-view-part-4-processing-photos), I introduced the concepts of yaw, pitch, and roll.
 

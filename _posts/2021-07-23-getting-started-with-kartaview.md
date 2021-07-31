@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Yet another street-level imagery platform.**
+**Formerly named OpenStreetView and then OpenStreetCam, KartaView is a completely open-source street-level image platform.**
 
 I've recently begun exploring the possibility of adding an integration with [KartaView](https://kartaview.org/) to the [Map the Paths Uploader](https://www.mapthepaths.com/uploader).
 

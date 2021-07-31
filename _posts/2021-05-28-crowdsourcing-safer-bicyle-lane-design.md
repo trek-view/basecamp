@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Take photos. Help improve bike lanes.**
+**Time to dust off the helmet cameras and take part in some cycling capture challenges.**
 
 If you've been following our blog over the years you will have seen a few post with a focus on capturing 360 tours of bicycle lanes, using cameras and a variety of other sensors;
 

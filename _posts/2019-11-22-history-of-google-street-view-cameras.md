@@ -1,7 +1,7 @@
 ---
 date: 2019-11-22
 title: "A Brief History of Google's Street View Cameras"
-description: "Street View has come a long way in 13 years during which 360 camera technology has seen significant advancements too."
+description: "Street View has come a long way in 13 years during which time 360 camera technology has seen significant advancements too."
 categories: updates
 tags: [Street View]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**The cameras _behind_ the 360s.**
+**Street View has come a long way in 13 years during which time 360 camera technology has seen significant advancements too.**
 
 It's hard to believe that Google Street View has been around for 13 years now, after launching in several cities in the United States - San Francisco, New York, Las Vegas, Miami and Denver - [on May 25, 2007](https://techcrunch.com/2013/03/08/inside-google-street-view-from-larry-pages-car-to-the-depths-of-the-grand-canyon/).
 

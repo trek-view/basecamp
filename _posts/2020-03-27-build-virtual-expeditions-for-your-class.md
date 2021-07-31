@@ -11,9 +11,9 @@ layout: post
 published: true
 ---
 
-**No technical knowledge required.**
+**Build immersive, 360-degree tours and become a virtual tour guide to show friends, family, or an entire class your creations.**
 
-**Update November 2020: Tour Creator will no longer be available on June 30, 2021. Please see the Help Center for guidance on how to export your published tours.**
+**Update November 2020: Tour Creator will no longer be available on June 30, 2021. [Map the Paths now offers alternative tour creation software](/blog/2021/google-tour-creator-alternatives).**
 
 You might have seen the launch of our Treehouse virtual classes for students during the COVID-19 outbreak last week -- we've had some brilliant lessons so far [(you can still register)](/blog/2020/treehouse-academy-emergency-timetable).
 
@@ -140,7 +140,6 @@ Find us on:
 * [Facebook](https://www.facebook.com/trekview/)
 
 _Update August 2020: [You can now create virtual guidebooks in Map the Paths too](/blog/2020/map-the-paths-guidebooks)._
-
 
 ## Update (2021-06-13)
 

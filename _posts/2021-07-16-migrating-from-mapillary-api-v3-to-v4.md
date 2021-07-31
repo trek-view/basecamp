@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Updating Map the Paths to support the new version of the Mapillary API.**
+**The Mapillary v3 API is being shutdown on August 18. Here's a summary of the updates we're making to Map the Paths to support the changes.**
 
 [Since Facebook's acquisition of Mapillary last year](https://blog.mapillary.com/news/2020/06/18/Mapillary-joins-Facebook.html) the Facebook team have been making some fairly significant changes to the backend infrastructure of the platform and how they expose it.
 

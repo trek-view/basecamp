@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**When was the last time you pulled up a map on your phone?**
+**In emergency settings it is extremely important to have information on the location of people and infrastructure.**
 
 If you're anything like me, every day.
 

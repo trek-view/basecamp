@@ -1,7 +1,7 @@
 ---
 date: 2021-01-22
 title: "Take a Virtual Tour With Map the Paths"
-description: "As lockdowns continue, take a trip to explore new places around the world."
+description: "As lockdowns continue, take a trip at home to explore new places around the world."
 categories: mapthepaths
 tags: [River Thames, Windsor, UK]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Rivers, mountains, royal parks...**
+**As lockdowns continue, take a trip at home to explore new places around the world.**
 
 In the last few weeks, over 100,000 panoramic images have been uploaded to Map the Paths.
 

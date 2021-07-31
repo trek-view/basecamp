@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Preparing to climb Kilimanjaro.**
+**In 2020/21 we set out to Map the Mountain. Here's an insight into our planning.**
 
 Many of us have had our travel plans severely restricted over the last year.
 

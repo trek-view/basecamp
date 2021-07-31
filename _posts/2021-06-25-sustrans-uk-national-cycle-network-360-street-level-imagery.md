@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Inspiration to get cycling this summer.**
+**The network covers over 20,000km of the UK. With your help, we want to capture street-level images for every single one of those kilometers.**
 
 [Last month I talked about a crowdsourced approach to mapping cycling infrastructure using 360 images](/blog/2021/crowdsourcing-safer-bicyle-lane-design) using [relatively low-cost kit](/blog/2021/trek-pack-v2-quick-start-virtual-photography).
 

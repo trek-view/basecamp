@@ -1,7 +1,7 @@
 ---
 date: 2021-05-14
 title: "Climb Mount Kilimanjaro Virtually (Part 3: Rongai Route)"
-description: "Trek one of the quitest trails up Kilimanjaro from home."
+description: "Trek one of the quietest trails up Kilimanjaro from home."
 categories: mapthepaths
 tags: [Kilimanjaro, Altezza Travel]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Time for another virtual 7 day hike.**
+**Trek one of the quietest trails up Kilimanjaro from home.**
 
 [Last week saw us embark on a virtual expedition on the Macheme Route](/blog/2021/climbing-kilimanjaro-part-2-macheme).
 

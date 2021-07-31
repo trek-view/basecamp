@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Putting our Data Bike to work.**
+**We continue to build out our Data Bike and are now trying to establish a global standard to measure cycle trail quality.**
 
 [In the previous post I considered some apps that can be used to record raw data from your phones IMU](/blog/2021/measuring-condition-cycle-paths-phone-update).
 

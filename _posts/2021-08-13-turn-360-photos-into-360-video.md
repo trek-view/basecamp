@@ -260,7 +260,7 @@ We will start by adding the following tag:
 $ exiftool -XMP-GSpherical:Spherical=true demo-video-with-meta.mp4
 ```
 
-To get it working on YouTube, [we need to Google's required metadata for sperichal videos](https://github.com/google/spatial-media/blob/master/docs/spherical-video-rfc.md#allowed-global-metadata-elements).
+To get it working on YouTube, [we need to 
 
 For completeness, I'll demonstrate adding all required and optional `XMP-GSpherical` tags.
 

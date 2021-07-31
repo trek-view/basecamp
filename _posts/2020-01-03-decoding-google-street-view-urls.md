@@ -1,7 +1,7 @@
 ---
 date: 2020-01-03
 title: "Decoding a Google Street View URL"
-description: "Trying to understand the structure of the URL's to better understand Street View's functionality"
+description: "Analysing the structure of Street View URL's to better understand exposed functionality."
 categories: guides
 tags: [Google, Street View]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Learning the Street View language.**
+**Analysing the structure of Street View URL's to better understand exposed functionality.**
 
 _Word of warning: this post is accurate at the time of publication (2020-01-03) but may not be on the day your are reading this due to possible changes made by Google. If you do spot an error, [please email us to make us aware](/contact)._
 

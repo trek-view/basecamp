@@ -1,7 +1,7 @@
 ---
 date: 2021-05-21
 title: "Trek View Trail Quality Index: An Alternative Method Using Computer Vision"
-description: "Using the imagery captured by the Data Bike to measure cycle path quality."
+description: "Using the imagery captured by the Data Bike to measure cycle path surface quality."
 categories: guides
 tags: [rRuf, Data Bike, DMAMPO, Minnesota]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Using images to determine trail quality.**
+**Using the imagery captured by the Data Bike to measure cycle path surface quality.**
 
 Last month I shared a link to the [IEEE Global Road Damage Detection Challenge 2020](https://rdd2020.sekilab.global/), [after realising measuring the surface quality of a bike path from sensors in a phone was not particularly accurate at scale](/blog/2021/trek-view-ride-quality-index).
 

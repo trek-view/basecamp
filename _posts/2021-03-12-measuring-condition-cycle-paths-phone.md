@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Some new features for your data bike.**
+**Use the rRuf mobile app on your bicycle to measure the ride quality.**
 
 In 2019 I briefly mentioned the Des Moines Area Metropolitan Planning Organization Data Bike in my [DIY Street View Bike post](/blog/2019/diy-street-view-bike-tours).
 

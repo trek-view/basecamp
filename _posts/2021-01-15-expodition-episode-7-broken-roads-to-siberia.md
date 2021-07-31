@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**1 month. 10,000 km. 2 motorbikes. Few roads.**
+**A 10,000 km, one month long journey through the Russian wilderness.**
 
 The idea of an off-road adventure, exploring western parts of Russia, Mongolia and Siberia had long been brewing in Jyri Koski’s head. 
 

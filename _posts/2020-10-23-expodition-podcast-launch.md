@@ -1,7 +1,7 @@
 ---
 date: 2020-10-23
 title: "Announcing the ExPODition Podcast"
-description: "Stories from 'everyday people' who have embarked on amazing adventures."
+description: "Climb. Ski. Hike. Bike. Paddle. Run. Travel. Stories from 'everyday people' who have embarked on amazing adventures."
 categories: expodition
 tags: [Chris Lucas, Niall Lucas, Canada, Yukon, David Greenwood, Trek View]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Climb. Ski. Hike. Bike. Paddle. Run. Travel.**
+**Climb. Ski. Hike. Bike. Paddle. Run. Travel. Stories from 'everyday people' who have embarked on amazing adventures.**
 
 I love podcasts.
 

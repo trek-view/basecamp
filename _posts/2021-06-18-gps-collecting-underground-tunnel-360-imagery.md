@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**GPS signal, where there is no GPS signal.**
+**How to keep track of your position when your line-of-sight to the sky is impeded.**
 
 I've talked many times about the minor problems of GPS receivers built into cameras.
 

@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Discover the world with Explorer.**
+**Unleash your inner explorer and travel the globe without leaving home.**
 
 Last year we released Tourer, [a small application that allowed you to upload 360-degree photos to Google Street View](/blog/2019/diy-google-street-view-part-5-uploading-photos-using-your-computer).
 
@@ -58,7 +58,7 @@ If you choose to, the name, description, and tags you include when creating (or 
 
 If you haven't already, you'll need to [update Tourer](https://github.com/trek-view/tourer) to take advantage of the new Explorer integration.
 
-We're also excited to ship another integration in the new Tourer release, [OpenTrailView](https://opentrailview.org). OpenTrailView is a project to collect 360-degree 360-degree photos of walking trails, to provide a StreetView-like experience for the world's wild spaces.
+We're also excited to ship another integration in the new Tourer release, [OpenTrailView](https://opentrailview.org). OpenTrailView is a project to collect 360-degree 360-degree photos of walking trails, to provide a Street View-like experience for the world's wild spaces.
 
 To grow the number of integrations we can support, Tourer is now modularised so that new integration points can be added as modules by anyone. Do you have an idea for an integration? [Check out Tourer documentation for information on creating your own](https://github.com/trek-view/tourer).
 

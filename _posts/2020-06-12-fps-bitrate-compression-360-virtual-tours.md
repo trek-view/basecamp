@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**"It said 5.2K (15.7 megapixels) on the box."**
+**The image quality of video frames can vary significantly between two cameras offering the same resolution, but why?**
 
 "But this video is only 4K (8.5 megapixels)."
 

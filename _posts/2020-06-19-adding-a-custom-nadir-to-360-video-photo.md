@@ -1,6 +1,6 @@
 ---
 date: 2020-06-19
-title: "Adding a Custom Nadir to a 360 Photo or Video"
+title: "How to Add a Custom Nadir to a 360 Photo or Video"
 description: "Branding your public images can be a great way to promote your 360 work. A custom nadir is perfect for this."
 categories: guides
 tags: [nadir]
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Time for some shameless self-promotion.**
+**Branding your public images can be a great way to promote your 360 work. A custom nadir is perfect for this.**
 
 Uploading your 360 imagery to Google Street View can be a great promotional tool for your business or project.
 

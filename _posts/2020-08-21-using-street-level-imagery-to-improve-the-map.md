@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Mapillary, OpenStreetMap, JSOM, iD....**
+**Some useful tools to help you make additions or modifications to OpenStreetMap using Mapillary images.**
 
 Many of you might be familiar with the OpenStreetMap [iD Editor](https://wiki.openstreetmap.org/wiki/ID), the [Java OpenStreetMap (JSOM) editor](https://wiki.openstreetmap.org/wiki/Comparison_of_editors#JOSM), or perhaps [an entirely different editor altogether](https://wiki.openstreetmap.org/wiki/Comparison_of_editors).
 

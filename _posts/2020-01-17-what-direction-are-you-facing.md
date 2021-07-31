@@ -1,7 +1,7 @@
 ---
 date: 2020-01-17
 title: "What Direction are you Facing?"
-description: "Hello class! Welcome to Trigonometry 101."
+description: "North, South, East or, West? Calculating bearings between photos."
 categories: developers
 tags: [Tourer, Explorer, Trek Pack]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**North, South, East or, West?**
+**North, South, East or, West? Calculating bearings between photos.**
 
 Me? North (in my home office).
 

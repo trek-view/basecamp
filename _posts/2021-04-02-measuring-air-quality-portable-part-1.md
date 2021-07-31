@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Searching for a portable air quality monitor.**
+**Our hunt for a device that could measure air quality during adventures.**
 
 We've been on the hunt for a mobile air quality sensor [since we discovered they were fitted to Google Street View cars](/blog/2019/google-street-view-cameras-more-than-meets-the-eye
 ).

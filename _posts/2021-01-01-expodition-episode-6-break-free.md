@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Hamburg to South Africa in a Land Rover. In 6 months?**
+**Two totally different characters, jammed together in two square meters of space for almost two years as they travel across Africa.**
 
 When Lena and Ulli start the engine of their old Land Rover, Lady Terés, they have a plan: to drive from Hamburg to South Africa in six months. What they don't know yet is that they won't ever get there.
 

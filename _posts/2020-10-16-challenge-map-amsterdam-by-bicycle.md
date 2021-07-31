@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**On your bikes, get set, GO!**
+**Abstracting data from images of bicycle lanes to create a blueprint for the safest bicycle infrastructure.**
 
 In September I spent a lot of time in Amsterdam.
 

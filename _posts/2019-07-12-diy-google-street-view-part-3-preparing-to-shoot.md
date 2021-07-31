@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Tips to help setup your kit and capture 360-degree tours.**
+**Simple tips for setting up your Trek Pack to shoot a 360-degree photo tour for Google Street View.**
 
 <img class="img-fluid" src="/assets/images/blog/2019-07-12/trek-view-pack-version-1-setup-sm.jpg" alt="Trek View Trek Pack version 1 setup" title="Trek View Trek Pack version 1 setup" />
 

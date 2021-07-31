@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**`POST my_beautiful_panorama.jpg`**
+**All third-party Street View tools are built around the Google Street View Publish API. Here's a closer look at how it works for uploading short sequences.**
 
 A whole ecosystem has sprung up around Google Street View.
 

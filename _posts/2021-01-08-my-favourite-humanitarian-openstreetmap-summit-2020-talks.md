@@ -1,7 +1,7 @@
 ---
 date: 2021-01-08
 title: "My Favourite Humanitarian OpenStreetMap Summit 2020 Talks"
-description: "Trashsites, Land Rights and Resources, Wildfires and Cycling."
+description: "Mapping projects to improve disaster and development outcomes, including; Trashsites, Land Rights and Resources, Wildfires and Cycling."
 categories: guides
 tags: [OpenStreetMap, HOSM]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Mapping projects to improve disaster and development outcomes.**
+**Mapping projects to improve disaster and development outcomes, including; Trashsites, Land Rights and Resources, Wildfires and Cycling.**
 
 On the 4th of December 2020, [the humanitarian OpenStreetMap community convened for a global virtual meeting](https://summit2020.hotosm.org/
 ) to showcase projects, discuss and share ideas, and learn how mapping projects can have impact on the lives beyond the people mapping and create better disaster and development outcomes.

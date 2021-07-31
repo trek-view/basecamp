@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**The start of summer is almost upon us.**
+**The focus for the coming months is going to be 360 maps for water sports.**
 
 <img class="img-fluid" src="/assets/images/blog/2019-05-31/river-thames-hampton-court-virtual-tour-sm.jpg" alt="River Thames Hampton Court Virtual Tour" title="River Thames Hampton Court Virtual Tour" />
 

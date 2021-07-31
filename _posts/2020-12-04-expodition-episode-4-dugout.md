@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Find a tree. 2. Hollow out tree. Ride tree (canoe) through the rainforest.**
+**A journey through the Ecuadorian rainforest in a self-made dugout canoe.**
 
 A journey through the Ecuadorian rainforest in a self-made dugout canoe. The film, DugOut, explores the Amazon beyond the adventure, documenting the lives of both the people and the wildlife who rely on the forest for survival.
 

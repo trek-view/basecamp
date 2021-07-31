@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Two alternative apps to rRuf.**
+**Two consumer apps that can measure sensor data on your phone to record ride quality.**
 
 [Last month I wrote about measuring ride quality with your phone using an app called rRuf](/blog/2021/measuring-condition-cycle-paths-phone).
 

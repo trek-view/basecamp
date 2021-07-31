@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Grab the perfect frame.**
+**In the first part of this post I will show you how to turn a video into a series of images for more flexible editing options.**
 
 In the last year I've covered topics [about the metadata found in a 360 video](/blog/2020/metadata-exif-xmp-360-video-files), [how to extract a GPS track from them](/blog/2020/extracting-gps-track-from-360-timelapse-video), and [video compression](/blog/2020/fps-bitrate-compression-360-virtual-tours).
 
@@ -94,3 +94,7 @@ You can use the Map the Paths Uploader to easily split videos into meta/geotagge
 ## Update 2021-02-26
 
 [Turning a 360 Video into Timelapse Images (Part 2/2)](/blog/2021/turn-360-video-into-timelapse-images-part-2)
+
+## Update 2021-08-06
+
+If you'd like to read more about XMP namespaces, [read my latest introductory post here](/blog/2021/introduction-to-xmp-namspaces).

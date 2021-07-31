@@ -1,7 +1,7 @@
 ---
 date: 2020-11-13
 title: "My Favourite OSM Connect 2020 Talks"
-description: "Street art, 3D maps, reinventing the wheel, and saving cyclists."
+description: "Street art, 3D maps, reinventing the wheel, and saving cyclists. All available to watch now."
 categories: guides
 tags: [OSM, OpenStreetMap]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**All available to watch now.**
+**Street art, 3D maps, reinventing the wheel, and saving cyclists. All available to watch now.**
 
 [Last week OSM US held their annual Connect conference](https://www.openstreetmap.us/connect2020/). As with almost all conferences this year, Connect 2020 also found itself being hosted virtually for the first time.
 

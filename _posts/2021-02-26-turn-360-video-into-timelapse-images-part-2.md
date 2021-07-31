@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Embedding metadata into images.**
+**In the second part of this post I will show you how to add metadata to images previously extracted from frames.**
 
 [Last week I showed you how to split a 360 video into frames](/blog/2021/turn-360-video-into-timelapse-images-part-1).
 

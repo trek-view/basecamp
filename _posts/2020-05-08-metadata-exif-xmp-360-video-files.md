@@ -1,7 +1,7 @@
 ---
 date: 2020-05-08
 title: "A deeper look into a 360 video and the metadata it holds"
-description: "Every video you take, on any camera, is filled with metadata. Here's why it's important for outdoor 360 tour photography."
+description: "Every video you take is filled with metadata. Here's why it's important for outdoor 360 street-level photography."
 categories: developers
 tags: [GPS, XMP, EXIF, mp4]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Metadata, GPMD, CAMM? WTF.**
+**Every video you take is filled with metadata. Here's why it's important for outdoor 360 street-level photography.**
 
 [Last week I explained the metadata found in 360 photos](/blog/2020/metadata-exif-xmp-360-photo-files), and promised a post on video metadata. Well, here it is.
 

@@ -1,7 +1,7 @@
 ---
 date: 2019-12-20
 title: "Google's Street View Cameras - More Than Meets the Eye"
-description: "Street View camera rigs do much more than just take photos."
+description: "Lasers, gyroscopes, accelerometers... Street View camera rigs do much more than just take photos."
 categories: updates
 tags: [Street View]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Lasers, gyroscopes, accelerometers...**
+**Lasers, gyroscopes, accelerometers... Street View camera rigs do much more than just take photos.**
 
 [Last month I looked at the history of the Street View camera](/blog/2019/history-of-google-street-view-cameras), from the early versions in 2007, to the drastically improved cameras Google now uses.
 

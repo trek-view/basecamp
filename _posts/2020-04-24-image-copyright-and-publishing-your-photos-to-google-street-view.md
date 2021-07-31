@@ -11,7 +11,9 @@ layout: post
 published: true
 ---
 
-**Who owns your photos?**
+**A deeper look into Google's Terms of Service, and what it means for imagery you've contributed to Google Street View.**
+
+Who owns your photos?
 
 You do. Always.
 

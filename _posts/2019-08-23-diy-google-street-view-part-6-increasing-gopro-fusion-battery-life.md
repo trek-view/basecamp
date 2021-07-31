@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Some Trek Pack improvements for longer tours.**
+**Power your GoPro Fusion with an external power pack, the equivilant of 10 GoPro Fusion batteries.**
 
 <img class="img-fluid" src="/assets/images/blog/2019-08-23/trek-pack-external-power.jpg" alt="Trek Pack with external power" title="Trek Pack with external power" />
 

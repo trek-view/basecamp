@@ -1,7 +1,7 @@
 ---
 date: 2020-09-11
 title: "An Introduction to Photogrammetry and LiDaR"
-description: "Here's how Google Maps make their satellite imagery look three-dimensional."
+description: "How Google Maps make their satellite imagery look three-dimensional."
 categories: guides
 tags: [lidar, opensfm, photogrammetry]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**A closer look into point clouds.**
+**How Google Maps make their satellite imagery look three-dimensional.**
 
 360 images can often look 'flat'.
 

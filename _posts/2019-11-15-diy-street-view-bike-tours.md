@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**From two feet, to two wheels (and two feet).**
+**A proof-of-concept for capturing 360-degree tours of cycling adventures.**
 
 Bicycles are by far my favourite method of transport. It was only a matter time before I decided to start capturing some of my rides using a 360-degree camera.
 

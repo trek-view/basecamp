@@ -1,7 +1,7 @@
 ---
 date: 2020-01-10
 title: "Underwater Street View"
-description: "The challenges and solutions we've faced capturing underwater 360-degree tours."
+description: "The challenges we've faced and resulting solutions when capturing underwater 360-degree tours."
 categories: guides
 tags: [Street View, 360Bubble. HoudahGeo]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Mapping underwater highways.**
+**The challenges we've faced and resulting solutions when capturing underwater 360-degree tours.**
 
 Unusual creatures, amazing geological features, sunken treasure...
 

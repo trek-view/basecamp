@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**573 days. 27 countries. 3 continents. 25,000 miles.**
+**Zac Newham embarks on a 25,000 mile ride from his home in Ifield, England to Sydney, Australia.**
 
 In 2013 Zac Newham embarked on a 25,000 mile solo cycle ride from his home in England to Sydney, Australia on his budget childhood bicycle.
 

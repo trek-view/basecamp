@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Float and shoot.**
+**Get off dry land and take your 360-degree camera onto your local waterways.**
 
 <img class="img-fluid" src="/assets/images/blog/2019-09-20/river-thames-henley-virtual-tour-sm.jpg" alt="Trek View Henley Regatta" title="Trek View Henley Regatta" />
 

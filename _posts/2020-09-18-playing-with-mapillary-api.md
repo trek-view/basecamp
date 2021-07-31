@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Filter and download map features programmatically.**
+**A quick look at some of the API queries we've used against the Mapillary API.**
 
 [Mapillary's Chris Beddow wrote a brilliant blog post about getting started with the Mapillary API](https://blog.mapillary.com/update/2020/08/28/map-data-mapillary-api.html).
 

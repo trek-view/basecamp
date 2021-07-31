@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Designed fo downhill tours**.
+**The second iteration of my Street View bike, this time designed for downhill trails.**
 
 [Last year I showed you the first iteration of my Street View bike](/blog/2019/diy-street-view-bike-tours/).
 

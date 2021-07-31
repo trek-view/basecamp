@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Camera, check. Lunch, check. Good weather...**
+**Image mapping parties are not only organised to capture images. They also provide a great opportunity to teach people how to use street-level imagery to improve Open Street Map.**
 
 I'm looking forward to some image mapping parties coming up in the next few weeks.
 

@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**_Sometimes_ a 360 image is too much (sometimes).**
+**Use GIMP to transform a 360 photo into a flat photo that looks perfect, and is easy to share.**
 
 360 images offer amazing views of the world.
 

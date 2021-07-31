@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**4 travellers. 4 months. No support team.**
+**A young, unaided crew of four as they hike and pack-raft for four months into the infinite region known as Patagonia.**
 
 “Unbounded” is an adventure-travel documentary following a young, unaided crew of four as they hike and pack-raft for four months into the infinite region known as Patagonia. The crew’s journey is based along the “Greater Patagonian Trail," a relatively unknown route that is now the longest continual trail network in South America.
 

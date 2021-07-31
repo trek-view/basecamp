@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**OSM and Wikipedia overlays, weather reports, navigation by altitude, and more!**
+**A quick look at some of the things we've been working on over the last few months.**
 
 Firstly I’d like to say a big thank you to everyone who has uploaded their off-road 360 tours to [Map the Paths](https://www.mapthepaths.com/).
 

@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**`POST my_beautiful_panoramas.mp4`**
+**All third-party Street View tools are built around the Google Street View Publish API. Here's a closer look at how it works for uploading long sequences.**
 
 Those who use our Map the Paths Uploader will be familiar with [its ability to upload your sequences to Google Street View](https://www.mapthepaths.com/uploader).
 

@@ -1,7 +1,7 @@
 ---
 date: 2019-10-11
 title: "Cash for Cameras"
-description: "Earn cash. Do good."
+description: "Calling all GoPro Fusion owners; trade in your camera for cash."
 categories: updates
 tags: [Trek Pack 1, Camera Loans]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Calling all GoPro Fusion owners.**
+**Calling all GoPro Fusion owners; trade in your camera for cash.**
 
 Have you seen the new GoPro MAX yet?
 

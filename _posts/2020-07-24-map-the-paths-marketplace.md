@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Let's get exploring.**
+**Find or offer help on image collection projects to create fresh street level map data in locations where it's needed for Google Street View, Mapillary, and more...**
 
 Land, above sea level, [covers roughly 29 percent, of the earth's surface](https://www.usgs.gov/special-topic/water-science-school/science/how-much-water-there-earth?qt-science_center_objects=0#qt-science_center_objects).
 

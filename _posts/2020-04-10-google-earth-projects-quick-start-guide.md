@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Enjoy the outdoors from the comfort of the indoors.**
+**Create customised maps and stories about places anywhere in the world.**
 
 Two weeks ago, [I wrote about creating your own virtual tours using Google's Tour Creator](/blog/2020/build-virtual-expeditions-for-your-class/).
 

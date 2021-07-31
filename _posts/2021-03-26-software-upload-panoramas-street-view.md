@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**2021 off-road edition.**
+**Here are four options you can use to upload your 360 photos to Street View.**
 
 A lot of guidance exists around creating virtual tours of businesses.
 

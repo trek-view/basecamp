@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Make better maps.**
+**We recently discovered Mapillary (yes, we're late) and wanted to share some the great things we've discovered on the platform.**
 
 You might have noticed a change in our website footer recently.
 

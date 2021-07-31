@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**The days continue to get shorter and the weather colder (in the Northern Hemisphere).**
+**The focus for the coming months is going to be 360 mapping for winter sports.**
 
 <img class="img-fluid" src="/assets/images/blog/2019-11-01/chamonix-virtual-tour-sm.jpg" alt="Chamonix Virtual Tour" title="Chamonix Virtual Tour" />
 

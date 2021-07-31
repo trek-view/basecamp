@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Comparing the four heavyweights.**
+**How do the major street-level mapping products compare?**
 
 [Google first launched Street View in 2007](/blog/2019/history-of-google-street-view-cameras). 
 

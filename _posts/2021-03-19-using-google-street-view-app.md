@@ -1,7 +1,7 @@
 ---
 date: 2021-03-19
 title: "Using the Google Street View app to publish your panoramic photos"
-description: "Over the past few months the Street View mobile app has a number of updates. Here's a quick start guide to publish your photos to the map."
+description: "Over the past few months the Street View mobile app has received a number of updates. Here's a quick start guide to using it to publish your photos to Google Maps."
 categories: guides
 tags: [Google, Street View]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**A quick look at the official Street View app.**
+**Over the past few months the Street View mobile app has received a number of updates. Here's a quick start guide to using it to publish your photos to Google Maps.**
 
 The Google Street View mobile app is designed for both viewing and managing Street View images.
 

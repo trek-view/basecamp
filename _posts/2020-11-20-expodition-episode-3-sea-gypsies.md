@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Seasickness, pirates and icebergs guaranteed.**
+**A crew of 16 left New Zealand on an 8,000 mile pacific crossing to Patagonia, with a stop in Antarctica.**
 
 The vessel is Infinity, a 120ft hand-built sailing ketch that plies the Pacific Ocean on a never ending voyage of nomadic exploration. In early Feb 2014, during the iciest year on record in the Southern Ocean, Infinity and her crew of 16 left New Zealand on an 8,000 mile pacific crossing to Patagonia, with a stop in Antarctica.
 

@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Rainforests, moorland, glaciers, and volcanic craters.**
+**The second most popular route on Mount Kilimanjaro can now be hiked from home.**
 
 If you missed last weeks post, [we're in the process of mapping Kilimanjaro with our Trek Packs](/blog/2021/climbing-kilimanjaro-part-1-the-kit).
 

@@ -1,7 +1,7 @@
 ---
 date: 2019-12-06
 title: "What is a Place ID?"
-description: "How to make sure you're not missing out on Google Local Guide points from Street View photos."
+description: "And how to make sure you're not missing out on Google Local Guide points from Street View photos."
 categories: developers
 tags: [Google, Street View, Google Street View, Tourer]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Seeing "Unknown Place" on Google Street View?**
+**And how to make sure you're not missing out on Google Local Guide points from Street View photos.**
 
 It's because your photo has no Place ID.
 

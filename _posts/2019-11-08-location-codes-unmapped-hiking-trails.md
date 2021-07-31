@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**tiger.alive.single**
+**Using location codes to map even the most remote hiking trails.**
 
 [That's where I was this morning](https://what3words.com/tiger.alive.single).
 

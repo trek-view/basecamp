@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Hello, Trekkers!**
+**I believe sharing interactive 360-degree imagery of our world can inspire others to explore and protect it.**
 
 <img class="img-fluid" src="/assets/images/blog/2019-05-17/tiede-tenerife-virtual-tour-sm.jpg" alt="Mount Tiede Virtual Tour" title="Mount Tiede Virtual Tour" />
 

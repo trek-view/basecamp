@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Inspiration to get hiking this summer.**
+**The network covers over 4,000km of England and Wales. With your help, we want to capture street-level images for every single one of those kilometers.**
 
 [For the past few weeks I've been sharing a lot about 360 tours captured on bikes](/blog/2021/sustrans-uk-national-cycle-network-360-street-level-imagery). Don't worry, this is not another one.
 

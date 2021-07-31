@@ -1,7 +1,7 @@
 ---
 date: 2020-07-03
 title: "How Does 360 Stitching Software Work?"
-description: "An ELI5 description of how a camera takes 2 or more photos to create a 360 image."
+description: "An ELI5 description of how software takes 2 or more photos to create a 360 image."
 categories: developers
 tags: []
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**From sensors to 360 photo.**
+**An ELI5 description of how software takes 2 or more photos to create a 360 image.**
 
 Most 360 cameras have stitching software to turn the photos it has taken into panoramas.
 

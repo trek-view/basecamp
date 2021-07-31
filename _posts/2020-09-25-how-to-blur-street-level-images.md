@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**We're big believers in privacy.**
+**If you see that your face or license plate requires additional blurring after being captured by a camera car, here's how you can do it.**
 
 All faces and sensitive information (e.g. number plates) captured in our photos are blurred before being publicised.
 

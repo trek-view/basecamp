@@ -1,7 +1,7 @@
 ---
 date: 2019-11-29
 title: "Make it Visual"
-description: "It is impossible to argue with the numbers, but hard to quantify them."
+description: "It is impossible to argue with the numbers around global warming, but hard to fully comprehend them."
 categories: updates
 tags: [environment]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Because numbers are boring.**
+**It is impossible to argue with the numbers around global warming, but hard to fully comprehend them.**
 
 > Our summers and winters keep getting warmer
 

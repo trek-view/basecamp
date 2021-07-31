@@ -1,7 +1,7 @@
 ---
 date: 2020-07-31
 title: "My Favourite Talks from State of the Map 2020"
-description: "360 cameras, 3D models, aerial imagery, and privacy."
+description: "360 cameras, 3D models, aerial imagery, and privacy. All available to watch now."
 categories: guides
 tags: [OSM, OpenStreetMap]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**All available to watch now.**
+**360 cameras, 3D models, aerial imagery, and privacy. All available to watch now.**
 
 [State of the Map](https://stateofthemap.org/) is the annual conference of the [OpenStreetMap Foundation](https://wiki.osmfoundation.org/wiki/Main_Page).
 

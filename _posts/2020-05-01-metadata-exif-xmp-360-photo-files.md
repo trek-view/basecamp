@@ -1,7 +1,7 @@
 ---
 date: 2020-05-01
 title: "A deeper look into a 360 photo and the metadata it holds"
-description: "Every photo you take, on any camera, is filled with metadata. Here's why it's important for outdoor 360 tour photography."
+description: "Every photo you take is filled with metadata. Here's why it's important for outdoor 360 street-level photography."
 categories: developers
 tags: [GPS, XMP, EXIF]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Metadata, EXIF, XMP? WTF.**
+**Every photo you take is filled with metadata. Here's why it's important for outdoor 360 street-level photography.**
 
 Well that sounds boring, but it is actually very cool. Every photo you take, on any camera, is likely filled with metadata. This data often contains location, camera model, lens type, and general information about how the image was taken.  It is this data that makes your photo library easier to browse, events are automatically grouped, and exposures auto corrected. 
 

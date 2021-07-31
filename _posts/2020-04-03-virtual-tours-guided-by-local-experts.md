@@ -1,7 +1,7 @@
 ---
 date: 2020-04-03
 title: "Don’t Let the Lockdown Stop You Exploring"
-description: "Calling all armchair adventurers!"
+description: "Calling all armchair adventurers! Join us for a series of virtual tours to the world's most awe inspiring places."
 categories: updates
 tags: [Treehouse]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Walk the world in your comfiest slippers.**
+**Calling all armchair adventurers! Join us for a series of virtual tours to the world's most awe inspiring places.**
 
 Over the last 2 weeks we've been [taking students on virtual field trips](/blog/2020/treehouse-academy-emergency-timetable/) to places like Mount Everest and the Great Barrier Reef.
 

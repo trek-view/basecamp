@@ -1,7 +1,7 @@
 ---
 date: 2020-11-27
 title: "My Favourite Geo For Good Summit 2020 Talks"
-description: "Seascapes, PlusCodes, Reforestation, Migrant Settlements, and Map Lessons"
+description: "Using mapping tools for a positive impact in the world including; Seascapes, PlusCodes, Reforestation, Migrant Settlements, and Map Lessons."
 categories: guides
 tags: [Google, Google Earth]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Using mapping tools for a positive impact in the world.**
+**Using mapping tools for a positive impact in the world including; Seascapes, PlusCodes, Reforestation, Migrant Settlements, and Map Lessons.**
 
 Google's Geo for Good Summit is an annual conference intended for nonprofits, scientists and other change-makers who want to leverage technology and use mapping tools for a positive impact in the world.
 

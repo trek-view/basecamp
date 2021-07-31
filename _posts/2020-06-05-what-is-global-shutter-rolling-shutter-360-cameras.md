@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Click, click, click.**
+**Why does it matter? And do you need one for 360 tour photography?**
 
 Back in the days of film cameras, the sound of camera shutters firing when photographers captured photos of a famous person on the runway seemed deafening (_from watching old clips on television_).
 

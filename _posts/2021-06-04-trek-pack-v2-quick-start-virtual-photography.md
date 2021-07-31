@@ -1,7 +1,7 @@
 ---
 date: 2021-06-04
 title: "Trek Pack v2: A (late) Quick Start Guide"
-description: "A 5 minute guide to setting up your equipment to publishing your off-road street-level imagery."
+description: "A 5 minute guide to setting up your equipment for publishing off-road street-level imagery."
 categories: guides
 tags: [Map the Paths Uploader, Google Street View, Google, Mapillary, Facebook, Strava, KartaView]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**From kit setup to publishing in 4 simple steps.**
+**A 5 minute guide to setting up your equipment for publishing off-road street-level imagery.**
 
 A little over 2 years ago, I discovered anyone could upload images to Google Street View.
 

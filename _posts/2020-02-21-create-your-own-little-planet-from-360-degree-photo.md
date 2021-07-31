@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**And big humans.**
+**urn your 360-degree photos into eye-catching miniature planets.**
 
 The technical name for this technique is "stereographic projection", but I like little planets.
 

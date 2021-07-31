@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Using GPS information from your tours with any mapping or location based tool.**
+**Here's how to use the GPS points inside your 360 timelapses or videos with tools like Strava and Google Earth.**
 
 Two weeks ago I talked about the [the metadata found in a 360 video](/blog/2020/metadata-exif-xmp-360-video-files). Before that it was [photo files](/blog/2020/metadata-exif-xmp-360-photo-files).
 

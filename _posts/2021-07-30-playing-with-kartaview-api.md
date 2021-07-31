@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Here's my notes about the KartaView API from my research planning an integration for Map the Paths.**
+**Here are my notes about the KartaView API from my research planning an integration for Map the Paths.**
 
 [Last week I took a brief look at KartaView, a street-level imagery platform](/blog/2021/getting-started-with-kartaview).
 

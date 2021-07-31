@@ -1,7 +1,7 @@
 ---
 date: 2020-12-25
 title: "Upload your action camera photos and videos to Google Street View, Mapillary, and more!"
-description: "Modify, process, upload your photos and videos using the Map the Paths Desktop Uploader"
+description: "Modify, process, and upload your photos and videos using the Map the Paths Desktop Uploader."
 categories: mapthepaths
 tags: [Map the Paths]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Put your images and video "on the map"**
+**Modify, process, and upload your photos and videos using the Map the Paths Desktop Uploader.**
 
 [A little over a year ago now I wrote about a small piece of software, Tourer](/blog/2019/diy-google-street-view-part-5-uploading-photos-using-your-computer), that allowed you to upload images from your action cameras to Google Street View and other panoramic image hosting sites.
 

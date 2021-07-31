@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**An update on our summer "call for trekkers".**
+**Many of you have shared your tours on the water this summer. It's only fair I share mine.**
 
 At the start of summer we put out a ["call for trekkers" to map waterways](/blog/2019/2019-05-31-call-for-trekkers-summer-autumn).
 

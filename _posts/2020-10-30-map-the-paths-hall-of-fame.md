@@ -1,6 +1,6 @@
 ---
 date: 2020-10-30
-title: "The Trek View Hall of Fame"
+title: "The Map the Paths Hall of Fame"
 description: "Trek View is creating open source software to save the environment. The Hall of Fame highlights people helping us to achieve our ambitious goal."
 categories: updates
 tags: [Camera Loans, Map the Paths]
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Support the cause.**
+**Trek View is creating open source software to save the environment. The Hall of Fame highlights people helping us to achieve our ambitious goal.**
 
 Trek View is currently run as a side-project to my day job. 
 
@@ -29,6 +29,6 @@ However, I need some help each year to keep it going.
 
 <img class="img-fluid" src="/assets/images/blog/2020-10-30/map-the-paths-hall-of-fame.jpg" alt="Map the Paths Hall of Fame" title="Map the Paths Hall of Fame" />
 
-As such, today I'd like to announce the [Map the Paths Hall of Fame](https://www.mapthepaths.com/hall-of-fame/), where those making significant contributions to our mission to inspire people to explore the world will be highlighted.
+Today I'd like to announce the [Map the Paths Hall of Fame](https://www.mapthepaths.com/hall-of-fame/), where those making significant contributions to our mission to inspire people to explore the world will be highlighted.
 
 Thanks for your continued support trekkers! See you in the Hall of Fame soon!

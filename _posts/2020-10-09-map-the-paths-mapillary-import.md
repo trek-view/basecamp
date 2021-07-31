@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Curate and share your street-level images.**
+**We have 100's of thousands of street-level photos on Street View, Mapillary, and other places on the web. Here's how we manage them.**
 
 Over the past 1.5 years, we've submitted about 100's of thousands of images to Mapillary.
 

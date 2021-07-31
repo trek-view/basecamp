@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**IM Who?**
+**360 Cameras are full of sensors (and not just image sensors).**
 
 What was once a device that simply exposed light to film, is now a device that [measures light hitting a sensor](/blog/what-is-global-shutter-rolling-shutter-360-cameras) and a whole host of other things; location, direction of travel, temperature...
 

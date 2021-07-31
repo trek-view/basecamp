@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Motorcycle + Raft + Pacific Ocean = ???**
+**The story of one mans journey from Central to South America on the Pacific on a raft, powered by a motorcycle.**
 
 In 2010 Dylan dreamt of travelling the world on a motorcycle. After setting off from Switzerland in 2010 and journeying 200,000km, the road from Panama to Colombia came to an end, swallowed up by an impenetrable jungle.
 

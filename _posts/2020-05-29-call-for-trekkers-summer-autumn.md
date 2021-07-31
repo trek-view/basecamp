@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Winter and Spring were not quite what we expected.**
+**The focus for the coming months is going to be 360 mapping of local areas.**
 
 <img class="img-fluid" src="/assets/images/blog/2020-05-29/ceasers-camp-mtb-sm.jpg" alt="Ceasers Camp Mountain Bike Virtual Tour" title="Ceasers Camp Mountain Bike Virtual Tour" />
 

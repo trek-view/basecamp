@@ -1,7 +1,7 @@
 ---
 date: 2019-12-27
 title: "A Year in Review"
-description: "My favourite tours captured in 2019 (and a glimpse into 2020)."
+description: "From the South Coast to the Yorkshire Dales. My favourite tours captured in 2019 (and a glimpse into 2020)."
 categories: updates
 tags: [River Thames, River Wey, South Downs Way, High Cup Nick, Devil's Punchbowl]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**From the South Coast to the Yorkshire Dales.**
+**From the South Coast to the Yorkshire Dales. My favourite tours captured in 2019 (and a glimpse into 2020).**
 
 In 2019 our trekkers captured over 100,000 360-degree photos around England alone.
 

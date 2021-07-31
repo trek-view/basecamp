@@ -1,7 +1,7 @@
 ---
 date: 2020-08-07
 title: "Trek Pack Pro - The Best 360 Mapping Camera Ever?"
-description: "8 lenses, 11K Resolution, yet comfortable enough for long hikes"
+description: "8 lenses, 11K Resolution, yet comfortable enough for long hikes."
 categories: updates
 tags: [Trek Pack, Insta360, Titan]
 author_staff_member: fdebetto
@@ -11,9 +11,9 @@ layout: post
 published: true
 ---
 
-**I think so!**
+**8 lenses, 11K Resolution, yet comfortable enough for long hikes.**
 
-_This is a guest post by Federico Debetto._
+_This is a guest post by [Federico Debetto](https://www.facebook.com/Google.Maps.Business.View.Livorno/)._
 
 <img class="img-fluid" src="/assets/images/blog/2020-08-07/trek-pack-pro-sm.jpg" alt="Trek Pack Pro" title="Trek Pack Pro" />
 
