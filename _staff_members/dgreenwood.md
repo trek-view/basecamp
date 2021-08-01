@@ -1,8 +1,7 @@
 ---
-name: David Greenwood
-post_footer: David Greenwood, Trek View Chief Explorer
+name: David G
 position: Founder
-image_path: /assets/images/global/staff/david-greenwood.png
+image_path: /assets/images/global/staff/david-g.png
 twitter: himynamesdave
-blurb: David Greenwood, Trek View Chief Explorer
+blurb: <a target="_blank"> href="https://www.linkedin.com/in/himynamesdave/">David G, Trek View Chief Explorer</a>
 ---
