@@ -19,9 +19,23 @@ You will have read my recent posts documenting the [Google Street View Publish](
 
 In my research of the KartaView API [I've been exploring their documentation](http://doc.kartaview.org/). This post is a short write up of what I've found.
 
-Authentication is done using an auth token passed as `X-Auth-Token` in the header of each request. It seems the generation of new tokens is currently limited (I am waiting for a response from KartaView about this).
+Authentication is not documented in the official docs. Doing a bit of [digging into their upload scripts repo on Github](https://github.com/kartaview/upload-scripts/blob/9aa91c19e82107f4e37c316b450fe54d389fa4d1/osc_api_gateway.py#L85), you can see Facebook, Google, and OSM OAuth are supported.
 
-The core resource of KartaView are [`sequence`](http://doc.kartaview.org/#tag/Sequence)'s.
+```
+    @classmethod
+    def login(cls, env: OSCAPISubDomain, provider: str) -> Optional[str]:
+        """this method returns login URL"""
+        if provider == "google":
+            return _osc_url(env) + '/auth/google/client_auth'
+        if provider == "facebook":
+            return _osc_url(env) + '/auth/facebook/client_auth'
+        # default to OSM
+        return _osc_url(env) + '/auth/openstreetmap/client_auth'
+```
+
+You can use the authentication token provided after authenticating as `X-Auth-Token` in the header of each request, [as seen in the code for the API here](https://github.com/kartaview/openstreetcam.org/tree/378ca88ceb65b1b2835ce7c1759ddc231b7d99d6/src/app/shared/osc-api).
+
+The core resources of KartaView are [`sequence`](http://doc.kartaview.org/#tag/Sequence)'s.
 
 A sequence is a collection of photos captured continuously by an OpenStreetCam user. 
 

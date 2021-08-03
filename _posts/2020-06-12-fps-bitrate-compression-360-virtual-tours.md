@@ -15,7 +15,7 @@ published: true
 
 "But this video is only 4K (8.5 megapixels)."
 
-[Said me when looking at the metadata of a video created using a GoPro Fusion](/blog/2020/metadata-exif-xmp-360-video-files).
+[Said me when looking at the metadata of a video created using a GoPro Fusion](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd).
 
 So what is going on here?
 

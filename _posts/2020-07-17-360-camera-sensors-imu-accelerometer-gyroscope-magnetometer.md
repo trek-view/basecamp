@@ -87,7 +87,7 @@ Once fused these values can be embedded into the metadata of an image or video.
 
 In the case of image files this is commonly reported in the XMP fields; [XMP] `PoseHeadingDegrees`, [XMP] `PosePitchDegrees`...
 
-[For videos this is written into the telemetry track](/blog/2020/metadata-exif-xmp-360-video-files). Typically telemetry formats for 360 cameras are reported in two standards, either [gpmf](https://github.com/trek-view/360-camera-metadata/blob/master/0-standards/gpmf.md) (GoPro) or [camm](https://github.com/trek-view/360-camera-metadata/blob/master/0-standards/camm.md) (most other cameras).
+[For videos this is written into the telemetry track](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd). Typically telemetry formats for 360 cameras are reported in two standards, either [gpmf](https://github.com/trek-view/360-camera-metadata/blob/master/0-standards/gpmf.md) (GoPro) or [camm](https://github.com/trek-view/360-camera-metadata/blob/master/0-standards/camm.md) (most other cameras).
 
 You can see real examples of what this data looks like for both image and video files for a variety of 360 cameras in our [360 Camera Metadata repository on GitHub](https://github.com/trek-view/360-camera-metadata).
 

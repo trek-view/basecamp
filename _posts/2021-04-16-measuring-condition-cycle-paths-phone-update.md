@@ -35,7 +35,6 @@ Note, not all sensors on the device can sample at such a high rate. For example,
 
 The raw sensor data can then be exported into csv or JSON files for analysis in other products. Crucially the raw sensor data contains `acceleration.x`, `acceleration.y`, `acceleration.z` reported by the accelerometer.
 
-
 <img class="img-fluid" src="/assets/images/blog/2021-04-16/ResearchBikeInfographic-sm.jpeg" alt="Minnesota Research Bike" title="Minnesota Research Bike" />
 
 [This app is employed on an existing data bike operated by the Parks & Trails Council of Minnesota to create a Trail Roughness Index](https://www.parksandtrails.org/2018/07/31/researchbike-adventure-underway/).

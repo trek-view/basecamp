@@ -51,7 +51,7 @@ By getting to grips with basic camera and mapping concepts, people will learn ho
 
 * [Yaw, pitch and roll](/blog/2020/yaw-pitch-roll-360-degree-photography)
 * [GPS 101](/blog/2020/gps-101)
-* [Photo](/blog/2020/metadata-exif-xmp-360-photo-files) and [video](/blog/2020/metadata-exif-xmp-360-video-files) metadata
+* [Photo](/blog/2020/metadata-exif-xmp-360-photo-files) and [video](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd) metadata
 * [FPS, Bit rate, Compression and 360 Video Quality](/blog/2020/fps-bitrate-compression-360-virtual-tours)
 
 Attendees don't need to be an expert on any of these topics, but simply sharing them a few days before the event, and again on the morning of the event, can lead to a lot of avoidable mistakes by helping them understand both what they need to do, and why.

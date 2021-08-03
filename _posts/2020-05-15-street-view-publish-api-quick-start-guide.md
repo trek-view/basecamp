@@ -293,7 +293,7 @@ You might have noticed my emphasis on the word _public_ API endpoints earlier.
 
 The Street Publish API also supports video uploads if they use the [Camera Motion Metadata Spec (CAMM)](https://developers.google.com/streetview/publish/camm-spec) standard.
 
-For more information about the CAMM standard, [read this post introducing the concept of video metadata](/blog/2020/metadata-exif-xmp-360-video-files).
+For more information about the CAMM standard, [read this post introducing the concept of video metadata](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd).
 
 The `photoSequence` method is required for video uploads to the Street View Publish API, but requires authorisation from Google to access. I emailed them earlier this week and received this response:
 

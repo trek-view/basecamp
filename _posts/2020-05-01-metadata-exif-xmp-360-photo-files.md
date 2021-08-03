@@ -339,7 +339,7 @@ If you have a 360 camera and want to support our work, [please share more inform
 
 ## Update 2020-05-01
 
-[A deeper look into a 360 video and the metadata it holds](/blog/2020/metadata-exif-xmp-360-video-files).
+[A deeper look into a 360 video and the metadata it holds](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd).
 
 ## Update 2021-08-06
 

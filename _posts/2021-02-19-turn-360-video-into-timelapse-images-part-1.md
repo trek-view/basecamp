@@ -3,7 +3,7 @@ date: 2021-02-19
 title: "Turning a 360 Video into Timelapse Images (Part 1/2)"
 description: "In the first part of this post I will show you how to turn a video into a series of images for more flexible editing options."
 categories: developers
-tags: [FFMpeg]
+tags: [FFMpeg, exiftool, metadata]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-02-19/360-video-to-image-meta.jpg
 featured_image: /assets/images/blog/2021-02-19/360-video-to-image-sm.jpg
@@ -13,13 +13,13 @@ published: true
 
 **In the first part of this post I will show you how to turn a video into a series of images for more flexible editing options.**
 
-In the last year I've covered topics [about the metadata found in a 360 video](/blog/2020/metadata-exif-xmp-360-video-files), [how to extract a GPS track from them](/blog/2020/extracting-gps-track-from-360-timelapse-video), and [video compression](/blog/2020/fps-bitrate-compression-360-virtual-tours).
+In the last year I've covered topics [about the metadata found in a 360 video](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd), [how to extract a GPS track from them](/blog/2020/extracting-gps-track-from-360-timelapse-video), and [video compression](/blog/2020/fps-bitrate-compression-360-virtual-tours).
 
 The problem with video files is they're often difficult to work with as a beginner.
 
 Let's say you wanted to cut the first 20 seconds of video from your capture whilst standing still. Removing the first 20 seconds is trivial in many programs.
 
-The problem; many software programs will completely strip the GPS telemetry from the video if you do this, others will remove other important metadata from the video, [such as [XMP] ProjectionType](/blog/2020/metadata-exif-xmp-360-video-files) (used by software to recognise the video as either 360 or 2D).
+The problem; many software programs will completely strip the GPS telemetry from the video if you do this, others will remove other important metadata from the video, [such as [XMP] ProjectionType](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd) (used by software to recognise the video as either 360 or 2D).
 
 I'm yet to find the perfect 360 video editing tool for mapping. [This is one of the reasons we don't recommend capturing virtual tours in video mode using the Trek Pack](https://guides.trekview.org/mtp-web/user-guide/sequences/capture#camera-capture-mode-settings).
 

@@ -69,7 +69,7 @@ For example if the original spacing was 5 seconds between GPS times (e.g. 12:00:
 
 ## 3. Add the required metadata
 
-[As I talked about last year](/blog/2020/metadata-exif-xmp-360-video-files), video files, and specifically 360 video files, hold metadata that is important for video players to render and display the video correctly. 
+[As I talked about last year](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd), video files, and specifically 360 video files, hold metadata that is important for video players to render and display the video correctly. 
 
 Looking at the metadata of the video I just created using exiftool:
 
@@ -318,6 +318,8 @@ $ exiftool XMP-exif:GPSLongitude:'16 deg 32&#39; 44.90&quot; W' XMP-exif:GPSLati
 Looking at the way camera manufactures create videos, all of them include first GPS position in the video level metadata, as I've shown above. This is useful for video players to show the starting point of the video (etc.) where an unknown telemetry standard is used.
 
 It's important to make the distinction that I'm only adding video level data, and not full telemetry to the video as this requires a lot more complexity. Full telemetry is written into the metadata in a standard structure (e.g [CAMM](https://developers.google.com/streetview/publish/camm-spec) or [GPMD](https://github.com/gopro/gpmf-parser)) in a very similar way to `XMP-GSpherical`.
+
+**You might like:** [Turning a 360 Timelapse or Video into a GPX or KML track](/blog/2020/extracting-gps-track-from-360-timelapse-video/).
 
 ## Coming soon to Map the Paths Uploader...
 

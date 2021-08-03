@@ -3,7 +3,7 @@ date: 2021-02-26
 title: "Turning a 360 Video into Timelapse Images (Part 2/2)"
 description: "In the second part of this post I will show you how to add metadata to images previously extracted from frames."
 categories: developers
-tags: [FFMpeg]
+tags: [FFMpeg, exiftool, metadata]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-02-26/image-metadata-exiftool-meta.jpg
 featured_image: /assets/images/blog/2021-02-26/image-metadata-exiftool-sm.jpg
@@ -25,7 +25,7 @@ I'll be using the same video to demonstrate this process as the one used last we
 
 ## 1. Extract metadata track from video file (for telemetry information)
 
-[The finer details of this process are detailed here (and you should read this before continuing)](/blog/2020//extracting-gps-track-from-360-timelapse-video/).
+[The finer details of this process are detailed here (and you should read this before continuing)](/blog/2020/extracting-gps-track-from-360-timelapse-video/).
 
 ```
 $ exiftool -ee -p gpx.fmt VIDEO_7152.mp4 > VIDEO_7152.gpx
@@ -37,7 +37,7 @@ _Note, this a simple extraction and only preserves `GPSLatitude`, `GPSLongitude`
 
 ## 2. Extract global metadata (for camera info, etc.)
 
-This process is described in more detail in the section of this post titled, [extracting metadata for video level](/blog/2020/metadata-exif-xmp-360-video-files):
+This process is described in more detail in the section of this post titled, [extracting metadata for video level](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd):
 
 CLI input: 
 
