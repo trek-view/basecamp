@@ -3,7 +3,7 @@ date: 2020-03-20
 title: "Treehouse COVID-19 Timetable"
 description: "Calling parents, students and teachers whose schools have been closed. We're running virtual adventure lessons for students across the globe."
 categories: updates
-tags: [Treehouse]
+tags: [Treehouse, Google, Tour Creator, Expeditions, VR, Map the Paths]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-03-20/treehouse-vr-class-meta.jpg
 featured_image: /assets/images/blog/2020-03-20/treehouse-vr-class-sm.jpg

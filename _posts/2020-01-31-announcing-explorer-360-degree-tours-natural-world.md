@@ -3,7 +3,7 @@ date: 2020-01-31
 title: "Announcing Explorer, 360-Degree Tours of the Natural World"
 description: "Unleash your inner explorer and travel the globe without leaving home."
 categories: updates
-tags: [Trek Pack 1, Camera Loans, Explorer, Tourer]
+tags: [Trek Pack, Explorer, Tourer, Map the Paths]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-01-31/trek-view-explorer-meta.jpg
 featured_image: /assets/images/blog/2020-01-31/trek-view-explorer-sm.png
@@ -12,6 +12,12 @@ published: true
 ---
 
 **Unleash your inner explorer and travel the globe without leaving home.**
+
+## Update 2020-08-14: Announcing Map the Paths
+
+Explorer has now been replaced with the [Map the Paths](https://www.mapthepaths.com).
+
+## Tourer limitations
 
 Last year we released Tourer, [a small application that allowed you to upload 360-degree photos to Google Street View](/blog/2019/diy-google-street-view-part-5-uploading-photos-using-your-computer).
 

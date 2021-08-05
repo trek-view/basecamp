@@ -3,7 +3,7 @@ date: 2021-02-26
 title: "Turning a 360 Video into Timelapse Images (Part 2/2)"
 description: "In the second part of this post I will show you how to add metadata to images previously extracted from frames."
 categories: developers
-tags: [FFMpeg, exiftool, metadata]
+tags: [FFMpeg, exiftool, metadata, XMP, EXIF]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-02-26/image-metadata-exiftool-meta.jpg
 featured_image: /assets/images/blog/2021-02-26/image-metadata-exiftool-sm.jpg

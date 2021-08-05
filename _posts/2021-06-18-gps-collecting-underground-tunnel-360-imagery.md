@@ -3,7 +3,7 @@ date: 2021-06-18
 title: "Solutions for tracking your position when underground or under-canopy"
 description: "How to keep track of your position when your line-of-sight to the sky is impeded."
 categories: guides
-tags: [mapthepaths, GPS, Jim Gayes, ArduSimple, GoPro, LabPano]
+tags: [Map the Paths, GPS, ArduSimple, GoPro, LabPano]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-06-18/jim-david-bath-to-bristol-tunnel-sm.png
 featured_image: /assets/images/blog/2021-06-18/jim-david-bath-to-bristol-tunnel-sm.png

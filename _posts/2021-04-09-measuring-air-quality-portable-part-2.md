@@ -3,7 +3,7 @@ date: 2021-04-09
 title: "Measuring the Air Quality of Your Trek (Part 2)"
 description: "Our initial thoughts after testing the AtmoTube Pro."
 categories: guides
-tags: [AtmoTube]
+tags: [Atmotube Pro, air quality, Volatile Organic Compounds, Particulate Matter, Air Quality Score, VOC, PM]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-04-09/AQS-map-Farnborough-Airport-Loop-2021-03-14-meta.jpg
 featured_image: /assets/images/blog/2021-04-09/AQS-map-Farnborough-Airport-Loop-2021-03-14-sm.jpg

@@ -3,7 +3,7 @@ date: 2020-05-01
 title: "A deeper look into a 360 photo and the metadata it holds"
 description: "Every photo you take is filled with metadata. Here's why it's important for outdoor 360 street-level photography."
 categories: developers
-tags: [GPS, XMP, EXIF]
+tags: [GPS, XMP, EXIF, exiftool, Ricoh, Theta Z1, GoPro, Fusion, jpg]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-05-01/apolloone-example-meta.jpg
 featured_image: /assets/images/blog/2020-05-01/apolloone-example-sm.png

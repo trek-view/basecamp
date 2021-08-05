@@ -3,7 +3,7 @@ date: 2019-12-13
 title: "What's in your Trek Pack?"
 description: "How much can you fit in a Trek Pack? What do you take on hikes?"
 categories: guides
-tags: [Trek Pack 1, Camera Loans]
+tags: [Trek Pack, GoPro, Fusion]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2019-12-13/trek-pack-emptied-meta.jpg
 featured_image: /assets/images/blog/2019-12-13/trek-pack-emptied-sm.jpg

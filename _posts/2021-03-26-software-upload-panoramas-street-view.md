@@ -3,7 +3,7 @@ date: 2021-03-26
 title: "Software for Uploading Your Off-Road Imagery to Google Street View"
 description: "Here are four options you can use to upload your 360 photos to Street View."
 categories: guides
-tags: [Google, Street View, Mapillary, Strava]
+tags: [Google, Street View, Mapillary, Strava, GoThru, Trailblazer, Map the Paths]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-03-26/panoskin-trailblazer-meta.jpg
 featured_image: /assets/images/blog/2021-03-26/panoskin-trailblazer.jpg

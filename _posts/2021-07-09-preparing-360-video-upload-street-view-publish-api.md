@@ -3,7 +3,7 @@ date: 2021-07-09
 title: "Preparing a Video Upload for the Street View Publish API"
 description: "All third-party Street View tools are built around the Google Street View Publish API. Here's a closer look at how it works for uploading long sequences."
 categories: developers
-tags: [Google, Street View]
+tags: [Google, Street View, video, Map the Paths]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-07-09/photosequence-google-street-view-api-meta.jpg
 featured_image: /assets/images/blog/2021-07-09/photosequence-google-street-view-api-sm.jpg

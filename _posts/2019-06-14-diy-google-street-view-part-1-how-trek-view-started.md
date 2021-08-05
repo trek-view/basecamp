@@ -3,7 +3,7 @@ date: 2019-06-14
 title: "DIY Google Street View (1/5): How I (Trek View) Started Capturing 360-Degree Tours"
 description: "How I built the original Trek View Trek Pack, then used it to shoot, process, and publish 360-degree photo tours to Google Street View."
 categories: guides
-tags: [Trek Pack 1]
+tags: [Trek Pack, Google, Street View, GoPro, Fusion, Fusion Studio, Tourer, Anker, PowerCore, Map the Paths]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2019-06-14/richmond-river-thames-virtual-tour-meta.jpg
 featured_image: /assets/images/blog/2019-06-14/richmond-river-thames-virtual-tour-sm.jpg

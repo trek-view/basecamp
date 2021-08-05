@@ -3,7 +3,7 @@ date: 2019-12-06
 title: "What is a Place ID?"
 description: "And how to make sure you're not missing out on Google Local Guide points from Street View photos."
 categories: developers
-tags: [Google, Street View, Google Street View, Tourer]
+tags: [Google, Street View, PlaceID, Tourer, Map the Paths]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2019-12-06/unknown-place-google-street-view-meta.jpg
 featured_image: /assets/images/blog/2019-12-06/unknown-place-google-street-view-sm.png

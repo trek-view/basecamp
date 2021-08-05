@@ -3,7 +3,7 @@ date: 2021-02-19
 title: "Turning a 360 Video into Timelapse Images (Part 1/2)"
 description: "In the first part of this post I will show you how to turn a video into a series of images for more flexible editing options."
 categories: developers
-tags: [FFMpeg, exiftool, metadata]
+tags: [FFMpeg, exiftool, metadata, XMP, EXIF]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-02-19/360-video-to-image-meta.jpg
 featured_image: /assets/images/blog/2021-02-19/360-video-to-image-sm.jpg

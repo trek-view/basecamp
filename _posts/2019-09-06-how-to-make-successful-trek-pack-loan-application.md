@@ -3,7 +3,7 @@ date: 2019-09-06
 title: "5 Tips for Submitting a Successful Trek Pack Loan Application "
 description: "Everything you need to make your application for a Trek Pack loan stand out. Tip 0: Submit something."
 categories: updates
-tags: [Camera Loans]
+tags: [Trek Pack]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2019-09-06/frensham-pond-virtual-tour-meta.jpg
 featured_image: /assets/images/blog/2019-09-06/frensham-pond-virtual-tour-sm.jpg

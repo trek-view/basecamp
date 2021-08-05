@@ -3,7 +3,7 @@ date: 2020-07-17
 title: "What is an IMU?"
 description: "360 Cameras are full of sensors (and not just image sensors)."
 categories: developers
-tags: [imu, accelerometer, gyroscope, maggnetometer]
+tags: [imu, accelerometer, gyroscope, magnetometer, orientation, heading, pitch, yaw, gpmf, camm, GoPro, EXIF, XMP]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-07-17/3dof-6dof-meta.jpg
 featured_image: /assets/images/blog/2020-07-17/3dof-6dof-sm.jpg

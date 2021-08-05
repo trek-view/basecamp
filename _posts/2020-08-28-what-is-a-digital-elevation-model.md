@@ -3,7 +3,7 @@ date: 2020-08-28
 title: "What is a Digital Elevation Model?"
 description: "A Digital Elevation Model (DEM) is a 3D computer graphics representation of elevation data to represent terrain."
 categories: guides
-tags: []
+tags: [Digital Elevation Model, DEM, GPS, Mapbox Tilequery, Google Elevation API]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-08-28/digital-elevation-model-meta.png
 featured_image: /assets/images/blog/2020-08-28/digital-elevation-model-sm.png

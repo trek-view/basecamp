@@ -3,7 +3,7 @@ date: 2021-06-25
 title: "Collecting street-level imagery of the UK's National Cycle Network"
 description: "The network covers over 20,000km of the UK. With your help, we want to capture street-level images for every single one of those kilometers."
 categories: guides
-tags: [Sustrans, cycling, mapthepaths]
+tags: [Sustrans, bike, data bike, Map the Paths, Drakes Trail, National Cycle Network, New Forest]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-06-25/national-cycle-network-uk-map-meta.jpg
 featured_image: /assets/images/blog/2021-06-25/national-cycle-network-uk-map-sm.jpg

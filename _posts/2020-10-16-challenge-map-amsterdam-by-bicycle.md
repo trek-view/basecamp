@@ -3,7 +3,7 @@ date: 2020-10-16
 title: "Crowdsourcing safer bicycle lane design"
 description: "Abstracting data from images of bicycle lanes to create a blueprint for the safest bicycle infrastructure."
 categories: mapthepaths
-tags: [Amsterdam, Map the Paths]
+tags: [Amsterdam, Map the Paths, bike, data bike]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-10-16/map-the-paths-cycle-meta.jpg
 featured_image: /assets/images/blog/2020-10-16/map-the-paths-cycle-sm.jpg

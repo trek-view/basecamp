@@ -3,7 +3,7 @@ date: 2021-03-12
 title: "Measuring the Condition of Cycle Paths With Only Your Phone"
 description: "Use the rRuf mobile app on your bicycle to measure the ride quality."
 categories: guides
-tags: [rRuf, Data Bike, DMAMPO]
+tags: [rRuf, data bike, DMAMPO, bike]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-03-12/dmampo-data-bike-trail-quality-2019-meta.jpg
 featured_image: /assets/images/blog/2021-03-12/dmampo-data-bike-trail-quality-2019-sm.jpg

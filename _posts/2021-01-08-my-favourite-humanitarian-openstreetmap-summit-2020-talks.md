@@ -3,7 +3,7 @@ date: 2021-01-08
 title: "My Favourite Humanitarian OpenStreetMap Summit 2020 Talks"
 description: "Mapping projects to improve disaster and development outcomes, including; Trashsites, Land Rights and Resources, Wildfires and Cycling."
 categories: guides
-tags: [OpenStreetMap, HOSM]
+tags: [OpenStreetMap, HOSM, Edoardo Neerhut, Mapillary, Chad Blevins, Critigen, Leon Lizon Romano, Practical Action, Natalia da Silveria, bike, Universidad de Antioquia, GeoLab]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-01-08/hot-logo-meta.jpg
 featured_image: /assets/images/blog/2021-01-08/hot-logo-sm.jpg

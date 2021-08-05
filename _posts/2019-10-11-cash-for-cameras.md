@@ -3,7 +3,7 @@ date: 2019-10-11
 title: "Cash for Cameras"
 description: "Calling all GoPro Fusion owners; trade in your camera for cash."
 categories: updates
-tags: [Trek Pack 1, Camera Loans]
+tags: [Trek Pack, GoPro, Fusion]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2019-10-11/2-gopro-fusions-meta.jpg
 featured_image: /assets/images/blog/2019-10-11/2-gopro-fusions-sm.jpg

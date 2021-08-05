@@ -3,7 +3,7 @@ date: 2020-10-30
 title: "The Map the Paths Hall of Fame"
 description: "Trek View is creating open source software to save the environment. The Hall of Fame highlights people helping us to achieve our ambitious goal."
 categories: updates
-tags: [Camera Loans, Map the Paths]
+tags: [Trek Pack, Map the Paths, Hall of Fame]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-10-30/trek-view-patreon-meta.jpg
 featured_image: /assets/images/blog/2020-10-30/trek-view-patreon-sm.jpg

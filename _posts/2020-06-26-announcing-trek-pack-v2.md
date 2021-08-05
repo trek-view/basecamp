@@ -3,7 +3,7 @@ date: 2020-06-26
 title: "Announcing the Trek Pack v2"
 description: "Over the Winter we've been experimenting with new cameras for an updated version of our Trek Pack."
 categories: updates
-tags: [Camera Loans]
+tags: [Trek Pack, GoPro, MAX, 360Bubble, bike, hike]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-06-26/trek-pack-v2-meta.jpg
 featured_image: /assets/images/blog/2020-06-26/trek-pack-v2-sm.jpg

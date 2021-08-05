@@ -3,7 +3,7 @@ date: 2020-03-27
 title: "Google Tour Creator - A Quick Start Guide"
 description: "Build immersive, 360-degree tours and become a virtual tour guide to show friends, family, or an entire class your creations."
 categories: guides
-tags: [Treehouse, VR, Google Tour Creator]
+tags: [Treehouse, VR, Google, Tour Creator, Expeditions, Map the Paths]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-03-27/google-tour-creator-add-a-scene-meta.jpg
 featured_image: /assets/images/blog/2020-03-27/google-tour-creator-add-a-scene-sm.png

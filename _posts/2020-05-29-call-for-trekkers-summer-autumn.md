@@ -3,7 +3,7 @@ date: 2020-05-29
 title: "Call for Trekkers: Summer / Autumn 2020"
 description: "The focus for the coming months is going to be 360 mapping of local areas."
 categories: updates
-tags: [Camera Loans]
+tags: [Trek Pack, walk, bike]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-05-29/ceasers-camp-mtb-meta.jpg
 featured_image: /assets/images/blog/2020-05-29/ceasers-camp-mtb-sm.jpg

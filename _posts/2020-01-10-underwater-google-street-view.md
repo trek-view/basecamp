@@ -3,7 +3,7 @@ date: 2020-01-10
 title: "Underwater Street View"
 description: "The challenges we've faced and resulting solutions when capturing underwater 360-degree tours."
 categories: guides
-tags: [Street View, 360Bubble. HoudahGeo]
+tags: [Google, Street View, 360Bubble, HoudahGeo, GPS, dive, GoPro, Fusion, Max, Ricoh, Theta, Garmin, Virb, Samsung, Gear 360, Insta360, ONE]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-01-10/street-view-underwater-meta.jpg
 featured_image: /assets/images/blog/2020-01-10/street-view-underwater-sm.jpg

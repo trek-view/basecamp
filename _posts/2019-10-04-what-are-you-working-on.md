@@ -3,7 +3,7 @@ date: 2019-10-04
 title: "What are You Working On? (Summer/Autumn 2019)"
 description: "Many of you have shared your tours on the water this summer. It's only fair I share mine."
 categories: updates
-tags: [Trek Pack 1]
+tags: [Trek Pack, River Thames, SUP, Wey Navigations, Basingstoke Canal, Kennet and Avon Canal]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2019-10-04/kennett-avon-canal-reading-sm.jpg
 featured_image: /assets/images/blog/2019-10-04/kennett-avon-canal-reading-meta.jpg

@@ -3,7 +3,7 @@ date: 2019-11-01
 title: "Call for Trekkers: Winter / Spring 2020"
 description: "The focus for the coming months is going to be 360 mapping for winter sports."
 categories: updates
-tags: [Camera Loans]
+tags: [Trek Pack, ski, snowboard, ice climb, snow shoe]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2019-11-01/chamonix-virtual-tour-meta.jpg
 featured_image: /assets/images/blog/2019-11-01/chamonix-virtual-tour-sm.jpg

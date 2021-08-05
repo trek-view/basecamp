@@ -3,7 +3,7 @@ date: 2020-02-14
 title: "Projects We Love on Mapillary"
 description: "We recently discovered Mapillary (yes, we're late) and wanted to share some the great things we've discovered on the platform."
 categories: updates
-tags: [Mapillary]
+tags: [Mapillary, Bike Ottawa, Norwegian Institute for Nature Research, Canada, Norway, The Red Cross]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-02-14/field-research-in-norway-mapillary-meta.jpg
 featured_image: /assets/images/blog/2020-02-14/field-research-in-norway-mapillary-sm.jpg

@@ -3,7 +3,7 @@ date: 2020-09-04
 title: "Preparing for an Image Mapping Party"
 description: "Image mapping parties are not only organised to capture images. They also provide a great opportunity to teach people how to use street-level imagery to improve Open Street Map."
 categories: updates
-tags: [osm, mapping party]
+tags: [osm, mapping party, OpenTrailView, OpenStreetMap]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-09-04/bexhill-osm-mapping-meta.jpg
 featured_image: /assets/images/blog/2020-09-04/bexhill-osm-mapping-sm.jpg

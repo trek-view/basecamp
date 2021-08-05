@@ -3,7 +3,7 @@ date: 2020-08-14
 title: "Take a Virtually Guided Tour (or Create Your Own)"
 description: "Announcing Map the Path Guidebooks. Act as a local guide of your favourite places for everyone around the world to enjoy."
 categories: mapthepaths
-tags: []
+tags: [Map the Paths, Guidebook, Mount Teide, River Thames]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-08-14/mapthepaths-guidebooks-meta.jpg
 featured_image: /assets/images/blog/2020-08-14/mapthepaths-guidebooks-sm.jpg

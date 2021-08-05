@@ -3,7 +3,7 @@ date: 2020-11-27
 title: "My Favourite Geo For Good Summit 2020 Talks"
 description: "Using mapping tools for a positive impact in the world including; Seascapes, PlusCodes, Reforestation, Migrant Settlements, and Map Lessons."
 categories: guides
-tags: [Google, Google Earth]
+tags: [Google, Google Earth, Geo for Good Summit, WWF, PlusCode, Rural Utah Project, Addressing the Unaddressed, Thinking Machines, Aurelie Shapiro, Alex Pigot, Drew Cooper, Navajo, India Literacy Project, Pramod Sridharamurthy]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-11-27/geo-for-good-conference-meta.jpg
 featured_image: /assets/images/blog/2020-11-27/geo-for-good-conference-sm.jpg

@@ -3,7 +3,7 @@ date: 2020-04-10
 title: "Google Earth Projects - A Quick Start Guide"
 description: "Create customised maps and stories about places anywhere in the world."
 categories: guides
-tags: [Google Earth, maps]
+tags: [Google, Earth]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-04-10/google-earth-project-annotate-feature-meta.jpg
 featured_image: /assets/images/blog/2020-04-10/google-earth-project-annotate-feature.png
@@ -152,7 +152,6 @@ Find us on:
 
 * [Instagram](https://www.instagram.com/trekviewed/)
 * [Facebook](https://www.facebook.com/trekview/)
-
 
 ## Update (2020-04-17)
 

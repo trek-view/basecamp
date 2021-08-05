@@ -3,7 +3,7 @@ date: 2020-04-17
 title: "What are you working on? (Winter/Spring 2020)"
 description: "It has been over 6 months since I last gave you an update about what we're working on. I think you're well overdue an update. Albeit a short one."
 categories: updates
-tags: [Campfire]
+tags: [Campfire, Treehouse, Map the Paths]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-04-17/ceasers-camp-aldershot-fleet-meta.jpg
 featured_image: /assets/images/blog/2020-04-17/ceasers-camp-aldershot-fleet-sm.png
@@ -25,7 +25,7 @@ Here's a great viewpoint looking over the towns of Fleet and Farnborough, Hampsh
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2020-04-17/ceasers-camp.jpeg&amp;autoLoad=true"></iframe>
 
-[View on Map the Paths](https://www.mapthepaths.com/sequence/5a49d303-4f13-4414-8e1d-849a36989b9b/detail?page=1).
+[Update 2020-12-18: View on Map the Paths](https://www.mapthepaths.com/sequence/5a49d303-4f13-4414-8e1d-849a36989b9b/detail?page=1).
 
 It's a great spot to watch planes taking off from Farnborough Airport (FAB).
 

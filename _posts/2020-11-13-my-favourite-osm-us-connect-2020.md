@@ -3,7 +3,7 @@ date: 2020-11-13
 title: "My Favourite OSM Connect 2020 Talks"
 description: "Street art, 3D maps, reinventing the wheel, and saving cyclists. All available to watch now."
 categories: guides
-tags: [OSM, OpenStreetMap]
+tags: [OSM, OpenStreetMap, Connect 2020, YouTube, Bond Harper, Open Street Art, Sean Gorman, LiDAR, Pixel8, Emily Eros, Russ Biggs, CurbLR, David Greenwood]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-11-13/osm-us-connect-2020-meta.jpg
 featured_image: /assets/images/blog/2020-11-13/osm-us-connect-2020-sm.jpg
@@ -38,7 +38,6 @@ To enable a future powered by augmented reality, autonomous vehicles and digital
 Sean demos some impressive examples of high definition 3D maps in action.
 
 [You can find out more about Pixel8 here](https://www.pixel8.earth/).
-
 
 ## Reinventing the Wheel (Emily Eros and Russ Biggs)
 

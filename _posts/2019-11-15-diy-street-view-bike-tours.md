@@ -3,7 +3,7 @@ date: 2019-11-15
 title: "My DIY Street View Bike"
 description: "A proof-of-concept for capturing 360-degree tours of cycling adventures."
 categories: guides
-tags: [Bike, Trek Pack 1]
+tags: [bike, Google, Street View, Trek Pack, helmet, data bike]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2019-11-15/trek-view-360-degree-bicycle-camera-v1-meta.jpg
 featured_image: /assets/images/blog/2019-11-15/trek-view-360-degree-bicycle-camera-v1-sm.jpg

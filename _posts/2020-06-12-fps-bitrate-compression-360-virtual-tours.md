@@ -3,7 +3,7 @@ date: 2020-06-12
 title: "FPS, Bit rate, Compression and 360 Video Quality"
 description: "The image quality of video frames can vary significantly between two cameras offering the same resolution, but why?"
 categories: developers
-tags: [cameras]
+tags: [bit rate, resolution, codec, GoPro, Fusion, H264, MPEG-4, DivX, MPEG-2, H265]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-06-12/bit-rate-and-file-size-meta.jpg
 featured_image: /assets/images/blog/2020-06-12/bit-rate-and-file-size.jpg
@@ -116,7 +116,6 @@ The extra room means it is possible to exceed the _advertised_ maximum bit rate 
 During stitching and encoding on your PC, [GoPro Fusion Studio allows you to choose a number of final codecs](https://community.gopro.com/t5/en/How-to-Render-Videos-in-the-GoPro-Fusion-Studio-App/ta-p/388291).
 
 <img class="img-fluid" src="/assets/images/blog/2020-06-12/gopro-fusion-video-codecs.png" alt="GoPro Fusion video codecs" title="GoPro Fusion video codecs" />
-
 
 * Cineform '422 High': which is compatible with Windows (`.avi` or `.mov`) and Mac OSX (`.mov`). Maximum 5.2K resolution.
 * ProRes 422: is a standard codec supported by Apple (`.mov`). Maximum 5.2K resolution.

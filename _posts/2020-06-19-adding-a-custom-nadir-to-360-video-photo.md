@@ -3,7 +3,7 @@ date: 2020-06-19
 title: "How to Add a Custom Nadir to a 360 Photo or Video"
 description: "Branding your public images can be a great way to promote your 360 work. A custom nadir is perfect for this."
 categories: guides
-tags: [nadir]
+tags: [nadir, zenith, GIMP, Google, Street View, equirectangular, Map the Paths]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-06-19/gimp-create-nadir-meta.jpg
 featured_image: /assets/images/blog/2020-06-19/gimp-create-nadir-sm.jpg
@@ -155,3 +155,7 @@ It's a command line Python script that 1) takes logo file, 2) converts to equire
 It'll brand 100's of 360 photos with custom nadirs in under a minute.
 
 [Download it for free here](https://github.com/trek-view/nadir-patcher).
+
+## Update 2020-12-25
+
+[The Map the Paths Desktop Uploader now allows you to add a custom nadir to your 360 photos and videos](/blog/2020/map-the-paths-desktop-uploader).

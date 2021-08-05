@@ -3,7 +3,7 @@ date: 2021-04-16
 title: "Measuring the Condition of Cycle Paths With Only Your Phone (an update)"
 description: "Two consumer apps that can measure sensor data on your phone to record ride quality."
 categories: guides
-tags: [SensorLog, Data Bike, DMAMPO, Physics Toolbox Sensor Suite Pro]
+tags: [SensorLog, data bike, DMAMPO, Physics Toolbox Sensor Suite Pro, bike]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-04-16/physics-toolbox-sensor-suite-pro-meta.jpeg
 featured_image: /assets/images/blog/2021-04-16/physics-toolbox-sensor-suite-pro-sm.jpeg

@@ -3,7 +3,7 @@ date: 2020-03-06
 title: "Yaw, Pitch, Roll"
 description: "Three spatial concepts that are important to understand in 360 photography."
 categories: developers
-tags: [processing]
+tags: [yaw, pitch, roll, heading, azimuth]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-03-06/aircraft-flight-dynamics-meta.jpg
 featured_image: /assets/images/blog/2020-03-06/aircraft-flight-dynamics-sm.jpg

@@ -3,7 +3,7 @@ date: 2020-07-31
 title: "My Favourite Talks from State of the Map 2020"
 description: "360 cameras, 3D models, aerial imagery, and privacy. All available to watch now."
 categories: guides
-tags: [OSM, OpenStreetMap]
+tags: [OSM, OpenStreetMap, State of the Map, SOTM, Mapillary, Urban Analytics Lab, OpenBuildingMap, National University of Singapore, OpenAerialMap, Humanitarian Open Street Map, HOSM]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-07-31/sotm2020-meta.jpg
 featured_image: /assets/images/blog/2020-07-31/sotm2020-sm.jpg

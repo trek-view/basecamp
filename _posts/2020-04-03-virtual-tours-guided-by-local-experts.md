@@ -3,7 +3,7 @@ date: 2020-04-03
 title: "Don’t Let the Lockdown Stop You Exploring"
 description: "Calling all armchair adventurers! Join us for a series of virtual tours to the world's most awe inspiring places."
 categories: updates
-tags: [Treehouse]
+tags: [Treehouse, Great Barrier Reef, Galapagos Islands, Machu Picchu, Arctic, VR, Google, Tour Creator, Expeditions]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-04-03/alps-virtual-tour-meta.jpg
 featured_image: /assets/images/blog/2020-04-03/alps-virtual-tour-sm.jpg

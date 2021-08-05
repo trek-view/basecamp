@@ -3,7 +3,7 @@ date: 2021-04-23
 title: "Trek View Trail Quality Index"
 description: "We continue to build out our Data Bike and are now trying to establish a global standard to measure cycle trail quality."
 categories: guides
-tags: [Data Bike, DMAMPO, Minnesota]
+tags: [bike, data bike, DMAMPO, Minnesota, Parks & Trails Council of Minnesota, Accelerometer]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-04-23/trail-roughness-index-meta.jpg
 featured_image: /assets/images/blog/2021-04-23/trail-roughness-index-sm.jpg

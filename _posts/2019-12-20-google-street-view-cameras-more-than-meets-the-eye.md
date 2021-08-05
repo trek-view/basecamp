@@ -3,7 +3,7 @@ date: 2019-12-20
 title: "Google's Street View Cameras - More Than Meets the Eye"
 description: "Lasers, gyroscopes, accelerometers... Street View camera rigs do much more than just take photos."
 categories: updates
-tags: [Street View]
+tags: [Google, Street View, Trek Pack, LIDAR, Aclima, air quality, laser scanner, DGPS, GPS]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2019-12-20/google-street-view-2017-camera-mounted-meta.jpg
 featured_image: /assets/images/blog/2019-12-20/google-street-view-2017-camera-mounted-sm.jpg

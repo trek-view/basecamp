@@ -3,7 +3,7 @@ date: 2020-03-13
 title: "What is a Nadir? What is a Zenith?"
 description: "In short, directly below, and directly above, respectively."
 categories: developers
-tags: [Trek Pack 1, Trek Pack 2]
+tags: [Trek Pack, nadir, zenith]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-03-13/horizon-coords-meta.jpg
 featured_image: /assets/images/blog/2020-03-13/horizon-coords-sm.png

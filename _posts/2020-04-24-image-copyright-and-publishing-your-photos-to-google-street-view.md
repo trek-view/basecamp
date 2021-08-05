@@ -3,7 +3,7 @@ date: 2020-04-24
 title: "tl;dr Google Street View Image Licensing "
 description: "A deeper look into Google's Terms of Service, and what it means for imagery you've contributed to Google Street View."
 categories: updates
-tags: [Google Street View]
+tags: [Google, Street View, license]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-04-24/google-street-view-terms-and-conditions-meta.jpg
 featured_image: /assets/images/blog/2020-04-24/google-street-view-terms-and-conditions-sm.png

@@ -3,7 +3,7 @@ date: 2021-06-04
 title: "Trek Pack v2: A (late) Quick Start Guide"
 description: "A 5 minute guide to setting up your equipment for publishing off-road street-level imagery."
 categories: guides
-tags: [Map the Paths Uploader, Google Street View, Google, Mapillary, Facebook, Strava, KartaView]
+tags: [Map the Paths, Google Street View, Google, Mapillary, Facebook, Strava, KartaView, Trek Pack]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-06-04/map-the-paths-uploader-integrations-meta.jpg
 featured_image: /assets/images/blog/2021-06-04/map-the-paths-uploader-integrations-sm.jpg

@@ -3,7 +3,7 @@ date: 2020-02-28
 title: "DIY Street View Bike v2"
 description: "The second iteration of my Street View bike, this time designed for downhill trails."
 categories: guides
-tags: [Bike, Trek Pack 1]
+tags: [bike, Trek Pack, data bike, GoPro, Fusion]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-02-28/360-degree-street-view-helmet-cam-meta.jpg
 featured_image: /assets/images/blog/2020-02-28/360-degree-street-view-helmet-cam-sm.jpg
@@ -51,6 +51,6 @@ Here's a 360-degree photo shot on a trail ([Blue 16](https://www.trailforks.com/
 
 Pretty good, if I do say so myself.
 
-In summary, for long distance touring on open roads, [I'll use the v1 setup]((/blog/2019/diy-street-view-bike-tours/). For anything off-road (non-tarmacked surface) I'll use the v2 setup described in this post.
+In summary, for long distance touring on open roads, [I'll use the v1 setup](/blog/2019/diy-street-view-bike-tours/). For anything off-road (non-tarmacked surface) I'll use the v2 setup described in this post.
 
 [Expect to see my 360-degree bike trails go up on Explorer soon](https://explorer.trekview.org). I look forward to seeing yours too.

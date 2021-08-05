@@ -3,7 +3,7 @@ date: 2021-05-07
 title: "Climb Mount Kilimanjaro Virtually (Part 2: Macheme Route)"
 description: "The second most popular route on Mount Kilimanjaro can now be hiked from home."
 categories: mapthepaths
-tags: [Kilimanjaro, Altezza Travel]
+tags: [Kilimanjaro, Altezza Travel, hike, Trek Pack, Africa, Tanzania, GoPro, MAX, Macheme]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-05-07/machame-route-kilimanjaro-guidebook-meta.jpeg
 featured_image: /assets/images/blog/2021-05-07/machame-route-kilimanjaro-guidebook-sm.jpeg

@@ -3,7 +3,7 @@ date: 2019-05-17
 title: "Hello, Trekkers!"
 description: "I believe sharing interactive 360-degree imagery of our world can inspire others to explore and protect it."
 categories: updates
-tags: [v0.1]
+tags: [Trek Pack, David Attenborough, Google Street View, GoPro, Fusion, Pixel 2]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2019-05-17/tiede-tenerife-virtual-tour-meta.jpg
 featured_image: /assets/images/blog/2019-05-17/tiede-tenerife-virtual-tour-sm.jpg

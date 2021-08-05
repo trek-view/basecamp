@@ -3,7 +3,7 @@ date: 2020-01-24
 title: "Mapping the Unmapped"
 description: "In emergency settings it is extremely important to have information on the location of people and infrastructure."
 categories: updates
-tags: [humanitarian relief, refugees, Camera Loans]
+tags: [Gordon Buchanan, Trek Pack, Equator From The Air, Africa, Bidibidi, What3Words]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-01-24/bidibidi-openstreetmap-meta.jpg
 featured_image: /assets/images/blog/2020-01-24/bidibidi-openstreetmap-sm.png

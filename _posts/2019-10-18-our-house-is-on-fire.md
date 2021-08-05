@@ -3,7 +3,7 @@ date: 2019-10-18
 title: "Our House is on Fire"
 description: "We can all play a small part in tackling runaway global warming."
 categories: updates
-tags: [environment]
+tags: [Ed Miliband, Geoff Lloyd]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2019-10-18/extinction-rebellion-london-meta.jpg
 featured_image: /assets/images/blog/2019-10-18/extinction-rebellion-london-sm.jpg

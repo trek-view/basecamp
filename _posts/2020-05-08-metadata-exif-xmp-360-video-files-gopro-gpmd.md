@@ -3,7 +3,7 @@ date: 2020-05-08
 title: "An Introduction to the GoPro Metadata Format (GPMF) standard"
 description: "With the help of a 360 video shot using a GoPro Fusion, I take a look at GoPro's GPMF video telemetry standard."
 categories: developers
-tags: [GPS, XMP, EXIF, mp4, GoPro, GPMF, GPMD, GoPro Fusion]
+tags: [GPS, XMP, EXIF, mp4, GoPro, GPMF, GPMD, Fusion, exiftool]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-05-08/exif-tool-command-line-mp4-meta.jpg
 featured_image: /assets/images/blog/2020-05-08/exif-tool-command-line-mp4-sm.png

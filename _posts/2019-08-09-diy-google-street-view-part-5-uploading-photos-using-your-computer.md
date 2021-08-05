@@ -3,7 +3,7 @@ date: 2019-08-09
 title: "DIY Google Street View (5/5): Publish 360-Degree Photos to Street View"
 description: "Use Tourer to upload 360-degree photo tours to Google Street View from your computer."
 categories: guides
-tags: [Tourer, Trek Pack 1]
+tags: [Trek Pack, Google, Street View, GoPro, Fusion, Fusion Studio, Anker, PowerCore, Tourer, Map the Paths]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2019-08-09/UKRT049-MULTISHOT_8120_000036-meta.jpg
 featured_image: /assets/images/blog/2019-08-09/tourer-command-line-tools-example.jpg
@@ -12,6 +12,10 @@ published: true
 ---
 
 **Use Tourer to upload 360-degree photo tours to Google Street View from your computer.**
+
+## Update 2020-12-25: Announcing Map the Paths Uploader
+
+Tourer has now been replaced with the Map the Paths Uploader. [Read this blog post to find out more](/blog/2020/map-the-paths-desktop-uploader)
 
 ## Existing Street View Upload options
 
@@ -45,7 +49,7 @@ I'm working hard to make Tourer easier to use for non-technical users. The next 
 
 Do you want to be the first to know when the next version of Tourer is released?
 
-[Register for our newsletter and we'll keep you posted](https://www.mapthepaths.com).
+[Stay tuned for the release announcement by signing up for Trek View updates](https://landing.mailerlite.com/webforms/landing/i5h6l6)!
 
 ## Help us Improve Tourer
 

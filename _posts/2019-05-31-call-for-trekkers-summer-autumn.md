@@ -3,7 +3,7 @@ date: 2019-05-31
 title: "Call for Trekkers: Summer / Autumn 2019"
 description: "The focus for the coming months is going to be 360 maps for water sports."
 categories: updates
-tags: [Camera Loans]
+tags: [Trek Pack, kayak, canoe, sup, boat, surf]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2019-05-31/river-thames-hampton-court-virtual-tour-meta.jpg
 featured_image: /assets/images/blog/2019-05-31/river-thames-hampton-court-virtual-tour-sm.jpg

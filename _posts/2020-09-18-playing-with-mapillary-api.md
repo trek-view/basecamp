@@ -3,7 +3,7 @@ date: 2020-09-18
 title: "Playing with the Mapillary API"
 description: "A quick look at some of the API queries we've used against the Mapillary API."
 categories: developers
-tags: [Mapillary]
+tags: [Mapillary, object detection]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-09-18/mapillary-object-detections-meta.jpg
 featured_image: /assets/images/blog/2020-09-18/mapillary-api-object-detections.jpg

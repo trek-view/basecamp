@@ -3,7 +3,7 @@ date: 2019-09-20
 title: "How to Capture the Perfect 360-Degree Tours on the Water"
 description: "Get off dry land and take your 360-degree camera onto your local waterways."
 categories: guides
-tags: [Trek Pack 1, SUP, Camera Loans]
+tags: [Trek Pack, SUP, Exped]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2019-09-20/river-thames-henley-virtual-tour-meta.jpg
 featured_image: /assets/images/blog/2019-09-20/river-thames-henley-virtual-tour-sm.jpg

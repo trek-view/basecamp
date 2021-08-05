@@ -3,7 +3,7 @@ date: 2020-01-17
 title: "What Direction are you Facing?"
 description: "North, South, East or, West? Calculating bearings between photos."
 categories: developers
-tags: [Tourer, Explorer, Trek Pack]
+tags: [Tourer, Explorer, Map the Paths, Trek Pack, Bellingcat, distance, pitch, heading]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-01-17/tourer-connection-heading-calculation-meta.jpg
 featured_image: /assets/images/blog/2020-01-17/tourer-connection-heading-calculation-sm.png

@@ -3,7 +3,7 @@ date: 2019-12-27
 title: "A Year in Review"
 description: "From the South Coast to the Yorkshire Dales. My favourite tours captured in 2019 (and a glimpse into 2020)."
 categories: updates
-tags: [River Thames, River Wey, South Downs Way, High Cup Nick, Devil's Punchbowl]
+tags: [River Thames, River Wey, South Downs Way, High Cup Nick, Devil's Punchbowl, SUP, Trek Pack]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2019-12-27/uk-south-downs-virtual-tour-meta.jpg
 featured_image: /assets/images/blog/2019-12-27/uk-south-downs-virtual-tour-sm.jpg

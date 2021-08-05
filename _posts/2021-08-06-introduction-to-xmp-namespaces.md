@@ -3,7 +3,7 @@ date: 2021-08-06
 title: "What are XMP Namespaces?"
 description: "Adobe's eXtensible Metadata Platform (XMP) is a labeling technology that allows you to embed data about a file, known as metadata, into the file itself."
 categories: developers
-tags: [ffmpeg, exiftool]
+tags: [ffmpeg, exiftool, Adobe, XMP, EXIF, Map the Paths]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-08-06/gpano-reference-docs-meta.jpg
 featured_image: /assets/images/blog/2021-08-06/gpano-reference-docs-sm.jpg

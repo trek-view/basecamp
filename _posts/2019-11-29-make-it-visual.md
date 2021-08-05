@@ -3,7 +3,7 @@ date: 2019-11-29
 title: "Make it Visual"
 description: "It is impossible to argue with the numbers around global warming, but hard to fully comprehend them."
 categories: updates
-tags: [environment]
+tags: [David Attenborough, Brazil, NASA, Alaska, California]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2019-11-29/rondonia_landsat_1975-2012_lrg-meta.jpg
 featured_image: /assets/images/blog/2019-11-29/rondonia_landsat_1975-2012-sm.jpg

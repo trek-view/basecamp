@@ -3,7 +3,7 @@ date: 2020-02-07
 title: "You're Invited to a Pano Party (Cancelled)"
 description: "Save the date: Saturday, 23rd May 2020. Ashurst, New Forest, Hampshire, UK."
 categories: updates
-tags: [Trek Pack 2, Camera Loans, Pano Party]
+tags: [Trek Pack, OSM, New Forest, Pano Party]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-02-07/new-forest-virtual-tour-meta.jpg
 featured_image: /assets/images/blog/2020-02-07/new-forest-virtual-tour-sm.jpg

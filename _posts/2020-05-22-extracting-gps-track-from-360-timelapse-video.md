@@ -3,7 +3,7 @@ date: 2020-05-22
 title: "Turning a 360 Timelapse or Video into a GPX or KML track"
 description: "Here's how to use the GPS points inside your 360 timelapses or videos with tools like Strava and Google Earth."
 categories: developers
-tags: [GPS, XMP, EXIF]
+tags: [GPS, XMP, EXIF, exiftool]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-05-22/google-kml-docs-meta.jpg
 featured_image: /assets/images/blog/2020-05-22/google-kml-docs-sm.jpg
@@ -186,7 +186,7 @@ Warning: End of processing at large atom (LargeFileSupport not enabled)
 
 I got this error when processing this 4GB video.
 
-In which case you need to enable `largefilesupport` using an [exiftool `.config` file](https://exiftool.org/config.html). [Read this topic on the exiftool forum for more information](https://exiftool.org/forum/index.php?topic=3916.0).
+In which case you need to enable large file support (`largefilesupport`) using an [exiftool `.config` file](https://exiftool.org/config.html). [Read this topic on the exiftool forum for more information](https://exiftool.org/forum/index.php?topic=3916.0).
 
 CLI output:
 

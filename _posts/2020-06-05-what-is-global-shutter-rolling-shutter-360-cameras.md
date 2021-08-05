@@ -3,7 +3,7 @@ date: 2020-06-05
 title: "What is a Global Shutter?"
 description: "Why does it matter? And do you need one for 360 tour photography?"
 categories: guides
-tags: [camera]
+tags: [CCD, CMOS, electronic shutter, rolling shutter]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-06-05/rolling-shutter-global-shutter-photo-comparison-meta.jpg
 featured_image: /assets/images/blog/2020-06-05/rolling-shutter-global-shutter-photo-comparison.jpg

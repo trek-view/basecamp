@@ -3,7 +3,7 @@ date: 2021-05-14
 title: "Climb Mount Kilimanjaro Virtually (Part 3: Rongai Route)"
 description: "Trek one of the quietest trails up Kilimanjaro from home."
 categories: mapthepaths
-tags: [Kilimanjaro, Altezza Travel]
+tags: [Kilimanjaro, Altezza Travel, hike, Trek Pack, Africa, Tanzania, GoPro, MAX, Rongai]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-05-14/rongai-route-kilimanjaro-guidebook-meta.jpeg
 featured_image: /assets/images/blog/2021-05-14/rongai-route-kilimanjaro-guidebook-sm.jpeg

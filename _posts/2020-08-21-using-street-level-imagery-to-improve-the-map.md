@@ -3,7 +3,7 @@ date: 2020-08-21
 title: "Using Street-Level Imagery to Improve the Map"
 description: "Some useful tools to help you make additions or modifications to OpenStreetMap using Mapillary images."
 categories: guides
-tags: [OSM, OpenStreetMap, Mapillary]
+tags: [OSM, OpenStreetMap, Mapillary, Mapbox, Map the Paths]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-08-21/osm-id-editor-meta.jpg
 featured_image: /assets/images/blog/2020-08-21/osm-id-editor-sm.jpg

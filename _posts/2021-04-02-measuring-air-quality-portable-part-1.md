@@ -3,7 +3,7 @@ date: 2021-04-02
 title: "Measuring the Air Quality of Your Trek (Part 1)"
 description: "Our hunt for a device that could measure air quality during adventures."
 categories: guides
-tags: [Atmotube]
+tags: [Atmotube Pro, Aclima, air quality, Volatile Organic Compounds, Particulate Matter, Air Quality Score, VOC, PM]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-04-02/uk-air-quality-meta.jpg
 featured_image: /assets/images/blog/2021-04-02/uk-air-quality-sm.jpg

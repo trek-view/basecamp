@@ -3,7 +3,7 @@ date: 2020-07-03
 title: "How Does 360 Stitching Software Work?"
 description: "An ELI5 description of how software takes 2 or more photos to create a 360 image."
 categories: developers
-tags: []
+tags: [Hugin]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-07-03/hugin-screenshot-meta.jpg
 featured_image: /assets/images/blog/2020-07-03/hugin-screenshot-sm.jpg

@@ -3,7 +3,7 @@ date: 2021-03-19
 title: "Using the Google Street View app to publish your panoramic photos"
 description: "Over the past few months the Street View mobile app has received a number of updates. Here's a quick start guide to using it to publish your photos to Google Maps."
 categories: guides
-tags: [Google, Street View]
+tags: [Google, Street View, AtmoTube Pro]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-03-19/google-street-view-app-screens-meta.jpg
 featured_image: /assets/images/blog/2021-03-19/google-street-view-app-screens-sm.jpg

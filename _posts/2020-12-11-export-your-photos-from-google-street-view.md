@@ -3,7 +3,7 @@ date: 2020-12-11
 title: "Export your Photos From Google Street View"
 description: "Use Google Takeout to get a copy of all your imagery hosted on Google Street View."
 categories: guides
-tags: [Street View, Google]
+tags: [Street View, Google, Takeout]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-12-11/google-takout-street-view-meta.jpg
 featured_image: /assets/images/blog/2020-12-11/google-takout-street-view.jpg

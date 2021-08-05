@@ -3,7 +3,7 @@ date: 2020-10-02
 title: "Street View vs. StreetSide vs. Look Around vs. Mapillary"
 description: "How do the major street-level mapping products compare?"
 categories: guides
-tags: [Google Street View]
+tags: [Google, Street View, Microsoft, Bing, Streetside, Facebook, Mapillary, Apple, Look Around]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-10-02/google-street-view-coverage-sept-2020-meta.jpg
 featured_image: /assets/images/blog/2020-10-02/google-street-view-coverage-sept-2020-sm.jpg

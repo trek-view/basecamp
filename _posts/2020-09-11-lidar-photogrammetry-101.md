@@ -3,7 +3,7 @@ date: 2020-09-11
 title: "An Introduction to Photogrammetry and LiDaR"
 description: "How Google Maps make their satellite imagery look three-dimensional."
 categories: guides
-tags: [lidar, opensfm, photogrammetry]
+tags: [lidar, opensfm, photogrammetry, point cloud]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-09-11/lidar-point-cloud-meta.jpg
 featured_image: /assets/images/blog/2020-09-11/lidar-point-cloud-sm.jpg

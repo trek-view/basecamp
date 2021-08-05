@@ -3,7 +3,7 @@ date: 2019-11-08
 title: "Trails Don't have Addresses"
 description: "Using location codes to map even the most remote hiking trails."
 categories: developers
-tags: [Tourer, Camera Loans]
+tags: [Google, Plus Code, What3Words, Google, GPS]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2019-11-08/open-location-code-plus-code-glenmore-scotland-meta.jpg
 featured_image: /assets/images/blog/2019-11-08/open-location-code-plus-code-glenmore-scotland-sm.png

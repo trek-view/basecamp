@@ -3,7 +3,7 @@ date: 2021-05-21
 title: "Trek View Trail Quality Index: An Alternative Method Using Computer Vision"
 description: "Using the imagery captured by the Data Bike to measure cycle path surface quality."
 categories: guides
-tags: [rRuf, Data Bike, DMAMPO, Minnesota]
+tags: [rRuf, data bike, DMAMPO, bike, Global Road Damage Detection Challenge 2020, IEEE]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-05-21/road-surface-classification-meta.jpg
 featured_image: /assets/images/blog/2021-05-21/road-surface-classification-sm.jpg

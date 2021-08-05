@@ -3,7 +3,7 @@ date: 2021-07-02
 title: "Collecting street-level imagery of the UK National Trails"
 description: "The network covers over 4,000km of England and Wales. With your help, we want to capture street-level images for every single one of those kilometers."
 categories: guides
-tags: [National Trails, walking, hiking mapthepaths]
+tags: [National Trails, walk, hike, Map the Paths]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-07-02/uk-national-trails-meta.jpeg
 featured_image: /assets/images/blog/2021-07-02/uk-national-trails-sm.jpeg

@@ -3,7 +3,7 @@ date: 2019-11-22
 title: "A Brief History of Google's Street View Cameras"
 description: "Street View has come a long way in 13 years during which time 360 camera technology has seen significant advancements too."
 categories: updates
-tags: [Street View]
+tags: [Google, Street View, Trek Pack]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2019-11-22/google-street-view-latest-camera-trekker-meta.jpg
 featured_image: /assets/images/blog/2019-11-22/google-street-view-latest-camera-trekker-sm.jpg
