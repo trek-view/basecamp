@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2021-08-06/gpano-reference-docs-meta.jpg
 featured_image: /assets/images/blog/2021-08-06/gpano-reference-docs-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **[Adobe's eXtensible Metadata Platform (XMP)](https://www.adobe.com/products/xmp.html) is a labeling technology that allows you to embed data about a file, known as metadata, into the file itself.**
