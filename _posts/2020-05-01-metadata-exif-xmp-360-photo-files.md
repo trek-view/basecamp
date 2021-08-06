@@ -61,66 +61,87 @@ First, let's take a look at the `.jpg` image from a GoPro Fusion, the camera use
 CLI input: 
 
 ```
-$ exiftool -G -a  MULTISHOT_8302_000052.jpg > MULTISHOT_8302_000052_metadata.txt
+$ exiftool -X MULTISHOT_8302_000052.jpg > MULTISHOT_8302_000052_metadata.txt
 ```
 
 This command includes the following arguments:
 
-* -a: Allow duplicate tags to be extracted
-* -G: Print group name for each tag
+* `-X`: Use RDF/XML output format
 
 [Full reference here](https://exiftool.org/exiftool_pod.html).
 
-CLI output: 
+CLI output (cropped): 
 
 ```
+<?xml version='1.0' encoding='UTF-8'?>
 [...]
-[EXIF]          Image Width                     : 5760
-[EXIF]          Image Height                    : 2880
-[EXIF]          Make                            : GoPro
-[EXIF]          Camera Model Name               : GoPro Fusion FS1.04.01.80.00
-[EXIF]          Software                        : GoPro Fusion Studio 1.3.0.400
-[EXIF]          Modify Date                     : 2020:02:05 20:20:33
-[EXIF]          Artist                          : https://www.trekview.org
-[EXIF]          Copyright                       : https://www.trekview.org
-[EXIF]          Date/Time Original              : 2020:02:05 10:38:26
-[EXIF]          User Comment                    : Please contact hq@trekview.org if you want to use this photograph commercially.
-[EXIF]          GPS Latitude Ref                : North
-[EXIF]          GPS Latitude                    : 28 deg 21' 0.60"
-[EXIF]          GPS Longitude Ref               : West
-[EXIF]          GPS Longitude                   : 16 deg 54' 13.88"
-[EXIF]          GPS Altitude Ref                : Above Sea Level
-[EXIF]          GPS Altitude                    : 467.03 m
-[EXIF]          GPS Time Stamp                  : 10:32:38
-[EXIF]          GPS Date Stamp                  : 2020:02:05
-[XMP]           XMP Toolkit                     : XMP Core 4.4.0-Exiv2
-[XMP]           Stitching Software              : GoPro Fusion Studio 1.3.0.400
-[XMP]           Source Photos Count             : 2
-[XMP]           Use Panorama Viewer             : True
-[XMP]           Projection Type                 : equirectangular
-[XMP]           Cropped Area Image Height Pixels: 2880
-[XMP]           Cropped Area Image Width Pixels : 5760
-[XMP]           Full Pano Height Pixels         : 2880
-[XMP]           Full Pano Width Pixels          : 5760
-[XMP]           Cropped Area Left Pixels        : 0
-[XMP]           Cropped Area Top Pixels         : 0
-[...]
-```
+ <File:FileType>JPEG</File:FileType>
+ <File:FileTypeExtension>jpg</File:FileTypeExtension>
+ <File:MIMEType>image/jpeg</File:MIMEType>
+ <File:ExifByteOrder>Little-endian (Intel, II)</File:ExifByteOrder>
+ <File:ImageWidth>5760</File:ImageWidth>
+ <File:ImageHeight>2880</File:ImageHeight>
+ <File:EncodingProcess>Baseline DCT, Huffman coding</File:EncodingProcess>
+ <File:BitsPerSample>8</File:BitsPerSample>
+ <File:ColorComponents>3</File:ColorComponents>
+ <File:YCbCrSubSampling>YCbCr4:4:4 (1 1)</File:YCbCrSubSampling>
+ <JFIF:JFIFVersion>1.01</JFIF:JFIFVersion>
+ <JFIF:ResolutionUnit>inches</JFIF:ResolutionUnit>
+ <JFIF:XResolution>0</JFIF:XResolution>
+ <JFIF:YResolution>0</JFIF:YResolution>
+ <IFD0:ImageWidth>5760</IFD0:ImageWidth>
+ <IFD0:ImageHeight>2880</IFD0:ImageHeight>
+ <IFD0:Make>GoPro</IFD0:Make>
+ <IFD0:Model>GoPro Fusion FS1.04.01.80.00</IFD0:Model>
+ <IFD0:Software>GoPro Fusion Studio 1.3.0.400</IFD0:Software>
+ <IFD0:ModifyDate>2020:02:05 20:20:33</IFD0:ModifyDate>
+ <IFD0:Artist>https://www.trekview.org</IFD0:Artist>
+ <IFD0:Copyright>https://www.trekview.org</IFD0:Copyright>
+ <ExifIFD:DateTimeOriginal>2020:02:05 10:38:26</ExifIFD:DateTimeOriginal>
+ <ExifIFD:UserComment>Please contact hq@trekview.org if you want to use this photograph commercially.</ExifIFD:UserComment>
+ <GPS:GPSLatitudeRef>North</GPS:GPSLatitudeRef>
+ <GPS:GPSLatitude>28 deg 21&#39; 0.60&quot;</GPS:GPSLatitude>
+ <GPS:GPSLongitudeRef>West</GPS:GPSLongitudeRef>
+ <GPS:GPSLongitude>16 deg 54&#39; 13.88&quot;</GPS:GPSLongitude>
+ <GPS:GPSAltitudeRef>Above Sea Level</GPS:GPSAltitudeRef>
+ <GPS:GPSAltitude>467.03 m</GPS:GPSAltitude>
+ <GPS:GPSTimeStamp>10:32:38</GPS:GPSTimeStamp>
+ <GPS:GPSDateStamp>2020:02:05</GPS:GPSDateStamp>
+ <XMP-x:XMPToolkit>XMP Core 4.4.0-Exiv2</XMP-x:XMPToolkit>
+ <XMP-GPano:StitchingSoftware>GoPro Fusion Studio 1.3.0.400</XMP-GPano:StitchingSoftware>
+ <XMP-GPano:SourcePhotosCount>2</XMP-GPano:SourcePhotosCount>
+ <XMP-GPano:UsePanoramaViewer>True</XMP-GPano:UsePanoramaViewer>
+ <XMP-GPano:ProjectionType>equirectangular</XMP-GPano:ProjectionType>
+ <XMP-GPano:CroppedAreaImageHeightPixels>2880</XMP-GPano:CroppedAreaImageHeightPixels>
+ <XMP-GPano:CroppedAreaImageWidthPixels>5760</XMP-GPano:CroppedAreaImageWidthPixels>
+ <XMP-GPano:FullPanoHeightPixels>2880</XMP-GPano:FullPanoHeightPixels>
+ <XMP-GPano:FullPanoWidthPixels>5760</XMP-GPano:FullPanoWidthPixels>
+ <XMP-GPano:CroppedAreaLeftPixels>0</XMP-GPano:CroppedAreaLeftPixels>
+ <XMP-GPano:CroppedAreaTopPixels>0</XMP-GPano:CroppedAreaTopPixels>
+ <Composite:ImageSize>5760x2880</Composite:ImageSize>
+ <Composite:Megapixels>16.6</Composite:Megapixels>
+ <Composite:GPSAltitude>467 m Above Sea Level</Composite:GPSAltitude>
+ <Composite:GPSDateTime>2020:02:05 10:32:38Z</Composite:GPSDateTime>
+ <Composite:GPSLatitude>28 deg 21&#39; 0.60&quot; N</Composite:GPSLatitude>
+ <Composite:GPSLongitude>16 deg 54&#39; 13.88&quot; W</Composite:GPSLongitude>
+ <Composite:GPSPosition>28 deg 21&#39; 0.60&quot; N, 16 deg 54&#39; 13.88&quot; W</Composite:GPSPosition>
+</rdf:Description>
+</rdf:RDF>
 
-[Entire output for reference](https://gitlab.com/snippets/1971624).
+```
 
 **Pro tip**: EXIF Tool users, you can filter the metadata type and fields to be included in the response. For example:
 
 Return only `EXIF` data in a photo file:
 
 ```
-$ exiftool -G -a -exif:all MULTISHOT_8302_000052.jpg > MULTISHOT_8302_000052_exif_metadata.txt
+$ exiftool -X -exif:all MULTISHOT_8302_000052.jpg > MULTISHOT_8302_000052_exif_metadata.txt
 ```
 
 Return only `XMP` data with a `ProjectionType` tag in a photo file:
 
 ```
-$ exiftool -G -a -xmp:ProjectionType MULTISHOT_8302_000052.jpg > MULTISHOT_8302_000052_xmp_projectiontype_metadata.txt
+$ exiftool -X -xmp:ProjectionType MULTISHOT_8302_000052.jpg > MULTISHOT_8302_000052_xmp_projectiontype_metadata.txt
 ```
 
 <img class="img-fluid" src="/assets/images/blog/2020-05-01/apolloone-example-sm.png" alt="ApolloOne XMP example" title="ApolloOne XMP example" />
@@ -165,87 +186,119 @@ Now for the metadata output of a `.jpg` image from a Ricoh Theta Z1:
 CLI input: 
 
 ```
-$ exiftool -G -a exiftool R0013800.JPG > R0013800_metadata.txt
+$ exiftool -X exiftool R0013800.JPG > R0013800_metadata.txt
 ```
 
 CLI output:
 
 ```
+<?xml version='1.0' encoding='UTF-8'?>
 [...]
-[EXIF]          Image Description               : 
-[EXIF]          Make                            : RICOH
-[EXIF]          Camera Model Name               : RICOH THETA Z1
-[EXIF]          Orientation                     : Horizontal (normal)
-[EXIF]          X Resolution                    : 300
-[EXIF]          Y Resolution                    : 300
-[EXIF]          Resolution Unit                 : inches
-[EXIF]          Software                        : RICOH THETA Z1 Ver 1.40.1
-[EXIF]          Modify Date                     : 2020:03:28 13:03:52
-[EXIF]          Y Cb Cr Positioning             : Centered
-[EXIF]          Copyright                       : 
-[EXIF]          Exposure Time                   : 1/640
-[EXIF]          F Number                        : 5.6
-[EXIF]          Exposure Program                : Program AE
-[EXIF]          ISO                             : 80
-[EXIF]          Sensitivity Type                : Standard Output Sensitivity
-[EXIF]          Exif Version                    : 0230
-[EXIF]          Date/Time Original              : 2020:03:28 13:03:52
-[EXIF]          Create Date                     : 2020:03:28 13:03:52
-[EXIF]          Components Configuration        : Y, Cb, Cr, -
-[EXIF]          Aperture Value                  : 5.6
-[EXIF]          Brightness Value                : 9.6
-[EXIF]          Exposure Compensation           : 0
-[EXIF]          Max Aperture Value              : 2.1
-[EXIF]          Metering Mode                   : Multi-segment
-[EXIF]          Light Source                    : Unknown
-[EXIF]          Flash                           : No flash function
-[EXIF]          Focal Length                    : 2.6 mm
-[EXIF]          Flashpix Version                : 0100
-[EXIF]          Color Space                     : sRGB
-[EXIF]          Exif Image Width                : 6720
-[EXIF]          Exif Image Height               : 3360
-[EXIF]          Interoperability Index          : R98 - DCF basic file (sRGB)
-[EXIF]          Interoperability Version        : 0100
-[EXIF]          Exposure Mode                   : Auto
-[EXIF]          White Balance                   : Auto
-[EXIF]          Scene Capture Type              : Standard
-[EXIF]          Sharpness                       : Normal
-[EXIF]          GPS Version ID                  : 2.3.0.0
-[EXIF]          GPS Latitude Ref                : North
-[EXIF]          GPS Latitude                    : 45 deg 28' 58.32"
-[EXIF]          GPS Longitude Ref               : West
-[EXIF]          GPS Longitude                   : 75 deg 45' 30.24"
-[EXIF]          GPS Altitude Ref                : Above Sea Level
-[EXIF]          GPS Altitude                    : 75.78 m
-[EXIF]          GPS Time Stamp                  : 17:02:06
-[EXIF]          GPS Img Direction Ref           : Magnetic North
-[EXIF]          GPS Img Direction               : 68.8
-[EXIF]          GPS Map Datum                   : WGS-84
-[EXIF]          GPS Date Stamp                  : 2020:03:28
-[EXIF]          Compression                     : JPEG (old-style)
-[EXIF]          X Resolution                    : 300
-[EXIF]          Y Resolution                    : 300
-[EXIF]          Resolution Unit                 : inches
-[EXIF]          Thumbnail Offset                : 2526
-[EXIF]          Thumbnail Length                : 6840
-[EXIF]          Thumbnail Image                 : (Binary data 6840 bytes, use -b option to extract)
-[...]
-[XMP]           XMP Toolkit                     : RICOH THETA Z1 Ver1.40.1
-[XMP]           Projection Type                 : equirectangular
-[XMP]           Use Panorama Viewer             : True
-[XMP]           Cropped Area Image Width Pixels : 6720
-[XMP]           Cropped Area Image Height Pixels: 3360
-[XMP]           Full Pano Width Pixels          : 6720
-[XMP]           Full Pano Height Pixels         : 3360
-[XMP]           Cropped Area Left Pixels        : 0
-[XMP]           Cropped Area Top Pixels         : 0
-[XMP]           Pose Heading Degrees            : 68.8
-[XMP]           Pose Pitch Degrees              : 0.0
-[XMP]           Pose Roll Degrees               : 0.0
-[...]
-```
+ <File:FileType>JPEG</File:FileType>
+ <File:FileTypeExtension>jpg</File:FileTypeExtension>
+ <File:MIMEType>image/jpeg</File:MIMEType>
+ <File:ExifByteOrder>Big-endian (Motorola, MM)</File:ExifByteOrder>
+ <File:ImageWidth>6720</File:ImageWidth>
+ <File:ImageHeight>3360</File:ImageHeight>
+ <File:EncodingProcess>Baseline DCT, Huffman coding</File:EncodingProcess>
+ <File:BitsPerSample>8</File:BitsPerSample>
+ <File:ColorComponents>3</File:ColorComponents>
+ <File:YCbCrSubSampling>YCbCr4:2:0 (2 2)</File:YCbCrSubSampling>
+ <IFD0:ImageDescription>                                                               </IFD0:ImageDescription>
+ <IFD0:Make>RICOH</IFD0:Make>
+ <IFD0:Model>RICOH THETA Z1</IFD0:Model>
+ <IFD0:Orientation>Horizontal (normal)</IFD0:Orientation>
+ <IFD0:XResolution>300</IFD0:XResolution>
+ <IFD0:YResolution>300</IFD0:YResolution>
+ <IFD0:ResolutionUnit>inches</IFD0:ResolutionUnit>
+ <IFD0:Software>RICOH THETA Z1 Ver 1.40.1</IFD0:Software>
+ <IFD0:ModifyDate>2020:03:28 13:03:52</IFD0:ModifyDate>
+ <IFD0:YCbCrPositioning>Centered</IFD0:YCbCrPositioning>
+ <IFD0:Copyright></IFD0:Copyright>
+ <ExifIFD:ExposureTime>1/640</ExifIFD:ExposureTime>
+ <ExifIFD:FNumber>5.6</ExifIFD:FNumber>
+ <ExifIFD:ExposureProgram>Program AE</ExifIFD:ExposureProgram>
+ <ExifIFD:ISO>80</ExifIFD:ISO>
+ <ExifIFD:SensitivityType>Standard Output Sensitivity</ExifIFD:SensitivityType>
+ <ExifIFD:ExifVersion>0230</ExifIFD:ExifVersion>
+ <ExifIFD:DateTimeOriginal>2020:03:28 13:03:52</ExifIFD:DateTimeOriginal>
+ <ExifIFD:CreateDate>2020:03:28 13:03:52</ExifIFD:CreateDate>
+ <ExifIFD:ComponentsConfiguration>Y, Cb, Cr, -</ExifIFD:ComponentsConfiguration>
+ <ExifIFD:ApertureValue>5.6</ExifIFD:ApertureValue>
+ <ExifIFD:BrightnessValue>9.6</ExifIFD:BrightnessValue>
+ <ExifIFD:ExposureCompensation>0</ExifIFD:ExposureCompensation>
+ <ExifIFD:MaxApertureValue>2.1</ExifIFD:MaxApertureValue>
+ <ExifIFD:MeteringMode>Multi-segment</ExifIFD:MeteringMode>
+ <ExifIFD:LightSource>Unknown</ExifIFD:LightSource>
+ <ExifIFD:Flash>No flash function</ExifIFD:Flash>
+ <ExifIFD:FocalLength>2.6 mm</ExifIFD:FocalLength>
+ <ExifIFD:FlashpixVersion>0100</ExifIFD:FlashpixVersion>
+ <ExifIFD:ColorSpace>sRGB</ExifIFD:ColorSpace>
+ <ExifIFD:ExifImageWidth>6720</ExifIFD:ExifImageWidth>
+ <ExifIFD:ExifImageHeight>3360</ExifIFD:ExifImageHeight>
+ <ExifIFD:ExposureMode>Auto</ExifIFD:ExposureMode>
+ <ExifIFD:WhiteBalance>Auto</ExifIFD:WhiteBalance>
+ <ExifIFD:SceneCaptureType>Standard</ExifIFD:SceneCaptureType>
+ <ExifIFD:Sharpness>Normal</ExifIFD:Sharpness>
+ <Ricoh:MakerNoteType>Rdc</Ricoh:MakerNoteType>
+ <Ricoh:FirmwareVersion>1.401</Ricoh:FirmwareVersion>
+ <Ricoh:SerialNumber>(00000000)14102544</Ricoh:SerialNumber>
+ <Ricoh:RecordingFormat>JPEG</Ricoh:RecordingFormat>
+ <Ricoh:WhiteBalance>Auto</Ricoh:WhiteBalance>
+ <Ricoh:ColorTempKelvin>5000</Ricoh:ColorTempKelvin>
+ <Ricoh:Accelerometer>0 0</Ricoh:Accelerometer>
+ <Ricoh:Compass>68.8</Ricoh:Compass>
+ <Ricoh:TimeZone>-04:00</Ricoh:TimeZone>
+ <InteropIFD:InteropIndex>R98 - DCF basic file (sRGB)</InteropIFD:InteropIndex>
+ <InteropIFD:InteropVersion>0100</InteropIFD:InteropVersion>
+ <GPS:GPSVersionID>2.3.0.0</GPS:GPSVersionID>
+ <GPS:GPSLatitudeRef>North</GPS:GPSLatitudeRef>
+ <GPS:GPSLatitude>45 deg 28&#39; 58.32&quot;</GPS:GPSLatitude>
+ <GPS:GPSLongitudeRef>West</GPS:GPSLongitudeRef>
+ <GPS:GPSLongitude>75 deg 45&#39; 30.24&quot;</GPS:GPSLongitude>
+ <GPS:GPSAltitudeRef>Above Sea Level</GPS:GPSAltitudeRef>
+ <GPS:GPSAltitude>75.78 m</GPS:GPSAltitude>
+ <GPS:GPSTimeStamp>17:02:06</GPS:GPSTimeStamp>
+ <GPS:GPSImgDirectionRef>Magnetic North</GPS:GPSImgDirectionRef>
+ <GPS:GPSImgDirection>68.8</GPS:GPSImgDirection>
+ <GPS:GPSMapDatum>WGS-84</GPS:GPSMapDatum>
+ <GPS:GPSDateStamp>2020:03:28</GPS:GPSDateStamp>
+ <IFD1:Compression>JPEG (old-style)</IFD1:Compression>
+ <IFD1:XResolution>300</IFD1:XResolution>
+ <IFD1:YResolution>300</IFD1:YResolution>
+ <IFD1:ResolutionUnit>inches</IFD1:ResolutionUnit>
+ <IFD1:ThumbnailOffset>2526</IFD1:ThumbnailOffset>
+ <IFD1:ThumbnailLength>6840</IFD1:ThumbnailLength>
+ <IFD1:ThumbnailImage>(Binary data 6840 bytes, use -b option to extract)</IFD1:ThumbnailImage>
+ <XMP-x:XMPToolkit>RICOH THETA Z1 Ver1.40.1</XMP-x:XMPToolkit>
+ <XMP-GPano:ProjectionType>equirectangular</XMP-GPano:ProjectionType>
+ <XMP-GPano:UsePanoramaViewer>True</XMP-GPano:UsePanoramaViewer>
+ <XMP-GPano:CroppedAreaImageWidthPixels>6720</XMP-GPano:CroppedAreaImageWidthPixels>
+ <XMP-GPano:CroppedAreaImageHeightPixels>3360</XMP-GPano:CroppedAreaImageHeightPixels>
+ <XMP-GPano:FullPanoWidthPixels>6720</XMP-GPano:FullPanoWidthPixels>
+ <XMP-GPano:FullPanoHeightPixels>3360</XMP-GPano:FullPanoHeightPixels>
+ <XMP-GPano:CroppedAreaLeftPixels>0</XMP-GPano:CroppedAreaLeftPixels>
+ <XMP-GPano:CroppedAreaTopPixels>0</XMP-GPano:CroppedAreaTopPixels>
+ <XMP-GPano:PoseHeadingDegrees>68.8</XMP-GPano:PoseHeadingDegrees>
+ <XMP-GPano:PosePitchDegrees>0.0</XMP-GPano:PosePitchDegrees>
+ <XMP-GPano:PoseRollDegrees>0.0</XMP-GPano:PoseRollDegrees>
+ <Composite:Aperture>5.6</Composite:Aperture>
+ <Composite:ImageSize>6720x3360</Composite:ImageSize>
+ <Composite:Megapixels>22.6</Composite:Megapixels>
+ <Composite:ShutterSpeed>1/640</Composite:ShutterSpeed>
+ <Composite:GPSAltitude>75.7 m Above Sea Level</Composite:GPSAltitude>
+ <Composite:GPSDateTime>2020:03:28 17:02:06Z</Composite:GPSDateTime>
+ <Composite:GPSLatitude>45 deg 28&#39; 58.32&quot; N</Composite:GPSLatitude>
+ <Composite:GPSLongitude>75 deg 45&#39; 30.24&quot; W</Composite:GPSLongitude>
+ <Composite:RicohPitch>0</Composite:RicohPitch>
+ <Composite:RicohRoll>0</Composite:RicohRoll>
+ <Composite:FocalLength35efl>2.6 mm</Composite:FocalLength35efl>
+ <Composite:GPSPosition>45 deg 28&#39; 58.32&quot; N, 75 deg 45&#39; 30.24&quot; W</Composite:GPSPosition>
+ <Composite:LightValue>14.6</Composite:LightValue>
+</rdf:Description>
+</rdf:RDF>
 
-[Entire output for reference](https://gitlab.com/snippets/1971626).
+```
 
 One of the first things I want to highlight is the variation in amount of metadata written into the image files; 58 tags for the Fusion compared to 110 tags for the Z1.
 
@@ -254,9 +307,9 @@ The manufacturer of the camera (or developer of processing software) defines the
 You'll see the the Ricoh Theta Z1 writes much more positing information into the photo. Unlike the Fusion, the Theta Z1 includes heading (azimuth), pitch and roll information at the time of capture in the XMP data; 
 
 ```
-Pose Heading Degrees            : 68.8
-Pose Pitch Degrees              : 0.0
-Pose Roll Degrees               : 0.0
+ <XMP-GPano:PoseHeadingDegrees>68.8</XMP-GPano:PoseHeadingDegrees>
+ <XMP-GPano:PosePitchDegrees>0.0</XMP-GPano:PosePitchDegrees>
+ <XMP-GPano:PoseRollDegrees>0.0</XMP-GPano:PoseRollDegrees>
 ```
 
 This information is reported by the gyroscope on the Z1.
@@ -265,7 +318,7 @@ Whilst the Fusion has a GPS receiver, along with an accelerometer, gyroscope and
 
 Having this information reported at time of capture by the Z1 is much more accurate than [manual calculations required when it's omitted](/blog/2020/what-direction-are-you-facing).
 
-Other XMP 360 photo tags include:
+Other XMP `GPano` 360 photo tags include:
 
 * UsePanoramaViewer
 * CaptureSoftware
