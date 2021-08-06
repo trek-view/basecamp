@@ -85,7 +85,7 @@ This command includes the following arguments:
 
 * `-ee`: Extract embedded data from mp0 files (and others).
 * `-G3`: Identify the originating document for extracted information. Embedded documents containing sub-documents are indicated with dashes in the family 3 group name. (eg. Doc2-3 is the 3rd sub-document of the 2nd embedded document.)
-* -X: Use RDF/XML output format
+* `-X`: Use RDF/XML output format
 
 [Full reference here](https://exiftool.org/exiftool_pod.html).
 
