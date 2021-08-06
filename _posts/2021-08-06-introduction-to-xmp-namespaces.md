@@ -32,9 +32,62 @@ _Source: [https://developers.google.com/streetview/spherical-metadata](https://d
 
 Or for 360 photos, the [`XMP-GPano`](https://exiftool.org/TagNames/XMP.html#GPano) is a namespace used for panorama photo tags written by Google Photosphere ([see this page for the namespace specification](https://developers.google.com/panorama/metadata/). In this namespace you will find tags like `PoseHeadingDegrees` and `FullPanoHeightPixels` used for rendering 360 photos properly.
 
+Here's an example of `XMP-GPano`, `GPS`, and `IFD0` namespace tags from my post last year, [A deeper look into a 360 photo and the metadata it holds](/blog/2020/metadata-exif-xmp-360-photo-files).
+
+CLI:
+
+```
+$ exiftool -X MULTISHOT_8302_000052.jpg > MULTISHOT_8302_000052_metadata.txt
+```
+
+Output (cropped):
+
+```
+<?xml version='1.0' encoding='UTF-8'?>
+[...]
+ <IFD0:ImageWidth>5760</IFD0:ImageWidth>
+ <IFD0:ImageHeight>2880</IFD0:ImageHeight>
+ <IFD0:Make>GoPro</IFD0:Make>
+ <IFD0:Model>GoPro Fusion FS1.04.01.80.00</IFD0:Model>
+ <IFD0:Software>GoPro Fusion Studio 1.3.0.400</IFD0:Software>
+ <IFD0:ModifyDate>2020:02:05 20:20:33</IFD0:ModifyDate>
+ <IFD0:Artist>https://www.trekview.org</IFD0:Artist>
+ <IFD0:Copyright>https://www.trekview.org</IFD0:Copyright>
+ <ExifIFD:DateTimeOriginal>2020:02:05 10:38:26</ExifIFD:DateTimeOriginal>
+ <ExifIFD:UserComment>Please contact hq@trekview.org if you want to use this photograph commercially.</ExifIFD:UserComment>
+ <GPS:GPSLatitudeRef>North</GPS:GPSLatitudeRef>
+ <GPS:GPSLatitude>28 deg 21&#39; 0.60&quot;</GPS:GPSLatitude>
+ <GPS:GPSLongitudeRef>West</GPS:GPSLongitudeRef>
+ <GPS:GPSLongitude>16 deg 54&#39; 13.88&quot;</GPS:GPSLongitude>
+ <GPS:GPSAltitudeRef>Above Sea Level</GPS:GPSAltitudeRef>
+ <GPS:GPSAltitude>467.03 m</GPS:GPSAltitude>
+ <GPS:GPSTimeStamp>10:32:38</GPS:GPSTimeStamp>
+ <GPS:GPSDateStamp>2020:02:05</GPS:GPSDateStamp>
+ <XMP-x:XMPToolkit>XMP Core 4.4.0-Exiv2</XMP-x:XMPToolkit>
+ <XMP-GPano:StitchingSoftware>GoPro Fusion Studio 1.3.0.400</XMP-GPano:StitchingSoftware>
+ <XMP-GPano:SourcePhotosCount>2</XMP-GPano:SourcePhotosCount>
+ <XMP-GPano:UsePanoramaViewer>True</XMP-GPano:UsePanoramaViewer>
+ <XMP-GPano:ProjectionType>equirectangular</XMP-GPano:ProjectionType>
+ <XMP-GPano:CroppedAreaImageHeightPixels>2880</XMP-GPano:CroppedAreaImageHeightPixels>
+ <XMP-GPano:CroppedAreaImageWidthPixels>5760</XMP-GPano:CroppedAreaImageWidthPixels>
+ <XMP-GPano:FullPanoHeightPixels>2880</XMP-GPano:FullPanoHeightPixels>
+ <XMP-GPano:FullPanoWidthPixels>5760</XMP-GPano:FullPanoWidthPixels>
+ <XMP-GPano:CroppedAreaLeftPixels>0</XMP-GPano:CroppedAreaLeftPixels>
+ <XMP-GPano:CroppedAreaTopPixels>0</XMP-GPano:CroppedAreaTopPixels>
+ <Composite:ImageSize>5760x2880</Composite:ImageSize>
+ <Composite:Megapixels>16.6</Composite:Megapixels>
+ <Composite:GPSAltitude>467 m Above Sea Level</Composite:GPSAltitude>
+ <Composite:GPSDateTime>2020:02:05 10:32:38Z</Composite:GPSDateTime>
+ <Composite:GPSLatitude>28 deg 21&#39; 0.60&quot; N</Composite:GPSLatitude>
+ <Composite:GPSLongitude>16 deg 54&#39; 13.88&quot; W</Composite:GPSLongitude>
+ <Composite:GPSPosition>28 deg 21&#39; 0.60&quot; N, 16 deg 54&#39; 13.88&quot; W</Composite:GPSPosition>
+</rdf:Description>
+</rdf:RDF>
+```
+
 In the world of 360 videos, [`XMP-GSpherical`](https://exiftool.org/TagNames/XMP.html#GSpherical) is the most widely adopted standard. Strictly speaking this is not actually XMP data. 
 
-These tags are written into the video track of MOV/MP4 files, and not at the top level like other XMP tags ([see this page for the namespace specification](https://github.com/google/spatial-media/blob/master/docs/spherical-video-rfc.md). They are RDF/XML tags, for example:
+`XMP-GSpherical` are written into the video track of MOV/MP4 files, and not at the top level like other XMP tags ([see this page for the namespace specification](https://github.com/google/spatial-media/blob/master/docs/spherical-video-rfc.md). They are RDF/XML tags, for example:
 
 ```
 <rdf:SphericalVideo
