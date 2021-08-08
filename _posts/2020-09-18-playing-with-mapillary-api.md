@@ -292,6 +292,15 @@ This entry is showing a single physical bench located at `latitude=1.774513671` 
 
 More detections are returned, but for brevity I have omitted from the response printed in this post (`...`).
 
+## A note on feature types
+
+[Mapillary has three types of features it can detect](https://help.mapillary.com/hc/en-us/articles/115002332165):
+
+* point features: 42 types of objects as point features (i.e. map features that are represented by points on the map, like fire hydrants or street lights).
+  * _In the example I used earlier, I've shown the feature `object--bench` which has a type `"type": "Point"` (point feature)._
+* traffic signs:  1,500 different traffic sign classes (also extracted as point features).
+* line features: 19 object classes are extracted as line features (map features represented by lines, such as guardrails or lanes).
+
 ## Your Use-cases...
 
 Hopefully this gives you a few more ideas to build on Chris' post. I also want to say a big thank you to Chris for proof-reading this post, and providing very valuable feedback.
