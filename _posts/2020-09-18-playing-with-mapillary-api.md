@@ -66,13 +66,15 @@ First it's important to distinguish between object detections and features in Ma
 
 [Object detections](https://help.mapillary.com/hc/en-us/articles/115000967191-Object-detections) are areas (x,y,x,y,x,y... co-ordinates) of an image that have been detected as a certain object. For example, you can see each pixel in the above image corresponds to an object detection, like a car or road surface.
 
-Features can be thought of as single points on a map. For example, a car has been detected (by Mapillary detections) in an image and has been assigned a latitude and longitude value.
+Whereas features can be thought of as single points on a map. For example, a car has been detected (by Mapillary object detections) in an image and has been assigned a real world latitude and longitude value.
 
 <img class="img-fluid" src="/assets/images/blog/2020-09-18/mapillary-features.png" alt="Mapillary Features" title="Mapillary Features" />
 
-[Mapillary features](https://help.mapillary.com/hc/en-us/articles/115002332165) use multiple photos to determine an objects position using triangulation. For example, 3 images contain a photo of a car. Using the position of each of those photos (latitude and longitude reported in metadata), Mapillary can estimate the actual position of the car and then assign it to that detection. As such, the features detected will not usually have the same co-ordinates as the images used to detect it.
+[Mapillary features](https://help.mapillary.com/hc/en-us/articles/115002332165) use multiple photos to determine an objects position using triangulation.
 
-In the last image above, I've tried to demonstrate an object (traffic light) being identified in 6 images from which a feature position has been estimated.
+For example, 3 images contain a photo of a car. Using the position of each of those photos (latitude and longitude reported in metadata), Mapillary can estimate the actual position of the car and then assign it to that feature. As such, features will usually have different co-ordinates from the images used to detect it.
+
+In the last image above, I've tried to demonstrate an object (traffic light) being identified in 6 images from which a features position has been determined.
 
 ### Wildlife (object detections)
 
