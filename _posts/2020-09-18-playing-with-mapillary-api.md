@@ -292,7 +292,7 @@ This entry is showing a single physical bench located at `latitude=1.774513671` 
 
 More detections are returned, but for brevity I have omitted from the response printed in this post (`...`).
 
-## A note on feature types
+**A note on feature types**
 
 [Mapillary has three types of features it can detect](https://help.mapillary.com/hc/en-us/articles/115002332165):
 
