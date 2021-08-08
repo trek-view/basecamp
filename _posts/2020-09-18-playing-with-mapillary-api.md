@@ -58,84 +58,25 @@ Now we know where we want to analyse, we can run some queries against the Mapill
 
 One thing to note, you'll see I use the `per_page=500` in my requests. This is saying, only show 500 records in the response and then paginate. In many cases, more than 500 total records will be returned. In which case you can increase to the maximum records allowed `per_page=1000` (it will be slower, and potentially still to small) or use some logic to iterate through each page.
 
-Let's start with the the map [`features_endpoint`](https://www.mapillary.com/developer/api-documentation/#map-features) that returns locations of objects as point features on the map. Put another way, the actual real-world position of the object.
+## Object detections vs. features
 
-### Benches
+First it's important to distinguish between object detections and features in Mapillary.
 
-Walking takes up a lot of energy. Where can we find a bench (`object--bench`) to sit on?
+<img class="img-fluid" src="/assets/images/blog/2020-09-18/mapillary-object-detection.png" alt="Mapillary Object Detections" title="Mapillary Object Detections" />
 
-```
-curl "https://a.mapillary.com/v3/map_features?client_id=<YOUR_CLIENT_ID>" \
-	&layers=point
-	&values=object--bench \
-  &bbox=1.774513671,50.7038878539,-1.2966083975,50.9385637585 \
-	&per_page=500
-```
+[Object detections](https://help.mapillary.com/hc/en-us/articles/115000967191-Object-detections) are areas (x,y,x,y,x,y... co-ordinates) of an image that have been detected as a certain object. For example, you can see each pixel in the above image corresponds to an object detection, like a car or road surface.
 
-Here's what the response might look like:
+Features can be thought of as single points on a map. For example, a car has been detected (by Mapillary detections) in an image and has been assigned a latitude and longitude value.
 
-```
-{
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "accuracy": 4.3415914,
-        "altitude": 2.1636841,
-        "detections": [
-          {
-            "detection_key": "o8kc5kth6o7m4f5eosebin7od5",
-            "image_key": "tsWJOYler98YAmg97kUzLQ",
-            "user_key": "KXcBzSdwPIGrXgEP8qdcEQ"
-          },
-          {
-            "detection_key": "gq9da6nqktj5rklq5vrc4q8sul",
-            "image_key": "39JmaDL9LxsaijLV7n2Ccg",
-            "user_key": "KXcBzSdwPIGrXgEP8qdcEQ"
-          }
-        ],
-        "direction": 335.4141,
-        "first_seen_at": "2020-07-25T20:01:43.850Z",
-        "key": "8yfe7htuqtcd2vrjsxucidqkpl",
-        "last_seen_at": "2020-08-08T10:49:33.648Z",
-        "layer": "lines",
-        "value": "object--bench"
-      },
-      "geometry": {
-        "coordinates": [
-          1.774513671,
-          50.7038878539
-        ],
-        "type": "Point"
-      }
-    },
-    ...
-  ]
-}
-```
+<img class="img-fluid" src="/assets/images/blog/2020-09-18/mapillary-features.png" alt="Mapillary Features" title="Mapillary Features" />
 
-Here we see two `feature.detections` (`detection_key=o8kc5kth6o7m4f5eosebin7od5` and `detection_key=gq9da6nqktj5rklq5vrc4q8sul`) of an `object--bench` in two respective images (`"image_key": "tsWJOYler98YAmg97kUzLQ"` and `"image_key": "39JmaDL9LxsaijLV7n2Ccg"`).
+[Mapillary features](https://help.mapillary.com/hc/en-us/articles/115002332165) use multiple photos to determine an objects position using triangulation. For example, 3 images contain a photo of a car. Using the position of each of those photos (latitude and longitude reported in metadata), Mapillary can estimate the actual position of the car and then assign it to that detection. As such, the features detected will not usually have the same co-ordinates as the images used to detect it.
 
-This entry is showing a single physical bench located at `latitude=1.774513671` and `longitude=50.7038878539` and present in the two images listed.
+In the last image above, I've tried to demonstrate an object (traffic light) being identified in 6 images from which a feature position has been estimated.
 
-More detections are returned, but for brevity I have omitted from the response printed in this post (`...`).
+### Wildlife (object detections)
 
-### Cycling
-
-Cycling is a very popular activity in the New Forest. How many cyclist have been detected within the New Forest (`human--rider--bicyclist`)?
-
-```
-curl "https://a.mapillary.com/v3/map_features?client_id=<YOUR_CLIENT_ID>" \
-	&layers=point
-	&values=human--rider--bicyclist \
-  &bbox=1.774513671,50.7038878539,-1.2966083975,50.9385637585 \
-	&per_page=500
-```
-
-This query only considers people riding bicycles, not all bicycles detected (e.g. parked bicycles). We could add `values=object--vehicle--bicycle` for this purpose or search for both cyclists and bikes with `values=object--vehicle--bicycle,human--rider--bicyclist`.
-
-### Wildlife
+Let's start with the [`object_detections`](https://www.mapillary.com/developer/api-documentation/#object-detections) endpoint so we can identify photos that contain wildlife of some sort.
 
 Wild ponies can be found all over the New Forest and are a draw for visitors. Being so close to the coast, it's also a great place for bird watching. Let's take an _automated_ look, for them (`animal--bird&animal--ground-animal`):
 
@@ -146,21 +87,18 @@ curl "https://a.mapillary.com/v3/object_detections/segmentations?client_id=<YOUR
   &per_page=500
 ```
 
-This time I'm using the [`object_detections`](https://www.mapillary.com/developer/api-documentation/#object-detections) endpoint.
+I'll get a response containing all the images (Mapillary image keys) with the wildlife defined in my query (`animal--bird`, `animal--ground-animal`) I can then take a look at.
 
-The object detections endpoint offers a way to query by the content of images and the area they cover.
+If I wanted to filter only images belonging to participants of our mapping party I could also use the parameter `usernames=`. Or should they all belong to the Mapillary Trek View organisation (they do), I could use the parameter `organization_keys=`.
 
-Unlike the features endpoint, the object detections endpoint contains coordinates of the image detection (where object is in the photo), but not the specific location of the detected object on a map.
 
-If I wanted to filter only images belonging to participants of the mapping party I could also use the parameter `usernames=`. Or should they all belong to the Mapillary Trek View organisation (they do), I could use the parameter `organization_keys=`.
-
-### Seasonal vegetation
+### Seasonal vegetation (object detections)
 
 It's a truly beautiful place in the late-summer to visit, with the leaves still in full bloom.
 
 One of the things we want to do is run another mapping party in the winter to show the visual seasonal differences.
 
-This will also make it possible to provide a rough estimate of canopy cover in summer compared to winter.
+This will also make it possible to provide a rough estimate of canopy cover in summer compared to winter (using the sum area of vegetation reported by the Object Detection endpoints for a position -- keep reading for more info).
 
 Problem is, it's not possible to pass date parameters to the `object_detections` endpoint. Therefore to compare summer and winter, we need to run two queries.
 
@@ -170,10 +108,10 @@ First we need to find all images in the bounding box that were `captured_at` in 
 
 curl "https://a.mapillary.com/v3/images?client_id=<YOUR_CLIENT_ID>"
  \
-	&start_time=2020-04-01 \
-	&end_time=2020-09-30 \
+  &start_time=2020-04-01 \
+  &end_time=2020-09-30 \
   &bbox=1.774513671,50.7038878539,-1.2966083975,50.9385637585 \
-	&per_page=500
+  &per_page=500
 ```
 
 Here I'm defining summer as the 6 months between the start of April (`2020-04-01`) and the last day of September (`2020-09-30`).
@@ -216,9 +154,9 @@ We can now use these images keys against the `object_detections` endpoint.
 
 ```
 https://a.mapillary.com/v3/object_detections/instances?client_id=YOUR CLIENT ID \
-	&image_keys=KEY_1,KEY_2,...
-	&values=nature--vegetation
-	&per_page=500
+  &image_keys=KEY_1,KEY_2,...
+  &values=nature--vegetation
+  &per_page=500
 ```
 
 A snippet of a response:
@@ -289,9 +227,74 @@ Our plan is to capture images of the same paths, however, this still makes a lik
 
 My _crude_ fix, take the count of photos returned in summer and winter and weight by number of images in the sample. For example, if 1000 photos are captured in summer and 500 in winter I will times the sum of area for summer by 0.5 (to account for the 50% reduction in image count in winter). Unless you can suggest an improved methodology (please!)?
 
+### Benches (map features)
+
+Let's now take a look at the map [`features_endpoint`](https://www.mapillary.com/developer/api-documentation/#map-features) that returns locations of objects as point features on the map. As noted before, this is the actual real-world position of the object (based on photo co-ordinates).
+
+As walking takes up a lot of energy, let's search for the exact position of a bench (`object--bench`) to sit on...
+
+```
+curl "https://a.mapillary.com/v3/map_features?client_id=<YOUR_CLIENT_ID>" \
+	&layers=point
+	&values=object--bench \
+  &bbox=1.774513671,50.7038878539,-1.2966083975,50.9385637585 \
+	&per_page=500
+```
+
+Here's what the response might look like:
+
+```
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "accuracy": 4.3415914,
+        "altitude": 2.1636841,
+        "detections": [
+          {
+            "detection_key": "o8kc5kth6o7m4f5eosebin7od5",
+            "image_key": "tsWJOYler98YAmg97kUzLQ",
+            "user_key": "KXcBzSdwPIGrXgEP8qdcEQ"
+          },
+          {
+            "detection_key": "gq9da6nqktj5rklq5vrc4q8sul",
+            "image_key": "39JmaDL9LxsaijLV7n2Ccg",
+            "user_key": "KXcBzSdwPIGrXgEP8qdcEQ"
+          }
+        ],
+        "direction": 335.4141,
+        "first_seen_at": "2020-07-25T20:01:43.850Z",
+        "key": "8yfe7htuqtcd2vrjsxucidqkpl",
+        "last_seen_at": "2020-08-08T10:49:33.648Z",
+        "layer": "lines",
+        "value": "object--bench"
+      },
+      "geometry": {
+        "coordinates": [
+          1.774513671,
+          50.7038878539
+        ],
+        "type": "Point"
+      }
+    },
+    ...
+  ]
+}
+```
+
+In it we see two `feature.detections` (`detection_key=o8kc5kth6o7m4f5eosebin7od5` and `detection_key=gq9da6nqktj5rklq5vrc4q8sul`) of an `object--bench` in two respective images (`"image_key": "tsWJOYler98YAmg97kUzLQ"` and `"image_key": "39JmaDL9LxsaijLV7n2Ccg"`).
+
+This entry is showing a single physical bench located at `latitude=1.774513671` and `longitude=50.7038878539` and present in the two images listed (that were used to work out its position).
+
+More detections are returned, but for brevity I have omitted from the response printed in this post (`...`).
+
+## Your Use-cases...
+
 Hopefully this gives you a few more ideas to build on Chris' post. I also want to say a big thank you to Chris for proof-reading this post, and providing very valuable feedback.
 
-Please do share the use-cases you're using the Mapillary API for -- I can’t wait to see what new projects will be built on top of it.
+Please do share the use-cases you're using the Mapillary API for -- I can’t wait to see what other projects are being built on top of it.
 
 ## Update 2021-06-16
 
