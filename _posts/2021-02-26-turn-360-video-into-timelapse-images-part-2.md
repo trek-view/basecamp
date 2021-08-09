@@ -137,7 +137,7 @@ The response gives:
 
 If you check the `datetimeoriginal` in the subsequent files (`img0002.jpg` - `img0018.jpg`) you should see they all update by +1, with `img0018.jpg` ending at `DateTimeOriginal` = `2020:04:13 15:37:39`.
 
-## 4, Geotag the frames
+## 4. Geotag the frames
 
 Now that the frames have `datetimeoriginal` values you can geotag the photos, [again using exiftool](https://exiftool.org/geotag.html), using the track file extracted during step one.
 
