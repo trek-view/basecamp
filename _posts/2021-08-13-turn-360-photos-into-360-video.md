@@ -174,7 +174,7 @@ Gives a .txt file with the contents:
 
 There is already a lot here. We can see the video resolution, the duration, and lots of other default fields that are not really required for our use-case.
 
-[Let's start by looking inside the first photo to see some of the EXIF data we'll need to add to the video](/blog/2020/metadata-exif-xmp-360-photo-files).
+[Let's start by looking inside the first photo to see some of the metadata we'll need to add to the video](/blog/2020/metadata-exif-xmp-360-photo-files).
 
 ```
 $ exiftool -X MULTISHOT_9698_000000.jpg > MULTISHOT_9698_000000_metadata.txt
@@ -310,7 +310,7 @@ $ exiftool XMP-tiff:Copyright:'https://www.trekview.org' XMP-tiff:Artist:'https:
 [exif](https://exiftool.org/TagNames/XMP.html#exif):
 
 ```
-$ exiftool XMP-exif:GPSLongitude:'16 deg 32&#39; 44.90&quot; W' XMP-exif:GPSLatitude:'28 deg 17&#39; 55.14&quot; N' XMP-exif:GPSAltitudeRef=0 XMP-exif:GPSAltitude:'2323.621 m' XMP-exif:GPSTimeStamp='13:06:48' XMP-exif:GPSDateStamp='2019:11:29'
+$ exiftool XMP-exif:GPSLongitude:'16 deg 32&#39; 44.90&quot; W' XMP-exif:GPSLatitude:'28 deg 17&#39; 55.14&quot; N' XMP-exif:GPSAltitudeRef=0 XMP-exif:GPSAltitude:'2323.621 m' XMP-exif:GPSTimeStamp:'13:06:48' XMP-exif:GPSDateStamp:'2019:11:29'
 ```
 
 **A note on GPS and telemetry**

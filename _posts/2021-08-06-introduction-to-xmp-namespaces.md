@@ -123,6 +123,8 @@ You might have also noticed [`XMP-exif`](https://exiftool.org/TagNames/XMP.html#
 
 It's important to point out, the `XMP-exif` namespace differs from [the EXIF data standard developed by CIPA](https://www.cipa.jp/std/std-sec_e.html).
 
+[See the exiftool list of tags for an easy way to understand the differences](https://exiftool.org/TagNames/).
+
 EXIF is another standard (like XMP) designed for image and sound files, whereas XMP covers a much broader spectrum of file types.
 
 XMP is also broader in the tags that can be used because of the namespaces that have been developed. The EXIF standard on the other hand is a closed specification with a defined number of tags. The upside being of having a single namespace is that the standard is widely understood by other products (some more niche XMP namespaces are not).

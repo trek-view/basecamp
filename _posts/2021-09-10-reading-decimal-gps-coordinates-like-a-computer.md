@@ -1,6 +1,6 @@
 ---
 date: 2021-09-10
-title: "How to read latitude and longitude values like a computer"
+title: "How to read decimal latitude and longitude values like a computer"
 description: "We are often reliant on GPS co-ordinates being delivered to our devices to interpret location. With a little practice it's not hard to read a decimal latitude and longitude value to determine a rough position."
 categories: guides
 tags: [latitude, longitude, gps]
