@@ -2,13 +2,12 @@
 date: 2021-09-17
 title: "Lessons learned when geotagging photos"
 description: "Exiftool is a powerful bit of software for geotagging photos but understanding how it works will save you a few headaches."
-categories: guides
-tags: [GPX, GPS, GoPro, Fusion, exiftool]
+categories: developers
+tags: [GPX, GPS, GoPro, Fusion, exiftool, Map the Paths]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-09-17/gpx-track-sample-meta.jpg
 gpx-track-sample-meta.jpg
 featured_image: /assets/images/blog/2021-09-17/gpx-track-sample-sm.jpg
-gpx-track-sample-meta.jpg
 layout: post
 published: false
 ---
