@@ -59,7 +59,7 @@ The video is looking good. There are 55 images in my sequence and the video is 5
 
 **A note on framerate**
 
-You will see I set framerate at 1 second, when the actual time spacing between photos (in the `datetimeoriginal`) is 5 seconds between photos.
+You will see I set framerate at 1 second, when the actual time spacing between photos (in the `datetimeoriginal`) is 5 seconds.
 
 The video will still include all images, but playback will be faster than actual time spacing. 1 second, instead of 5 seconds (so 80% faster)
 
@@ -174,7 +174,7 @@ Gives a .txt file with the contents:
 
 There is already a lot here. We can see the video resolution, the duration, and lots of other default fields that are not really required for our use-case.
 
-[Let's start by looking inside the first photo to see some of the metadata we'll need to add to the video](/blog/2020/metadata-exif-xmp-360-photo-files).
+[Let's start by looking inside the first photo used in the video to see some of the metadata we'll need to add to the video](/blog/2020/metadata-exif-xmp-360-photo-files).
 
 ```
 $ exiftool -X MULTISHOT_9698_000000.jpg > MULTISHOT_9698_000000_metadata.txt
@@ -270,7 +270,7 @@ In fact, for our purposes, all the `XMP-GPano` namespace tags from the photo are
 
 If you didn't read last weeks post introducing XMP namespaces, [I recommend taking a look before continuing with this post](/blog/2021/introduction-to-xmp-namespaces).
 
-Let's first use the [Spatial Media Metadata Injector](https://github.com/google/spatial-media/tree/master/spatialmedia) to embed the essential `XMP-GSpherical` tags required for Google (inc. YouTube) to correctly detect that it is a 360 video. [Running this tool (and why exiftool can't be used) was also described in last weeks post](/blog/2021/introduction-to-xmp-namespaces), so I won't cover it here.
+Let's first use the [Spatial Media Metadata Injector](https://github.com/google/spatial-media/tree/master/spatialmedia) to embed the essential `XMP-GSpherical` tags required for Google (inc. YouTube) to correctly detect that it is a 360 video. [Running this script (and why exiftool can't be used) was also described in last weeks post](/blog/2021/introduction-to-xmp-namespaces), so I won't cover it here.
 
 Checking the metadata after running the tool you should see 4 new tags:
 
@@ -293,13 +293,13 @@ $ exiftool -X demo-video-injected-meta.mp4 > demo-video-injected-meta.txt
 </rdf:RDF>
 ```
 
-The above metadata will provide enough to render the 360 video correctly (with controls) in most generic viewers ([I recommend VLC on your local machine](https://www.videolan.org/vlc/index.en_GB.html)).
+The above metadata will provide enough to render the 360 video correctly (with controls) in most online video players and generic desktop viewers ([I recommend VLC on your local machine](https://www.videolan.org/vlc/index.en_GB.html)).
 
 Check it out on YouTube:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EIEvoQu8JJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Now we can add the other spatial and non-spatial XMP data to the video. Note, this is not an exhaustive list:
+Now we can add the other spatial and non-spatial XMP data to the video. Note, this is not an exhaustive list, and is only used to provide an example of adding metadata to the video:
 
 [XMP-tiff](https://exiftool.org/TagNames/XMP.html#tiff):
 
@@ -315,7 +315,7 @@ $ exiftool XMP-exif:GPSLongitude:'16 deg 32&#39; 44.90&quot; W' XMP-exif:GPSLati
 
 **A note on GPS and telemetry**
 
-Looking at the way camera manufactures create videos, all of them include first GPS position in the video level metadata, as I've shown above. This is useful for video players to show the starting point of the video (etc.) where an unknown telemetry standard is used.
+Looking at the way camera manufactures create videos, all of them include first GPS position in the video level metadata, as I've shown in the last command. This is useful for video players to preview the starting point of the video (etc.) or where an unknown telemetry standard is used.
 
 It's important to make the distinction that I'm only adding video level data, and not full telemetry to the video as this requires a lot more complexity. Full telemetry is written into the metadata in a standard structure (e.g [CAMM](https://developers.google.com/streetview/publish/camm-spec) or [GPMD](https://github.com/gopro/gpmf-parser)) in a very similar way to `XMP-GSpherical`.
 
