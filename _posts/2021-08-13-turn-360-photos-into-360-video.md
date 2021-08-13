@@ -1,5 +1,5 @@
 ---
-date: 2021-08-06
+date: 2021-08-13
 title: "How to Create a 360 Video from a Timelapse of 360 Images"
 description: "A lesson, mostly, in wrangling metadata to ensure proper playback of 360 videos created from a series of photos."
 categories: developers
@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2021-08-13/youtube-360-video-meta.jpg
 featured_image: /assets/images/blog/2021-08-13/youtube-360-video-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **A lesson, mostly, in wrangling metadata to ensure proper playback of 360 videos created from a series of photos.**

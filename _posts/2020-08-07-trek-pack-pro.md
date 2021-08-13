@@ -29,7 +29,7 @@ The Titan is an exceptional camera, but, as its marketing claims, “Built for c
 
 These modifications are still a secret, and will be announced later in the year, but what I can say is that after making them, I created a very nice mapping toy.
 
-The Titan uses 9 (8+1) SD cards and I opted for a few sets of 128Gb cards. Each set of cards is able to record just under 2 hours of video footage in Street View mode, so 11K, 5fps..
+The Titan uses 9 (8+1) SD cards and I opted for a few sets of 128Gb cards. Each set of cards is able to record just under 2 hours of video footage in Street View mode, so 11K, 5fps.
 
 The camera comes with a stock battery able to power and capture for around 3 hours, but beware, the replacement batteries have less power than the stock one.
 
