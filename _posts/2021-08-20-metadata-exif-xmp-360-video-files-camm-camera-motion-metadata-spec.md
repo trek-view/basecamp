@@ -39,7 +39,7 @@ Like EXIF or XMP standards for static image (and video) metadata, telemetry meta
 
 In the world of 360 cameras telemetry is generally reported in one of two standards GPMF (GoPro) or CAMM (Google). 
 
-The Insta360 Pro2 writes telemetry metadata to videos in the [Camera Motion Metadata Spec Format](https://developers.google.com/streetview/publish/camm-spec) ([Insta360 unsurprisingly chose not to use the GoPro Metadata format, even if it is open source]((/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd))).
+The Insta360 Pro2 writes telemetry metadata to videos in the [Camera Motion Metadata Spec Format](https://developers.google.com/streetview/publish/camm-spec) ([Insta360 unsurprisingly chose not to use the GoPro Metadata format, even if it is open source](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd)).
 
 Fortunately for us, [EXIF tool has the logic to understand this format in a good level of detail](https://exiftool.org/models.html).
 
@@ -110,7 +110,7 @@ This information is comparable to the EXIF/XMP data in a photo. It contains info
 [...]
 ```
 
-I discussed [`XMP-GSpherical`](https://exiftool.org/TagNames/XMP.html#GSpherical) XMP tags in last weeks post](/blog/2021/turn-360-photos-into-360-video), [as defined in Google's Spherical Video RFC](https://github.com/google/spatial-media/blob/master/docs/spherical-video-rfc.md).
+I discussed [`XMP-GSpherical`](https://exiftool.org/TagNames/XMP.html#GSpherical) XMP tags [in last weeks post](/blog/2021/turn-360-photos-into-360-video), [as defined in Google's Spherical Video RFC](https://github.com/google/spatial-media/blob/master/docs/spherical-video-rfc.md).
 
 You would have also seen `<TrackN:XXXX>` values in last weeks post. Generally a video is split into 3 standard tracks (though only Track1, the video track, is required). You can determine how each track should be handled using the `HandlerType` defined:
 
@@ -120,7 +120,7 @@ You would have also seen `<TrackN:XXXX>` values in last weeks post. Generally a 
 
 I am not sure of any examples where a 4th track is present, and not really sure what it would contain if there was one... perhaps someone can give me a steer on this?
 
-The difference between Track1 and Track3 is, Track1 contains video level data from the camera sensor (e.g. `Track1:SourceImageWidth`, `Track1:XResolution`, `Track1:VideoFrameRate` etc.), whereas Track3 is the output of other sensors in the camera, [like the IMU](/blog/2020/camera-sensors-imu-accelerometer-gyroscope-magnetometer) (in this case, printed in CAMM standard).
+The difference between Track1 and Track3 is, Track1 contains video level data from the camera sensor (e.g. `Track1:SourceImageWidth`, `Track1:XResolution`, `Track1:VideoFrameRate` etc.), whereas Track3 is the output of other sensors in the camera, [like the IMU](/blog/2020/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer) (in this case, printed in CAMM standard).
 
 **Track3 Camera Metadata**
 
@@ -219,7 +219,7 @@ However, much more verbose GPS information can be included, as is found in the C
 
 The rest of Track3 follows this format. Every 0.1s, 2 measurements for `AngularVelocity` and `Acceleration` are printed (20 per second), and every 1 second GPS information is printed.
 
-[As I discovered earlier this year](/blog/2020/gps-101), not all sensors on the device can sample at such a high rate. For example, almost all mobile devices, including all Apple devices, receive GPS at the rate of 1Hz (1 GPS measurement a second).
+[As I discovered earlier this year](/blog/2020/gps-101), not all sensors on the device can sample at such a high rate. For example, almost all mobile devices, including all Apple devices, receive GPS at the rate of 1Hz (1 GPS measurement a second). In such cases, software can be used estimate GPS position using other IMU measurements for subsecond GPS resolution.
 
 ## Help us Build Great Software
 
@@ -231,4 +231,4 @@ In order to make sure our [free, open-source software works for everyone](https:
 
 And that's why we need your help.
 
-If you have a 360 camera and want to support our work, [please share samples from your camera with us by raising a new issue here with a link to the photo or video file](https://github.com/trek-view/360-camera-metadata/issues).
+If you have a 360 camera and want to support our work, [please share samples from your camera with us (and the settings used) by raising a new issue here with a link to the photo or video file](https://github.com/trek-view/360-camera-metadata/issues).
