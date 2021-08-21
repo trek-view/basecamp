@@ -183,15 +183,79 @@ Let's take a look at what this actually looks like in our video, by looking at t
  <Track3:GPSSpeedAccuracy>0</Track3:GPSSpeedAccuracy>
  ```
 
-Breaking this down, we can see 2 measurements for `AngularVelocity` and `Acceleration` reported every 0.01 seconds.
+Breaking this down, we can see 6 measurements for `AngularVelocity` and `Acceleration` reported every 0.01 seconds.
 
 ```
- <Track3:SampleTime>0 s</Track3:SampleTime>
- <Track3:SampleDuration>0 s</Track3:SampleDuration>
- <Track3:AngularVelocity>0.0462660863995552 0.139929175376892 -0.204053655266762</Track3:AngularVelocity>
- <Track3:SampleTime>0 s</Track3:SampleTime>
- <Track3:SampleDuration>0.00 s</Track3:SampleDuration>
+[...]
+<Track3:SampleDuration>0.00 s</Track3:SampleDuration>
  <Track3:Acceleration>1.1484375 -0.0741699188947678 15.0469236373901</Track3:Acceleration>
+ <Track3:SampleTime>0.00 s</Track3:SampleTime>
+ <Track3:SampleDuration>0 s</Track3:SampleDuration>
+ <Track3:AngularVelocity>0.0452018603682518 0.139929175376892 -0.22640235722065</Track3:AngularVelocity>
+ <Track3:SampleTime>0.00 s</Track3:SampleTime>
+ <Track3:SampleDuration>0.00 s</Track3:SampleDuration>
+ <Track3:Acceleration>1.17714846134186 -0.203369140625 14.9918947219849</Track3:Acceleration>
+ <Track3:SampleTime>0.01 s</Track3:SampleTime>
+ <Track3:SampleDuration>0 s</Track3:SampleDuration>
+ <Track3:AngularVelocity>0.0430734120309353 0.135672271251678 -0.242365717887878</Track3:AngularVelocity>
+ <Track3:SampleTime>0.01 s</Track3:SampleTime>
+ <Track3:SampleDuration>0.00 s</Track3:SampleDuration>
+ <Track3:Acceleration>0.729736328125 -0.232080072164536 14.8674802780151</Track3:Acceleration>
+ <Track3:SampleTime>0.01 s</Track3:SampleTime>
+ <Track3:SampleDuration>0 s</Track3:SampleDuration>
+ <Track3:AngularVelocity>0.0420091897249222 0.130351155996323 -0.257264852523804</Track3:AngularVelocity>
+ <Track3:SampleTime>0.01 s</Track3:SampleTime>
+ <Track3:SampleDuration>0.00 s</Track3:SampleDuration>
+ <Track3:Acceleration>0.533544898033142 -0.105273440480232 14.9105472564697</Track3:Acceleration>
+ <Track3:SampleTime>0.01 s</Track3:SampleTime>
+ <Track3:SampleDuration>0 s</Track3:SampleDuration>
+ <Track3:AngularVelocity>0.0441376380622387 0.123965807259083 -0.274292439222336</Track3:AngularVelocity>
+ <Track3:SampleTime>0.01 s</Track3:SampleTime>
+ <Track3:SampleDuration>0.00 s</Track3:SampleDuration>
+ <Track3:Acceleration>0.763232409954071 -0.296679675579071 14.6641111373901</Track3:Acceleration>
+ <Track3:SampleTime>0.02 s</Track3:SampleTime>
+ <Track3:SampleDuration>0 s</Track3:SampleDuration>
+ <Track3:AngularVelocity>0.0483945347368717 0.118644684553146 -0.283870458602905</Track3:AngularVelocity>
+ <Track3:SampleTime>0.02 s</Track3:SampleTime>
+ <Track3:SampleDuration>0.00 s</Track3:SampleDuration>
+ <Track3:Acceleration>0.677099585533142 -0.306250005960464 14.6401853561401</Track3:Acceleration>
+ <Track3:SampleTime>0.02 s</Track3:SampleTime>
+ <Track3:SampleDuration>0 s</Track3:SampleDuration>
+ <Track3:AngularVelocity>0.0505229830741882 0.115452013909817 -0.289191603660583</Track3:AngularVelocity>
+ <Track3:SampleTime>0.02 s</Track3:SampleTime>
+ <Track3:SampleDuration>0.00 s</Track3:SampleDuration>
+ <Track3:Acceleration>0.617285132408142 -0.258398443460464 14.5779781341553</Track3:Acceleration>
+ <Track3:SampleTime>0.02 s</Track3:SampleTime>
+ <Track3:SampleDuration>0 s</Track3:SampleDuration>
+ <Track3:AngularVelocity>0.0558441020548344 0.11013089120388 -0.294512718915939</Track3:AngularVelocity>
+ <Track3:SampleTime>0.02 s</Track3:SampleTime>
+ <Track3:SampleDuration>0.00 s</Track3:SampleDuration>
+ <Track3:Acceleration>0.495263665914536 -0.244042962789536 14.3889646530151</Track3:Acceleration>
+ <Track3:SampleTime>0.02 s</Track3:SampleTime>
+ <Track3:SampleDuration>0 s</Track3:SampleDuration>
+ <Track3:AngularVelocity>0.0601009987294674 0.105873994529247 -0.296641170978546</Track3:AngularVelocity>
+ <Track3:SampleTime>0.02 s</Track3:SampleTime>
+ <Track3:SampleDuration>0.00 s</Track3:SampleDuration>
+ <Track3:Acceleration>0.626855492591858 -0.636425793170929 14.2860841751099</Track3:Acceleration>
+ <Track3:SampleTime>0.03 s</Track3:SampleTime>
+ <Track3:SampleDuration>0 s</Track3:SampleDuration>
+ <Track3:AngularVelocity>0.0601009987294674 0.100552871823311 -0.295576930046082</Track3:AngularVelocity>
+ <Track3:SampleTime>0.03 s</Track3:SampleTime>
+ <Track3:SampleDuration>0.00 s</Track3:SampleDuration>
+ <Track3:Acceleration>0.662744164466858 -0.399560540914536 14.3243656158447</Track3:Acceleration>
+ <Track3:SampleTime>0.03 s</Track3:SampleTime>
+ <Track3:SampleDuration>0 s</Track3:SampleDuration>
+ <Track3:AngularVelocity>0.0601009987294674 0.0931033045053482 -0.290255814790726</Track3:AngularVelocity>
+ <Track3:SampleTime>0.03 s</Track3:SampleTime>
+ <Track3:SampleDuration>0.00 s</Track3:SampleDuration>
+ <Track3:Acceleration>0.653173804283142 -0.145947262644768 14.04443359375</Track3:Acceleration>
+ <Track3:SampleTime>0.03 s</Track3:SampleTime>
+ <Track3:SampleDuration>0 s</Track3:SampleDuration>
+ <Track3:AngularVelocity>0.0622294507920742 0.0835252851247787 -0.278549343347549</Track3:AngularVelocity>
+ <Track3:SampleTime>0.03 s</Track3:SampleTime>
+ <Track3:SampleDuration>0.00 s</Track3:SampleDuration>
+ <Track3:Acceleration>0.57421875 -0.4306640625 13.955907821655
+[...]
 ```
 <img class="img-fluid" src="/assets/images/blog/2021-08-20/camm-acceleration-velocity-meta.jpg" alt="Camera Motion Metadata Spec IMU" title="Camera Motion Metadata Spec IMU" />
 
@@ -200,14 +264,19 @@ As defined in the CAMM spec:
 * `AngularVelocity`: Gyroscope signal in radians/seconds around XYZ axes of the camera. Rotation is positive in the counterclockwise direction.
 * `Acceleration`: Accelerometer reading in meters/second^2 along XYZ axes of the camera.
 
-Then at 0.03 seconds, we see a GPS position being printed.
+Then at 2020:04:02 09:43:22.2Z, we see the first GPS position being printed, and at 2020:04:02 09:43:22.3Z the second GPS position (one position every 0.1 seconds)
 
 ```
- <Track3:SampleTime>0.03 s</Track3:SampleTime>
+[...]
  <Track3:SampleDuration>0.00 s</Track3:SampleDuration>
  <Track3:GPSDateTime>2020:04:02 09:43:22.2Z</Track3:GPSDateTime>
  <Track3:GPSMeasureMode>3-Dimensional Measurement</Track3:GPSMeasureMode>
  <Track3:GPSLatitude>50 deg 27&#39; 21.97&quot; N</Track3:GPSLatitude>
+[...]
+ <Track3:GPSDateTime>2020:04:02 09:43:22.3Z</Track3:GPSDateTime>
+ <Track3:GPSMeasureMode>3-Dimensional Measurement</Track3:GPSMeasureMode>
+ <Track3:GPSLatitude>50 deg 27&#39; 21.98&quot; N</Track3:GPSLatitude>
+ <Track3:GPSLongitude>30 deg 28&#39; 47.40&quot; E</Track3:GPSLongitude>
 [...]
 ```
 
@@ -215,11 +284,13 @@ Then at 0.03 seconds, we see a GPS position being printed.
 
 At a minimum, CAMM requires latitude, longitude and altitude to be printed.
 
-However, much more verbose GPS information can be included, as is found in the CAMM track from the Pro2 (e.g. `GPSHorizontalAccuracy`).
+However, much more verbose GPS information can be included, as is found in the CAMM track from the Pro2 (e.g. `GPSHorizontalAccuracy`, not shown abve).
 
-The rest of Track3 follows this format. Every 0.1s, 2 measurements for `AngularVelocity` and `Acceleration` are printed (20 per second), and every 1 second GPS information is printed.
+**Track3 Summary**
 
-[As I discovered earlier this year](/blog/2020/gps-101), not all sensors on the device can sample at such a high rate. For example, almost all mobile devices, including all Apple devices, receive GPS at the rate of 1Hz (1 GPS measurement a second). In such cases, software can be used estimate GPS position using other IMU measurements for subsecond GPS resolution.
+The rest of Track3 follows this format. Every 0.01s, 6 measurements for `AngularVelocity` and `Acceleration` are printed (600 per second), and every 0.1 second GPS information is printed (10 per second).
+
+[As I discovered earlier this year](/blog/2020/gps-101), not all sensors can sample at such a high rate. For example, almost all mobile devices, including all Apple devices, receive GPS at the rate of 1Hz (1 GPS measurement a second). In such cases, software can be used estimate GPS position using other IMU measurements for subsecond GPS resolution (this can be done post-processing or on the camera itself).
 
 ## Help us Build Great Software
 
