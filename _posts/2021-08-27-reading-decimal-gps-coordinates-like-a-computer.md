@@ -1,21 +1,21 @@
 ---
-date: 2021-09-10
+date: 2021-08-27
 title: "How to read decimal latitude and longitude values like a computer"
 description: "We are often reliant on GPS co-ordinates being delivered to our devices to interpret location. With a little practice it's not hard to read a decimal latitude and longitude value to determine a rough position."
 categories: developers
 tags: [latitude, longitude, gps]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-09-10/prime-meridian-meta.jpg
-featured_image: /assets/images/blog/2021-09-10/prime-meridian-sm.jpg
+image: /assets/images/blog/2021-08-27/prime-meridian-meta.jpg
+featured_image: /assets/images/blog/2021-08-27/prime-meridian-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **We are often reliant on GPS co-ordinates being delivered to our devices for locating places. With a little practice it's not hard to read a decimal latitude and longitude value to determine a rough position.**
 
 But first it's important to understand some key concepts.
 
-<img class="img-fluid" src="/assets/images/blog/2021-09-10/prime-meridian-sm.jpg
+<img class="img-fluid" src="/assets/images/blog/2021-08-27/prime-meridian-sm.jpg
 " alt="Equator and Prime Meridian" title="Equator and Prime Meridian" />
 
 The Prime Meridian divides the globe into Eastern and Western hemispheres, just as the equator divides the globe into Northern and Southern hemispheres. In the diagram above:
@@ -29,7 +29,7 @@ The Prime Meridian is at 0 degrees longitude (neither East or West), just as the
 
 The spot south of Ghana where the Prime Median and Equator intersect has the co-ordinates 0.0 degrees latitude and 0.0 degrees longitude.
 
-<img class="img-fluid" src="/assets/images/blog/2021-09-10/decimal-degrees-greenwich.jpg
+<img class="img-fluid" src="/assets/images/blog/2021-08-27/decimal-degrees-greenwich.jpg
 " alt="Latitude and longitude decimal diagram" title="Latitude and longitude decimal diagram" />
 
 To help understand where degrees come from, imagine there is an imaginary point in the center of the Earth. You are standing on it, facing Greenwich in London.
@@ -57,7 +57,7 @@ Remember the quadrant above, here's some example of cities in each of the quadra
 * Top left quadrant: Northern latitudes, Western longitudes
 	* e.g San Francisco = 37.7749° N, 122.4194° W (37.7749,-122.4194)
 
-You might have come across other systems reporting latitude and longitude including; Degrees, Minutes, and Seconds (DMS) -- the oldest format for geographic coordinates (though still used extensively today_.
+You might have come across other systems reporting latitude and longitude including; Degrees, Minutes, and Seconds (DMS) -- the oldest format for geographic coordinates (though still used extensively today ([including in camera metadata](/blog/2020/metadata-exif-xmp-360-photo-files)).
 
 For example, here's a snippet of the metadata from a GoPro 360 photo reporting latitude and longitude in DMS:
 
