@@ -42,11 +42,11 @@ Although it's a little more abstract to visualise, you can turn a maximum of 180
 
 Above, I reported Sydney as 33.8688° S (latitude), 151.2093° E (longitude). Latitude is almost always reported before longitude.
 
-You could have see latitude and longitude positions reported with negative values (e.g. -33.8688,151.2093). This format is referred to as Decimal Degrees (DD) and is the most common format used today. It's still in latitude,longitude format, but now instead of using North or South for latitude, and East and West for longitude, +/- values are used. 
+You could have previously seen latitude and longitude positions reported with negative values (e.g. -33.8688,151.2093). This format is referred to as Decimal Degrees (DD) and is the most common format used today. It's still in `latitude,longitude` format, but now instead of using North or South for latitude, and East and West for longitude, +/- values are used. 
 
 Northern latitudes and Eastern longitudes are positive. Southern latitudes and Western longitudes are negative. 
 
-Remember the quadrant above, here's some example of cities in each of the quadrants and their latitudes and longitudes reported in the two ways described above:
+Here are some example of cities in each of the quadrants and their latitudes and longitudes reported in the two ways described above:
 
 * Top right quadrant: Northern latitudes, Eastern longitudes
 	* e.g. Moscow = 55.7558° N, 37.6173° E (55.7558,37.6173)
@@ -116,7 +116,7 @@ lon DD = -16.5458055556
 (West, so * by -1)
 ```
 
-Which gives us a DD latitude,longitude = 28.29865,-16.5458055556.
+Which gives us a DD latitude,longitude = `28.29865,-16.5458055556`.
 
 ## A note on accuracy
 
@@ -126,4 +126,4 @@ In a world without computers decimal places were a major consideration. As compu
 
 The biggest issue with GPS accuracy today is down to the device and conditions.
 
-A device might report to 8 decimal places ([good for millimeter level accuracy](https://en.wikipedia.org/wiki/Decimal_degrees)), but if the measurement calculated by the GPS receiver based on satellite fixes is inaccurate then the measurement will be reported to a high degree of accuracy, but is in fact not very accurate ([see GPS 101 for causes of inaccuracy](/blog/2020/gps-101)).
+A device might report to 8 decimal places ([good for millimeter level accuracy](https://en.wikipedia.org/wiki/Decimal_degrees)), but if the measurement calculated by the GPS receiver based on satellite fixes is inaccurate then the measurement will be reported to a high degree of accuracy, but is in fact not very accurate at all ([see GPS 101 for causes of inaccuracy](/blog/2020/gps-101)).
