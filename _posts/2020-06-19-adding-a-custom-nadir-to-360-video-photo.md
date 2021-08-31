@@ -55,9 +55,11 @@ Cartesian images are taken by camera sensor (including all of the sensors in you
 
 Your logo, is a Cartesian image / projection.
 
-Simply overlaying this as a nadir or zenith (bottom or top) on a 360 equirectangular projection will cause distortion issues.
+Simply overlaying this as a nadir or zenith (bottom or top) on a 360 equirectangular projection will cause distortion issues in the nadir (as it's projection type is not equirectangular).
 
 To solve this problem, you first need to convert the proposed nadir image into an equirectangular projection and adjust to match the width of the original panoramic image for it to display without distortion.
+
+_Update 2021-09-03: [Read more about projection types used in 360 photography](/blog/2021/projection-type-360-photography)._
 
 ## How to create your own nadir
 
@@ -159,3 +161,5 @@ It'll brand 100's of 360 photos with custom nadirs in under a minute.
 ## Update 2020-12-25
 
 [The Map the Paths Desktop Uploader now allows you to add a custom nadir to your 360 photos and videos](/blog/2020/map-the-paths-desktop-uploader).
+
+
