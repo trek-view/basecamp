@@ -54,12 +54,6 @@ But GoPro then went one step further to account for issues an decoder might face
 
 As noted before, the MAX shoots at 6K but the stitched resolution of the EAC image is smaller at 5.6K (the MAX does this on camera).
 
-You can see there are a number of overlapping pixels in the width of the two video tracks (4032x2688 -- by 1344 either side).
-
-I assume the duplicate pixels that are used for image alignment in downstream software...
-
-_(It is also worth noting that the overlapping pixels used by GoPro .360 and Google EAC are slightly different)_
-
 > we built a special player that can decode both streams in real time and re-project them into a sphere.
 
 The realisty is, although it might be easy to playback (from a computational point of view), none currently, except GoPro's own software understands this codec correctly to play it back.
@@ -88,11 +82,30 @@ Interestingly they also note...
 
 > Once more tools start to support EAC, we will be able to skip this conversion step altogether and save even more time since no reprojection is needed.
 
-Since the MAX launched 2 years ago (and this post was written), adoption of EAC (beyond YouTube) in the world of video has been slow, and none-existant in mapping software (Google Street View and Mapillary still use equirectangular projections for displaying imagery).
+Since the MAX launched 2 years ago (and the GoPro post these quotes are taken from was written), adoption of EAC in the world of video has been slow. 
 
-## Examaning a real .360 file
+[YouTube pioneered the standard in production around 2017/18 to improve quality and save bandwidth](https://youtube-eng.googleblog.com/2017/03/improving-vr-videos.html).
 
-Stay tuned for next weeks post.
+When using YouTube-dl to download videos, EAC was the format delivered in the download by default ([causing a few annoyances at the time](https://github.com/ytdl-org/youtube-dl/issues/15267)). 
 
-Don't forget to subscribe to the newsletter below for an instant notification when the post goes live.
+Here's an example of YouTube serving EAC (I don't own this video):
 
+```
+https://www.youtube.com/watch?v=uHAysQ7nVok
+
+```
+
+However, the following video has no EAC copy at time of test, it returns an equirectangular projection (it is my video shot on a GoPro MAX and was uploaded as equirectangular mp4):
+
+```
+youtube-dl -k https://www.youtube.com/watch?v=dUxe_tYCTL0
+
+```
+
+It seems that other older MAX videos on YouTube (6 months old+) still return equirectangular projections too, so it doesn't seem to be a processing issue.
+
+In the world of mapping, EAX is none-existent in mapping software. Google Street View and Mapillary still only support equirectangular projections for upload and displaying imagery.
+
+## Examining a real .360 file
+
+Stay tuned for next weeks post. Or subscribe to the newsletter below and we'll let you know when it's live.

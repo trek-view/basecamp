@@ -86,7 +86,7 @@ Above is the first frame (reduced in resolution for this post, originals = 4096x
 
 <img class="img-fluid" src="/assets/images/blog/2021-09-17/img-track0-5-grid-marked.jpg" alt="GoPro EAC video frame top track 0 and 5 marked" title="GoPro EAC video frame top track 0 and 5 marked" />
 
-Above are the two images in one track (0 at top, 5 at bottom). I have also added a grid to dispay the direction each cube face it projecting.
+Above are the two images in one track (0 at top, 5 at bottom). I have also added a grid to display each cube annotated with its direction and rotation.
 
 You can create a video file of the two tracks in ffmpeg to get this frame like so:
 

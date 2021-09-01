@@ -1,7 +1,7 @@
 ---
 date: 2021-09-03
 title: "A deeper look at 360 video projections"
-description: "Equirectangular, non-equalangle cubemap, equiangular cubemap, pyramid..."
+description: "Equirectangular, non-equalangle cubemap, equi-angular cubemap, pyramid..."
 categories: guides
 tags: [Google, Facebook, YouTube, VR, virtual reality, video, encoding]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: false
 ---
 
-**Equirectangular, non-equalangle cubemap, equiangular cubemap, pyramid...**
+**Equirectangular, non-equalangle cubemap, equi-angular cubemap, pyramid...**
 
 Recently I've been doing a lot of research on 360 video encoding.
 
