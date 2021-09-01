@@ -13,7 +13,9 @@ published: false
 
 **Taking apart a .360 file to reveal its contents to try and understand how it can be processed (without GoPro software).**
 
-Last week I looked at some of the theory behind the GoPro's proprietary .360 format. This week I'll use a video I shot to try and understand how to work with .360's in practice.
+[Last week I looked at some of the theory behind the GoPro's proprietary .360 format]((/blog/2021/reverse-engineering-gopro-360-file-format-part-1). 
+
+This week I'll use a video I shot on a [Trek Pack v2 (GoPro Max)](/trek-pack) to try and understand how to work with .360's in practice.
 
 Here's a GoPro video shot at 6K / 30 FPS on the MAX camera.
 
