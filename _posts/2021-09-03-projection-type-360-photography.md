@@ -121,6 +121,16 @@ I won't attempt to explain this projection type in this blog post as it is fairl
 
 Facebook claims a massive 80% reduction in bandwidth using the Pyramid projection (against the original equirectangular projected video).
 
+## A note on Google Street View
+
+<img class="img-fluid" src="/assets/images/blog/2021-09-03/google-street-view-load-image-pieces.jpg" alt="Google Street View load quadrants" title="Google Street View load quadrants" />
+
+Google Street View loads images with an equirectangular projection, and they optimise the way they load based on your device and available bandwidth.
+
+Part of this optimisation involves loading different parts of the image as quadrants, versus the whole image at once. You can see an example of this in the image above. If you have a fast connection and moderately powerful machine, you have probably never seen this because all quadrants have downloaded very quickly.
+
+This optimisation technique is not to be confused with a cubemap projection.
+
 ## Acknowledgements
 
 Image credits for this post: 

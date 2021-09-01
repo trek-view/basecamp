@@ -161,5 +161,3 @@ It'll brand 100's of 360 photos with custom nadirs in under a minute.
 ## Update 2020-12-25
 
 [The Map the Paths Desktop Uploader now allows you to add a custom nadir to your 360 photos and videos](/blog/2020/map-the-paths-desktop-uploader).
-
-

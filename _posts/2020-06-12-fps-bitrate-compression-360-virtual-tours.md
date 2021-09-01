@@ -172,3 +172,7 @@ Alternatively, you can use timelapse imagery.
 You'll get higher image quality, and it will be easier to process them. The downside is that you won't have as much flexibility in the number of photos to choose from before upload.
 
 [We currently recommend timelapse mode on the Trek Pack (GoPro Fusion) for tour capture](/trek-pack).
+
+## Update 2021-09-10
+
+Here's a real world example about why encoding is important when dealing with large video files: [Reverse Engineering GoPro's 360 Video File Format](/blog/2021/reverse-engineering-gopro-360-file-format)
