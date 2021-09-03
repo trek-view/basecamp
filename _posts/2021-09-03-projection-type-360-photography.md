@@ -19,7 +19,7 @@ There are a lots of ways 360 videos are encoded and displayed, including the pro
 
 In 360 photography, a projection type is a way to map a spherical field of view to a flat image.
 
-Different projection types have different benefits. In the world of 360 videos (which can often be very large), video sharing services are always looking to optimise the size of content they serve to a viewer.
+Different projection types have different benefits. In the world of 360 videos (which can often be very large), video sharing services are always looking to optimise the data size of content they serve to a viewer.
 
 ## Equirectangular projections
 
@@ -35,13 +35,13 @@ If you've every looked at a equirectangular projected 360 photo in a "flat" view
 
 <img class="img-fluid" src="/assets/images/blog/2021-09-03/equirectangular-image.jpg" alt="Equirectangular graph" title="Equirectangular graph" />
 
-The next diagram below might help you visualise this better (see how the top circles in right equirectangular projection are distorted from spherical globe):
+The diagram below might help you visualise this better (see how the top circles in right equirectangular projection are distorted from spherical globe):
 
 <img class="img-fluid" src="/assets/images/blog/2021-09-03/equirectangular-globe-projection.png" alt="Equirectangular transformation" title="Equirectangular transformation" />
 
-Many of you will be familiar with equirectangular projection types. Most 360 cameras used this projection type for outputting image and videos. Most 360 image software also understands how to render equirectangular projection types ([when this projection type is present in the metadata](/blog/2020/metadata-exif-xmp-360-photo-files)).
+Many of you will be familiar with equirectangular projection types. Most 360 cameras use this projection type for the final output of image and videos. This is largely because most 360 image software understands how to render equirectangular projection types ([when this projection type is present in the metadata](/blog/2020/metadata-exif-xmp-360-photo-files)).
 
-**Example Equirectangular projection**
+### Example Equirectangular projection
 
 <img class="img-fluid" src="/assets/images/blog/2021-09-03/example-equirectangular.jpeg" alt="Example Equirectangular projection" title="Example Equirectangular projection" />
 
@@ -49,7 +49,7 @@ Many of you will be familiar with equirectangular projection types. Most 360 cam
 
 In the world of video games and virtual reality cubemaps are generally the default projection type.
 
-In large part this is because equirectangular images contain a lot of redundant pixels (whereas cubemap can deliver the same image as smaller file, thus saving bandwidth costs) and distortion (around the poles, as shown above, which can be made worse when images are edited).
+In large part this is because equirectangular images contain a lot of redundant pixels (whereas cubemap can deliver the same image as smaller files, thus saving bandwidth costs) and distortion (around the poles, as shown above, which can be made worse when images are edited).
 
 Cubemaps (or cubic format) uses six cube faces to fill the whole sphere around the viewer.
 
@@ -60,21 +60,21 @@ This is conceptually simple: deform a sphere into a cube, then unfold the cube�
 <img class="img-fluid" src="/assets/images/blog/2021-09-03/globe-cubemap-projection.png
 " alt="Cubemap projection transformation" title="Cubemap projection transformation" />
 
-This is an improvement over equirectangular projections, but it still causes substantial variation in pixel density as is evident looking at the transformation from globe, to cube, to open cube. You can see the edges of the cubes (shown with circles) are more deformed on the left, right, forward and back sides of the cube faces.
+This is an improvement over equirectangular projections, but it still causes substantial variation in pixel density as is evident looking at the transformation from globe, to cube, to unraveled cube. You can see the edges of the cubes (shown with circles) are more deformed on the left, right, forward and back sides of the cube faces.
 
-**Example Cubemap projection (non-equalangle)**
+### Example Cubemap projection (non-equalangle)
 
 <img class="img-fluid" src="/assets/images/blog/2021-09-03/non-equalangle-cubemap-equi-angular-compare.jpeg" alt="Example Cubemap projection" title="Example Cubemap projection" />
 
-**A note about cubemap formats**
+### A note about cubemap formats
 
 <img class="img-fluid" src="/assets/images/blog/2021-09-03/cubemap-projection-formats.png" alt="Cubemap projection formats" title="Cubemap projection formats" />
 
 [Download this diagram from Google Drawings here](https://docs.google.com/drawings/d/1nDh0mrrDXnOllttC8mGDY4WVtf2ifnz6kVZyRdXOgEY/edit?usp=sharing)
 
-You should be aware there are a variety of cubemap layouts used, as shown above.
+You should be aware there are a variety of cubemap layouts used by different software, as shown above. Ultimately the result of each is the same, a cube.
 
-**Equirectangular To Cubemap conversions**
+### Equirectangular To Cubemap conversions
 
 There are lots of free web apps online that convert images using equirectangular projections to cubemaps, for example, [this one created by Lucas Crane](https://github.com/jaxry/panorama-to-cubemap).
 
@@ -84,24 +84,24 @@ In light of the above problems, the Equi-Angular Cubemap (EAC) projection was cr
 
 <img class="img-fluid" src="/assets/images/blog/2021-09-03/non-equalangle-cubemap-equi-angular.png" alt="Equi-Angular Cubemap vs cubemap" title="Equi-Angular Cubemap vs cubemap" />
 
-EAC is not too different to the non-equalangle cubemap projection, except you'll see the traditional cubemap has samples of varying length depending on the sample’s location on the cube face. EAC is s
+EAC is not too different to the non-equalangle cubemap projection, except you'll see the traditional cubemap has samples of varying length depending on the sample’s location on the cube face (left side of diagram above). Whereas, for EAC, the sample sizes are the same.
 
 <img class="img-fluid" src="/assets/images/blog/2021-09-03/eac-transform.jpg
 " alt="Equi-Angular Cubemap transform" title="Equi-Angular Cubemap transform" />
 
-You can see in the Equi-Angular Cubemap transformation that the corners of each cube are not distorted, as they were in the non-equalangle cubemap projection.
+You can see in the Equi-Angular Cubemap transformation that the corners of each cube are not as distorted as they were in the non-equalangle cubemap projection (although it should be noted they are still slightly distorted in EAC).
 
-[360 videos uploaded to YouTube are converted to EAC and served using this projection type](https://youtube-eng.googleblog.com/2017/03/improving-vr-videos.html).
+[360 videos uploaded to YouTube are converted to EAC and served using this projection type](https://youtube-eng.googleblog.com/2017/03/improving-vr-videos.html). [Paul Bourke also has a good write up about the YouTube 360 format](http://paulbourke.net/panorama/youtubeformat/).
 
-**Example Equi-Angular projection**
+### Example Equi-Angular projection
 
 <img class="img-fluid" src="/assets/images/blog/2021-09-03/equi-angular-cubemap.jpeg" alt="Example EAC projection" title="Example EAC projection" />
 
-**Example non-equalangle vs Equi-Angular projection**
+### Example non-equalangle vs Equi-Angular projection
 
-The non-equalangle and Equi-Angular projections might look identical in the example images above.
+The non-equalangle and Equi-Angular projections might look identical in the example images used above.
 
-<img class="img-fluid" src="/assets/images/blog/2021-09-03/equi-angular-cubemap.jpeg" alt="Example non-equalangle vs EAC projection" title="Example non-equalangle vs EAC projection" />
+<img class="img-fluid" src="/assets/images/blog/2021-09-03/non-equalangle-cubemap-equi-angular-compare.jpeg" alt="Example non-equalangle vs EAC projection" title="Example non-equalangle vs EAC projection" />
 
 In this final example image above image I've overlaid the Equi-Angular cubemap example image with 50% transparency over the non-equalangle example image. 
 
@@ -109,13 +109,13 @@ You can now see the images are indeed quite different, although the edges still 
 
 ## Pyramid projection
 
-The Pyramid projection was announced by Facebook in 2016, mainly aimed at VR video.
+The Pyramid projection was announced by Facebook in 2016 to support VR video.
 
 > When a 360 video is uploaded, we transform it from an equirectangular layout to the pyramid format for each of the 30 viewports, and we create five different resolutions for each stream, for a total of 150 different versions of the same video.
 
 Source: [Facebook engineering blog](https://engineering.fb.com/2016/01/21/virtual-reality/next-generation-video-encoding-techniques-for-360-video-and-vr/)
 
-I won't attempt to explain this projection type in this blog post as it is fairly complex. This video from the Facebook team gives a very good explanation though:
+I won't attempt to explain this projection type in this blog post as it is fairly complex. This video from the Facebook team gives a very good explanation:
 
 <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FEngineering%2Fvideos%2F10153781047207200%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
 
@@ -129,7 +129,7 @@ Google Street View loads images with an equirectangular projection, and they opt
 
 Part of this optimisation involves loading different parts of the image as quadrants, versus the whole image at once. You can see an example of this in the image above. If you have a fast connection and moderately powerful machine, you have probably never seen this because all quadrants have downloaded very quickly.
 
-This optimisation technique is not to be confused with a cubemap projection.
+This optimisation technique is not to be confused with a cubemap projection, the projection type is still equirectangular.
 
 ## Acknowledgements
 
