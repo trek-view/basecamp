@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2021-09-03/globe-cubemap-projection-meta.jpg
 featured_image: /assets/images/blog/2021-09-03/globe-cubemap-projection-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Equirectangular, non-equalangle cubemap, equi-angular cubemap, pyramid...**

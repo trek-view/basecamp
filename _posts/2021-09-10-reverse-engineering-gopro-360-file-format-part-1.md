@@ -91,7 +91,7 @@ When using YouTube-dl to download videos, EAC was the format delivered in the do
 Here's an example of YouTube serving EAC (I don't own this video):
 
 ```
-https://www.youtube.com/watch?v=uHAysQ7nVok
+youtube-dl -k https://www.youtube.com/watch?v=uHAysQ7nVok
 
 ```
 
