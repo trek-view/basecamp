@@ -64,7 +64,7 @@ This is an improvement over equirectangular projections, but it still causes sub
 
 ### Example Cubemap projection (non-equalangle)
 
-<img class="img-fluid" src="/assets/images/blog/2021-09-03/non-equalangle-cubemap-equi-angular-compare.jpeg" alt="Example Cubemap projection" title="Example Cubemap projection" />
+<img class="img-fluid" src="/assets/images/blog/2021-09-03/non-equalangle-cubemap.jpeg" alt="Example Cubemap projection" title="Example Cubemap projection" />
 
 ### A note about cubemap formats
 
