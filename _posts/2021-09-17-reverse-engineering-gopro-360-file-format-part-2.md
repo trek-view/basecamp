@@ -30,7 +30,7 @@ I can extract a frames from this .mp4 video with ffmpeg by following the instruc
 For this example, I'll use 1 frame every second:
 
 ```
-ffmpeg -i GS070135.mp4 -r 1 MP4-FRAMES/img%d.jpg
+$ ffmpeg -i GS070135.mp4 -r 1 MP4-FRAMES/img%d.jpg
 ```
 
 <img class="img-fluid" src="/assets/images/blog/2021-09-17/img1.jpg" alt="GoPro equirectangular video frame mp4" title="GoPro equirectangular video frame mp4" />
@@ -47,7 +47,7 @@ We know from last weeks post, there are two video tracks in the file.
 Running the command used before, e.g.
 
 ```
-ffmpeg -i GS070135.360 -r 1 FRAMES/img%d.jpg
+$ ffmpeg -i GS070135.360 -r 1 FRAMES/img%d.jpg
 ```
 
 Would run, but would only extract one track. 
@@ -55,7 +55,7 @@ Would run, but would only extract one track.
 Looking at the metadata from a .360 file, you can see why:
 
 ```
-exiftool -ee -G3 -api LargeFileSupport=1 -X GS070135.360 > GS070135-360.txt
+$ exiftool -ee -G3 -api LargeFileSupport=1 -X GS070135.360 > GS070135-360.txt
 ```
 
 Although it's a .360 file format, GoPro actually declare it as an .mp4:
@@ -73,7 +73,13 @@ Thus, the above command only looks for a single video track to extract (as mp4's
 Therefore we need to explictly define the tracks for extraction. In the case of .360's this is track 0 and 5:
 
 ```
-ffmpeg -i GS070135.360 -map 0:0 -r 1 track0/img%d.jpg -map 0:5 -r 1 track5/img%d.jpg
+$ ffmpeg -i GS070135.360 -map 0:0 -r 1 track0/img%d.jpg -map 0:5 -r 1 track5/img%d.jpg
+```
+
+Note, this extracts at 1 FPS (-r 1). You can also copy the video file from each track, if needed:
+
+```
+$ ffmpeg -i GS070135.360 -map 0:0 -vcodec copy -acodec copy track0.mp4 -map 0:5 -vcodec copy -acodec copy track5.mp4
 ```
 
 Track 0:
@@ -88,20 +94,16 @@ Above is the first frame (reduced in resolution for this post, originals = 4096x
 
 <img class="img-fluid" src="/assets/images/blog/2021-09-17/img-track0-5-grid-marked.jpg" alt="GoPro EAC video frame top track 0 and 5 marked" title="GoPro EAC video frame top track 0 and 5 marked" />
 
+[Download on Google Drawings here](https://docs.google.com/drawings/d/1DpMUfO6RL601SCuJfZ9uTiE0XcTBApLJssmOs2BcAZw/edit?usp=sharing).
+
 Above are the two images in one track (0 at top, 5 at bottom). I have also added a grid to display each cube annotated with its direction and rotation.
 
-You can create a video file of the two tracks in ffmpeg to get this frame like so:
+You can create a video file of the two track jpgs in ffmpeg to get this frame like so:
 
 ```
-ffmpeg -i GS070135.360 -filter_complex "[0:0]pad=4096:2688[put],[put][0:5]overlay=x=0:y=1344" GS070135-eac.mp4
+$ ffmpeg -i GS070135.360 -filter_complex "[0:0]pad=4096:2688[put],[put][0:5]overlay=x=0:y=1344" GS070135-eac.mp4
 ```
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qIBc_s6W47I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-And then extract the frames, as shown at the start of this post.
-
-You can see the left, down, right and up facing images clerly show the stitch line which GoPro remove during the blending process in post processing using GoPro Player (Mac) / MAX Exporter (Windows) (to create mp4).
-
-Now you might be wondering about the resolution of this dual track being 4096x2688, when infact the resulting mp4 is 4096x2048 (that is an extra height of 640 pixels (2688-2048.
-
-My assumption is that these are duplicate pixels that are used for image alignment in GoPro's software, but more on that next week.
+But really this video is useless. In EAC (or GoPro EAC) projection, other software won't be able to read it. It needs to be converted to equirectangular.

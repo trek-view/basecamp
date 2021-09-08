@@ -25,7 +25,7 @@ However, I need some help each year to keep it going.
 
 <img class="img-fluid" src="/assets/images/blog/2020-10-30/map-the-paths-hall-of-fame.jpg" alt="Map the Paths Hall of Fame" title="Map the Paths Hall of Fame" />
 
-[Every sequence you upload or share](https://www.mapthepaths.com/uploader), [every pull request to our open-source repositories on GitHub](https://github.com/trek-view/), [every time you share an idea with us on the forum](https://campfire.trekview.org/)... it all helps.
+[Every sequence you upload or share](https://www.mapthepaths.com/uploader), [every pull request to our open-source repositories on GitHub](https://github.com/trek-view/), [every time you share an idea with us on Discord](https://discord.gg/bNrRNtHu)... it all helps.
 
 <img class="img-fluid" src="/assets/images/blog/2020-10-30/map-the-paths-hall-of-fame.jpg" alt="Map the Paths Hall of Fame" title="Map the Paths Hall of Fame" />
 

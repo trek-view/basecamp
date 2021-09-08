@@ -56,7 +56,7 @@ Essentially, with a global DEM, I can take a latitude and longitude and perform 
 
 ## Global DEM's
 
-There are a good number of Global DEM's available online -- [thanks for all your suggestions on the forum](https://campfire.trekview.org/t/global-digital-elevation-model-profile-api/328/4).
+There are a good number of Global DEM's available online.
 
 [Perhaps the most widely used is Google's Elevation API](https://developers.google.com/maps/documentation/elevation/overview). It's also perhaps one of the most comprehensive Global DEM's given the coverage of Google Maps data. The downside, it can be expensive for large-scale use ([at time of writing $5USD per 1,000 lookups](https://developers.google.com/maps/documentation/elevation/usage-and-billing)).
 

@@ -57,6 +57,6 @@ _For those who regularly use the Street View UI, you might be interested in this
 
 **Video uploads**
 
-Update January 2021: [It appears takeout is not possible if your account has uploaded videos to Google Street View](https://campfire.trekview.org/t/downloading-your-own-images-from-google-street-view/505).
+Update January 2021: It appears takeout is not possible if your account has uploaded videos to Google Street View as theres are not included in the download bundle.
 
 Let me know in that thread how you get on with this process. I'm especially keen to hear if Takeout works for people who have uploaded video and/or have a significant amount of content on Street View (100GB+).

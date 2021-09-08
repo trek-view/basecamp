@@ -1,20 +1,16 @@
 - links:
   - name: Trek Pack
     link: /trek-pack
-  - name: Make a Map
+  - name: Map the Paths
     link: https://www.mapthepaths.com
   - name: Podcast
     link: https://www.expodition.org
-  - name: School
-    link: https://treehouse.trekview.org
   - name: Docs
     link: https://guides.trekview.org
-  - name: Support
-    link: https://campfire.trekview.org
+  - name: Discord
+    link: https://discord.gg/bNrRNtHu
 
 - links:
-  - name: View / Upload Photos
-    link: https://www.mapthepaths.com
   - name: Blog
     link: /blog
   - name: About

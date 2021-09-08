@@ -52,7 +52,7 @@ Google, Apple, and Microsoft all run their own driving programs using profession
 
 [Google Street View also has very strict Street View Ready Pro criteria for user submitted imagery](https://developers.google.com/streetview/ready/specs-prograde).
 
-Mapillary does things slightly differently. [The majority of photos are from single sensor dash and action cameras](https://campfire.trekview.org/t/an-interesting-analysis-of-images-submitted-to-mapillary-by-camera-type/322). Quality checks on upload by Mapillary are limited. In many cases you'll come across low-quality dashcam footage (for example, with rain on the windscreen).
+Mapillary does things slightly differently. The majority of photos are from single sensor dash and action cameras. Quality checks on upload by Mapillary are limited. In many cases you'll come across low-quality dashcam footage (for example, with rain on the windscreen).
 
 That said, Mapillary also hosts lots of high-quality captures. The team at [Mosaic51](https://www.mosaic51.com/) use Mapillary to [showcase professional footage captured by their own camera rig](https://www.mapillary.com/app/org/mosaic51).
 

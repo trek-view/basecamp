@@ -60,5 +60,3 @@ Track an entire Map the Paths Sequence by showing the entire route augmented ove
 ## Do you have an idea for a new feature?
 
 [See more demos of Map the Paths here](https://www.youtube.com/playlist?list=PLxOPOff2hYWNW7kUguDy4eRgH1WjKPGZd).
-
-If there's something missing you'd like to added to Map the Paths, [let us know on the forum](https://campfire.trekview.org/c/support/8).

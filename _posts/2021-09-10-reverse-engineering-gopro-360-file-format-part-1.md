@@ -25,7 +25,7 @@ There are a number of issues I've seen voiced
 * To convert to a more widely understood codec you need to use GoPro Player
 	* Is an added step requiring mode time
 	* Can be very CPU intensive (requiring a well powered machine)
-	* Relies solely on GoPro software ([which can be buggy](https://campfire.trekview.org/t/no-gps-data-on-gopro-max-360-mp4s-gopro-max-exporter-windows/247))
+	* Relies solely on GoPro software (which can be buggy)
 	* Limited functionlity based on GoPro's feature choices
 
 My suspicion is the `.360` format is used as a more effecient codec to capture high-quality / frame-rate videos than would otherwise be possible (see my post on [FPS, Bit rate, Compression and 360 Video Quality](/blog/2020/fps-bitrate-compression-360-virtual-tours)).
@@ -91,14 +91,14 @@ When using YouTube-dl to download videos, EAC was the format delivered in the do
 Here's an example of YouTube serving EAC (I don't own this video):
 
 ```
-youtube-dl -k https://www.youtube.com/watch?v=uHAysQ7nVok
+$ youtube-dl -k https://www.youtube.com/watch?v=uHAysQ7nVok
 
 ```
 
 However, the following video has no EAC copy at time of test, it returns an equirectangular projection (it is my video shot on a GoPro MAX and was uploaded as equirectangular mp4):
 
 ```
-youtube-dl -k https://www.youtube.com/watch?v=dUxe_tYCTL0
+$ youtube-dl -k https://www.youtube.com/watch?v=dUxe_tYCTL0
 
 ```
 

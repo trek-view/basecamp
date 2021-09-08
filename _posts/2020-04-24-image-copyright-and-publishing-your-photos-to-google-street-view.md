@@ -21,7 +21,7 @@ Unless you assign copyright to someone else, perhaps after selling a photo.
 
 But how your photos can be used requires a different, more complex answer.
 
-[After seeing a question on the Campfire forum this week about Google Street View image licensing](https://campfire.trekview.org/t/who-owns-my-photos-if-i-upload-to-street-view-google/148), I decided to dig into the fine print to find the answer.
+After seeing a question this week about Google Street View image licensing, I decided to dig into the fine print to find the answer.
 
 Disclaimer: I'm not a lawyer.
 
@@ -71,7 +71,7 @@ This means they can use your images, and make them available for other to use wi
 
 <iframe src="https://www.google.com/maps/embed?pb=!4v1587798201162!6m8!1m7!1sCAoSLEFGMVFpcE82U3lKeUdGcEM0MlJCejZzNlZZS2JqQm05SnJIT21YQzJBaUdN!2m2!1d51.2878692!2d-0.8199082999999999!3f345.8037646583608!4f-8.358462151067911!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
-You are probably aware that anyone can embed any Google Street View image on a website, like I've done above, free of charge. If not, [this post explains how to](https://campfire.trekview.org/t/posting-interactive-views-of-your-panoramas-in-forum-posts/50/3).
+You are probably aware that anyone can embed any Google Street View image on a website, like I've done above, free of charge.
 
 Google also charges customers who want to use a larger volume of Google Street View photos. This includes access to all published Google Street View photos. Pricing varies, [but starts at $7.00 USD for every 1000 images requested](https://developers.google.com/maps/documentation/streetview/usage-and-billing). _Correct April 2020_.
 

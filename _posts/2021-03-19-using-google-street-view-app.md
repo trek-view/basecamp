@@ -63,7 +63,7 @@ This works by connecting the camera (usually over WiFi) to your phone. As the ca
 * [YI 360 VR Camera](https://support.google.com/maps/answer/6281877?hl=en-GB#zippy=%2Cyi-vr-camera)
 * [Samsung Gear 360](https://support.google.com/maps/answer/6281877?hl=en-GB#zippy=%2Csamsung-gear)
 
-This list has not been update for over a year. Some of these cameras have since been discontinued. If anyone has a camera that the app supports not listed above, [please let me know on the forum](https://campfire.trekview.org/t/using-the-google-street-view-app-to-publish-your-panoramic-photos/552).
+This list has not been update for over a year. Some of these cameras have since been discontinued.
 
 ## Uploading Images
 

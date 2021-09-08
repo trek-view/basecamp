@@ -17,7 +17,7 @@ published: true
 
 I wanted to add some of our favourite API requests for uncovering interesting data.
 
-[We recently ran a mapping party in the New Forest, UK](https://campfire.trekview.org/t/new-forest-pano-party-rescheduled-sunday-13th-september/325).
+[We recently ran a mapping party in the New Forest, UK](/blog/2020/pano-party-new-forest-uk-may-23-2020).
 
 The photos are great to explore interactively to get a feel for the visual beauty of the area.
 

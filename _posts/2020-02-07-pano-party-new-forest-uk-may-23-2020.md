@@ -15,7 +15,7 @@ published: true
 
 **2020-08-19 Update**
 
-This event has been rescheduled for Sunday 13th September 2020. I hope to see you there. [Full details and RSVP can be found here](https://campfire.trekview.org/t/new-forest-pano-party-rescheduled-sunday-13th-september/325).
+This event has been rescheduled for Sunday 13th September 2020. I hope to see you there.
 
 **2020-03-13 Update**
 

@@ -57,19 +57,13 @@ In attempt to provide better answers, faster, we want to tap into the vast knowl
 <img class="img-fluid" src="/assets/images/blog/2020-04-17/trekview-campfire-forum-sm.png
 " alt="Trek View Campfire forum" title="Trek View Campfire forum" />
 
-To do this we've spun up a new public forum, [Campfire](https://campfire.trekview.org/).
+To do this we've spun up a new public forum, Campfire.
+
+**Update 2021-09-06:** [Campfire has now been replaced by a Discord server](https://discord.gg/bNrRNtHu).
 
 We make everything we do here at Trek View public and freely available, and we want that to include our knowledge. From the design of our [Trek Pack](/trek-pack) to the [software we build](https://github.com/trek-view).
 
 We want Campfire to be a further extension of this openness, allowing the community to come together, share information, and help each other out.
-
-[Share your outdoor street-level tours in the imagery category](https://campfire.trekview.org/c/imagery).
-
-[Discuss cameras and setups in the equipment category](https://campfire.trekview.org/c/equipment).
-
-[And promote your events, challenges, or initiatives in the community category](https://campfire.trekview.org/c/community).
-
-[It will be great to have you on-board](https://campfire.trekview.org/).
 
 ## A new Trek Pack?
 

@@ -15,7 +15,7 @@ published: true
 
 I'm looking forward to some image mapping parties coming up in the next few weeks.
 
-The first in the New Forest (Sunday 13th September 2020), run in conjunction with Nick Whitelegg the creator of [OpenTrailView](https://www.opentrailview.org/). [Join us by signing up here](https://campfire.trekview.org/t/new-forest-pano-party-rescheduled-sunday-13th-september/325).
+The first in the New Forest (Sunday 13th September 2020), run in conjunction with Nick Whitelegg the creator of [OpenTrailView](https://www.opentrailview.org/).
 
 The second is with the [Bexhill OSM project](https://bexhill-osm.org.uk/?T=info#14/50.8470/0.4675), [who have already used a GoPro MAX to map a large part of their area](https://www.mapillary.com/app/user/bexhill_osm?pKey=zX6MPMoUYqxE7c4GLBGge3).
 

@@ -17,7 +17,7 @@ A whole ecosystem has sprung up around Google Street View.
 
 [What was once just Google cars roaming the Streets](/blog/2019/history-of-google-street-view-cameras), is now a whole community of Google Maps users contributing both indoor (look-inside) and outdoor images to Street View [using approved products](https://www.google.com/streetview/contacts-tools/products/).
 
-In fact, [all signs point to Google increasing their reliance on external contributors to Street View](https://campfire.trekview.org/t/how-do-i-become-google-street-view-trusted-pro/136/7) --  both at hobby level through the Street View app and at professional level thanks to manufacturers building direct Street View integrations for their products.
+In fact, all signs point to Google increasing their reliance on external contributors to Street View --  both at hobby level through the Street View app and at professional level thanks to manufacturers building direct Street View integrations for their products.
 
 Getting panoramas into Street View relies on the Google Street View Publish API (application programming interface) that allows developers to interact with Street View's functionality programmatically.
 
@@ -303,7 +303,7 @@ I'll talk more about working with video files and the Street View API in a futur
 
 ## Other Street View API's
 
-[You are probably already familiar with the ability to share Street View panoramas on your website using `<iframe>`'s](https://campfire.trekview.org/t/posting-interactive-views-of-your-panoramas-in-forum-posts/50/3).
+You are probably already familiar with the ability to share Street View panoramas on your website using `<iframe>`'s.
 
 If you're looking to use Street View images on your website or app without using an `<iframe>`, or want a lot more flexibility for what you can do with a Street View image, there are two API's you'll be interested in:
 

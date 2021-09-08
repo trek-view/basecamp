@@ -1,6 +1,6 @@
 ---
 date: 2020-06-19
-title: "How to Add a Custom Nadir to a 360 Photo or Video"
+title: "How to Add a Custom Nadir to a 360 Photo or Video using GIMP"
 description: "Branding your public images can be a great way to promote your 360 work. A custom nadir is perfect for this."
 categories: guides
 tags: [nadir, zenith, GIMP, Google, Street View, equirectangular, Map the Paths]

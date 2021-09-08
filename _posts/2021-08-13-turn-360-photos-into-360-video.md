@@ -304,13 +304,13 @@ Now we can add the other spatial and non-spatial XMP data to the video. Note, th
 [XMP-tiff](https://exiftool.org/TagNames/XMP.html#tiff):
 
 ```
-$ exiftool XMP-tiff:Copyright:'https://www.trekview.org' XMP-tiff:Artist:'https://www.trekview.org'
+$ exiftool XMP-tiff:Copyright:'https://www.trekview.org' XMP-tiff:Artist:'https://www.trekview.org' demo-video-injected-meta.mp4
 ```
 
 [exif](https://exiftool.org/TagNames/XMP.html#exif):
 
 ```
-$ exiftool XMP-exif:GPSLongitude:'16 deg 32&#39; 44.90&quot; W' XMP-exif:GPSLatitude:'28 deg 17&#39; 55.14&quot; N' XMP-exif:GPSAltitudeRef=0 XMP-exif:GPSAltitude:'2323.621 m' XMP-exif:GPSTimeStamp:'13:06:48' XMP-exif:GPSDateStamp:'2019:11:29'
+$ exiftool XMP-exif:GPSLongitude:'16 deg 32&#39; 44.90&quot; W' XMP-exif:GPSLatitude:'28 deg 17&#39; 55.14&quot; N' XMP-exif:GPSAltitudeRef=0 XMP-exif:GPSAltitude:'2323.621 m' XMP-exif:GPSTimeStamp:'13:06:48' XMP-exif:GPSDateStamp:'2019:11:29' demo-video-injected-meta.mp4
 ```
 
 **A note on GPS and telemetry**
