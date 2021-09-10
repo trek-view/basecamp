@@ -5,8 +5,8 @@ description: "A deeper look into GoPro's proprietary .360 video format (with the
 categories: guides
 tags: [GoPro]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-09-10/
-featured_image: /assets/images/blog/2021-09-10/
+image: /assets/images/blog/2021-09-10/youtube-eac-meta.jpeg
+featured_image: /assets/images/blog/2021-09-10/youtube-eac-sm.jpeg
 layout: post
 published: true
 ---
@@ -104,7 +104,7 @@ $ youtube-dl -k https://www.youtube.com/watch?v=dUxe_tYCTL0
 
 It seems that other older MAX videos on YouTube (6 months old+) still return equirectangular projections too, so it doesn't seem to be a processing issue.
 
-In the world of mapping, EAX is none-existent in mapping software. Google Street View and Mapillary still only support equirectangular projections for upload and displaying imagery.
+In the world of street-level mapping, EAC has seen no adoption. Google Street View and Mapillary still only support equirectangular projections for upload and displaying imagery.
 
 ## Examining a real .360 file
 

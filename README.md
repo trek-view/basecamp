@@ -34,6 +34,12 @@ Before merging any changes to master, check for 404's:
 
 `bundle exec htmlproofer ./_site`
 
+## Support
+
+Join our Discord community and get in direct contact with the Trek View team, and the wider Trek View community.
+
+[Join the Trek View Discord server](https://discord.gg/ZVk7h9hCfw).
+
 ## License
 
-The code of this site is licensed under a [MIT License](/LICENSE.txt).
+The code of this site is licensed under a [MIT License](/LICENSE).

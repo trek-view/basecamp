@@ -74,10 +74,10 @@ For example if the original spacing was 5 seconds between GPS times (e.g. 12:00:
 Looking at the metadata of the video I just created using exiftool:
 
 ```
-$ exiftool -X demo-video-no-meta.mp4 > demo-video-no-meta-metadata.txt
+$ exiftool -X demo-video-no-meta.mp4 > demo-video-no-meta-metadata.xml
 ```
 
-Gives a .txt file with the contents:
+Gives a .xml file with the contents:
 
 ```
 <?xml version='1.0' encoding='UTF-8'?>
@@ -177,9 +177,9 @@ There is already a lot here. We can see the video resolution, the duration, and 
 [Let's start by looking inside the first photo used in the video to see some of the metadata we'll need to add to the video](/blog/2020/metadata-exif-xmp-360-photo-files).
 
 ```
-$ exiftool -X MULTISHOT_9698_000000.jpg > MULTISHOT_9698_000000_metadata.txt
+$ exiftool -X MULTISHOT_9698_000000.jpg > MULTISHOT_9698_000000_metadata.xml
 ```
-Gives a .txt file with the contents:
+Gives a .xml file with the contents:
 
 ```
 <?xml version='1.0' encoding='UTF-8'?>
@@ -275,7 +275,7 @@ Let's first use the [Spatial Media Metadata Injector](https://github.com/google/
 Checking the metadata after running the tool you should see 4 new tags:
 
 ```
-$ exiftool -X demo-video-injected-meta.mp4 > demo-video-injected-meta.txt
+$ exiftool -X demo-video-injected-meta.mp4 > demo-video-injected-meta.xml
 ```
 
 ```
