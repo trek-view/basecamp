@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2021-09-10/
 featured_image: /assets/images/blog/2021-09-10/
 layout: post
-published: false
+published: true
 ---
 
 **A deeper look into GoPro's proprietary .360 video format (with the aim of reducing our reliance on GoPro's software).**
@@ -19,7 +19,7 @@ One that we've been aware of for a long time is GoPro's proprietary `.360` video
 
 All video files captured on the GoPro MAX are outputted as `.360` files.
 
-There are a number of issues I've seen voiced
+There are a number of issues I've had with `.360's`:
 
 * As it's a propreitary codec, only GoPro software can natively understand it
 * To convert to a more widely understood codec you need to use GoPro Player
@@ -30,7 +30,7 @@ There are a number of issues I've seen voiced
 
 My suspicion is the `.360` format is used as a more effecient codec to capture high-quality / frame-rate videos than would otherwise be possible (see my post on [FPS, Bit rate, Compression and 360 Video Quality](/blog/2020/fps-bitrate-compression-360-virtual-tours)).
 
-I decided to take a deeper look and see if it was possible to remove the GoPro middleman.
+I decided to take a deeper look and see if it was possible to remove the GoPro middleman and improve the user experience in converting them into mp4's.
 
 ## Analysing the GoPro MAX and `.360 ` tech specs
 
@@ -91,11 +91,11 @@ When using YouTube-dl to download videos, EAC was the format delivered in the do
 Here's an example of YouTube serving EAC (I don't own this video):
 
 ```
-$ youtube-dl -k https://www.youtube.com/watch?v=uHAysQ7nVok
+$ https://www.youtube.com/watch?v=xBGBBRtcVJU
 
 ```
 
-However, the following video has no EAC copy at time of test, it returns an equirectangular projection (it is my video shot on a GoPro MAX and was uploaded as equirectangular mp4):
+However, the following video has no EAC copy at time of test. It returns an equirectangular projection (it is my video shot on a GoPro MAX and was uploaded as equirectangular mp4):
 
 ```
 $ youtube-dl -k https://www.youtube.com/watch?v=dUxe_tYCTL0
