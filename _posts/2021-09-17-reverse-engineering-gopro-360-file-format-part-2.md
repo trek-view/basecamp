@@ -30,7 +30,7 @@ I can extract a frames from this .mp4 video with ffmpeg by following the instruc
 For this example, I'll use 1 frame every second:
 
 ```
-$ ffmpeg -i GS070135.mp4 -r 1 MP4-FRAMES/img%d.jpg
+$ ffmpeg -i GS070135.mp4 -r 1 -q:v 2 MP4-FRAMES/img%d.jpg
 ```
 
 <img class="img-fluid" src="/assets/images/blog/2021-09-17/img1.jpg" alt="GoPro equirectangular video frame mp4" title="GoPro equirectangular video frame mp4" />
@@ -47,7 +47,7 @@ We know from last weeks post, there are two video tracks in the file.
 Running the command used before, e.g.
 
 ```
-$ ffmpeg -i GS070135.360 -r 1 FRAMES/img%d.jpg
+$ ffmpeg -i GS070135.360 -r 1 -q:v 2 FRAMES/img%d.jpg
 ```
 
 Would run, but would only extract one track. 
@@ -73,7 +73,7 @@ Thus, the above command only looks for a single video track to extract (as mp4's
 Therefore we need to explictly define the tracks for extraction. In the case of .360's this is track 0 and 5:
 
 ```
-$ ffmpeg -i GS070135.360 -map 0:0 -r 1 track0/img%d.jpg -map 0:5 -r 1 track5/img%d.jpg
+$ ffmpeg -i GS070135.360 -map 0:0 -r 1 -q:v 2 track0/img%d.jpg -map 0:5 -r 1 -q:v 2 track5/img%d.jpg
 ```
 
 Note, this extracts at 1 FPS (-r 1). You can also copy the video file from each track, if needed:
@@ -107,3 +107,11 @@ $ ffmpeg -i GS070135.360 -filter_complex "[0:0]pad=4096:2688[put],[put][0:5]over
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qIBc_s6W47I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 But really this video is useless. In EAC (or GoPro EAC) projection, other software won't be able to read it. It needs to be converted to equirectangular.
+
+## Further breaking apart a .360
+
+Stay tuned for next weeks post. Or subscribe to the newsletter below and we'll let you know when it's live.
+
+## Acknowledgements
+
+[Thanks to Paul Bourke for his help with this post](http://paulbourke.net/).

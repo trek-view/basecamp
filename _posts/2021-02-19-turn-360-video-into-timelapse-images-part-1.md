@@ -44,12 +44,13 @@ I'm going to use `.jpg` for the output into a directory called `FRAMES` (note fo
 CLI input:
 
 ```
-$ ffmpeg -i VIDEO_7152.mp4 -r 1 FRAMES/img%d.jpg
+$ ffmpeg -i VIDEO_7152.mp4 -r 1 -q:v 2  FRAMES/img%d.jpg
 ```
 
 This command includes the following arguments:
 
 * -r: Set frame rate (Hz value, fraction or abbreviation).
+* -q:v: [Controls the quality of output](https://stackoverflow.com/questions/10225403/how-can-i-extract-a-good-quality-jpeg-image-from-a-video-file-with-ffmpeg/10234065#10234065)
 
 [Full reference here](https://www.ffmpeg.org/ffmpeg.html).
 
