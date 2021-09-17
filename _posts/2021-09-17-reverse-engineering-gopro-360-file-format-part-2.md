@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2021-09-17/img-track0-5-grid-marked.jpg
 featured_image: /assets/images/blog/2021-09-17/img-track0-5-grid-marked-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Taking apart a .360 file to reveal its contents to try and understand how it can be processed (without GoPro software).**
