@@ -13,7 +13,7 @@ published: true
 
 **Taking apart a .360 file to reveal its contents to try and understand how it can be processed (without GoPro software).**
 
-[Last week I looked at some of the theory behind the GoPro's proprietary .360 format]((/blog/2021/reverse-engineering-gopro-360-file-format-part-1). 
+[Last week I looked at some of the theory behind the GoPro's proprietary .360 format](/blog/2021/reverse-engineering-gopro-360-file-format-part-1). 
 
 This week I'll use a video I shot on a [Trek Pack v2 (GoPro Max)](/trek-pack) to try and understand how to work with .360's in practice.
 
@@ -39,20 +39,9 @@ Above is the first frame (reduced in resolution for this post, original = 4096x2
 
 [Although it is equirectangular, I have not injected any spatial metadata (as described in the linked post) to this image file. Therefore, it won't render in a 360 viewer correctly](/blog/2021/turn-360-video-into-timelapse-images-part-2).
 
+Now going back a step, let's look at the original .360 file ([download it here](https://drive.google.com/open?id=1X_IRW-ut3yew97Ep3HkZ0DuZrZGzUsCW&authuser=dgreenwood%40trekview.org&usp=drive_fs)). 
 
-Now going back a step, let's look at the .360 file ([download it here](https://drive.google.com/open?id=1X_IRW-ut3yew97Ep3HkZ0DuZrZGzUsCW&authuser=dgreenwood%40trekview.org&usp=drive_fs)). 
-
-We know from last weeks post, there are two video tracks in the file.
-
-Running the command used before, e.g.
-
-```
-$ ffmpeg -i GS070135.360 -r 1 -q:v 2 FRAMES/img%d.jpg
-```
-
-Would run, but would only extract one track. 
-
-Looking at the metadata from a .360 file, you can see why:
+Looking at the metadata from the .360 file:
 
 ```
 $ exiftool -ee -G3 -api LargeFileSupport=1 -X GS070135.360 > GS070135-360.txt
@@ -68,7 +57,22 @@ Although it's a .360 file format, GoPro actually declare it as an .mp4:
 
 [Full output here](https://drive.google.com/open?id=1YExyB30HwEJHLboW0cu2WKi6_xuEPsyg&authuser=dgreenwood%40trekview.org&usp=drive_fs).
 
-Thus, the above command only looks for a single video track to extract (as mp4's typically contain a single video track).
+We know from last weeks post, there are two video tracks in the file (you can also see this in the exif):
+
+```
+<Track1:HandlerDescription>GoPro H.265</Track1:HandlerDescription>
+<Track6:HandlerDescription>GoPro H.265</Track6:HandlerDescription>
+```
+
+Thus, running the ffmpeg command used before, e.g.
+
+```
+$ ffmpeg -i GS070135.360 -r 1 -q:v 2 FRAMES/img%d.jpg
+```
+
+Would run, but would only extract one track. 
+
+This command only looks for a single video track to extract (as mp4's typically contain a single video track).
 
 Therefore we need to explictly define the tracks for extraction. In the case of .360's this is track 0 and 5:
 
@@ -76,17 +80,19 @@ Therefore we need to explictly define the tracks for extraction. In the case of 
 $ ffmpeg -i GS070135.360 -map 0:0 -r 1 -q:v 2 track0/img%d.jpg -map 0:5 -r 1 -q:v 2 track5/img%d.jpg
 ```
 
-Note, this extracts at 1 FPS (-r 1). You can also copy the video file from each track, if needed:
+Note, this extracts at 1 FPS (`-r 1`). ffmpeg counts from 0, so Track1 in exiftool output is Track0 in ffmpeg.
+
+You can also copy the video file from each track, if needed:
 
 ```
 $ ffmpeg -i GS070135.360 -map 0:0 -vcodec copy -acodec copy track0.mp4 -map 0:5 -vcodec copy -acodec copy track5.mp4
 ```
 
-Track 0:
+Track 0 `img1.jpg`:
 
 <img class="img-fluid" src="/assets/images/blog/2021-09-17/img1-track0.jpg" alt="GoPro EAC video frame top track 0" title="GoPro EAC video frame top track 0" />
 
-Track 5:
+Track 5 `img1.jpg`:
 
 <img class="img-fluid" src="/assets/images/blog/2021-09-17/img1-track5.jpg" alt="GoPro EAC video frame top track 5" title="GoPro EAC video frame top track 5" />
 
@@ -107,6 +113,14 @@ $ ffmpeg -i GS070135.360 -filter_complex "[0:0]pad=4096:2688[put],[put][0:5]over
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qIBc_s6W47I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 But really this video is useless. In EAC (or GoPro EAC) projection, other software won't be able to read it. It needs to be converted to equirectangular.
+
+## MAX2sphere
+
+Don't want to wait to start converting your `.360`'s.? 
+
+MAX2sphere takes 2 raw GoPro .360 frames (with GoPro EAC projection) and converts them to a more widely recognised equirectangular projection.
+
+[Download it here](https://github.com/trek-view/MAX2sphere).
 
 ## Further breaking apart a .360
 
