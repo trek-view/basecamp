@@ -3,7 +3,7 @@ date: 2021-09-24
 title: "Reverse Engineering GoPro's 360 Video File Format (Part 3)"
 description: "More taking apart of a .360 file and then trying to rebuild it as equirectangular (without GoPro software)."
 categories: guides
-tags: [GoPro]
+tags: [GoPro, equirectangular, EAC, ffmpeg, exiftool, imagemagick, cubemap]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-09-24/
 featured_image: /assets/images/blog/2021-09-24/
@@ -64,7 +64,7 @@ $ convert -crop 688x1344+0+0 pre_cubefaces/left_img1.jpg precut_cubefaces/left_l
 $ convert -crop 688x1344+688+0 pre_cubefaces/left_img1.jpg precut_cubefaces/left_r_img1.jpg
 ```
 
-Then by placing the right side ontop of the left side (over the duplicate pixel area )
+Then by placing the right side on-top of the left side (over the duplicate pixel area):
 
 ```
 $ convert -size 1344x1344 xc:transparent PNG32:precut_cubefaces/left_l_r_img1.png
@@ -84,33 +84,41 @@ Therefore we need to apply a blend.
 The actual process to do this only requires one more step than above:
 
 1. Overlap the two images by 32 pixels, as above
-2. Then blend using [alpha composoting](https://en.wikipedia.org/wiki/Alpha_compositing) (alpha + (1-alpha)
+2. Then blend using [alpha compositing](https://en.wikipedia.org/wiki/Alpha_compositing) (alpha + (1-alpha)
 
-Once we blend the left, right, bottom, and top images, we can then rebuild as the cubemap.
+This will leave us with 6 perfect square cubefaces (1344x1344).
+
+Once we blend the left, right, bottom, and top images, we can then rebuild as the cubemap with the new dimensions (4032x2688).
 
 First we create the image
 
 ```
-convert -size 5440x4032 xc:transparent PNG32:img1_cubemap.png
+convert -size 4032x2688 xc:transparent PNG32:img1_cubemap.png
 ```
 
-And then by placing each cube within it.
+And then by placing each cube within it:
 
 ```
-$ convert img1_cubemap.png cubefaces/top_img1.jpg -geometry +0+0 -composite PNG32:img1_cubemap.png
-$ convert img1_cubemap.png cubefaces/left_img1.jpg -geometry +0+1344 -composite PNG32:img1_cubemap.png
-$ convert img1_cubemap.png cubefaces/bottom_img1.jpg -geometry +0+2688 -composite PNG32:img1_cubemap.png
-$ convert img1_cubemap.png cubefaces/forward_img1.jpg -geometry +1376+1344 -composite PNG32:img1_cubemap.png
-$ convert img1_cubemap.png cubefaces/right_img1.jpg -geometry +2720+1344 -composite PNG32:img1_cubemap.png
-$ convert img1_cubemap.png cubefaces/back_img1.jpg -geometry +4096+1344 -composite PNG32:img1_cubemap.png
+# top row
+$ convert img1_cubemap.png cubefaces/left_img1.jpg -geometry +0+0 -composite PNG32:img1_cubemap.png
+$ convert img1_cubemap.png cubefaces/forward_img1.jpg -geometry +1344+0 -composite PNG32:img1_cubemap.png
+$ convert img1_cubemap.png cubefaces/right_img1.jpg -geometry +2688+0 -composite PNG32:img1_cubemap.png
+# bottom row
+$ convert img1_cubemap.png cubefaces/bottom_img1.jpg -geometry +0+1344 -composite PNG32:img1_cubemap.png
+$ convert img1_cubemap.png cubefaces/back_img1.jpg -geometry +1344+1344 -composite PNG32:img1_cubemap.png
+$ convert img1_cubemap.png cubefaces/top_img1.jpg -geometry +2688+1344 -composite PNG32:img1_cubemap.png
 ```
 
 Now we have a blended EAC cubemap that is ready to be converted to an equirectangular projection.
 
+## MAX2sphere
+
+Don't want to wait until the end of this series to start converting your `.360`'s? 
+
+MAX2sphere takes 2 raw GoPro .360 frames (with GoPro EAC projection) and converts them to a more widely recognised equirectangular projection.
+
+[Download it here](https://github.com/trek-view/MAX2sphere).
+
 ## Rebuilding a .360 into an equirectangular projection
 
 Stay tuned for next weeks post. Or subscribe to the newsletter below and we'll let you know when it's live.
-
-## Acknowledgements
-
-[Thanks to Paul Bourke for his help with this post](http://paulbourke.net/).

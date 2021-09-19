@@ -110,7 +110,7 @@ In the world of street-level mapping, EAC has seen no adoption. Google Street Vi
 
 ## MAX2sphere
 
-Don't want to wait to start converting your `.360`'s.? 
+Don't want to wait until the end of this series to start converting your `.360`'s? 
 
 MAX2sphere takes 2 raw GoPro .360 frames (with GoPro EAC projection) and converts them to a more widely recognised equirectangular projection.
 

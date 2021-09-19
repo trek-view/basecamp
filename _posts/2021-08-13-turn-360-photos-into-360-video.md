@@ -43,15 +43,15 @@ If you choose to use your own images, be aware this post assumes your images are
 Now we can create a video called `demo-video-no-meta.mp4` using all the images in the directory:
 
 ```
-$ ffmpeg -start_number 000000 -framerate 1 -i MULTISHOT_9698_%06d.jpg -pix_fmt yuv420p demo-video-no-meta.mp4
+$ ffmpeg -i MULTISHOT_9698_%06d.jpg -framerate 1 -c:v libx264  -pix_fmt yuv420p demo-video-no-meta.mp4
 ```
 
 Let's break that down:
 
 * `-i MULTISHOT_9698_%06d.jpg`: the filenames to match on. `%06d` means capture 6 digits. `%03d` would mean capture 3 digits.
-* `-start_number 000000`: if you want to start with a specific image then use the `-start_number` option. In our case this is not really required, as ffmpeg will start with the lowest alphanumeric filename. In this case first image `%06d`=`000000`.
 * `-framerate 1`: the framerate per second. Here I want 1 frame every 1 second. If the `-framerate` option is omitted the default will input and output 25 frames per second.
 * `-pix_fmt yuv420p`: _[When outputting H.264, adding -vf format=yuv420p or -pix_fmt yuv420p will ensure compatibility so crappy players can decode the video.](https://trac.ffmpeg.org/wiki/Slideshow)_
+* `-c:v libx264` is an abbreviated version of codec:v. Encodes the video using the libx264 codec (H264).
 
 The video is looking good. There are 55 images in my sequence and the video is 55 seconds long. However, it's not showing as a 360 video... yet.
 

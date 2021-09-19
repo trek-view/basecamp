@@ -3,7 +3,7 @@ date: 2021-09-17
 title: "Reverse Engineering GoPro's 360 Video File Format (Part 2)"
 description: "Taking apart a .360 file to reveal its contents to try and understand how it can be processed (without GoPro software)."
 categories: guides
-tags: [GoPro]
+tags: [GoPro, equirectangular, EAC, ffmpeg, exiftool, YouTube]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-09-17/img-track0-5-grid-marked.jpg
 featured_image: /assets/images/blog/2021-09-17/img-track0-5-grid-marked-sm.jpg
@@ -116,7 +116,7 @@ But really this video is useless. In EAC (or GoPro EAC) projection, other softwa
 
 ## MAX2sphere
 
-Don't want to wait to start converting your `.360`'s.? 
+Don't want to wait until the end of this series to start converting your `.360`'s? 
 
 MAX2sphere takes 2 raw GoPro .360 frames (with GoPro EAC projection) and converts them to a more widely recognised equirectangular projection.
 
@@ -125,7 +125,3 @@ MAX2sphere takes 2 raw GoPro .360 frames (with GoPro EAC projection) and convert
 ## Further breaking apart a .360
 
 Stay tuned for next weeks post. Or subscribe to the newsletter below and we'll let you know when it's live.
-
-## Acknowledgements
-
-[Thanks to Paul Bourke for his help with this post](http://paulbourke.net/).
