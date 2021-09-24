@@ -81,7 +81,7 @@ If you look closely you can still see duplicate pixels, and a clear stitch line.
 
 Therefore we need to apply a blend.
 
-The actual process to do this only requires one more step than above:
+At a high-level the process works like this:
 
 1. Overlap the two images by 32 pixels, as above
 2. Then blend using [alpha compositing](https://en.wikipedia.org/wiki/Alpha_compositing) (alpha + (1-alpha)
