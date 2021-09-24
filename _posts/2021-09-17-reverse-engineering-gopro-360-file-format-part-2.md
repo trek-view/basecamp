@@ -122,6 +122,6 @@ MAX2sphere takes 2 raw GoPro .360 frames (with GoPro EAC projection) and convert
 
 [Download it here](https://github.com/trek-view/MAX2sphere).
 
-## Further breaking apart a .360
+## Update 2021-09-24: Part 3 now available
 
-Stay tuned for next weeks post. Or subscribe to the newsletter below and we'll let you know when it's live.
+[I continue taking apart a .360 file, and trying to rebuild it with a equirectangular projection (without GoPro software)](/blog/2021/reverse-engineering-gopro-360-file-format-part-3).

@@ -1,7 +1,7 @@
 ---
 date: 2021-09-24
 title: "Reverse Engineering GoPro's 360 Video File Format (Part 3)"
-description: "More taking apart of a .360 file and then trying to rebuild it as equirectangular (without GoPro software)."
+description: "I continue taking apart a .360 file, and trying to rebuild it with a equirectangular projection (without GoPro software)."
 categories: guides
 tags: [GoPro, equirectangular, EAC, ffmpeg, exiftool, imagemagick, cubemap]
 author_staff_member: dgreenwood
@@ -11,11 +11,11 @@ layout: post
 published: true
 ---
 
-**More taking apart of a .360 file and then trying to rebuild it as equirectangular (without GoPro software).**
+**I continue taking apart a .360 file, and trying to rebuild it with a equirectangular projection (without GoPro software).**
 
 [After extracting the video tracks from GoPro's .360 format in last weeks post](/blog/2021/reverse-engineering-gopro-360-file-format-part-2), this week I wanted to better understand the structure of each frame.
 
-I suspected there might be duplicate frames after [reading GoPro's post about their .360 format](https://gopro.com/en/au/news/max-tech-specs-stitching-resolution), and looking at the dimensions of the frames extracted last week.
+I suspected there might be duplicate pixels written into the frames after [reading GoPro's post about their .360 format](https://gopro.com/en/au/news/max-tech-specs-stitching-resolution), and looking at the dimensions of the frames extracted last week.
 
 <img class="img-fluid" src="/assets/images/blog/2021-09-24/annotated-gopro-eac.jpg" alt="GoPro EAC annotated" title="GoPro EAC annotated" />
 
@@ -23,7 +23,7 @@ Looking at the widths of each of the 3 squares in each frame in track 0 and trac
 
 The outer squares are 32 px wider (1376-1344). And measure 688 pixels to the stitch line.
 
-Using [imagemagick](https://imagemagick.org/script/index.php) I decided to break the two tracks into the 6 squares used to take a closer look.
+Using [imagemagick](https://imagemagick.org/script/index.php) I decided to break the two tracks into the 6 cubefaces used to take a closer look.
 
 **Track 0:**
 
@@ -45,17 +45,17 @@ Take the image below taken from the right frame of a video shot in my backgarden
 
 <img class="img-fluid" src="/assets/images/blog/2021-09-24/gopro-eac-overlap.jpg" alt="GoPro EAC overlap" title="GoPro EAC overlap" />
 
-Here, we can clearly see the overlapping area, and it in fact measures 64 pixels (in a video shot at 5.6k). So we have 32 overlapping pixels of each side of the center of the image.
+Here, we can clearly see the overlapping area, and it in fact measures 64 pixels (in a video shot at 5.6k). So we have identical sets of pixels on each side of the center (32px either side) of the image.
 
 <img class="img-fluid" src="/assets/images/blog/2021-09-24/annotated-gopro-eac.jpg" alt="GoPro EAC annotated 2" title="GoPro EAC annotated 2" />
 
-It is this 64 pixels that needs to be blended. Which makes sense. The 64 overlap, gives 2 strips of 32 pixel overlap each side of the center. 32 pixels being the extra width of the overlapping frame (1376 vs 1344). So after blending, 32 pixels are removed, and the squares of these cubefaces reduced by 32 pixels to make a square, as required.
+It is this 64 pixel strip that needs to be blended. Which makes sense. The 64 overlap, gives 2 strips of 32 pixel overlap each side of the center. 32 pixels being the extra width of the overlapping frame (1376 vs 1344). So after blending, 32 pixels are removed, and the squares of these cubefaces reduced by 32 pixels to make a square, as required.
 
 
 <img class="img-fluid" src="/assets/images/blog/2021-09-24/gopro-eac-overlap-process.jpg
 " alt="GoPro EAC overlap process" title="GoPro EAC overlap process" />
 
-You might be thinking; why can't we just remove one strip of duplicated 32 pixels? It's not that simple.
+You might be thinking; why can't we just cut one strip of duplicated 32 pixels? It's not that simple.
 
 Let's look at an example. First by splitting the left cubeface into two at the stitch line:
 
