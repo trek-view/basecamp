@@ -5,10 +5,10 @@ description: "More taking apart of a .360 file and then trying to rebuild it as 
 categories: guides
 tags: [GoPro, equirectangular, EAC, ffmpeg, exiftool, imagemagick, cubemap]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-09-24/
-featured_image: /assets/images/blog/2021-09-24/
+image: /assets/images/blog/2021-09-24/gopro-cubemap-meta.jpg
+featured_image: /assets/images/blog/2021-09-24/gopro-cubemap-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **More taking apart of a .360 file and then trying to rebuild it as equirectangular (without GoPro software).**

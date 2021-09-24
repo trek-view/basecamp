@@ -43,7 +43,7 @@ If you choose to use your own images, be aware this post assumes your images are
 Now we can create a video called `demo-video-no-meta.mp4` using all the images in the directory:
 
 ```
-$ ffmpeg -i MULTISHOT_9698_%06d.jpg -framerate 1 -c:v libx264  -pix_fmt yuv420p demo-video-no-meta.mp4
+$ ffmpeg -i MULTISHOT_9698_%06d.jpg -framerate 1 -c:v libx264 -pix_fmt yuv420p demo-video-no-meta.mp4
 ```
 
 Let's break that down:
