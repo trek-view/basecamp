@@ -184,10 +184,6 @@ exiftool -make="GoPro" -model=Fusion -ProjectionType=equirectangular -UsePanoram
 
 These EXIF and XMP values provide enough metadata to upload to Map the Paths, Mapillary, and Google Street View... though you can add other tags as you wish.
 
-## Map the Paths Uploader (the easy way)
+## Update 2021-10-14
 
-<img class="img-fluid" src="/assets/images/blog/2021-02-19/mtpu-screenshot.jpg" alt="Map the Paths Uploader" title="Map the Paths Uploader" />
-
-You can use the Map the Paths Uploader to easily split videos into meta/geotagged images (without having to upload them).
-
-[Download the Map the Paths Uploader for free here](https://www.mapthepaths.com/uploader).
+You might also like the post; [Lessons learned when geotagging timelapse photos and video frames](/blog/2021/lessons-learned-geotagging-photos)

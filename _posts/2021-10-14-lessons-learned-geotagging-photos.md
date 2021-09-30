@@ -1,0 +1,204 @@
+---
+date: 2021-10-14
+title: "Lessons learned when geotagging timelapse photos and video frames"
+description: "Exiftool is a powerful bit of software for geotagging photos but understanding how it works will save you a few headaches."
+categories: developers
+tags: [GPX, GPS, GoPro, Fusion, exiftool, geotag]
+author_staff_member: dgreenwood
+image: /assets/images/blog/2021-10-14/gpx-track-sample-meta.jpg
+gpx-track-sample-meta.jpg
+featured_image: /assets/images/blog/2021-10-14/gpx-track-sample-sm.jpg
+layout: post
+published: false
+---
+
+**Exiftool is a powerful bit of software for geotagging photos but understanding how it works will save you a few headaches.**
+
+[I've talked previously about creating frames (photos) from video files and how to inject a GPS track log](/blog/2021/turn-360-video-into-timelapse-images-part-2). 
+
+It's a process that's useful for when you're uploading or viewing 360 content, for example, to Mapillary, that doesn't accept video.
+
+In that example, the process of geotagging is somewhat simplistic, as I have come to learn. This post aims to share the lessons I've learned in the intervening 8 months.
+
+## Using SubSecDateTimeOriginal
+
+Camera manufacturers often write photo data time to a DateTimeOriginal metadata field (to second resolution, when not in high framerate timelapse modes).
+
+However, the EXIF standard also supports two other useful time fields (`SubSecTimeOriginal` and `SubSecDateTimeOriginal`). [Details here](https://exiftool.org/TagNames/EXIF.html).
+
+The values for these fields look like this:
+
+* DateTimeOriginal = 2020:04:13 15:37:22
+* SubSecDateTimeOriginal = 2020:04:13 15:37:22.444
+* SubSecTimeOriginal = 44
+
+For videos these values are important. Let's imagine a camera is shooting a video at 5 frames per second (a common framerate for Google Street View camera modes).
+
+In this case you have a photo every 0.2 seconds. It's fair to assume the first frame extracted inherits the first GPS values (time, latitude, longitude...) from the video telemetry.
+
+Knowing this, we can then simply iterate the SubSecDateTimeOriginal for each photo in the sequence by +0.2 seconds to assign a SubSecDateTimeOriginal to each.
+
+## Understanding the GPX log
+
+Let's start wth the GPX track. One of the great features of exiftool is its ability to geotag a sequence with a GPX track.
+
+It's particularly useful for when you're using a secondary GPS device, like a phone, in addition to your camera -- [which might not be all that accurate](/blog/2020/gps-101).
+
+[GPX (the GPS Exchange Format)](https://www.topografix.com/gpx.asp) is a light-weight XML data format for the interchange of GPS data (waypoints, routes, and tracks).
+
+You can read more in [the GPX docs here](https://www.topografix.com/GPX/1/1/) or the [full schema here](https://www.topografix.com/GPX/1/1/gpx.xsd). 
+
+Typically, most GPS devices support output of a track in GPX format. A [`<trkseg>`](https://www.topografix.com/GPX/1/1/#type_trksegType) usually contains latitude, longitude, elevation, and time values, like the one shown below from a Columbus V 1000 device: 
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx
+version="1.1"
+creator="Columbus GPS - http://cbgps.com/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.topografix.com/GPX/1/1"
+xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<trk>
+<name>2020-08/02120507.GPX</name>
+<trkseg>
+<trkpt lat="28.689014" lon="-13.931480"><ele>92</ele>
+<time>2020-08-02T11:05:06Z</time></trkpt>
+<trkpt lat="28.689009" lon="-13.931502"><ele>93</ele>
+<time>2020-08-02T11:05:09Z</time></trkpt>
+<trkpt lat="28.689007" lon="-13.931502"><ele>91</ele>
+<time>2020-08-02T11:05:10Z</time></trkpt>
+<trkpt lat="28.689007" lon="-13.931502"><ele>92</ele>
+<time>2020-08-02T11:05:11Z</time></trkpt>
+<trkpt lat="28.689005" lon="-13.931502"><ele>92</ele>
+<time>2020-08-02T11:05:12Z</time></trkpt>
+<trkpt lat="28.689005" lon="-13.931500"><ele>92</ele>
+<time>2020-08-02T11:05:13Z</time></trkpt>
+<trkpt lat="28.689005" lon="-13.931500"><ele>92</ele>
+<time>2020-08-02T11:05:14Z</time></trkpt>
+</trkseg>
+</trk>
+</gpx>
+```
+
+[As shown in the specification, lots more information can be repored inside a <trkpt>](https://www.topografix.com/GPX/1/1/#type_wptType) including:
+
+* `<magvar>` [degreesType](https://www.topografix.com/GPX/1/1/#type_degreesType): Used for bearing, heading, course. Units are decimal degrees, true (not magnetic).
+* `<fix>` [FixType](https://www.topografix.com/GPX/1/1/#type_fixType): Type of GPS fix. none means GPS had no fix. To signify "the fix info is unknown, leave out fixType entirely. pps = military signal used
+
+But let's stick with the basic fields for now, as I am yet to see any device output much more than these values in a GPX track file (_prove me wrong device manufacturers!_).
+
+Latitude (reported: -90.0 <= value <= 90.0), longitude (reported: -180.0 <= value < 180.0) and elevation (reported: -X <= value < Y). _If you want to learn more about latitude and longitude values, read my post titled; [How to read decimal latitude and longitude values like a computer](/blog/2021/reading-decimal-gps-coordinates-like-a-computer)._
+
+In addition to these three spatial measurements, time, is a crucial consideration for geotagging.
+
+The GPX specification notes how time should be reported in a GPX file:
+
+```
+<xsd:element name="time" type="xsd:dateTime" minOccurs="0">
+<xsd:annotation>
+<xsd:documentation> Creation/modification timestamp for element. Date and time in are in Univeral Coordinated Time (UTC), not local time! Conforms to ISO 8601 specification for date/time representation. Fractional seconds are allowed for millisecond timing in tracklogs. </xsd:documentation>
+</xsd:annotation>
+</xsd:element>
+```
+
+[ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) is a standard for reporting date/time.
+
+In the example track log above you see time reported to second resolution. However many cameras do in fact report to a sub-second resolution:
+
+```
+<time>2020-08-02T11:05:130Z</time>
+<time>YYYY-DD-MMThh:mm:sssZ</time>
+```
+
+And so does a GPX time field:
+
+> Fractional seconds are allowed for millisecond timing in tracklogs.
+
+In the above example, the time is reported as UTC (`Z`), but you can also define a UTC offset and still be ISO 8601 compliant, e.g.
+
+```
+<time>2020-08-02T11:05:13.130-00:00</time>
+```
+
+This is especially important when geotagging frames from videos. 
+
+Using the example GSV video earlier (at 5 FPS), if we only report to second level timing, it will result in 5 or more photos with exactly the same time.
+
+## Obtaining sub-second GPS times
+
+[Let's take GoPro's GPMD as an example](/blog/2021/metadata-exif-xmp-360-video-files-gopro-gpmd).
+
+As noted in the linked post, there are many GPS points reported (up to 18) without GPSDateTime values.
+
+The points without time are assumed to be calculated, as they are not always reported
+
+Exactly how this estimations is not clear (and probably proprietary), but some combination of [IMU measurements](/blog/2020/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer) in conjunction with GPS point captured every second.
+
+Assuming these points are estimated evenly spaced by time (that is, the camera was traveling at the same velocities over the time period) we can calculate times for each of these points.
+
+Using this assumption, GPS times can be estimated for each latitude, longitude and altitude value reported without time.
+
+This time estimation is done by counting number of points without times between two points that do contain GPSDateTime values.
+
+Then by calculating the time delta between the two GPSDateTime values we can divide that delta by number of GPS points to calculate an evenly spaced time delta between points, and then assign that delta sequentially to all the points reported and write to a GPX file.
+
+```
+ <Track3:GPSDateTime>2020:04:13 15:37:00.000</Track3:GPSDateTime>
+ <Track3:GPSHPositioningError>2.03</Track3:GPSHPositioningError>
+ <Track3:GPSLatitude>51 deg 14&#39; 54.51&quot; N</Track3:GPSLatitude>
+ <Track3:GPSLongitude>0 deg 46&#39; 56.80&quot; W</Track3:GPSLongitude>
+ <Track3:GPSAltitude>157.641 m</Track3:GPSAltitude>
+ <Track3:GPSSpeed>1.348</Track3:GPSSpeed>
+ <Track3:GPSSpeed3D>1.28</Track3:GPSSpeed3D>
+ <Track3:GPSLatitude>51 deg 14&#39; 54.52&quot; N</Track3:GPSLatitude>
+ <Track3:GPSLongitude>0 deg 46&#39; 56.81&quot; W</Track3:GPSLongitude>
+ <Track3:GPSAltitude>157.616 m</Track3:GPSAltitude>
+ <Track3:GPSSpeed>1.57</Track3:GPSSpeed>
+ <Track3:GPSSpeed3D>1.38</Track3:GPSSpeed3D>
+ <Track3:GPSDateTime>2020:04:13 15:37:01.000</Track3:GPSDateTime>
+ <Track3:GPSLatitude>51 deg 14&#39; 54.52&quot; N</Track3:GPSLatitude>
+ <Track3:GPSLongitude>0 deg 46&#39; 56.81&quot; W</Track3:GPSLongitude>
+ <Track3:GPSAltitude>157.627 m</Track3:GPSAltitude>
+ <Track3:GPSSpeed>1.549</Track3:GPSSpeed>
+ <Track3:GPSSpeed3D>1.6</Track3:GPSSpeed3D>
+
+```
+For example, in this case we have two GPSDateTime's, 2020:04:13 15:37:00.000 and 2020:04:13 15:37:01.000, with one point in between without a time. Therefore we can assume time is equidistant between the two with the time 2020:04:13 15:37:00.500.
+
+## Writing sub-second GPS times
+
+It's now possible to use the photo times and GPS time points written into a GPX file to geotag the photos.
+
+Exiftool's geotag function uses [DateTimeOriginal](https://exiftool.org/geotag.html) in photos by default. Therefore we need to explictly pass the SubSecDateTimeOriginal for the -Geotime flag.
+
+```
+exiftool -Geotag GPX.log "-Geotime<SubSecDateTimeOriginal" DIRECTORY
+```
+
+[exiftool uses linear interpolation to determine the GPS position at the time of the image](https://exiftool.org/geotag.html):
+
+> In mathematics, linear interpolation is a method of curve fitting using linear polynomials to construct new data points within the range of a discrete set of known data points.
+
+- [Wikipedia](https://en.wikipedia.org/wiki/Linear_interpolation)
+
+Thinking about how this works exiftool:
+
+exiftool first reads timings of photo and reads GPS track times.
+
+If an exact time match between track point and photo, exiftool writes supported GPS data into the image. In this case, image latitude and longitude match track.
+
+If an exact time match between track point and photo, exiftool finds the 2 closest track point times on either side of the photo time. exiftool then calculates an estimated position between these two reported positions, based on photo time using linear interpolation.
+
+<img class="img-fluid" src="/assets/images/blog/2021-10-14/exiftool-linear-interpolation.jpg" alt="exiftool gps linear interpolation" title="exiftool gps linear interpolation" />
+
+An easy way to think about this would be to imagine you have a GPS track containing only two reported positions, one at 12:00:01 and one at 12:00:11. Now the photo you want to geotag has a `SubSecDateTimeOriginal` time of 12:00:05. In this case linear interpolation would estimate a point equidistant between the two because photo time equidistant between GPS points (see example below).
+
+The estimated image latitude and longitude would not match the positions reported in track, because the position has been calculated to reside between the two. 
+
+The exiftool geotag process would then write the following tags into an image for this track point:
+
+```
+$ exiftool GPS:GPSLatitude:'28.689005' GPS:GPSLatitudeRef:'N' GPS:GPSLongitude:'13.931500' GPS:GPSLongitude:'W' GPS:GPSAltitude:'92' GPS:GPSDateStamp:'2020-08-02' GPS:GPSTimeStamp:'11:05:14Z' GPS:GPSAltitudeRef:'0' photo_N.jpg
+```
+
+... but don't worry too much about that, exiftool handles all this hard work in the geotag command.

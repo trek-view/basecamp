@@ -97,7 +97,9 @@ Given photos are generally less than 3m apart and our Trek Pack cameras are alwa
 
 Now you can calculate the heading of the current photo by measuring the heading (angle) from North to the next photo (by time), as shown in the diagram.
 
-There is a slight problem with this approach, you cannot get the heading of the last photo (because there is not a next photo by time). As a simple fix, we built Tourer to assign the previous photo heading (by time) to the last photo in the tour.
+[The maths to calculate this angle is beautifully described here](https://math.stackexchange.com/a/1596518). [You can also see it in the code of Sequence Maker here](https://github.com/trek-view/sequence-maker/blob/master/sequence-maker.py#L25).
+
+There is a slight problem with this approach, you cannot get the heading of the last photo (because there is not a next photo by time). As a simple approach, you could just copy the heading calculated for the last photo in the sequence.
 
 ## Multiple Headings
 
@@ -123,15 +125,13 @@ As with pitch, you'll notice in the diagram Tourer generates a forward and backw
 
 One final calculation (I promise); adjusted heading.
 
-This is useful for some software, including [Explorer](https://www.mapthepaths.com), where the 360-degree photos are rendered visually, as shown above, and where the software has no concept of North. That is the software simply assumes the centre of the 360-degree photo is always facing North (0°).
+This is useful for connections, where the software has no concept of true North.
 
 <img class="img-fluid" src="/assets/images/blog/2020-01-17/tourer-adjusted-connection-heading-calculation.png" alt="Tourer Adjusted Connection Photo Heading Calculation" title="Tourer Adjusted Connection Photo Heading Calculation" />
 
 [Download this diagram](https://docs.google.com/presentation/d/1otcjbxGghKLqzOcEjfzHsXf22VG8zQVvknpMOKcccDY/edit#slide=id.g76a265887b_0_0).
 
-As such you cannot use the heading (degrees from North) calculated previously on its own.
-
-We must make therefore adjust the heading to connected photos to the centre of the source 360-degree photo (it's heading from North) in these scenarios.
+In such case, we must therefore adjust the heading to connected photos to the centre of the source 360-degree photo (it's heading from North) in these scenarios.
 
 This an easy calculation to estimate using existing heading fields; `adjusted heading = heading of source photo - heading of connection photo`.
 
@@ -141,10 +141,8 @@ You will see there is no adjusted heading for the next photo by time (e.g P2 to 
 
 We are not geospacial experts and know these calculations can probably be improved in place of estimates. You can help us out...
 
-All the code for Tourer is open source. [You can see how we calculate these values in Tourer Gitlab repo -- and point out any mistakes we've made](https://github.com/trek-view/tourer).
+[All the code for our Sequence Maker is open source](https://github.com/trek-view/sequence-maker).
 
-## Download Tourer
+## Update 2021-10-07
 
-[Download now](https://github.com/trek-view/tourer).
-
-_Update October 2020: Tourer has been replaced with the Map the Paths Desktop Uploader. [More information and download links are here](/blog/2020/map-the-paths-desktop-uploader)._
+You might also like the post; [Using trigonometry to calculate how north, east, and vertical velocity](/blog/2021/calculating-velocity-between-two-sequence-photos)

@@ -218,9 +218,9 @@ Let's take a look at what this actually looks like in our video, by looking at t
 
 ```
 
-In this first 1s sample, we get single measurements from the sensors in the camera like the `Track3:Accelerometer`, `Track3:Gyroscope` and `Track3:Magnetometer`.
+In this first sample, we get single measurements from the sensors in the camera like the `Track3:Accelerometer`, `Track3:Gyroscope` and `Track3:Magnetometer`.
 
-The metadata prints 18 GPS position entries like so;
+The metadata prints 18 GPS position entries like so, only one with a GPSDateTime;
 
 ```
  <Track3:GPSLatitude>51 deg 14&#39; 54.51&quot; N</Track3:GPSLatitude>
@@ -230,21 +230,21 @@ The metadata prints 18 GPS position entries like so;
  <Track3:GPSSpeed3D>1.28</Track3:GPSSpeed3D>
 ```
 
+It's important to note, a fixed number of positions are not always reported (e.g. 18 as mentioned above). The total number of points produced varies from 1 to 18 depending on a variety of variables like GPS signal, camera modes, etc.
+
+Similarly, the GPSDateTime delta between times is not fixed.
+
+[After reading the GPMF spec more closely it seems the GoPro GPS chip supports a resolution of 18Hz](https://github.com/gopro/gpmf-parser#gpmf-timing-and-clocks) (18.169 measurements every second) which explains why we see 18 GPS position entries every second (but remember, this is a best case).
+
+Three things could lead to the missing measurements at certain intervals;
+
+1. GPS signal was lost so could not be reported.
+2. the GPS chip cannot support such a high resolution. For example, almost all mobile devices, including all Apple devices, receive GPS at the rate of 1Hz (1 GPS measurement a second). In the case of GoPro, the bitrate might be limited at times when the camera mode is using intensive modes or the SD Card cannot support the data volume being reported.
+3. not all camera manufacturers capture metadata at maximum capacity to reduce size and processing costs when this data is not really necessary. Often calculating GPS can be done to a high level of accuracy using estimation (which perhaps surprisingly, can use significantly less camera resources than capturing a raw GPS measurement). For example, [estimation can be done using Dead Reckoning](https://en.wikipedia.org/wiki/Dead_reckoning). Often camera manufacturers will use their own more advanced  calculations based on the sensors they use.
+
 We can also see each individual frame's `ExposureTimes` that makes up this second of video. I count 30 entries (e.g. `1/517`, which matches the video settings (30 FPS).
 
-You might be thinking; but the camera was shooting at a rate of 30 FPS why are there not 30 GPS points.
-
-Three things might be going on here;
-
-1. GPS signal was lost for some of the frames so could not be reported.
-2. the GPS chip cannot support such a high resolution. For example, almost all mobile devices, including all Apple devices, receive GPS at the rate of 1Hz (1 GPS measurement a second).
-3. not all camera manufacturers write metadata for every single frame to reduce size and processing costs when this data is not really necessary. Think; "does the average consumer really need GPS data reported for 30 frames every second?". Traveling at 100 km/h you are traveling 27.777... m/s. That would get one frame every meter at 30FPS... but how many of you are you shooting imagery on foot at this speed? _Let me know, it sounds like fun!_
-
-The rest of Track3 follows this format. Every 1s, 1 measurement for `Track3:Accelerometer`, `Track3:Gyroscope`, `Track3:Magnetometer` etc. is printed and every 1s, 18 GPS positions are printed.
-
-**Update 2020-05-09**
-
-[After reading the GPMF spec more closely it seems the GoPro GPS chip supports a resolution of 18Hz](https://github.com/gopro/gpmf-parser#gpmf-timing-and-clocks) (18.169 measurements every second) which explains why we see 18 GPS position entries every second.
+The rest of Track3 follows this format. Every sample interval, 1 measurement for `Track3:Accelerometer`, `Track3:Gyroscope`, `Track3:Magnetometer` etc. is printed and GPSDateTime and subsequent positions are printed.
 
 ## Help us Build Great Software
 
@@ -265,3 +265,7 @@ If you'd like to read more about XMP namespaces, [read my latest introductory po
 ## Update 2021-08-20
 
 [Here's a deeper look into the Camera Motion Metadata Spec (CAMM), an alternative to GPMD, here](/blog/2021/metadata-exif-xmp-360-video-files-camm-camera-motion-metadata-spec).
+
+## Update 2021-10-14
+
+You might also like the post; [Lessons learned when geotagging GoPro timelapse photos and video frames](/blog/2021/lessons-learned-geotagging-photos)
