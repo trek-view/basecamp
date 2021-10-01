@@ -111,18 +111,6 @@ $ convert img1_cubemap.png cubefaces/top_img1.jpg -geometry +2688+1344 -composit
 
 Now we have a blended EAC cubemap that is ready to be converted to an equirectangular projection.
 
-## MAX2sphere
-
-Don't want to wait until the end of this series to start converting your `.360`'s? 
-
-MAX2sphere takes 2 raw GoPro .360 frames (with GoPro EAC projection) and converts them to a more widely recognised equirectangular projection.
-
-[Download it here](https://github.com/trek-view/MAX2sphere).
-
-## Rebuilding a .360 into an equirectangular projection
-
-Stay tuned for next weeks post. Or subscribe to the newsletter below and we'll let you know when it's live.
-
 ## Update 2021-10-01: Part 4 now available
 
 [In the final part of this series, I convert a GoPro EAC projected frame into an equirectangular projection to be displayed in other software.](/blog/2021/reverse-engineering-gopro-360-file-format-part-4).

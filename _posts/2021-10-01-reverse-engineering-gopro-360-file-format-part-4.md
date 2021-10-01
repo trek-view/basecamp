@@ -1,7 +1,7 @@
 ---
 date: 2021-10-01
 title: "Reverse Engineering GoPro's 360 Video File Format (Part 4)"
-description: "In the final part of this series, I convert a GoPro EAC projected frame into an equirectangular projection to be displayed in other other software."
+description: "In the final part of this series, I convert a GoPro EAC projected frame into an equirectangular projection to be displayed in other software."
 categories: guides
 tags: [GoPro, equirectangular, EAC, ffmpeg, exiftool]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**In the final part of this series, I convert a GoPro EAC projected frame into an equirectangular projection to be displayed in other other software.**
+**In the final part of this series, I convert a GoPro EAC projected frame into an equirectangular projection to be displayed in other software.**
 
 [Last week I blended the overlapping pixels in .360 cubefaces](/blog/2021/reverse-engineering-gopro-360-file-format-part-3). For the final step, I need to convert into equirectangular frames (the most widely understood projection type in software for 360 images).
 
@@ -70,4 +70,4 @@ MAX2sphere takes a raw GoPro .360 frame (both tracks of EAC projection) and conv
 
 ### 2. FFMpeg (EAC video to equirectangular video)
 
-[This fork of FFMpeg takes a .360 video and converts it to a h264 mp4 with an equirectangular projection](https://github.com/trek-view/FFmpeg).
+[This fork of FFMpeg takes a .360 video and converts it to a h264 `.mp4` with an equirectangular projection](https://github.com/trek-view/FFmpeg).

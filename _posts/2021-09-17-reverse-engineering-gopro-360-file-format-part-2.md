@@ -114,14 +114,6 @@ $ ffmpeg -i GS070135.360 -filter_complex "[0:0]pad=4096:2688[put],[put][0:5]over
 
 But really this video is useless. In EAC (or GoPro EAC) projection, other software won't be able to read it. It needs to be converted to equirectangular.
 
-## MAX2sphere
-
-Don't want to wait until the end of this series to start converting your `.360`'s? 
-
-MAX2sphere takes 2 raw GoPro .360 frames (with GoPro EAC projection) and converts them to a more widely recognised equirectangular projection.
-
-[Download it here](https://github.com/trek-view/MAX2sphere).
-
 ## Update 2021-09-24: Part 3 now available
 
 [I continue taking apart a .360 file, and trying to rebuild it with a equirectangular projection (without GoPro software)](/blog/2021/reverse-engineering-gopro-360-file-format-part-3).
