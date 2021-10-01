@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2021-10-01/gopro-eac-output-equirectangular-meta.jpg
 featured_image: /assets/images/blog/2021-10-01/gopro-eac-output-equirectangular-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **In the final part of this series, I convert a GoPro EAC projected frame into an equirectangular projection to be displayed in other other software.**
