@@ -1,12 +1,12 @@
 ---
-date: 2021-09-30
+date: 2021-10-01
 title: "Reverse Engineering GoPro's 360 Video File Format (Part 4)"
 description: "In the final part of this series, I convert a GoPro EAC projected frame into an equirectangular projection to be displayed in other other software."
 categories: guides
 tags: [GoPro, equirectangular, EAC, ffmpeg, exiftool]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-09-30/gopro-eac-output-equirectangular-meta.jpg
-featured_image: /assets/images/blog/2021-09-30/gopro-eac-output-equirectangular-sm.jpg
+image: /assets/images/blog/2021-10-01/gopro-eac-output-equirectangular-meta.jpg
+featured_image: /assets/images/blog/2021-10-01/gopro-eac-output-equirectangular-sm.jpg
 layout: post
 published: false
 ---
@@ -35,7 +35,7 @@ exiftool -ProjectionType=equirectangular img1.jpg
 
 And voila, we have a equirectangular frames from the `.360` file.
 
-<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-09-30/gopro-eac-output-equirectangular-sm.jpg&amp;autoLoad=true"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-10-01/gopro-eac-output-equirectangular-sm.jpg&amp;autoLoad=true"></iframe>
 
 Now, many of you might want a video, not frames. That is, after all, what GoPro Studio outputs.
 
