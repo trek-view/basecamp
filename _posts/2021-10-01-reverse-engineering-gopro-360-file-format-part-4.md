@@ -13,13 +13,13 @@ published: true
 
 **In the final part of this series, I convert a GoPro EAC projected frame into an equirectangular projection to be displayed in other other software.**
 
-[Last week I blended the overlapping pixels in .360 cubefaces](/blog/2021/reverse-engineering-gopro-360-file-format-part-3). In the final step, I wanted to convert into equirectangular frames (the most widely understood projection type in software for 360 images).
+[Last week I blended the overlapping pixels in .360 cubefaces](/blog/2021/reverse-engineering-gopro-360-file-format-part-3). For the final step, I need to convert into equirectangular frames (the most widely understood projection type in software for 360 images).
 
 Luckily, [I discovered that Paul Bourke has published a significant amount of his work on converting to/from cubemaps](http://paulbourke.net/panorama/cubemaps/), as well as lots of other related works.
 
-Taking inspiration from this work and with the help of Paul himself. MAX2sphere takes the 2 GoPro EAC tracks and converts them to equirectangular (as well as performing the blending mentioned last week).
+Taking inspiration from this work and with the help of Paul himself, MAX2sphere takes the 2 GoPro EAC tracks and converts them to equirectangular (as well as performing the blending mentioned last week).
 
-Used in it's simplest form for what we need:
+Used in its simplest form for what we need:
 
 ```
 $ @SYSTEM_PATH/MAX2sphere track0/img1.jpg track5/img1.jpg
@@ -27,7 +27,7 @@ $ @SYSTEM_PATH/MAX2sphere track0/img1.jpg track5/img1.jpg
 
 All that's left to do now is add the correct metadata to the new equirectangular frame, all of which has been lost during processing.
 
-For more details about injection metadata (most importantly telemetry), read this post, but at a minimum, we need to add the `projectiontype` tag so the image is rendered correctly in viewers.
+For more details about injection metadata (most importantly telemetry), [read this post](/blog/2021/turn-360-video-into-timelapse-images-part-2/), but at a minimum, we need to add the `projectiontype` tag so the image is rendered correctly in 360 viewers.
 
 ```
 exiftool -ProjectionType=equirectangular img1.jpg
@@ -39,7 +39,7 @@ And voila, we have a equirectangular frames from the `.360` file.
 
 Now, many of you might want a video, not frames. That is, after all, what GoPro Studio outputs.
 
-In this case, we can rebuild a video.
+In this case, we can rebuild a video from all the frames extracted:
 
 ```
 ffmpeg -i FRAMES/%d.jpg -c:v libx264 -framerate 1 -pix_fmt yuv420p GS070135.mp4
@@ -58,16 +58,16 @@ Like the images, metadata will need to be written into the video to ensure video
 
 ## Future improvements
 
-One final feature missing is GoPro Studio's horizon leveling feature. It does this by automatically by analysing the frame and working out the horizon. This is what things like PtGui (and others) do too. It is something I'm considering adding in the future.
+One feature missing is GoPro Studio's horizon leveling feature. It does this by automatically by analysing the frame and working out the horizon and then adjusting the [roll, pitch, and yaw](/blog/2020/yaw-pitch-roll-360-degree-photography). This is what things like PtGui (and others) do too. It is something I'm considering adding in the future.
 
-For now though, these two options will turn your images and videos with GoPro EAC projections into equirectangular ones...
+For now though, these two options will turn your images or videos with GoPro EAC projections into equirectangular ones...
 
-## MAX2sphere (EAC frames to equirectangular frames)
+### 1. MAX2sphere (EAC frames to equirectangular frames)
 
-MAX2sphere takes 2 raw GoPro .360 frames (with GoPro EAC projection) and converts them to a more widely recognised equirectangular projection.
+MAX2sphere takes a raw GoPro .360 frame (both tracks of EAC projection) and converts them to a more widely recognised equirectangular projection.
 
 [Download it here](https://github.com/trek-view/MAX2sphere).
 
-## FFMpeg (EAC video to equirectangular video)
+### 2. FFMpeg (EAC video to equirectangular video)
 
 [This fork of FFMpeg takes a .360 video and converts it to a h264 mp4 with an equirectangular projection](https://github.com/trek-view/FFmpeg).

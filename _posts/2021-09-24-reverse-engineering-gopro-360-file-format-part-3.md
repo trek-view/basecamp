@@ -122,3 +122,7 @@ MAX2sphere takes 2 raw GoPro .360 frames (with GoPro EAC projection) and convert
 ## Rebuilding a .360 into an equirectangular projection
 
 Stay tuned for next weeks post. Or subscribe to the newsletter below and we'll let you know when it's live.
+
+## Update 2021-10-01: Part 4 now available
+
+[In the final part of this series, I convert a GoPro EAC projected frame into an equirectangular projection to be displayed in other software.](/blog/2021/reverse-engineering-gopro-360-file-format-part-4).
