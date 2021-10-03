@@ -236,6 +236,15 @@ Similarly, the GPSDateTime delta between times is not fixed.
 
 [After reading the GPMF spec more closely it seems the GoPro GPS chip supports a resolution of 18Hz](https://github.com/gopro/gpmf-parser#gpmf-timing-and-clocks) (18.169 measurements every second) which explains why we see 18 GPS position entries every second (but remember, this is a best case).
 
+Similarly, [Jin Zhe reports his findings of GoPro IMU measurements](https://github.com/jin-zhe/gopro):
+
+* ~ 400 Hz 3-axis gyro readings
+* ~ 200 Hz 3-axis accelerometer readings
+* ~ 18 Hz GPS position (lat/lon/alt/spd)
+* 1 Hz GPS timestamps
+* 1 Hz GPS accuracy (cm) and fix (2d/3d)
+* 1 Hz temperature of camera
+
 Three things could lead to the missing measurements at certain intervals;
 
 1. GPS signal was lost so could not be reported.
