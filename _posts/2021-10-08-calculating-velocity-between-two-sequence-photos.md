@@ -21,13 +21,13 @@ Over the last few weeks I've been digging into creating and injecting [CAMM tele
 * Velocity East
 * Velocity Up
 
-For the old school followers of our work, you might remember this file from our old CLI tool, [Sequence Maker](https://github.com/trek-view/sequence-maker).
+For the old school followers of our work, you might remember our old CLI tool, [Sequence Maker](https://github.com/trek-view/sequence-maker).
 
-This generated speed between photos as well as a whole host of other values like photo heading. [This post will explains how these are calculated](/blog/2020/what-direction-are-you-facing).
+This generated speed between photos as well as a whole host of other values like photo heading. [This post explains everything](/blog/2020/what-direction-are-you-facing).
 
-Speed in this example was simplistically calculated (speed = distance/time) from point A to point B (the photo co-ordinated) along a 2D plane (no concept of the vertical axis).
+Speed in this example was simplistically calculated (speed = distance/time) from point A to point B (the photo co-ordinates) along a 2D plane (no concept of the vertical axis).
 
-However, for the CAMM values, I needed to convert speed into velocity... as my old physics teacher would say, velocity is speed with a direction.
+However, for the CAMM values, I needed to convert speed into velocity... which is not the same as speed, as my old physics teacher would protest; velocity is speed with a direction.
 
 <img class="img-fluid" src="/assets/images/blog/2021-10-08/velocity-east-north.jpg
 " alt="Velocity East North" title="Velocity East North" />
@@ -44,7 +44,7 @@ So Velocity North = (distance point C to photo B) / Time (between photo A to pho
 
 Note, this calculation can result in a negative output. North and East are positive directions. If you travel West/South, in terms of an East/North vector, you will be traveling in both a negative East/North velocity.
 
-If I drive from home to work (defining my positive direction), then my velocity is positive if I go to work, but negative when I go home from work. It is all about direction seen from how I defined my positive axis. 
+To illustrate the point; If I drive from home to work (defining my positive direction), then my velocity is positive if I go to work, but negative when I go home from work. It is all about direction seen from how I defined my positive axis. 
 
 <img class="img-fluid" src="/assets/images/blog/2021-10-08/velocity-east-north-negative-example.jpg
 " alt="Example negative Velocity East North" title="Example negative Velocity East North" />
