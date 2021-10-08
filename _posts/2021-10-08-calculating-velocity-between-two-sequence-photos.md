@@ -1,12 +1,12 @@
 ---
-date: 2021-10-07
+date: 2021-10-08
 title: "Using trigonometry to calculate how north, east, and vertical velocity"
 description: "Speed = distance / time. But what about speed along the x (east, west), y (north, south), z (altitude) axes?"
 categories: guides
 tags: [heading, yaw, bearing, pitch, roll, speed, velocity]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-10-07/velocity-x-y-meta.jpg
-featured_image: /assets/images/blog/2021-10-07/velocity-x-y-sm.jpg
+image: /assets/images/blog/2021-10-08/velocity-x-y-meta.jpg
+featured_image: /assets/images/blog/2021-10-08/velocity-x-y-sm.jpg
 layout: post
 published: true
 ---
@@ -29,7 +29,7 @@ Speed in this example was simplistically calculated (speed = distance/time) from
 
 However, for the CAMM values, I needed to convert speed into velocity... as my old physics teacher would say, velocity is speed with a direction.
 
-<img class="img-fluid" src="/assets/images/blog/2021-10-07/velocity-east-north.jpg
+<img class="img-fluid" src="/assets/images/blog/2021-10-08/velocity-east-north.jpg
 " alt="Velocity East North" title="Velocity East North" />
 
 We already know the angles inside the right angle triangle (from working out heading).
@@ -46,7 +46,7 @@ Note, this calculation can result in a negative output. North and East are posit
 
 If I drive from home to work (defining my positive direction), then my velocity is positive if I go to work, but negative when I go home from work. It is all about direction seen from how I defined my positive axis. 
 
-<img class="img-fluid" src="/assets/images/blog/2021-10-07/velocity-east-north-negative-example.jpg
+<img class="img-fluid" src="/assets/images/blog/2021-10-08/velocity-east-north-negative-example.jpg
 " alt="Example negative Velocity East North" title="Example negative Velocity East North" />
 
 Look at this example to demonstrate. Whilst the time between A and B is really representative of 10 second / 10 meters, the North and Eastern velocity is actualy negative.
@@ -69,7 +69,7 @@ So Velocity Up = (elevation change) / Time (between photo A to photo B)
 
 Again, if the elevation change is negative, the resulting Up velocity will be negative (because you're descending).
 
-<img class="img-fluid" src="/assets/images/blog/2021-10-07/velocity-up.jpg
+<img class="img-fluid" src="/assets/images/blog/2021-10-08/velocity-up.jpg
 " alt="Velocity Up" title="Velocity Up" />
 
 And that's enough maths for a Friday... or whenever you're reading this!
