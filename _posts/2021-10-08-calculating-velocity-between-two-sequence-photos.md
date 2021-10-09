@@ -36,11 +36,15 @@ We already know the angles inside the right angle triangle (from working out hea
 
 Thus, we can use a bit of trigonometry to work out all lengths of the triangle (in addition from distance from A to B, which we already know).
 
-We know Velocity = Displacement / Time in a direction.
+We know `Velocity = Displacement / Time in a direction.`
 
-So Velocity East = (distance photo A to point C) / Time (between photo A to photo B)
+So `Velocity East = Distance (along latitude) / Time (between source and destination)`
 
-So Velocity North = (distance point C to photo B) / Time (between photo A to photo B)
+Or using the diagram above `Velocity East = Distance (from A to C) / Time (from A to B)`
+
+And `Velocity North = Distance (along longitude) / Time (between source and destination)`
+
+Or using the diagram above `Velocity North = Distance from C to B) / Time (from A to B)`
 
 Note, this calculation can result in a negative output. North and East are positive directions. If you travel West/South, in terms of an East/North vector, you will be traveling in both a negative East/North velocity.
 
@@ -51,21 +55,23 @@ To illustrate the point; If I drive from home to work (defining my positive dire
 
 Look at this example to demonstrate. Whilst the time between A and B is really representative of 10 second / 10 meters, the North and Eastern velocity is actualy negative.
 
-Velocity East = (distance photo A to point C) / Time (between photo A to photo B)
+`Velocity East = Distance (from A to C) / Time (from A to B)`
 
 so 
 
-Velocity East = -5 / 10 = -0.5 m/s
+`Velocity East = -5 / 10 = -0.5 m/s`
 
 and 
 
-Velocity North = (distance point C to photo B) / Time (between photo A to photo B)
+`Velocity North = Distance from C to B) / Time (from A to B)`
 
-Velocity North = -8.66025 / 10 = -0.8 m/s
+`Velocity North = -8.66025 / 10 = -0.8 m/s`
 
-Now need to to the same for vertical velocity. It's done in exactly the same way, except we now use the z axis (altitude)
+Now need to to the same for vertical velocity. It's done in exactly the same way, except we now use the z axis (altitude).
 
-So Velocity Up = (elevation change) / Time (between photo A to photo B)
+So `Velocity Up = Distance (along vertical) / Time (between source and destination)`
+
+So `Velocity Up = Elevation change (from A to B) / Time (from A to B)`
 
 Again, if the elevation change is negative, the resulting Up velocity will be negative (because you're descending).
 
