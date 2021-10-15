@@ -6,7 +6,6 @@ categories: guides
 tags: [GPX, GPS, GoPro, Fusion, exiftool, geotag]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-10-15/gpx-track-sample-meta.jpg
-gpx-track-sample-meta.jpg
 featured_image: /assets/images/blog/2021-10-15/gpx-track-sample-sm.jpg
 layout: post
 published: true
@@ -87,7 +86,7 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/
 
 But let's stick with the basic fields for now, as I am yet to see any device output much more than these values in a GPX track file (_prove me wrong device manufacturers!_).
 
-Latitude (reported: -90.0 <= value <= 90.0), longitude (reported: -180.0 <= value < 180.0) and elevation (reported: -X <= value < Y). _If you want to learn more about latitude and longitude values, read my post titled; [How to read decimal latitude and longitude values like a computer](/blog/2021/reading-decimal-gps-coordinates-like-a-computer)._
+Latitude (reported: -90.0 <= value <= 90.0), longitude (reported: -180.0 <= value < 180.0) and elevation (reported: -X <= value < Y). _If you want to learn more about latitude and longitude values, read my post titled; [How to read decimal latitude and longitude values like a computer](/blog/2020/reading-decimal-gps-coordinates-like-a-computer)._
 
 In addition to these three spatial measurements, time, is a crucial consideration for geotagging.
 
@@ -185,7 +184,7 @@ For example:
  <Track4:GPSAltitude>84.118 m</Track4:GPSAltitude>
 ```
 
-Assuming you are not going up vertically (e.g. while standing still in an elevator), this is incorrect. You might want to consider some logic to normalise altitude. At the most simplistic level this could be done by calculating a single mean average for all such duplicate points. [A more accurate approach would be to use a digital elevation model to reassign altitude values to these points](/blog/2020/what-is-a-digital-elevation-model.md).
+Assuming you are not going up vertically (e.g. while standing still in an elevator), this is incorrect. You might want to consider some logic to normalise altitude. At the most simplistic level this could be done by calculating a single mean average for all such duplicate points. [A more accurate approach would be to use a digital elevation model to reassign altitude values to these points](/blog/2020/what-is-a-digital-elevation-model).
 
 ## Writing sub-second GPS times
 
