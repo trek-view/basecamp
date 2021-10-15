@@ -275,6 +275,6 @@ If you'd like to read more about XMP namespaces, [read my latest introductory po
 
 [Here's a deeper look into the Camera Motion Metadata Spec (CAMM), an alternative to GPMD, here](/blog/2021/metadata-exif-xmp-360-video-files-camm-camera-motion-metadata-spec).
 
-## Update 2021-10-14
+## Update 2021-10-15
 
-You might also like the post; [Lessons learned when geotagging GoPro timelapse photos and video frames](/blog/2021/lessons-learned-geotagging-photos)
+You might also like the post; [Lessons learned when geotagging GoPro timelapse photos and video frames](/blog/2021/lessons-learned-when-geotagging-photos)

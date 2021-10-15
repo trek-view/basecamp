@@ -184,6 +184,6 @@ exiftool -make="GoPro" -model=Fusion -ProjectionType=equirectangular -UsePanoram
 
 These EXIF and XMP values provide enough metadata to upload to Map the Paths, Mapillary, and Google Street View... though you can add other tags as you wish.
 
-## Update 2021-10-14
+## Update 2021-10-15
 
-You might also like the post; [Lessons learned when geotagging timelapse photos and video frames](/blog/2021/lessons-learned-geotagging-photos)
+You might also like the post; [Lessons learned when geotagging timelapse photos and video frames](/blog/2021/lessons-learned-when-geotagging-photos)
