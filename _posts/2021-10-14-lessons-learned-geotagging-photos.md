@@ -1,15 +1,15 @@
 ---
-date: 2021-10-14
+date: 2021-10-15
 title: "Lessons learned when geotagging timelapse photos and video frames"
 description: "Exiftool is a powerful bit of software for geotagging photos but understanding how it works will save you a few headaches."
 categories: developers
 tags: [GPX, GPS, GoPro, Fusion, exiftool, geotag]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-10-14/gpx-track-sample-meta.jpg
+image: /assets/images/blog/2021-10-15/gpx-track-sample-meta.jpg
 gpx-track-sample-meta.jpg
-featured_image: /assets/images/blog/2021-10-14/gpx-track-sample-sm.jpg
+featured_image: /assets/images/blog/2021-10-15/gpx-track-sample-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Exiftool is a powerful bit of software for geotagging photos but understanding how it works will save you a few headaches.**
@@ -163,7 +163,29 @@ Then by calculating the time delta between the two GPSDateTime values we can div
  <Track3:GPSSpeed3D>1.6</Track3:GPSSpeed3D>
 
 ```
+
 For example, in this case we have two GPSDateTime's, 2020:04:13 15:37:00.000 and 2020:04:13 15:37:01.000, with one point in between without a time. Therefore we can assume time is equidistant between the two with the time 2020:04:13 15:37:00.500.
+
+**Note on duplicate points**
+
+In some cases, the telemetry you might get duplicate points, because you're standing still. If latitude, longitude and altitude are all the same this is true.
+
+However, due to GPS inaccuracies / [GPS approximation calculations done by the camera's IMU software](/blog/2020/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer) you can also end up with points that are incorrect duplicates where latitude and longitude are the same, but altitude is not.
+
+For example:
+
+```
+ <Track4:GPSLatitude>51 deg 16&#39; 21.22&quot; N</Track4:GPSLatitude>
+ <Track4:GPSLongitude>0 deg 50&#39; 45.59&quot; W</Track4:GPSLongitude>
+ <Track4:GPSAltitude>84.11 m</Track4:GPSAltitude>
+ <Track4:GPSSpeed>0.501</Track4:GPSSpeed>
+ <Track4:GPSSpeed3D>0.6</Track4:GPSSpeed3D>
+ <Track4:GPSLatitude>51 deg 16&#39; 21.22&quot; N</Track4:GPSLatitude>
+ <Track4:GPSLongitude>0 deg 50&#39; 45.59&quot; W</Track4:GPSLongitude>
+ <Track4:GPSAltitude>84.118 m</Track4:GPSAltitude>
+```
+
+Assuming you are not going up vertically (e.g. while standing still in an elevator), this is incorrect. You might want to consider some logic to normalise altitude. At the most simplistic level this could be done by calculating a single mean average for all such duplicate points. [A more accurate approach would be to use a digital elevation model to reassign altitude values to these points](/blog/2020/what-is-a-digital-elevation-model.md).
 
 ## Writing sub-second GPS times
 
@@ -189,7 +211,7 @@ If an exact time match between track point and photo, exiftool writes supported 
 
 If an exact time match between track point and photo, exiftool finds the 2 closest track point times on either side of the photo time. exiftool then calculates an estimated position between these two reported positions, based on photo time using linear interpolation.
 
-<img class="img-fluid" src="/assets/images/blog/2021-10-14/exiftool-linear-interpolation.jpg" alt="exiftool gps linear interpolation" title="exiftool gps linear interpolation" />
+<img class="img-fluid" src="/assets/images/blog/2021-10-15/exiftool-linear-interpolation.jpg" alt="exiftool gps linear interpolation" title="exiftool gps linear interpolation" />
 
 An easy way to think about this would be to imagine you have a GPS track containing only two reported positions, one at 12:00:01 and one at 12:00:11. Now the photo you want to geotag has a `SubSecDateTimeOriginal` time of 12:00:05. In this case linear interpolation would estimate a point equidistant between the two because photo time equidistant between GPS points (see example below).
 
