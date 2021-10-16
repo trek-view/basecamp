@@ -126,11 +126,13 @@ Using the example GSV video earlier (at 5 FPS), if we only report to second leve
 <time>2020-08-02T11:05:13.130-02:00</time>
 ```
 
-## Obtaining sub-second GPS times
+## Obtaining sub-second GPS times (a GoPro example)
 
 [Let's take GoPro's GPMD as an example](/blog/2021/metadata-exif-xmp-360-video-files-gopro-gpmd).
 
-As noted in the linked post, there are many GPS points reported (up to 18) without `GPSDateTime` values.
+Note: other manufacturers will write `GPSDateTime` values based on their own hardware and software designs, so this is a very specific example for GoPro camera's only.
+
+As noted in the post linked above, there are many GPS points reported (up to 18) without `GPSDateTime` values by GoPro cameras.
 
 The points without time are assumed to be calculated, as there are not always 18 points reported.
 
