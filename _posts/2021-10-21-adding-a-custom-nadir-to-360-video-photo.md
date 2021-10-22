@@ -1,14 +1,14 @@
 ---
-date: 2021-10-21
+date: 2021-10-22
 title: "How to Add a Custom Nadir to a 360 Photo"
 description: "Programmatically add a custom branded nadir to your all your equirectangular photos using Imagemagick."
 categories: guides
 tags: [nadir, equirectangular, imagemagick]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-10-21/example-nadir-percentage-of-pano-meta.jpeg
-featured_image: /assets/images/blog/2021-10-21/example-nadir-percentage-of-pano-sm.jpeg
+image: /assets/images/blog/2021-10-22/example-nadir-percentage-of-pano-meta.jpeg
+featured_image: /assets/images/blog/2021-10-22/example-nadir-percentage-of-pano-sm.jpeg
 layout: post
-published: false
+published: true
 ---
 
 **Programmatically add a custom branded nadir to your all your equirectangular photos using Imagemagick.**
@@ -25,9 +25,9 @@ This time I'll show you how to use it to overlay a logo file onto an equirectang
 
 Here is the photo (taken along the South West Coast Path, Cornwall, England earlier this year using the [Trek Pack v2](/trek-pack)) and the Trek View logo I will use for this exercise (it has been resized for the purpose of this demo).
 
-<img class="img-fluid" src="/assets/images/blog/2021-10-21/GSAD0049-resize-1200-nadir" alt="South West Coast Path equirectangular image" title="South West Coast Path equirectangular image" />
+<img class="img-fluid" src="/assets/images/blog/2021-10-22/GSAD0049-resize-1200-nadir" alt="South West Coast Path equirectangular image" title="South West Coast Path equirectangular image" />
 
-<img class="img-fluid" src="/assets/images/blog/2021-10-21/trek-view-square-nadir.png" alt="Trek View Nadir" title="Trek View Nadir" />
+<img class="img-fluid" src="/assets/images/blog/2021-10-22/trek-view-square-nadir.png" alt="Trek View Nadir" title="Trek View Nadir" />
 
 If you want to use you own logo, make sure its dimensions are square, and with dimensions of at least 500px x 500px, ideally larger if your photo has a resolution above 4K.
 
@@ -44,7 +44,7 @@ Here's how to do it with Imagemagick:
 magick trek-view-square-nadir.png -rotate 180 -strip trek-view-square-nadir-1.png
 ```
 
-<img class="img-fluid" src="/assets/images/blog/2021-10-21/trek-view-square-nadir-1.png" alt="Rotate 180 degrees" title="Rotate 180 degrees" />
+<img class="img-fluid" src="/assets/images/blog/2021-10-22/trek-view-square-nadir-1.png" alt="Rotate 180 degrees" title="Rotate 180 degrees" />
 
 ### 1.2 DePolar Distortion
 
@@ -52,7 +52,7 @@ magick trek-view-square-nadir.png -rotate 180 -strip trek-view-square-nadir-1.pn
 magick trek-view-square-nadir-1.png -distort DePolar 0  trek-view-square-nadir-2.png
 ```
 
-<img class="img-fluid" src="/assets/images/blog/2021-10-21/trek-view-square-nadir-2.png" alt="DePolar Distortion" title="DePolar Distortion" />
+<img class="img-fluid" src="/assets/images/blog/2021-10-22/trek-view-square-nadir-2.png" alt="DePolar Distortion" title="DePolar Distortion" />
 
 [See Imagemagick for more docs in DePolar Distortion](https://legacy.imagemagick.org/Usage/distorts/).
 
@@ -62,7 +62,7 @@ magick trek-view-square-nadir-1.png -distort DePolar 0  trek-view-square-nadir-2
 magick trek-view-square-nadir-2.png -flip  trek-view-square-nadir-3.png
 ```
 
-<img class="img-fluid" src="/assets/images/blog/2021-10-21/trek-view-square-nadir-3.png" alt="Flip" title="Flip" />
+<img class="img-fluid" src="/assets/images/blog/2021-10-22/trek-view-square-nadir-3.png" alt="Flip" title="Flip" />
 
 Flip vertically.
 
@@ -72,7 +72,7 @@ Flip vertically.
 magick trek-view-square-nadir-3.png -flop  trek-view-square-nadir-4.png
 ```
 
-<img class="img-fluid" src="/assets/images/blog/2021-10-21/trek-view-square-nadir-4.png" alt="Flop" title="Flop" />
+<img class="img-fluid" src="/assets/images/blog/2021-10-22/trek-view-square-nadir-4.png" alt="Flop" title="Flop" />
 
 _Flip_ horizontally.
 
@@ -80,7 +80,7 @@ _Flip_ horizontally.
 
 The first step here is to obtain the image resolution (width x height).
 
-<img class="img-fluid" src="/assets/images/blog/2021-10-21/example-nadir-percentage-of-pano.jpeg" alt="Example nadir overlay guide" title="Example nadir overlay guide" />
+<img class="img-fluid" src="/assets/images/blog/2021-10-22/example-nadir-percentage-of-pano.jpeg" alt="Example nadir overlay guide" title="Example nadir overlay guide" />
 
 My example image is 1200x600.
 
@@ -106,7 +106,7 @@ Now we can resize the nadir to be 120 in height.
 magick trek-view-square-nadir-5.png -geometry 1200x120! trek-view-square-nadir-6.png
 ```
 
-<img class="img-fluid" src="/assets/images/blog/2021-10-21/trek-view-square-nadir-6.png" alt="Resized nadir" title="Resized nadir" />
+<img class="img-fluid" src="/assets/images/blog/2021-10-22/trek-view-square-nadir-6.png" alt="Resized nadir" title="Resized nadir" />
 
 ## Step 3: Overlay the nadir
 
@@ -120,7 +120,7 @@ We need to know where to place the nadir vertically. To calculate this; the phot
 composite trek-view-square-nadir-6.png GSAD0049-resize-1200.JPG -geometry +0+480 GSAD0049-resize-1200-nadir.JPG
 ```
 
-<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-10-21/GSAD0049-resize-1200-nadir.JPG&amp;autoLoad=true"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-10-22/GSAD0049-resize-1200-nadir.JPG&amp;autoLoad=true"></iframe>
 
 This approach retains all metadata between source and final image.
 
