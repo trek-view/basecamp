@@ -5,8 +5,8 @@ description: "Coastal communities, long distance hiking trails, biking maps, bui
 categories: guides
 tags: [OSM, OpenStreetMap]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-10-29/
-featured_image: /assets/images/blog/2021-10-29/
+image: /assets/images/blog/2021-10-29/sotm2021-logo-meta.jpg
+featured_image: /assets/images/blog/2021-10-29/sotm2021-logo-sm.jpg
 layout: post
 published: false
 ---
