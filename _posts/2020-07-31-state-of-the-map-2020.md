@@ -1,7 +1,7 @@
 ---
 date: 2020-07-31
 title: "My Favourite Talks from State of the Map 2020"
-description: "360 cameras, 3D models, aerial imagery, and privacy. All available to watch now."
+description: "360 cameras, 3D models, aerial imagery, drones, and privacy."
 categories: guides
 tags: [OSM, OpenStreetMap, State of the Map, SOTM, Mapillary, Urban Analytics Lab, OpenBuildingMap, National University of Singapore, OpenAerialMap, Humanitarian Open Street Map, HOSM]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**360 cameras, 3D models, aerial imagery, and privacy. All available to watch now.**
+**360 cameras, 3D models, aerial imagery, drones, and privacy.**
 
 [State of the Map](https://stateofthemap.org/) is the annual conference of the [OpenStreetMap Foundation](https://wiki.osmfoundation.org/wiki/Main_Page).
 
@@ -62,3 +62,7 @@ _Also see: [OpenDroneMap](https://www.opendronemap.org/)._
 Privacy is always a big concern for us. And rightly so. When you have a 360 camera mounted to your backpack people will naturally get curious, ask questions and possibly become suspicious or hesitant to accept your data collection activities. This session explores one of the Humanitarian Open Street Map Teams field mapping projects implemented in Kampala. Despite all the correct steps taken, community entry in a specific jurisdiction felt impossible and field mapping could not be carried out. Find out why, and the lessons the team learned.
 
 Related OSM project [Humanitarian Open Street Map Team](https://www.hotosm.org/)
+
+## Update 2021-10-28
+
+[Check out my favourite talks from State of the Map 2021](/blog/2021/state-of-the-map-2021).
