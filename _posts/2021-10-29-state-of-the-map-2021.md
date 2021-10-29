@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2021-10-29/sotm2021-logo-meta.jpg
 featured_image: /assets/images/blog/2021-10-29/sotm2021-logo-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Coastal communities, long distance hiking trails, biking maps, building detection, and Irish heritage.**
