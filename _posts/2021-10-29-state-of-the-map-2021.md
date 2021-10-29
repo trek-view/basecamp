@@ -30,7 +30,7 @@ I've curated some of my favourite talks most closely linked to the work we do he
 
 Over the past few years, the world has been experiencing the impacts of climate change with an increase in extreme weather events.
 
-Coastal communities are among the most vulnerable and face a range of unique flooding hazards including storm surge, wave impact, and erosion causing damage to homes, businesses, and infrastructure.
+Coastal communities are among the most vulnerable and face a range of unique flooding hazards including storm surges, wave impacts, and erosion causing damage to homes, businesses, and infrastructure.
 
 This talk by Monica Brandeis covers OSM data quality in coastal communities.
 
