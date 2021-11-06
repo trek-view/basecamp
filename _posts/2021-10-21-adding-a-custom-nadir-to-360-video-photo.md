@@ -1,7 +1,7 @@
 ---
 date: 2021-10-22
-title: "How to Add a Custom Nadir to a 360 Photo"
-description: "Programmatically add a custom branded nadir to your all your equirectangular photos using Imagemagick."
+title: "How to Add a Custom Nadir to a 360 Photo Programmatically"
+description: "Automate the process of adding a custom branded nadir to all your equirectangular photos using Python and Imagemagick."
 categories: guides
 tags: [nadir, equirectangular, imagemagick]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Programmatically add a custom branded nadir to your all your equirectangular photos using Imagemagick.**
+**Automate the process of adding a custom branded nadir to all your equirectangular photos using Python and Imagemagick.**
 
 [Last year I showed you how to use GIMP to manually add a branded nadir to your photos](/blog/2020/adding-a-custom-nadir-to-360-video-photo).
 
