@@ -15,7 +15,7 @@ published: true
 
 When you download videos from your GoPro’s memory card, you might have noticed in addition to the `.mp4` or `.360` files, `.lrv`, `.thm` and `.wav` files.
 
-These files are both GoPro specific, and used by GoPro software (on the camera screen and in mobile apps).
+`.thm` and `.lrv` files are both GoPro specific, and used by GoPro software (on the camera screen and in mobile apps).
 
 <img class="img-fluid" src="/assets/images/blog/2021-11-12/gopro-360-thm-lrv-files-sm.png" alt="GoPro LRV and THM Files" title="GoPro LRV and THM Files" />
 
@@ -23,7 +23,7 @@ These files are both GoPro specific, and used by GoPro software (on the camera s
 
 They're tiny files (usually less than 100Kb), typically with a resolution of 160 by 120 pixels.
 
-`.lrv` files are Low-Resolution Video (LRV) files are used by GoPro software to display a video previews, without having to load the high-resolution version.
+`.lrv` files are Low-Resolution Video (LRV) files are used by GoPro software to display video previews, without having to load the high-resolution version.
 
 The reason these are used rather than the original `.mp4` or `.360` videos comes down to filesize. The high-resolution video files that the GoPro shoots create very large files. For example, 1 minute of 360 video at 5.6K generates a file of about 1GB in size.
 
@@ -32,6 +32,8 @@ Streaming and rendering files of that size would be very intensive for the devic
 A `.360` of 4GB has an accompanying `.lrv` file size of 170Mb, or about 5% of the `.360` version. The `.lrv` file has the same video content of the `.360` but at a much lower resolution.
 
 If you don't use the GoPro mobile apps, and simply export content to your PC from a memory card then the `.thm` and `.lrv` files can be safely deleted.
+
+<img class="img-fluid" src="/assets/images/blog/2021-11-12/" alt="GoPro WAV Files" title="GoPro WAV Files" />
 
 `.wav` files are created when shooting video on the GoPro Fusion.
 
