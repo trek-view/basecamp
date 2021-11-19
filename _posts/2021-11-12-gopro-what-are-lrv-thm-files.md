@@ -33,7 +33,7 @@ A `.360` of 4GB has an accompanying `.lrv` file size of 170Mb, or about 5% of th
 
 If you don't use the GoPro mobile apps, and simply export content to your PC from a memory card then the `.thm` and `.lrv` files can be safely deleted.
 
-<img class="img-fluid" src="/assets/images/blog/2021-11-12/" alt="GoPro WAV Files" title="GoPro WAV Files" />
+<img class="img-fluid" src="/assets/images/blog/2021-11-12/gopro-360-fusion-360-wav.png" alt="GoPro WAV Files" title="GoPro WAV Files" />
 
 `.wav` files are created when shooting video on the GoPro Fusion.
 
