@@ -1,7 +1,7 @@
 ---
 date: 2021-10-28
 title: "My Favourite Talks from State of the Map 2021"
-description: "Coastal communities, long distance hiking trails, biking maps, building detection, and Irish heritage."
+description: "3D rendering, long distance hiking trails, biking maps, building detection, Irish heritage, and photos of entrances."
 categories: guides
 tags: [OSM, OpenStreetMap]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Coastal communities, long distance hiking trails, biking maps, building detection, and Irish heritage.**
+**3D rendering, long distance hiking trails, biking maps, building detection, Irish heritage, and photos of entrances.**
 
 State of the Map 2021 took place online this year, from July 9 to 11 2021.
 
@@ -24,17 +24,15 @@ I've curated some of my favourite talks most closely linked to the work we do he
 [_Don't forget to check out my favourite talks from last year too_](/blog/2020/state-of-the-map-2020).
 
 
-## Improving OSM Data in Coastal Communities
+## 3D Rendering with OSM2World
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nNwui7PlSIU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zGmanoRWY50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Over the past few years, the world has been experiencing the impacts of climate change with an increase in extreme weather events.
+The mission of [OSM2World](http://osm2world.org/) is to build a realistic 3D representation of the physical world using open data and open-source software. This is made possible by two trends: The increasing level of detail captured by the OpenStreetMap database, and the growing availability of open technologies for high-quality 3D rendering.
 
-Coastal communities are among the most vulnerable and face a range of unique flooding hazards including storm surges, wave impacts, and erosion causing damage to homes, businesses, and infrastructure.
+In this talk, Tobias Knerr introduces the capabilities of OSM2World, with a particular focus on features which were added recently.
 
-This talk by Monica Brandeis covers OSM data quality in coastal communities.
-
-[See the full description of this talk and download it here](https://media.ccc.de/v/sotm2021-10025-improving-osm-data-in-coastal-communities).
+[See the full description of this talk and download it here](https://media.ccc.de/v/sotm2021-9962-3d-rendering-with-osm2world).
 
 ## Building a global outdoor map
 
@@ -73,3 +71,13 @@ Since Anne-Karoline Distel moved to Ireland from Germany in December 2016, she h
 Shortly after becoming a member of a local historical society, she started mapping historical features like ringforts, castles, church ruins and graveyards.
 
 [See the full description of this talk and download it here](https://media.ccc.de/v/sotm2021-9971-mapping-heritage-in-ireland-a-journey).
+
+## Collection and use of data about entrances of buildings
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k7-nuBJRoys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[OLMap](https://olmap.org/) is a web app allowing you to upload photos of entrances and map them in OSM and another one, Gatesolve, for delivery drivers to find the route to the right entrance based on this micro-mapped OSM data.
+
+True door-to-door navigation requires us to accept that people don't really visit house numbers, they visit amenities and apartments via specific building entrances. The significance of this difference varies and is greatest in cities with suboptimal address schemes, for people with accessibility needs and for delivery drivers quickly visiting lots of unfamiliar recipients.
+
+[See the full description of this talk and download it here](https://media.ccc.de/v/sotm2021-10068-collection-and-use-of-data-about-entrances-of-buildings).

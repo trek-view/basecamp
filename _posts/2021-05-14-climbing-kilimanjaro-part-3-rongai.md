@@ -83,3 +83,7 @@ They're taking bookings for the 2021 season, including the Rogai route. [See the
 Sadly we could only able to film two treks ([see the Macheme Route here](/blog/2021/climbing-kilimanjaro-part-2-macheme))) due to timings over the January to March trekking season. 
 
 When the good weather for trekking returns again in June, we'll be hoping for a few more drier days to [capture the missing imagery with our Trek Packs](/trek-pack).
+
+## Update 2021-12-03
+
+[Part 4: Lemosho Route. Climb the Western face of Kilimanjaro from home](/blog/2021/climbing-kilimanjaro-part-4-lemosho).

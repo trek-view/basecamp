@@ -37,7 +37,7 @@ There are also many longstanding bugs in the software. For example, [the Windows
 
 [In September we spent a long time researching the `.360` file format](/blog/2021/reverse-engineering-gopro-360-file-format-part-1). The result of the work was [a proof-of-concept script that could convert `.360`'s to equirectangular geotagged images](https://github.com/trek-view/gopro-frame-maker) (which could then be converted to a video).
 
-It doesn't offer the levelling functions of Studio, yet. Partly as a result of not including this feature it's faster than GoPro Studio, but still pretty slow.
+The script doesn't offer the levelling functions of Studio, yet. Not including this feature means it's faster than GoPro Studio, but still pretty slow.
 
 We're currently working on a new product, Explorer, that will allow you to upload your `.360`'s to the web app and it will then convert them for you in the backgroun on our cloud servers.
 
