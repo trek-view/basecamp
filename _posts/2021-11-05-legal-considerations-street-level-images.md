@@ -1,7 +1,7 @@
 ---
 date: 2021-11-05
-title: "The Legalities of Taking Photographs for Street View in a Public Place"
-description: "A general guide to the legal considerations when capturing outdoor virtual tours."
+title: "The Legalities of Publishing Photographs for Street View in a Public Place"
+description: "A general guide to the legal considerations when capturing and publishing outdoor virtual tours."
 categories: guides
 tags: [Google, Street View, Microsoft, Bing, Streetside, Facebook, Mapillary, Apple, Look Around, privacy]
 author_staff_member: dgreenwood
@@ -41,9 +41,11 @@ Assuming you are taking photos of a public place under the considerations above,
 
 Of course, laws get much more complex and differ by geography.
 
-For UK based photographers, [this article is particularly useful in covering some of the finer details](http://www.photographers-resource.co.uk/photography/Legal/Access_Rights.htm).
+Most people reading this post will want to publish images taken outdoors, both commercially and non-commercially, to create 360 tours on various platforms.
 
-It's also important to stress that this post covers the legalities of capturing imagery outdoors, but it does not address the moral issues.
+Generally speaking, in Europe and the US the same legal restrictions apply to publishing a photo as they do to capturing it. That is, if it is taken in or of a public place then you are free to publish it.
+
+It's also important to stress that this post covers the legalities of capturing imagery outdoors and publishing it, but it does not address the moral issues.
 
 For example, I avoid capturing imagery in areas children might be playing. Whilst this is legal, morally, I know parents will be rightly concerned with someone capturing footage of their children.
 
