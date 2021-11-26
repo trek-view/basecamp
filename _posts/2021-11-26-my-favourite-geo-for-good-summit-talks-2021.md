@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2021-11-26/google-geo-for-good-2021-meta.jpg
 featured_image: /assets/images/blog/2021-11-26/google-geo-for-good-2021.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Using mapping tools for a positive impact in the world including; forest data, accessibility, wildfires, and augmented reality.**
