@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2021-12-03/lemosho-route-meta.jpeg
 featured_image: /assets/images/blog/2021-12-03/lemosho-route-sm.jpeg
 layout: post
-published: false
+published: true
 ---
 
 **Trek the entire Western face of Kilimanjaro from home.**
