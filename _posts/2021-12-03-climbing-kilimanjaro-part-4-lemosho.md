@@ -30,7 +30,7 @@ Additionally, these latter trails, like Lemosho were more thoughtfully designed 
 
 Altezza travel offer a range of options for the Lemosho route, from 6 to 8 days trekking. [Take a look at their website for the full itineraries](https://altezza.travel/en/route/lemosho).
 
-For this ascent, we chose the 7 day option, and it took place between 2021-11-03 - 2021-11-09. Here are some of the highlights of each days trek...
+For this ascent, we chose the 7 day option, and it took place between 2021-11-03 - 2021-11-09. Here are some of the highlights from each day...
 
 ## Day 1: High-Altitude Drop Off Destination And Trekking To Shira 1 Camp 
 
