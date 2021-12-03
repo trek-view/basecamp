@@ -2,7 +2,7 @@
 date: 2021-05-07
 title: "Climb Mount Kilimanjaro Virtually (Part 2: Macheme Route)"
 description: "The second most popular route on Mount Kilimanjaro can now be hiked from home."
-categories: mapthepaths
+categories: treks
 tags: [Kilimanjaro, Altezza Travel, hike, Trek Pack, Africa, Tanzania, GoPro, MAX, Macheme]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-05-07/machame-route-kilimanjaro-guidebook-meta.jpeg
@@ -29,15 +29,11 @@ It starts in the tropical rainforest, approaches the peak area through the south
 
 Moss-covered trees, seas of ferns and elusive monkeys abound in the rainforests that surround the mountain.
 
-[View points of interest in the Map the Paths Guidebook](https://www.mapthepaths.com/guidebook/6e613819-fe76-4516-8ac3-508ff0591cf7/detail/?image_key=xF0ZHcGPd5jMi8WW0fDzkq)
-
 ## Moorland (3,000m)
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-05-07/kili-moorland.jpeg&amp;autoLoad=true"></iframe>
 
 The thick rainforest starts to thin out. At an altitude of almost 3,000 meters (around 9,800 ft) you have arrived at the beginning of the moorland. Shorter trees as well as an increasing number of ferns and mosses are typical for this vegetation zone.
-
-[View points of interest in the Map the Paths Guidebook](https://www.mapthepaths.com/guidebook/6e613819-fe76-4516-8ac3-508ff0591cf7/detail/?image_key=PCXLvfrqSkxDkKF6NBrW1J)
 
 ## Alpine desert (4,000m)
 
@@ -45,15 +41,11 @@ The thick rainforest starts to thin out. At an altitude of almost 3,000 meters (
 
 Now you have arrived at an altitude of about 4,000 meters (around 13,100 ft). The ascent is mostly less steep than before, and you’re walking on paths across seemingly endless expanses and scree fields.
 
-[View points of interest in the Map the Paths Guidebook](https://www.mapthepaths.com/guidebook/6e613819-fe76-4516-8ac3-508ff0591cf7/detail/?image_key=thDxDIT4RebAMqDmC10wKx)
-
 ## Volcanic Craters (5,000m)
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-05-07/kili-volcanic-craters.jpeg&amp;autoLoad=true"></iframe>
 
 Kilimanjaro has three volcanic cones: Kibo, Mawenzi and Shira. Kibo, the youngest and highest, retains the form of a typical volcanic cone and crater.
-
-[View points of interest in the Map the Paths Guidebook](https://www.mapthepaths.com/guidebook/6e613819-fe76-4516-8ac3-508ff0591cf7/detail/?image_key=acDWP4j4Al6MwKgU1wUdBm)
 
 ## Uhuru Peak (5,895m)
 
@@ -61,16 +53,14 @@ Kilimanjaro has three volcanic cones: Kibo, Mawenzi and Shira. Kibo, the younges
 
 Congratulations you are now at Uhuru Peak, Tanzania. 5895 AMSL.
 
-[View points of interest in the Map the Paths Guidebook](https://www.mapthepaths.com/guidebook/6e613819-fe76-4516-8ac3-508ff0591cf7/detail/?image_key=lyi8NGDt2yZs4qLmUd7Hzq)
+## Explore the imagery
 
-## Explore the complete Macheme Guidebook
+<img class="img-fluid" src="/assets/images/blog/2021-05-07/lemosho-mapillary.png" alt="Lemosho Kilimanjaro Mapillary" title="Lemosho Kilimanjaro Mapillary" />
 
-<img class="img-fluid" src="/assets/images/blog/2021-05-07/machame-route-kilimanjaro-guidebook-sm.jpeg" alt="Map the Paths Kilimanjaro Macheme Route Guidebook" title="Map the Paths Kilimanjaro Macheme Route Guidebook" />
+View on:
 
-You've missed 3 scenes and many more points of interest showing more about the geography of Mount Kilimanjaro and the Macheme Route.
-
-[**Explore the full Macheme Route Guidebook now on Map the Paths here**](
-https://www.mapthepaths.com/guidebook/6e613819-fe76-4516-8ac3-508ff0591cf7/detail/).
+* [Google Street View](https://www.google.com/maps/@-3.0765003,37.3540856,3a,75y,321.36h,91.58t/data=!3m6!1e1!3m4!1sAF1QipO2wrhU_PXyqkV7n9nnQIggk2vAMHgqVHTm4xbw!2e10!7i11520!8i5760)
+* [Mapillary](https://www.mapillary.com/app/?pKey=1204352947039109)
 
 ## Altezza Travel
 

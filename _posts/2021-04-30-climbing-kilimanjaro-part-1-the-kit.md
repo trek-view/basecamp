@@ -2,7 +2,7 @@
 date: 2021-04-30
 title: "Climb Mount Kilimanjaro Virtually (Part 1: Planning)"
 description: "In 2020/21 we set out to Map the Mountain. Here's an insight into our planning."
-categories: mapthepaths
+categories: treks
 tags: [Kilimanjaro, Altezza Travel, hike, Trek Pack, Africa, Tanzania, GoPro, MAX]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-04-30/kilimanjaro-summit-little-planet-meta.jpeg

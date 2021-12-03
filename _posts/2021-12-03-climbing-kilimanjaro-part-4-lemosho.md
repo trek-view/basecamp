@@ -2,7 +2,7 @@
 date: 2021-12-03
 title: "Climb Mount Kilimanjaro Virtually (Part 4: Lemosho Route)"
 description: "Trek the entire Western face of Kilimanjaro from home."
-categories: guides
+categories: treks
 tags: [Kilimanjaro, Altezza Travel, hike, Trek Pack, Africa, Tanzania, GoPro, MAX, Lemosho]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-12-03/lemosho-route-meta.jpeg
@@ -44,7 +44,7 @@ The route from your drop off point to your first high-altitude camp Shira 1 feat
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-12-03/lemosho-day-1b-GSAK2752.JPG&amp;autoLoad=true"></iframe>
 
-It was a wet day when the teamed filmed this tour, though the conditions treated the team to a beautiful rainbow to finish the day.
+It was a wet day when the teamed filmed this tour, though the conditions treated them to a beautiful rainbow to finish the day.
 
 ## Day 2: Trekking From Shira 1 Camp to Shira 2 Camp
 
@@ -52,13 +52,11 @@ It was a wet day when the teamed filmed this tour, though the conditions treated
 * Distance: 2 km
 * Time: 1–2 hours
 
-<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-12-03/lemosho-day-2c-GSAN2904.JPG&amp;autoLoad=true"></iframe>
-
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-12-03/lemosho-day-2a-GSAN3115.JPG&amp;autoLoad=true"></iframe>
 
 Departing from Shira 1 Camp (3,505 m) and a light trekking towards the second high altitude camp: Shira 2 Camp (3,900 m). This trek is not difficult and you will be able to enjoy spectacular views of Africa and the unique flora of Kilimanjaro and the surrounding area.
 
-<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-12-03/lemosho-day-2c-GSAN2904.JPG&amp;autoLoad=true"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-12-03/lemosho-day-2b-GSAQ4366.JPG&amp;autoLoad=true"></iframe>
 
 Shira 2 Camp is the best place on the trip to see Mount Meru (the fifth summit of Africa), weather permitting. As you can see above, sadly it was cloudy when the Altezza team arrived.
 
@@ -127,6 +125,15 @@ After your successful ascent to Uhuru Peak, you can descend to the nearest glaci
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-12-03/lemosho-day-7a-GSCI4702.JPG.JPG&amp;autoLoad=true"></iframe>
 
 The camp is situated in a tropical rainforest. When you wake up, you will feel relief from the reduction of the height and the satisfaction of reaching the summit. After a warm breakfast, you will head for the park's exit: Mweka Gate (1,640 m). 
+
+## Explore the imagery
+
+<img class="img-fluid" src="/assets/images/blog/2021-12-03/lemosho-mapillary.png" alt="Lemosho Kilimanjaro Mapillary" title="Lemosho Kilimanjaro Mapillary" />
+
+View on:
+
+* [Google Street View](https://www.google.com/maps/@-3.0765003,37.3540856,3a,75y,321.36h,91.58t/data=!3m6!1e1!3m4!1sAF1QipO2wrhU_PXyqkV7n9nnQIggk2vAMHgqVHTm4xbw!2e10!7i11520!8i5760)
+* [Mapillary](https://www.mapillary.com/app/?pKey=1204352947039109)
 
 ## Altezza Travel
 

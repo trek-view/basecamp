@@ -2,7 +2,7 @@
 date: 2021-05-14
 title: "Climb Mount Kilimanjaro Virtually (Part 3: Rongai Route)"
 description: "Trek one of the quietest trails up Kilimanjaro from home."
-categories: mapthepaths
+categories: treks
 tags: [Kilimanjaro, Altezza Travel, hike, Trek Pack, Africa, Tanzania, GoPro, MAX, Rongai]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-05-14/rongai-route-kilimanjaro-guidebook-meta.jpeg
@@ -29,15 +29,11 @@ It takes a long four-hour drive from the Moshi town (a popular travel hub) to ge
 
 The rainforest zone on the Rongai route is somewhat special from this zone in the south, east of west - it does not receive so much rainfall, and here the hikers have a chance to see coniferous trees.
 
-[View points of interest in the Map the Paths Guidebook](https://www.mapthepaths.com/guidebook/1d8221a5-20f1-4b8d-ad2d-cd69604d70d2/scene/?image_key=bWMjR9RLwe7bTM1z2AuS5A)
-
 ## Heather and Moorland 
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-05-14/moorland.jpg&amp;autoLoad=true"></iframe>
 
 At around 2800 m the heather and moorland zone begins. This is where the rainforest zone recedes, eventually giving way to heather. The higher we go, the less thick vegetation becomes.
-
-[View points of interest in the Map the Paths Guidebook](https://www.mapthepaths.com/guidebook/1d8221a5-20f1-4b8d-ad2d-cd69604d70d2/detail/?image_key=m5R6J6c1OOBy3sSEVRT2sQ)
 
 ## Alpine desert 
 
@@ -45,15 +41,11 @@ At around 2800 m the heather and moorland zone begins. This is where the rainfor
 
 Alpine (or Highland) desert starts at 4000 m. These fields look empty and desolated. This area gets the least rainfall of all - less than 8 inches every year. The vegetation is meagre, as very few plants can handle burning say at daytime and subzero temperatures at night.
 
-[View points of interest in the Map the Paths Guidebook](https://www.mapthepaths.com/guidebook/1d8221a5-20f1-4b8d-ad2d-cd69604d70d2/scene/?image_key=ZCpmzEEdrGTbVmXzfTpdTR)
-
 ## Arctic Zone
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-05-14/arctic-zone.jpeg&amp;autoLoad=true"></iframe>
 
 The Arctic zone starts at 5000m and tops at Uhuru Peak at 5,895m. Its lower area is known as “scree” - the mass of loose pebble, gravel and soil. It is one of the reasons why all summits start at night - low temperatures freeze pieces of this scree together, making it less loose and allowing the boots to have better traction.
-
-[View points of interest in the Map the Paths Guidebook](https://www.mapthepaths.com/guidebook/1d8221a5-20f1-4b8d-ad2d-cd69604d70d2/scene/?image_key=EYWw0gC3SJtOOPw5ezWpMF)
 
 ## Uhuru Peak (5,895m)
 
@@ -61,16 +53,14 @@ The Arctic zone starts at 5000m and tops at Uhuru Peak at 5,895m. Its lower area
 
 Congratulations you are now at Uhuru Peak, Tanzania. 5895 AMSL.
 
-[View points of interest in the Map the Paths Guidebook](https://www.mapthepaths.com/guidebook/6e613819-fe76-4516-8ac3-508ff0591cf7/detail/?image_key=lyi8NGDt2yZs4qLmUd7Hzq)
+## Explore the imagery
 
-## Explore the complete Rogai Guidebook
+<img class="img-fluid" src="/assets/images/blog/2021-05-14/lemosho-mapillary.png" alt="Lemosho Kilimanjaro Mapillary" title="Lemosho Kilimanjaro Mapillary" />
 
-<img class="img-fluid" src="/assets/images/blog/2021-05-14/rongai-route-kilimanjaro-guidebook-sm.jpeg" alt="Map the Paths Kilimanjaro Rogai Route Guidebook" title="Map the Paths Kilimanjaro Rogai Route Guidebook" />
+View on:
 
-You've missed 5 scenes and many more points of interest showing more about the geography of Mount Kilimanjaro and the Rongai Route.
-
-[**Explore the full Rogai Route Guidebook now on Map the Paths here**](
-https://www.mapthepaths.com/guidebook/1d8221a5-20f1-4b8d-ad2d-cd69604d70d2/detail/).
+* [Google Street View](https://www.google.com/maps/@-3.0765003,37.3540856,3a,75y,321.36h,91.58t/data=!3m6!1e1!3m4!1sAF1QipO2wrhU_PXyqkV7n9nnQIggk2vAMHgqVHTm4xbw!2e10!7i11520!8i5760)
+* [Mapillary](https://www.mapillary.com/app/?pKey=1204352947039109)
 
 ## Altezza Travel
 
