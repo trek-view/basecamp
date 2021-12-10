@@ -1,6 +1,6 @@
 ---
 date: 2021-12-10
-title: "Testing GPS Underwater (salt/sea water)"
+title: "Underwater GPS Experiments in Salt Water"
 description: "A DIY science experiment to examine GPS signal loss underwater."
 categories: guides
 tags: [360Bubble, GPS, Max, scuba, dive]
