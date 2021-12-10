@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2021-12-10/gps-5cm-below-GSAC8564.JPG
 featured_image: /assets/images/blog/2021-12-10/gps-5cm-below-GSAC8564-sm.JPG
 layout: post
-published: false
+published: true
 ---
 
 **A DIY science experiment to examine GPS signal loss underwater.**
