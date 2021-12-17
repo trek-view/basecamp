@@ -91,4 +91,4 @@ You can find the modes listed below, with links to our
 
 All our test cases for the above are released under CC BY 4.0 license.
 
-[You can find the download links to all our samples in our GoPro metadata repository on Github](https://github.com/trek-view/gopro-metadata).
+[You can find the download links to all our samples (and the camera user guides) in our GoPro metadata repository on Github](https://github.com/trek-view/gopro-metadata).
