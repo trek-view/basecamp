@@ -1,7 +1,7 @@
 ---
 date: 2021-12-10
 title: "Underwater GPS Experiments in Salt Water"
-description: "A DIY science experiment to examine GPS signal loss underwater."
+description: "A DIY science experiment to examine GPS signal loss underwater using a GoPro MAX."
 categories: guides
 tags: [360Bubble, GPS, Max, scuba, dive]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**A DIY science experiment to examine GPS signal loss underwater.**
+**A DIY science experiment to examine GPS signal loss underwater using a GoPro MAX.**
 
 [Previously I've talked about GPS underwater, or lack of it](/blog/2020/underwater-google-street-view), and setups for capturing GPS when scuba-diving.
 
