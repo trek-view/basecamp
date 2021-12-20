@@ -5,8 +5,8 @@ description: "A detailed list of all available GoPro MAX and Fusion modes."
 categories: guides
 tags: [GoPro, MAX, Fusion, gpmf, gpmd]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-12-17/gopro-max-modes.jpg
-featured_image: /assets/images/blog/2021-12-17/gopro-max-modes-sm.jpg
+image: /assets/images/blog/2021-12-17/trekview-guide-test-cases.png
+featured_image: /assets/images/blog/2021-12-17/trekview-guide-test-cases-sm.png
 layout: post
 published: true
 ---
@@ -91,4 +91,6 @@ You can find the modes listed below, with links to our
 
 All our test cases for the above are released under CC BY 4.0 license.
 
-[You can find the download links to all our samples (and the camera user guides) in our GoPro metadata repository on Github](https://github.com/trek-view/gopro-metadata).
+[You can find the download links to all our samples in our Guides](https://guides.trekview.org/explorer/developer-docs/sequences/upload/test-cases).
+
+[Metadata samples and the camera user guides can be found in our GoPro metadata repository on Github](https://github.com/trek-view/gopro-metadata).
