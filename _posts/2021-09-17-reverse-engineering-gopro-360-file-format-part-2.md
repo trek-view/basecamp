@@ -2,7 +2,7 @@
 date: 2021-09-17
 title: "Reverse Engineering GoPro's 360 Video File Format (Part 2)"
 description: "Taking apart a .360 file to reveal its contents to try and understand how it can be processed (without GoPro software)."
-categories: guides
+categories: developers
 tags: [GoPro, equirectangular, EAC, ffmpeg, exiftool, YouTube]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-09-17/img-track0-5-grid-marked.jpg

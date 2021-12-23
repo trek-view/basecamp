@@ -4,7 +4,7 @@ title: "Reverse Engineering GoPro's 360 Video File Format (Part 4)"
 description: "In the final part of this series, I convert a GoPro EAC projected frame into an equirectangular projection to be displayed in other software."
 categories: guides
 tags: [GoPro, equirectangular, EAC, ffmpeg, exiftool]
-author_staff_member: dgreenwood
+author_staff_member: developers
 image: /assets/images/blog/2021-10-01/gopro-eac-output-equirectangular-meta.jpg
 featured_image: /assets/images/blog/2021-10-01/gopro-eac-output-equirectangular-sm.jpg
 layout: post

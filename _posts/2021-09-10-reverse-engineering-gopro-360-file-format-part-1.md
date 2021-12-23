@@ -2,7 +2,7 @@
 date: 2021-09-10
 title: "Reverse Engineering GoPro's 360 Video File Format (Part 1)"
 description: "A deeper look into GoPro's proprietary .360 video format (with the aim of reducing our reliance on GoPro's software)."
-categories: guides
+categories: developers
 tags: [GoPro, equirectangular, EAC]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-09-10/youtube-eac-meta.jpeg

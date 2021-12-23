@@ -2,7 +2,7 @@
 date: 2021-09-24
 title: "Reverse Engineering GoPro's 360 Video File Format (Part 3)"
 description: "I continue taking apart a .360 file, and trying to rebuild it with a equirectangular projection (without GoPro software)."
-categories: guides
+categories: developers
 tags: [GoPro, equirectangular, EAC, ffmpeg, exiftool, imagemagick, cubemap]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-09-24/gopro-cubemap-meta.jpg
