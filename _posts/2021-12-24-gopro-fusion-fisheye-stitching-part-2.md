@@ -1,7 +1,7 @@
 ---
 date: 2021-12-24
 title: "Stitching GoPro Fusion Images Without GoPro Fusion Studio (Part 2)"
-description: "Understanding the Fusion's fish-eye projections and turning them into a single equirectangular image."
+description: "Understanding the Fusion's fish-eye projections with the aim of turning them into a single equirectangular image."
 categories: developers
 tags: [GoPro, Max, Fusion, stitching, Fusion Studio, fish-eye]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Understanding the Fusion's fish-eye projections and turning them into a single equirectangular image.**
+**Understanding the Fusion's fish-eye projections with the aim of turning them into a single equirectangular image.**
 
 [Last week I took a look at the GoPro Fusion imagery produced by the camera](/blog/2021/gopro-fusion-fisheye-stitching-part-1).
 
@@ -55,49 +55,48 @@ Therefore, each fish-eye projection will have different dimensions dependent on 
 
 **Front image** 
 
-Image resolution: 3104 x 3000
-Fish-eye radius: 1520
-Fish-eye center (x,y): 1544,1487
-Fish-eye field of view: 190
+* Image resolution: 3104 x 3000
+* Fish-eye radius: 1520
+* Fish-eye center (x,y): 1544,1487
+* Fish-eye field of view: 190
 
 **Back image** 
 
-Image resolution: 3104 x 3000
-Fish-eye radius: 1520
-Fish-eye center (x,y): 1546,1480
-Fish-eye field of view: 190
-
+* Image resolution: 3104 x 3000
+* Fish-eye radius: 1520
+* Fish-eye center (x,y): 1546,1480
+* Fish-eye field of view: 190
 
 ### 5.2k video
 
 **Front image** 
 
-Image resolution: 2704 x 2624
-Fish-eye radius: 1330
-Fish-eye center (x,y): 1346,1302
-Fish-eye field of view: 191
+* Image resolution: 2704 x 2624
+* Fish-eye radius: 1330
+* Fish-eye center (x,y): 1346,1302
+* Fish-eye field of view: 191
 
 **Back image** 
 
-Image resolution: 2704 x 2624
-Fish-eye radius: 1330
-Fish-eye center (x,y): 1346,1302
-Fish-eye field of view: 191
+* Image resolution: 2704 x 2624
+* Fish-eye radius: 1330
+* Fish-eye center (x,y): 1346,1302
+* Fish-eye field of view: 191
 
 ### 3k video
 
 **Front image** 
 
-Image resolution: 1568 x 1504
-Fish-eye radius: 
-Fish-eye center (x,y): 
-Fish-eye field of view: 
+* Image resolution: 1568 x 1504
+* Fish-eye radius: 
+* Fish-eye center (x,y): 
+* Fish-eye field of view: 
 
 **Back image** 
 
-Image resolution: 1568 x 1504
-Fish-eye radius: 
-Fish-eye center (x,y): 
-Fish-eye field of view: 
+* Image resolution: 1568 x 1504
+* Fish-eye radius: 
+* Fish-eye center (x,y): 
+* Fish-eye field of view: 
 
 I'll show you why these values are important next week...
