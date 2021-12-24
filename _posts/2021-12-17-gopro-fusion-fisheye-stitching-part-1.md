@@ -1,9 +1,9 @@
 ---
 date: 2021-12-17
 title: "Stitching GoPro Fusion Images Without GoPro Fusion Studio (Part 1)"
-description: "A deeper look into the GoPro Fusion fisheye images (with the aim of reducing our reliance on GoPro's software)."
+description: "A deeper look into the GoPro Fusion fish-eye images (with the aim of reducing our reliance on GoPro's software)."
 categories: developers
-tags: [GoPro, Max, Fusion, stitching]
+tags: [GoPro, Max, Fusion, stitching, Fusion Studio, fish-eye]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-12-17/GB089220_GF089220-merge-meta.jpg
 featured_image: /assets/images/blog/2021-12-17/GB089220_GF089220-merge-sm.jpg
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**A deeper look into the GoPro Fusion fisheye images (with the aim of reducing our reliance on GoPro's software).**
+**A deeper look into the GoPro Fusion fish-eye images (with the aim of reducing our reliance on GoPro's software).**
 
 [In the summer of 2019 I bought a GoPro Fusion](/blog/2019/hello-trekkers), and Trek View was born.
 
@@ -19,7 +19,7 @@ published: true
 
 I receive many emails from people capturing 360 imagery of their adventures each week, many of whom still use the Fusion.
 
-Many of these emails also ask for recommended alternatives to GoPro Fusion Studio, the GoPro software required to stitch the images and videos created by the Fusion camera.
+Many of these emails also ask for recommended alternatives to GoPro Fusion Studio, [the GoPro software required to stitch the images and videos created by the Fusion camera](/blog/2019/diy-google-street-view-part-1-how-trek-view-started).
 
 The Fusion was officially discontinued in 2019, with the release of the Max. Since then new operating systems versions have been released, causing breaking changes in the GoPro Fusion Studio software.
 
@@ -39,7 +39,7 @@ It notes, some interesting points:
 
 I cannot find any accurate specifications on the cameras true field of view, but based on my experiments it about 190 degrees.
 
-> Our proprietary D.WARP algorithm transforms these fisheye images into the spherical space
+> Our proprietary D.WARP algorithm transforms these fish-eye images into the spherical space
 
 No help from GoPro here.
 
@@ -57,19 +57,17 @@ Depending on the setting, the camera outputs two files for each capture (front a
 
 Unlike the MAX, all modes use the front and back camera. It is not possible to shoot from a single camera (like HERO mode on the Max). You need to use GoPro Fusion Studio (when it works) to create an "Overcapture" which will allow you to export a flat projection, but for our needs, this is unnecessary.
 
-## Fusion fisheye projections
+## Fusion fish-eye projections
 
-As you can see, the two fisheye lenses produce circular images.
+As you can see, the two lenses produce fish-eye images.
 
-It is the dimensions of these circles that are important for stitching the fisheye images.
+It is the dimensions of these circles that are important for stitching the fish-eye images.
 
 These dimensions will be written into the GoPro Fusion Studio software to process the imagery (the D.WARP algorithm). Unfortunately we can't see the software code of Fusion Studio so we'll have to calculate them manually.
 
 <img class="img-fluid" src="/assets/images/blog/2021-12-17/ GF064364-photoshop-guides.png" alt="Photoshop Guides" title="Photoshop Guides" />
 
 The above is from a photo taken on the Fusion (dimensions=3104x3000).
-
-The image itself (taken by the front camera) is not a square, nor is the center of the image (minus blind spots) perfectly centered (you can see there are margins on the left and right).
 
 ## Fusion image frames
 
@@ -98,4 +96,4 @@ I'll talk more about that of next week...
 
 ## Update 2021-12-24
 
-[Stitching GoPro Fusion Images Without GoPro Fusion Studio (Part 2)](/blog/2021/gopro-fusion-fisheye-stitching-part-2)
+[Stitching GoPro Fusion Images Without GoPro Fusion Studio (Part 2)](/blog/2021/gopro-fusion-fish-eye-stitching-part-2)
