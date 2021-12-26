@@ -19,29 +19,35 @@ We figured out that the Fusion produces dual fish-eye images. Let's start this w
 
 ## Fish-eye projections 101
 
-<img class="img-fluid" src="/assets/images/blog/2021-12-24/circ_fisheye_panotools.jpeg" alt="Circular fish-eye guides" title="Circular fish-eye guides" />
-
 > Commonly there are two types of fisheye distinguished: circular fisheyes and fullframe fisheyes. However, both follow the same projection geometrics. The only difference is one of Field of View: for a circular fisheye the circular image fits (more or less) completely in the frame, leaving blank areas in the corner. For the full frame variety, the image is over-filled by the circular fisheye image, leaving no blank space on the film or detector. A circular fisheye can be made full frame if you use it with a smaller sensor/film size (and vice versa), or by zooming a fisheye adaptor on a zoom lens.
 
 - [Panotools](https://wiki.panotools.org/Fisheye_Projection)
 
 The Fusion produces circular fish-eye images.
 
+Fish-eye images can have different fields of view, dependent on the lens.
+
+<img class="img-fluid" src="/assets/images/blog/2021-12-24/fisheye_equidistant_220_180.jpeg" alt="Circular fish-eye guides" title="Circular fish-eye guides" />
+
+In the image above, you can see the field of view illustrated very nicely.
+
+The field of view in the top and bottom of image is greater than 180 (it is actually 220). You can see this as the image goes beyond the annotated world zenith and nadir.
+
+The left right field of view is 180 degrees (we cannot see further than 90 degrees either side of the camera). To visualise this, look at the image nadir at the base of the image and follow the guides out either side of the circle (90 degrees) to the left and right edges.
+
+It's important to note, this is a very specific example. Different lenses will product different results.
+
+Luckily for us both the Fusion lenses are identical.
+
 ## Fusion Fish-eye Lenses
 
-<img class="img-fluid" src="/assets/images/blog/2021-12-24/GF064364-photoshop-guides.png" alt="Photoshop Guides" title="Photoshop Guides" />
+<img class="img-fluid" src="/assets/images/blog/2021-12-24/GF089220-16mp-img-sm.jpg" alt="Fusion Fish-eye Lenses" title="Fusion Fish-eye Lenses" />
 
 The image above was taken by the Fusion's front camera in photo mode.
 
-The Fusion has two identical fish-eye lenses.
+The Fusion has two identical fish-eye lenses. The Fusions lenses are also offset on either side (front/back) to ensure that, together, all 360 degrees are captured in any given scene.
 
-The images produced are not square. Nor is the center of the images (minus non-image areas) perfectly centered (the margins on the left and right are not equal).
-
-The Fusions lenses are also offset on either side (front/back) to ensure that, together, all 360 degrees are captured in any given scene. This means the back and front images, whilst the same resolution, do not have the fish-eye projection in the same pixel spaces.
-
-## Fusion Fish-eye Image Measurements
-
-<img class="img-fluid" src="/assets/images/blog/2021-12-24/diagram-fusion2sphere.jpg" alt="GoPro Fusion Fisheye diagram" title="GoPro Fusion Fisheye diagram" />
+Though the offset means the back and front images, whilst the same resolution, do not necessarily have the fish-eye projection in the same pixel spaces.
 
 As noted last week, the GoPro Fusion produces 3 image resolutions depending on the capture mode:
 
@@ -49,54 +55,70 @@ As noted last week, the GoPro Fusion produces 3 image resolutions depending on t
 * 5.2k video: 2704 x 2624
 * 3k video: 1568 x 1504
 
-Therefore, each fish-eye projection will have different dimensions dependent on the mode. To calculate the center and radius values of front and back images for each image resolution I simply used Photoshop guides (I'm sure someone can suggest a more efficient and accurate way to do it).
+Therefore, each fish-eye projection will have different dimensions dependent on the mode. 
 
-### Photo
+As you can see with each resolution, the images produced are not square. Nor is the center of the images (minus non-image areas) perfectly centered (the margins on the left and right are not equal).
 
-**Front image** 
+## Fusion Fish-eye Image Measurements
+
+<img class="img-fluid" src="/assets/images/blog/2021-12-24/annotated-guides.jpg" alt="GoPro Fusion Fisheye Guides" title="GoPro Fusion Fisheye Guides" />
+
+I wanted to take some real examples to look at the image differences.
+
+To calculate the center and radius values of front and back images for each image resolution I simply used Photoshop guides (I'm sure someone can suggest a more efficient and accurate way to do it).
+
+Here's a description of the values reported:
+
+* Fish-eye edges (l,t,r,b): for left (l) and right (r) the x co-ordinate of edge of fish-eye. For top (t) and bottom (b) the y co-ordinate of edge of fish-eye.
+* Fish-eye center: from left (l) edge to center of fish-eye for the x co-ordinate. From top (t) edge to center of fish-eye for the y co-ordinate.
+* Fish-eye radius: pixel distance from left (l) edge to center of fish-eye. Note, the fish-eye is a slight oval shape (not a perfect circle), so this is a simplistic radius estimation at this point.
+
+### 16mp photo
+
+**Front image ([GF089220-16mp-img.JPG](/assets/images/blog/2021-12-24/GF089220-16mp-img.JPG]))** 
 
 * Image resolution: 3104 x 3000
-* Fish-eye radius: 1520
-* Fish-eye center (x,y): 1544,1487
-* Fish-eye field of view: 190
+* Fish-eye edges (l,t,r,b): 18,-32,3068,3000
+* Fish-eye center (x,y): 1543,1484
+* Fish-eye radius (px): 1325 (1543-18)
 
-**Back image** 
+**Back image ([GB089220-16mp-img.JPG](/assets/images/blog/2021-12-24/GB089220-16mp-img.JPG]))** 
 
 * Image resolution: 3104 x 3000
-* Fish-eye radius: 1520
-* Fish-eye center (x,y): 1546,1480
-* Fish-eye field of view: 190
+* Fish-eye edges (l,t,r,b): 0,-32,3072,3032
+* Fish-eye center (x,y): 1536,1500
+* Fish-eye radius (px): 1536 (1536-0)
 
 ### 5.2k video
 
-**Front image** 
+**Front image ([GPFR7152-5_2k-vid_1.jpg](/assets/images/blog/2021-12-24/GPFR7152-5_2k-vid_1.jpg))**
 
 * Image resolution: 2704 x 2624
-* Fish-eye radius: 1330
-* Fish-eye center (x,y): 1346,1302
-* Fish-eye field of view: 191
+* Fish-eye edges (l,t,r,b): 16,-36,2675,2643
+* Fish-eye center (x,y): 1303,1345
+* Fish-eye radius (px): 1287 (1303-16)
 
-**Back image** 
+**Back image ([GPBK7152-5_2k-vid_1.jpg](/assets/images/blog/2021-12-24/GPBK7152-5_2k-vid_1.jpg))** 
 
 * Image resolution: 2704 x 2624
-* Fish-eye radius: 1330
-* Fish-eye center (x,y): 1346,1302
-* Fish-eye field of view: 191
+* Fish-eye edges (l,t,r,b): 0,-36,2675,2643
+* Fish-eye center (x,y): 1337,1303
+* Fish-eye radius (px): 1337 (1337-0)
 
 ### 3k video
 
-**Front image** 
+**Front image ([GPFR0001-3k-vid_1.jpg](/assets/images/blog/2021-12-24/GPFR0001-3k-vid_1.jpg))** 
 
 * Image resolution: 1568 x 1504
-* Fish-eye radius: 
-* Fish-eye center (x,y): 
-* Fish-eye field of view: 
+* Fish-eye edges (l,t,r,b): 18,-27,1540,1512
+* Fish-eye center (x,y): 779,742
+* Fish-eye radius (px): 761 (779-18)
 
-**Back image** 
+**Back image ([GPBK0001-3k-vid_1.jpg](/assets/images/blog/2021-12-24/GPBK0001-3k-vid_1.jpg))** 
 
 * Image resolution: 1568 x 1504
-* Fish-eye radius: 
-* Fish-eye center (x,y): 
-* Fish-eye field of view: 
+* Fish-eye edges (l,t,r,b): 18,-27,1540,1512
+* Fish-eye center (x,y): 779,742
+* Fish-eye radius (px): 761 (779-18)
 
 I'll show you why these values are important next week...
