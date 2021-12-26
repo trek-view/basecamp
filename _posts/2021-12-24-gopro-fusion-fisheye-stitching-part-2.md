@@ -5,8 +5,8 @@ description: "Understanding the Fusion's fish-eye projections with the aim of tu
 categories: developers
 tags: [GoPro, Max, Fusion, stitching, Fusion Studio, fish-eye]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-12-24/ GF064364-photoshop-guides.png
-featured_image: /assets/images/blog/2021-12-24/ GF064364-photoshop-guides-sm.jpg
+image: /assets/images/blog/2021-12-24/GF064364-photoshop-guides.png
+featured_image: /assets/images/blog/2021-12-24/GF064364-photoshop-guides-sm.jpg
 layout: post
 published: true
 ---
