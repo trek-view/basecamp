@@ -75,6 +75,12 @@ According to [Unique Photo](https://www.uniquephoto.com/goprofusion):
 
 > The GoPro Fusion features two cameras, both of them having 3mm focal length and aperture of f/2.8
 
+And from last weeks post, we know the image sizes produced by the Fusion. In this case image size = diagonal size of image, which are calculated below (d=√(w2+l2)).
+
+* Photo: 3104 x 3000 (4317)
+* 5.2k video: 2704 x 2624
+* 3k video: 1568 x 1504
+
 
 
 For the Fusion:

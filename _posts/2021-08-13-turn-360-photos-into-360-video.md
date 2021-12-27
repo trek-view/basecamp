@@ -327,4 +327,4 @@ It's important to make the distinction that I'm only adding video level data, an
 
 I'm working on turning a sequence of images into videos automatically (with full metadata) using the [Map the Paths Uploader](https://www.mapthepaths.com/uploader) ([to better support Google Street View uploads](/blog/2021/preparing-360-video-upload-street-view-publish-api)).
 
-[Stay tuned for the release announcement by signing up for Trek View updates](https://landing.mailerlite.com/webforms/landing/i5h6l6)!
+Stay tuned for the release announcement by signing up for Trek View updates below.

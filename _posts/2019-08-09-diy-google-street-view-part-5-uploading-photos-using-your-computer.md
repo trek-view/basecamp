@@ -47,9 +47,7 @@ This release of Tourer can be classed as an alpha version. Simply put, there wil
 
 I'm working hard to make Tourer easier to use for non-technical users. The next release will provide a friendlier installation process and a visual interface to manage tours.
 
-Do you want to be the first to know when the next version of Tourer is released?
-
-[Stay tuned for the release announcement by signing up for Trek View updates](https://landing.mailerlite.com/webforms/landing/i5h6l6)!
+Do you want to be the first to know when the next version of Tourer is released? Stay tuned for the release announcement by signing up for Trek View updates below.
 
 ## Help us Improve Tourer
 

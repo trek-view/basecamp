@@ -171,4 +171,4 @@ Once you start adding content to KartaView the [`usermetrics`](http://doc.kartav
 
 I'm working on a new KartaView integration to upload your Sequences using the [Map the Paths Uploader](https://www.mapthepaths.com/uploader).
 
-[Stay tuned for the release announcement by signing up for Trek View updates](https://landing.mailerlite.com/webforms/landing/i5h6l6)!
+Stay tuned for the release announcement by signing up for Trek View updates below.

@@ -118,4 +118,4 @@ We're planning to migrate from `photo` to `photoSequence` when uploading final s
 
 As noted, the Uploader supports the `photo` upload resource at present, but if you've got a slightly longer sequence it is worth holding out for a few more weeks when we'll ship the more stable `photoSequence` approach in the next version (v0.4) of the [Map the Paths Uploader](https://www.mapthepaths.com/uploader).
 
-[Stay tuned for the announcement by signing up for Trek View updates](https://landing.mailerlite.com/webforms/landing/i5h6l6)!
+Stay tuned for the release announcement by signing up for Trek View updates below.

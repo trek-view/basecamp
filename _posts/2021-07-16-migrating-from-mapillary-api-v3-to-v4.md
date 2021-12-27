@@ -169,4 +169,4 @@ You won't notice any differences in the applications user interfaces (except for
 * [Map the Paths Web](https://github.com/trek-view/mtp-web)
 * [Map the Paths Uploader](https://github.com/trek-view/mtp-desktop-uploader)
 
-[Stay tuned for all Trek View product announcements by signing up for our updates here](https://landing.mailerlite.com/webforms/landing/i5h6l6).
+Stay tuned for the release announcement by signing up for Trek View updates below.

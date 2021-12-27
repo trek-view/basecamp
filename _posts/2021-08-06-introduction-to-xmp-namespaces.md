@@ -185,4 +185,4 @@ python spatialmedia -i [--stereo=none] demo-video-no-meta.mp4 demo-video-with-me
 
 I'm working on turning a sequence of images into videos automatically (with full metadata) using the [Map the Paths Uploader](https://www.mapthepaths.com/uploader) ([to better support Google Street View uploads](/blog/2021/preparing-360-video-upload-street-view-publish-api)).
 
-[Stay tuned for the release announcement by signing up for Trek View updates](https://landing.mailerlite.com/webforms/landing/i5h6l6)!
+Stay tuned for the release announcement by signing up for Trek View updates below.
