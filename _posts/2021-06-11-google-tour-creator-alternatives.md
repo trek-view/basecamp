@@ -2,7 +2,7 @@
 date: 2021-06-11
 title: "Google Tour Creator Alternatives"
 description: "Map the Paths offers the ability to create guided virtual tours complete with annotations and videos."
-categories: mapthepaths
+categories: products
 tags: [Google, Tour Creator, Map the Paths]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-06-11/map-the-paths-guidebook-kilimanjaro-meta.jpg

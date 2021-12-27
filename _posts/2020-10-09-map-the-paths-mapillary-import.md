@@ -2,7 +2,7 @@
 date: 2020-10-09
 title: "Make your street-level images easily searchable"
 description: "We have 100's of thousands of street-level photos on Street View, Mapillary, and other places on the web. Here's how we manage them."
-categories: mapthepaths
+categories: products
 tags: [Mapillary, Map the Paths, Google, Street View, Sequences, Tours]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-10-09/mtp-sequences-meta.jpg

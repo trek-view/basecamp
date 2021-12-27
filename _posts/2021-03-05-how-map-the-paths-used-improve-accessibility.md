@@ -2,7 +2,7 @@
 date: 2021-03-05
 title: "How Map the Paths is being used to improve accessibility"
 description: "Show, don't tell. We believe in giving people the right information to make their own decisions."
-categories: mapthepaths
+categories: products
 tags: [OSM, accessibility, Map the Paths]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-03-05/map-the-paths-amenities-meta.jpg

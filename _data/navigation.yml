@@ -1,7 +1,3 @@
-- name: About
-  link: /about
-  new_window: false
-  highlight: false
 - name: Blog
   link: /blog
   new_window: false
@@ -10,7 +6,11 @@
   link: /trek-pack
   new_window: false
   highlight: false
-- name: View / Upload Photos
-  link: https://www.mapthepaths.com
+- name: Upload Imagery
+  link: https://landing.mailerlite.com/webforms/landing/p3p7h9
+  new_window: true
+  highlight: true
+- name: Explore the Map
+  link: https://landing.mailerlite.com/webforms/landing/p3p7h9
   new_window: true
   highlight: true

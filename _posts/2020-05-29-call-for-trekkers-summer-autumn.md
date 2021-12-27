@@ -29,8 +29,6 @@ But there are better times ahead. As we head into Summer, many people are dreami
 
 The lockdown gave me a long time to reflect on the work we do here at Trek View.
 
-And I realised something, [some of the best escapes can be found on your doorstep](/case-studies/2020/gb/aldershot-byelaws-review).
-
 Even in big cities, small squares of greenery can offer a huge respite from the inside of your home and your head.
 
 ## Become a Trekker

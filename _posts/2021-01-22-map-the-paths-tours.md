@@ -2,7 +2,7 @@
 date: 2021-01-22
 title: "Take a Virtual Tour With Map the Paths"
 description: "As lockdowns continue, take a trip at home to explore new places around the world."
-categories: mapthepaths
+categories: products
 tags: [River Thames, Windsor, Map the Paths, Tenerife, Tours]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-01-22/river-thames-tour-meta.jpg

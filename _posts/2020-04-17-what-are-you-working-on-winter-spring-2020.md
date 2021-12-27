@@ -25,11 +25,7 @@ Here's a great viewpoint looking over the towns of Fleet and Farnborough, Hampsh
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2020-04-17/ceasers-camp.jpeg&amp;autoLoad=true"></iframe>
 
-[Update 2020-12-18: View on Map the Paths](https://www.mapthepaths.com/sequence/5a49d303-4f13-4414-8e1d-849a36989b9b/detail?page=1).
-
 It's a great spot to watch planes taking off from Farnborough Airport (FAB).
-
-[I've compiled a small case study showing some of the highlights in my local area here](/case-studies/2020/gb/north-east-hampshire/).
 
 ## Virtual adventures
 
@@ -79,7 +75,7 @@ All the latest Trek View news can be found on our Facebook page:
 
 * [Facebook](https://www.facebook.com/trekview/)
 
-If you want to follow some of our field work, we publish "[little planet](/blog/2020/create-your-own-little-planet-from-360-degree-photo)" photos on Instagram _almost_ everyday.
+If you want to follow some of our field work, we publish "[little planet](/blog/2020/create-your-own-little-planet-from-360-degree-photo)" photos on Instagram _almost_ everyday.
 
 * [Instagram](https://www.instagram.com/trekviewed/)
 

@@ -1,7 +1,7 @@
 ---
 date: 2021-12-17
 title: "Stitching GoPro Fusion Images Without GoPro Fusion Studio (Part 1)"
-description: "A deeper look into the GoPro Fusion fish-eye images (with the aim of reducing our reliance on GoPro's software)."
+description: "A deeper look into GoPro Fusion fish-eye images (with the aim of reducing our reliance on GoPro’s software)."
 categories: developers
 tags: [GoPro, Max, Fusion, stitching, Fusion Studio, fish-eye]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**A deeper look into the GoPro Fusion fish-eye images (with the aim of reducing our reliance on GoPro's software).**
+**A deeper look into GoPro Fusion fish-eye images (with the aim of reducing our reliance on GoPro’s software).**
 
 [In the summer of 2019 I bought a GoPro Fusion](/blog/2019/hello-trekkers), and Trek View was born.
 
@@ -37,7 +37,7 @@ It notes, some interesting points:
 
 > each lens on Fusion captures >180 degrees in field of view
 
-I cannot find any accurate specifications on the cameras true field of view, but based on my experiments it about 190 degrees.
+This will be essential to work out later.
 
 > Our proprietary D.WARP algorithm transforms these fish-eye images into the spherical space
 

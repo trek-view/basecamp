@@ -2,7 +2,7 @@
 date: 2021-02-12
 title: "Map the Paths: What's New (January 2021)"
 description: "A quick look at some of the things we've been working on over the last few months."
-categories: mapthepaths
+categories: products
 tags: [OSM, Wikipedia, altitude, weather, Facebook, Map the Paths, nadir]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-02-12/mapthepaths-wikipedia-osm-points-of-interest-meta.jpg

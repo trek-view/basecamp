@@ -19,9 +19,9 @@ We figured out that the Fusion produces dual fish-eye images. Let's start this w
 
 ## Fish-eye projections 101
 
-> Commonly there are two types of fisheye distinguished: circular fisheyes and fullframe fisheyes. However, both follow the same projection geometrics. The only difference is one of Field of View: for a circular fisheye the circular image fits (more or less) completely in the frame, leaving blank areas in the corner. For the full frame variety, the image is over-filled by the circular fisheye image, leaving no blank space on the film or detector. A circular fisheye can be made full frame if you use it with a smaller sensor/film size (and vice versa), or by zooming a fisheye adaptor on a zoom lens.
+[Panotools give a nice description of fish-eye types](https://wiki.panotools.org/Fisheye_Projection):
 
-- [Panotools](https://wiki.panotools.org/Fisheye_Projection)
+> Commonly there are two types of fisheye distinguished: circular fisheyes and fullframe fisheyes. However, both follow the same projection geometrics. The only difference is one of Field of View: for a circular fisheye the circular image fits (more or less) completely in the frame, leaving blank areas in the corner. For the full frame variety, the image is over-filled by the circular fisheye image, leaving no blank space on the film or detector. A circular fisheye can be made full frame if you use it with a smaller sensor/film size (and vice versa), or by zooming a fisheye adaptor on a zoom lens.
 
 The Fusion produces circular fish-eye images.
 
@@ -31,11 +31,9 @@ Fish-eye images can have different fields of view, dependent on the lens.
 
 In the image above, you can see the field of view illustrated very nicely.
 
-The field of view in the top and bottom of image is greater than 180 (it is actually 220). You can see this as the image goes beyond the annotated world zenith and nadir.
+The field of view is greater than 180 (it is actually 220). You can see this as the image goes beyond the annotated world [zenith and nadir](/blog/2020/what-is-a-nadir).
 
-The left right field of view is 180 degrees (we cannot see further than 90 degrees either side of the camera). To visualise this, look at the image nadir at the base of the image and follow the guides out either side of the circle (90 degrees) to the left and right edges.
-
-It's important to note, this is a very specific example. Different lenses will product different results.
+It's important to note, this is a very specific example. Different lenses will produce different field of views (and even different fish-eye distortions).
 
 Luckily for us both the Fusion lenses are identical.
 
@@ -121,4 +119,8 @@ Here's a description of the values reported:
 * Fish-eye center (x,y): 779,742
 * Fish-eye radius (px): 761 (779-18)
 
-I'll show you why these values are important next week...
+## A note on aperture changes
+
+I suspect all of the values reported above might change with the aperture setting. For example, in low light, the aperture will be wider than compared to very sunny conditions, perhaps leading to a larger fish-eye image.
+
+I'll show you why these values and this aperture theory will be important to consider for stitching next week...

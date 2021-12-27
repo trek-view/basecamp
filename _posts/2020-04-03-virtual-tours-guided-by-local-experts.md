@@ -21,7 +21,7 @@ To quote one parent:
 
 Ask and you will receive.
 
-Given the success of our [virtual lessons for children](/blog/2020/treehouse-academy-emergency-timetable/) and [virtual tour guides of local areas](/case-studies/2020/gb/north-east-hampshire/), today were extending the concept to include free, live, virtual guided tours to some of the most astounding landscapes around the world for anyone, anywhere.
+Given the success of our [virtual lessons for children](/blog/2020/treehouse-academy-emergency-timetable/) and virtual tour guides of local areas, today were extending the concept to include free, live, virtual guided tours to some of the most astounding landscapes around the world for anyone, anywhere.
 
 ## About the tours
 
