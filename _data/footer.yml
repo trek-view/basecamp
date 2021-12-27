@@ -5,10 +5,10 @@
     link: /trek-pack
   - name: Podcast
     link: https://www.expodition.org
-  - name: Docs
-    link: https://guides.trekview.org
-  - name: Community
-    link: https://discord.gg/ZVk7h9hCfw
+  - name: Google Maps
+    link: https://www.google.co.uk/maps/contrib/118105140852825431306/photos/
+  - name: Mapillary
+    link: https://www.mapillary.com/app/user/trekviewhq
 
 - links:
   - name: Blog
@@ -17,16 +17,14 @@
     link: /about
   - name: Become a Trekker
     link: /trek-pack
+  - name: Guides
+    link: https://guides.trekview.org
   - name: Contact
     link: /contact
     
 - links:
-  - name: Google
-    link: https://www.google.co.uk/maps/contrib/118105140852825431306/photos/
-    social_icon: 
-    new_window: true
-  - name: Mapillary
-    link: https://www.mapillary.com/app/user/trekviewhq
+  - name: Discord
+    link: https://discord.gg/ZVk7h9hCfw
     social_icon: 
     new_window: true
   - name: Youtube
