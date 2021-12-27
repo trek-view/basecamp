@@ -75,14 +75,14 @@ Here's a description of the values reported:
 
 **Front image ([GF089220-16mp-img.JPG](/assets/images/blog/2021-12-24/GF089220-16mp-img.JPG]))** 
 
-* Image resolution: 3104 x 3000
+* Image resolution (w x h): 3104 x 3000
 * Fish-eye edges (l,t,r,b): 18,-32,3068,3000
 * Fish-eye center (x,y): 1543,1484
 * Fish-eye radius (px): 1325 (1543-18)
 
 **Back image ([GB089220-16mp-img.JPG](/assets/images/blog/2021-12-24/GB089220-16mp-img.JPG]))** 
 
-* Image resolution: 3104 x 3000
+* Image resolution (w x h): 3104 x 3000
 * Fish-eye edges (l,t,r,b): 0,-32,3072,3032
 * Fish-eye center (x,y): 1536,1500
 * Fish-eye radius (px): 1536 (1536-0)
@@ -91,14 +91,14 @@ Here's a description of the values reported:
 
 **Front image ([GPFR7152-5_2k-vid_1.jpg](/assets/images/blog/2021-12-24/GPFR7152-5_2k-vid_1.jpg))**
 
-* Image resolution: 2704 x 2624
+* Image resolution (w x h): 2704 x 2624
 * Fish-eye edges (l,t,r,b): 16,-36,2675,2643
 * Fish-eye center (x,y): 1303,1345
 * Fish-eye radius (px): 1287 (1303-16)
 
 **Back image ([GPBK7152-5_2k-vid_1.jpg](/assets/images/blog/2021-12-24/GPBK7152-5_2k-vid_1.jpg))** 
 
-* Image resolution: 2704 x 2624
+* Image resolution (w x h): 2704 x 2624
 * Fish-eye edges (l,t,r,b): 0,-36,2675,2643
 * Fish-eye center (x,y): 1337,1303
 * Fish-eye radius (px): 1337 (1337-0)
@@ -107,14 +107,14 @@ Here's a description of the values reported:
 
 **Front image ([GPFR0001-3k-vid_1.jpg](/assets/images/blog/2021-12-24/GPFR0001-3k-vid_1.jpg))** 
 
-* Image resolution: 1568 x 1504
+* Image resolution (w x h): 1568 x 1504
 * Fish-eye edges (l,t,r,b): 18,-27,1540,1512
 * Fish-eye center (x,y): 779,742
 * Fish-eye radius (px): 761 (779-18)
 
 **Back image ([GPBK0001-3k-vid_1.jpg](/assets/images/blog/2021-12-24/GPBK0001-3k-vid_1.jpg))** 
 
-* Image resolution: 1568 x 1504
+* Image resolution (w x h): 1568 x 1504
 * Fish-eye edges (l,t,r,b): 18,-27,1540,1512
 * Fish-eye center (x,y): 779,742
 * Fish-eye radius (px): 761 (779-18)

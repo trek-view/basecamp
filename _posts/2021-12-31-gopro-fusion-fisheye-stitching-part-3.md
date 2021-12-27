@@ -17,6 +17,82 @@ published: false
 
 Now we know some of the fundamentals, this week, let's look at how we can merge the two fish-eyes together into a single equirectangular projection.
 
+## Angle of view and field of view
+
+[Nikon describes AOV as](https://imaging.nikon.com/lineup/dslr/basics/19/01.htm):
+
+> The angle of view is the visible extent of the scene captured by the image sensor, stated as an angle. Wide angle of views capture greater areas, small angles smaller areas.
+
+Angle of view (AOV) is often referred to as field of view (FOV).
+
+<img class="img-fluid" src="/assets/images/blog/2021-12-31/Field-of-View-diagram.jpg" alt="Angle of view and field of view" title="Angle of view and field of view" />
+
+According to [Unique Photo](https://www.uniquephoto.com/goprofusion):
+
+> The GoPro Fusion features two cameras, both of them having 3mm focal length and aperture of f/2.8
+
+And [DPReview](https://www.dpreview.com/products/gopro/actioncams/gopro_fusion) gives us the sensor dimensions on the Fusion:
+
+> 6.17 x 4.55 mm (width x height)
+
+Angle of view can be calculated horizonatally (how far the lends can see left and right) and vertically (up and down). For a true 360 (without guessing missing pixels), the front and back lense need an angle of view of 180 degrees both horizontally and vertically.
+
+[According to Shutterview](https://shuttermuse.com/calculate-field-of-view-camera-lens/), AOV can be calculated using the equation:
+
+```
+Angle of view (in degrees) = 2 ArcTan( sensor width / (2 X focal length)) * (180/π)
+```
+
+Which gives us a calculation for Horizontal AOV of:
+
+```
+Horizontal AOV = 2*ArcTan(6.17/(2x3))*(180/π)
+Horizontal AOV = 2*ArcTan*58.9191599326
+Horizontal AOV = 2*89.027646
+Horizontal AOV = 178.055292 degrees
+```
+
+And Verical AOV of:
+
+```
+Vertical AOV = 2*ArcTan(4.55/(2x3))*(180/π)
+Vertical AOV = 2*ArcTan*43.4492994641
+Vertical AOV = 2*88.681551 
+Vertical AOV = 177.363102 degrees
+```
+
+
+https://vrphotography.com/data/pages/askexperts/pano/fovfisheye.html
+
+
+
+fov = 4 * arcsin (image size/(focal length * 4))
+
+
+
+
+
+
+
+0.0617 / 0.06 = 1.02833333333
+
+
+58.9191599324
+
+
+
+
+
+This is typically what man 
+
+
+
+
+Angle of view (in degrees) = 2 ArcTan( sensor width / (2 X focal length)) * (180/π)
+This is the formula that is most commonly cited for angle of view, and it agrees with the way in which lens specifications are presented by all the major camera manufacturers.
+
+
+
 ## Fish-eye field of view
 
 The field of view is vital to consider during blending.
@@ -63,6 +139,11 @@ When transformed to an equirectangular projection, you can see the squares of th
 
 ## Calculating GoPro Fusion's field of view
 
+
+I realized that in the past I had used the two terms somewhat interchangeably, but I began to wonder if that w
+
+Field-of-View-diagram.jpg
+
 Now it's time to figure out the exa
 
 The field of view can
@@ -71,9 +152,7 @@ The field of view can
 fov = 4 * arcsin (image size/(focal length * 4))
 ```
 
-According to [Unique Photo](https://www.uniquephoto.com/goprofusion):
 
-> The GoPro Fusion features two cameras, both of them having 3mm focal length and aperture of f/2.8
 
 And from last weeks post, we know the image sizes produced by the Fusion.
 
