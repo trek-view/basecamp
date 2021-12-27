@@ -13,7 +13,7 @@ published: true
 
 **Trek one of the quietest trails up Kilimanjaro from home.**
 
-[Last week saw us embark on a virtual expedition on the Macheme Route](/blog/2021/climbing-kilimanjaro-part-2-macheme).
+[Last week saw us embark on a virtual expedition on the Machame Route](/blog/2021/climbing-kilimanjaro-part-2-machame).
 
 This week we'll be tackling the Rongai Route.
 
@@ -70,7 +70,7 @@ They're taking bookings for the 2021 season, including the Rogai route. [See the
 
 ## More soon...
 
-Sadly we could only able to film two treks ([see the Macheme Route here](/blog/2021/climbing-kilimanjaro-part-2-macheme))) due to timings over the January to March trekking season. 
+Sadly we could only able to film two treks ([see the Machame Route here](/blog/2021/climbing-kilimanjaro-part-2-machame))) due to timings over the January to March trekking season. 
 
 When the good weather for trekking returns again in June, we'll be hoping for a few more drier days to [capture the missing imagery with our Trek Packs](/trek-pack).
 

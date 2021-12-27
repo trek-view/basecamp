@@ -15,7 +15,7 @@ published: true
 
 In May, we posted our first treks up Kilimanjaro in partnership with [Altezza Travel](https://altezza.travel/en).
 
-* [Macheme Route](/blog/2021/climbing-kilimanjaro-part-2-macheme).
+* [Machame Route](/blog/2021/climbing-kilimanjaro-part-2-machame).
 * [Rongai Route](/blog/2021/climbing-kilimanjaro-part-3-rongai).
 
 [The June to October climbing season](/blog/2021/climbing-kilimanjaro-part-1-the-kit) has been incredibly busy for Altezza, so it's been tough finding time to shoot. However, at the start of November a window opened up and the team set their sights on the Lemosho route.

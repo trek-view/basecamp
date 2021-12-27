@@ -1,9 +1,9 @@
 ---
 date: 2021-05-07
-title: "Climb Mount Kilimanjaro Virtually (Part 2: Macheme Route)"
+title: "Climb Mount Kilimanjaro Virtually (Part 2: Machame Route)"
 description: "The second most popular route on Mount Kilimanjaro can now be hiked from home."
 categories: treks
-tags: [Kilimanjaro, Altezza Travel, hike, Trek Pack, Africa, Tanzania, GoPro, MAX, Macheme]
+tags: [Kilimanjaro, Altezza Travel, hike, Trek Pack, Africa, Tanzania, GoPro, MAX, Machame]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-05-07/machame-route-kilimanjaro-guidebook-meta.jpeg
 featured_image: /assets/images/blog/2021-05-07/machame-route-kilimanjaro-guidebook-sm.jpeg
@@ -15,11 +15,11 @@ published: true
 
 If you missed last weeks post, [we're in the process of mapping Kilimanjaro with our Trek Packs](/blog/2021/climbing-kilimanjaro-part-1-the-kit).
 
-For our first trek our guide and cameraman, Joshua, will be tackling the Macheme route.
+For our first trek our guide and cameraman, Joshua, will be tackling the Machame route.
 
 Also known as the _Whiskey_ route, it is the second most popular route on Mount Kilimanjaro.
 
-<img class="img-fluid" src="/assets/images/blog/2021-05-07/machame-route-kilimanjaro.jpeg" alt="Kilimanjaro Macheme route" title="Kilimanjaro Macheme route" />
+<img class="img-fluid" src="/assets/images/blog/2021-05-07/machame-route-kilimanjaro.jpeg" alt="Kilimanjaro Machame route" title="Kilimanjaro Machame route" />
 
 It starts in the tropical rainforest, approaches the peak area through the southern face of Mt Kilimanjaro and summit is done through Barafu Summit Camp. Descent is done through Mweka Route. 
 
@@ -66,11 +66,11 @@ View on:
 
 This Guidebook would not have been possible without the studious team at Altezza Travel.
 
-They're taking bookings for the 2021 season, including the Macheme route. [See the Altezza Travel website for more details](https://en.altezza.travel/).
+They're taking bookings for the 2021 season, including the Machame route. [See the Altezza Travel website for more details](https://en.altezza.travel/).
 
 ## More soon...
 
-Sadly the weather meant we couldn't film the entire Macheme route. 
+Sadly the weather meant we couldn't film the entire Machame route. 
 
 When the good weather for trekking returns again in June, we'll be hoping for a few more drier days to [capture the missing imagery with our Trek Packs](/trek-pack).
 

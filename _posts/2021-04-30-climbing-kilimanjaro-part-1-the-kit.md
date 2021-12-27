@@ -69,7 +69,7 @@ Outside of these windows, the probability of rain significantly increases. Sadly
 
 <img class="img-fluid" src="/assets/images/blog/2021-04-30/altezza-joshua.jpeg" alt="Joshua at Altezza Travel" title="Joshua at Altezza Travel" />
 
-Luckily, Joshua, our brilliant cameraman, managed to capture two routes, Macheme and Rongai, around an already busy schedule (thanks to Anatolii and Aleksandr for their help to organise).
+Luckily, Joshua, our brilliant cameraman, managed to capture two routes, Machame and Rongai, around an already busy schedule (thanks to Anatolii and Aleksandr for their help to organise).
 
 Over the coming weeks I'll be sharing images from our completed treks and more details about how the GoPro cameras performed.
 
@@ -79,7 +79,7 @@ Stay tuned!
 
 ## Update 2021-05-07
 
-[Part 2: the Macheme Route. The second most popular route on Mount Kilimanjaro can now be hiked from home](/blog/2021/climbing-kilimanjaro-part-2-macheme).
+[Part 2: the Machame Route. The second most popular route on Mount Kilimanjaro can now be hiked from home](/blog/2021/climbing-kilimanjaro-part-2-machame).
 
 ## Update 2021-05-14
 

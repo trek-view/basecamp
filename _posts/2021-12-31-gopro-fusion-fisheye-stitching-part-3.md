@@ -5,8 +5,8 @@ description: "Preparing to create an equirectangular projection from two GoPro F
 categories: developers
 tags: [GoPro, Max, Fusion, stitching, Fusion Studio, fish-eye]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-12-31/
-featured_image: /assets/images/blog/2021-12-31/
+image: /assets/images/blog/2021-12-31/fish2sphere220b.jpeg
+featured_image: /assets/images/blog/2021-12-31/fish2sphere220b-sm.jpg
 layout: post
 published: false
 ---
@@ -25,11 +25,11 @@ The field of view is vital to consider during blending.
 
 Here's the world mapped in a fish-eye with a 180 degree field of view.
 
-<img class="img-fluid" src="/assets/images/blog/2021-12-24/fish2sphere180.jpeg" alt="Fisheye 180 projection guides" title="Fisheye 180 projection guides" />
+<img class="img-fluid" src="/assets/images/blog/2021-12-31/fish2sphere180.jpeg" alt="Fisheye 180 projection guides" title="Fisheye 180 projection guides" />
 
 It makes sense that it occupies half of a spherical (equirectangular) projection, which captures the entire visible universe from a single position, when corrctly distorted, below;
 
-<img class="img-fluid" src="/assets/images/blog/2021-12-24/fish2sphere180b.jpeg" alt="Fisheye 180 equirectangular projection guides" title="Fisheye 180 equirectangular projection guides" />
+<img class="img-fluid" src="/assets/images/blog/2021-12-31/fish2sphere180b.jpeg" alt="Fisheye 180 equirectangular projection guides" title="Fisheye 180 equirectangular projection guides" />
 
 Note how the distortion of the horizonal is almost zero, whilst distortion along the vertical (y) axis increase as you move away from the centre. We've already covered projection types previpusly, [that could help with this](/blog/2021/projection-type-360-photography).
 
@@ -37,13 +37,13 @@ Looking at this transformation in a real photo.
 
 Source fisheye image;
 
-<img class="img-fluid" src="/assets/images/blog/2021-12-24/spherical0.jpeg" alt="Source 180 fish-eye" title="Source 180 fish-eye" />
+<img class="img-fluid" src="/assets/images/blog/2021-12-31/spherical0.jpeg" alt="Source 180 fish-eye" title="Source 180 fish-eye" />
 
 Image credit: [Paul Bourke](http://paulbourke.net/dome/fish2/)
 
 Transformed to equirectangular;
 
-<img class="img-fluid" src="/assets/images/blog/2021-12-24/spherical1.jpeg" alt="180 equirectangular fish-eye conversion" title="180 equirectangular fish-eye conversion" />
+<img class="img-fluid" src="/assets/images/blog/2021-12-31/spherical1.jpeg" alt="180 equirectangular fish-eye conversion" title="180 equirectangular fish-eye conversion" />
 
 Image credit: [Paul Bourke](http://paulbourke.net/dome/fish2/)
 
@@ -53,15 +53,15 @@ Many cameras use lenses with a field of view greater than 180 degrees. This resu
 
 Here's the world mapped in a fish-eye with a 180 degree field of view.
 
-<img class="img-fluid" src="/assets/images/blog/2021-12-24/fish2sphere220.jpeg" alt="Fisheye 220 projection guides" title="Fisheye 220 projection guides" />
+<img class="img-fluid" src="/assets/images/blog/2021-12-31/fish2sphere220.jpeg" alt="Fisheye 220 projection guides" title="Fisheye 220 projection guides" />
 
 You can see there are more squares along each axis. That's because the 220 degree field of view captures more of the world.
 
-<img class="img-fluid" src="/assets/images/blog/2021-12-24/fish2sphere220b.jpeg" alt="Fisheye 220 equirectangular projection guides" title="Fisheye 220 equirectangular projection guides" />
+<img class="img-fluid" src="/assets/images/blog/2021-12-31/fish2sphere220b.jpeg" alt="Fisheye 220 equirectangular projection guides" title="Fisheye 220 equirectangular projection guides" />
 
 When transformed to an equirectangular projection, you can see the squares of the fisheye go beyone a square. Again, because the 220 degree field of view captures more of the world. These are the areas of overlaps.
 
-## Calculating field of view
+## Calculating GoPro Fusion's field of view
 
 Now it's time to figure out the exa
 

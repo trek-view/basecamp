@@ -1,12 +1,12 @@
 ---
-date: 2021-01-07
+date: 2021-01-14
 title: "Building a library of GoPro 360 camera test cases"
 description: "A detailed list of all available GoPro MAX and Fusion modes."
 categories: guides
 tags: [GoPro, MAX, Fusion, gpmf, gpmd]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-01-07/trekview-guide-test-cases.png
-featured_image: /assets/images/blog/2021-01-07/trekview-guide-test-cases-sm.png
+image: /assets/images/blog/2021-01-14/trekview-guide-test-cases.png
+featured_image: /assets/images/blog/2021-01-14/trekview-guide-test-cases-sm.png
 layout: post
 published: false
 ---
@@ -25,7 +25,7 @@ You can find the modes listed below, with links to our
 
 ## GoPro MAX
 
-<img class="img-fluid" src="/assets/images/blog/2021-01-07/gopro-max-modes.jpg" alt="GoPro MAX modes" title="GoPro MAX modes" />
+<img class="img-fluid" src="/assets/images/blog/2021-01-14/gopro-max-modes.jpg" alt="GoPro MAX modes" title="GoPro MAX modes" />
 
 ### Video mode
 
@@ -59,7 +59,7 @@ You can find the modes listed below, with links to our
 
 ## GoPro Fusion
 
-<img class="img-fluid" src="/assets/images/blog/2021-01-07/gopro-fusion-modes.jpg" alt="GoPro Fusion modes" title="GoPro Fusion modes" />
+<img class="img-fluid" src="/assets/images/blog/2021-01-14/gopro-fusion-modes.jpg" alt="GoPro Fusion modes" title="GoPro Fusion modes" />
 
 ### Video mode
 
