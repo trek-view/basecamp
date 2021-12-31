@@ -15,7 +15,7 @@ published: true
 
 [Last week I took a look at the GoPro Fusion imagery produced by the camera](/blog/2021/gopro-fusion-fisheye-stitching-part-1).
 
-We figured out that the Fusion produces dual fish-eye images. Let's start this week by quickly introducing fish-eye projections...
+We figured out that the Fusion produces dual fish-eye images. Lets start this week by quickly introducing fish-eye projections...
 
 ## Fish-eye projections 101
 
@@ -139,4 +139,4 @@ I suspect all of the values reported above might change with the aperture settin
 
 ## Update 2021-12-24
 
-[Stitching GoPro Fusion Images Without GoPro Fusion Studio (Part 3)](/blog/2021/gopro-fusion-fish-eye-stitching-part-2)
+[Stitching GoPro Fusion Images Without GoPro Fusion Studio (Part 3)](/blog/2021/gopro-fusion-fisheye-stitching-part-3)
