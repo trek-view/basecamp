@@ -55,8 +55,6 @@ As noted last week, the GoPro Fusion produces 3 image resolutions depending on t
 
 Therefore, each fish-eye projection will have different dimensions dependent on the mode. 
 
-As you can see with each resolution, the images produced are not square. Nor is the center of the images (minus non-image areas) perfectly centered (the margins on the left and right are not equal).
-
 ## Fusion Fish-eye Image Measurements
 
 <img class="img-fluid" src="/assets/images/blog/2021-12-24/annotated-guides.jpg" alt="GoPro Fusion Fisheye Guides" title="GoPro Fusion Fisheye Guides" />
@@ -71,21 +69,25 @@ Here's a description of the values reported:
 * Fish-eye center: from left (l) edge to center of fish-eye for the x co-ordinate. From top (t) edge to center of fish-eye for the y co-ordinate.
 * Fish-eye radius: pixel distance from left (l) edge to center of fish-eye. Note, the fish-eye is a slight oval shape (not a perfect circle), so this is a simplistic radius estimation at this point.
 
-### 16mp photo
+### 18mp photo
 
 **Front image ([GF089220-16mp-img.JPG](/assets/images/blog/2021-12-24/GF089220-16mp-img.JPG]))** 
 
 * Image resolution (w x h): 3104 x 3000
 * Fish-eye edges (l,t,r,b): 18,-32,3068,3000
+* Fish-eye resolution (w x h): 3050 (3068-18) x 3032 (3000+32)
 * Fish-eye center (x,y): 1543,1484
-* Fish-eye radius (px): 1325 (1543-18)
+* Fish-eye radius x (px): 1525 (1543-18)
+* Fish-eye radius y (px): 1516 (1484+32)
 
 **Back image ([GB089220-16mp-img.JPG](/assets/images/blog/2021-12-24/GB089220-16mp-img.JPG]))** 
 
 * Image resolution (w x h): 3104 x 3000
 * Fish-eye edges (l,t,r,b): 0,-32,3072,3032
+* Fish-eye resolution (w x h): 3072 (3072-0) x 3064 (3032+32)
 * Fish-eye center (x,y): 1536,1500
-* Fish-eye radius (px): 1536 (1536-0)
+* Fish-eye radius x (px): 1536 (1536-0)
+* Fish-eye radius y (px): 1532 (1500+32)
 
 ### 5.2k video
 
@@ -93,15 +95,19 @@ Here's a description of the values reported:
 
 * Image resolution (w x h): 2704 x 2624
 * Fish-eye edges (l,t,r,b): 16,-36,2675,2643
-* Fish-eye center (x,y): 1303,1345
-* Fish-eye radius (px): 1287 (1303-16)
+* Fish-eye resolution (w x h): 2659 (2675-16) x 2679 (2643+36)
+* Fish-eye center (x,y): 1345, 1303
+* Fish-eye radius x (px): 1329 (1345-16)
+* Fish-eye radius y (px): 1339 (1303+36)
 
 **Back image ([GPBK7152-5_2k-vid_1.jpg](/assets/images/blog/2021-12-24/GPBK7152-5_2k-vid_1.jpg))** 
 
 * Image resolution (w x h): 2704 x 2624
 * Fish-eye edges (l,t,r,b): 0,-36,2675,2643
+* Fish-eye resolution (w x h): 2675 (2675-0) x 2679 (2643+36)
 * Fish-eye center (x,y): 1337,1303
-* Fish-eye radius (px): 1337 (1337-0)
+* Fish-eye radius x (px): 1337 (1337-0)
+* Fish-eye radius y (px): 1339 (1303+36)
 
 ### 3k video
 
@@ -109,18 +115,28 @@ Here's a description of the values reported:
 
 * Image resolution (w x h): 1568 x 1504
 * Fish-eye edges (l,t,r,b): 18,-27,1540,1512
+* Fish-eye resolution (w x h): 1522 (1540-18) x 1539 (1512+27)
 * Fish-eye center (x,y): 779,742
-* Fish-eye radius (px): 761 (779-18)
+* Fish-eye radius x (px): 761 (779-18)
+* Fish-eye radius y (px): 769 (742+27)
 
 **Back image ([GPBK0001-3k-vid_1.jpg](/assets/images/blog/2021-12-24/GPBK0001-3k-vid_1.jpg))** 
 
 * Image resolution (w x h): 1568 x 1504
 * Fish-eye edges (l,t,r,b): 18,-27,1540,1512
+* Fish-eye resolution (w x h): 1522 (1540-18) x 1539 (1512+27)
 * Fish-eye center (x,y): 779,742
-* Fish-eye radius (px): 761 (779-18)
+* Fish-eye radius x (px): 761 (779-18)
+* Fish-eye radius y (px): 769 (742+27)
+
+## A brief evaluation
+
+As you can see per the values reported, with each resolution the images produced are not square. Nor is the fisheye a perfect circular image. Nor is it always centered, or a complete fit in the image (sometimes there is a margin on either side, sometimes the fisheye has a blindspot at the top on the bottom cut off from the image)
 
 ## A note on aperture changes
 
 I suspect all of the values reported above might change with the aperture setting. For example, in low light, the aperture will be wider than compared to very sunny conditions, perhaps leading to a larger fish-eye image.
 
-I'll show you why these values and this aperture theory will be important to consider for stitching next week...
+## Update 2021-12-24
+
+[Stitching GoPro Fusion Images Without GoPro Fusion Studio (Part 3)](/blog/2021/gopro-fusion-fish-eye-stitching-part-2)

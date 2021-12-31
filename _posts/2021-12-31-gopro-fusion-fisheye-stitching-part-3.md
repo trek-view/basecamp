@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2021-12-31/fish2sphere220b.jpeg
 featured_image: /assets/images/blog/2021-12-31/fish2sphere220b-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Preparing to create an equirectangular projection from two GoPro Fusion fish-eye images.**
@@ -27,75 +27,11 @@ Angle of view (AOV) is often referred to as field of view (FOV).
 
 <img class="img-fluid" src="/assets/images/blog/2021-12-31/Field-of-View-diagram.jpg" alt="Angle of view and field of view" title="Angle of view and field of view" />
 
-According to [Unique Photo](https://www.uniquephoto.com/goprofusion):
+For the purpose of this post, AOV=FOV.
 
-> The GoPro Fusion features two cameras, both of them having 3mm focal length and aperture of f/2.8
+## Fish-eye field of view and stitching
 
-And [DPReview](https://www.dpreview.com/products/gopro/actioncams/gopro_fusion) gives us the sensor dimensions on the Fusion:
-
-> 6.17 x 4.55 mm (width x height)
-
-Angle of view can be calculated horizonatally (how far the lends can see left and right) and vertically (up and down). For a true 360 (without guessing missing pixels), the front and back lense need an angle of view of 180 degrees both horizontally and vertically.
-
-[According to Shutterview](https://shuttermuse.com/calculate-field-of-view-camera-lens/), AOV can be calculated using the equation:
-
-```
-Angle of view (in degrees) = 2 ArcTan( sensor width / (2 X focal length)) * (180/π)
-```
-
-Which gives us a calculation for Horizontal AOV of:
-
-```
-Horizontal AOV = 2*ArcTan(6.17/(2x3))*(180/π)
-Horizontal AOV = 2*ArcTan*58.9191599326
-Horizontal AOV = 2*89.027646
-Horizontal AOV = 178.055292 degrees
-```
-
-And Verical AOV of:
-
-```
-Vertical AOV = 2*ArcTan(4.55/(2x3))*(180/π)
-Vertical AOV = 2*ArcTan*43.4492994641
-Vertical AOV = 2*88.681551 
-Vertical AOV = 177.363102 degrees
-```
-
-
-https://vrphotography.com/data/pages/askexperts/pano/fovfisheye.html
-
-
-
-fov = 4 * arcsin (image size/(focal length * 4))
-
-
-
-
-
-
-
-0.0617 / 0.06 = 1.02833333333
-
-
-58.9191599324
-
-
-
-
-
-This is typically what man 
-
-
-
-
-Angle of view (in degrees) = 2 ArcTan( sensor width / (2 X focal length)) * (180/π)
-This is the formula that is most commonly cited for angle of view, and it agrees with the way in which lens specifications are presented by all the major camera manufacturers.
-
-
-
-## Fish-eye field of view
-
-The field of view is vital to consider during blending.
+The field of view is vital during stitching of the front and back images as it defines how much of the two images overlap
 
 ### 180 degree field of view
 
@@ -103,15 +39,15 @@ Here's the world mapped in a fish-eye with a 180 degree field of view.
 
 <img class="img-fluid" src="/assets/images/blog/2021-12-31/fish2sphere180.jpeg" alt="Fisheye 180 projection guides" title="Fisheye 180 projection guides" />
 
-It makes sense that it occupies half of a spherical (equirectangular) projection, which captures the entire visible universe from a single position, when corrctly distorted, below;
+It makes sense that it occupies half of a spherical (equirectangular) projection, which captures the entire visible universe from a single position, when correctly distorted, below;
 
 <img class="img-fluid" src="/assets/images/blog/2021-12-31/fish2sphere180b.jpeg" alt="Fisheye 180 equirectangular projection guides" title="Fisheye 180 equirectangular projection guides" />
 
-Note how the distortion of the horizonal is almost zero, whilst distortion along the vertical (y) axis increase as you move away from the centre. We've already covered projection types previpusly, [that could help with this](/blog/2021/projection-type-360-photography).
+Note how the distortion of the horizontal is almost zero, whilst distortion along the vertical (y) axis increase as you move away from the centre. We've already covered projection types previously, [that could help with this](/blog/2021/projection-type-360-photography).
 
 Looking at this transformation in a real photo.
 
-Source fisheye image;
+Source fish-eye image;
 
 <img class="img-fluid" src="/assets/images/blog/2021-12-31/spherical0.jpeg" alt="Source 180 fish-eye" title="Source 180 fish-eye" />
 
@@ -127,7 +63,7 @@ Image credit: [Paul Bourke](http://paulbourke.net/dome/fish2/)
 
 Many cameras use lenses with a field of view greater than 180 degrees. This results in areas of overlap when creating a single image from both photos (assuming both fish-eye lenses have the same field of view).
 
-Here's the world mapped in a fish-eye with a 180 degree field of view.
+Here's the world mapped in a fish-eye with a 220 degree field of view.
 
 <img class="img-fluid" src="/assets/images/blog/2021-12-31/fish2sphere220.jpeg" alt="Fisheye 220 projection guides" title="Fisheye 220 projection guides" />
 
@@ -135,44 +71,30 @@ You can see there are more squares along each axis. That's because the 220 degre
 
 <img class="img-fluid" src="/assets/images/blog/2021-12-31/fish2sphere220b.jpeg" alt="Fisheye 220 equirectangular projection guides" title="Fisheye 220 equirectangular projection guides" />
 
-When transformed to an equirectangular projection, you can see the squares of the fisheye go beyone a square. Again, because the 220 degree field of view captures more of the world. These are the areas of overlaps.
+When transformed to an equirectangular projection, you can see the squares of the fish-eye go beyond the square edges of the 180 degree example. Again, because the 220 degree field of view captures more of the world. These are the areas of overlaps.
 
-## Calculating GoPro Fusion's field of view
+## Stitching photos
 
+The front fish-eye is first mapped into equirectangular space, shown below. It fills more than half the equirectangular images becasue the field of view is 190 degrees, so a blend zone of 5 degrees either side.
 
-I realized that in the past I had used the two terms somewhat interchangeably, but I began to wonder if that w
+<img class="img-fluid" src="/assets/images/blog/2021-12-31/front-equirectangular-blend-annotated.png" alt="Fisheye front to equirectangular" title="Fisheye front to equirectangular" />
 
-Field-of-View-diagram.jpg
+The back image, once mapped into equirectangular space, is split into two; the left side goes left, the right side right. 
 
-Now it's time to figure out the exa
+<img class="img-fluid" src="/assets/images/blog/2021-12-31/back-equirectangular-blend-annotated.png" alt="Fisheye back to equirectangular" title="Fisheye back to equirectangular" />
 
-The field of view can
+Again, assuming the field of view for this lens is the same (190), there will be a blend zone of 5 degrees either side, where the images should overlap nicely with the 5 degrees either side of the front image.
 
-```
-fov = 4 * arcsin (image size/(focal length * 4))
-```
+Generally field of view angles of at least 190 degrees or more for each lens are required for a satisfactory blend zone.
 
+Note: the actual blending zone is larger at the top and the bottom of the image, as shown in he world mapped in a fish-eye with a 220 degree field of view above.
 
+A bit of blending will still be required to map the duplicate pixels in either space. This can be done in a number of ways.
 
-And from last weeks post, we know the image sizes produced by the Fusion.
+Remember GoPro mentioned their D.WARP algorithm in the first post of this series?
 
-* Photo: 3104 x 3000
-* 5.2k video: 2704 x 2624
-* 3k video: 1568 x 1504
+We used alpha blending in our [MAX2Sphere script](/blog/2021/reverse-engineering-gopro-360-file-format-part-3).
 
-We must normalise the measurements for this calculation. For this we know, 1 pixel = 0.2645833333. So this gives us:
+There are many more open-source blending algorithms available too.
 
-* Photo: 3104 x 3000 (4317)
-* 5.2k video: 2704 x 2624
-* 3k video: 1568 x 1504
-
-
-
-For the Fusion:
-
-* focal length = 3mm. This is i
-
-
-3mm
-
-, but based on my experiments it about 190 degrees
+Though more on blending in the final part of this series next week.
