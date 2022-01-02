@@ -1,9 +1,9 @@
 ---
 date: 2021-08-13
-title: "How to Create a 360 Video from a Timelapse of 360 Images"
+title: "How to Create a 360 Video from a Timelapse of 360 Images (using ffmpeg)"
 description: "A lesson, mostly, in wrangling metadata to ensure proper playback of 360 videos created from a series of photos."
 categories: developers
-tags: [ffmpeg, exiftool, xmp, exif, google, youtube, video, camm, gpmd, Map the Paths, Camera Motion Metadata]
+tags: [ffmpeg, exiftool, xmp, exif, google, youtube, video, camm, gpmd, Camera Motion Metadata]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-08-13/youtube-360-video-meta.jpg
 featured_image: /assets/images/blog/2021-08-13/youtube-360-video-sm.jpg
@@ -317,14 +317,12 @@ $ exiftool XMP-exif:GPSLongitude:'16 deg 32&#39; 44.90&quot; W' XMP-exif:GPSLati
 
 Looking at the way camera manufactures create videos, all of them include first GPS position in the video level metadata, as I've shown in the last command. This is useful for video players to preview the starting point of the video (etc.) or where an unknown telemetry standard is used.
 
-It's important to make the distinction that I'm only adding video level data, and not full telemetry to the video as this requires a lot more complexity. Full telemetry is written into the metadata in a standard structure (e.g [CAMM](https://developers.google.com/streetview/publish/camm-spec) or [GPMD](https://github.com/gopro/gpmf-parser)) in a very similar way to `XMP-GSpherical`.
+It's important to make the distinction that I'm only adding video level data, and not full telemetry to the video as this requires a lot more complexity.
+
+Full telemetry is written into the metadata in a standard structure (e.g [CAMM](https://developers.google.com/streetview/publish/camm-spec) or [GPMD](https://github.com/gopro/gpmf-parser)).
 
 **You might like:** [Turning a 360 Timelapse or Video into a GPX or KML track](/blog/2020/extracting-gps-track-from-360-timelapse-video/).
 
-## Coming soon to Map the Paths Uploader...
+## Update 2022-01-21
 
-<img class="img-fluid" src="/assets/images/blog/2021-08-13/mapthepaths-uploader-integrations-sm.jpg" alt="Map the Paths Uploader integrations" title="Map the Paths Uploader integrations" />
-
-I'm working on turning a sequence of images into videos automatically (with full metadata) using the [Map the Paths Uploader](https://www.mapthepaths.com/uploader) ([to better support Google Street View uploads](/blog/2021/preparing-360-video-upload-street-view-publish-api)).
-
-Stay tuned for the release announcement by signing up for Trek View updates below.
+[How to Create a 360 Video from a Timelapse of 360 Images (using Adobe Premiere Pro)](/blog/2022/turn-360-photos-into-360-video-adobe-premiere).

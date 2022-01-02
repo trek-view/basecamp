@@ -13,19 +13,17 @@ published: false
 
 **Taking what we've learned over the last 3 weeks and putting it all together to create a script to convert 2 GoPro Fusion fish-eye to one equirectangular image.**
 
-## Calculating field of view
+[I finished last weeks post after mapping fish-eye projections into the equirectangular space](/blog/2021/gopro-fusion-fisheye-stitching-part-2).
 
-There are a few ways FOV for a lens can be obtained.
+It was clear we need to understand the field of views for the lenses on the Fusion for this to work correctly.
 
-Generally, manufacturers normally publish their FOV values. The trick is knowing the circle radius at which the FOV applies.
-
-Sadly for us, I cannot find the exact brand of lenses used in the Fusion to do this.
+Generally, manufacturers normally publish their FOV values. Sadly for us, I cannot find the exact brand of lenses used in the Fusion to do this.
 
 The marketing material advertises a FOV of 360, but I am doubtful both lenses have a FOV equal to exactly 180. As noted in part one of this series, [GoPro themselves mentions the FOV of each lens is greater than 180](https://gopro.com/en/us/news/the-art-of-stitching-spherical-content):
 
-> each lens on Fusion captures >180 degrees in field of view
+Luckily for us, there are a few ways FOV for a lens can be obtained.
 
-So I turned back to my trigonometry to help. Various websites help with this.
+## Calculating field of view (mathematically)
 
 According to [Unique Photo](https://www.uniquephoto.com/goprofusion):
 
@@ -38,5 +36,7 @@ And [DPReview](https://www.dpreview.com/products/gopro/actioncams/gopro_fusion) 
 Angle of view can be calculated both horizontally (how far the lends can see left and right) and vertically (up and down). For a true 360 (without guessing missing pixels), the front and back lens need an angle of view of 180 degrees both horizontally and vertically.
 
 [Bob Atkins provides four calculations for working out a fish-eye lens FOV depending on the type of fish-eye projection used](http://www.bobatkins.com/photography/technical/field_of_view.html).
+
+I am almost positive the projection 
 
 For the purpose of this exercise, I'm going to use a bit of trial and error during stitching to work out field of view (with the assumption it's between 180 - 200 degrees)... because I'm struggling a bit with the maths (any pointers very welcome!).

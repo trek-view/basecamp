@@ -43,14 +43,8 @@ As they say, the proof is in the pudding.
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2020-02-28/swinley-forest.jpeg&amp;autoLoad=true"></iframe>
 
-[View on Map the Paths](https://www.mapthepaths.com/sequence/730209c0-2a98-4ad2-9d4f-2ba814078628/tour/9d36356e-3705-4870-ab5a-11c0a98dd1da?image_key=lp1se2XlAQhwZR9niWCbgg&view_mode=original&show_gpx=false).
-
 Here's a 360-degree photo shot on a trail ([Blue 16](https://www.trailforks.com/trails/blue-16/)) in Swinley Forest, Bracknell, UK.
-
-[View the full tour on Map the Paths](https://www.mapthepaths.com/tour/9d36356e-3705-4870-ab5a-11c0a98dd1da/detail).
 
 Pretty good, if I do say so myself.
 
 In summary, for long distance touring on open roads, [I'll use the v1 setup](/blog/2019/diy-street-view-bike-tours/). For anything off-road (non-tarmacked surface) I'll use the v2 setup described in this post.
-
-[Expect to see my 360-degree bike trails go up on Explorer soon](https://explorer.trekview.org). I look forward to seeing yours too.

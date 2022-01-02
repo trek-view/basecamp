@@ -2,7 +2,7 @@
 date: 2020-02-14
 title: "Projects We Love on Mapillary"
 description: "We recently discovered Mapillary (yes, we're late) and wanted to share some the great things we've discovered on the platform."
-categories: updates
+categories: treks
 tags: [Mapillary, Bike Ottawa, Norwegian Institute for Nature Research, Canada, Norway, The Red Cross]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-02-14/field-research-in-norway-mapillary-meta.jpg
@@ -53,16 +53,6 @@ We love the handle, Anders (_riverview_).
 
 And Trek View. Our lesson on rivers show children show how they change from source to mouth, and why so many towns and cities grew up around them (like Hampton Court, above). 
 
-[View the full tour on Map the Paths here](https://www.mapthepaths.com/tour/017fec4a-42f4-4339-b8a9-c1ca8c471509/detail).
-
 [**Don't forget to enrol in for to access our Treehouse content**](https://treehouse.trekview.org).
 
-We're in the process of uploading all our public to Mapillary, and you'll see links to it in [Explorer](https://explorer.trekview.org) (in addition to Google Street View and OpenTrailView).
-
-There is also a potential integration with Mapillary and [Tourer](https://github.com/trek-view/tourer) in the works to make uploading 360-degree photos to multiple street-level imagery platforms a breeze.
-
 Please do send me links to other Mapillary users who have uploaded trails, rivers, and other outdoor areas -- it's still winter here and I'd like to explore somewhere warm!
-
-_Update August 2020: [Explorer has been replaced with the Map the Paths](https://www.mapthepaths.com)._
-
-_Update October 2020: Tourer has been replaced with the Map the Paths Desktop Uploader. [More information and download links are here](/blog/2020/map-the-paths-desktop-uploader)._
