@@ -15,7 +15,7 @@ published: true
 
 [I finished last weeks post talking about field of view](/blog/2021/gopro-fusion-fisheye-stitching-part-3).
 
-It was clear we need to understand the field of view for the lenses on the Fusion for stitching to work correctly because the FOV will determine the blend zone.
+It was clear we needed to understand the field of view of the lenses on the Fusion in order for stitching to work correctly (because the FOV will determine the blend zone).
 
 ## Stitching photos
 
@@ -23,11 +23,11 @@ Once both fish-eye images are mapped into equirectangular space, as shown last w
 
 Knowing the view the field on the Fusion is 190 degrees, a blend zone of 5 degrees either side will exist (180 + 5 + 5).
 
-<img class="img-fluid" src="/assets/images/blog/2021-01-07/front-equirectangular-blend-annotated.png" alt="Fisheye front to equirectangular" title="Fisheye front to equirectangular" />
+<img class="img-fluid" src="/assets/images/blog/2022-01-07/front-equirectangular-blend-annotated.png" alt="Fisheye front to equirectangular" title="Fisheye front to equirectangular" />
 
 The back image, once mapped into equirectangular space, is split into two; the left side goes left, the right side right. 
 
-<img class="img-fluid" src="/assets/images/blog/2021-01-07/back-equirectangular-blend-annotated.png" alt="Fisheye back to equirectangular" title="Fisheye back to equirectangular" />
+<img class="img-fluid" src="/assets/images/blog/2022-01-07/back-equirectangular-blend-annotated.png" alt="Fisheye back to equirectangular" title="Fisheye back to equirectangular" />
 
 Again, assuming the field of view for this lens is the same (190), there will be a blend zone of 5 degrees either side, where the images should overlap nicely.
 
