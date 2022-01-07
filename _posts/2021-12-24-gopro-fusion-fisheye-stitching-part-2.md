@@ -23,7 +23,7 @@ We figured out that the Fusion produces dual fish-eye images. Lets start this we
 
 > Commonly there are two types of fisheye distinguished: circular fisheyes and fullframe fisheyes. However, both follow the same projection geometrics. The only difference is one of Field of View: for a circular fisheye the circular image fits (more or less) completely in the frame, leaving blank areas in the corner. For the full frame variety, the image is over-filled by the circular fisheye image, leaving no blank space on the film or detector. A circular fisheye can be made full frame if you use it with a smaller sensor/film size (and vice versa), or by zooming a fisheye adaptor on a zoom lens.
 
-The Fusion produces circular fish-eye images.
+The Fusion produces full fish-eye circular images.
 
 Fish-eye images can have different fields of view, dependent on the lens.
 

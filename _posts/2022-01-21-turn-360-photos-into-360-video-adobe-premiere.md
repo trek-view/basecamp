@@ -68,7 +68,15 @@ You can play around with the settings depending on how you intend to use the vid
 * Format: H.264
 * Preset: VR Monoscopic Match Source Stereo
 
+It's worth playing around with the bitrate on export to suit the quality you want. [Higher bitrates offer better quality, but result in larger files](/blog/2020/fps-bitrate-compression-360-virtual-tours).
+
+
+I just export using H265 and making sure the VR setting is enabled in the export screen. I max out bit rate and depth settings on the export screen.
+
 If the files imported contained correct spherical information in the metadata (GPano tags), then the "Video is VR" should be auto selected. This is vital to ensure the correct 360 metadata is included in the video.
+
+
+
 
 Clicking Export will start the creation of the .mp4 timelapse.
 

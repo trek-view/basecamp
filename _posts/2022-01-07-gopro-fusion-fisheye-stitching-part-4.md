@@ -3,40 +3,101 @@ date: 2022-01-07
 title: "Stitching GoPro Fusion Images Without GoPro Fusion Studio (Part 4)"
 description: "Taking what we've learned over the last 3 weeks and putting it all together to create a script to convert 2 GoPro Fusion fish-eye to one equirectangular image."
 categories: developers
-tags: [GoPro, Max, Fusion, stitching, Fusion Studio, fish-eye]
+tags: [GoPro, Max, Fusion, stitching, Fusion Studio, fish-eye, fusion2sphere, max2sphere]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-01-07/
-featured_image: /assets/images/blog/2022-01-07/
+image: /assets/images/blog/2022-01-07/front-equirectangular-blend-annotated-meta.jpg
+featured_image: /assets/images/blog/2022-01-07/front-equirectangular-blend-annotated-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Taking what we've learned over the last 3 weeks and putting it all together to create a script to convert 2 GoPro Fusion fish-eye to one equirectangular image.**
 
-[I finished last weeks post after mapping fish-eye projections into the equirectangular space](/blog/2021/gopro-fusion-fisheye-stitching-part-2).
+[I finished last weeks post talking about field of view](/blog/2021/gopro-fusion-fisheye-stitching-part-3).
 
-It was clear we need to understand the field of views for the lenses on the Fusion for this to work correctly.
+It was clear we need to understand the field of view for the lenses on the Fusion for stitching to work correctly because the FOV will determine the blend zone.
 
-Generally, manufacturers normally publish their FOV values. Sadly for us, I cannot find the exact brand of lenses used in the Fusion to do this.
+## Stitching photos
 
-The marketing material advertises a FOV of 360, but I am doubtful both lenses have a FOV equal to exactly 180. As noted in part one of this series, [GoPro themselves mentions the FOV of each lens is greater than 180](https://gopro.com/en/us/news/the-art-of-stitching-spherical-content):
+Once both fish-eye images are mapped into equirectangular space, as shown last week, stitching of both images can happen to create a single equirectangular image.
 
-Luckily for us, there are a few ways FOV for a lens can be obtained.
+Knowing the view the field on the Fusion is 190 degrees, a blend zone of 5 degrees either side will exist (180 + 5 + 5).
 
-## Calculating field of view (mathematically)
+<img class="img-fluid" src="/assets/images/blog/2021-12-31/front-equirectangular-blend-annotated.png" alt="Fisheye front to equirectangular" title="Fisheye front to equirectangular" />
 
-According to [Unique Photo](https://www.uniquephoto.com/goprofusion):
+The back image, once mapped into equirectangular space, is split into two; the left side goes left, the right side right. 
 
-> The GoPro Fusion features two cameras, both of them having 3mm focal length and aperture of f/2.8
+<img class="img-fluid" src="/assets/images/blog/2021-12-31/back-equirectangular-blend-annotated.png" alt="Fisheye back to equirectangular" title="Fisheye back to equirectangular" />
 
-And [DPReview](https://www.dpreview.com/products/gopro/actioncams/gopro_fusion) gives us the sensor dimensions on the Fusion:
+Again, assuming the field of view for this lens is the same (190), there will be a blend zone of 5 degrees either side, where the images should overlap nicely.
 
-> 6.17 x 4.55 mm (width x height)
+## Blending photos
 
-Angle of view can be calculated both horizontally (how far the lends can see left and right) and vertically (up and down). For a true 360 (without guessing missing pixels), the front and back lens need an angle of view of 180 degrees both horizontally and vertically.
+Generally field of view angles of at least 190 degrees or more for each lens are required for a satisfactory blend zone.
 
-[Bob Atkins provides four calculations for working out a fish-eye lens FOV depending on the type of fish-eye projection used](http://www.bobatkins.com/photography/technical/field_of_view.html).
+Note: the actual blending zone is larger at the top and the bottom of the image, as shown in he world mapped in a fish-eye with a 220 degree field of view in last weeks post -- but these areas are cut off when image is mapped into the equirectangular space.
 
-I am almost positive the projection 
+A bit of blending is required to map/smooth the duplicate pixels in either space. This can be done in a number of ways.
 
-For the purpose of this exercise, I'm going to use a bit of trial and error during stitching to work out field of view (with the assumption it's between 180 - 200 degrees)... because I'm struggling a bit with the maths (any pointers very welcome!).
+Remember GoPro mentioned their D.WARP algorithm in the first post of this series? This algorithm identifies duplicate pixels and normalises the colour between front and back images (due to lighting differences on either side of the camera).
+
+We used alpha blending in our [MAX2Sphere script](/blog/2021/reverse-engineering-gopro-360-file-format-part-3).
+
+There are many more open-source blending algorithms available too.
+
+## Putting it all together
+
+In summary of the last four weeks of content the process to convert dual GoPro Fusion fish-eye photos into a single equirectangular image is as follows;
+
+1. Take matching front and back fish-eye images on the Fusion
+2. Determine resolution of the images (what camera mode they were shot in)
+3. Convert both fish-eyes into the equirectangular space
+4. Map converted fish-eyes to single equirectangular image
+5. Blend any duplicate pixel areas to create a smooth 360 image
+
+The fusion2sphere script has been built to do exactly the steps described above.
+
+## fusion2sphere
+
+[fusion2sphere can be downloaded here](https://github.com/trek-view/fusion2sphere).
+
+You should read the documentation for a more detailed description, but at a high level...
+
+The script takes a `parameter.txt` file defining the field of view and other variables we've described during this series of posts. We've added the 3 variations you'll need in example `parameter.txt` files. [The one you select will depend on the Fusion camera mode you used](https://github.com/trek-view/fusion2sphere/tree/main/parameter-examples).
+
+The `-b` flag allows you to determine the blend zone (using longitude, in degrees). We know the blend zone on the Fusion is equal to 5 degrees either side (190 degree field of view) so this value should usually be set at 5, but depending on photo conditions (namely how noisy the scene is) you might want to experiment with the value used.
+
+You can also set the width of the resulting photo using the `-w` flag. Generally we recommend sticking to the defaults provided. The script has not been designed to upscale or downscale images from their default resolutions. I'd recommend using other software to do this. We recommended settings based on the GoPro Fusion Studio:
+
+* Photo mode (18mp) input = 5120 (5.2k)
+* Video mode (5.2k) input = 3840 (4k)
+* Video mode (3k) input = 3072 (3k)
+
+Beyond these settings, the only other essential thing you need to include in the argument is the path to the front and back images from the Fusion.
+
+Here's an example using imagery created when the Fusion was in timelapse photo mode
+
+```
+fusion2sphere -w 5120 -b 5 -f GPFR0001.JPG GPBK0004.JPG -o merge_000001.jpg parameter-examples/photo-mode.txt
+```
+
+### A note on video files
+
+Note, if you're using video files, you should first convert them to frames using ffmpeg.
+
+An example (at an extraction rate of 1 FPS).
+
+```
+ffmpeg -i GPFR0002.MP4 -r 1 -q:v 1 track0/front_img_%d.jpg 
+ffmpeg -i GPBK0002.MP4 -r 1 -q:v 1 track1/back_img_%d.jpg 
+```
+
+If desired, you can they wrap these frames back up into a equirectangular mp4 video after processing to equirectangular images, [as described in this post](/blog/2021/turn-360-photos-into-360-video).
+
+### Improvements
+
+The current script does not carry over any of the metadata retained in the original fish-eyes. [You will also need to write the 360 metadata into the outputted image files created](/blog/2020/metadata-exif-xmp-360-photo-file) to make sure it's rendered properly by 360 viewers (or before uploading to other services like Street View).
+
+Another feature missing is GoPro Fusion Studio is the horizon leveling feature. It does this by allowing you to adjust the [roll, pitch, and yaw](/blog/2020/yaw-pitch-roll-360-degree-photography)before processing. This is what other tools like PtGui (and others) do. It is something I'm considering adding in the future.
+
+It's likely this missing functionality will be included in Explorer... [more on that soon](https://landing.mailerlite.com/webforms/landing/p3p7h9).

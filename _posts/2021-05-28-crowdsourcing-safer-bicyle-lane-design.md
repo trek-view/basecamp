@@ -2,7 +2,7 @@
 date: 2021-05-28
 title: "Crowdsourcing safer bicycle lane design (an eight month update)"
 description: "Time to dust off the helmet cameras and take part in some cycling capture challenges."
-categories: guides
+categories: treks
 tags: [bike, data bike, DMAMPO, Minnesota, Sustrans, Bristol, Des Moines]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-05-28/map-the-paths-devonshire-tunnel-meta.jpg
@@ -22,35 +22,27 @@ If you've been following our blog over the years you will have seen a few post w
 * [Trek View Trail Quality Index (2021)](/blog/2021/trek-view-ride-quality-index)
 * [Trek View Trail Quality Index: An Alternative Method Using Computer Vision (2021)](/blog/2021/trek-view-ride-quality-index-computer-vision-part-1)
 
-We've seen a ton imagery captured on bikes uploaded to [Map the Paths](https://www.mapthepaths.com/sequence/list?page=1&username=&name=&transport_type=Bicycle&tag=&start_time=&end_time=).
+We've now seen a ton imagery captured on bikes...
 
-From Amsterdam (NL):
+## From Amsterdam (NL):
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-05-28/amsterdam.jpeg&amp;autoLoad=true"></iframe>
 
-_Credit: [me](https://www.mapthepaths.com/user/himynamesdave/profile/)._
+_Credit: David Greenwood_
 
-[View on Map the Paths](https://www.mapthepaths.com/sequence/416a6042-d285-4f8a-bbbb-c7871c7dcb09/detail?image_key=nH4ssHXDUeKQrCGmNm2K2p&view_mode=original&show_gpx=false).
-
-[Join the Amsterdam bike challenge by capturing your own photos](https://www.mapthepaths.com/challenge/capture/6804d9dd-80a7-406c-8f83-27dc01fb377f/).
-
-To Bristol (UK):
+## To Bristol (UK):
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-05-28/bristol.jpeg&amp;autoLoad=true"></iframe>
 
-_Credit: [Jim Gayes](https://www.mapthepaths.com/user/JG360/profile/) for [Sustrans](https://www.sustrans.org.uk/)._
+_Credit: Jim Gayes for [Sustrans](https://www.sustrans.org.uk/)._
 
-[View on Map the Paths](https://www.mapthepaths.com/sequence/0d2bcfcf-2c71-4248-b94b-3719c98e0d39/detail?image_key=nmogkwoRpD8Oq9q93AqOLW&view_mode=original&show_gpx=false).
-
-[Join the Bristol bike challenge by capturing your own photos](https://www.mapthepaths.com/challenge/capture/a5b36a49-319d-4111-b72c-45ddf7f575d2/).
-
-To Des Moines (USA)
+## To Des Moines (USA)
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-05-28/iowa.jpeg&amp;autoLoad=true"></iframe>
 
-_Credit: [DMAMPO](https://www.mapthepaths.com/user/iowadatabike/profile/)._
+_Credit: DMAMPO_
 
-[View on Map the Paths](https://www.mapthepaths.com/sequence/416a6042-d285-4f8a-bbbb-c7871c7dcb09/detail?image_key=nH4ssHXDUeKQrCGmNm2K2p&view_mode=original&show_gpx=false).
+## To You?
 
 We have been very inspired by how the [Slow Ways](https://beta.slowways.org/) team has managed to mobilise an entire country to map walking trails in the UK.
 
@@ -58,9 +50,11 @@ In a similar vein, our aim is to get the millions of cyclists around the world c
 
 The beauty of it being, you don't need too much kit to get started, nor do you need to be particularly technical.
 
-1. [Grab a 360 camera](https://guides.trekview.org/trek-pack/v2/the-kit#bike-pack).
-2. [Set up a challenge](https://www.mapthepaths.com/challenge/capture/create) ([or take part in an existing one](https://www.mapthepaths.com/challenge/capture/list/)).
-3. [Upload your videos / imagery](https://www.mapthepaths.com/uploader).
+1. Grab a 360 camera
+2. Capture your imagery
+3. Upload your videos / photos
+
+[We've created some guides for those just starting out](https://guides.trekview.org/trek-pack/v2/the-kit#bike-pack).
 
 Using what we learn analysing the images from locations around the world, our aim is to provide local governments with the data to make the best investment decisions for new bicycle infrastructure to eliminate all avoidable cyclist deaths.
 

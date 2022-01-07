@@ -31,7 +31,7 @@ For the purpose of this post (due to the sources cited) I'll use FOV, but what I
 
 ## Fish-eye field of view and stitching
 
-The field of view is vital during stitching of the front and back images as it defines how much of the two images overlap.
+The field of view is vital during stitching of the front and back images as it defines how much of the two images will overlap (duplicate pixels).
 
 ### 180 degree field of view
 
@@ -73,30 +73,30 @@ You can see there are more squares along each axis. That's because the 220 degre
 
 When transformed to an equirectangular projection, you can see the squares of the fish-eye go beyond the square edges of the 180 degree example. Again, this is because the 220 degree field of view captures more of the world. These are the areas of overlaps.
 
-## Stitching photos
+## Calculating field of view (mathematically)
 
-The front fish-eye is first mapped into equirectangular space, as shown previously.
+Generally, manufacturers normally publish their FOV values. Sadly for us, I cannot find the exact brand of lenses used in the Fusion to do this.
 
-If view the field is 190 degrees, a blend zone of 5 degrees either side will exist.
+Field of view can be calculated both horizontally (how far the lens can capture left and right) and vertically (up and down). In the case of full fish-eye circular images (what the Fusion produces), the FOV is linear.
 
-<img class="img-fluid" src="/assets/images/blog/2021-12-31/front-equirectangular-blend-annotated.png" alt="Fisheye front to equirectangular" title="Fisheye front to equirectangular" />
+For a true 360 (without guessing missing pixels), the front and back lens need an angle of view of 180 degrees both horizontally and vertically.
 
-The back image, once mapped into equirectangular space, is split into two; the left side goes left, the right side right. 
+The marketing material advertises a FOV of 360, but I am doubtful both lenses have a FOV equal to exactly 180. As noted in part one of this series, [GoPro themselves mentions the FOV of each lens is greater than 180](https://gopro.com/en/us/news/the-art-of-stitching-spherical-content):
 
-<img class="img-fluid" src="/assets/images/blog/2021-12-31/back-equirectangular-blend-annotated.png" alt="Fisheye back to equirectangular" title="Fisheye back to equirectangular" />
+Luckily for us, there are a few ways FOV for a lens can be calculated.
 
-Again, assuming the field of view for this lens is the same (190), there will be a blend zone of 5 degrees either side, where the images should overlap nicely with the 5 degrees either side of the front image.
+According to [Unique Photo](https://www.uniquephoto.com/goprofusion):
 
-Generally field of view angles of at least 190 degrees or more for each lens are required for a satisfactory blend zone.
+> The GoPro Fusion features two cameras, both of them having 3mm focal length and aperture of f/2.8
 
-Note: the actual blending zone is larger at the top and the bottom of the image, as shown in he world mapped in a fish-eye with a 220 degree field of view above.
+And [DPReview](https://www.dpreview.com/products/gopro/actioncams/gopro_fusion) gives us the sensor dimensions on the Fusion:
 
-A bit of blending will still be required to map/smooth the duplicate pixels in either space. This can be done in a number of ways.
+> 6.17 x 4.55 mm (width x height)
 
-Remember GoPro mentioned their D.WARP algorithm in the first post of this series?
+Using these values, [Bob Atkins provides four calculations for working out a fish-eye lens FOV depending on the type of fish-eye projection used](http://www.bobatkins.com/photography/technical/field_of_view.html).
 
-We used alpha blending in our [MAX2Sphere script](/blog/2021/reverse-engineering-gopro-360-file-format-part-3).
+More on that next week...
 
-There are many more open-source blending algorithms available too.
+# Update 2021-01-07
 
-Though more on blending in the final part of this series next week.
+[Stitching GoPro Fusion Images Without GoPro Fusion Studio (Part 4)](/blog/2022/gopro-fusion-fisheye-stitching-part-4)

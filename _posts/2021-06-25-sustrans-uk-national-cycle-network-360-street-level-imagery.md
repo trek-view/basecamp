@@ -2,8 +2,8 @@
 date: 2021-06-25
 title: "Collecting street-level imagery of the UK's National Cycle Network"
 description: "The network covers over 20,000km of the UK. With your help, we want to capture street-level images for every single one of those kilometers."
-categories: guides
-tags: [Sustrans, bike, data bike, Map the Paths, Drakes Trail, National Cycle Network, New Forest]
+categories: treks
+tags: [Sustrans, bike, data bike, Drakes Trail, National Cycle Network, New Forest]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-06-25/national-cycle-network-uk-map-meta.jpg
 featured_image: /assets/images/blog/2021-06-25/national-cycle-network-uk-map-sm.jpg
@@ -34,15 +34,13 @@ When you're on route, you can see the signposts indicating the number, direction
 * £1.64 billion was spent in local businesses by leisure and tourist users
 * £21.5 million was saved by the NHS through the Network's impact on people's health
 
-With May and June gave us some brilliant weather here in the UK, me and my friends decided to make the best of it by taking to our bikes to explore some of the cycle network, and take part in some [Map the Paths challenges](https://www.mapthepaths.com/challenge/capture/list/) along the way.
+With May and June gave us some brilliant weather here in the UK, me and my friends decided to make the best of it by taking to our bikes to explore some of the cycle network.
 
 Here are some of the captures...
 
 ## Bristol and Bath Railway Path (Path numbers: 4)
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-06-25/bristol-bath-railway-path.jpeg&amp;autoLoad=true"></iframe>
-
-[View on Map the Paths](https://www.mapthepaths.com/).
 
 The Bristol and Bath Railway Path is a 21 kilometer route on the National Cycle Network, connecting Bristol to Bath.
 
@@ -56,8 +54,6 @@ More info: [Sustrans website](https://www.sustrans.org.uk/find-a-route-on-the-na
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-06-25/drakes-trail-gem-bridge.jpeg&amp;autoLoad=true"></iframe>
 
-[View on Map the Paths](https://www.mapthepaths.com/).
-
 Drake’s Trail is a 22-mile walking and cycling route, starting in the maritime city of Plymouth and ending in Tavistock, on the wild western edges of Dartmoor.
 
 More info: [Sustrans website](https://www.sustrans.org.uk/find-a-route-on-the-national-cycle-network/drakes-trail)
@@ -66,15 +62,11 @@ More info: [Sustrans website](https://www.sustrans.org.uk/find-a-route-on-the-na
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-06-25/new-forest-ride.jpeg&amp;autoLoad=true"></iframe>
 
-[View on Map the Paths](https://www.mapthepaths.com/).
-
 This ride follows a section of the railway line between Brockenhurst and Wimborne which was known as Castleman’s Corkscrew.
 
 More info: [Sustrans website](https://www.sustrans.org.uk/find-a-route-on-the-national-cycle-network/new-forest-ride)
 
 ## Your ride here?
-
-[Take part in a Map the Paths capture challenge by uploading your imagery of the UK's cycle network (or your own local rides)](https://www.mapthepaths.com/challenge/capture/list/).
 
 Not sure how to get started? [This post will explain everything](/blog/2021/trek-pack-v2-quick-start-virtual-photography).
 

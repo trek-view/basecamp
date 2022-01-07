@@ -58,7 +58,7 @@ Like the images, metadata will need to be written into the video to ensure video
 
 ## Future improvements
 
-One feature missing is GoPro Studio's horizon leveling feature. It does this by automatically by analysing the frame and working out the horizon and then adjusting the [roll, pitch, and yaw](/blog/2020/yaw-pitch-roll-360-degree-photography). This is what things like PtGui (and others) do too. It is something I'm considering adding in the future.
+One feature missing is GoPro Studio's horizon leveling feature. It does this by automatically by analysing the frame and working out the horizon and then adjusting the [roll, pitch, and yaw](/blog/2020/yaw-pitch-roll-360-degree-photography). This is what other tools like PtGui (and others) do too. It is something I'm considering adding in the future.
 
 For now though, these two options will turn your images or videos with GoPro EAC projections into equirectangular ones...
 

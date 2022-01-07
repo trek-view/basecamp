@@ -75,7 +75,7 @@ I setup the app to record data at 100Hz (100 measurements every second), which i
 
 ## Interpreting the data
 
-Below are the aggregated results for a 20 second stretch of the gravel path. [You can view the imagery on Map the Paths here](https://www.mapthepaths.com/sequence/97e30969-119c-4350-807d-f8469328de75/detail?image_key=4UFwdlSC9MynUdUQ8xXhnA&view_mode=original&show_gpx=false) (_note, I did not have a camera during this ride and the linked imagery is from a seperate capture on foot_).
+Below are the aggregated results for a 20 second stretch of the gravel path.
 
 <table>
 <thead><tr><th>time</th>
