@@ -21,7 +21,7 @@ It was clear we needed to understand the field of view of the lenses on the Fusi
 
 Once both fish-eye images are mapped into equirectangular space, as shown last week, stitching of both images can happen to create a single equirectangular image.
 
-Knowing the view the field on the Fusion is 190 degrees, a blend zone of 5 degrees either side will exist (180 + 5 + 5).
+The FOV on the Fusion is about 190 degrees, so a blend zone of 5 degrees on the left and right side of the front image exists (180 + 5 + 5).
 
 <img class="img-fluid" src="/assets/images/blog/2022-01-07/front-equirectangular-blend-annotated.png" alt="Fisheye front to equirectangular" title="Fisheye front to equirectangular" />
 
@@ -29,17 +29,17 @@ The back image, once mapped into equirectangular space, is split into two; the l
 
 <img class="img-fluid" src="/assets/images/blog/2022-01-07/back-equirectangular-blend-annotated.png" alt="Fisheye back to equirectangular" title="Fisheye back to equirectangular" />
 
-Again, assuming the field of view for this lens is the same (190), there will be a blend zone of 5 degrees either side, where the images should overlap nicely.
+The FOV for the back lens is the same (190), so there will be a blend zone of 5 degrees either side, where the images should overlap nicely.
 
 ## Blending photos
 
-Generally field of view angles of at least 190 degrees or more for each lens are required for a satisfactory blend zone.
+Generally FOV angles of at least 190 degrees or more are required for a satisfactory blend zone.
 
-Note: the actual blending zone is larger at the top and the bottom of the image, as shown in he world mapped in a fish-eye with a 220 degree field of view in last weeks post -- but these areas are cut off when image is mapped into the equirectangular space.
+Note: the actual blending zone is larger at the top and the bottom of the image, as shown in the world mapped in a fish-eye with a 220 degree FOV in last weeks post -- but these areas are cut off when image is mapped into equirectangular space.
 
-A bit of blending is required to map/smooth the duplicate pixels in either space. This can be done in a number of ways.
+A bit of blending is required to map/smooth the duplicate pixels in the blend zones. This can be done in a number of ways.
 
-Remember GoPro mentioned their D.WARP algorithm in the first post of this series? This algorithm identifies duplicate pixels and normalises the colour between front and back images (due to lighting differences on either side of the camera).
+Remember GoPro mentioned their D.WARP algorithm in the first post of this series? This algorithm identifies duplicate pixels and normalises the colour between the front and back images (due to lighting differences on either side of the camera).
 
 We used alpha blending in our [MAX2Sphere script](/blog/2021/reverse-engineering-gopro-360-file-format-part-3).
 
@@ -47,7 +47,7 @@ There are many more open-source blending algorithms available too.
 
 ## Putting it all together
 
-In summary of the last four weeks of content the process to convert dual GoPro Fusion fish-eye photos into a single equirectangular image is as follows;
+In summarising the last four weeks of content, the process to convert dual GoPro Fusion fish-eye photos into a single equirectangular image is as follows;
 
 1. Take matching front and back fish-eye images on the Fusion
 2. Determine resolution of the images (what camera mode they were shot in)
@@ -73,17 +73,17 @@ You can also set the width of the resulting photo using the `-w` flag. Generally
 * Video mode (5.2k) input = 3840 (4k)
 * Video mode (3k) input = 3072 (3k)
 
-Beyond these settings, the only other essential thing you need to include in the argument is the path to the front and back images from the Fusion.
+Beyond these settings, the only other thing you need to include in the argument is the path to the front and back images from the Fusion.
 
-Here's an example using imagery created when the Fusion was in timelapse photo mode
+Here's an example using imagery created when the Fusion was in timelapse photo mode:
 
 ```
-fusion2sphere -w 5120 -b 5 -f GPFR0001.JPG GPBK0004.JPG -o merge_000001.jpg parameter-examples/photo-mode.txt
+fusion2sphere -w 5120 -b 5 -f GPFR0001.JPG GPBK0004.JPG -o GP0001.jpg parameter-examples/photo-mode.txt
 ```
 
 ### A note on video files
 
-Note, if you're using video files, you should first convert them to frames using ffmpeg.
+If you're using video files, you should first convert them to frames using ffmpeg.
 
 An example (at an extraction rate of 1 FPS).
 
@@ -92,12 +92,12 @@ ffmpeg -i GPFR0002.MP4 -r 1 -q:v 1 track0/front_img_%d.jpg
 ffmpeg -i GPBK0002.MP4 -r 1 -q:v 1 track1/back_img_%d.jpg 
 ```
 
-If desired, you can they wrap these frames back up into a equirectangular mp4 video after processing to equirectangular images, [as described in this post](/blog/2021/turn-360-photos-into-360-video).
+If desired, you can then recreate an equirectangular mp4 video from the frames after processing to equirectangular images, [as described in this post](/blog/2021/turn-360-photos-into-360-video).
 
 ### Improvements
 
-The current script does not carry over any of the metadata retained in the original fish-eyes. [You will also need to write the 360 metadata into the outputted image files created](/blog/2020/metadata-exif-xmp-360-photo-file) to make sure it's rendered properly by 360 viewers (or before uploading to other services like Street View).
+The current script does not carry over any of the metadata retained in the original fish-eyes. [You will therefore need to write the 360 metadata into the outputted image files created](/blog/2020/metadata-exif-xmp-360-photo-file) to make sure they are rendered properly by 360 viewers (or accepted as 360's by products like Street View).
 
-Another feature missing is GoPro Fusion Studio is the horizon leveling feature. It does this by allowing you to adjust the [roll, pitch, and yaw](/blog/2020/yaw-pitch-roll-360-degree-photography)before processing. This is what other tools like PtGui (and others) do. It is something I'm considering adding in the future.
+Another feature missing that is present in GoPro Fusion Studio is the horizon leveling feature. GoPro Fusion Studio does this by allowing you to adjust the [roll, pitch, and yaw](/blog/2020/yaw-pitch-roll-360-degree-photography) before processing. Other tools like PtGui (and others) do this too. It is something I'm considering adding in the future.
 
-It's likely this missing functionality will be included in Explorer... [more on that soon](https://landing.mailerlite.com/webforms/landing/p3p7h9).
+It's likely this missing functionality will be included in Explorer, [but more on that soon](https://landing.mailerlite.com/webforms/landing/p3p7h9)...
