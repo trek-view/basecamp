@@ -21,7 +21,7 @@ Let's say you wanted to cut the first 20 seconds of video from your capture whil
 
 The problem; many software programs will completely strip the GPS telemetry from the video if you do this, others will remove other important metadata from the video, [such as [XMP] ProjectionType](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd) (used by software to recognise the video as either 360 or 2D).
 
-I'm yet to find the perfect 360 video editing tool for mapping. [This is one of the reasons we don't recommend capturing virtual tours in video mode using the Trek Pack](https://guides.trekview.org/mtp-web/user-guide/sequences/capture#camera-capture-mode-settings).
+I'm yet to find the perfect 360 video editing tool for mapping. [This is one of the reasons we don't recommend capturing virtual tours in video mode using the Trek Pack](https://guides.trekview.org/trek-pack/v2).
 
 That said, sometimes you might have captured a brilliant video of a trail -- perhaps skiing a piste or a downhill MTB trail -- where your intention was not to use the images for mapping, but to share with friends on YouTube, however, now realise that video would be great to use on Mapillary or Google Street View.
 
@@ -83,14 +83,6 @@ Looking at the metadata of the video, the reported image size is 3840x1920 or 7.
 ffmpeg strips frames of metadata when converting from a video file. The metadata includes things like timestamps and GPS, both are crucial pieces of information when mapping.
 
 I'll show how to re-embed metadata next week...
-
-## Map the Paths Uploader
-
-<img class="img-fluid" src="/assets/images/blog/2021-02-19/mtpu-screenshot.jpg" alt="Map the Paths Uploader" title="Map the Paths Uploader" />
-
-You can use the Map the Paths Uploader to easily split videos into meta/geotagged images (without having to upload them).
-
-[Download the Map the Paths Uploader for free here](https://www.mapthepaths.com/uploader).
 
 ## Update 2021-02-26
 

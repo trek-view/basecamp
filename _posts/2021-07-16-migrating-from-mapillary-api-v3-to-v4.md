@@ -17,7 +17,7 @@ published: true
 
 [Part of this includes a brand new version of their API](https://blog.mapillary.com/update/2021/06/23/getting-started-with-the-new-mapillary-api-v4.html).
 
-Our apps, [Map the Paths Web](https://www.mapthepaths.com/) and [Map the Paths Uploader](https://www.mapthepaths.com/uploader), rely heavily on various Mapillary API endpoints.
+Our apps, rely heavily on various Mapillary API endpoints.
 
 As some of the new API documentation is yet to be published by Mapillary and the shutdown of v3 on August 18, 2021 is rapidly approaching ([evolving Mapillary API v4 documentation here](https://www.mapillary.com/developer/api-documentation)), I wanted to use this weeks post to document our migration path from v3 to v4, should it prove useful to anyone else.
 
@@ -39,9 +39,9 @@ The endpoint for the Oauth 2.0 token exchange remains identical between v3 and v
 * [Documentation](https://mapillary.github.io/mapillary-js/docs/main/guide)
 * [Mapillary blog post](https://blog.mapillary.com/update/2021/06/24/mapillaryjs-v4.html)
 
-We use Mapillary JS for the core navigation between images within Map the Paths Webs.
+We use Mapillary JS for the core navigation between images within Map the Paths Web.
 
-Mapillary JS is also used to create shapes for manually tagging images for [Map the Paths Challenges](https://www.mapthepaths.com/challenge).
+Mapillary JS is also used to create shapes for manually tagging images for Map the Paths Challenges.
 
 The jump for v3 to v4 brings in a lot of new features round 3D content... something we're very interested in exploring in the future... but the core components for our current usage remain largely unchanged.
 
@@ -159,14 +159,3 @@ _Similarly, you can make the same request with a map feature ID rather than an i
 This post only covers our use-cases for Map the Paths, and not everything possible using the Mapillary v4 API.
 
 Keep an eye on the Mapillary official documentation. [The team at Mapillary are making regular changes and updates to it](https://www.mapillary.com/developer/api-documentation).
-
-## Coming soon to Map the Paths
-
-We're getting ready to ship the changes to bump our code from using the Mapillary v3 API to using v4.
-
-You won't notice any differences in the applications user interfaces (except for improved speed), but if you'd like to take a look at the code and how our implementation works you can check out the open-source Github repositories for each of them:
-
-* [Map the Paths Web](https://github.com/trek-view/mtp-web)
-* [Map the Paths Uploader](https://github.com/trek-view/mtp-desktop-uploader)
-
-Stay tuned for the release announcement by signing up for Trek View updates below.

@@ -1,5 +1,5 @@
 ---
-date: 2021-01-14
+date: 2021-02-11
 title: "Building a library of GoPro 360 camera test cases"
 description: "A detailed list of all available GoPro MAX and Fusion modes."
 categories: guides
