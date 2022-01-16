@@ -67,9 +67,9 @@ Image Height                    : 2028
 
 ## Step 2: Resize the logo
 
-Let's assume we want to make the watermark 10% of the image height. In which case, we calculate 10% of the image height to be 270.4 (2704 * 0.1).
+Let's assume we want to make the watermark 10% of the image width. In which case, we calculate 10% of the image width to be 270.4 (2704 * 0.1).
 
-Now we need to scale the logo file to measure 270 in height (and 270 width, because our logo is square).
+Now we need to scale the logo file to measure 270 in width (and 270 height, because our logo is square).
 
 Using Imagemagick:
 
