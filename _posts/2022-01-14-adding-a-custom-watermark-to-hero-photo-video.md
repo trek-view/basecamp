@@ -38,7 +38,7 @@ Below is the photo I will use (taken in Fuerteventura in 2020 using the [Trek Pa
 
 <img class="img-fluid" src="/assets/images/blog/2022-01-14/GPAA1088.JPG" alt="Fuerteventura HERO timelapse" title="Fuerteventura HERO timelapse" />
 
-<img class="img-fluid" src="/assets/images/blog/2022-01-14s/trek-view-square-nadir.png" alt="Trek View Nadir" title="Trek View Nadir" />
+<img class="img-fluid" src="/assets/images/blog/2022-01-14/trek-view-square-nadir.png" alt="Trek View Nadir" title="Trek View Nadir" />
 
 ## Step 0: Install Imagemagick
 
