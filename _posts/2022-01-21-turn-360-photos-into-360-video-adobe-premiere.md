@@ -1,12 +1,12 @@
 ---
-date: 2021-01-21
+date: 2022-01-21
 title: "How to Create a 360 Video from a Timelapse of 360 Images (using Adobe Premiere Pro)"
 description: "A less technical way to create timelapse videos with spherical metadata. No command line in sight (but you will need a Premiere subscription)."
 categories: guides
 tags: [GoPro, MAX, Adobe, timelapse]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-01-21/adobe-premier-video.png
-featured_image: /assets/images/blog/2021-01-21/adobe-premier-video-sm.png
+image: /assets/images/blog/2022-01-21/adobe-premier-video.png
+featured_image: /assets/images/blog/2022-01-21/adobe-premier-video-sm.png
 layout: post
 published: true
 ---
@@ -29,7 +29,7 @@ In the File Browser, navigate to the folder with your image sequence.
 
 Click on the first image file. Do not select all files. You only want to click on the first image in the sequence.
 
-<img class="img-fluid" src="/assets/images/blog/2021-01-21/adobe-premiere-import-files.png" alt="Import 360 photos" title="Import 360 photos" />
+<img class="img-fluid" src="/assets/images/blog/2022-01-21/adobe-premiere-import-files.png" alt="Import 360 photos" title="Import 360 photos" />
 
 In the import browser under your files, click on the checkbox for "image sequence". On a Mac, you will need to click "Options" to make this checkbox visible.
 
@@ -37,7 +37,7 @@ Open the file.
 
 Your image sequence has now been imported as a single video file.
 
-<img class="img-fluid" src="/assets/images/blog/2021-01-21/adobe-premier-video.png" alt="Imported timelapse video" title="Imported timelapse video" />
+<img class="img-fluid" src="/assets/images/blog/2022-01-21/adobe-premier-video.png" alt="Imported timelapse video" title="Imported timelapse video" />
 
 You can now drag this file from the project files onto the sequence timeline.
 
@@ -53,7 +53,7 @@ At a frame rate of 24 FPS (which is fairly standard in film-making) my video wil
 
 Increasing the frame rate speeds things up, lowering the framerate slows things down.
 
-<img class="img-fluid" src="/assets/images/blog/2021-01-21/adobe-premiere-change-framerate.png" alt="Change framerate" title="Change framerate" />
+<img class="img-fluid" src="/assets/images/blog/2022-01-21/adobe-premiere-change-framerate.png" alt="Change framerate" title="Change framerate" />
 
 To change the framerate, click the video file on the timeline, then select Sequence > Sequence Settings. The popup has a setting allowing you to modify the framerate.
 
@@ -63,7 +63,7 @@ Select File > Export > Media
 
 You can play around with the settings depending on how you intend to use the video. The settings described below are simple, and the ones I use to share content to video sharing platforms.
 
-<img class="img-fluid" src="/assets/images/blog/2021-01-21/adobe-premiere-export-vr-timelapse.png" alt="Export settings" title="Export settings" />
+<img class="img-fluid" src="/assets/images/blog/2022-01-21/adobe-premiere-export-vr-timelapse.png" alt="Export settings" title="Export settings" />
 
 * Format: H.264
 * Preset: VR Monoscopic Match Source Stereo
