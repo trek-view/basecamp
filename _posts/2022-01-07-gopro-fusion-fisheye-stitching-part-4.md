@@ -41,7 +41,7 @@ A bit of blending is required to map/smooth the duplicate pixels in the blend zo
 
 Remember GoPro mentioned their D.WARP algorithm in the first post of this series? This algorithm identifies duplicate pixels and normalises the colour between the front and back images (due to lighting differences on either side of the camera).
 
-We used alpha blending in our [MAX2Sphere script](/blog/2021/reverse-engineering-gopro-360-file-format-part-3).
+We used alpha blending in our [MAX2Sphere Batch script](/blog/2021/reverse-engineering-gopro-360-file-format-part-3).
 
 There are many more open-source blending algorithms available too.
 

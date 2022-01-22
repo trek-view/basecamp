@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2021-01-21/adobe-premier-video.png
 featured_image: /assets/images/blog/2021-01-21/adobe-premier-video-sm.png
 layout: post
-published: false
+published: true
 ---
 
 **A less technical way to create timelapse videos with spherical metadata. No command line in sight (but you will need a Premiere subscription).**
