@@ -1,6 +1,6 @@
 ---
 date: 2022-01-21
-title: "How to Create a 360 Video from a Timelapse of 360 Images (using Adobe Premiere Pro)"
+title: "How to Create a 360 Video Timelapse from a Sequence of 360 Images (using Adobe Premiere Pro)"
 description: "A less technical way to create timelapse videos with spherical metadata. No command line in sight (but you will need a Premiere subscription)."
 categories: guides
 tags: [GoPro, MAX, Adobe, timelapse]
@@ -11,29 +11,27 @@ layout: post
 published: true
 ---
 
-**A less technical way to create timelapse videos with spherical metadata. No command line in sight (but you will need a Premiere subscription).**
+**A less technical way to create timelapse videos with spherical metadata. No command line in sight (but you will need an Adobe Premiere subscription).**
 
 [Last summer I wrote about how you can use ffmpeg and Google's Spatial Media Metadata Injector to take a series of timelapse photos to create a single timelapse movie](/blog/2021/turn-360-photos-into-360-video) -- perfect for sharing on YouTube.
 
 Though many of you emailed in asking if there was an easier way, without having to jump into an unfamiliar command line.
 
-As you have probably already guessed from the title of this post the answer is yes. Here's how...
+As you have probably already guessed from the title of this post, the answer is yes. Here's how...
 
-(If you want to follow along with the files I user, get them here.)
-
-## Import images
+## Import images to Premiere
 
 Open Premiere Pro and go to File > Import.
 
 In the File Browser, navigate to the folder with your image sequence.
 
-Click on the first image file. Do not select all files. You only want to click on the first image in the sequence.
-
 <img class="img-fluid" src="/assets/images/blog/2022-01-21/adobe-premiere-import-files.png" alt="Import 360 photos" title="Import 360 photos" />
 
-In the import browser under your files, click on the checkbox for "image sequence". On a Mac, you will need to click "Options" to make this checkbox visible.
+Click on the first image file. Do not select all files. You only want to click on the first image in the sequence.
 
-Open the file.
+Now check on the checkbox for "image sequence". On a Mac, you will need to click "Options" to make this checkbox visible.
+
+Import the file.
 
 Your image sequence has now been imported as a single video file.
 
@@ -49,7 +47,7 @@ This will depend on many factors; time between source images, speed you want the
 
 My photos were shot at 1 frame every 2 seconds. There are 72 in total.
 
-At a frame rate of 24 FPS (which is fairly standard in film-making) my video will be 48 time faster than it was shot (original rate was 24 frames every 48 seconds), and be 3 minutes long (72/24).
+At a frame rate of 24 FPS (which is fairly standard in film-making) my video will be 48 time faster than it was shot (original rate was 24 frames every 48 seconds), and be 3 seconds long (72/24).
 
 Increasing the frame rate speeds things up, lowering the framerate slows things down.
 
@@ -70,13 +68,7 @@ You can play around with the settings depending on how you intend to use the vid
 
 It's worth playing around with the bitrate on export to suit the quality you want. [Higher bitrates offer better quality, but result in larger files](/blog/2020/fps-bitrate-compression-360-virtual-tours).
 
-
-I just export using H265 and making sure the VR setting is enabled in the export screen. I max out bit rate and depth settings on the export screen.
-
-If the files imported contained correct spherical information in the metadata (GPano tags), then the "Video is VR" should be auto selected. This is vital to ensure the correct 360 metadata is included in the video.
-
-
-
+If the files imported contain correct spherical information in the metadata ([GPano tags](/blog/2020/metadata-exif-xmp-360-photo-files)), then the "Video is VR" should be auto selected (if not, be sure to check it). This is vital to ensure the correct 360 metadata is included in the video.
 
 Clicking Export will start the creation of the .mp4 timelapse.
 
@@ -84,7 +76,7 @@ Clicking Export will start the creation of the .mp4 timelapse.
 
 This process does not create a GPS track in the video, so GPS data from original photos will be lost.
 
-Full telemetry needs to be written into the metadata in a standard structure (e.g [CAMM](https://developers.google.com/streetview/publish/camm-spec) or [GPMD](https://github.com/gopro/gpmf-parser)).
+Full telemetry needs to be written into the metadata in a standard structure (e.g [CAMM](https://developers.google.com/streetview/publish/camm-spec) or [GPMD](https://github.com/gopro/gpmf-parser)). Adobe Premiere cannot do this.
 
 ## The final timelapse
 
@@ -92,4 +84,4 @@ Full telemetry needs to be written into the metadata in a standard structure (e.
 
 And voila, the final timelapse on YouTube with full 360 video controls.
 
-A big thank you to Brian Redmond who showed me this functionality in Premiere, and was patient with my question whilst figuring it our -- thanks Brian!
+A big thank you to Brian Redmond who showed me this functionality in Premiere, and was patient with my question whilst figuring it out -- thanks Brian!
