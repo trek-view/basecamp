@@ -5,8 +5,8 @@ description: "A detailed list of all available GoPro MAX and Fusion modes."
 categories: guides
 tags: [GoPro, MAX, Fusion, HERO 10, gpmf, gpmd]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-01-28/trekview-guide-test-cases.png
-featured_image: /assets/images/blog/2021-01-28/trekview-guide-test-cases-sm.png
+image: /assets/images/blog/2022-01-28/trekview-guide-test-cases.png
+featured_image: /assets/images/blog/2022-01-28/trekview-guide-test-cases-sm.png
 layout: post
 published: true
 ---
