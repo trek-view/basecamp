@@ -87,14 +87,6 @@ The difference between a GoPro MAX 360 video and timelapse video is not identifi
 
 It's the same with the Fusion and HERO 10 too (although the prefixes are slightly different).
 
-It is possible to use framerate values to identify timelapses slower than GoPro video modes (<23 FPS).
-
-Although this is not perfect. Most timelapses are stored at 29.97 FPS (the same as 30 FPS video) mode:
-
-```
-<Track1:VideoFrameRate>29.97</Track1:VideoFrameRate>
-```
-
 It is possible to determine a timelapse (shot in timewarp mode) the `GoPro:Rate` tag. e.g.
 
 ```
@@ -103,15 +95,17 @@ It is possible to determine a timelapse (shot in timewarp mode) the `GoPro:Rate`
 
 Where the value determines on the mode used (e.g. `AUTO`, `2X`, `5X`, `10X`, `15X`, `30X`).
 
-However, for timelapses not shot in timewarp mode this tag contains the value
+Although the exception being stitched .360's from the GoPro MAX (using GoPro Fusion Studio), where these tags are not present.
+
+Timelapses not shot in timewarp mode this tag contains the value
 
 ```
 <GoPro:Rate>2_1SEC</GoPro:Rate>
 ```
 
-Which is also reported in video files, so no use there.
+However, this is also reported in video files, so no use there. And again, this tag is not found in MAX processed .360's.
 
-You can however use the track handlers reported when normal timelapse mode is being used.
+You can however use the track handlers reported when any timelapse mode is being used.
 
 Using the MAX as an example, videos always have sound, and therefore an audio track:
 
@@ -121,6 +115,8 @@ Using the MAX as an example, videos always have sound, and therefore an audio tr
 ```
 
 Whereas timelapse videos have no sound, so no audio track will be present in the video metadata.
+
+Using this information it's therefore possible to determine if a timelapse mode was used on all cameras, and if it was in timewarp mode on all cameras except for the MAX.
 
 ## You can determine the cameras image settings though
 
