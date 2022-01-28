@@ -11,7 +11,9 @@ layout: post
 published: true
 ---
 
-[In 2022 I did an introductory post on the GoPro Metadata Format (GPMF / GPMD) for video telemetry](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd).
+In 2022 I did an introductory post on the GoPro Metadata Format (GPMF / GPMD) for video telemetry.
+
+[You can read it here](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd).
 
 As we've been working on Explorer, we've been learning lots about how different GoPro cameras write different metadata to the image and video files they product. 
 
