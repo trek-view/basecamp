@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2021-01-28/trekview-guide-test-cases.png
 featured_image: /assets/images/blog/2021-01-28/trekview-guide-test-cases-sm.png
 layout: post
-published: false
+published: true
 ---
 
 [In 2022 I did an introductory post on the GoPro Metadata Format (GPMF / GPMD) for video telemetry](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd).
@@ -122,7 +122,7 @@ Using the MAX as an example, videos always have sound, and therefore an audio tr
 
 Whereas timelapse videos have no sound, so no audio track will be present in the video metadata.
 
-## You can determine the image settings though
+## You can determine the cameras image settings though
 
 The GPMD contains useful information about the image settings used on the camera, for example if Protune was enabled
 
