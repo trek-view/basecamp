@@ -105,7 +105,7 @@ You can use exiftool to do this pragmatically in two steps ([as I discovered tha
 
 ### 3.1. First set all images to the same date/time
 
-Set time
+Set the same `-datetimeoriginal` for all photos (using first GPS time).
 
 ```
 $ exiftool -datetimeoriginal="2020:04:13 15:37:22" FRAMES/
@@ -120,10 +120,18 @@ You'll also notice exiftool preserved the original data creating a set of files 
 Now you need to increase each file by +1 seconds from the previous image:
 
 ```
-$ exiftool -fileorder FileName -ext jpg "-datetimeoriginal+<0:0:$filesequence" FRAMES/
+$ exiftool -fileorder FileName -ext jpg "-datetimeoriginal+<0:0:${filesequence;$_*=1}" FRAMES/
 ```
 
 _On Mac/Linux, use single quotes (') instead of double quotes (") around arguments containisng a dollar sign ($) when uing exiftool._
+
+
+We created frame files with names ascending numerical order when extracting them using ffmpeg. `-fileorder FileName` makes sure this command is run in the correct order of frames.
+
+`-ext jpg` ensures the script only consider files with the extension `.jpg`.
+
+`-datetimeoriginal+<0:0:${filesequence;$_*=1}` increments each photo by 1 second. For a different spacing, simply change the value from 1 to whatever other time spacing (in seconds) is required.
+
 
 The response gives:
 
@@ -187,3 +195,7 @@ These EXIF and XMP values provide enough metadata to upload to Map the Paths, Ma
 ## Update 2021-10-15
 
 You might also like the post; [Lessons learned when geotagging timelapse photos and video frames](/blog/2021/lessons-learned-when-geotagging-photos)
+
+## Update 2022-02-04
+
+[Turning a GoPro Timewarp Video into Photo Frames](turn-360-timewarp-video-into-timelapse-images).

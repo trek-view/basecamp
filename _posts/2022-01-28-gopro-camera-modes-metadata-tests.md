@@ -11,11 +11,13 @@ layout: post
 published: true
 ---
 
+**What we've learned whilst building a library of GoPro camera test cases for Explorer.**
+
 In 2022 I wrote an introductory post on the GoPro Metadata Format (GPMF / GPMD) for video telemetry.
 
 [You can read it here](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd).
 
-As work on Explorer has progressed, we've been learning lots about how different GoPro cameras write different metadata to the image and video files they produce.
+As work on Explorer has progressed, we've been learning lots about how different GoPro cameras write metadata to the image and video files they produce.
 
 Here are some of the quirks we've uncovered...
 
@@ -120,8 +122,8 @@ You can however use the track handlers to identify when timelapse mode is being 
 Using the MAX as an example, regular videos always have sound, and therefore an audio track:
 
 ```
-<Track2:HandlerClass>Media Handler</Track2:HandlerClass>
-<Track2:HandlerType>Audio Track</Track2:HandlerType>
+<TrackN:HandlerClass>Media Handler</TrackN:HandlerClass>
+<TrackN:HandlerType>Audio Track</TrackN:HandlerType>
 ```
 
 Whereas timelapse videos have no sound, so no audio track will be present in the video metadata.

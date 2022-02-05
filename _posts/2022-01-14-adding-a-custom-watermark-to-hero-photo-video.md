@@ -11,7 +11,9 @@ layout: post
 published: true
 ---
 
-**We've recently been playing with the new GoPro HERO 10. It's a neat bit of kit.**
+**Automate the process of adding a custom branded watermark to all your timelapse photos using Imagemagick** 
+
+We've recently been playing with the new GoPro HERO 10. It's a neat bit of kit.
 
 Many people use action cameras for mapping. In many cases, the money to buy a 360 camera for mapping can't be justified. Action cameras are simpler to use and more versatile.
 
