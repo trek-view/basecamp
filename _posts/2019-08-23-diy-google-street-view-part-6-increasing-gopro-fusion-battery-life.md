@@ -57,7 +57,9 @@ External battery packs are perfect for this.
 
 I use one produced by Anker. I chose the [Anker PowerCore+ 26800](https://www.anker.com/products/variant/powercore-26800/A1374011). It was one of the most powerful batteries on the market at the time of purchase (early-2019) and had receive a number of positive reviews. And, not only does it help when shooting tours, it's also great at powering my other electronics, including my laptop.
 
-From a full charge, I can shoot over 5 hours of video continually using the PowerCore+ 26800 -- the equivalent of 10 GoPro Fusion batteries. In 5 second time-lapse mode, the battery will give easily give me 24 hours of shooting -- usually more than enough for multi-day hikes.
+[The standard Fusion battery holds 2620Ma](https://www.amazon.co.uk/GoPro-ASBBA-001-Fusion-Battery-Black/dp/B078XY2L42). The PowerCore holds 26800Ma -- the equivalent of 10 GoPro Fusion batteries.
+
+In 5 second time-lapse mode, the PowerCore battery will give easily give me 24 hours of shooting -- usually more than enough even for multi-day hikes.
 
 _Note, you don't a need a battery with charge capacity as high as the Anker PowerCore+ 26800. Think about quality as well as power when buying. Beware of cheap external batteries with a low power output as they might not produce enough charge to keep the camera on._
 
@@ -89,6 +91,14 @@ Granted, these straps are not as good at holding the monopod stable -- they're n
 
 I'm sure this solution will work with most hiking packs on the market with side pouches too.
 
-_Update December 2019: [You can now access the Trek Pack Getting Started Guide online with all the latest information you need to create, process and publish your own Street View Tours](/trek-pack/version-one)._
+## Update December 2019
 
-_Update June 2020: [A newer version of the Trek Pack (v2) exists, that superseeds the pack (v1) described in this post](/blog/2020/announcing-trek-pack-v2)._
+[You can now access the Trek Pack Getting Started Guide online with all the latest information you need to create, process and publish your own Street View Tours](/trek-pack/).
+
+## Update June 2020
+
+[A newer version of the Trek Pack (v2) exists, that superseeds the pack (v1) described in this post](/blog/2020/announcing-trek-pack-v2).
+
+## Update 2022-02-11
+
+[Extending the battery life of a GoPro MAX in cold weather (using an external battery)](/blog/2022/keeping-gopro-max-warm-extend-battery-life).
