@@ -49,7 +49,7 @@ In a sentence, the difference between H.264 and H.265 is video compression effic
 
 ### Our verdict
 
-Select HEVC, and it's maximum available resolution of 5.6K.
+Select HEVC, and its maximum available resolution of 5.6K.
 
 ## World Lock
 
