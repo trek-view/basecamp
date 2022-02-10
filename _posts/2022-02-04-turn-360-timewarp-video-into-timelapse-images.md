@@ -130,7 +130,7 @@ The table below gives some example values where 1, 2, and 5 FPS values are used 
 
 For example, if a video was shot at 10x, and we extract at 5 FPS using ffmpeg (shown below), each frame extracted by ffmpeg will be exactly 2 seconds apart in real-world time.
 
- In short, we can use ffmpeg like so;
+In short, we can use ffmpeg like so;
 
 ```
 $ ffmpeg -i GS019006.mp4 -r 5 -q:v 2 FRAMES/img%d.jpg

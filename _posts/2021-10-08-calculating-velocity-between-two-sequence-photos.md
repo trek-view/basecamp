@@ -1,6 +1,6 @@
 ---
 date: 2021-10-08
-title: "Using trigonometry to calculate how north, east, and vertical velocity"
+title: "Using trigonometry to calculate north, east, and vertical velocity between photos"
 description: "Speed = distance / time. But what about speed along the x (east, west), y (north, south), z (altitude) axes?"
 categories: guides
 tags: [heading, yaw, bearing, pitch, roll, speed, velocity]

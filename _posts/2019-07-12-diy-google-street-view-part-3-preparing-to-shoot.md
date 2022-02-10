@@ -33,9 +33,9 @@ With all this in mind, I shoot using the time-lapse photo mode over video mode.
 
 You can setup the GoPro Fusion to shoot time-lapses in 0.5sec, 1, 2, 5, 10, 30 and 60 seconds.
 
-Ideally, [as indicated by this post on the Google support forum](https://support.google.com/maps/forum/AAAAQuUrST8X8OxIdF011I/?hl=en&gpf=d/topic/maps/X8OxIdF011I), Google Street View paths (photos connected with a blue line) should not be greater than 5 metres apart.
+Ideally, [as indicated by this post on the Google support forum](https://support.google.com/maps/forum/AAAAQuUrST8X8OxIdF011I/?hl=en&gpf=d/topic/maps/X8OxIdF011I), Google Street View paths (photos connected with a blue line) should not be greater than 5 meters apart.
 
-I've found the following time-lapse settings work well for each method of transport to ensure the 5 metre requirement is met:
+I've found the following time-lapse settings work well for each method of transport to ensure the 5 meter requirement is met:
 
 1. Road Bike (flat) - 0.5 second
 2. Mountain Bike (flat) - 1 second
@@ -43,7 +43,7 @@ I've found the following time-lapse settings work well for each method of transp
 4. Stand-up Paddle-board (calm water) - 2 seconds
 5. Hike (lots of elevation) - 5 seconds
 
-If you plan to shoot when moving at more than 30 km/h (8.333 metres /s), use video mode. At this speed the lowest time resolution of the Fusion's time-lapse mode (0.5s) will be too slow to capture at 5 metre intervals.
+If you plan to shoot when moving at more than 30 km/h (8.333 meters /s), use video mode. At this speed the lowest time resolution of the Fusion's time-lapse mode (0.5s) will be too slow to capture at 5 meter intervals.
 
 [Set at 5.6K video, the GoPro Fusion will shoot at least 24 frames per second](https://gopro.com/help/articles/block/available-video-resolutions-for-fusion) -- more than enough for tours captured at 100 km/h, if required. Sadly, the number of frames captured per second for each video mode on the Fusion is fixed and can't be changed (which could have potentially solved the battery life/heat issue).
 

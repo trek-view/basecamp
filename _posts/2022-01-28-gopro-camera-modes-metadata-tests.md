@@ -2,7 +2,7 @@
 date: 2022-01-28
 title: "The Quirks of GoPro Metadata (GPMD)"
 description: "What we've learned whilst building a library of GoPro camera test cases for Explorer."
-categories: guides
+categories: developers
 tags: [GoPro, MAX, Fusion, HERO 10, gpmf, gpmd, Explorer]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2022-01-28/trekview-guide-test-cases.png
