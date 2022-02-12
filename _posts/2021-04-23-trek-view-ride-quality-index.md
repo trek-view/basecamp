@@ -271,7 +271,7 @@ Similarly, there are an almost infinite number of paths a cyclists could take. T
 
 TRI is a summary statistic for a given segment of trail. Over the course of a kilometer, a trail may be in excellent condition for one stretch and in poor condition for another.
 
-In this case I choose sections of about 2 meters over a timeline of 1 second (which is very granular). For a large trail network, presenting this data will take more processing to prove valuable. Riders are going to want details of the best and worst parts of the trail but are not going to want to sift through data at 2 meter intervals.
+In this case I choose sections of about 2 metres over a timeline of 1 second (which is very granular). For a large trail network, presenting this data will take more processing to prove valuable. Riders are going to want details of the best and worst parts of the trail but are not going to want to sift through data at 2 metre intervals.
 
 For a cheap and fairly reliable way to measure trail quality this methodology is surprisingly accurate. However, rolling this out on a global scale is a different story.
 

@@ -27,7 +27,7 @@ This causes an attenuation of the wave as it travels through the material. There
 
 The skin depth, which is the distance that the wave must travel to be reduced by e^-1 in amplitude, is dependent upon frequency and conductivity.
 
-So a very low frequency signal can penetrate the earth several hundred meters while the high frequency GPS cannot penetrate a few feet. This is why submarines use extremely low frequency radio frequencies (tens to 100's of khz) for communications.
+So a very low frequency signal can penetrate the earth several hundred metres while the high frequency GPS cannot penetrate a few feet. This is why submarines use extremely low frequency radio frequencies (tens to 100's of khz) for communications.
 
 [According to this post](https://forums.anandtech.com/threads/can-gps-work-underwater.24850/post-23242212):
 

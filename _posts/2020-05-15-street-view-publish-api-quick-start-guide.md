@@ -69,12 +69,12 @@ Each `photo` resource has a `pose`.
 
 All other information is optional, but highly recommended to [make sure your Street View photo appears correctly when viewed on Google Maps](/blog/2020/decoding-google-street-view-urls).
 
-* `altitude`: Altitude of the pose in meters above [WGS84 ellipsoid](https://en.wikipedia.org/wiki/World_Geodetic_System).
+* `altitude`: Altitude of the pose in metres above [WGS84 ellipsoid](https://en.wikipedia.org/wiki/World_Geodetic_System).
 * `heading`: Compass heading, measured at the center of the photo in degrees clockwise from North. Value must be >=0 and <360. 
 * `pitch`: Pitch, measured at the center of the photo in degrees. Value must be >=-90 and <= 90. A value of -90 means looking directly down, and a value of 90 means looking directly up.
 * `roll`: Roll, measured in degrees. Value must be >= 0 and <360. A value of 0 means level with the horizon.
 * `level`: Level (the floor in a building) used to configure vertical navigation.
-* `accuracyMeters`: The estimated horizontal accuracy of this pose in meters with 68% confidence (one standard deviation).
+* `accuracyMeters`: The estimated horizontal accuracy of this pose in metres with 68% confidence (one standard deviation).
 
 ### Connection
 

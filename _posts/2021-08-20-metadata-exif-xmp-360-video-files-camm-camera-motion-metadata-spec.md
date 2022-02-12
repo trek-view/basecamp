@@ -262,7 +262,7 @@ Breaking this down, we can see 6 measurements for `AngularVelocity` and `Acceler
 As defined in the CAMM spec:
 
 * `AngularVelocity`: Gyroscope signal in radians/seconds around XYZ axes of the camera. Rotation is positive in the counterclockwise direction.
-* `Acceleration`: Accelerometer reading in meters/second^2 along XYZ axes of the camera.
+* `Acceleration`: Accelerometer reading in metres/second^2 along XYZ axes of the camera.
 
 Then at 2020:04:02 09:43:22.2Z, we see the first GPS position being printed, and at 2020:04:02 09:43:22.3Z the second GPS position (one position every 0.1 seconds)
 

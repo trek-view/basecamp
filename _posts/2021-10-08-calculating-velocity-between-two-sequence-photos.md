@@ -2,7 +2,7 @@
 date: 2021-10-08
 title: "Using trigonometry to calculate north, east, and vertical velocity between photos"
 description: "Speed = distance / time. But what about speed along the x (east, west), y (north, south), z (altitude) axes?"
-categories: guides
+categories: developers
 tags: [heading, yaw, bearing, pitch, roll, speed, velocity]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-10-08/velocity-x-y-meta.jpg
@@ -53,7 +53,7 @@ To illustrate the point; If I drive from home to work (defining my positive dire
 <img class="img-fluid" src="/assets/images/blog/2021-10-08/velocity-east-north-negative-example.jpg
 " alt="Example negative Velocity East North" title="Example negative Velocity East North" />
 
-Look at this example to demonstrate. Whilst the time between A and B is really representative of 10 second / 10 meters, the North and Eastern velocity is actualy negative.
+Look at this example to demonstrate. Whilst the time between A and B is really representative of 10 second / 10 metres, the North and Eastern velocity is actualy negative.
 
 `Velocity East = Distance (from A to C) / Time (from A to B)`
 

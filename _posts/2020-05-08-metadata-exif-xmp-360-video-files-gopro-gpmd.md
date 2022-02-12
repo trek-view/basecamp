@@ -21,9 +21,9 @@ The real benefit of capturing 360 sequences (like walks or bike rides) using vid
 
 More frames gives you (or software) the flexibility to cherry-pick the ones you want to use in your tour.
 
-For example, you want to use frames that are (almost) exactly 1 meter apart. Using the GPS in each frame, software can easily extract photos that are 1 meter apart.
+For example, you want to use frames that are (almost) exactly 1 metre apart. Using the GPS in each frame, software can easily extract photos that are 1 metre apart.
 
-Compare that to shooting in time lapse mode, especially if moving quickly, where the capture interval will provide varying distances between photos (unless you're travelling at a constant speed), and photos might have larger distance between them than the 1 meter you're aiming for.
+Compare that to shooting in time lapse mode, especially if moving quickly, where the capture interval will provide varying distances between photos (unless you're travelling at a constant speed), and photos might have larger distance between them than the 1 metre you're aiming for.
 
 You then have 2 options; 1) admit defeat and then go back and re-shoot or, 2) accept the uneven distances between photos and remember perfection is the enemy of done.
 

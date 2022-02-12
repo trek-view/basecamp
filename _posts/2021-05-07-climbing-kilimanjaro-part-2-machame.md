@@ -33,13 +33,13 @@ Moss-covered trees, seas of ferns and elusive monkeys abound in the rainforests 
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-05-07/kili-moorland.jpeg&amp;autoLoad=true"></iframe>
 
-The thick rainforest starts to thin out. At an altitude of almost 3,000 meters (around 9,800 ft) you have arrived at the beginning of the moorland. Shorter trees as well as an increasing number of ferns and mosses are typical for this vegetation zone.
+The thick rainforest starts to thin out. At an altitude of almost 3,000 metres (around 9,800 ft) you have arrived at the beginning of the moorland. Shorter trees as well as an increasing number of ferns and mosses are typical for this vegetation zone.
 
 ## Alpine desert (4,000m)
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-05-07/kili-alpine-desert.jpg&amp;autoLoad=true"></iframe>
 
-Now you have arrived at an altitude of about 4,000 meters (around 13,100 ft). The ascent is mostly less steep than before, and you’re walking on paths across seemingly endless expanses and scree fields.
+Now you have arrived at an altitude of about 4,000 metres (around 13,100 ft). The ascent is mostly less steep than before, and you’re walking on paths across seemingly endless expanses and scree fields.
 
 ## Volcanic Craters (5,000m)
 

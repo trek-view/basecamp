@@ -52,7 +52,7 @@ As mentioned in my [history of the Street View camera](/blog/2019/history-of-goo
 
 [All Street View cameras since the R5 (2008)](https://books.google.co.uk/books?id=dGpQDwAAQBAJ&pg=PA83&lpg=PA83) feature a pair of [$6000 Sick AG LMS 291](https://www.sick.com/gb/en/detection-and-ranging-solutions/2d-lidar-sensors/lms2xx/lms291-s05/p/p109849) laser profilers that are attached to the mast and continually measure a series of range or elevation profiles on either side of the mapping vehicle. A third SICK LMS291 profiler measures the road surface in front of the vehicle.
 
-The laser range scanners measure up to 50 meters in the front of the vehicle with a 180 degree range. These are used for recording the actual dimensions of the space being photographed, for example the distance between the camera and the facades of the buildings. 
+The laser range scanners measure up to 50 metres in the front of the vehicle with a 180 degree range. These are used for recording the actual dimensions of the space being photographed, for example the distance between the camera and the facades of the buildings. 
 
 That spacial recognition is what helps Google patch all of its images together and give them a 3D feel.
 

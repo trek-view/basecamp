@@ -1,7 +1,7 @@
 ---
 date: 2021-01-01
 title: "ExPODition Ep.6 - Break Free"
-description: "Two totally different characters, jammed together in two square meters of space for almost two years as they travel across Africa."
+description: "Two totally different characters, jammed together in two square metres of space for almost two years as they travel across Africa."
 categories: expodition
 tags: [David Greenwood, Trek View, Ulrich Stirnat, Lena Wendt, Africa, Land Rover, overland]
 author_staff_member: dgreenwood
@@ -11,11 +11,11 @@ layout: post
 published: true
 ---
 
-**Two totally different characters, jammed together in two square meters of space for almost two years as they travel across Africa.**
+**Two totally different characters, jammed together in two square metres of space for almost two years as they travel across Africa.**
 
 When Lena and Ulli start the engine of their old Land Rover, Lady Terés, they have a plan: to drive from Hamburg to South Africa in six months. What they don't know yet is that they won't ever get there.
 
-Two totally different characters, jammed together in two square meters of space for almost two years, they experience what it really means to travel: leaving your comfort zone for good. 
+Two totally different characters, jammed together in two square metres of space for almost two years, they experience what it really means to travel: leaving your comfort zone for good. 
 
 In this episode of ExPODition, David talks with  Ulrich Stirnat and Lena Wendt about the trials and tribulations of an overland crossing of the African continent. 
 

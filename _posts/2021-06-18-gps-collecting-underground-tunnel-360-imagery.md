@@ -61,7 +61,7 @@ Inertial sensor fusion algorithms are used to estimate orientation and position 
 
 Using the IMU measurements (such as acceleration, roll, pitch.), the algorithms try to assume where you've been to find your current position.
 
-The algorithms can get complex, but at they're most simplistic they are easy to understand. If you move 10 m/s due North with no elevation or pitch, you will be 10 meters north of your original position (ignoring curvature of the earth) -- the algorithms take the sensor measurements to perform this same calculation logic.
+The algorithms can get complex, but at they're most simplistic they are easy to understand. If you move 10 m/s due North with no elevation or pitch, you will be 10 metres north of your original position (ignoring curvature of the earth) -- the algorithms take the sensor measurements to perform this same calculation logic.
 
 It seems the simpleRTK2B-F9R has been quite a popular choice amongst those mapping street-level images of roads from their cars (where tunnels are often an issue).
 

@@ -41,7 +41,7 @@ Failing that, most people have smart phones with software to create panoramas. O
 
 [Mapillary](https://www.mapillary.com/app/) is mostly comprised of forward facing dash-cam photos that have proved valuable for street-level object recognition software training. 
 
-Having a series of photos every 10 meters taken by a smartphone is also incredibly useful for those editing Open Street Map.
+Having a series of photos every 10 metres taken by a smartphone is also incredibly useful for those editing Open Street Map.
 
 Even with professional equipment, it will often take a couple of runs to account for mistakes and issues. Remember, you can always recapture at a later date... _like you needed an excuse for another party_.
 

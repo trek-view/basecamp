@@ -68,7 +68,7 @@ Shira 2 Camp is the best place on the trip to see Mount Meru (the fifth summit o
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-12-03/lemosho-day-3a-GSBA6366.JPG&amp;autoLoad=true"></iframe>
 
-After breakfast you will leave Shira 2 Camp (3,900 m) and start your way to the key point of the route: Lava Tower (4,630 m). This section of the route has a lot of ascents and descents that end in a camp at over 4,600 meters.
+After breakfast you will leave Shira 2 Camp (3,900 m) and start your way to the key point of the route: Lava Tower (4,630 m). This section of the route has a lot of ascents and descents that end in a camp at over 4,600 metres.
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-12-03/lemosho-day-3b-GSBG7261.JPG&amp;autoLoad=true"></iframe>
 

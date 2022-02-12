@@ -15,7 +15,7 @@ published: true
 
 Many of us have had our travel plans severely restricted over the last year.
 
-In January 2020, the team here at Trek View were planning a big trip; to “Map the Mountain”. The mountain being Mount Kilimanjaro in Tanzania, the highest mountain in Africa and the highest single free-standing mountain in the world at 5,895 meters.
+In January 2020, the team here at Trek View were planning a big trip; to “Map the Mountain”. The mountain being Mount Kilimanjaro in Tanzania, the highest mountain in Africa and the highest single free-standing mountain in the world at 5,895 metres.
 
 The aim was to capture a complete set of street level imagery for Kilimanjaro’s 7 major hiking routes in their entirety: 
 

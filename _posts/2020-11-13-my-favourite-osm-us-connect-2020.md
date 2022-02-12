@@ -43,7 +43,7 @@ Sean demos some impressive examples of high definition 3D maps in action.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dBin0PUSfB8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Curb regulations are communicated by physical assets like parking signs, meters, and curb paint. These have a specific set of coordinates and are easy to map. But the concepts they convey are more difficult. For example, a pair of parking signs are more than just two independent points; they represent an invisible rule that applies to a specific section of a particular edge of a specific street. Curb regulations are regulatory geometries, not physical geometries.
+Curb regulations are communicated by physical assets like parking signs, metres, and curb paint. These have a specific set of coordinates and are easy to map. But the concepts they convey are more difficult. For example, a pair of parking signs are more than just two independent points; they represent an invisible rule that applies to a specific section of a particular edge of a specific street. Curb regulations are regulatory geometries, not physical geometries.
 
 Emily and Russ talk about their invention, the CurbWheel, to help them better collect this type of data.
 

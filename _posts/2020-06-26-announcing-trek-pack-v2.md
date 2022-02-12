@@ -17,7 +17,7 @@ published: true
 
 Our Trek Pack is a backpack mounted 360-degree camera system designed to capture stunning 360-degree Street View tours in all terrains.
 
-The old GoPro Fusion cameras we used have served us well, shooting in temperature ranging from below freezing temperatures to well over 40 degrees. From 20 meters down to 4000 meters up. In rain, snow, and glorious sunshine.
+The old GoPro Fusion cameras we used have served us well, shooting in temperature ranging from below freezing temperatures to well over 40 degrees. From 20 metres down to 4000 metres up. In rain, snow, and glorious sunshine.
 
 It really is a "take on any adventure" camera.
 
@@ -81,7 +81,7 @@ A helmet mounted camera for cyclists.
 
 <img class="img-fluid" src="/assets/images/blog/2020-06-26/trek-pack-dive.jpg" alt="Trek Pack v2 Dive" title="Trek Pack v2 Dive" />
 
-A dive bubble to shoot down to 10 meters with crystal clear clarity.
+A dive bubble to shoot down to 10 metres with crystal clear clarity.
 
 ## Get a Pack
 

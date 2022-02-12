@@ -59,7 +59,7 @@ However, on fast, uneven downhill mountain bike trails it falls way short (yet, 
 
 <img class="img-fluid" src="/assets/images/blog/2019-11-15/trek-view-360-degree-bicycle-camera-v1-sm.jpg" alt="Trek View Bike Camera" title="Trek View Bike Camera" />
 
-The plastic frame of the basket and plastic zip tie mounts have too much flex because of the forces put on it by the monopod extended to almost 2 meters.
+The plastic frame of the basket and plastic zip tie mounts have too much flex because of the forces put on it by the monopod extended to almost 2 metres.
 
 To try an reduce the stress, I reduced the length of the monopod to just above my head, though on fast and uneven trails, the flex in the plastic is still a problem.
 

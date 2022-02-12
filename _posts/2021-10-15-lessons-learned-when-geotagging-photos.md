@@ -2,7 +2,7 @@
 date: 2021-10-15
 title: "Lessons learned when geotagging timelapse photos and video frames"
 description: "Exiftool is a powerful bit of software for geotagging photos, understanding how the process works will save you a few headaches."
-categories: guides
+categories: developers
 tags: [GPX, GPS, GoPro, Fusion, exiftool, geotag]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-10-15/gpx-track-sample-meta.jpg

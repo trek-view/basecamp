@@ -2,7 +2,7 @@
 date: 2021-10-22
 title: "How to Add a Custom Nadir to a 360 Photo Programmatically"
 description: "Automate the process of adding a custom branded nadir to all your equirectangular photos using Imagemagick."
-categories: guides
+categories: developers
 tags: [nadir, equirectangular, imagemagick]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-10-22/example-nadir-percentage-of-pano-meta.jpeg

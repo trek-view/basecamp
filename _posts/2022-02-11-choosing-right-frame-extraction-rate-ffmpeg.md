@@ -37,11 +37,11 @@ At scale, this quickly adds up to very big numbers in terms of storage space and
 
 For virtual tours, the main measure of extraction comes down to the distance you want between photos.
 
-[As noted in this post on the Google support forum](https://support.google.com/maps/forum/AAAAQuUrST8X8OxIdF011I/?hl=en&gpf=d/topic/maps/X8OxIdF011I), Google Street View paths (photos connected with a blue line) should not be greater than 5 meters apart.
+[As noted in this post on the Google support forum](https://support.google.com/maps/forum/AAAAQuUrST8X8OxIdF011I/?hl=en&gpf=d/topic/maps/X8OxIdF011I), Google Street View paths (photos connected with a blue line) should not be greater than 5 metres apart.
 
-For the optimum viewing experience of virtual tours, we have found photos about a meter apart work best. They are close enough that scenery does not get passed too quickly, nor are they to close together that navigation becomes tedious.
+For the optimum viewing experience of virtual tours, we have found photos about a metre apart work best. They are close enough that scenery does not get passed too quickly, nor are they to close together that navigation becomes tedious.
 
-Traveling at an average speed of 10 km/h (2.75 m/s) in 2 second timelapse mode will produce one photo about every 6 meters. Shot in video mode at 24 FPS results in one photo every 0.1 meters.
+Traveling at an average speed of 10 km/h (2.75 m/s) in 2 second timelapse mode will produce one photo about every 6 metres. Shot in video mode at 24 FPS results in one photo every 0.1 metres.
 
 Therefore, we first need to know the speed at which the tour was captured.
 
@@ -58,34 +58,34 @@ There are a few ways to obtain a speed value to determine the frame rate needed;
 The table above gives some rough averages for various methods of transport typically used for human powered means of transport;
 
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>Sport</th><th>Ave speed km/h</th><th>Ave speed m/s (kmh/3.6)</th><th>Frame spacing @ 24 FPS (ave speed m/s / 24)</th><th>FPS (at frame every 0.5 meter)</th><th>FPS (at frame every 1 meter)</th><th>FPS (at frame every 5 meter)</th></tr></thead><tbody>
+<thead><tr class="tableizer-firstrow"><th>Sport</th><th>Ave speed km/h</th><th>Ave speed m/s (kmh/3.6)</th><th>Frame spacing @ 24 FPS (ave speed m/s / 24)</th><th>FPS (at frame every 0.5 metre)</th><th>FPS (at frame every 1 metre)</th><th>FPS (at frame every 5 metre)</th></tr></thead><tbody>
  <tr><td>Freefall</td><td>200</td><td>55.56</td><td>2.31</td><td>112</td><td>56</td><td>12</td></tr>
  <tr><td>Downhill sports (skiing, MTB, etc)</td><td>30</td><td>8.33</td><td>0.35</td><td>17</td><td>9</td><td>2</td></tr>
  <tr><td>Bi-cyling (flat), kayaking (downstream)</td><td>20</td><td>5.56</td><td>0.23</td><td>12</td><td>6</td><td>2</td></tr>
  <tr><td>Hiking (downhill)</td><td>1.6</td><td>0.44</td><td>0.02</td><td>1</td><td>1</td><td>1</td></tr>
  <tr><td>Hiking (uphill), walking</td><td>3</td><td>0.83</td><td>0.03</td><td>2</td><td>1</td><td>1</td></tr>
- <tr><td>1 meter per frame</td><td>86</td><td>23.89</td><td>1.00</td><td>48</td><td>24</td><td>5</td></tr>
+ <tr><td>1 metre per frame</td><td>86</td><td>23.89</td><td>1.00</td><td>48</td><td>24</td><td>5</td></tr>
 </tbody></table>
 
 _[See the calculations used in this table here](https://docs.google.com/spreadsheets/d/1jea_XIfow-4Oro3vKfKEeJL7bhlsYHjz/edit?usp=sharing&ouid=111552983205460555579&rtpof=true&sd=true)_
 
-Most methods of transport our trekkers use are slow enough where frames are spaced much closer than 1 meter. For example, traveling at 3.6 km/h (1 m/s), each frame is spaced 0.04 meters apart.
+Most methods of transport our trekkers use are slow enough where frames are spaced much closer than 1 metre. For example, traveling at 3.6 km/h (1 m/s), each frame is spaced 0.04 metres apart.
 
 <img class="img-fluid" src="/assets/images/blog/2022-02-11/frame-rate-speed.jpg" alt="Frame rate and speed" title="Frame rate and speed" />
 
 You only run into an issue where frames are spaced further apart than the recording frame rate. At this point you can only extract all frames from the video and will have to accept the spacing provided.
 
-That said, for our trekkers this is unlikely to occur. You would need to be traveling at over 86 km/h for frames go be more than 1 meter apart.
+That said, for our trekkers this is unlikely to occur. You would need to be traveling at over 86 km/h for frames go be more than 1 metre apart.
 
-Now, assuming the distance between frames calculated in the video is actually much less than 1 meter, the extraction rate used will be the average speed in meters per second rounded up to the next integer (e.g. 8.33 m/s = extraction rate of 9 FPS for spacing of 1 meter).
+Now, assuming the distance between frames calculated in the video is actually much less than 1 metre, the extraction rate used will be the average speed in metres per second rounded up to the next integer (e.g. 8.33 m/s = extraction rate of 9 FPS for spacing of 1 metre).
 
 For a larger spacing (or shorter spacing), you can use the following calculation (also shown with formula here)
 
 ```
-ffmpeg -r value (fps) = ave speed m/s / frame spacing meters)
+ffmpeg -r value (fps) = ave speed m/s / frame spacing metres)
 ```
 
-e.g. for spacing every 5 meters at average speed of 8.33 m/s
+e.g. for spacing every 5 metres at average speed of 8.33 m/s
 
 ```
 ffmpeg -r value (fps) = 8.3 / 5)
@@ -121,7 +121,7 @@ To work out average speed we need to know the distance between the two points.
 
 To calculate distance, you can use the [Haversine formula](https://en.wikipedia.org/wiki/Haversine_formula) to find the distance between two points on a sphere (Earth) given their longitudes and latitudes.
 
-Therefore `speed (m/s) = distance between points (meters) / duration (secs)`.
+Therefore `speed (m/s) = distance between points (metres) / duration (secs)`.
 
 All that is left to do is adjust speed for frame rate.
 
@@ -131,13 +131,13 @@ We know the framerate (it is reported in the telemetry), e.g.
 <Track1:VideoFrameRate>29.971</Track1:VideoFrameRate> 
 ```
 
-For example, lets say distance was 100 meters from start and end of video, the video was 20 second long, and we want 1 frame every meter. Here is the resulting calculations;
+For example, lets say distance was 100 metres from start and end of video, the video was 20 second long, and we want 1 frame every metre. Here is the resulting calculations;
 
 ```
-speed m/s = distance between points (meters) / duration (secs)
+speed m/s = distance between points (metres) / duration (secs)
 speed m/s = 100/20
 speed m/s = 5
-extraction rate fps = speed (m/s) / desired spacing of frames (meters)
+extraction rate fps = speed (m/s) / desired spacing of frames (metres)
 extraction rate fps = 5/1
 extraction rate fps = 5
 ```
@@ -164,7 +164,7 @@ Using the distance travelled and time between each second in the video allows yo
 
 _Note: You could calculate ave speed to 0.1 second resolution, (the ffmpeg `-r` flag accepts to 0.1 seconds) but it is overkill for our purposes._
 
-Like previously we can calculate extraction rate fps (`speed (m/s) / desired spacing of frames (meters)`).
+Like previously we can calculate extraction rate fps (`speed (m/s) / desired spacing of frames (metres)`).
 
 You now have FPS extraction values for each second of the video (vs whole video as we used in options 1 and 2). As a result, you need to modify the ffmpeg command.
 

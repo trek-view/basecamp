@@ -43,7 +43,7 @@ To solve these problems, a clear barrier between the water and camera is require
 
 <img class="img-fluid" src="/assets/images/blog/2020-01-10/gopro-fusion-360-bubble.jpg" alt="Trek View GoPro Fusion Bubble mount" title="Trek View GoPro Fusion Bubble mount" />
 
-It's suitable for GoPro Fusion, GoPro Max, Ricoh Theta S/V, Samsung Gear 360/Gear 360 2017, Garmin Virb, Insta360 ONE, Nikon Keymission 360 and many other consumer 360 cameras and rated for use to a depth of 10 meters.
+It's suitable for GoPro Fusion, GoPro Max, Ricoh Theta S/V, Samsung Gear 360/Gear 360 2017, Garmin Virb, Insta360 ONE, Nikon Keymission 360 and many other consumer 360 cameras and rated for use to a depth of 10 metres.
 
 The downsides; it's a little bulky to put in your hand luggage (and requires a hard case when placed in checked luggage). And the price.
 

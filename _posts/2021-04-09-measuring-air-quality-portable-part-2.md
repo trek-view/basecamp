@@ -111,7 +111,7 @@ The above map shows the Air Quality Score (AQS) by position.
 
 [The mean average AQS for my ride was 96.22](https://docs.google.com/spreadsheets/d/1tK9C1pA1FxVW1fkH60rmpfiiPejtUFvzMo-nDWwZfaw/edit#gid=2042347909), which is very good (the highest score possible being 100).
 
-Overall the AtmoTube Pro reported the air quality as I would expect. For example, during the middle of the journey I rode through thick, visible smoke in the air coming from a bonfire about 20 meters away. At this point you can see the AQS dip to 46.
+Overall the AtmoTube Pro reported the air quality as I would expect. For example, during the middle of the journey I rode through thick, visible smoke in the air coming from a bonfire about 20 metres away. At this point you can see the AQS dip to 46.
 
 <img class="img-fluid" src="/assets/images/blog/2021-04-09/PM-pollution-Farnborough-Airport-Loop-2021-03-14.png" alt="PM1, PM2.5, PM10 on Farnborough Airport Loop (2021-03-14)" title="PM1, PM2.5, PM10 on Farnborough Airport Loop (2021-03-14)" />
 
@@ -127,7 +127,7 @@ Overtime I've been running the AtmoTube Pro indoors and the amount of VOC's meas
 
 The most obvious flaw is that GPS receiver does not appear to be particularly good (see my post, [GPS 101](/blog/2020/gps-101), for reasons why this might be the case).
 
-In many instances, the latitude and longitude reported is significantly erroneous. I've drawn an outline of my route using the polygon on the map above. Compare that line to the plotted points and you can see many are 100's of meters off-line.
+In many instances, the latitude and longitude reported is significantly erroneous. I've drawn an outline of my route using the polygon on the map above. Compare that line to the plotted points and you can see many are 100's of metres off-line.
 
 The receiver also seems to struggle to stay locked to satellites in places with mild tree cover. I was moving the whole time on this journey, yet for 5 minutes the device reported that I was in the exact same place (between `11:54:00` and `11:59:00`, `latitude=51.2372807` and `longitude=-0.8153424)`.
 
