@@ -14,7 +14,7 @@ show_drafts: false
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: assets/images/icons/siteicon.png
-description: Trek View is using street-level panoramic imagery of the natural world to inspire everyone to start exploring it.
+description: Help build an open 3D map of the natural world
 author:
   name:
 twitter:
@@ -92,9 +92,12 @@ plugins:
   - jekyll-paginate
 
 exclude:
+  - .gitignore
   - Gemfile
   - Gemfile.lock
+  - vendor
   - README.md
+  - tmp
   - LICENCE
 
 # -----------
