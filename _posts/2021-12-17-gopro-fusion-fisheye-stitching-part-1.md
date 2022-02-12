@@ -96,4 +96,4 @@ I'll talk more about that of next week...
 
 ## Update 2021-12-24
 
-[Stitching GoPro Fusion Images Without GoPro Fusion Studio (Part 2)](/blog/2021/gopro-fusion-fish-eye-stitching-part-2)
+[Stitching GoPro Fusion Images Without GoPro Fusion Studio (Part 2)](/blog/2021/gopro-fusion-fisheye-stitching-part-2)

@@ -1,77 +1,201 @@
 ---
 date: 2022-02-11
-title: "Choosing the right frame rate for extractions"
-description: "How to optimise the process of turning a video into frames"
+title: "Setting the right frame rate for video extraction using speed as a variable"
+description: "How we optimised the process of turning a video into frames to create virtual tours in Explorer"
 categories: developers
-tags: [FFMpeg, video]
+tags: [FFMpeg, video, haversine]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-02-11/
-featured_image: /assets/images/blog/2022-02-11/
+image: /assets/images/blog/2022-02-11/gps-speed-3d-2d-haversine-meta.jpg
+featured_image: /assets/images/blog/2022-02-11/gps-speed-3d-2d-haversine.jpg
 layout: post
-published: false
+published: true
 ---
 
-**How to optimise the process of turning a video into frames.**
+**How we optimised the process of turning a video into frames for Explorer**
 
 [Last week I talked about the importance of considering framerate for timewarp videos when extracting frames from it](/blog/2022/turn-360-timewarp-video-into-timelapse-images).
 
-Though it's something to consider when 
+With the Trek Pack v1 we shot in timelapse mode, [where the interval setting was determined by the transport used during shooting](/blog/2019/diy-google-street-view-part-3-preparing-to-shoot). This was a compromise as the Fusion's video mode was very battery intensive.
 
-## Drea
+The MAX used on our v2 pack improved upon battery performance in video mode, we stated shooting in video mode only. The MAX also supports a frame rate of 0.5 FPS (1 photo every 2 seconds), which is also problematic.
 
-With the Trek Pack v1 we shot in timelapse mode, [where the inteval setting was determined by the transport used during shooting](/blog/2019/diy-google-street-view-part-3-preparing-to-shoot)
+Videos can be recorded at a much higher frame rate. In video mode you can record up to 120 FPS @ 3k and 30 FPS @ 5.2k. Ultimately, this means there is more footage for us to work with (and discard as needed), not afforded when using timelapse mode.
+
+Though extra frames come at a cost, and we had to apply some trade-offs when building Explorer.
+
+## Why not extract all frames of the video?
+
+In a perfect world, we would extract all video frames. For example, if a video was shot at 30 FPS, we would extract all 30 frames.
+
+For a video of 10 minutes, that is 18000 frames (`(30x60)x10`).
+
+Assuming each frame is about 10Mb (about right for a 360 photo), that is 180Gb of images. This number is inflated, but we lose the advantage of the [video codecs compression](/blog/2020/fps-bitrate-compression-360-virtual-tours).
+
+At scale, this quickly adds up to very big numbers in terms of storage space and processing power required.
+
+## How to determine the best extraction rate
+
+For virtual tours, the main measure of extraction comes down to the distance you want between photos.
+
+[As noted in this post on the Google support forum](https://support.google.com/maps/forum/AAAAQuUrST8X8OxIdF011I/?hl=en&gpf=d/topic/maps/X8OxIdF011I), Google Street View paths (photos connected with a blue line) should not be greater than 5 meters apart.
+
+For the optimum viewing experience of virtual tours, we have found photos about a meter apart work best. They are close enough that scenery does not get passed too quickly, nor are they to close together that navigation becomes tedious.
+
+Traveling at an average speed of 10 km/h (2.75 m/s) in 2 second timelapse mode will produce one photo about every 6 meters. Shot in video mode at 24 FPS results in one photo every 0.1 meters.
+
+Therefore, we first need to know the speed at which the tour was captured.
+
+## Choosing video extraction framerate for virtual tours
+
+There are a few ways to obtain a speed value to determine the frame rate needed;
+
+1. estimate average speed using the transport method used (considers average speed only)
+2. find start and end time, and start and end position of the video and work out the average speed (considers average speed only)
+3. use video telemetry to work out speed changes over the journey and adjust frame rate dynamically (considers changes in speed)
+
+### Option 1: estimate average speed using the transport method used
+
+The table above gives some rough averages for various methods of transport typically used for human powered means of transport;
 
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>Timelapse setting (secs)</th><th>Sport</th></tr></thead><tbody>
- <tr><td>0.5</td><td>Downhill sports (skiing, MTB, etc)</td></tr>
- <tr><td>1</td><td>Bi-cyling (flat), kayaking (downstream)</td></tr>
- <tr><td>2</td><td>Hiking (downhill)</td></tr>
- <tr><td>5</td><td>Hiking (uphill), walking, paddleboarding</td></tr>
+<thead><tr class="tableizer-firstrow"><th>Sport</th><th>Ave speed km/h</th><th>Ave speed m/s (kmh/3.6)</th><th>Frame spacing @ 24 FPS (ave speed m/s / 24)</th><th>FPS (at frame every 0.5 meter)</th><th>FPS (at frame every 1 meter)</th><th>FPS (at frame every 5 meter)</th></tr></thead><tbody>
+ <tr><td>Freefall</td><td>200</td><td>55.56</td><td>2.31</td><td>112</td><td>56</td><td>12</td></tr>
+ <tr><td>Downhill sports (skiing, MTB, etc)</td><td>30</td><td>8.33</td><td>0.35</td><td>17</td><td>9</td><td>2</td></tr>
+ <tr><td>Bi-cyling (flat), kayaking (downstream)</td><td>20</td><td>5.56</td><td>0.23</td><td>12</td><td>6</td><td>2</td></tr>
+ <tr><td>Hiking (downhill)</td><td>1.6</td><td>0.44</td><td>0.02</td><td>1</td><td>1</td><td>1</td></tr>
+ <tr><td>Hiking (uphill), walking</td><td>3</td><td>0.83</td><td>0.03</td><td>2</td><td>1</td><td>1</td></tr>
+ <tr><td>1 meter per frame</td><td>86</td><td>23.89</td><td>1.00</td><td>48</td><td>24</td><td>5</td></tr>
 </tbody></table>
 
-One reasons we started to shoot in video mode was because the lowest timelapse interval on the MAX camera used on the v2 Trek Pack was 2 seconds. 
+_[See the calculations used in this table here](https://docs.google.com/spreadsheets/d/1jea_XIfow-4Oro3vKfKEeJL7bhlsYHjz/edit?usp=sharing&ouid=111552983205460555579&rtpof=true&sd=true)_
 
-## Why framerate is importants
+Most methods of transport our trekkers use are slow enough where frames are spaced much closer than 1 meter. For example, traveling at 3.6 km/h (1 m/s), each frame is spaced 0.04 meters apart.
 
-The further apart images are in a virtual tower, the worse the viewing experience is.
+<img class="img-fluid" src="/assets/images/blog/2022-02-11/frame-rate-speed.jpg" alt="Frame rate and speed" title="Frame rate and speed" />
 
-As technology develops having more data available is advantageous. For example, mapping objects in real space using photgrammetry. The resulting 3D model is more accurate when there are more data points (photos) with slightly different angles.
+You only run into an issue where frames are spaced further apart than the recording frame rate. At this point you can only extract all frames from the video and will have to accept the spacing provided.
 
-Considering viewing experiences alone, [as indicated by this post on the Google support forum](https://support.google.com/maps/forum/AAAAQuUrST8X8OxIdF011I/?hl=en&gpf=d/topic/maps/X8OxIdF011I), Google Street View paths (photos connected with a blue line) should not be greater than 5 meters apart.
+That said, for our trekkers this is unlikely to occur. You would need to be traveling at over 86 km/h for frames go be more than 1 meter apart.
 
-Though 5 meters is still a big gap, expesically in enclosed spaces.
+Now, assuming the distance between frames calculated in the video is actually much less than 1 meter, the extraction rate used will be the average speed in meters per second rounded up to the next integer (e.g. 8.33 m/s = extraction rate of 9 FPS for spacing of 1 meter).
 
-We decides a gap of a meter between photos is optimal.
+For a larger spacing (or shorter spacing), you can use the following calculation (also shown with formula here)
 
-To be able to space photos at a desired interval, you must also know the speed of travel.
+```
+ffmpeg -r value (fps) = ave speed m/s / frame spacing meters)
+```
 
-The table above gives some rough averages. 
+e.g. for spacing every 5 meters at average speed of 8.33 m/s
 
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>Sport</th><th>Ave speed km/h</th><th>Ave speed m/s</th></tr></thead><tbody>
- <tr><td>Downhill sports (skiing, MTB, etc)</td><td>30</td><td>8.3</td></tr>
- <tr><td>Bi-cyling (flat), kayaking (downstream)</td><td>20</td><td>2.5</td></tr>
- <tr><td>Hiking (downhill)</td><td>6</td><td>1.6</td></tr>
- <tr><td>Hiking (uphill), walking, paddleboarding</td><td>3</td><td>0.8</td></tr>
-</tbody></table>
+```
+ffmpeg -r value (fps) = 8.3 / 5)
+ffmpeg -r value (fps) = 2)
+```
 
-Using
+You can already see the savings from the raw video. If origianl framerate is 24 FPS, 2 FPS is a 12x reduction in the amount of frames.
 
+Using ffmpeg you can now extract the frames like so;
 
+```
+$ ffmpeg -i VIDEO.mp4 -r 2 -q:v 2 FRAMES/img%d.jpg
+```
 
-The benefit of video is that this framerate can be defined in post-pressing, which can accoutn
+* -r: Set frame rate (Hz value, fraction or abbreviation).
+* -q:v: [Controls the quality of output](https://stackoverflow.com/questions/10225403/how-can-i-extract-a-good-quality-jpeg-image-from-a-video-file-with-ffmpeg/10234065#10234065)
 
-In Explorer, we wanted to find a way to optimally extract frames from video f
+**Benefits:**
 
-## Travelling speed of capture
+* Fairly accurate for virtual tours where a consistent speed is usually observed.
 
-On of the main problems with timelapse captures is that your speed of travel is not uniform. Often you will start and stop. Be climing or descending. All of which will chage the rate at which you're moving across the ground.
+**Negatives:**
 
-GoPro videos offer an advantage here. The speed of travel is actually reported in the metadata ([GPMF](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd)).
+* Does not account for changes in speed well (results in photos bunched when slowing down and spread out when speeding up)
+
+### Option 2: find start and end time, and start and end position of the video and work out the average speed
+
+The GPS telemetry in the video provides us with the start time (first `GPSDateTime` value in the telemetry) and can calculate the end time (first `GPSDateTime` value + `Duration` value).
+
+It also provides the start position and end position of the video (first and last `GPSLatitude`, `GPSLatitude`, and `GPSAltitude` respectively).
+
+To work out average speed we need to know the distance between the two points.
+
+To calculate distance, you can use the [Haversine formula](https://en.wikipedia.org/wiki/Haversine_formula) to find the distance between two points on a sphere (Earth) given their longitudes and latitudes.
+
+Therefore `speed (m/s) = distance between points (meters) / duration (secs)`.
+
+All that is left to do is adjust speed for frame rate.
+
+We know the framerate (it is reported in the telemetry), e.g.
+
+```
+<Track1:VideoFrameRate>29.971</Track1:VideoFrameRate> 
+```
+
+For example, lets say distance was 100 meters from start and end of video, the video was 20 second long, and we want 1 frame every meter. Here is the resulting calculations;
+
+```
+speed m/s = distance between points (meters) / duration (secs)
+speed m/s = 100/20
+speed m/s = 5
+extraction rate fps = speed (m/s) / desired spacing of frames (meters)
+extraction rate fps = 5/1
+extraction rate fps = 5
+```
+
+Using this value, we can use ffmpeg like before, adjusting the `-r` value;
+
+```
+$ ffmpeg -i VIDEO.mp4 -r 5 -q:v 2 FRAMES/img%d.jpg
+```
+
+**Benefits:**
+
+* More accurate than option 1 as it accounts for differing people (e.g. some walk faster than others).
+
+**Negatives:**
+
+* Like option 1, does not account for changes in speed well.
+
+## Option 3: use video telemetry to work out speed changes over the journey
+
+Here you first work out speed at each stage of the video using the telemetry track. You will likely get 16 values for speed each second using a GoPro Camera (16 Hz the max resolution of the GPS chip).
+
+Using the distance travelled and time between each second in the video allows you to calculate an average speed per second (e.g. `0-1 = 10m/s`, `1-2 = 12m/s`, `2-3....`).
+
+_Note: You could calculate ave speed to 0.1 second resolution, (the ffmpeg `-r` flag accepts to 0.1 seconds) but it is overkill for our purposes._
+
+Like previously we can calculate extraction rate fps (`speed (m/s) / desired spacing of frames (meters)`).
+
+You now have FPS extraction values for each second of the video (vs whole video as we used in options 1 and 2). As a result, you need to modify the ffmpeg command.
+
+Unfortunately, the ffmpeg `-r` flag does not account for extraction at variable frame rates in a single video. This is because 99.9% of videos have a fixed frame rate.
+
+In this case we can use the `-ss` (start) and `-to` [ffmpeg seeking function](https://trac.ffmpeg.org/wiki/Seeking) for each 1 second segment of video of the video (replacing the `-r` value with the calculated FPS value calculated earlier for each 1 second increment). e.g.
+
+```
+$ ffmpeg -i VIDEO.mp4 -ss 00:00:00 -to 00:01:00 -r 10 -q:v 2 FRAMES/img%d.jpg
+$ ffmpeg -i VIDEO.mp4 -ss 00:01:00 -to 00:02:00 -r 3 -q:v 2 FRAMES/img%d.jpg
+$ ffmpeg -i VIDEO.mp4 -ss 00:02:00 -to 00:03:00 -r 8 -q:v 2 FRAMES/img%d.jpg
+...
+```
+
+**Benefits:**
+
+* Most accurate method to get consistent spacing between photos as accounts for changes in speed during the recording
+
+**Negatives:**
+
+* It is a little more complex to write the commands programmatically, and introduces a little more processing overhead (but not too much)
+
+### Optional: use GoPro reported speeds
+
+In option 2 and 3 I calculated speed manually using distance and time values.
+
+GoPro videos offer some help with calculating speed -- the speed of travel is actually reported in the metadata ([GPMF](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd)).
 
 [Here is the metadata of a sample video shot on the MAX](https://github.com/trek-view/gopro-metadata/blob/main/max/max-360-vid-001s1/GS018421-5_6k-output.xml).
 
-You'll see two types of GPSSpeed values are regularly reported alongside position, `GPSSpeed` and `GPSSpeed3D`.
+You will see two types of GPSSpeed values are regularly reported alongside position, `GPSSpeed` and `GPSSpeed3D`.
 
 ```
  <Track3:GPSLatitude>51 deg 16&#39; 21.22&quot; N</Track3:GPSLatitude>
@@ -81,56 +205,20 @@ You'll see two types of GPSSpeed values are regularly reported alongside positio
  <Track3:GPSSpeed3D>0.51</Track3:GPSSpeed3D>
 ```
 
-`GPSSpeed` is the horizontal speed (2 Dimensional -- latitude and longitude). `GPSSpeed3D` accounts for horizontal and vertical changes (3 Dimensional -- latitude and longitude and altitude).
+`GPSSpeed` is the horizontal speed (2 Dimensional -- latitude and longitude) aka ground speed (it is the same as the Haversine formula we used earlier).
 
-`GPSSpeed3D` takes into account that Earth is round, and the ground on the planet is not flat. 
+`GPSSpeed3D` accounts for horizontal and vertical changes (3 Dimensional -- latitude and longitude and altitude), it is aware of the mountains and valleys you might have traversed (from altitude values reported). 
 
-<img class="img-fluid" src="/assets/images/blog/2022-02-11/gps-speed-3d-2d.jpg" alt="GPS Speed 3D and GPS Speed 2D" title="GPS Speed 3D and GPS Speed 2D" />
+<img class="img-fluid" src="/assets/images/blog/2022-02-11/gps-speed-3d-2d-haversine.jpg" alt="GPS Speed 3D and GPS Speed 2D and Haversine" title="GPS Speed 3D and GPS Speed 2D" />
 
-The above illustates this perfectly. Travelling 
+Using the time reported in GoPro telemetry will not offer much accuracy over calculating manually (you are doing the same calculations), but it will save you the time and processing power to do those calculations (although you will have to write to code to correctly ready speed values). As such, I prefer to just do manual calculations, but wanted to share this method should you want too.
 
+## One final consideration
 
+As technology develops having more data (photos frames) available is advantageous.
 
-## Fffmpeg
+For example, when mapping objects in real space using Photogrammetry.
 
-ffmpeg does not have an easy way to tie the GoPro speed value for framerate.
+The resulting 3D models are more accurate when there are more data points (frames) at slightly different angles because the code has more knowledge to work with.
 
-In previous posts I've talke about using ffmpeg to extract at a fixed framerate, e.g. 5 FPS;
-
-```
-$ ffmpeg -i GS019006.mp4 -r 5 -q:v 2 FRAMES/img%d.jpg
-```
-
-* -r: Set frame rate (Hz value, fraction or abbreviation).
-* -q:v: [Controls the quality of output](https://stackoverflow.com/questions/10225403/how-can-i-extract-a-good-quality-jpeg-image-from-a-video-file-with-ffmpeg/10234065#10234065)
-
-Unfortunatley (and as expected), it does not account for extraction at variable framerates in a single video. Most videos, including those, shot on GoPro's are shot at the same framerate from start to finish. Defined in the framerate
-
-Mo
--r[:stream_specifier] fps (input/output,per-stream)
-Set frame rate (Hz value, fraction or abbreviation).
-
-https://ffmpeg.org/ffmpeg.html#Video-Options
-
-As an input option, ignore any timestamps stored in the file and instead generate timestamps assuming constant frame rate fps. This is not the same as the -framerate option used for some input formats like image2 or v4l2 (it used to be the same in older versions of FFmpeg). If in doubt use -framerate instead of the input option -r.
-
-As an output option, duplicate or drop input frames to achieve constant output frame rate fps, e.g
-
-```
-<Track1:VideoFrameRate>29.971</Track1:VideoFrameRate> 
-```
-
-This means the easiest way to define spacing is to:
-
-1. Extract all frames from the video (using the framerate reported in the video metadata)
-2. Geotag all frames (using GPS telemetry stream)
-	2.1 A note on this: GPS does not report at the same framerate
-3. Calculate distance between photos using positional information.
-2020-01-17-what-direction-are-you-facing.md
-4. Set defined spacing (e.g. 1 meter) and discard photos between points that this value.
-
-
-Show example.
-
-This 
-
+Again the trade-off comes down to power and storage versus how much money you have to do it. At small scale, extracting higher frames is fine, but when you are processing 100's of videos a day, costs will quickly add up.
