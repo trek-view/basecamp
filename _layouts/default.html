@@ -11,8 +11,9 @@
 		<link rel="stylesheet" type="text/css" href="/assets/css/screen.css">
 		<link rel="stylesheet" type="text/css" href="/assets/css/fontawesome.css">
 		<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/monokai.min.css">
 		<link rel="stylesheet" type="text/css" href="/assets/css/pannellum.css">
-		<link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min.css" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/cookieconsent.min.css">
 
 		<link rel="icon" type="image/png" href="/assets/images/icons/favicon.png">
 
@@ -42,6 +43,29 @@
 		  }
 		})});
 		</script>
+
+<style>
+
+  .hljs-ln-numbers {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  
+      text-align: center;
+      color: #ccc;
+      vertical-align: top;
+      /* padding: 0 10px 0; */
+  }
+  
+  .hljs-ln-numbers .hljs-ln-n {
+    padding-right: 8px;
+  }
+
+  
+  </style>
 
 	</head>
 	<body>
@@ -87,8 +111,23 @@
 		<script src="/assets/js/jquery-3.3.1.slim.min.js"></script>
 		<script src="/assets/js/popper.min.js"></script>
 		<script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/highlight.min.js"></script>
+    <script src="/assets/js/highlightjs-line-numbers.js"></script>
 		<script src="/assets/js/iframe-script.js"></script>
 		<script src="/assets/js/pannellum.js"></script>
+
+    <script>
+      hljs.highlightAll();
+      hljs.initLineNumbersOnLoad();
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $('code').each(function (i, block) {
+          hljs.highlightBlock(block);
+        });
+      });
+    </script>
 
 	</body>
 </html>
