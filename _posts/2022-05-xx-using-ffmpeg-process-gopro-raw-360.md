@@ -14,7 +14,7 @@ published: false
 
 You might have seen my previous series of posts
 
-* [Reversing engieering GoPro MAX .360 videos (convet to equirectangular projection)]()
+* [Reversing engieering GoPro MAX .360 videos (convet to equirectangular projection)](/blog/2021/reverse-engineering-gopro-360-file-format-part-1)
 * [Turning dual GoPro Fusion Fisheye videos and images into equirectangular projections](/blog/2021/gopro-fusion-fisheye-stitching-part-1)
 
 In both of these posts, the outcome was two custom built scripts that implemented a proof-of-concept for our research.
@@ -46,6 +46,11 @@ The first step is to merge the input into a single dual fisheye (front and back 
 ffmpeg -i GPBK0002.MP4 -i GPFR0002.MP4 -filter_complex hstack -c:v libx265 GP0002-dualfisheye.MP4
 ```
 
+Reference: 
+
+* `-c:v` (codec): codec name (`:v` refers to video stream) for output video.
+* [`hstack`](https://ffmpeg.org/ffmpeg-filters.html#hstack): horizontal stack
+
 The output looks like this;
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tXOiW1bAWqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -55,24 +60,24 @@ The videos resolution is 5408x2624.
 Now this needs to be converted to an equirectagular projection:
 
 ```shell
-ffmpeg -y -i GP0002-dualfisheye.MP4 -vf v360=dfisheye:equirect:ih_fov=190:iv_fov=190 -c:v libx265 GP0002-equirectangular-noblend.mp4
+ffmpeg -y -i GP0002-dualfisheye.MP4 -vf v360=dfisheye:equirect:ih_fov=190:iv_fov=180 -c:v libx265 GP0002-equirectangular-noblend.mp4
 ```
 
-Where,
 
-* v360 : filter name
-	* dfisheye : double fisheye (rectangular image containing two spheres/fisheye)
-	* e : abbreviation for "equirectangular"
-	* ih_fov : input horizontal Field Of View ([see our last post on GoPro field of view](/blog/2021/gopro-fusion-fisheye-stitching-part-4))
-	* iv_fov : input vertical Field Of View, usually identical to ih_fov
+
+* `v360` : filter name
+	* `dfisheye` : double fisheye (rectangular image containing two spheres/fisheye)
+	* `e` : abbreviation for "equirectangular"
+	* `ih_fov` : input horizontal Field Of View ([see our last post on GoPro field of view](/blog/2021/gopro-fusion-fisheye-stitching-part-4))
+	* `iv_fov` : input vertical Field Of View, usually identical to ih_fov
 
 Other useful options that might be useful for editing the output
 
-* yaw : view direction (=azimut) of center of equirectangular output (=look left/right) [0 - 360]
-* pitch: look up/down [-90 - 90]
-* roll: horizontal roll of the camera (tilt side-side) [-180 - 180]
-* h_fov : output horizontal FOV
-* v_fov : output vertical FOV
+* `yaw`: view direction (=azimut) of center of equirectangular output (=look left/right) [0 - 360]
+* `pitch`: look up/down [-90 - 90]
+* `roll`: horizontal roll of the camera (tilt side-side) [-180 - 180]
+* `h_fov` : output horizontal FOV
+* `v_fov` : output vertical FOV
 
 
 
