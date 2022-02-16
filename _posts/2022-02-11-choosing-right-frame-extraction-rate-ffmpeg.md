@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2022-02-11/gps-speed-3d-2d-haversine-meta.jpg
 featured_image: /assets/images/blog/2022-02-11/gps-speed-3d-2d-haversine.jpg
 layout: post
-published: true
+published: false
 ---
 
 **How you optimised the process of turning a video into frames to create virtual tours in Explorer using speed as a variable.**

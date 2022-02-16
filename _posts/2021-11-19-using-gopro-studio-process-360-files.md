@@ -5,8 +5,8 @@ description: "Once you've shot a video on the MAX, you will need to process it u
 categories: guides
 tags: [GoPro, GoPro Studio, MAX, GMPF, GPMD, GPS, mp4, stitching, equirectangular, VR]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-02-11/gopro-studio-bulk-exporter-meta.jpg
-featured_image: /assets/images/blog/2022-02-11/gopro-studio-bulk-exporter-sm.jpg
+image: /assets/images/blog/2022-11-19/gopro-studio-bulk-exporter-meta.jpg
+featured_image: /assets/images/blog/2022-11-19/gopro-studio-bulk-exporter-sm.jpg
 layout: post
 published: true
 ---
@@ -23,7 +23,7 @@ In this post I wanted to share the settings we tend to use, and why we use them.
 
 ## Defining GoPro Studio settings
 
-<img class="img-fluid" src="/assets/images/blog/2022-02-11/gopro-studio-bulk-exporter-meta.jpg" alt="GoPro Studio Batch Exporter" title="GoPro Studio Batch Exporter" />
+<img class="img-fluid" src="/assets/images/blog/2022-11-19/gopro-studio-bulk-exporter-meta.jpg" alt="GoPro Studio Batch Exporter" title="GoPro Studio Batch Exporter" />
 
 Open up GoPro Studio, select Batch Exporter, and then drag the .360 files you want to convert into the list.
 

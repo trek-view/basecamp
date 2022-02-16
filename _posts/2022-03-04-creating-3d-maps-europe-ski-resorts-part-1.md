@@ -1,6 +1,6 @@
 ---
 date: 2022-03-04
-title: "Creating 3D Maps of Europe's Leading Ski Resorts (Part 1/4)"
+title: "Creating 3D Maps of Europe's Leading Ski Resorts"
 description: ""
 categories: treks
 tags: []
@@ -10,6 +10,3 @@ featured_image: /assets/images/blog/2022-03-04/
 layout: post
 published: false
 ---
-
-We're going on an adventure.
-
