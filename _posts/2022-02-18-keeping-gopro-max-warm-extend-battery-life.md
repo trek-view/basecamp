@@ -5,8 +5,8 @@ description: "If you've ever tried using electronics in very cold weather you mi
 categories: guides
 tags: [GoPro, MAX, battery, ski, winter, snowboard, Anker, PowerCore, Smith]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-02-18/
-featured_image: /assets/images/blog/2022-02-18/
+image: /assets/images/blog/2022-02-18/helmet-trek-pack.jpg
+featured_image: /assets/images/blog/2022-02-18/helmet-trek-pack-sm.jpg
 layout: post
 published: true
 ---
