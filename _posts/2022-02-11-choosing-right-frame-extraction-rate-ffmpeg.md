@@ -1,7 +1,7 @@
 ---
 date: 2022-02-11
 title: "Setting the right frame rate for video extraction using ffmpeg"
-description: "How you optimised the process of turning a video into frames to create virtual tours in Explorer using speed as a variable."
+description: "How we optimised the process of turning a video into frames to create virtual tours in Explorer using speed as a variable."
 categories: developers
 tags: [FFMpeg, video, haversine]
 author_staff_member: dgreenwood
@@ -11,17 +11,17 @@ layout: post
 published: true
 ---
 
-**How you optimised the process of turning a video into frames to create virtual tours in Explorer using speed as a variable.**
+**How we optimised the process of turning a video into frames to create virtual tours in Explorer using speed as a variable.**
 
 [Last week I talked about the importance of considering framerate for timewarp videos when extracting frames from it](/blog/2022/turn-360-timewarp-video-into-timelapse-images).
 
-With the Trek Pack v1 you shot in timelapse mode, [where the interval setting was determined by the speed of transport used during shooting](/blog/2019/diy-google-street-view-part-3-preparing-to-shoot). This was a compromise as the Fusion's video mode was very battery intensive.
+With the Trek Pack v1 we shot in timelapse mode, [where the interval setting was determined by the speed of transport used during shooting](/blog/2019/diy-google-street-view-part-3-preparing-to-shoot). This was a compromise as the Fusion's video mode was very battery intensive.
 
-The MAX used on our v2 pack improved upon battery performance in video mode and you stated shooting in video mode only. The MAX also only supports a frame rate of 0.5 FPS (1 photo every 2 seconds), which is not paticularly fast for moderate-speed travel (e.g. biking).
+The MAX used on our v2 pack improved upon battery performance in video mode and we stated shooting in video mode only. The MAX also only supports a frame rate of 0.5 FPS (1 photo every 2 seconds), which is not paticularly fast for moderate-speed travel (e.g. biking).
 
 One of the biggest benefits of videos is that they can be recorded at a much higher frame rate. In video mode you can record up to 120 FPS @ 3k and 30 FPS @ 5.2k on the MAX. Ultimately, this means there is more footage for us to work with (and discard as needed), not afforded when using timelapse mode.
 
-Though extra frames come at a cost, and you had to apply some trade-offs when building Explorer.
+Though extra frames come at a cost, and we had to apply some trade-offs when building Explorer.
 
 ## Why not extract all frames of the video?
 
@@ -39,7 +39,7 @@ For virtual tours, the main measure of extraction comes down to the distance you
 
 [As noted in this post on the Google support forum](https://support.google.com/maps/forum/AAAAQuUrST8X8OxIdF011I/?hl=en&gpf=d/topic/maps/X8OxIdF011I), Google Street View paths (photos connected with a blue line) should not be greater than 5 metres apart.
 
-For the optimum viewing experience of virtual tours, you have found photos about a metre apart work best. They are close enough that scenery does not get passed too quickly, nor are they to close together that navigation becomes tedious.
+For the optimum viewing experience of virtual tours, we have found photos about a metre apart work best. They are close enough that scenery does not get passed too quickly, nor are they to close together that navigation becomes tedious.
 
 To hightlight the difference between video mode and timelapse mode; rraveling at an average speed of 10 km/h (2.75 m/s) in 2 second timelapse mode will produce one photo about every 6 metres. Shot in video mode at 24 FPS results in one photo every 0.1 metres.
 
@@ -81,13 +81,13 @@ Now, assuming the distance between frames in the video is actually much less tha
 
 For a larger spacing (or shorter spacing), you can use the following calculation (also shown with formula here)
 
-```
+```ts
 ffmpeg -r value (fps) = ave speed (m/s) / frame spacing (metres)
 ```
 
 e.g. for spacing every 5 metres at average speed of 8.33 m/s
 
-```
+```ts
 ffmpeg -r value (fps) = 8.3 / 5
 ffmpeg -r value (fps) = 2
 ```
@@ -96,7 +96,7 @@ You can already see the frame savings over the raw video. If original framerate 
 
 Using ffmpeg you can now extract the frames like so;
 
-```
+```shll
 $ ffmpeg -i VIDEO.mp4 -r 2 -q:v 2 FRAMES/img%d.jpg
 ```
 
@@ -121,9 +121,9 @@ To work out average speed you need to know the distance between the two points.
 
 To calculate distance, you can use the [Haversine formula](https://en.wikipedia.org/wiki/Haversine_formula) to find the distance between two points on a sphere (Earth) given their longitudes and latitudes.
 
-Once you've calculate the distance, to work out speed;
+Once you have calculate the distance, to work out speed;
 
-```
+```ts
 speed (m/s) = distance between points (metres) / duration (secs)
 ```
 
@@ -131,13 +131,13 @@ All that is left to do is adjust speed for frame rate.
 
 We know the framerate (it is reported in the telemetry), e.g.
 
-```
+```xml
 <Track1:VideoFrameRate>29.971</Track1:VideoFrameRate> 
 ```
 
 As an example, let's say distance was 100 metres from start to end of video, the video was 20 second long, and you want 1 frame every metre. Here is the resulting calculations;
 
-```
+```shell
 speed m/s = distance between points (metres) / duration (secs)
 speed m/s = 100/20
 speed m/s = 5
@@ -148,7 +148,7 @@ extraction rate fps = 5
 
 Using this value, you can use ffmpeg like before, adjusting the `-r` value;
 
-```
+```shell
 $ ffmpeg -i VIDEO.mp4 -r 5 -q:v 2 FRAMES/img%d.jpg
 ```
 
@@ -170,7 +170,7 @@ Using the distance travelled and time between each second in the video allows yo
 
 _Note: You could calculate ave speed to 0.1 second resolution, (the ffmpeg `-r` flag accepts to 0.1 seconds) but it is overkill for our purposes._
 
-Like done previously, you can calculate extraction rate FPS (`speed (m/s) / desired spacing of frames (metres)`).
+As done previously, you can calculate extraction rate FPS (`speed (m/s) / desired spacing of frames (metres)`).
 
 You now have FPS extraction values for each second of the video (vs whole video as you used in options 1 and 2). As a result, you now need to modify the ffmpeg command.
 
@@ -178,7 +178,7 @@ Unfortunately, the ffmpeg `-r` flag does not account for extraction at variable 
 
 In this case you can use the `-ss` (start) and `-to` [ffmpeg seeking function](https://trac.ffmpeg.org/wiki/Seeking) for each 1 second segment of video of the video (replacing the `-r` value with the calculated FPS value calculated earlier for each 1 second increment). e.g.
 
-```
+```shell
 $ ffmpeg -i VIDEO.mp4 -ss 00:00:00 -to 00:01:00 -r 10 -q:v 2 FRAMES/img%d.jpg
 $ ffmpeg -i VIDEO.mp4 -ss 00:01:00 -to 00:02:00 -r 3 -q:v 2 FRAMES/img%d.jpg
 $ ffmpeg -i VIDEO.mp4 -ss 00:02:00 -to 00:03:00 -r 8 -q:v 2 FRAMES/img%d.jpg
@@ -203,7 +203,7 @@ GoPro videos offer some help with calculating speed -- the speed of travel is ac
 
 You will see two types of GPSSpeed values are regularly reported alongside position, `GPSSpeed` and `GPSSpeed3D`.
 
-```
+```xml
  <Track3:GPSLatitude>51 deg 16&#39; 21.22&quot; N</Track3:GPSLatitude>
  <Track3:GPSLongitude>0 deg 50&#39; 45.55&quot; W</Track3:GPSLongitude>
  <Track3:GPSAltitude>81.072 m</Track3:GPSAltitude>

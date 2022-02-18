@@ -148,6 +148,7 @@ cd goproMax-ffmpeg-v5
 
 Now you need to install the ffmpeg dependencies, [as detailed here](https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu).
 
+
 Now build ffmpeg using the makefile (this will take a long time);
 
 ```shell
