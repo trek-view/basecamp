@@ -1,12 +1,12 @@
 ---
-date: 2022-04-01
+date: 2022-04-08
 title: "Lat,lon or Lon,lat?"
 description: "The biggest pain of working with geospatial software; determining the way they present latitude and longitude... or is that longitude and latitude?"
 categories: guides
 tags: []
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-04-01/map-pin-ocean-meta.png
-featured_image: /assets/images/blog/2022-04-01/map-pin-ocean-sm.png
+image: /assets/images/blog/2022-04-08/map-pin-ocean-meta.png
+featured_image: /assets/images/blog/2022-04-08/map-pin-ocean-sm.png
 layout: post
 published: false
 ---
