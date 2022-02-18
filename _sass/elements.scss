@@ -54,3 +54,59 @@ p, address {
 	font-weight: 300;
 	line-height: 1.4em;
 }
+
+ul {
+  li {
+    font-size: 1.38em;
+    color: #666;
+    font-weight: 300;
+    line-height: 1.4em;
+  }
+}
+
+// Hightlight number lines styles
+.hljs-ln-numbers {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  color: #ccc;
+  vertical-align: top;
+
+}
+
+.hljs-ln-numbers .hljs-ln-n {
+padding-right: 8px;
+}
+
+
+// Styles for tables when using please always use tableizer-table in order not to mess the code highlighting styles
+.tableizer-table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 10px 0;
+    width: 100%;
+    table-layout: fixed;
+    font-size: 1.3em;
+    font-weight: 300;
+    text-align: center;
+    
+  thead {
+    th {
+      background-color: $brand-color;
+      font-size: .8em !important;
+    }
+
+  }
+
+  th, td {
+    padding: 4px 0;
+  }
+
+  tr {
+    border: 1px solid #ddd;
+  }
+}

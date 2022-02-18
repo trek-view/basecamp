@@ -99,6 +99,11 @@ exclude:
   - README.md
   - tmp
   - LICENCE
+  - gulpfile.js
+  - package.json
+  - package-lock.json
+  - node_modules
+
 
 # -----------
 # CloudCannon

@@ -4,6 +4,10 @@ _site
 .jekyll-metadata
 .bundle
 /vendor
+node_modules
+gulpfile.js
+package.json
+package-lock.json
 
 # OS or Editor folders
 .DS_Store
