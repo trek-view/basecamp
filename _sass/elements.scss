@@ -55,7 +55,7 @@ p, address {
 	line-height: 1.4em;
 }
 
-ul {
+ul, ol, dl {
   li {
     font-size: 1.38em;
     color: #666;
@@ -92,12 +92,15 @@ padding-right: 8px;
     table-layout: fixed;
     font-size: 1.3em;
     font-weight: 300;
+    color: #666;
     text-align: center;
     
   thead {
     th {
       background-color: $brand-color;
-      font-size: .8em !important;
+      font-size: 1.3em;
+      font-weight: 300;
+      line-height: 1em;
     }
 
   }
