@@ -29,21 +29,19 @@ To help compensate for a cameras limitations reproducing visual depth in imagery
 
 ## Photogrammetry
 
-At its most basic, “photogrammetry” is measuring via photos.
+Photogrammetry is the science of making measurements from photographs.
 
-Again, the best way to visualise this is to use your eyes—literally. Your eyeballs are using photogrammetry all the time.
+Again, the best way to visualise this is to use your eyes. Your eyeballs are using photogrammetry all the time.
 
 You have two eyes (two sensors), processing a live feed of your surroundings. Because your eyes are slightly apart, you’re getting two different inputs at slightly different angles. 
 
 Your brain knows how far apart your eyes are, which allows it to process this info into a sense of distance by merging both feeds into a single perspective.
 
-Stitching 360 photos requires a similar process. [For a computer to stitch images together images it needs control points, the same point in space in two photos](/blog/2020/how-does-360-stitching-software-work).
+In the world of 360 photography, photogrammetry is used during stitching to identify control points, the same point in space in two (or more) photos. [I recommend reading this post which covers control points in more detail](/blog/2020/how-does-360-stitching-software-work).
 
-Control points have more uses than just stitching photos taken by each sensor on a camera into a single 360 image.
+Photogrammetry is often used to produce 3D surveys too. Here control points between two or more photos might be used to build a 3D model by identifying the same objects (but at different angles) in each image to model it in real space.
 
-For example, they can be used to produce accurate 3D surveys. Here control points between two or more photos might be used to build a 3D map by identifying the same objects (but at different angles) in each image.
-
-Mapillary uses photogrammetry in their [OpenSFM software](https://github.com/mapillary/OpenSfM) which is used in the Mapillary web app when transitioning between photos (amongst other things).
+Mapillary uses photogrammetry techniques in their [OpenSFM software](https://github.com/mapillary/OpenSfM) which is implemented in the Mapillary web app when transitioning between photos (amongst other things).
 
 <img class="img-fluid" src="/assets/images/blog/2020-09-11/openSFM.png" alt="Mapillary OpenSFM" title="openSFM" />
 

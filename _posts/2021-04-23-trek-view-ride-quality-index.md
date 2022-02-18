@@ -77,7 +77,7 @@ I setup the app to record data at 100Hz (100 measurements every second), which i
 
 Below are the aggregated results for a 20 second stretch of the gravel path.
 
-<table>
+<table class="tableizer-table">
 <thead><tr><th>time</th>
 <th>gFz (moving ave)*100</th>
 <th>Latitude (end of segment)</th>

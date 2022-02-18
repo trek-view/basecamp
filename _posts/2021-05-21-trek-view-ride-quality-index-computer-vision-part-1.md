@@ -25,7 +25,7 @@ What I really like about this challenge is that [all entries are required to be 
 
 There were 12 submissions to the 2020 challenge, [as detailed in the report](https://www.researchgate.net/publication/345989816_Global_Road_Damage_Detection_State-of-the-art_Solutions):
 
-<table>
+<table class="tableizer-table">
 <thead><tr><th>GRDDC – Rank</th>
 <th>Name of the Team</th>
 <th>Test1-Score</th>

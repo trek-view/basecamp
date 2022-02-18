@@ -89,7 +89,7 @@ After the Street View processing completes (usually 72 hours, but potentially lo
 
 However, processing can, and often does fail, producing one of the following potential [`ProcessingFailureReason` error](https://developers.google.com/streetview/publish/alpha/reference/rest/v1/photoSequence/create?authuser=1#processingfailurereason)
 
-<table>
+<table class="tableizer-table">
 <thead><tr><th>`ProcessingFailureReason` value</th><th>Error Description</th></tr></thead><tbody>
  <tr><td>PROCESSING_FAILURE_REASON_UNSPECIFIED</td><td>The failure reason is unspecified, this is the default value.</td></tr>
  <tr><td>LOW_RESOLUTION</td><td>Video frame's resolution is too small.</td></tr>
