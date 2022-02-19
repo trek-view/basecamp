@@ -152,14 +152,29 @@ Now you need to install the ffmpeg dependencies, [as detailed here](https://trac
 Now build ffmpeg using the makefile (this will take a long time);
 
 ```shell
-make
+$ sudo apt-get install -y ocl-icd-opencl-dev
+$ ./configure --enable-opencl --enable-opengl --enable-sdl2
+$ make
+$ sudo make install
+# test ffmpeg works
+$ ffmpeg
 ```
 
-If build is successful (fingers crossed!), go ahead and install FFmpeg;
+If install is successful (fingers crossed!), go ahead and install FFmpeg;
 
 ```shell
-sudo make install
+$ pip install gdown
+# Use test 360 GS018421.360
+$ gdown --id 1FT1oth6HHMFnzP_2jk8JpGPmlzjeBhIb
 ```
+
+pip install gdown
+
+
+
+ffmpeg -i GS018421.360 -init_hw_device opencl:0.1 -filter_hw_device opencl0 -v verbose -filter_complex '[0:0]format=yuv420p,hwupload[a] , [0:4]format=yuv420p,hwupload[b], [a][b]gopromax_opencl, hwdownload,format=yuv420p' OUTPUT.mp4
+
+
 
 After installation, type ffmpeg command to verify the installation.
 
