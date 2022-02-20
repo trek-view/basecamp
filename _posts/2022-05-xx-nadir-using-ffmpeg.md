@@ -1,27 +1,26 @@
 ---
 date: 2022-05-04
 title: "Using ffmpeg to overlay a custom nadir or watermark over GoPro videos"
-description: "Add your logo to the nadir of an equirectangular video or as a watermark to normal videos"
+description: "Efficiently add your logo to the nadir of an equirectangular video or as a watermark to normal videos."
 categories: developers
 tags: [nadir, ffmpeg, imagemagick]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2021-01-21/
-featured_image: /assets/images/blog/2021-01-21/
+image: /assets/images/blog/2022-05-04/youtube-gopro-nadir-meta.png
+featured_image: /assets/images/blog/2022-05-04/youtube-gopro-nadir-sm.png
 layout: post
 published: false
 ---
 
+**Efficiently add your logo to the nadir of an equirectangular video or as a watermark to normal videos.**
 
-Adding a nadir to equirectangular images:
+In previous post I have covered how to add a nadir to equirectangular images:
 
 * [manually (using GIMP)](/blog/2020/adding-a-custom-nadir-to-360-video-photo), and here:
 * [programmatically (using ImageMagick)]
 
-Adding a watermark to normal photos:
+And how to add a watermark to normal photos:
 
 * [programmatically (using ImageMagick)](/blog/2022/adding-a-custom-watermark-to-hero-photo-video)
-
-
 
 All of these approaches required breaking videos down into frames, overlaying the nadir or watermark, and then re-rendering into a video.
 
@@ -52,23 +51,47 @@ Below walks through a pipeline of determining how to process each video
 
 ### 1. Determine projection type
 
-If you want to implement this pro
+Using exiftool;
 
+```shell
+$ exiftool -ee -G3 -api LargeFileSupport=1 -X  -XMP-GSpherical:ProjectionType GS018421-5_6k-output.mp4
+````
+
+Gives'
+```
+ <XMP-GSpherical:ProjectionType>equirectangular</XMP-GSpherical:ProjectionType>
+```
+
+If no value returned, we would know it is a HERO video, if input is a GoPro .mp4 file.
 
 ### 2. Determine video resolution
 
+Using exiftool;
+
+```shell
+$ exiftool -ee -G3 -api LargeFileSupport=1 -X -ImageWidth -ImageHeight GS018421-5_6k-output.mp4
+````
+
+Gives;
+
+```xml
+ <Track1:ImageWidth>5376</Track1:ImageWidth>
+ <Track1:ImageHeight>2688</Track1:ImageHeight>
+```
 
 ### 3. Identify video tracks
 
 Each GoPro camera contains a range of tracks (video track, audio track, gpmd track).
 
-THough the types of tracks included depemnd on the camera and mode used.
+The types of tracks included depend on the camera and mode used.
 
 For example, videos shot in timewarp mode do not contain an audio track.
 
-You therefore need to read what tracks exist in the mp4 files so that it can be copied over to the 
+You first need to read what tracks exist in the mp4 files to decide what needs to be copied.]
 
-This is possible using `ffprobe`''
+For our purposes only video, audio and gpmd tracks are required.
+
+It is possible to identify these using `ffprobe`;
 
 ```shell
 $ ffprobe -i GS028461.mp4
@@ -103,10 +126,10 @@ Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'GS028461.mp4':
 Unsupported codec with id 98314 for input stream 2
 ```
 
-I have worked a lot with exiftool previously, which can also be used to identify tracks that exist in the video
+I worked with exiftool previously in this post, which can also be used to identify tracks that exist in the video
 
 ```shell
-$ exiftool -ee -X GS028461.mp4 > GS028461.xml 
+$ exiftool -ee -G3 -api LargeFileSupport=1 -X GS028461.mp4 > GS028461.xml 
 ```
 
 Which returns and `.xml` file with the following sections;
@@ -152,9 +175,21 @@ Which returns and `.xml` file with the following sections;
  <Track3:HandlerDescription>GoPro MET</Track3:HandlerDescription>
 ```
 
+**Note on GoPro TCD**
+
+HERO videos also contain a `tmcd` (`GoPro TCD`) track.
+
+```xml
+ <Track3:HandlerClass>Media Handler</Track3:HandlerClass>
+ <Track3:HandlerType>Time Code</Track3:HandlerType>
+ <Track3:HandlerDescription>GoPro TCD  </Track3:HandlerDescription>
+```
+
+I was not able to figure out how to copy this track across to the new video using ffmpeg. This track seems to be related to timecodes. As noted earlier, I am fine ignoring it as it is not required for what I want to do.
+
 ### 4. Create nadir (equirectangular only)
 
-Logo files used for the nadir in equirectangular videos, first needed to be converted into equirectangular projectios to ensure they render correctly when rendered in a 360 viewer.
+If during step 1 video was identified to be equirectangular the logo used for the nadir overlay needs to first be converted into an equirectangular projection so that it renders correctly in a 360 viewer.
 
 [I describe how to do this using ImageMagick here](/blog/2021/adding-a-custom-nadir-to-360-video-photo)
 
@@ -196,37 +231,71 @@ The video measures `5376x2688` and the nadir is `5376x268` (10% of image height)
 
 Therefore `XXXX` = `0` and `YYYY` = `2420` (`2688-268`).
 
+Try it for yourself:
+
+* [`GS018421-5_6k-output.mp4` (5376x2688)](https://drive.google.com/file/d/1FPSUY8KMsCL_UfEzbTOsjFVSUHZiBobK/view?usp=sharing)
+  * [Metadata to identify video streams (track 3 is gpmd)](https://drive.google.com/file/d/1HGwhK4SH_Wl1eN_mBj1PMFlI8cescto_/view?usp=sharing)
+* [`trek-view-square-nadir-5376.png` (5376x268) (already processed by ImageMagick @ 10% of height)](https://drive.google.com/file/d/1Nu8hUakDbOk82pVDFMayHmapNEpwGc01/view?usp=sharing)
 
 ```shell
 $ ffmpeg -i GS018421-5_6k-output.mp4 -i trek-view-square-nadir-5376.png \
 -filter_complex "[0:v][1:v] overlay=0:2420" \
--pix_fmt yuv420p -c:a copy -map_metadata 0 -map 0:2 -copy_unknown -tag:2 gpmd \
+-pix_fmt yuv420p -c:a copy -map_metadata 0 -map 0:1 -map 0:2 -copy_unknown -tag:2 gpmd \
 GS018421-5_6k-output-nadir.mp4
 ```
 
-Try it for yourself:
+I was not able to figure out how to use to copy `XMP-GSpherical` tags, used by most video software to identify equirectangular content.
 
-* [`GS018421-5_6k-output.mp4` (5376x2688)](https://drive.google.com/file/d/1FPSUY8KMsCL_UfEzbTOsjFVSUHZiBobK/view?usp=sharing)
-	* [Metadata to identify video streams (track 3 is gpmd)](https://drive.google.com/file/d/1HGwhK4SH_Wl1eN_mBj1PMFlI8cescto_/view?usp=sharing)
-* [`trek-view-square-nadir-5376.png` (5376x268) (already processed by ImageMagick @ 10% of height)](https://drive.google.com/file/d/1Nu8hUakDbOk82pVDFMayHmapNEpwGc01/view?usp=sharing)
+[You can use Google's Spatial Media Metadata Injector tool to do this](https://github.com/google/spatial-media/tree/master/spatialmedia).
+
+ ```shell
+$ git clone https://github.com/google/spatial-media.git
+$ cd spatialmedia
+$ python spatialmedia -i GS018421-5_6k-output-nadir.mp4 GS018421-5_6k-output-nadir-gspherical.mp4
+```
+
+Gives;
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vE1DH1Tt-sA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+And you will see all the original tracks and spatial metadata is present in the metadata;
+
+
+```shell
+$ exiftool -ee -G3 -api LargeFileSupport=1 -X GS018421-5_6k-output-nadir-gspherical.mp4 > GS018421-5_6k-output-nadir-gspherical.xml
+````
+
+[Download GS018421-5_6k-output-nadir-gspherical.xml](https://drive.google.com/file/d/1T4zoHBSltEPaLzuPXnow4x2G8pChNu8q/view?usp=sharing)
 
 **Watermark example**
 
 Therefore, the horizontal offset required 
 
-The video measures `5376x2688` and the watermark is `268x268` (10% of image height).
+The video measures `1920x1440` and the watermark is `144x144` (10% of image height).
 
-If you wanted to place the logo in the bottom left hand corner of the image you would set `XXXX` = `5108` (`5376-268`) and `YYYY` = `2420` (`2688-268`).
-
-```shell
-$ ffmpeg -i GH018658.MP4 -i trek-view-square-watermark-144.png \
--filter_complex "[0:v][1:v] overlay=0:2420" \
--pix_fmt yuv420p -c:a copy -map_metadata 0 -map 0:3 -copy_unknown -tag:3 gpmd \
-GH018658-nadir.mp4
-```
+If you wanted to place the logo in the bottom left hand corner of the image you would set `XXXX` = `1776` (`1920-144`) and `YYYY` = `1296` (`1440-144`).
 
 Try it for yourself:
 
 * [`GH018658.MP4` (1920x1440)](https://drive.google.com/file/d/1E0C__X6UixzxcCEda9UJ4u0VUrBZPEqf/view?usp=sharing)
-	* [Metadata to identify streams (track 4 is gpmd)](https://drive.google.com/file/d/1ADOthul_OmGPY1pnB3lR4FJLpPGXAXDk/view?usp=sharing)
+  * [Metadata to identify streams (track 4 is gpmd)](https://drive.google.com/file/d/1ADOthul_OmGPY1pnB3lR4FJLpPGXAXDk/view?usp=sharing)
 * [`trek-view-square-watermark-144.png` (144x144) (already processed by ImageMagick @ 10% of height)](https://drive.google.com/file/d/1b0LzXAUxozqh9SXyF8p5h5Zbn3-NldZp/view?usp=sharing)
+
+```shell
+$ ffmpeg -i GH018658.MP4 -i trek-view-square-watermark-144.png \
+-filter_complex "[0:v][1:v] overlay=1776:1296" \
+-pix_fmt yuv420p -c:a copy -map_metadata 0 -map 0:1 -map 0:3 -map 0:3 -copy_unknown -tag:3 gpmd \
+GH018658-nadir.mp4
+```
+
+Gives;
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/cp3W1z8I_wU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+And you will see all the original tracks and spatial metadata is present in the metadata;
+
+```shell
+$ exiftool -ee -G3 -api LargeFileSupport=1 -X GH018658-nadir.mp4 > GH018658-nadir.xml
+````
+
+[Download GH018658-nadir.xml](https://drive.google.com/file/d/125aMNHwuFX1agA3NZvgFJPwgJEMgpS9L/view?usp=sharing)

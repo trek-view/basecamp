@@ -176,7 +176,7 @@ ProjectionType = equirectangular
 There is the option to inject via the command line too:
 
 ```
-python spatialmedia -i [--stereo=none] demo-video-no-meta.mp4 demo-video-with-meta.mp4
+python spatialmedia -i demo-video-no-meta.mp4 demo-video-with-meta.mp4
 ```
 
 ## Coming soon to Map the Paths Uploader...
