@@ -17,7 +17,7 @@ published: true
 
 Luckily, [I discovered that Paul Bourke has published a significant amount of his work on converting to/from cubemaps](http://paulbourke.net/panorama/cubemaps/), as well as lots of other related works.
 
-Taking inspiration from this work and with the help of Paul himself, [MAX2sphere Batch](https://github.com/trek-view/MAX2sphere-batch) takes the 2 GoPro EAC tracks and converts them to equirectangular (as well as performing the blending mentioned last week).
+Taking inspiration from this work and with the help of Paul himself, [MAX2sphere](https://github.com/trek-view/MAX2sphere) takes the 2 GoPro EAC tracks and converts them to equirectangular (as well as performing the blending mentioned last week).
 
 Used in its simplest form for what we need two directories that contain the two extracted Pro EAC tracks.
 
@@ -26,13 +26,13 @@ The sequence filename template should contain two `%d` entries. The first will b
 So for example, if there are 1000 frames called track0_frame0001.jpg, track5_0001.jpg, ... then the script might be called as follows:
 
 ```
-$ @SYSTEM_PATH/MAX2spherebatch -w 4096 -n 1 -m 1000 track%d_frame%04d.jpg
+$ @SYSTEM_PATH/max2sphere -w 4096 -n 1 -m 1000 track%d_frame%04d.jpg
 ```
 
 Or if directories are used with frames track0/frame1.jpg, track5/1000.jpg, ...
 
 ```
-$ @SYSTEM_PATH/MAX2spherebatch -w 4096 -n 1 -m 1000 track%d/frame%4d.jpg
+$ @SYSTEM_PATH/max2spherebatch -w 4096 -n 1 -m 1000 track%d/frame%4d.jpg
 ```
 
 All that's left to do now is add the correct metadata to the new equirectangular frame, all of which has been lost during processing.
@@ -72,11 +72,11 @@ One feature missing is GoPro Studio's horizon leveling feature. It does this by 
 
 For now though, these two options will turn your images or videos with GoPro EAC projections into equirectangular ones...
 
-### 1. MAX2sphere Batch (EAC frames to equirectangular frames)
+### 1. MAX2sphere (EAC frames to equirectangular frames)
 
-MAX2sphere Batch takes a raw GoPro .360 frame (both tracks of EAC projection) and converts them to a more widely recognised equirectangular projection.
+MAX2sphere takes a raw GoPro .360 frame (both tracks of EAC projection) and converts them to a more widely recognised equirectangular projection.
 
-[Download it here](https://github.com/trek-view/MAX2sphere-batch).
+[Download it here](https://github.com/trek-view/max2sphere).
 
 ### 2. FFMpeg (EAC video to equirectangular video)
 
