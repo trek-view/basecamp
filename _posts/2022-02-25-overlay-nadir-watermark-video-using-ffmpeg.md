@@ -1,6 +1,6 @@
 ---
 date: 2022-02-25
-title: "Using ffmpeg to overlay a custom nadir or watermark over GoPro videos"
+title: "Using ffmpeg to overlay a custom nadir or watermark on GoPro videos"
 description: "Efficiently add your logo to the nadir of an equirectangular video or as a watermark to normal videos."
 categories: developers
 tags: [nadir, ffmpeg, imagemagick]
@@ -16,7 +16,7 @@ published: true
 In previous post I have covered how to add a nadir to equirectangular images:
 
 * [manually (using GIMP)](/blog/2020/adding-a-custom-nadir-to-360-video-photo), and here:
-* [programmatically (using ImageMagick)]
+* [programmatically (using ImageMagick)](/blog/2021/adding-a-custom-nadir-to-360-video-photo)
 
 And how to add a watermark to normal photos:
 
@@ -24,9 +24,9 @@ And how to add a watermark to normal photos:
 
 All of these approaches required breaking videos down into frames, overlaying the nadir or watermark, and then re-rendering into a video.
 
-When doing this for videos shot at 24FPS the number of frames that need to be processed quickly increares. For example, one minute of footage shot at 24 FPS will product 1440 frame (`24*60`).
+When doing this for videos shot at 24FPS the number of frames that need to be processed quickly increases. For example, one minute of footage shot at 24 FPS will produce 1440 frames (`24*60`).
 
-As I get more familiar with ffmpeg, I realised it could be used to create a much simpler approach for video files.
+As I get more familiar with ffmpeg, I realised it could be used to create a much simpler approach to add such an overlay on video files.
 
 ```shell
 $ ffmpeg -i INPUT.mp4 -i IMAGE_OVERLAY.png \
@@ -45,7 +45,7 @@ Where:
 * `-c:v libx264` is an abbreviated version of codec:v. Encodes the video using the libx264 codec (H264).
 * The -acodec copy / -c:a copy that you have in your command f.e. would simply re-use the audio from the source file. Though you can't do that with the video of course (in this case), that has to be transcoded because we are creating a new video source.
 
-## Implementing this programatically
+## Implementing this programmatically
 
 Below walks through a pipeline of determining how to process each video 
 
@@ -61,6 +61,8 @@ Gives'
 ```
  <XMP-GSpherical:ProjectionType>equirectangular</XMP-GSpherical:ProjectionType>
 ```
+
+If a value is returned, it's a 360 video.
 
 If no value returned, we would know it is a HERO video, if input is a GoPro .mp4 file.
 
@@ -81,15 +83,15 @@ Gives;
 
 ### 3. Identify video tracks
 
-Each GoPro camera contains a range of tracks (video track, audio track, gpmd track).
+Each GoPro camera contains a range of tracks (video track, audio track, [gpmd](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd) track).
 
 The types of tracks included depend on the camera and mode used.
 
 For example, videos shot in timewarp mode do not contain an audio track.
 
-You first need to read what tracks exist in the mp4 files to decide what needs to be copied.]
+You first need to read what tracks exist in the mp4 files to decide what needs to be copied.
 
-For our purposes only video, audio and gpmd tracks are required.
+For our purposes only video, audio and gpmd (telemetry) tracks are required.
 
 It is possible to identify these using `ffprobe`;
 
@@ -135,7 +137,8 @@ $ exiftool -ee -G3 -api LargeFileSupport=1 -X GS028461.mp4 > GS028461.xml
 Which returns and `.xml` file with the following sections;
 
 **Metadata (metadata)**
-```
+
+```xml
 ...
  <XMP-GSpherical:Spherical>true</XMP-GSpherical:Spherical>
  <XMP-GSpherical:Stitched>true</XMP-GSpherical:Stitched>
