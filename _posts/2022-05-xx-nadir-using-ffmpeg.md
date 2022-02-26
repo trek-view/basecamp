@@ -1,14 +1,14 @@
 ---
-date: 2022-05-04
+date: 2022-02-25
 title: "Using ffmpeg to overlay a custom nadir or watermark over GoPro videos"
 description: "Efficiently add your logo to the nadir of an equirectangular video or as a watermark to normal videos."
 categories: developers
 tags: [nadir, ffmpeg, imagemagick]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-05-04/youtube-gopro-nadir-meta.png
-featured_image: /assets/images/blog/2022-05-04/youtube-gopro-nadir-sm.png
+image: /assets/images/blog/2022-02-25/youtube-gopro-nadir-meta.png
+featured_image: /assets/images/blog/2022-02-25/youtube-gopro-nadir-sm.png
 layout: post
-published: false
+published: true
 ---
 
 **Efficiently add your logo to the nadir of an equirectangular video or as a watermark to normal videos.**
