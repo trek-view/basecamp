@@ -40,7 +40,7 @@ Let's now look to the other side of the world... almost... to Sydney, Australia.
 
 Although it's a little more abstract to visualise, you can turn a maximum of 180 degrees from the prime meridian (either East or West) and 90 degrees from the equator (North or South). Using a mix of the two, you will be facing some point on the earth from your imaginary point in the center.
 
-Above, I reported Sydney as 33.8688° S (latitude), 151.2093° E (longitude). Latitude is almost always reported before longitude.
+Above, I reported Sydney as 33.8688° S (latitude), 151.2093° E (longitude). 
 
 You could have previously seen latitude and longitude positions reported with negative values (e.g. -33.8688,151.2093). This format is referred to as Decimal Degrees (DD) and is the most common format used today. It's still in `latitude,longitude` format, but now instead of using North or South for latitude, and East and West for longitude, +/- values are used. 
 
