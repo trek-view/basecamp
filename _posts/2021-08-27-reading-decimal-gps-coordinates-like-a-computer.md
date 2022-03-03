@@ -27,7 +27,7 @@ The Prime Meridian divides the globe into Eastern and Western hemispheres, just 
 
 The Prime Meridian is at 0 degrees longitude (neither East or West), just as the equator is at 0 degrees latitude (neither North or South).
 
-The spot south of Ghana where the Prime Median and Equator intersect has the co-ordinates 0.0 degrees latitude and 0.0 degrees longitude.
+The spot south of Ghana where the Prime Median and Equator intersect has the co-ordinates 0 degrees latitude and 0 degrees longitude.
 
 <img class="img-fluid" src="/assets/images/blog/2021-08-27/decimal-degrees-greenwich.jpg
 " alt="Latitude and longitude decimal diagram" title="Latitude and longitude decimal diagram" />
