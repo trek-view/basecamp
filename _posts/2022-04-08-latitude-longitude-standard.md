@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2022-03-04/map-pin-ocean-meta.png
 featured_image: /assets/images/blog/2022-03-04/map-pin-ocean-sm.png
 layout: post
-published: false
+published: true
 ---
 
 **One of the biggest pains of working with geospatial software is determining the way each presents latitude and longitude... or is that longitude and latitude?**

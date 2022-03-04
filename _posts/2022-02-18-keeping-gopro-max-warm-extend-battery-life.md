@@ -99,7 +99,7 @@ Once the camera has been encased you shouldn't need to take it off at all (there
 
 <img class="img-fluid" src="/assets/images/blog/2022-02-18/gopro-max-sock.jpg" alt="GoPro MAX Screen cover" title="GoPro MAX Screen cover" />
 
-The final touch comes courtesy of my mum. In order to provide some minimal protection for the screen from the elements she offered to sow up a sock that is just thin enough (about 1mm) to avoid obstructing the lenses field of view whilst offering a small amount of insulation and protection for the screen.
+The final touch comes courtesy of my mum, Alison Greenwood. In order to provide some minimal protection for the screen from the elements she offered to sow up a sock that is just thin enough (about 1mm) to avoid obstructing the lenses field of view whilst offering a small amount of insulation and protection for the screen.
 
 ## Why I use this setup for skiing
 
