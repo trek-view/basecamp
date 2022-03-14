@@ -9,6 +9,7 @@ html, body {
 
 body {
 	font-family: "San Francisco", "Helvetica Neue", "Helvetica", "Arial";
+  font-size: 10px;
 }
 
 a {
@@ -32,13 +33,13 @@ h1 strong, h2 strong {
 
 h1 {
 	font-weight: 300;
-	font-size: 2.3em;
+	font-size: 2.3rem;
 	margin: 0;
 }
 
 h2 {
 	font-weight: 300;
-	font-size: 2.2em;
+	font-size: 2.2rem;
 	margin: 0 0 30px 0;
 }
 
@@ -46,9 +47,12 @@ h3 {
 	margin: 20px 0 10px 0;
 }
 
+p, address, ul, ol, dl {
+  font-size: 1.6rem;
+}
 
 p, address {
-	font-size: 1.38em;
+	// font-size: 1.38em;
 	color: #666;
 	margin-bottom: 20px;
 	font-weight: 300;
@@ -57,7 +61,7 @@ p, address {
 
 ul, ol, dl {
   li {
-    font-size: 1.38em;
+    // font-size: 1.38em;
     color: #666;
     font-weight: 300;
     line-height: 1.4em;
@@ -90,7 +94,7 @@ padding-right: 8px;
     margin: 10px 0;
     width: 100%;
     table-layout: fixed;
-    font-size: 1.3em;
+    font-size: 1.3rem;
     font-weight: 300;
     color: #666;
     text-align: center;
@@ -98,7 +102,7 @@ padding-right: 8px;
   thead {
     th {
       background-color: $brand-color;
-      font-size: 1.3em;
+      font-size: 1.3rem;
       font-weight: 300;
       line-height: 1em;
     }
