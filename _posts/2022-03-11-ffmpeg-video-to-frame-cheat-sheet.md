@@ -1,6 +1,6 @@
 ---
 date: 2022-03-11
-title: "FFmpeg Cheat Sheet for virtual tours and 360 videos"
+title: "FFmpeg Cheat Sheet for virtual 360 tours"
 description: "A guide that shows some of the commands we use most for processing 360 virtual tour videos."
 categories: developers
 tags: [exiftool, ffmpeg, gmpd, telemetry, metadata]
