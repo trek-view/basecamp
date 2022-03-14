@@ -49,7 +49,7 @@ $ ffmpeg -r 1 -i MULTISHOT_9698_%06d.jpg -c:v libx264 -pix_fmt yuv420p demo-vide
 Let's break that down:
 
 * `-i MULTISHOT_9698_%06d.jpg`: the filenames to match on. `%06d` means capture 6 digits. `%03d` would mean capture 3 digits.
-* `-r 1`: the output framerate per second. Here I want 1 frame every 1 second. If the `-framerate` option is omitted the default will input and output 25 frames per second.
+* `-r 1`: the output framerate per second. Here I want 1 frame every 1 second. If the `-r` option is omitted the default will input and output 25 frames per second.
 * `-pix_fmt yuv420p`: _[When outputting H.264, adding -vf format=yuv420p or -pix_fmt yuv420p will ensure compatibility so crappy players can decode the video.](https://trac.ffmpeg.org/wiki/Slideshow)_
 * `-c:v libx264` is an abbreviated version of codec:v. Encodes the video using the libx264 codec (H264).
 
