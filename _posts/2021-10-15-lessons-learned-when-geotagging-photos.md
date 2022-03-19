@@ -170,6 +170,20 @@ Then by calculating the time delta between the two `GPSDateTime` values reported
 
 For example, in this case we have two `GPSDateTime`'s, 2020:04:13 15:37:00.000 and 2020:04:13 15:37:01.000, with one point in between without a time. Therefore we can assume time is equidistant between the two with the time 2020:04:13 15:37:00.500.
 
+**A note on final points reported in GPMD**
+
+At the end of the GoPro telemetry there is not a final time. That is, some GPS points continue beyond final reported time (usually 3 or 4).
+
+In this case, we can calculate the final time as follows:
+
+1. Subtract the last reported GPSDateTime (end time) from the first reported GPSDateTime (start time)
+    * e.g. `2021:09:04 07:23:17.199` - `2021:09:04 07:22:56.299` = 20.9s
+2. Subtract the video duration metadata value from this:
+    * e.g. `21.2` - `20.9` = `0.3s`
+3. This will give you remaining seconds of video. Add this value to the final reported GPSDateTime to create the final time.
+    * e.g. `2021:09:04 07:23:17.199` + `0.3` = `07:23:17.499`
+4. It is then possible to calculate points in-between in exactly the same way as described earlier.
+
 **Note on duplicate points**
 
 In some cases, the telemetry might report duplicate points, because you're standing still. If latitude, longitude and altitude are all the same this is true.
