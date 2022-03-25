@@ -41,7 +41,7 @@ That said, it has been very warm in the French Alps for the last month (as hot a
 
 The blue skies that the Alps have seen over the last month have given me some amazing conditions for filming though.
 
-In total, finishing this morning, I've skied over 1500 kilometers over 27 days. In many resorts I've captured almost all the pistes, and some amazing off-piste runs too.
+In total, finishing this morning, I've skied over 1500 kilometers across 27 days. In many resorts I have managed to capture almost every marked piste, and some amazing off-piste runs too.
 
 My aim now is to use the footage I've shot to create street level tours the pistes.
 
