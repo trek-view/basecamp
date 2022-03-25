@@ -327,6 +327,6 @@ Full telemetry is written into the metadata in a standard structure (e.g [CAMM](
 
 [How to Create a 360 Video from a Timelapse of 360 Images (using Adobe Premiere Pro)](/blog/2022/turn-360-photos-into-360-video-adobe-premiere).
 
-## Update 2022-01-22
+## Update 2022-03-11
 
 [ffmpeg Cheat Sheet for virtual tours and 360 videos (includes how to use ffmpeg to copy telemetry streams to outputted video files)](/blog/2022/ffmpeg-video-to-frame-cheat-sheet).

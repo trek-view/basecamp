@@ -5,10 +5,10 @@ description: "And a brief update on using the GoPro MAX cold weather setup."
 categories: treks
 tags: [GoPro, MAX, battery, ski, winter, Alps, mountain]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-03-25/gopro-max-cold-weather-1-meta.jpg
-featured_image: /assets/images/blog/2022-03-25/gopro-max-cold-weather-1-sm.jpg
+image: /assets/images/blog/2022-03-25/vallee-blanche-360-meta.JPG
+featured_image: /assets/images/blog/2022-03-25/vallee-blanche-360-sm.JPG
 layout: post
-published: false
+published: true
 ---
 
 **And a brief update on using the GoPro MAX cold weather setup.**
@@ -24,7 +24,6 @@ Over the past 4 weeks I've visited the following French resorts:
 * Courchevel
 * La Plagne
 * Les Arcs
-* Argentiere
 * Chamonix Valley
 	* Flegere
 	* Brevant
@@ -40,11 +39,19 @@ After 4 weeks of skiing (and a few rest days) and can report the setup is holdin
 
 That said, it has been very warm in the French Alps for the last month (as hot at 14 degrees in mid-March), which has, sadly, resulted in very little snowfall.
 
+The blue skies that the Alps have seen over the last month have given me some amazing conditions for filming.
+
+In total, finishing this morning, I've skied over 1500 kilometers over 27 days. In many resorts I've captured almost all the pistes, and some amazing off-piste runs too.
+
 My aim now is to use the footage I've shot to create street level tours the pistes in some of the worlds most famous resorts.
 
-Next week I plan to start processing the 5 terabytes of videos (covering almost every piste in these resorts).
+Next week I plan to start processing the videos. In summary there is;
 
-I'll leave you with a little sneak peak, from one of my all time favourite runs, the Vallee Blanche.
+* 3 terabytes of footage
+* Representing 10 hours, 55 minutes, and 06 seconds
+* For a total of 889 videos
+
+I'll leave you with a little sneak peak, from one of my all time favourite runs filmed last week, the Vallee Blanche off the Aiguille du Midi in Chamonix.
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2022-03-25/GS__0485.JPG&amp;autoLoad=true"></iframe>
 
