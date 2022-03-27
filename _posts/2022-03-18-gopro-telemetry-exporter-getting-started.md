@@ -17,18 +17,13 @@ If you follow this blog you will have seen me use exiftool to extract telemetry 
 
 As we work exclusively with GoPro cameras, I wanted to try out another way to do this, specifically designed for GoPro cameras.
 
-For a long time I've followed 
+Occasionally I've used [`gpmf-extract`](https://github.com/JuanIrache/gpmf-extract) from Juan Irache. For a long time I've also wanted to test his [`gopro-telemetry`](https://github.com/JuanIrache/gopro-telemetry) script which is used to power [goprotelemetryextractor.com/](https://goprotelemetryextractor.com/).
 
-## Introducing GoPro Utils
+Here's some useful information I've created to help you get started quickly and to understand some of the scripts capabilities.
 
+## Follow along
 
-
-Turning a 360 Timelapse or Video into a GPX or KML track
-
-
-
-
-For this example I will be using the following equirectangular video (`GS018422.mp4`). 
+For this example I will be using the following equirectangular video (`GS018422.mp4`) with GPS enabled.
 
 It is 264mb video (18 seconds long) and was shot at 24 FPS on a GoPro MAX Camera and stitched using GoPro Player at 5.6k (5376×2688).
 
@@ -36,7 +31,9 @@ It is 264mb video (18 seconds long) and was shot at 24 FPS on a GoPro MAX Camera
 
 ## 1. Extract GPMD telemetry data
 
-For this we can use [gpmf-extract](https://github.com/JuanIrache/gpmf-extract) from Juan Irache:
+`gopro-telemetry` expects extracted telemetry from a video file from [gpmf-extract](https://github.com/JuanIrache/gpmf-extract).
+
+To get this, first clone the repository:
 
 ```shell
 git clone https://github.com/JuanIrache/gpmf-extract
@@ -70,6 +67,18 @@ const file = fs.readFileSync('./samples/GS018422.mp4');
 ```
 
 Now this is correct, the script can be run like so,
+
+
+
+
+
+
+
+
+
+IGNORE FOLLOWING LINES, OLD CONTENT
+
+---
 
 
 
