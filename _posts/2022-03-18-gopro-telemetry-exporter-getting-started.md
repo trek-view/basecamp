@@ -31,9 +31,9 @@ It is 264mb video (18 seconds long) and was shot at 24 FPS on a GoPro MAX Camera
 
 ## 1. Extract GPMD telemetry data
 
-`gopro-telemetry` expects extracted telemetry from a video file from [gpmf-extract](https://github.com/JuanIrache/gpmf-extract).
+`gopro-telemetry` takes extracted telemetry from a video file from [`gpmf-extract`](https://github.com/JuanIrache/gpmf-extract).
 
-To get this, first clone the repository:
+To do this, first clone the repository:
 
 ```shell
 git clone https://github.com/JuanIrache/gpmf-extract
@@ -68,12 +68,39 @@ const file = fs.readFileSync('./samples/GS018422.mp4');
 
 Now this is correct, the script can be run like so,
 
+```shell
+TODO
+```
+
+The output of this command will print a `.json` file to the console that looks like this:
+
+```
+TODO
+```
+
+To save the console output to a file (which you will need for the next step), run the script like this:
+
+```
+TODO
+```
+
+## 2. Run `gopro-telemetry`
+
+Now we can use the telemetry `.json` generated at step 1 with `gopro-telemetry`.
+
+First clone the repository:
+
+```shell
+git clone https://github.com/JuanIrache/gopro-telemetry
+cd gopro-telemetry
+```
+
+Like `gpmf-extract`, `gopro-telemetry` comes with a [comprehensive set of examples and documentation](https://github.com/JuanIrache/gopro-telemetry#options).
+
+At it's most basic, you can use the script like so
 
 
-
-
-
-
+If you're interested in the code behind this, you can see it here.
 
 
 IGNORE FOLLOWING LINES, OLD CONTENT
