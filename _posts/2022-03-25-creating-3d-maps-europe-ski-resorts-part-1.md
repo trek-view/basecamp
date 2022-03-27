@@ -51,7 +51,7 @@ Next week I plan to start processing the videos. In summary there is;
 * Representing 10 hours, 55 minutes, and 06 seconds
 * Over a total of 889 videos
 
-I'll leave you with a little sneak peak, from one of my all time favourite runs filmed last week, the Vallee Blanche off the Aiguille du Midi in Chamonix.
+I'll leave you with a little sneak peak, from one of my all time favourite runs filmed last week, the Vallee Blanche off the Aiguille du Midi (3,842m) in Chamonix.
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2022-03-25/GS__0485.JPG&amp;autoLoad=true"></iframe>
 

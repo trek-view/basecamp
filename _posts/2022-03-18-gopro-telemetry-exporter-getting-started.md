@@ -1,25 +1,23 @@
 ---
-date: 2022-03-11
-title: "Extracting GoPro GPS and other Telemetry Data using ffmpeg"
-description: "A guide that shows some of the commands we use most for processing 360 virtual tour videos."
+date: 2022-03-18
+title: "Gettting started with GoPro Telemetry Exporter"
+description: "An alternative to exiftool when working with GPMD."
 categories: developers
-tags: [exiftool, ffmpeg, gmpd, telemetry, metadata]
+tags: [exiftool, ffmpeg, gmpd, telemetry, metadata, gpmf]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-03-11/ffmpeg-virtual-tour-cheat-sheet-meta.jpg
-featured_image: /assets/images/blog/2022-03-11/ffmpeg-virtual-tour-cheat-sheet-sm.jpg
+image: /assets/images/blog/2022-03-18/
+featured_image: /assets/images/blog/2022-03-18/
 layout: post
 published: false
 ---
 
-
-Step 3
-Type cmd on the folder location until it opens a command prompt window. Furthermore, type and run the command below:
-ffmpeg -y -i xxxx.MP4 -codec copy -map 0:3 -f rawvideo xxxx.bin
-
+**An alternative to exiftool when working with GPMD.**
 
 If you follow this blog you will have seen me use exiftool to extract telemetry (and other data from video files).
 
 As we work exclusively with GoPro cameras, I wanted to try out another way to do this, specifically designed for GoPro cameras.
+
+For a long time I've followed 
 
 ## Introducing GoPro Utils
 
@@ -36,7 +34,44 @@ It is 264mb video (18 seconds long) and was shot at 24 FPS on a GoPro MAX Camera
 
 [You can download it here to follow along](https://drive.google.com/file/d/1SYjVOwQcALg8gQLq8BLLbALEW33PlVT2/view?usp=sharing).
 
-## 1. Extract GPMD telemetry binary
+## 1. Extract GPMD telemetry data
+
+For this we can use [gpmf-extract](https://github.com/JuanIrache/gpmf-extract) from Juan Irache:
+
+```shell
+git clone https://github.com/JuanIrache/gpmf-extract
+cd gpmf-extract
+```
+
+In the `samples/` directory you will find a file called `example.js`. It gives a simple implementation of the script, which is all we need.
+
+Copy the file.
+
+```shell
+cp samples/example.js samples/GS018422.js  
+```
+
+Then edit the file, 
+
+```shell
+vi samples/GS018422.js
+```
+
+Replacing the line;
+
+```js
+const file = fs.readFileSync('./samples/karma.mp4');
+```
+
+With the path to your video, e.g.
+
+```js
+const file = fs.readFileSync('./samples/GS018422.mp4');
+```
+
+Now this is correct, the script can be run like so,
+
+
 
 You can do this using ffmpeg as follows:
 
