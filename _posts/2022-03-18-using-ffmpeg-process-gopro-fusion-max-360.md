@@ -199,9 +199,9 @@ To do this, we will use `.pgm` (Portable Gray Map) files for each fisheye. These
 
 The fusion2sphere repository has these pre-generated for each camera mode on the GoPro Fusion camera:
 
-* [photo mode (18mp)](https://github.com/trek-view/fusion2sphere/tree/main/pgm/photo-mode)
-* [video mode (5.2k)](https://github.com/trek-view/fusion2sphere/tree/main/pgm/video-5_2k)
-* [video mode (3k)](https://github.com/trek-view/fusion2sphere/tree/main/pgm/video-3k)
+* [photo mode (18mp)](https://github.com/trek-view/fusion2sphere/tree/main/pgm-examples/photo-mode)
+* [video mode (5.2k)](https://github.com/trek-view/fusion2sphere/tree/main/pgm-examples/video-5_2k)
+* [video mode (3k)](https://github.com/trek-view/fusion2sphere/tree/main/pgm-examples/video-3k)
 
 _Note: I've also included files for photo mode that can be used if you want to turn GoPro Fusion fisheye images into a video, [like described in this post](/blog/2021/turn-360-photos-into-360-video)._
 
@@ -221,9 +221,9 @@ The mask files look like this (remember, the size of mask is important for desir
 
 Again, I use the GoPro defaults for these, which I have made available to download in the fusion2sphere repo linked below:
 
-* [photo mode masks](https://github.com/trek-view/fusion2sphere/tree/main/pgm/photo-mode) = output width 5760 (1/4w = 1440, 3/4w = 4320
-* [video mode masks](https://github.com/trek-view/fusion2sphere/tree/main/pgm/video-5_2k) (5.2k) = output width 5228 (1/4w = 1307, 3/4w = 3921)
-* [video mode masks](https://github.com/trek-view/fusion2sphere/tree/main/pgm/video-3k) (3k) = output width 3072 (1/4w = 768, 3/4w = 2304)
+* [photo mode masks](https://github.com/trek-view/fusion2sphere/tree/main/pgm-examples/photo-mode) = output width 5760 (1/4w = 1440, 3/4w = 4320
+* [video mode masks](https://github.com/trek-view/fusion2sphere/tree/main/pgm-examples/video-5_2k) (5.2k) = output width 5228 (1/4w = 1307, 3/4w = 3921)
+* [video mode masks](https://github.com/trek-view/fusion2sphere/tree/main/pgm-examples/video-3k) (3k) = output width 3072 (1/4w = 768, 3/4w = 2304)
 
 Once you have the correct `.pgm` and mask `.png` files for the mode used, you can pass them like so:
 

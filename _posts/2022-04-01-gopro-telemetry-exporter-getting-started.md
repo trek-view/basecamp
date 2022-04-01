@@ -1,14 +1,14 @@
 ---
-date: 2022-03-18
+date: 2022-04-01
 title: "Gettting started with GoPro Telemetry Exporter"
 description: "An alternative to exiftool when working with GPMD."
 categories: developers
 tags: [exiftool, ffmpeg, gmpd, telemetry, metadata, gpmf]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-03-18/gopro-telemetry-overlay.jpeg
-featured_image: /assets/images/blog/2022-03-18/gopro-telemetry-overlay-sm.jpeg
+image: /assets/images/blog/2022-04-01/gopro-telemetry-overlay.jpeg
+featured_image: /assets/images/blog/2022-04-01/gopro-telemetry-overlay-sm.jpeg
 layout: post
-published: false
+published: true
 ---
 
 **An alternative to exiftool when working with GPMD.**
@@ -45,7 +45,7 @@ npm i gpmf-extract gopro-telemetry --save
 
 ## 2. Copy the example
 
-In the [repository you will find the following example code](https://github.com/JuanIrache/gopro-telemetry#options) (I've slightly changed it with `path_to_your_file.mp4` replaced with `GS018422.mp4`);
+In the [repository you will find the following example code](https://github.com/JuanIrache/gopro-telemetry#options) (I've slightly changed it with `path_to_your_file.mp4` replaced with `GS018422.mp4` and `output_path.json` with `GS018422-full-telemetry.json`);
 
 ```js
 const gpmfExtract = require('gpmf-extract');
@@ -57,7 +57,7 @@ const file = fs.readFileSync('GS018422.mp4');
 gpmfExtract(file)
   .then(extracted => {
     goproTelemetry(extracted, {}, telemetry => {
-      fs.writeFileSync('output_path.json', JSON.stringify(telemetry));
+      fs.writeFileSync('GS018422-full-telemetry.json', JSON.stringify(telemetry));
       console.log('Telemetry saved as JSON');
     });
   })
@@ -81,50 +81,31 @@ gdown --id 1SYjVOwQcALg8gQLq8BLLbALEW33PlVT2
 
 ## 3. Run the example
 
-And finally, run the newly created `.js` file like so:
+And finally, run the newly created `.js` file like so;
 
 ```shell
 node GS018422.js
 ```
 
-If all has been successful, you will see a message like this
+If all has been successful, you will see a message like this;
 
 ```
 Telemetry saved as JSON
 ```
 
-And in the directory, you should see a `.json` file called `output_path.json` (you can modify the filename in `GS018422.js` by replacing the line with `output_path.json` with your desired filename).
-
-## 4. Examining the output
+And in the directory, you should see a `.json` file called `GS018422-full-telemetry.json` (you can modify the filename in `GS018422.js` by replacing the line with `GS018422-full-telemetry.json` with your desired filename).
 
 [Here's a prettified version of the output file](https://gist.github.com/himynamesdave/9ff529f92d3c091eca18bda6388a4685).
 
-Depending on the camera, model, settings and accessories, you will see values reported for some or all of the following streams:
+## 4. Examining the output
 
-* `ACCL`: 3-axis accelerometer
-* `GYRO`: 3-axis gyroscope
-* `ISOG`: Image sensor gain
-* `SHUT`: Exposure time
-* `GPS5`: Latitude, longitude, altitude (WGS 84), 2D ground speed, and 3D speed
-* `GPSU`: UTC time and data from GPS
-* `GPSF`: GPS Fix
-* `GPSP`: GPS Precision - Dilution of Precision (DOP x100)
-* `STMP`: Microsecond timestamps
-* `MAGN`: Magnetometer
-* `FACE`: Face detection boundaring boxes
-* `FCNM`: Faces counted per frame
-* `ISOE`: Sensor ISO
-* `ALLD`: Auto Low Light frame Duration
-* `WBAL`: White Balance in Kelvin
-* `WRGB`: White Balance RGB gains
-* `YAVG`: Luma (Y) Average over the frame
-* `HUES`: Predominant hues over the frame
-* `UNIF`: Image uniformity
-* `SCEN`: Scene classifier in probabilities
+Depending on the camera, model, settings and accessories, you will see values reported for varios `streams`, e.g. (`ACCL`: 3-axis accelerometer, `GYRO`: 3-axis gyroscope, `GPS5`: Latitude, longitude, altitude (WGS 84), 2D ground speed, and 3D speed...)
+
+[You can find information on what many sensors are called (and what cameras / modes produce data for them) here](https://github.com/gopro/gpmf-parser#where-to-find-gpmf-data).
 
 For our work we're mainly interested values from the GPS, accelerometer and gyroscope sensors. Here are some snippets of how this data is presented (I've added comments into the code to describe the definition of the date value where it's vague):
 
-### GPS
+### GPS `GPS5`
 
 ```json
 "GPS5": {
@@ -147,7 +128,7 @@ For our work we're mainly interested values from the GPS, accelerometer and gyro
     },
 ```
 
-### Accelerometer
+### Accelerometer `ACCL`
 
 ```json
 "ACCL": {
@@ -166,7 +147,7 @@ For our work we're mainly interested values from the GPS, accelerometer and gyro
     },
 ```
 
-### Gyroscope
+### Gyroscope `GYRO`
 
 ```json
 "GYRO": {
@@ -193,42 +174,52 @@ There is also [a comprehensive set of options that can also be used with the scr
 
 To help understand how these can be passed, take a look in [the options shown in the readme here](https://github.com/JuanIrache/gopro-telemetry#options).
 
+[`example.js`](https://github.com/JuanIrache/gopro-telemetry/blob/master/samples/example.js) in the `/samples` directory shows how some of the options can be used too.
 
-[`example.js`](https://github.com/JuanIrache/gopro-telemetry/blob/master/samples/example.js) in the `/samples` directory shows how some of the options can be used:
+Let's use these in our 
 
 ```js
-async function toJSON(filename) {
-  try {
-    const file = await readFileAsync(path.join(__dirname, filename));
-    const result = await goproTelemetry(
-      { rawData: file },
-      {
-        stream: 'GPS5',
-        GPS5Fix: 3,
-        GPS5Precision: 500
-      }
-    );
+const gpmfExtract = require('gpmf-extract');
+const goproTelemetry = require(`gopro-telemetry`);
+const fs = require('fs');
+
+const file = fs.readFileSync('GS018422.mp4');
+
+gpmfExtract(file)
+  .then(extracted => {
+    goproTelemetry(extracted, {
+      stream: 'GPS5',
+      GPS5Fix: 3,
+      GPS5Precision: 500
+    }, telemetry => {
+      fs.writeFileSync('GS018422-gps-telemetry.json', JSON.stringify(telemetry));
+      console.log('Telemetry saved as JSON');
+    });
+  })
+  .catch(error => console.error(error));
 ```
 
-Here the custom options used:
+Here are the custom options I have used:
 
-* `stream`: Filters the results by device stream (often a sensor) name. [You can find information on what many sensors are called here](https://github.com/gopro/gpmf-parser#where-to-find-gpmf-data).
+* `stream`: Filters the results by device stream (often a sensor) name. 
   * I am using the GPS stream (`GPS5`)
 * `GPS5Fix`: Will filter out GPS5 samples where the type of GPS lock is lower than specified (0: no lock, 2: 2D lock, 3: 3D Lock).
-  * I only want a good fix (3D / `3`)
+  * I only want a good fix to avoid noise (3D / `3`)
 * `GPS5Precision`: Will filter out GPS5 samples where the [Dilution of Precision](https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation)) is higher than specified (this DOP value is * 100, e.g. 500 = 5)
-  * I want a fairly good DOP (5 / `500`)
+  * I want a fairly good DOP, again for reducing noise (5 / `500`)
 
-Paste the last code snippet to the bottom of `GS018422.js`.
+Paste the last code into a new file `GS018422-gpsonly.js`;
 
-[The final file `GS018422.js` should look like this]().
+```shell
+vi GS018422-gpsonly.js
+```
 
 Running it in the same way as before;
 
 ```shell
-node GS018422.js
+node GS018422-gpsonly.js
 ```
 
-You should notice the difference (mainly the smaller file, due to only printing GPS data).
+You should notice the difference in files from the first (`GS018422-full-telemetry.json`) and second (`GS018422-gps-telemetry.json`) examples -- mainly the smaller file, due to only printing GPS data in the latter.
 
-This post has hopefully given you enough to get started. Now it's time for you to play with it.
+This post has hopefully given you enough to get started. Now it's time for you to play with the settings for your own requirements.
