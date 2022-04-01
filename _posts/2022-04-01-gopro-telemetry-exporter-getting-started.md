@@ -1,6 +1,6 @@
 ---
 date: 2022-04-01
-title: "Gettting started with GoPro Telemetry Exporter"
+title: "Getting started with GoPro Telemetry to parse GPMD"
 description: "A more comprehensive alternative to exiftool when working with GPMD."
 categories: developers
 tags: [exiftool, ffmpeg, gmpd, telemetry, metadata, gpmf]
