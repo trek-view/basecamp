@@ -1,7 +1,7 @@
 ---
 date: 2022-04-01
 title: "Gettting started with GoPro Telemetry Exporter"
-description: "An alternative to exiftool when working with GPMD."
+description: "A more comprehensive alternative to exiftool when working with GPMD."
 categories: developers
 tags: [exiftool, ffmpeg, gmpd, telemetry, metadata, gpmf]
 author_staff_member: dgreenwood
@@ -11,15 +11,15 @@ layout: post
 published: true
 ---
 
-**An alternative to exiftool when working with GPMD.**
+**A more comprehensive alternative to exiftool when working with GPMD.**
 
-If you follow this blog you will have seen me use exiftool to extract telemetry (and other data from video files).
+If you follow this blog you will have seen me use exiftool to extract telemetry (and other data) from video files many times.
 
 As we work exclusively with GoPro cameras, I wanted to try out another way to do this, specifically designed for GoPro cameras.
 
-Occasionally I've used [`gpmf-extract`](https://github.com/JuanIrache/gpmf-extract) from Juan Irache. For a long time I've also wanted to test his [`gopro-telemetry`](https://github.com/JuanIrache/gopro-telemetry) script which is used to power [goprotelemetryextractor.com/](https://goprotelemetryextractor.com/).
+Occasionally I have used [`gpmf-extract`](https://github.com/JuanIrache/gpmf-extract) from Juan Irache. For a long time I have also wanted to test his [`gopro-telemetry`](https://github.com/JuanIrache/gopro-telemetry) script which is used to power [goprotelemetryextractor.com/](https://goprotelemetryextractor.com/).
 
-Here's some useful information I've created to help you get started quickly and to understand the key parts of the scripts capabilities.
+Here is some useful information and code snippets to help you get started quickly and to understand the key parts of the scripts capabilities.
 
 ## Follow along
 
@@ -31,9 +31,11 @@ It is 264mb video (18 seconds long) and was shot at 24 FPS on a GoPro MAX Camera
 
 ## 1. Install required modules
 
+First-things-first, you'll need node.js installed. [Everything you need to do this is here](https://nodejs.org/en/download/).
+
 `gopro-telemetry` takes extracted telemetry from a video file (using [`gpmf-extract`](https://github.com/JuanIrache/gpmf-extract)).
 
-To do this, first clone the repositorys and install them:
+To do this, first clone the repository and install the required node modules:
 
 ```shell
 # cloning the repository is not necessary for this tutorial as a clean place for the code
@@ -45,7 +47,7 @@ npm i gpmf-extract gopro-telemetry --save
 
 ## 2. Copy the example
 
-In the [repository you will find the following example code](https://github.com/JuanIrache/gopro-telemetry#options) (I've slightly changed it with `path_to_your_file.mp4` replaced with `GS018422.mp4` and `output_path.json` with `GS018422-full-telemetry.json`);
+In the [repository you will find the following example code](https://github.com/JuanIrache/gopro-telemetry#options) (that I have slightly changed it with `path_to_your_file.mp4` replaced with `GS018422.mp4` and `output_path.json` with `GS018422-full-telemetry.json`);
 
 ```js
 const gpmfExtract = require('gpmf-extract');
@@ -64,10 +66,10 @@ gpmfExtract(file)
   .catch(error => console.error(error));
 ```
 
-Paste this code into a new file `GS018422.js`;
+Paste this code into a new file `GS018422-full-telemetry.js`;
 
 ```shell
-vi GS018422.js 
+vi GS018422-full-telemetry.js 
 ```
 
 Now copy `GS018422.mp4` into the directory;
@@ -84,7 +86,7 @@ gdown --id 1SYjVOwQcALg8gQLq8BLLbALEW33PlVT2
 And finally, run the newly created `.js` file like so;
 
 ```shell
-node GS018422.js
+node GS018422-full-telemetry.js
 ```
 
 If all has been successful, you will see a message like this;
@@ -93,17 +95,17 @@ If all has been successful, you will see a message like this;
 Telemetry saved as JSON
 ```
 
-And in the directory, you should see a `.json` file called `GS018422-full-telemetry.json` (you can modify the filename in `GS018422.js` by replacing the line with `GS018422-full-telemetry.json` with your desired filename).
+And in the directory, you should see a `.json` file called `GS018422-full-telemetry.json` (you can modify the filename in `GS018422-full-telemetry.js` by replacing the value `GS018422-full-telemetry.json` with your desired filename).
 
-[Here's a prettified version of the output file](https://gist.github.com/himynamesdave/9ff529f92d3c091eca18bda6388a4685).
+[Here is a prettified version of the output file](https://gist.github.com/himynamesdave/9ff529f92d3c091eca18bda6388a4685).
 
 ## 4. Examining the output
 
-Depending on the camera, model, settings and accessories, you will see values reported for varios `streams`, e.g. (`ACCL`: 3-axis accelerometer, `GYRO`: 3-axis gyroscope, `GPS5`: Latitude, longitude, altitude (WGS 84), 2D ground speed, and 3D speed...)
+Depending on the camera, model, settings and accessories used, you will see values reported for various `streams`, e.g. (`ACCL`: 3-axis accelerometer, `GYRO`: 3-axis gyroscope, `GPS5`: Latitude, longitude, altitude (WGS 84), 2D ground speed, and 3D speed...)
 
 [You can find information on what many sensors are called (and what cameras / modes produce data for them) here](https://github.com/gopro/gpmf-parser#where-to-find-gpmf-data).
 
-For our work we're mainly interested values from the GPS, accelerometer and gyroscope sensors. Here are some snippets of how this data is presented (I've added comments into the code to describe the definition of the date value where it's vague):
+For our work we're mainly interested values from the GPS, accelerometer and gyroscope sensors. Here are some snippets of how this data is presented (I have added comments into the code to describe some of the values too):
 
 ### GPS `GPS5`
 
@@ -166,17 +168,17 @@ For our work we're mainly interested values from the GPS, accelerometer and gyro
     },
 ```
 
-## 5. Custom options
+## 5. Experiment with some custom options
 
 Using the script as defined above will output all available data.
 
-There is also [a comprehensive set of options that can also be used with the script to filter the type and date values produced](https://github.com/JuanIrache/gopro-telemetry#options).
+There is also [a comprehensive set of options that can also be used in the script to filter the type and date values produced](https://github.com/JuanIrache/gopro-telemetry#options).
 
 To help understand how these can be passed, take a look in [the options shown in the readme here](https://github.com/JuanIrache/gopro-telemetry#options).
 
 [`example.js`](https://github.com/JuanIrache/gopro-telemetry/blob/master/samples/example.js) in the `/samples` directory shows how some of the options can be used too.
 
-Let's use these in our 
+Let us use these in our script by modifying it like so;
 
 ```js
 const gpmfExtract = require('gpmf-extract');
@@ -188,11 +190,11 @@ const file = fs.readFileSync('GS018422.mp4');
 gpmfExtract(file)
   .then(extracted => {
     goproTelemetry(extracted, {
-      stream: 'GPS5',
+      stream: ['GPS5','ACCL'],
       GPS5Fix: 3,
       GPS5Precision: 500
     }, telemetry => {
-      fs.writeFileSync('GS018422-gps-telemetry.json', JSON.stringify(telemetry));
+      fs.writeFileSync('GS018422-gps-acl-only.json', JSON.stringify(telemetry));
       console.log('Telemetry saved as JSON');
     });
   })
@@ -202,24 +204,24 @@ gpmfExtract(file)
 Here are the custom options I have used:
 
 * `stream`: Filters the results by device stream (often a sensor) name. 
-  * I am using the GPS stream (`GPS5`)
+  * I am using the GPS stream (`GPS5`) and the accelerometer stream (`ACCL`)
 * `GPS5Fix`: Will filter out GPS5 samples where the type of GPS lock is lower than specified (0: no lock, 2: 2D lock, 3: 3D Lock).
   * I only want a good fix to avoid noise (3D / `3`)
 * `GPS5Precision`: Will filter out GPS5 samples where the [Dilution of Precision](https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation)) is higher than specified (this DOP value is * 100, e.g. 500 = 5)
   * I want a fairly good DOP, again for reducing noise (5 / `500`)
 
-Paste the last code into a new file `GS018422-gpsonly.js`;
+Now paste this code into a new file called `GS018422-gps-acl-only.js`;
 
 ```shell
-vi GS018422-gpsonly.js
+vi GS018422-gps-acl-only.js
 ```
 
-Running it in the same way as before;
+Once this is done, run it in the same way as before;
 
 ```shell
-node GS018422-gpsonly.js
+node GS018422-gps-acl-only.js
 ```
 
-You should notice the difference in files from the first (`GS018422-full-telemetry.json`) and second (`GS018422-gps-telemetry.json`) examples -- mainly the smaller file, due to only printing GPS data in the latter.
+You should notice the difference in the two files (`GS018422-full-telemetry.json` and `GS018422-gps-acl-only.json`) -- mainly the smaller file of the latter, due to the fact it only contains GPS and accelerometer data as defined by the `stream` filter.
 
-This post has hopefully given you enough to get started. Now it's time for you to play with the settings for your own requirements.
+This post has hopefully given you enough to get started. Now it is time for you to play with the settings for your own requirements.
