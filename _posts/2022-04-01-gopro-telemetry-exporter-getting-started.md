@@ -168,6 +168,10 @@ For our work we're mainly interested values from the GPS, accelerometer and gyro
     },
 ```
 
+### `x`, `y`, and `z` axes
+
+<img class="img-fluid" src="/assets/images/blog/2022-04-01/CameraIMUOrientationSM.png" alt="GoPro IMU Orientation" title="GoPro IMU Orientation" />
+
 ## 5. Experiment with some custom options
 
 Using the script as defined above will output all available data.

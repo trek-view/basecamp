@@ -30,13 +30,13 @@ I'm going to start with the MAX, because it requires the install of a custom ffm
 
 _Note: no equirectangular metadata has been added to the videos shown as examples (hence no 360 controls). [See how to do this here](/blog/2021/turn-360-photos-into-360-video)._
 
-## Converting GoPro MAX .360 videos (EAC projection) to equirectangular projections using ffmpeg
+## 1. Converting GoPro MAX .360 videos (EAC projection) to equirectangular projections using ffmpeg
 
 The GoPro MAX produces a single `.360` file (GoPro's EAC projection type) for 360 videos. [I've talked about these in detail previously](/blog/2021/everse-engineering-gopro-360-file-format-part-1).
 
 Sadly the master ffmpeg software does not contain the right filters to convert GoPro's EAC format out of the box (at the time of writing). Therefore you first need to build a custom fork built with this filter.
 
-### 1. Build and install ffmpeg
+### 1A. Build and install ffmpeg
 
 First grab this custom fork of ffmpeg.
 
@@ -61,7 +61,7 @@ $ sudo make install
 $ ffmpeg
 ```
 
-### 2. Convert .360 to equirectangular mp4
+### 1B. Convert .360 to equirectangular mp4
 
 I'll use the following file as an example:
 
@@ -80,6 +80,10 @@ OK, now we can run ffmpeg the ffmpeg conversion on the `.360` file:
 ```shell
 ffmpeg -i GS018421.360 -hwaccel auto -init_hw_device opencl:0.1 -filter_hw_device opencl0 -v verbose  -filter_complex '[0:0]format=yuv420p,hwupload[a] , [0:4]format=yuv420p,hwupload[b], [a][b]gopromax_opencl, hwdownload,format=yuv420p' -c:v libx265 GS018421.mp4
 ```
+
+
+ffmpeg -hwaccel opencl -v verbose -filter_complex '[0:0]format=yuv420p,hwupload[a] , [0:5]format=yuv420p,hwupload[b], [a][b]gopromax_opencl, hwdownload,format=yuv420p' -i GS018421.360 -c:v libx264 -pix_fmt yuv420p -map_metadata 0 -map 0:3 OUT.mp4
+
 
 Let's break this down;
 
@@ -117,7 +121,24 @@ This gives a final output that looks like this:
 
 TODO
 
-## Converting dual fisheye videos
+#### A note on hardware accelaration
+
+This command requires the use of hardware accelaration in ffmpeg, [which you can read more about here](https://trac.ffmpeg.org/wiki/HWAccelIntro).
+
+If you are using a general purpose laptop you might run into issues, like the one shown below;
+
+```
+[AVHWDeviceContext @ 0x55714eaff000] No matching devices found.
+Device creation failed: -19.
+Failed to set value 'opencl:0.1' for option 'init_hw_device': No such device
+Error parsing global options: No such device
+```
+
+From my understanding, this is due to hardware issues, specifically the lack of a GPU.
+
+As such for this example, I am using a cloud server with a vGPU, specifically an [AWS g4dn instance (g4dn.xlarge)](https://aws.amazon.com/ec2/instance-types/g4/). If you run into such an issue, and don't have a machine with a GPU, this is my only advice at this point in time for getting around the problem.
+
+## 2. Converting dual fisheye videos
 
 The GoPro Fusion produces a front and back fisheye `.mp4` file.
 
@@ -128,7 +149,7 @@ Here is an example of the files (shot at 5.2k, each with a resolution of 2704x26
 
 I have previosuly covered converted GoPro Fusion dual fisheye photo frames in detail. [You should read these posts first to understand the dual fisheyes the Fusion camera creates](/blog/2021/gopro-fusion-fisheye-stitching-part-1).
 
-### Using ffmpeg natively (proof of concept method)
+### 2A. Using ffmpeg natively (proof of concept method)
 
 The first step is to merge the input into a single dual fisheye (front and back videos side-by-side).
 
@@ -193,7 +214,7 @@ It is at these points we need to provide a blend. The blend zone is around 5 deg
 
 It is possible to use ffmpeg filters to eliminate this.
 
-### Using Fusion specific ffmpeg filters (recommended method)
+### 2B. Using Fusion specific ffmpeg filters (recommended method)
 
 To do this, we will use `.pgm` (Portable Gray Map) files for each fisheye. These files tell ffmpeg how to map the fisheye onto an equirectangular projection.
 

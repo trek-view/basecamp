@@ -3,7 +3,7 @@ date: 2020-05-08
 title: "An Introduction to the GoPro Metadata Format (GPMF) standard (video telemetry)"
 description: "With the help of a 360 video shot using a GoPro Fusion, I take a look at GoPro's GPMF video telemetry standard."
 categories: developers
-tags: [GPS, XMP, EXIF, mp4, GoPro, GPMF, GPMD, Fusion, exiftool]
+tags: [GPS, XMP, EXIF, mp4, GoPro, GPMF, GPMF, Fusion, exiftool]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-05-08/exif-tool-command-line-mp4-meta.jpg
 featured_image: /assets/images/blog/2020-05-08/exif-tool-command-line-mp4-sm.png
@@ -259,7 +259,7 @@ The rest of Track3 follows this format. Every sample interval, 1 measurement for
 
 Unfortunately we don't have the budget to buy every single 360 camera to test the photos and videos they produce with our software.
 
-Whilst having standards like EXIF, XMP and GPMD is very helpful, many manufacturers do things slightly differently (especially given the flexibility of fields in XMP data).
+Whilst having standards like EXIF, XMP and GPMF is very helpful, many manufacturers do things slightly differently (especially given the flexibility of fields in XMP data).
 
 In order to make sure our [free, open-source software works for everyone](https://github.com/trek-view/), we need to test it using 360 image and video files produced by a range of cameras and manufacturers.
 
@@ -273,7 +273,7 @@ If you'd like to read more about XMP namespaces, [read my latest introductory po
 
 ## Update 2021-08-20
 
-[Here's a deeper look into the Camera Motion Metadata Spec (CAMM), an alternative to GPMD, here](/blog/2021/metadata-exif-xmp-360-video-files-camm-camera-motion-metadata-spec).
+[Here's a deeper look into the Camera Motion Metadata Spec (CAMM), an alternative to GPMF, here](/blog/2021/metadata-exif-xmp-360-video-files-camm-camera-motion-metadata-spec).
 
 ## Update 2021-10-15
 
