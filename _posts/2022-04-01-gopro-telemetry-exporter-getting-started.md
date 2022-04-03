@@ -57,13 +57,13 @@ const fs = require('fs');
 const file = fs.readFileSync('GS018422.mp4');
 
 gpmfExtract(file)
-  .then(extracted => {
-    goproTelemetry(extracted, {}, telemetry => {
-      fs.writeFileSync('GS018422-full-telemetry.json', JSON.stringify(telemetry));
-      console.log('Telemetry saved as JSON');
-    });
-  })
-  .catch(error => console.error(error));
+.then(extracted => {
+goproTelemetry(extracted, {}, telemetry => {
+fs.writeFileSync('GS018422-full-telemetry.json', JSON.stringify(telemetry));
+console.log('Telemetry saved as JSON');
+});
+})
+.catch(error => console.error(error));
 ```
 
 Paste this code into a new file `GS018422-full-telemetry.js`;
@@ -192,17 +192,18 @@ const fs = require('fs');
 const file = fs.readFileSync('GS018422.mp4');
 
 gpmfExtract(file)
-  .then(extracted => {
-    goproTelemetry(extracted, {
-      stream: ['GPS5','ACCL'],
-      GPS5Fix: 3,
-      GPS5Precision: 500
-    }, telemetry => {
-      fs.writeFileSync('GS018422-gps-acl-only.json', JSON.stringify(telemetry));
-      console.log('Telemetry saved as JSON');
-    });
-  })
-  .catch(error => console.error(error));
+.then(extracted => {
+goproTelemetry(extracted, {
+stream: ['GPS5','ACCL'],
+GPS5Fix: 3,
+GPS5Precision: 500,
+WrongSpeed: 50
+}, telemetry => {
+fs.writeFileSync('GS018422-gps-acl-only.json', JSON.stringify(telemetry));
+console.log('Telemetry saved as JSON');
+});
+})
+.catch(error => console.error(error));
 ```
 
 Here are the custom options I have used:
@@ -213,6 +214,8 @@ Here are the custom options I have used:
   * I only want a good fix to avoid noise (3D / `3`)
 * `GPS5Precision`: Will filter out GPS5 samples where the [Dilution of Precision](https://en.wikipedia.org/wiki/Dilution_of_precision_(navigation)) is higher than specified (this DOP value is * 100, e.g. 500 = 5)
   * I want a fairly good DOP, again for reducing noise (5 / `500`)
+* `WrongSpeed`: will filter out GPS positions that generate higher speeds than indicated in meters per second
+  * I want to remove any two consecutive points where speed between them is greater than 50 m/s (180 km/h) as these are clearly erroneous (I was walking when shooting the video)
 
 Now paste this code into a new file called `GS018422-gps-acl-only.js`;
 
@@ -228,4 +231,20 @@ node GS018422-gps-acl-only.js
 
 You should notice the difference in the two files (`GS018422-full-telemetry.json` and `GS018422-gps-acl-only.json`) -- mainly the smaller file of the latter, due to the fact it only contains GPS and accelerometer data as defined by the `stream` filter.
 
+## 6. Change the output format
+
+You can also change the schema of the output too using the [presets available](https://github.com/JuanIrache/gopro-telemetry#presets).
+
+This can be useful to use with other software the accepts standard geo formats like `.gpx` or `.kml` for example.
+
+Below is an example, again using only the `GPS5` stream, but this time exporting to `.gpx` not `.json`:
+
+```shell
+TODO
+```
+
 This post has hopefully given you enough to get started. Now it is time for you to play with the settings for your own requirements.
+
+## Update 2022-04-21
+
+See a real world use-case of how the `.json` telemetry can be used in this post; [Overlaying GoPro Telemetry Dynamically onto Videos](/blog/2022/overlay-gopro-telemetry-data-video)

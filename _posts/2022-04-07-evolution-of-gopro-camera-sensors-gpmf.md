@@ -21,7 +21,6 @@ Generally, the newer the GoPro, the greater the telemetry available (and in some
 
 In this post I take a look at the tracks available by camera, [and the can be extracted using tools like gopro-telemetry explained here](/blog/2022/gopro-telemetry-exporter-getting-started).
 
-
 ### HERO5 Black and Session 
 
 | ID | Property | approximate frequency (Hz) | SIUN or UNIT | Comment |

@@ -5,10 +5,10 @@ description: "In our continued effort to avoid reliance on GoPro software, I loo
 categories: developers
 tags: [ffmpeg, MAX, GoPro, Player, Fusion Studio]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-03-xx/
-featured_image: /assets/images/blog/2022-03-xx/
+image: /assets/images/blog/2022-03-18/
+featured_image: /assets/images/blog/2022-03-18/
 layout: post
-published: false
+published: true
 ---
 
 **In our continued effort to avoid reliance on GoPro software, I look at how ffmpeg can be used to process raw Fusion and MAX 360 video outputs.**
@@ -84,6 +84,7 @@ ffmpeg -i GS018421.360 -hwaccel auto -init_hw_device opencl:0.1 -filter_hw_devic
 
 ffmpeg -hwaccel opencl -v verbose -filter_complex '[0:0]format=yuv420p,hwupload[a] , [0:5]format=yuv420p,hwupload[b], [a][b]gopromax_opencl, hwdownload,format=yuv420p' -i GS018421.360 -c:v libx264 -pix_fmt yuv420p -map_metadata 0 -map 0:3 OUT.mp4
 
+ffmpeg -hwaccel opencl -v verbose -filter_complex '[0:0]format=yuv420p,hwupload[a] , [0:5]format=yuv420p,hwupload[b], [a][b]gopromax_opencl, hwdownload,format=yuv420p' -i GS018421.360 -c:v libx264 -pix_fmt yuv420p -map_metadata 0 -map 0:3 OUT.mp4
 
 Let's break this down;
 
@@ -321,7 +322,7 @@ Ends the complex filter. Like before, you can put any final output settings you 
 
 If any of these commands are still a little hard to understand, [I recommend taking a look at my ffmpeg cheat sheet post which covers some of the concepts used](/blog/2022/ffmpeg-video-to-frame-cheat-sheet).
 
-Here's what the output looks like:
+Here is what the output looks like:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sSeV3XcnWWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
