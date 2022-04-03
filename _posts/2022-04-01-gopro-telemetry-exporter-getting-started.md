@@ -239,11 +239,78 @@ This can be useful to use with other software the accepts standard geo formats l
 
 Below is an example, again using only the `GPS5` stream, but this time exporting to `.gpx` not `.json`:
 
-```shell
-TODO
+```js
+const gpmfExtract = require('gpmf-extract');
+const goproTelemetry = require(`gopro-telemetry`);
+const fs = require('fs');
+
+const file = fs.readFileSync('GS018422.mp4');
+
+// AS KML
+
+gpmfExtract(file)
+.then(extracted => {
+goproTelemetry(extracted, {
+stream: 'GPS5',
+GPS5Fix: 3,
+GPS5Precision: 500,
+WrongSpeed: 50,
+preset: 'kml'
+}, telemetry => {
+fs.writeFileSync('GS018422-gps-only.kml', JSON.stringify(telemetry));
+console.log('Telemetry saved as KML');
+});
+})
+.catch(error => console.error(error));
+
+// AS GPX
+
+gpmfExtract(file)
+.then(extracted => {
+goproTelemetry(extracted, {
+stream: 'GPS5',
+GPS5Fix: 3,
+GPS5Precision: 500,
+WrongSpeed: 50,
+preset: 'gpx'
+}, telemetry => {
+fs.writeFileSync('GS018422-gps-only.gpx', JSON.stringify(telemetry));
+console.log('Telemetry saved as GPX');
+});
+})
+.catch(error => console.error(error));
 ```
 
-This post has hopefully given you enough to get started. Now it is time for you to play with the settings for your own requirements.
+Here I've set two outputs using the additon of the `preset` field, one set as `gpx` the other as `kml`, that output to files to `GS018422-gps-only.kml` and `GS018422-gps-only.gpx` respectively.
+
+The `trkpt`'s in the resulting `.gpx` file are printed like so;
+
+```xml
+<trkpt lat=\"28.7015115\" lon=\"-13.9204121\">\n              
+        <ele>243.304</ele>\n              
+        <time>2020-08-02T11:59:05.905Z</time>\n              
+        <fix>3d</fix>\n              
+        <hdop>107</hdop>\n              
+        <cmt>altitude system: MSLV; 2dSpeed: 1.067; 3dSpeed: 0.73</cmt>\n          
+      </trkpt>
+```
+
+And the `Placemark`'s in the resulting `.kml` are printed like so;
+
+```xml
+    <Placemark>\n            
+      <description>GPS Fix: 3; GPS Accuracy: 164; altitude system: MSLV; 2D Speed: 0.044; 3D Speed: 0.04</description>\n            
+      <Point>\n                
+        <altitudeMode>absolute</altitudeMode>\n                
+        <coordinates>-0.8459696,51.2725456,82.008</coordinates>\n            
+      </Point>\n            
+      <TimeStamp>\n                
+        <when>2021-09-04T07:24:07.744Z</when>\n            
+      </TimeStamp>\n        
+    </Placemark>\
+```
+
+Hopefully this post has given you enough to get started. Now it is time for you to play with the settings for your own requirements.
 
 ## Update 2022-04-21
 
