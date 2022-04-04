@@ -287,27 +287,27 @@ The `trkpt`'s in the resulting `.gpx` file are printed like so;
 
 ```xml
 <trkpt lat=\"28.7015115\" lon=\"-13.9204121\">\n              
-        <ele>243.304</ele>\n              
-        <time>2020-08-02T11:59:05.905Z</time>\n              
-        <fix>3d</fix>\n              
-        <hdop>107</hdop>\n              
-        <cmt>altitude system: MSLV; 2dSpeed: 1.067; 3dSpeed: 0.73</cmt>\n          
-      </trkpt>
+  <ele>243.304</ele>\n              
+  <time>2020-08-02T11:59:05.905Z</time>\n              
+  <fix>3d</fix>\n              
+  <hdop>107</hdop>\n              
+  <cmt>altitude system: MSLV; 2dSpeed: 1.067; 3dSpeed: 0.73</cmt>\n          
+</trkpt>
 ```
 
 And the `Placemark`'s in the resulting `.kml` are printed like so;
 
 ```xml
-    <Placemark>\n            
-      <description>GPS Fix: 3; GPS Accuracy: 164; altitude system: MSLV; 2D Speed: 0.044; 3D Speed: 0.04</description>\n            
-      <Point>\n                
-        <altitudeMode>absolute</altitudeMode>\n                
-        <coordinates>-0.8459696,51.2725456,82.008</coordinates>\n            
-      </Point>\n            
-      <TimeStamp>\n                
-        <when>2021-09-04T07:24:07.744Z</when>\n            
-      </TimeStamp>\n        
-    </Placemark>\
+<Placemark>\n            
+  <description>GPS Fix: 3; GPS Accuracy: 164; altitude system: MSLV; 2D Speed: 0.044; 3D Speed: 0.04</description>\n            
+  <Point>\n                
+    <altitudeMode>absolute</altitudeMode>\n                
+    <coordinates>-0.8459696,51.2725456,82.008</coordinates>\n            
+  </Point>\n            
+  <TimeStamp>\n                
+    <when>2021-09-04T07:24:07.744Z</when>\n            
+  </TimeStamp>\n        
+</Placemark>\
 ```
 
 Hopefully this post has given you enough to get started. Now it is time for you to play with the settings for your own requirements.

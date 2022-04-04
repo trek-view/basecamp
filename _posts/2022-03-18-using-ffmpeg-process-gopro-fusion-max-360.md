@@ -54,7 +54,7 @@ Now build ffmpeg using the makefile (this will take a long time);
 
 ```shell
 $ sudo apt-get install -y ocl-icd-opencl-dev
-$ ./configure --enable-opencl --enable-opengl --enable-sdl2
+$ ./configure --enable-opencl --enable-opengl --enable-sdl2 --enable-libx264 --enable-gpl
 $ make
 $ sudo make install
 # test ffmpeg works
@@ -78,27 +78,18 @@ $ gdown --id 1FT1oth6HHMFnzP_2jk8JpGPmlzjeBhIb
 OK, now we can run ffmpeg the ffmpeg conversion on the `.360` file:
 
 ```shell
-ffmpeg -i GS018421.360 -hwaccel auto -init_hw_device opencl:0.1 -filter_hw_device opencl0 -v verbose  -filter_complex '[0:0]format=yuv420p,hwupload[a] , [0:4]format=yuv420p,hwupload[b], [a][b]gopromax_opencl, hwdownload,format=yuv420p' -c:v libx265 GS018421.mp4
+ffmpeg -hwaccel opencl -v verbose -filter_complex '[0:0]format=yuv420p,hwupload[a] , [0:5]format=yuv420p,hwupload[b], [a][b]gopromax_opencl, hwdownload,format=yuv420p' -i GS018421.360 -c:v libx264 -pix_fmt yuv420p -map_metadata 0 -map 0:3 GS018421-stitched.mp4
 ```
-
-
-ffmpeg -hwaccel opencl -v verbose -filter_complex '[0:0]format=yuv420p,hwupload[a] , [0:5]format=yuv420p,hwupload[b], [a][b]gopromax_opencl, hwdownload,format=yuv420p' -i GS018421.360 -c:v libx264 -pix_fmt yuv420p -map_metadata 0 -map 0:3 OUT.mp4
-
-ffmpeg -hwaccel opencl -v verbose -filter_complex '[0:0]format=yuv420p,hwupload[a] , [0:5]format=yuv420p,hwupload[b], [a][b]gopromax_opencl, hwdownload,format=yuv420p' -i GS018421.360 -c:v libx264 -pix_fmt yuv420p -map_metadata 0 -map 0:3 OUT.mp4
 
 Let's break this down;
 
 ```shell
-ffmpeg -i GS018421.360
+-hwaccel opencl
 ```
 
-Where `GS018421.360` is the .360 video (EAC projection) you want to convert to an `.mp4` as an equirectangular projection.
+Many platforms offer access to dedicated hardware to perform a range of video-related tasks. In this case I am using OpenCL. OpenCL (Open Computing Language) is a low-level API for heterogeneous computing that runs on CUDA-powered GPUs. 
 
-```shell
--hwaccel auto -init_hw_device opencl:0.1 -filter_hw_device opencl0
-```
-
-TODO
+[Read more about hardware acceleration in ffmpeg here](https://trac.ffmpeg.org/wiki/HWAccelIntro).
 
 ```shell
 -v verbose
@@ -107,18 +98,25 @@ TODO
 Set logging level and flags used by the library. Useful because this is an unmerged fork to debug any issues.
 
 ```shell
--filter_complex '[0:0]format=yuv420p,hwupload[a] , [0:4]format=yuv420p,hwupload[b], [a][b]gopromax_opencl, hwdownload,format=yuv420p'
+-filter_complex '[0:0]format=yuv420p,hwupload[a] , [0:5]format=yuv420p,hwupload[b], [a][b]gopromax_opencl, hwdownload,format=yuv420p'
 ```
 
-TODO
 
 ```shell
--c:v libx265 GS018421.mp4
+-i GS018421.360 
 ```
 
-You can put any final output settings you want here, for example, encoding settings, and finally the output file name.
+Where `GS018421.360` is the .360 video (EAC projection) you want to convert to an `.mp4` as an equirectangular projection.
 
-This gives a final output that looks like this:
+```shell
+-c:v libx264 -pix_fmt yuv420p -map_metadata 0 -map 0:3 GS018421-stitched.mp4
+```
+
+And finally, we define the output settings, including encoding, mapping metadata and telemetry strea,, to create a final file, `GS018421-stitched`. 
+
+We know the telemetry stream is `0:3` for this video using ffprobe, but beware, depending on the mode used, this can either be `0:3` or `0:2` -- be sure to check with your video.
+
+This command gives a final output that looks like this:
 
 TODO
 

@@ -104,3 +104,5 @@ _[Wikipedia has a very helpful page on GPSP (or DOP) here](https://en.wikipedia.
 | --- | --- | --- | --- | --- |
 | MSKP | Main video frame SKiP | frame rate | n/a | GoPro internal usage. Number frames skips or duplicated from sensor image captured to encoded frame. Normally 0. This is used for visual effects when precision timing of the video frame is required. |
 | LSKP | Low res video frame SKiP | frame rate | n/a | GoPro internal usage. Same as MSKP for the LRV video file (when present.) This improves sync with the main video when using the LRV as a proxy. |
+
+I'd recommend taking a look at what the data from each of these sensors looks like using gopro-telemetry. [This post describes everything needed to do just that](/blog/2022/gopro-telemetry-exporter-getting-started). 

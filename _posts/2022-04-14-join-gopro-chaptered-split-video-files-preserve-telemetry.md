@@ -188,6 +188,10 @@ And the last GPS DateTime:
 
 Which gives GPS time range of 00:18:29.900 (`12:01:30.060`-`11:43:00.160`), which correctly matches the length of the video.
 
+#### A note on global metadata
+
+In the ffmpeg command I don't use `-map_metadata 0` (which maps all me)
+
 And that is it.
 
 ### Unstitched `.360` files (GoPro MAX only)

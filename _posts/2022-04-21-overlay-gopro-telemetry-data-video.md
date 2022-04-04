@@ -173,7 +173,11 @@ For steps, 2 and 3, I have built a script that:
 
 Now that we have the images we can overlay them onto ffmpeg (in a similar way I showed for overlaying a nadir or watermark).
 
-The tricky bit here is aliging the map images to the correct point in the video.
+My inspiration for the overlay comes from Grand Theft Auto, an in picture map in the bottom left corner of the video. The dimensions of the map will depend on video dimensions as follow:
+
+<img class="img-fluid" src="/assets/images/blog/2022-04-21/map-in-video-overlay.jpg" alt="Map in video design" title="Map in video design" />
+
+The tricky bit here is aliging the correct image to the correct point in the video.
 
 In the gopro-telemetry `.json` there were two time values
 
@@ -181,11 +185,3 @@ In the gopro-telemetry `.json` there were two time values
 * `date`: this is the datetime reported by the GPS sensor
 
 
-
-
-
-
-https://ottverse.com/ffmpeg-drawtext-filter-dynamic-overlays-timecode-scrolling-text-credits/
-
-
-ffmpeg -i inputClip.mp4 -vf "drawtext=text='timestamp: %{pts \: hms}': x=500: y=500: fontsize=32:fontcolor=yellow@0.9: box=1: boxcolor=black@0.6" -c:a copy output.mp4
