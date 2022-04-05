@@ -48,8 +48,8 @@ My aim now is to use the footage I've shot to create street level tours the pist
 Next week I plan to start processing the videos. In summary there is;
 
 * 3 terabytes of footage
-* Representing 10 hours, 55 minutes, and 06 seconds
-* Over a total of 889 videos
+* Representing almost 59 hours of footage
+* In a total of 889 videos
 
 I'll leave you with a little sneak peak, from one of my all time favourite runs filmed last week, the Vallee Blanche off the Aiguille du Midi (3,842m) in Chamonix.
 
