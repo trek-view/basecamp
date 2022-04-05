@@ -35,7 +35,7 @@ For this example I will use the video `GS030141.mp4` (a equirectangular video sh
 
 I have extracted the `GPS5` telemetry stream from the video to produce `GS030141.json`, [which can be downloaded here](https://gist.github.com/himynamesdave/4db5e613f026c3828c765282b414e643).
 
-Below is the first GPS point in the JSON:
+Below is the first GPS point in `GS030141.json`:
 
 ```json
 {
@@ -52,7 +52,12 @@ Below is the first GPS point in the JSON:
 },
 ```
 
-The video runs for 2 mins 24 seconds and the telemetry file contains 2496 GPS positions.
+In the gopro-telemetry `.json` there are two time values;
+
+* `cts`: this is the miliseconds since the first frame of the video
+* `date`: this is the datetime reported by the GPS sensor
+
+The video runs for 2 mins 24 seconds (first time; `2020-08-02T11:59:05.905Z` (cts; `144894.0`) and last time; `2020-08-02T12:01:30.225Z` (cts; `144894.75`)) and the telemetry file contains 2496 GPS positions.
 
 ## 1. Considerations
 
@@ -75,7 +80,7 @@ I will use a map with a:
 
 It's therefore easier to first create a [GeoJSON file](https://geojson.org/) to pass to the MapBox Static Images API.
 
-The first GeoJSON (`0.geojson`) (named in sequential order of points, starting with 0) will look like this (note, I have only inserted the first 3 GPS points for this example:
+The first GeoJSON (`000000.geojson`) (named in sequential order of points, starting with 0) will look like this (note, I have only inserted the first 3 GPS points for this example:
 
 ```json
 {
@@ -121,7 +126,7 @@ The first GeoJSON (`0.geojson`) (named in sequential order of points, starting w
 }
 ```
 
-In the second GeoJSON (`1.geojson`), the `LineString` object will remain the same, however the `Point` will be updated to the second point in the telemetry, 
+In the second GeoJSON (`000001.geojson`), the `LineString` object will remain the same, however the `Point` will be updated to the second point in the telemetry, 
 
 ```json
         {
@@ -169,19 +174,94 @@ For steps, 2 and 3, I have built a script that:
 
 [Download it here]().
 
-## 4. Overlay the images using ffmpeg
+## 4. Create a video file of the images using ffmpeg
 
 Now that we have the images we can overlay them onto ffmpeg (in a similar way I showed for overlaying a nadir or watermark).
 
-My inspiration for the overlay comes from Grand Theft Auto, an in picture map in the bottom left corner of the video. The dimensions of the map will depend on video dimensions as follow:
+My inspiration for the overlay comes from Mapillary, a-picture-in-picture map in the bottom left corner of the video. The dimensions of the map will depend on video dimensions as follow:
 
 <img class="img-fluid" src="/assets/images/blog/2022-04-21/map-in-video-overlay.jpg" alt="Map in video design" title="Map in video design" />
 
+Now we know how to position the overlay, we now need to create a video file that matches the framerate of the input video from the images.
+
 The tricky bit here is aliging the correct image to the correct point in the video.
 
-In the gopro-telemetry `.json` there were two time values
+The framerate of the input video is;
 
-* `cts`: this is the miliseconds since the first frame of the video
-* `date`: this is the datetime reported by the GPS sensor
+```shell
+ffprobe -v error -select_streams v:0 -show_entries stream=duration -of default=noprint_wrappers=1:nokey=1 GS030141.mp4
+```
+
+Prints time in seconds:
+
+```
+144.133333
+```
+
+And for framerate:
+
+```shell
+ffprobe -v error -select_streams v -of default=noprint_wrappers=1:nokey=1 -show_entries stream=r_frame_rate GS030141.mp4
+```
+
+Which prints as a fraction:
+
+```
+30000/1001
+```
+
+(or 29.97002997)
+
+This is also reported as a rounded FPS value at the end of `GS030141.json`;
+
+```json
+"frames/second":30
+```
+
+You can also get total frames like so
+
+```shell
+ffprobe -v error -select_streams v:0 -count_packets -show_entries stream=nb_read_packets -of csv=p=0 GS030141.mp4
+```
+
+Which gives:
+
+```
+4321
+```
+
+This actually counts packets instead of frames but it is much faster. Result should be the same. If you want to verify by counting frames change -count_packets to -count_frames and nb_read_packets to nb_read_frames.
+
+**A quick note on GoPro GPS**
+
+The GoPro GPS sensors capture at 18Hz, so that's a maximum of 18 GPS points per second. It is also possible that fewer than 18 points might be reported per second in the telemetry (for example, where there is a lot of obstruction). This also means we won't have an even distribution of GPS points for every seconds of the video (e.g. 1 second might have 18 GPS points, and the next might only have 5).
+
+Videos on GoPro cameras can be shot a varying frames rates too. In our example the framerate is 30 FPS, but other GoPro cameras support slower and faster framerates (up to 240 FPS @  2.7K on the HERO 10).
+
+**End note**
+
+As you can see, whilst we have 4321 frames over 144.133333 seconds in the input video, we only have 2496 GPS points over the same period. Roughly the video has 17.3172988375 GPS points per second (`2496 / 144.133333`).
+
+I do not want to lower the framerate of the input video as this is the main focal point. We will have to adjust the map overlay duplicate frames.
+
+For our purposes, the speed of travel is fairly low -- usually less than an average speed of 20 km/h. [The fastest speeds are from my recent ski videos](/blog/2022/creating-3d-maps-europe-ski-resorts-part-1)). With this in mind, and to keep things simple, I will use 6 map frames for each second of video.
+
+This gives the following;
+
+* 24 FPS = 1 map frame for every 4 video frames
+* 30 FPS = 1 for 5
+* 60 FPS = 1 for 10
+* 120 FPS = 1 for 20
+* 240 FPS = 1 for 40
+
+Here is an illustration of the above for a video recorded at 30 FPS:
+
+<img class="img-fluid" src="/assets/images/blog/2022-04-21/map-in-video-frame-rate-change.jpg" alt="Video map overlay framerate" title="Video map overlay framerate" />
+
+Now, for each second of footage we must take an evenly spaced the selection of the map images that exist.
 
 
+TODO
+
+
+## 5. Overlay video file of the images using ffmpeg
