@@ -260,8 +260,9 @@ Here is an illustration of the above for a video recorded at 30 FPS:
 
 Now, for each second of footage we must take an evenly spaced the selection of the map images that exist.
 
+<img class="img-fluid" src="/assets/images/blog/2022-04-21/map-in-video-gps-spacing.jpg" alt="Video map overlay image selection" title="Video map overlay image selection" />
 
-TODO
+
 
 
 ## 5. Overlay video file of the images using ffmpeg
