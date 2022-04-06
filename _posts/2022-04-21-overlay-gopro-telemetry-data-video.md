@@ -289,11 +289,11 @@ I also do not want to lower the framerate of the video.
 
 To solve the difference in frames we can;
 
-* overlay the first map image over the start of the video
-* load the second map image, and its `cts` time
-* we continue to overlay the first image until video time >= `cts` time of image 2
-* when this happens we overlay the second map image on the video
-* now load the second map image, and its `cts` time
-* ...and so on until the final framee
+1. overlay the first map image over the start of the video
+2. load the second map image, and its `cts` time
+3. we continue to overlay the first image until video time >= `cts` time of image 2
+4. when this happens we overlay the second map image on the video
+5. now load the second map image, and its `cts` time
+6. ...and so on until the final framee
 
 TODO
