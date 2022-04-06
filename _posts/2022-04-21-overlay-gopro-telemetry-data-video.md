@@ -29,7 +29,7 @@ Here is how I used gopro-telemetry, MapBox, ffmpeg, and a few other tools to bri
 
 ## Sample JSON telemtety
 
-For this example I will use the video `GS030141.mp4` (a equirectangular video shot on the GoPro MAX and stitched with GoPro Studio). 
+For this example I will use the video `GS030141.mp4` (an equirectangular video shot on the GoPro MAX and stitched with GoPro Studio with a resolution 4096x2048). 
 
 [You can download it here, should you want to follow along](https://drive.google.com/file/d/19jcPzpa4I1vEIwhqPdVsJCJ6gVcFu5cf/view?usp=sharing).
 
@@ -165,66 +165,61 @@ Using the GeoJSON code snippet shared above, the command would be;
 $ curl -g "https://api.mapbox.com/styles/v1/mapbox/outdoors-v11/static/geojson(%7B%22type%22%3A%22FeatureCollection%22%2C%22name%22%3A%22Sample%22%2C%22features%22%3A%5B%7B%22type%22%3A%22Feature%22%2C%22geometry%22%3A%7B%22type%22%3A%22Point%22%2C%22coordinates%22%3A%5B-13.9204121%2C28.7015115%5D%7D%7D%2C%7B%22type%22%3A%22Feature%22%2C%22geometry%22%3A%7B%22type%22%3A%22LineString%22%2C%22coordinates%22%3A%5B%5B-13.9204121%2C28.7015115%5D%2C%5B-13.9204117%2C28.7015115%5D%2C%5B-13.9204111%2C28.7015117%5D%5D%7D%7D%5D%7D)/-13.9204121,28.7015115,10/500x300?access_token=hidden" --output 0.png
 ```
 
-For steps, 2 and 3, I have built a script that:
+You might run into issue here depening on how many points are in your telemetry file. MapBox has a [8192 character limit on URL lengths](https://docs.mapbox.com/api/overview/#url-length-limits). `.geojson` files for videos longer than one minute can start to break this threshold.
 
-1. takes the gopro-telemetry JSON file output with GPS points
-2. creates a set of GeoJSON files
-3. passes them to the MapBox API (using an API key set in the code)
-4. saves the processed images from to your local machine, ready for step 4
+There are three options in this case;
 
+* filter the number of points generated in the telemetry by using the options in GoPro telemetry (read more here)
+* uploading a new style using the `.geojson` file in the MapBox Studio UI
+* [creating a new style using the `.geojson` file via the MapBox API](https://docs.mapbox.com/api/maps/styles/#example-request-create-a-style)
 
-## 4. Adjust images to equirectangular (for 360 videos only)
+## 4. Adjust images size
 
-[I explained the need to do convert a normal projected file into the equirectangular space in my post on generating a nadir using imagemagick last year](adding-a-custom-nadir-to-360-video-photo/).
+My inspiration for the overlay comes from Mapillary, a-picture-in-picture map in the bottom left corner of the video, so I need to resize the map images accordingly.
 
-We need to apply similar concepts for equirectangular videos we want to overlay the map on. 
-
-The difference here being, is we first need to create a png file matching the video resolution (with a transparent background), place the map image into it in the desired space, and then convert the whole image to equirectangular ready to be overlaid onto the video.
-
-<img class="img-fluid" src="/assets/images/blog/2022-04-21/map-in-video-360.jpg" alt="Map in video 360 map" title="Map in video 360 map" />
-
-
-To create the base map (make sure to use the correct dimensions of your video):
-
-```shell
-magick convert -size 4096x2048 xc:none PNG32:equirectangular-0.png 
-```
-
-Adjust the map size to desired proportions (`4096*0.1=410r`).
-
-```shell
-magick 0.png -resize 410x resized-0.png
-```
-
-Now overlay the map into the desired position (`4096*0.4=1638r`, `2048*0.6=1229r`)
-
-```shell
-composite resized-0.png equirectangular-0.png -geometry +1638+1229 equirectangular-map-0.png
-````
-
-Now convert each image to an equirectangular projection like so:
-
-```shell
-magick equirectangular-map-0.png -rotate 180 equirectangular-map-a-0.png
-magick trek-view-square-nadir-1.png -distort DePolar 0 equirectangular-map-b-0.png
-magick trek-view-square-nadir-2.png -flip  equirectangular-map-c-0.png
-magick trek-view-square-nadir-3.png -flop  equirectangular-map-final-0.png
-````
-
-
-[Download it here]().
-
-i
-
-## 4. Create a video file of the images using ffmpeg
-
-Now that we have the images we can overlay them onto ffmpeg (in a similar way I showed for overlaying a nadir or watermark).
-
-My inspiration for the overlay comes from Mapillary, a-picture-in-picture map in the bottom left corner of the video. The dimensions of the map will depend on video dimensions as follow:
+### 4A. HERO videos
 
 <img class="img-fluid" src="/assets/images/blog/2022-04-21/map-in-video-overlay.jpg" alt="Map in video design" title="Map in video design" />
 
-Now we know how to position the overlay, we now need to create a video file that matches the framerate of the input video from the images.
+Adjust the map size to desired proportions.
+
+You can use imagemagick to do this like so:
+
+```shell
+magick MAP-INPUT.png -resize DESIRED-WIDTHx MAP-OUTPUT.png
+```
+
+For example to resize to a width of 410 (while keeping height relative):
+
+```shell
+magick 0.png -resize 410x xc:none PNG32resized-0.png
+```
+
+### 4B. 360 (equirectangular) videos
+
+You can identify equirectangular videos using the metdata tag `<XMP-GSpherical:ProjectionType>equirectangular</XMP-GSpherical:ProjectionType>`).
+
+<img class="img-fluid" src="/assets/images/blog/2022-04-21/map-in-video-360.jpg" alt="Map in video 360 map" title="Map in video 360 map" />
+
+[I explained the need to do convert a normal projected file into the equirectangular space in my post on generating a nadir using imagemagick last year](/blog/2021/adding-a-custom-nadir-to-360-video-photo/).
+
+Now, you could convert the map to an equirectangular projection too. However, as I noted in that post:
+
+> If you've every looked at a equirectangular projected 360 photo you will have clearly seen how distorted it is at the top and bottom of the image, but less around the center.
+
+The center, where I plan to overlay the map as shown suffers little distortion from a normal projection, meaning you can get away with not converting it (as long as it doesn't stray too near the top and bottom of the video -- you'll need to experiment).
+
+If you did need to convert the map to an equirectangular projection
+
+1. create a png file matching the video resolution (with a transparent background)
+2. place the map image into it in the desired space (where you want it to appear in the viewer)
+3. convert the whole image to equirectangular ready to be overlaid onto the video
+
+I won't convert my map to eequirectangular in this post (judge for yourself the output), and will simply resize in the same way I showed for non-equirectangular videos.
+
+## 4. Create a video file of the images using ffmpeg
+
+Now that we have the images we can overlay them onto the video.
 
 The tricky bit here is aliging the correct image to the correct point in the video.
 
@@ -276,35 +271,29 @@ This actually counts packets instead of frames but it is much faster. Result sho
 
 **A quick note on GoPro GPS**
 
-The GoPro GPS sensors capture at 18Hz, so that's a maximum of 18 GPS points per second. It is also possible that fewer than 18 points might be reported per second in the telemetry (for example, where there is a lot of obstruction). This also means we won't have an even distribution of GPS points for every seconds of the video (e.g. 1 second might have 18 GPS points, and the next might only have 5).
+The GoPro GPS sensors capture at 18Hz, so that's a maximum of 18 GPS points per second. 
+
+It is also possible that fewer than 18 points might be reported per second in the telemetry (for example, where there is a lot of obstruction).
+
+<img class="img-fluid" src="/assets/images/blog/2022-04-21/map-in-video-gps-spacing.jpg" alt="Video map overlay image selection" title="Video map overlay image selection" />
+
+This also means we won't have an even distribution of GPS points for every seconds of the video (e.g. 1 second might have 18 GPS points, and the next might only have 5).
 
 Videos on GoPro cameras can be shot a varying frames rates too. In our example the framerate is 30 FPS, but other GoPro cameras support slower and faster framerates (up to 240 FPS @  2.7K on the HERO 10).
 
 **End note**
 
-As you can see, whilst we have 4321 frames over 144.133333 seconds in the input video, we only have 2496 GPS points over the same period. Roughly the video has 17.3172988375 GPS points per second (`2496 / 144.133333`).
+As you can see, whilst we have 4321 frames over 144.133333 seconds (30FPS) in the input video, we only have 2496 GPS points over the same period. Roughly the video has 17.3172988375 GPS points per second (`2496 / 144.133333`).
 
-I do not want to lower the framerate of the input video as this is the main focal point. We will have to adjust the map overlay duplicate frames.
+I also do not want to lower the framerate of the video.
 
-For our purposes, the speed of travel is fairly low -- usually less than an average speed of 20 km/h. [The fastest speeds are from my recent ski videos](/blog/2022/creating-3d-maps-europe-ski-resorts-part-1)). With this in mind, and to keep things simple, I will use 6 map frames for each second of video.
+To solve the difference in frames we can;
 
-This gives the following;
+* overlay the first map image over the start of the video
+* load the second map image, and its `cts` time
+* we continue to overlay the first image until video time >= `cts` time of image 2
+* when this happens we overlay the second map image on the video
+* now load the second map image, and its `cts` time
+* ...and so on until the final framee
 
-* 24 FPS = 1 map frame for every 4 video frames
-* 30 FPS = 1 for 5
-* 60 FPS = 1 for 10
-* 120 FPS = 1 for 20
-* 240 FPS = 1 for 40
-
-Here is an illustration of the above for a video recorded at 30 FPS:
-
-<img class="img-fluid" src="/assets/images/blog/2022-04-21/map-in-video-frame-rate-change.jpg" alt="Video map overlay framerate" title="Video map overlay framerate" />
-
-Now, for each second of footage we must take an evenly spaced the selection of the map images that exist.
-
-<img class="img-fluid" src="/assets/images/blog/2022-04-21/map-in-video-gps-spacing.jpg" alt="Video map overlay image selection" title="Video map overlay image selection" />
-
-
-20 m/s = 72 km/h
-
-## 5. Overlay video file of the images using ffmpeg
+TODO
