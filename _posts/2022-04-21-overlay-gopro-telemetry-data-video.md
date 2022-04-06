@@ -57,21 +57,21 @@ In the gopro-telemetry `.json` there are two time values;
 * `cts`: this is the miliseconds since the first frame of the video
 * `date`: this is the datetime reported by the GPS sensor
 
-The video runs for 2 mins 24 seconds (first time; `2020-08-02T11:59:05.905Z` (cts; `144894.0`) and last time; `2020-08-02T12:01:30.225Z` (cts; `144894.75`)) and the telemetry file contains 2496 GPS positions.
+The video runs for 144.133333 seconds (2 mins 24.133333 seconds). The first time is; `2020-08-02T11:59:05.905Z` (cts; `0`) and last time is; `2020-08-02T12:01:30.225Z` (cts; `144894.75`). 
+
+The telemetry file contains 2496 GPS positions, like the one shown in the snippet above.
 
 ## 1. Considerations
 
-This one requires the help of a third party to provide map tiles.
-
 The telemetry contains GPS information (timestamp, latitude, longitude). For each time,lat,lon point I will generate a static image showing that point on a map.
 
-Each map image will then be overlaid onto the video at the correct time, creating the effect of a real-time map in the video showing the current position in the world that the video was filmed.
+The map images will then be wrapped into a video overlaid onto the video at the correct time, creating the effect of a real-time map in the video showing the current position in the world that the video was filmed.
+
+## 2. Generating a GeoJSON for the overlays using gopro-telemetry
 
 [The MapBox Static Images API has a free tier which allows for 50,000 request per month at no cost](https://www.mapbox.com/pricing/#glstatic). Ignoring some trial and error, I only need 2,496 calls for each GPS position.
 
 Given our videos are outdoors and adventure based, I will use the [MapBox Outdoor map style](https://www.mapbox.com/maps/outdoors), retrieved using the endpoint `https://api.mapbox.com/styles/v1/mapbox/outdoors-v11/static/`.
-
-## 2. Generating a GeoJSON for the overlays using gopro-telemetry
 
 I will use a map with a:
 
@@ -172,7 +172,49 @@ For steps, 2 and 3, I have built a script that:
 3. passes them to the MapBox API (using an API key set in the code)
 4. saves the processed images from to your local machine, ready for step 4
 
+
+## 4. Adjust images to equirectangular (for 360 videos only)
+
+[I explained the need to do convert a normal projected file into the equirectangular space in my post on generating a nadir using imagemagick last year](adding-a-custom-nadir-to-360-video-photo/).
+
+We need to apply similar concepts for equirectangular videos we want to overlay the map on. 
+
+The difference here being, is we first need to create a png file matching the video resolution (with a transparent background), place the map image into it in the desired space, and then convert the whole image to equirectangular ready to be overlaid onto the video.
+
+<img class="img-fluid" src="/assets/images/blog/2022-04-21/map-in-video-360.jpg" alt="Map in video 360 map" title="Map in video 360 map" />
+
+
+To create the base map (make sure to use the correct dimensions of your video):
+
+```shell
+magick convert -size 4096x2048 xc:none PNG32:equirectangular-0.png 
+```
+
+Adjust the map size to desired proportions (`4096*0.1=410r`).
+
+```shell
+magick 0.png -resize 410x resized-0.png
+```
+
+Now overlay the map into the desired position (`4096*0.4=1638r`, `2048*0.6=1229r`)
+
+```shell
+composite resized-0.png equirectangular-0.png -geometry +1638+1229 equirectangular-map-0.png
+````
+
+Now convert each image to an equirectangular projection like so:
+
+```shell
+magick equirectangular-map-0.png -rotate 180 equirectangular-map-a-0.png
+magick trek-view-square-nadir-1.png -distort DePolar 0 equirectangular-map-b-0.png
+magick trek-view-square-nadir-2.png -flip  equirectangular-map-c-0.png
+magick trek-view-square-nadir-3.png -flop  equirectangular-map-final-0.png
+````
+
+
 [Download it here]().
+
+i
 
 ## 4. Create a video file of the images using ffmpeg
 
@@ -263,6 +305,6 @@ Now, for each second of footage we must take an evenly spaced the selection of t
 <img class="img-fluid" src="/assets/images/blog/2022-04-21/map-in-video-gps-spacing.jpg" alt="Video map overlay image selection" title="Video map overlay image selection" />
 
 
-
+20 m/s = 72 km/h
 
 ## 5. Overlay video file of the images using ffmpeg

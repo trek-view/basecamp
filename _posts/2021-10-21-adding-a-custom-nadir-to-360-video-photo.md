@@ -41,7 +41,7 @@ Here's how to do it with Imagemagick:
 
 ### 1.1 Rotate 180 degrees
 ```
-magick trek-view-square-nadir.png -rotate 180 -strip trek-view-square-nadir-1.png
+magick trek-view-square-nadir.png -rotate 180 trek-view-square-nadir-1.png
 ```
 
 <img class="img-fluid" src="/assets/images/blog/2021-10-22/trek-view-square-nadir-1.png" alt="Rotate 180 degrees" title="Rotate 180 degrees" />
