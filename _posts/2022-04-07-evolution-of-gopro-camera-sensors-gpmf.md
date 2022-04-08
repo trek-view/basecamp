@@ -19,7 +19,7 @@ The GPMF track (often referred to as a stream) contains various sensor telemetry
 
 Generally, the newer the camera, the more telemetry available (and in some cases, improved data). Watch out for the latter where sensor values between different cameras are sometimes printed in different formats and with different units.
 
-In this post I take a look at the sensor streams available by camera, and that can be extracted using tools like gopro-telemetry [(explained here)](/blog/2022/gopro-telemetry-exporter-getting-started).
+In this post I take a look at the sensor streams available by camera that can be extracted using tools like gopro-telemetry [(explained here)](/blog/2022/gopro-telemetry-exporter-getting-started).
 
 ### HERO5 Black and Session 
 
