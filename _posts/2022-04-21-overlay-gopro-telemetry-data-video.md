@@ -255,6 +255,8 @@ This is also reported as a rounded FPS value at the end of `GS030141.json`;
 "frames/second":30
 ```
 
+Kep in mind, videos on GoPro cameras can be shot a varying frames rates. In our example the framerate is 30 FPS, but other GoPro cameras support slower and faster framerates (up to 240 FPS @  2.7K on the HERO 10).
+
 You can also get total frames like so
 
 ```shell
@@ -267,7 +269,7 @@ Which gives:
 4321
 ```
 
-This actually counts packets instead of frames but it is much faster. Result should be the same. If you want to verify by counting frames change -count_packets to -count_frames and nb_read_packets to nb_read_frames.
+This actually counts packets instead of frames but it is much faster. Result should be the same. If you want to verify by counting frames change `-count_packets` to `-count_frames` and `nb_read_packets` to `nb_read_frames`.
 
 **A quick note on GoPro GPS**
 
@@ -277,15 +279,13 @@ It is also possible that fewer than 18 points might be reported per second in th
 
 <img class="img-fluid" src="/assets/images/blog/2022-04-21/map-in-video-gps-spacing.jpg" alt="Video map overlay image selection" title="Video map overlay image selection" />
 
-This also means we won't have an even distribution of GPS points for every seconds of the video (e.g. 1 second might have 18 GPS points, and the next might only have 5).
-
-Videos on GoPro cameras can be shot a varying frames rates too. In our example the framerate is 30 FPS, but other GoPro cameras support slower and faster framerates (up to 240 FPS @  2.7K on the HERO 10).
+This also means you're very unlikely to have have an even distribution of GPS points for every seconds of the video (e.g. 1 second might have 18 GPS points, and the next might only have 5).
 
 **End note**
 
 As you can see, whilst we have 4321 frames over 144.133333 seconds (30FPS) in the input video, we only have 2496 GPS points over the same period. Roughly the video has 17.3172988375 GPS points per second (`2496 / 144.133333`).
 
-I also do not want to lower the framerate of the video.
+I also do not want to lower the framerate of the video, so I need to dynamically adjust when the map images are shown.
 
 To solve the difference in frames we can;
 

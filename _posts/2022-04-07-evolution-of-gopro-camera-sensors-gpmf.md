@@ -1,14 +1,14 @@
 ---
-date: 2022-04-07
+date: 2022-04-08
 title: "The Evolution of GoPro Camera Sensors"
-description: "And the data they produce in the GPMF stream."
+description: "And the data they produce in the GPMF streams."
 categories: developers
 tags: [exiftool, ffmpeg, gmpd, telemetry, metadata, gpmf]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-04-07/
-featured_image: /assets/images/blog/2022-04-07/
+image: /assets/images/blog/2022-04-08/GOPRO_MAX_Teardown-meta.jpg
+featured_image: /assets/images/blog/2022-04-08/GOPRO_MAX_Teardown-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **And the data they produce in the GPMF stream.**
@@ -17,9 +17,9 @@ Videos shot on GoPro HERO5 (and newer), Fusion, and MAX cameras all contain a GP
 
 The GPMF track (often referred to as a stream) contains various sensor telemetry from the camera, depending on the camera, model, settings and accessories used.
 
-Generally, the newer the GoPro, the greater the telemetry available (and in some cases, more improved or slightly changed -- watch out for the latter where values between different cameras are sometimes printed in different orders).
+Generally, the newer the GoPro, the more telemetry available and in some cases, improved. Watch out for the latter where sensor values between different cameras are sometimes printed in different orders and with different units.
 
-In this post I take a look at the tracks available by camera, [and the can be extracted using tools like gopro-telemetry explained here](/blog/2022/gopro-telemetry-exporter-getting-started).
+In this post I take a look at the sensor streams available by camera, and that can be extracted using tools like gopro-telemetry [(explained here)](/blog/2022/gopro-telemetry-exporter-getting-started).
 
 ### HERO5 Black and Session 
 
