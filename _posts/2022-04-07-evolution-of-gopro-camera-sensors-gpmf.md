@@ -17,7 +17,7 @@ Videos shot on GoPro HERO5 (and newer), Fusion, and MAX cameras all contain a GP
 
 The GPMF track (often referred to as a stream) contains various sensor telemetry from the camera, depending on the camera, model, settings and accessories used.
 
-Generally, the newer the GoPro, the more telemetry available and in some cases, improved. Watch out for the latter where sensor values between different cameras are sometimes printed in different orders and with different units.
+Generally, the newer the camera, the more telemetry available (and in some cases, improved data). Watch out for the latter where sensor values between different cameras are sometimes printed in different formats and with different units.
 
 In this post I take a look at the sensor streams available by camera, and that can be extracted using tools like gopro-telemetry [(explained here)](/blog/2022/gopro-telemetry-exporter-getting-started).
 
