@@ -1,6 +1,6 @@
 ---
 date: 2022-03-18
-title: "Using ffmpeg to Process Raw GoPro MAX .360's to Equirectangular Projections"
+title: "Using ffmpeg to Process Raw GoPro MAX .360's into Equirectangular Projections"
 description: "In our continued effort to avoid reliance on GoPro software, I look at how ffmpeg can be used to process GoPro EAC projected videos (.360's) to equirectangular projections."
 categories: developers
 tags: [ffmpeg, MAX, GoPro, Player, Fusion Studio]
@@ -13,18 +13,13 @@ published: true
 
 **In our continued effort to avoid reliance on GoPro software, I look at how ffmpeg can be used to process GoPro EAC projected videos (.360's) to equirectangular projections.**
 
-You might have seen my previous series of posts:
+You might have seen my previous series of posts; [Reversing engineering GoPro MAX .360 videos (convert to equirectangular projection)](/blog/2021/reverse-engineering-gopro-360-file-format-part-1).
 
-* [Reversing engineering GoPro MAX .360 videos (convert to equirectangular projection)](/blog/2021/reverse-engineering-gopro-360-file-format-part-1)
-* [Turning dual GoPro Fusion Fisheye videos and images into equirectangular projections](/blog/2021/gopro-fusion-fisheye-stitching-part-1)
+The outcome of this post was a proof-of-concept called [MAX2Sphere](https://github.com/trek-view/MAX2sphere).
 
-In both of these posts, the outcome was two custom built scripts that implemented a proof-of-concept.
+Recently, I've seen a few ffmpeg builds for GoPro .360 conversions that do a similar thing.
 
-Recently, I've seen a few ffmpeg builds for GoPro .360 conversions.
-
-I decided to take a look at how to use one of these custom ffmpeg builds.
-
-_Note: no equirectangular metadata has been added to the videos shown as examples (hence no 360 controls). [See how to do this here](/blog/2021/turn-360-photos-into-360-video)._
+Of course this meant I had to play with them... and here is what I found.
 
 ## 1. GoPro MAX `.360` input
 
@@ -80,7 +75,7 @@ Unsupported codec with id 98314 for input stream
 
 ## 2. Build and install ffmpeg
 
-As noted at the top of this post, the master ffmpeg software build does not contain the right filters to convert GoPro's EAC format out of the box (at the time of writing). Therefore you first need to build a custom fork which contains these filter.
+As hinted at the top of this post, the master ffmpeg software build does not contain the right filters to convert GoPro's EAC format out of the box (at the time of writing). Therefore you first need to build a custom fork of ffmpeg which contains these filter.
 
 [First grab this custom fork of ffmpeg](https://github.com/gmat/goproMax-ffmpeg-v5).
 
@@ -153,7 +148,7 @@ This is due to hardware issues, specifically the lack or mis-configuration of a 
 -v verbose
 ```
 
-Set logging level and flags used by the library. This is useful because this is an non-supported fork and thus can help debug any issues that occur.
+Sets the logging level to verbose ([as detailed as possible](https://ffmpeg.org/ffmpeg-filters.html#toc-deshake_005fopencl)). This is useful because we are using a non-supported fork of ffmpeg and thus can help debug any issues that occur.
 
 ```shell
 -filter_complex '[0:0]format=yuv420p,hwupload[a] , [0:5]format=yuv420p,hwupload[b], [a][b]gopromax_opencl, hwdownload,format=yuv420p'
@@ -185,6 +180,8 @@ This command gives a final output that looks like this:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lLSQF6HEg9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+_Note: no equirectangular metadata has been added to the video (hence no 360 controls). [See how to do this here](/blog/2021/turn-360-photos-into-360-video)._
+
 Both video and audio look and sound good, it is equirectangular, but what about the streams?
 
 ```
@@ -213,14 +210,14 @@ Unsupported codec with id 98314 for input stream 3
 
 Here we can see the telemetry has also copied successfully into stream `0:3`. 
 
-You'll also see that a second audio track (GoPro specific -- `GoPro AMB` track in stream `0:3`) has also copied successfully.
+You will also see that a second audio track (GoPro specific -- `GoPro AMB` track in stream `0:3`) has also copied successfully.
 
-The one thing I don't quite understand is why the output `.mp4` has a duration of `00:00:20.48`, yet the input `.360` has a duration of `00:00:20.22` -- .26 second difference. If anyone reading this has any ideas as to why this occurs, please do drop me an email.
+The one thing I don't quite understand is why the output `.mp4` has a duration of `00:00:20.48`, yet the input `.360` has a duration of `00:00:20.22` -- a 0.26 second difference. If anyone reading this has any ideas as to why this occurs, please do drop me an email.
 
 ## 6. Pros and cons of MAX2Sphere
 
-If you've tried using the above instructions on a longer video (more than 2 minutes), it is very likely it took a long time to process.
+If you have tried using the above instructions on a longer video (more than 2 minutes), it is very likely it took a long time to process.
 
-If you need to process an entire video, ffmpeg is the fastest and easiest approach (it does not require separate frame extraction and stitching). You'll just have to deal with the processing time (or buy bigger hardware).
+If you need to process an entire video, ffmpeg is the fastest and easiest approach (because it does not require separate frame extraction and stitching). You will just have to deal with the processing time (or buy bigger hardware).
 
 However, if you only need a limited number of frames, for example 1 or 2 frames per second to create a virtual tour, then [MAX2Sphere](https://github.com/trek-view/MAX2sphere) is the way to go and will be much faster.
