@@ -80,4 +80,4 @@ MAX2sphere takes a raw GoPro .360 frame (both tracks of EAC projection) and conv
 
 ### 2. FFMpeg (EAC video to equirectangular video)
 
-[This post explains how you can use ffmpeg to achieve the same result](/blog/2022/using-ffmpeg-process-gopro-fusion-max-360).
+[This post explains how you can use ffmpeg to achieve the same result](/blog/2022/using-ffmpeg-process-gopro-max-360).

@@ -1,143 +1,21 @@
 ---
-date: 2022-03-18
-title: "Using ffmpeg to Process Raw GoPro 360's to Equirectangular Projections"
-description: "In our continued effort to avoid reliance on GoPro software, I look at how ffmpeg can be used to process raw Fusion and MAX 360 video outputs."
+date: 2022-03-15
+title: "Using ffmpeg to Process Raw GoPro Fusion Dual Fisheyes to Equirectangular Projections"
+description: "In our continued effort to avoid reliance on GoPro software, I look at how ffmpeg can be used to process the GoPro Fusion's Dual Fisheyes videos to a single equirectangular video."
 categories: developers
 tags: [ffmpeg, MAX, GoPro, Player, Fusion Studio]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-03-18/
-featured_image: /assets/images/blog/2022-03-18/
+image: /assets/images/blog/2022-03-15/
+featured_image: /assets/images/blog/2022-03-15/
 layout: post
 published: true
 ---
 
-**In our continued effort to avoid reliance on GoPro software, I look at how ffmpeg can be used to process raw Fusion and MAX 360 video outputs.**
-
-You might have seen my previous series of posts:
-
-* [Reversing engineering GoPro MAX .360 videos (convert to equirectangular projection)](/blog/2021/reverse-engineering-gopro-360-file-format-part-1)
-* [Turning dual GoPro Fusion Fisheye videos and images into equirectangular projections](/blog/2021/gopro-fusion-fisheye-stitching-part-1)
-
-In both of these posts, the outcome was two custom built scripts that implemented a proof-of-concept for our research.
-
-Recently, I've seen a few ffmpeg builds for GoPro .360 conversion. There has also been the option in ffmpeg to convert dual fisheyes for a while.
-
-I decided to see if this conversion could be completed exclusively in ffmpeg.
-
-_Note: I'm using Ubuntu, so you will need to tweak the commands used in this post if you're using a different OS._
-
-I'm going to start with the MAX, because it requires the install of a custom ffmpeg fork. This fork can be used on both MAX and Fusion content. If you just want to process Fusion movies, a regular ffmpeg install is fine.
-
-_Note: no equirectangular metadata has been added to the videos shown as examples (hence no 360 controls). [See how to do this here](/blog/2021/turn-360-photos-into-360-video)._
-
-## 1. Converting GoPro MAX .360 videos (EAC projection) to equirectangular projections using ffmpeg
-
-The GoPro MAX produces a single `.360` file (GoPro's EAC projection type) for 360 videos. [I've talked about these in detail previously](/blog/2021/everse-engineering-gopro-360-file-format-part-1).
-
-Sadly the master ffmpeg software does not contain the right filters to convert GoPro's EAC format out of the box (at the time of writing). Therefore you first need to build a custom fork built with this filter.
-
-### 1A. Build and install ffmpeg
-
-First grab this custom fork of ffmpeg.
-
-You should run this install in a virtual/seperate environment, so as not to cause conflicts with your stable ffmpeg install.
-
-```shell
-git clone https://github.com/gmat/goproMax-ffmpeg-v5
-cd goproMax-ffmpeg-v5
-```
-
-Now you need to install the ffmpeg dependencies, [as detailed here](https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu).
-
-
-Now build ffmpeg using the makefile (this will take a long time);
-
-```shell
-$ sudo apt-get install -y ocl-icd-opencl-dev
-$ ./configure --enable-opencl --enable-opengl --enable-sdl2 --enable-libx264 --enable-gpl
-$ make
-$ sudo make install
-# test ffmpeg works
-$ ffmpeg
-```
-
-### 1B. Convert .360 to equirectangular mp4
-
-I'll use the following file as an example:
-
-* [GS018421.360](https://drive.google.com/file/d/1FT1oth6HHMFnzP_2jk8JpGPmlzjeBhIb/view?usp=sharing)
-
-Quickly grab it using `gdown` like so:
-
-```shell
-$ pip install gdown
-# Use test 360 GS018421.360
-$ gdown --id 1FT1oth6HHMFnzP_2jk8JpGPmlzjeBhIb
-```
-
-OK, now we can run ffmpeg the ffmpeg conversion on the `.360` file:
-
-```shell
-ffmpeg -hwaccel opencl -v verbose -filter_complex '[0:0]format=yuv420p,hwupload[a] , [0:5]format=yuv420p,hwupload[b], [a][b]gopromax_opencl, hwdownload,format=yuv420p' -i GS018421.360 -c:v libx264 -pix_fmt yuv420p -map_metadata 0 -map 0:3 GS018421-stitched.mp4
-```
-
-Let's break this down;
-
-```shell
--hwaccel opencl
-```
-
-Many platforms offer access to dedicated hardware to perform a range of video-related tasks. In this case I am using OpenCL. OpenCL (Open Computing Language) is a low-level API for heterogeneous computing that runs on CUDA-powered GPUs. 
-
-[Read more about hardware acceleration in ffmpeg here](https://trac.ffmpeg.org/wiki/HWAccelIntro).
-
-```shell
--v verbose
-```
-
-Set logging level and flags used by the library. Useful because this is an unmerged fork to debug any issues.
-
-```shell
--filter_complex '[0:0]format=yuv420p,hwupload[a] , [0:5]format=yuv420p,hwupload[b], [a][b]gopromax_opencl, hwdownload,format=yuv420p'
-```
-
-
-```shell
--i GS018421.360 
-```
-
-Where `GS018421.360` is the .360 video (EAC projection) you want to convert to an `.mp4` as an equirectangular projection.
-
-```shell
--c:v libx264 -pix_fmt yuv420p -map_metadata 0 -map 0:3 GS018421-stitched.mp4
-```
-
-And finally, we define the output settings, including encoding, mapping metadata and telemetry strea,, to create a final file, `GS018421-stitched`. 
-
-We know the telemetry stream is `0:3` for this video using ffprobe, but beware, depending on the mode used, this can either be `0:3` or `0:2` -- be sure to check with your video.
-
-This command gives a final output that looks like this:
-
-TODO
-
-#### A note on hardware accelaration
-
-This command requires the use of hardware accelaration in ffmpeg, [which you can read more about here](https://trac.ffmpeg.org/wiki/HWAccelIntro).
-
-If you are using a general purpose laptop you might run into issues, like the one shown below;
-
-```
-[AVHWDeviceContext @ 0x55714eaff000] No matching devices found.
-Device creation failed: -19.
-Failed to set value 'opencl:0.1' for option 'init_hw_device': No such device
-Error parsing global options: No such device
-```
-
-From my understanding, this is due to hardware issues, specifically the lack of a GPU.
-
-As such for this example, I am using a cloud server with a vGPU, specifically an [AWS g4dn instance (g4dn.xlarge)](https://aws.amazon.com/ec2/instance-types/g4/). If you run into such an issue, and don't have a machine with a GPU, this is my only advice at this point in time for getting around the problem.
+**In our continued effort to avoid reliance on GoPro software, I look at how ffmpeg can be used to process the GoPro Fusion's Dual Fisheyes videos to a single equirectangular video.**
 
 ## 2. Converting dual fisheye videos
+
+There has also been the option in ffmpeg to convert dual fisheyes for a while.
 
 The GoPro Fusion produces a front and back fisheye `.mp4` file.
 
