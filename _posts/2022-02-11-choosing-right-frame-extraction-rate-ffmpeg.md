@@ -13,7 +13,7 @@ published: true
 
 **How we optimised the process of turning a video into frames to create virtual tours in Explorer using speed as a variable.**
 
-[Last week I talked about the importance of considering framerate for timewarp videos when extracting frames from it](/blog/2022/turn-360-timewarp-video-into-timelapse-images).
+[Last week I talked about the importance of considering framerate for timewarp videos when extracting frames from it](/blog/2022/turn-gopro-timewarp-video-into-timelapse-images).
 
 With the Trek Pack v1 we shot in timelapse mode, [where the interval setting was determined by the speed of transport used during shooting](/blog/2019/diy-google-street-view-part-3-preparing-to-shoot). This was a compromise as the Fusion's video mode was very battery intensive.
 

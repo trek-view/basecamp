@@ -198,4 +198,4 @@ You might also like the post; [Lessons learned when geotagging timelapse photos 
 
 ## Update 2022-02-04
 
-[Turning a GoPro Timewarp Video into Photo Frames](turn-360-timewarp-video-into-timelapse-images).
+[Turning a GoPro Timewarp Video into Photo Frames](turn-gopro-timewarp-video-into-timelapse-images).
