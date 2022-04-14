@@ -23,11 +23,7 @@ Here is some useful information and code snippets to help you get started quickl
 
 ## Follow along
 
-For this example I will be using the following equirectangular video (`GS018422.mp4`) with GPS enabled.
-
-It is 264mb video (18 seconds long) and was shot at 24 FPS on a GoPro MAX Camera and stitched using GoPro Player at 5.6k (5376×2688).
-
-[You can download it here to follow along](https://drive.google.com/file/d/1SYjVOwQcALg8gQLq8BLLbALEW33PlVT2/view?usp=sharing).
+For this example I will be using the following equirectangular video (`GS018422.mp4`) with GPS enabled, though any GoPro video can be used in the same way. Note, in the case of dual GoPro Fusion fisheyes, the front video file (`GPFR`) should be used, as this is where the gpmf track is stored.
 
 ## 1. Install required modules
 
