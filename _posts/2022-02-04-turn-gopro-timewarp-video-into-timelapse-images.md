@@ -136,12 +136,12 @@ We can work out the real-world time spacing of the extracted frames using framer
 The table below gives some examples;
 
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>TimeWarp mode</th><th>Each photo true time (sec) @1 FPS</th><th>Each photo true time (sec) @2 FPS</th><th>Each photo true time (sec) @5 FPS</th></tr></thead><tbody>
- <tr><td>2x</td><td>2</td><td>1</td><td>0.4</td></tr>
- <tr><td>5x</td><td>5</td><td>2.5</td><td>1</td></tr>
- <tr><td>10x</td><td>10</td><td>5</td><td>2</td></tr>
- <tr><td>15x</td><td>15</td><td>7.5</td><td>3</td></tr>
- <tr><td>30x</td><td>30</td><td>15</td><td>6</td></tr>
+<thead><tr class="tableizer-firstrow"><th>Timewarp mode (e.g 2x)</th><th>Each photo spacing (sec) @ 0.1 FPS extraction rate</th><th>Each photo spacing (sec) @ 0.2 FPS extraction rate</th><th>Each photo spacing (sec) @ 0.5 FPS extraction rate</th><th>Each photo spacing (sec) @ 1 FPS extraction rate</th><th>Each photo spacing (sec) @ 2 FPS extraction rate</th><th>Each photo spacing (sec) @ 5 FPS extraction rate</th></tr></thead><tbody>
+ <tr><td>2</td><td>20</td><td>10</td><td>4</td><td>2</td><td>1</td><td>0.4</td></tr>
+ <tr><td>5</td><td>50</td><td>25</td><td>10</td><td>5</td><td>2.5</td><td>1</td></tr>
+ <tr><td>10</td><td>100</td><td>50</td><td>20</td><td>10</td><td>5</td><td>2</td></tr>
+ <tr><td>15</td><td>150</td><td>75</td><td>30</td><td>15</td><td>7.5</td><td>3</td></tr>
+ <tr><td>30</td><td>300</td><td>150</td><td>60</td><td>30</td><td>15</td><td>6</td></tr>
 </tbody></table>
 
 For example, if a video was shot at 10x, and we extract at 5 FPS using ffmpeg (ffmpeg command shown below), each frame extracted by ffmpeg will be exactly 2 seconds apart in real-world time.
