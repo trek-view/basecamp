@@ -91,7 +91,7 @@ It is at these points we need to provide a blend. The blend zone is around 5 deg
 
 It is possible to use ffmpeg filters to achieve a blend.
 
-### Method 2: Using Fusion specific ffmpeg filters (recommended)
+## Method 2: Using Fusion specific ffmpeg filters (recommended)
 
 To do this, we will use `.pgm` (Portable Gray Map) files for each fisheye. These files tell ffmpeg how to map the fisheye onto an equirectangular projection.
 
@@ -113,11 +113,15 @@ I apply a linear ramp within the first selection, white to black, flip and repli
 
 `backmask.png` and `frontmask.png` are the inverse of each other and the same dimensions as the equirectangular output.
 
-The mask files look like this (remember, the size of mask is important for desired output so don't just save these files):
+The mask files look like this (remember, the size of mask is important for desired output so don't just save these files).
 
-<img class="img-fluid" src="/assets/images/blog/2022-04-15/frontmask.png" alt="Front ffmpeg mask" title="Back ffmpeg mask" />
+`frontmask.png`
 
-<img class="img-fluid" src="/assets/images/blog/2022-04-15/backmask.png" alt="Front ffmpeg mask" title="Back ffmpeg mask" />
+<img class="img-fluid" src="/assets/images/blog/2022-04-15/frontmask.png" alt="Front ffmpeg mask" title="Front ffmpeg mask" />
+
+`backmask.png`
+
+<img class="img-fluid" src="/assets/images/blog/2022-04-15/backmask.png" alt="Back ffmpeg mask" title="Back ffmpeg mask" />
 
 Again, I use the GoPro defaults for these, which I have made available to download in the fusion2sphere repo linked below:
 
@@ -186,7 +190,7 @@ Here is what the output looks like:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sSeV3XcnWWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-You can still see the stitch lines, especially as lighting levels have not been normalised. However, the stitch line is much smoother in this output.
+You can still see the stitch lines, especially as lighting levels have not been normalised between front and back, however, the stitch line is much smoother in this output.
 
 ## 6. Pros and cons of Fusion2Sphere vs ffmpeg
 
