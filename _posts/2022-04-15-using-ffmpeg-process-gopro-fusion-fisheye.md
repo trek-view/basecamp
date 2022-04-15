@@ -1,19 +1,19 @@
 ---
-date: 2022-03-15
+date: 2022-04-15
 title: "Using ffmpeg to Process Raw GoPro Fusion Dual Fisheyes to Equirectangular Projections"
 description: "In our continued effort to avoid reliance on GoPro software, I look at how ffmpeg can be used to process the GoPro Fusion's Dual Fisheyes videos to a single equirectangular video."
 categories: developers
 tags: [ffmpeg, MAX, GoPro, Player, Fusion Studio]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-03-15/
-featured_image: /assets/images/blog/2022-03-15/
+image: /assets/images/blog/2022-04-15/dual-fisheye-fusion-meta.jpg
+featured_image: /assets/images/blog/2022-04-15/dual-fisheye-fusion-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **In our continued effort to avoid reliance on GoPro software, I look at how ffmpeg can be used to process the GoPro Fusion's Dual Fisheyes videos to a single equirectangular video.**
 
-You might have seen my previous series of posts;  [Turning dual GoPro Fusion Fisheye videos and images into equirectangular projections](/blog/2021/gopro-fusion-fisheye-stitching-part-1)
+You might have seen my previous series of posts;  [Turning dual GoPro Fusion Fisheye videos and images into equirectangular projections](/blog/2021/gopro-fusion-fisheye-stitching-part-1).
 
 ## 2. Converting dual fisheye videos
 
