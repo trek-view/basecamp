@@ -214,10 +214,10 @@ You will also see that a second audio track (GoPro specific -- `GoPro AMB` track
 
 The one thing I don't quite understand is why the output `.mp4` has a duration of `00:00:20.48`, yet the input `.360` has a duration of `00:00:20.22` -- a 0.26 second difference. If anyone reading this has any ideas as to why this occurs, please do drop me an email.
 
-## 6. Pros and cons of MAX2Sphere
+## 6. Pros and cons of MAX2Sphere vs ffmpeg
 
 If you have tried using the above instructions on a longer video (more than 2 minutes), it is very likely it took a long time to process.
 
 If you need to process an entire video, ffmpeg is the fastest and easiest approach (because it does not require separate frame extraction and stitching). You will just have to deal with the processing time (or buy bigger hardware).
 
-However, if you only need a limited number of frames, for example 1 or 2 frames per second to create a virtual tour, then [MAX2Sphere](https://github.com/trek-view/MAX2sphere) is the way to go and will be much faster.
+However, if you only need a limited number of frames, for example 1 or 2 frames per second to create a virtual tour, then [MAX2Sphere](https://github.com/trek-view/MAX2sphere) is the way to go -- it will be much faster.
