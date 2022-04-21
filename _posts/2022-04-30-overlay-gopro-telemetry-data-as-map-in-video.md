@@ -160,7 +160,7 @@ My inspiration for the overlay comes from Mapillary, a-picture-in-picture map in
 
 ### 3A. HERO videos
 
-<img class="img-fluid" src="/assets/images/blog/2022-04-21/map-in-video-overlay.jpg" alt="Map in video design" title="Map in video design" />
+<img class="img-fluid" src="/assets/images/blog/2022-04-21/map-in-video-overlay-hero.jpg" alt="Map in video design" title="Map in video design" />
 
 For HERO video, I have found the following dimensions look best;
 
@@ -176,7 +176,7 @@ So for the example `GX010044.MP4` (5312x2988) gives;
 
 You can identify equirectangular videos using the metdata tag `<XMP-GSpherical:ProjectionType>equirectangular</XMP-GSpherical:ProjectionType>`).
 
-<img class="img-fluid" src="/assets/images/blog/2022-04-21/map-in-video-360.jpg" alt="Map in video 360 map" title="Map in video 360 map" />
+<img class="img-fluid" src="/assets/images/blog/2022-04-21/map-in-video-overlay-equi.jpg" alt="Map in video 360 map" title="Map in video 360 map" />
 
 [I explained the need to do convert a normal projected file into the equirectangular space in my post on generating a nadir using imagemagick last year](/blog/2021/adding-a-custom-nadir-to-360-video-photo/).
 
