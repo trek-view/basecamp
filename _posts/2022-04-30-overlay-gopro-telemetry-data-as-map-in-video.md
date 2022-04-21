@@ -202,8 +202,8 @@ So for the example `GS018421.mp4` (4096x2048) gives:
 
 * width = 10% video width = `4096*0.1` = 409.6 = 410
 * height = 10% video height = `2048*0.1` = 204.8 = 205
-* left margin = 40% video width = `4096*0.4` = 1638.4 = 1638
-* bottom margin = 40% video height = `2048*0.4` = 819.2 = 819
+* left margin = 35% video width = `4096*0.35` = 1433.6 = 1435
+* bottom margin = 35% video height = `2048*0.35` = 716.8 = 717
 
 ## 4. Generating the map images using MapBox
 
