@@ -124,6 +124,6 @@ Using the known time-spacing between photos, you can then incrementally add the 
 
 For example, if the time spacing between images is 12 seconds and the first GPSDateTime is 12:00:00; then `image1` time is 12:00:00, `image2` time is 12:00:12, `image3` 12:00:24, and so on.
 
-All that's left to do now is actually write the correct times into the photos.
+All that iss left to do now is actually write the correct times into the photos.
 
 [The steps to do this are described in this post (as well as how to extract and write GPS extracted from the Timewarp video to each image)](/blog/2021/turn-360-video-into-timelapse-images-part-2).
