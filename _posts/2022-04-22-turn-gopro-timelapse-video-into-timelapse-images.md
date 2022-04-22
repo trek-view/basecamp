@@ -17,7 +17,7 @@ published: true
 
 The GoPro Fusion camera was released before TimeWarp mode was introduced by GoPro into their lineup of cameras ([TimeWarp 1.0 with the Hero 7 in 2019](https://community.gopro.com/s/article/what-is-timewarp-video) and [TimeWarp 2.0 with HERO 8 Black in 2020](https://community.gopro.com/s/article/HERO8-Black-TimeWarp-2-0?language=en_US)).
 
-TimeLapse video mode is available on all GoPro cameras (HERO cameras 7 and older) is still very useful, especially when not moving (the benefit of TimeWarp is the stability/smooting it adds to the video).
+TimeLapse video mode, available on all GoPro cameras (HERO cameras 7 and older), is more suited to recordings when you're not moving (the benefit of TimeWarp is the stability/smoothing it adds to the video).
 
 Like with TimeWarp videos, when it comes to turning GoPro TimeLapse videos into photo frames, there are a few extra things to consider when compared to normal GoPro videos (non-TimeLapse/TimeWarp).
 
