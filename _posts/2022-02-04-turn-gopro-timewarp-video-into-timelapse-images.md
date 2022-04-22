@@ -38,7 +38,7 @@ For example, if you selected a speed mode of `2X` and the recording will be twic
 Here are examples for other TimeWarp speed options;
 
 <table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>Speed</th><th>Recording time</th><th>Video length</th></tr></thead><tbody>
+<thead><tr class="tableizer-firstrow"><th>Speed</th><th>Recording time</th><th>TimeWarp Video length</th></tr></thead><tbody>
  <tr><td>2x</td><td>300 seconds</td><td>150 seconds</td></tr>
  <tr><td>5x</td><td>300 seconds</td><td>60 seconds</td></tr>
  <tr><td>10x</td><td>300 seconds</td><td>30 seconds</td></tr>
@@ -95,7 +95,7 @@ Here is how to find this tag for each camera:
 
 * MAX:
   * for 360 videos, in the raw .360 file metadata
-    * note, this tag is not in the processed .mp4 from GoPro Player software -- it is impossible to automatically detect if these files were shot in TimeWarp and what mode was used. 
+    * note, this tag is not in the processed .mp4 from GoPro Player software -- it is therefore impossible to automatically detect if these files were shot in TimeWarp and what mode was used. 
   * for HERO videos, in the .mp4 file metadata.
 * HERO:
   * for HERO videos, in the .mp4 file metadata.
@@ -161,13 +161,13 @@ The other crucial piece of information required to timestamp the frames is when 
 
 To assign first photo time, we can use the first `GPSDateTime` value reported in telemetry.
 
-Using the known time-spacing between photos, you can then incrementally add the times to all subsequent photos in the sequence (why it's important to logically name your sequences when extracting using ffmpeg -- e.g. in numerical order; `img%d.jpg`)
+Using the known time-spacing between photos, you can then incrementally add the times to all subsequent photos extracted (why it is important to logically name your sequences when extracting using ffmpeg -- e.g. in numerical order; `img%d.jpg`)
 
 For example, if the time spacing between images is 2 seconds and the first GPSDateTime is 12:00:00; then `image1` time is 12:00:00, `image2` time is 12:00:02, `image3` 12:00:04, and so on.
 
-All that's left to do now is actually write the correct times into the photos.
+All that is left to do now is actually write the correct times into the photos.
 
-[The steps to do this are described in this post (as well as how to extract and write GPS extracted from the Timewarp video to each image)](/blog/2021/turn-360-video-into-timelapse-images-part-2).
+[The steps to do this are described in this post (as well as how to extract and write GPS points extracted from the TimeWarp video to each image)](/blog/2021/turn-360-video-into-timelapse-images-part-2).
 
 ## Update 2022-04-22
 
