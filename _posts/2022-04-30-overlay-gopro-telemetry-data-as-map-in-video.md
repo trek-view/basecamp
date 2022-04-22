@@ -174,7 +174,7 @@ So for the example `GX010044.MP4` (5312x2988) gives;
 
 ### 3B. 360 (equirectangular) videos
 
-You can identify equirectangular videos using the metdata tag `<XMP-GSpherical:ProjectionType>equirectangular</XMP-GSpherical:ProjectionType>`).
+You can identify equirectangular videos using the metdata tag `<XMP-GSpherical:ProjectionType>equirectangular</XMP-GSpherical:ProjectionType>` ([using exiftool](/blog/2020/metadata-exif-xmp-360-photo-files)).
 
 <img class="img-fluid" src="/assets/images/blog/2022-04-21/map-in-video-overlay-equi.jpg" alt="Map in video 360 map" title="Map in video 360 map" />
 
