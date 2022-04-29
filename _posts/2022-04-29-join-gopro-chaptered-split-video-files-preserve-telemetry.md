@@ -194,7 +194,7 @@ Which gives GPS time range of 00:18:29.900 (`12:01:30.060`-`11:43:00.160`), whic
 
 Finally, all that's left to do is copy the global metadata. To do this I will only copy the metadata from the first video. This is because global metadata should be identical in each of the input videos (e.g. camera name, make).
 
-Using exiftool for this job ([and not ffmpeg for the reasons for this are described here](/blog/2022/ffmpeg-video-to-frame-cheat-sheet)) I first make a copy of the newly merged video;
+Using exiftool for this job ([and not ffmpeg for the reasons described here](/blog/2022/ffmpeg-video-to-frame-cheat-sheet)) I first make a copy of the newly merged video;
 
 ```shell
 cp GS0141-merged.mp4 GS0141-merged-meta.mp4
@@ -212,6 +212,6 @@ And finally, I double check the global metadata;
 exiftool -ee -X GS0141-merged-meta.mp4 > GS0141-merged-meta.xml
 ```
 
-You'll see `XMP-GSpherical` have been written into the metadata now, ensuring this video will be rendered correctly by video players as a 360.
+You'll see `XMP-GSpherical` tags have been written into the metadata now, ensuring this video will be rendered correctly by video players as a 360.
 
 Hardcoded metadata like start time, video length, etc. have already been updated correctly by ffmpeg, and you can rest assured this command won't modify these values.
