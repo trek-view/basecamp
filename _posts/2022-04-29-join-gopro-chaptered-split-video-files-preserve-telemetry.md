@@ -1,6 +1,6 @@
 ---
 date: 2022-04-29
-title: "Concatenating Chaptered GoPro Videos Whilst Preserving Telemetry"
+title: "Merging Chaptered GoPro Videos Whilst Preserving Telemetry"
 description: "Use ffmpeg to create full length GoPro footage which retains full GPS information."
 categories: developers
 tags: [exiftool, ffmpeg, gmpd, telemetry, metadata, gpmf]
@@ -13,19 +13,19 @@ published: true
 
 **Use ffmpeg to create full length GoPro footage which retains full GPS information.**
 
-If you have ever recorded longer sections of video on your GoPro camera, you will have found that video gets split up into smaller segments. Precisely how long the chunks are depends on the video mode you are using and which camera model.
+If you have ever recorded longer sections of video on your GoPro camera, you will have found that the video gets split up into smaller segments. Precisely how long the chunks are depends on the video mode and camera you are using.
 
-[This is because of chaptering employed by GoPro](https://community.gopro.com/s/article/GoPro-Camera-File-Chaptering-Information?language=en_US).
+[This is because of chaptering employed by GoPro cameras](https://community.gopro.com/s/article/GoPro-Camera-File-Chaptering-Information?language=en_US).
 
 ## GoPro Chaptering 101
 
-As you will read via the link above, the newer models of GoPro use chapters of a maximum size of 4GB. Earlier models use smaller sizes.
+Newer GoPro cameras use chapters with a maximum size of 4GB. Earlier models use smaller chapter sizes.
 
-Chaptering serves an important purpose to ensure compatibility with filesystem used on your memory card. 
+Chaptering serves an important purpose to ensure compatibility with the filesystem used on your memory card. 
 
 By far the most widely compatible filesystem these days is known as FAT32 (for 32-bit File Allocation Table).
 
-FAT32 is quite old–Microsoft first rolled it out with Windows 95–and it lacks some of the sophistication and features of newer file systems such as exFAT. Nevertheless, it has things going for it: it is reliable, it offers solid performance, and, most importantly, it is very widely compatible.
+FAT32 is quite old. Microsoft first rolled it out with Windows 95 and therefore it lacks some of the sophistication and features of newer file systems such as exFAT. Nevertheless, it has things going for it: it is reliable, it offers solid performance, and, most importantly, it is very widely compatible.
 
 That last point is crucial, because it means that you can put your memory card in pretty much any computer and be able to read it without having to install extra software. Whether you are using Windows, Mac, or Linux, a FAT32 external hard drive or thumb drive or memory card should work. So nearly all consumer devices aim to be compatible with FAT32.
 
@@ -33,7 +33,7 @@ But FAT32 has a limitation hardcoded into it: the maximum file size that it can 
 
 If you are recording a 5.6k 360 video on a GoPro MAX you are going to fill up 4GB pretty quickly (in about 8 minutes). If you are using smaller or lower quality settings, you will get more footage before you hit that 4GB threshold, but not by much.
 
-Once you get to 4GB, it will tie off that segment and start a new one. Once that new one gets to 4GB, it will start another. And so on, until you stop the recording, the card fills up, or your battery runs out.
+Once you get to 4GB, it will tie off that segment and start a new video. Once that new one gets to 4GB, it will start another. And so on, until you stop the recording, the card fills up, or your battery runs out.
 
 As a concrete example, here is a list of the output files filmed in a single 18 minute and 28 second video on the GoPro MAX (30FPS / 5.6k).
 
@@ -45,11 +45,13 @@ _Note how the first two digits determine the chapter number (`GS01`, `GS02`. `GS
 
 ## Joining chaptered GoPro videos
 
-Whilst chaptering serves a technical purpose, it is annoying when you want to show a single video.
+Whilst chaptering serves a technical purpose, it is annoying when you want to show a single video. 
 
-### GoPro mp4 videos (most GoPro cameras)
+None of the currently available GoPro software offers the functionality to merge chapters, so here is how to do it yourself.
 
-For this demo I will also use examples with the stitched `.mp4` versions of these files which retain GPMF ([as stitched with our recommended settings in GoPro Studio outlined here](/blog/2021/using-gopro-studio-process-360-files)).
+### Merging GoPro mp4 videos (all GoPro cameras)
+
+For this demo I will use examples of stitched `.mp4`'s shot on a GoPro MAX ([stitched with our recommended settings to retain gpmf telemetry in GoPro Studio, as outlined here](/blog/2021/using-gopro-studio-process-360-files)).
 
 These instructions will work for most HERO cameras (version 5 and newer) and stitched 360 videos from the Fusion and MAX cameras. This method could also be employed for dual GoPro Fusion fisheye `.mp4` videos.
 
@@ -62,14 +64,14 @@ Here are the demo files I'll use:
 These videos are all in the same format, and with the same structure (the output of ffprobe for GS030141.mp4 is shown below):
 
 ```
-Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'GS030141.mp4':
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'GS010141.mp4':
   Metadata:
     major_brand     : qt  
     minor_version   : 0
     compatible_brands: qt  
     creation_time   : 2020-08-02T12:45:54.000000Z
-  Duration: 00:02:24.28, start: 0.000000, bitrate: 67767 kb/s
-  Stream #0:0[0x1](eng): Video: hevc (Main) (hvc1 / 0x31637668), yuv420p(tv, bt709, progressive), 4096x2048 [SAR 1:1 DAR 2:1], 67538 kb/s, 29.97 fps, 29.97 tbr, 600 tbn (default)
+  Duration: 00:08:02.48, start: 0.000000, bitrate: 67904 kb/s
+  Stream #0:0[0x1](eng): Video: hevc (Main) (hvc1 / 0x31637668), yuv420p(tv, bt709, progressive), 4096x2048 [SAR 1:1 DAR 2:1], 67678 kb/s, 29.97 fps, 29.97 tbr, 600 tbn (default)
     Metadata:
       creation_time   : 2020-08-02T12:45:54.000000Z
       handler_name    : Core Media Video
@@ -90,13 +92,13 @@ Unsupported codec with id 98314 for input stream 2
 
 There are 3 streams in each of the 3 chaptered `.mp4` videos containing:
 
-* `0:0` = video
-* `0:1` = audio
-* `0:2` = gpmf telemetry
+* `0:0` = video (Core Media Video)
+* `0:1` = audio (Audio: aac)
+* `0:2` = gpmf telemetry (GoPro MET)
 
 This information makes is easy to join the video streams with ffmpeg.
 
-First create a file (e.g. `GS0141-merged.txt`) with all the files you want to have concatenated, e.g.
+First create a text file (e.g. `GS0141-merged.txt`) with all the chaptered video files that you want to merge into a single video e.g.
 
 ```
 file 'GS010141.mp4'
@@ -113,7 +115,7 @@ ffmpeg -f concat -safe 0 -i GS0141-mp4.txt -c copy -map 0:0 -map 0:1 -map 0:2 -c
 Breaking this down;
 
 
-* `-f concat -safe 0 -i GS0141-mp4.txt`: If you have media files with exactly the same codec and codec parameters you can concatenate them. [This is described in detail here](https://trac.ffmpeg.org/wiki/Concatenate). The `-safe 0` above is not required if the paths to video files in GS0141.txt are relative.
+* `-f concat -safe 0 -i GS0141-mp4.txt`: If you have media files with exactly the same codec and codec parameters you can concatenate them. [This is described in detail here](https://trac.ffmpeg.org/wiki/Concatenate). The `-safe 0` above is not really required if the paths to video files in GS0141.txt are relative.
 * `-c copy`: which means set all codec operations to copy i.e. video, audio, subtitles, data and attachments, if any. `-c` is short for `-codec`.
 * `-map 0:0 -map 0:1 -map 0:2`: map the streams 0, 1, and 2 in the first input (which is the `.txt` file, thus takes these streams from all 3 videos)
 * `-c:v libx264 -pix_fmt yuv420p GS0141.mp4`: sets the output file codecs, etc, and the output file itself.
@@ -164,23 +166,25 @@ TAG:encoder=Lavf59.16.100
 [/FORMAT]
 ```
 
-You can see the output video contains the same 3 streams as the inputs, and the length is 1109.240000 seconds (or just over 18 minutes and 29 seconds, matching the sum of the 3 inputs).
+You can see it contains the same 3 streams as the inputs, and the length is 1109.240000 seconds (or just over 18 minutes and 29 seconds, matching the sum of the 3 inputs).
 
-Playing the video, you can do one final check to ensure video 
+Playing the video, you can also check the video and sound track.
 
-Now let us double check the telemetry looks good using exiftool ([you could also use gopro-telemetry](/blog/2022/gopro-telemetry-exporter-getting-started));
+To double check the telemetry is concatenated correctly you can use exiftool ([or gopro-telemetry](/blog/2022/gopro-telemetry-exporter-getting-started)).
+
+Using exiftool;
 
 ```shell
 exiftool -ee -X GS0141-merged.mp4 > GS0141-merged.xml
 ```
 
-In this file the first GPS DateTime is:
+You can see in the output file (`GS0141-merged.xml`) the first `GPSDateTime` is:
 
 ```xml
 <Track3:GPSDateTime>2020:08:02 11:43:00.160</Track3:GPSDateTime>
 ```
 
-And the last GPS DateTime:
+And the last `GPSDateTime` is:
 
 ```xml
 <Track3:GPSDateTime>2020:08:02 12:01:30.060</Track3:GPSDateTime>
@@ -188,28 +192,26 @@ And the last GPS DateTime:
 
 Which gives GPS time range of 00:18:29.900 (`12:01:30.060`-`11:43:00.160`), which correctly matches the length of the video.
 
-Finally, all that's left to do is copy the global metadata. In this case, I will only add the metadata from the first video. This is because global metadata should be identical in each of the input videos (e.g. camera name, make).
+Finally, all that's left to do is copy the global metadata. To do this I will only copy the metadata from the first video. This is because global metadata should be identical in each of the input videos (e.g. camera name, make).
 
-To do this I use exiftool, not ffmpeg ([the reasons for this are described here](/blog/2022/ffmpeg-video-to-frame-cheat-sheet)), like so.
-
-First make a copy of the newly merged video;
+Using exiftool for this job ([and not ffmpeg for the reasons for this are described here](/blog/2022/ffmpeg-video-to-frame-cheat-sheet)) I first make a copy of the newly merged video;
 
 ```shell
 cp GS0141-merged.mp4 GS0141-merged-meta.mp4
 ````
 
-Then copy of the video;
+Then copy the metadata from the first input (`GS010141.mp4`) video to the final merged video (`GS0141-merged-meta.mp4`);
 
 ```shell
 exiftool -TagsFromFile GS010141.mp4 "-all:all>all:all" GS0141-merged-meta.mp4
 ```
 
-And finally, check the global metadata;
+And finally, I double check the global metadata;
 
 ```shell
 exiftool -ee -X GS0141-merged-meta.mp4 > GS0141-merged-meta.xml
 ```
 
-You'll see `XMP-GSpherical` have been written into the metadata now, ensuring this video is rendered correctly by video players as a 360.
+You'll see `XMP-GSpherical` have been written into the metadata now, ensuring this video will be rendered correctly by video players as a 360.
 
 Hardcoded metadata like start time, video length, etc. have already been updated correctly by ffmpeg, and you can rest assured this command won't modify these values.
