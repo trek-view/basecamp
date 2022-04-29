@@ -305,9 +305,9 @@ Some of which is vital. For example, to define the video as an equirectangular p
  <XMP-GSpherical:ProjectionType>equirectangular</XMP-GSpherical:ProjectionType>
 ```
 
-To copy over global metadata you can use two optionss
+To copy over global metadata you can use two options;
 
-#### Using ffmpeg 
+#### 1. Using ffmpeg (do not use for equirectangular videos)
 
 [Add the `-map_metadata 0` flag will map all known metadata ffmpeg understands](https://ffmpeg.org/ffmpeg.html#toc-Advanced-options).
 
@@ -320,9 +320,9 @@ Here is an example;
 ffmpeg -i GS018421.mp4 -i GS018421-no-meta.mp4 -map_metadata 0 -movflags use_metadata_tags -c copy -map 0:2 -map 1:0 GS018421-streams-and-meta-ffmpeg.mp4
 ```
 
-Though I have found this method to be temperamental, and often leads to loss of some metadata. Therefore I usually default to using exiftool to copy over global metadata between video files.
+Though I have found this method to be temperamental, and often leads to loss of some metadata (namely for our use-case `XMP-GSpherical` tags). Therefore I usually default to using exiftool to copy over global metadata between video files.
 
-#### Using exiftool (recommended)
+#### 2. Using exiftool (recommended)
 
 exiftool is preferred because it is better suited for this purpose. Whilst designed for images, it works very well for copying video metadata too. [You can see the wide variety of tags it supports here](https://exiftool.org/TagNames).
 
