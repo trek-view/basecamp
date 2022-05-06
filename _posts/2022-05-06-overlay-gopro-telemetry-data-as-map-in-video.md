@@ -1,7 +1,7 @@
 ---
 date: 2022-05-06
-title: "Overlaying GoPro Telemetry Dynamically onto Videos (includes 360 videos too!)"
-description: "Put a map inside your GoPro video showing exactly where is was shot"
+title: "Overlaying GoPro Telemetry as a map onto Videos (includes 360 videos too!)"
+description: "Put a map inside your GoPro video showing exactly where it was shot."
 categories: treks
 tags: [gpmd, mapbox, equirectangular, hero]
 author_staff_member: dgreenwood
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Put a map inside your GoPro video showing exactly where is was shot>**
+**Put a map inside your GoPro video showing exactly where is was shot.**
 
 [A few weeks back I showed how to use gopro-telemetry to extract gpmf metadata from GoPro videos](/blog/2022/gopro-telemetry-exporter-getting-started).
 
@@ -158,7 +158,7 @@ In the second GeoJSON (`000001.geojson`), the `LineString` object will remain th
 
 My inspiration for the overlay comes from Mapillary, a-picture-in-picture map in the bottom left corner of the video, so I need to resize the map images accordingly.
 
-Note, MapBox only generates images with a length or width less than or equal to 1280.
+Note, MapBox will only generate images with a length or width less than or equal to 1280.
 
 ### 3A. HERO videos
 
@@ -180,7 +180,7 @@ You can identify equirectangular videos using the metdata tag `<XMP-GSpherical:P
 
 <img class="img-fluid" src="/assets/images/blog/2022-05-06/map-in-video-overlay-equi.jpg" alt="Map in video 360 map" title="Map in video 360 map" />
 
-[I explained the need to do convert a normal projected file into the equirectangular space in my post on generating a nadir using imagemagick last year](/blog/2021/adding-a-custom-nadir-to-360-video-photo/).
+[I explained the need to convert a normal projected file into the equirectangular space in my post on generating a nadir using imagemagick last year](/blog/2021/adding-a-custom-nadir-to-360-video-photo/).
 
 Now, you could convert the map to an equirectangular projection too. However, as I noted in that post:
 
