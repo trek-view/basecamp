@@ -17,9 +17,7 @@ In previous posts I've covered, turning 360 videos into a series of timelapse im
 
 You might also want to do the reverse; turn photos into a 360 video.
 
-For example, [when you want to upload them to the Street View Publish API](/blog/2021/preparing-360-video-upload-street-view-publish-api).
-
-In this post I want to outline the process of turning your timelapse 360 photo's into a 360 video and some of the additional considerations to be aware of for Street View, Facebook, YouTube, or wherever else you might want to share them.
+In this post I want to outline the process of turning your timelapse 360 photo's into a 360 video and some of the additional considerations to be aware of for playback.
 
 ## 1. Preparation
 
@@ -56,16 +54,6 @@ Let's break that down:
 The video is looking good. There are 55 images in my sequence and the video is 55 seconds long. However, it's not showing as a 360 video... yet.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KCUG5A3vBZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-**A note on framerate**
-
-You will see I set framerate at 1 second, when the actual time spacing between photos (in the `datetimeoriginal`) is 5 seconds.
-
-The video will still include all images, but playback will be faster than actual time spacing. 1 second, instead of 5 seconds (so 80% faster)
-
-It is important that if you want to retain positional information with the video, for example, [to upload to Street View](/blog/2021/preparing-360-video-upload-street-view-publish-api), you also correctly modify the accompanying GPS track. In this case, I would rewrite the GPS times to be spaced 1 second apart, rather than 5, so each frame is linked to the correct position.
-
-For example if the original spacing was 5 seconds between GPS times (e.g. 12:00:00, 12:00:05, 12:00:10, 12:00:15, 12:00:20), I would modify the times to increment by one second (e.g. 12:00:00, 12:00:01, 12:00:02, 12:00:03, 12:00:04, 12:00:05).
 
 ## 3. Add the required metadata
 
@@ -299,29 +287,11 @@ Check it out on YouTube:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EIEvoQu8JJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Now we can add the other spatial and non-spatial XMP data to the video. Note, this is not an exhaustive list, and is only used to provide an example of adding metadata to the video:
-
-[XMP-tiff](https://exiftool.org/TagNames/XMP.html#tiff):
+Now we can add the other spatial and non-spatial XMP data to the video. For example, [XMP-tiff](https://exiftool.org/TagNames/XMP.html#tiff) fields:
 
 ```
 $ exiftool XMP-tiff:Copyright:'https://www.trekview.org' XMP-tiff:Artist:'https://www.trekview.org' demo-video-injected-meta.mp4
 ```
-
-[exif](https://exiftool.org/TagNames/XMP.html#exif):
-
-```
-$ exiftool XMP-exif:GPSLongitude:'16 deg 32&#39; 44.90&quot; W' XMP-exif:GPSLatitude:'28 deg 17&#39; 55.14&quot; N' XMP-exif:GPSAltitudeRef=0 XMP-exif:GPSAltitude:'2323.621 m' XMP-exif:GPSTimeStamp:'13:06:48' XMP-exif:GPSDateStamp:'2019:11:29' demo-video-injected-meta.mp4
-```
-
-**A note on GPS and telemetry**
-
-Looking at the way camera manufactures create videos, all of them include first GPS position in the video level metadata, as I've shown in the last command. This is useful for video players to preview the starting point of the video (etc.) or where an unknown telemetry standard is used.
-
-It's important to make the distinction that I'm only adding video level data, and not full telemetry to the video as this requires a lot more complexity.
-
-Full telemetry is written into the metadata in a standard structure (e.g [CAMM](https://developers.google.com/streetview/publish/camm-spec) or [GPMD](https://github.com/gopro/gpmf-parser)).
-
-**You might like:** [Turning a 360 Timelapse or Video into a GPX or KML track](/blog/2020/extracting-gps-track-from-360-timelapse-video/).
 
 ## Update 2022-01-21
 
@@ -330,3 +300,7 @@ Full telemetry is written into the metadata in a standard structure (e.g [CAMM](
 ## Update 2022-03-11
 
 [ffmpeg Cheat Sheet for virtual tours and 360 videos (includes how to use ffmpeg to copy telemetry streams to outputted video files)](/blog/2022/ffmpeg-video-to-frame-cheat-sheet).
+
+## Update 2022-05-13
+
+[How to Create a Video File Ready to be Uploaded to the Google Street View API](/blog/2022/create-google-street-view-video-publish-api).

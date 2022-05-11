@@ -15,7 +15,7 @@ published: true
 
 [Last week I took a brief look at KartaView, a street-level imagery platform](/blog/2021/getting-started-with-kartaview).
 
-You will have read my recent posts documenting the [Google Street View Publish](/blog/2021/2preparing-360-video-upload-street-view-publish-api) and [Mapillary v4](/blog/2021/migrating-from-mapillary-api-v3-to-v4) API's.
+You will have read my recent posts documenting the [Google Street View Publish](/blog/2021/upload-video-street-view-publish-api) and [Mapillary v4](/blog/2021/migrating-from-mapillary-api-v3-to-v4) API's.
 
 In my research of the KartaView API [I've been exploring their documentation](http://doc.kartaview.org/). This post is a short write up of what I've found.
 
@@ -52,7 +52,7 @@ The upload flow for an `photo` works like so:
 >
 > Usage of this resource for retrieving imagery is advisable only for debugging purposes.
 
-KartaView processes videos to photos server side, [as Street View does](/blog/2021/preparing-360-video-upload-street-view-publish-api). So once a video is uploaded the `photo` objects it produces can be obtained by:
+KartaView processes videos to photos server side, [as Street View does](/blog/2021upload-video-street-view-publish-api). So once a video is uploaded the `photo` objects it produces can be obtained by:
 
 1. querying the `GET /video?id=X` endpoint using the `id` of video provided in the upload response which returns the `sequenceid`
 2. then querying the `GET /photo?sequenceId=X` endpoint using the `sequenceid` returned from step one which returns all the `photo.id`'s in the `sequenceid` 
