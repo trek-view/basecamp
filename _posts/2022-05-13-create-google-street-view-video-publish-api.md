@@ -63,6 +63,8 @@ We know second frame is 0.2 seconds later in the video, so the second frame `Sub
 
 The 3rd frame time will be photo 2 + 0.2 (`2020:04:13 15:37:22.844`), and so on.
 
+Remember, if you create videos in batches of 300 frames, you need to follow this same process for each video.
+
 ## Creating a `rawGpsTimeline`
 
 Once the timestamps have been updated to match the video frame rate, we now need to convert to a format Street View expects.
