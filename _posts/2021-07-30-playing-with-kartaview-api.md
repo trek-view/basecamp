@@ -52,7 +52,7 @@ The upload flow for an `photo` works like so:
 >
 > Usage of this resource for retrieving imagery is advisable only for debugging purposes.
 
-KartaView processes videos to photos server side, [as Street View does](/blog/2021upload-video-street-view-publish-api). So once a video is uploaded the `photo` objects it produces can be obtained by:
+KartaView processes videos to photos server side, [as Street View does](/blog/2021/upload-video-street-view-publish-api). So once a video is uploaded the `photo` objects it produces can be obtained by:
 
 1. querying the `GET /video?id=X` endpoint using the `id` of video provided in the upload response which returns the `sequenceid`
 2. then querying the `GET /photo?sequenceId=X` endpoint using the `sequenceid` returned from step one which returns all the `photo.id`'s in the `sequenceid` 

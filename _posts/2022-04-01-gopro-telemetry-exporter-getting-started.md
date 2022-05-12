@@ -23,7 +23,7 @@ Here is some useful information and code snippets to help you get started quickl
 
 ## Follow along
 
-For this example I will be using the following equirectangular video (`GS018422.mp4`) with GPS enabled, though any GoPro video can be used in the same way. Note, in the case of dual GoPro Fusion fisheyes, the front video file (`GPFR`) should be used, as this is where the gpmf track is stored.
+For this example I will be using the following equirectangular video (`GS018422.mp4`) with GPS enabled, though any GoPro video can be used in the same way. Note, in the case of dual GoPro Fusion fisheyes, the front video file (`GPFR`) should be used, as this is where the gpmf stream is stored.
 
 ## 1. Install required modules
 
@@ -307,6 +307,45 @@ And the `Placemark`'s in the resulting `.kml` are printed like so;
 ```
 
 Hopefully this post has given you enough to get started. Now it is time for you to play with the settings for your own requirements.
+
+## A note on videos larger than 2GB
+
+When working with large videos, you will run into an error that looks something like this:
+
+```
+node:fs:419
+      throw new ERR_FS_FILE_TOO_LARGE(size);
+      ^
+
+RangeError [ERR_FS_FILE_TOO_LARGE]: File size (3027585470) is greater than 2 GB
+    at new NodeError (node:internal/errors:371:5)
+    at tryCreateBuffer (node:fs:419:13)
+    at Object.readFileSync (node:fs:464:14)
+    at Object.<anonymous> (/Users/dgreenwood/gfm-telemetry.js:15:17)
+    at Module._compile (node:internal/modules/cjs/loader:1103:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47 {
+  code: 'ERR_FS_FILE_TOO_LARGE'
+}
+
+```
+
+It is an issue caused mostly by Node's size limitations.
+
+There is an easy way around this to obtain the telemetry file; make a copy of the input video, stripping out its video and audio streams but keeping the telemetry stream to reduce the filesize. This can be done using ffmpeg like so:
+
+```shell
+ffmpeg -i INPUT.mp4 -map 0:2 OUTPUT-telemetry-only.MP4
+```
+
+This will reduce a 4GB video to a video of 30MB containing only telemetry.
+
+Note, in this example the telemetry is in the video stream `0:2`. You should check the correct telemetry stream for your video using ffprobe. [How to do this is described here](/blog/2022/ffmpeg-video-to-frame-cheat-sheet).
+
+Now you can run gopro-telemetry on the newly created video (`OUTPUT-telemetry-only.MP4`) to obtain the telemetry output without issue.
 
 ## Update 2022-04-21
 

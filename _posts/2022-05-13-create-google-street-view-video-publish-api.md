@@ -5,8 +5,8 @@ description: "Using ffmpeg to create a video file with accompanying GPS telemetr
 categories: developers
 tags: [Google, Street View, video, ffmpeg]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-05-13/
-featured_image: /assets/images/blog/2021-08-13/
+image: /assets/images/blog/2022-05-13/streetview-rawgpstimeline-meta.jpg
+featured_image: /assets/images/blog/2022-05-13/streetview-rawgpstimeline-sm.jpg
 layout: post
 published: false
 ---
@@ -110,4 +110,4 @@ exiftool -TagsFromFile FIRSTFRAME.jpg "-all:all>all:all" OUTPUT.mp4
 
 ## Upload the file
 
-[As I previously described here](/blog/2021/upload-video-street-view-publish-api).
+[Described previously in this post](/blog/2021/upload-video-street-view-publish-api).
