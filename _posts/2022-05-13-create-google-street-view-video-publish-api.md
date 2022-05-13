@@ -110,6 +110,8 @@ exiftool -TagsFromFile FIRSTFRAME.jpg "-all:all>all:all" OUTPUT.mp4
 
 `FIRSTFRAME.jpg` should be substituted for the first photo frame in the video. If you've got multiple videos (as a result of limiting video frames), you will need to find the first frame for each video. In my case I batched videos into 300 frames, so the first frame for the first video will be the 1st frame in sequence, then for the second video the 301st frame in sequence, third video 601st frame, etc.
 
+In the case of 360 (equirectangular) videos you'll also need to use Google's Spatial Media Metadata Injector to add the required 360 metadata (photos use the `XMP-GPano:ProjectionType` tag, whilst videos use the `XMP-GSpherical:ProjectionType` tag). [A demo of how to use the Spatial Media Metadata Injector is covered in this post](/blog/2021/introduction-to-xmp-namespaces).
+
 ## Upload the file
 
 [Described previously in this post](/blog/2021/upload-video-street-view-publish-api).
