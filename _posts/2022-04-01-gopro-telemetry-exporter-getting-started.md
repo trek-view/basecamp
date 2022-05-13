@@ -343,7 +343,7 @@ ffmpeg -i INPUT.mp4 -map 0:2 OUTPUT-telemetry-only.MP4
 
 This will reduce a 4GB video to a video of 30MB containing only telemetry.
 
-Note, in this example the telemetry is in the video stream `0:2`. You should check the correct telemetry stream for your video using ffprobe. [How to do this is described here](/blog/2022/ffmpeg-video-to-frame-cheat-sheet).
+Note, in this example the telemetry is in the stream `0:2`. You should check the correct telemetry stream for your video using ffprobe (because it can vary for cameras and modes used). [How to do this is described here](/blog/2022/ffmpeg-video-to-frame-cheat-sheet).
 
 Now you can run gopro-telemetry on the newly created video (`OUTPUT-telemetry-only.MP4`) to obtain the telemetry output without issue.
 

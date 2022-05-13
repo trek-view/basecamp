@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2022-05-13/streetview-rawgpstimeline-meta.jpg
 featured_image: /assets/images/blog/2022-05-13/streetview-rawgpstimeline-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Using ffmpeg to create a video file with accompanying GPS telemetry.**
