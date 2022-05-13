@@ -79,7 +79,7 @@ Once the timestamps have been updated to match the video frame rate, we now need
 		},
 		"altitude": alt,
 		"gpsRecordTimestampUnixEpoch": {
-			"seconds": timestamp
+			"seconds": epoch
 		},
 		"timestamp": datetime
 	},
@@ -90,7 +90,7 @@ Once the timestamps have been updated to match the video frame rate, we now need
 		},
 		"altitude": alt,
 		"gpsRecordTimestampUnixEpoch": {
-			"seconds": timestamp
+			"seconds": epoch
 		},
 		"timestamp": datetime
 	}
