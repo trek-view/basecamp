@@ -80,7 +80,8 @@ Once the timestamps have been updated to match the video frame rate, we now need
 		"altitude": alt,
 		"gpsRecordTimestampUnixEpoch": {
 			"seconds": timestamp
-		}
+		},
+		"timestamp": datetime
 	},
 	{
 		"latLngPair": {	
@@ -90,11 +91,12 @@ Once the timestamps have been updated to match the video frame rate, we now need
 		"altitude": alt,
 		"gpsRecordTimestampUnixEpoch": {
 			"seconds": timestamp
-		}
+		},
+		"timestamp": datetime
 	}
 ```
 
-You'll notice the time value expects and epoch time, therefore the only thing left to do is convert the frame times calculated in the last step and print all the data in the json object format shown above that can be passed with the video.
+The `gpsRecordTimestampUnixEpoch` value expects an epoch time, therefore the only thing left to do is convert the frame times calculated in the last step (and printed as `timestamp`) to create a json document in the format shown above.
 
 Remember, if you create videos in batches of 300 frames, you need to create a `rawGpsTimeline` .json file for each video.
 
