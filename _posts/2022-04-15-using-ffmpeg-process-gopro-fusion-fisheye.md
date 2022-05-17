@@ -65,23 +65,7 @@ The output looks like this;
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uZxi-PUTJnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-The [yaw, pitch, and roll](/blog/2020/yaw-pitch-roll-360-degree-photography) of the output can be modified, if required. You can pass these to ffmpeg like so;
-
-* `yaw`: horizontal center of equirectangular output [0 - 360]
-* `pitch`: vertical center of equirectangular output [-90 - 90]
-* `roll`: horizontal roll of the camera (tilt side-side) [-180 - 180]
-
-An extreme example demonstrate using roll set to 180 (upside down);
-
-```shell
-ffmpeg -y -i GP0002-dualfisheye.MP4 -vf v360=dfisheye:equirect:ih_fov=190:iv_fov=190:roll=180 -c:v libx265 GP0002-equirectangular-noblend-roll180.mp4
-```
-
-Which produces:
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qU20X0wWLp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-But more obviously, see the clear stitch lines as well as some duplicate pixels visible in both outputs (this one taken from the first stitched video):
+Looking closely, you can the stitch lines as well as some duplicate pixels visible in both outputs (this one taken from the first stitched video):
 
 <img class="img-fluid" src="/assets/images/blog/2022-04-15/ffmpeg-gopro-fusion-stitch-line.png" alt="ffmpeg GoPro Fusion Stitch line" title="ffmpeg GoPro Fusion Stitch line" />
 
