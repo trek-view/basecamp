@@ -57,6 +57,8 @@ The most commonly used type of motion sensor is the accelerometer. It measures a
 
 Accelerometers measure linear acceleration in a particular direction. An accelerometer can also be used to measure gravity as a downward force.
 
+You'll see Accelerometers reporting data in Meters per Second on GoPro cameras.
+
 ### Gyroscope
 
 <img class="img-fluid" src="/assets/images/blog/2020-07-17/gyroscope-illustration.png" alt="Gyroscope illustration" title="Gyroscope illustration" />
@@ -69,17 +71,21 @@ While accelerometers can measure linear acceleration, they can’t measure twist
 
 When integrated with sensor fusion software, a gyro can be used to determine an object’s orientation within 3D space. While a gyroscope has no initial frame of reference (like gravity), you can combine its data with data from an accelerometer to measure angular position.
 
+You'll see Gyroscopes reporting data in Radians per Second on GoPro cameras.
+
 ### Magnetometer
 
 <img class="img-fluid" src="/assets/images/blog/2020-07-17/magnetometer-illustration.gif" alt="Magnetometer illustration" title="Magnetometer illustration" />
 
-Establishes cardinal direction (directional heading)
+Establishes compass direction (directional heading).
 
 A magnetometer, as the name suggests, measures magnetic fields. It can detect fluctuations in Earth’s magnetic field, by measuring the air’s magnetic flux density at the sensor’s point in space. Through those fluctuations, it finds the vector towards Earth’s magnetic North.
 
 This can be fused in conjunction with accelerometer and gyroscope data to determine absolute heading.
 
-## How data is reported
+You'll see Magnetometers reporting data in µT (microteslas) on GoPro cameras.
+
+## How 360 cameras report IMU data
 
 As mentioned, the data is fused together to report telemetry.
 
@@ -90,15 +96,3 @@ In the case of image files this is commonly reported in the XMP fields; [XMP] `P
 [For videos this is written into the telemetry track](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd). Typically telemetry formats for 360 cameras are reported in two standards, either [gpmf](https://github.com/trek-view/360-camera-metadata/blob/master/0-standards/gpmf.md) (GoPro) or [camm](https://github.com/trek-view/360-camera-metadata/blob/master/0-standards/camm.md) (most other cameras).
 
 You can see real examples of what this data looks like for both image and video files for a variety of 360 cameras in our [360 Camera Metadata repository on GitHub](https://github.com/trek-view/360-camera-metadata).
-
-## Help us Build Great Software
-
-Unfortunately we don't have the budget to buy every single 360 camera to test their IMU's and the data they produce with our software.
-
-Whilst having standards like CAMM, EXIF and XMP is very helpful, many manufacturers do things slightly differently (especially given the flexibility of fields in XMP data).
-
-In order to make sure our [free, open-source software works for everyone](https://github.com/trek-view/), we need to test it using 360 image and video files produced by a range of cameras and manufacturers.
-
-And that's why we need your help.
-
-If you have a 360 camera and want to support our work, [please share more information about your camera with us using this form](https://docs.google.com/forms/d/e/1FAIpQLScgOk1W5jpyrQuDF5FuKqUpKK0EIpSlokckZd3OB-r_ZOjZmQ/viewform). Thank you!

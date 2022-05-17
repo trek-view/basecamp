@@ -126,6 +126,13 @@ For our work we're mainly interested values from the GPS, accelerometer and gyro
     },
 ```
 
+Which is reported like so (snippet from end of file);
+
+```json
+        "name":"GPS (Lat., Long., Alt., 2D speed, 3D speed)",
+        "units":["deg","deg","m","m/s","m/s"]},
+```
+
 ### Accelerometer `ACCL`
 
 ```json
@@ -145,6 +152,13 @@ For our work we're mainly interested values from the GPS, accelerometer and gyro
     },
 ```
 
+Which is reported like so;
+
+```json
+        "name":"Accelerometer (z,x,y)",
+        "units":"m/s2"},
+```
+
 ### Gyroscope `GYRO`
 
 ```json
@@ -162,6 +176,13 @@ For our work we're mainly interested values from the GPS, accelerometer and gyro
         "temperature [°C]": 28.021484375
       }
     },
+```
+
+Which is reported like so;
+
+```json
+        "name":"Gyroscope (z,x,y)",
+        "units":"rad/s"}
 ```
 
 ### `x`, `y`, and `z` axes
