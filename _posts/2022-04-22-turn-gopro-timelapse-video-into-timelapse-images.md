@@ -33,7 +33,7 @@ There are 6 interval options; `0.5s`, `1s`, `2s`, `5s`, `10s`, `30s`, and `60s`.
 
 The interval determines how often a frame is captured. For example, setting the interval to `10s` captures one frame every 10 seconds.
 
-GoPro then pack the resulting .mp4 (or dual .mp4's from the Fusison or .360 from the MAX) to a video with a frame rate of 30 FPS (29.97).
+GoPro then pack the resulting .mp4 (or dual .mp4's from the Fusion or .360 from the MAX) to a video with a frame rate of 30 FPS (29.97).
 
 The interval setting therefore also determines how fast the real world time is sped up.
 
@@ -54,12 +54,11 @@ The calculation to work out Video length (secs) in the table above is; `recordin
 
 You can see when shooting at a 60 second interval, even 10 mins of recording (600 seconds) produces just 0.3 seconds worth of TimeLapse video (to get a second, you'd need to record for 30 minutes!).
 
-It's also possible to calculate actual recording time according to mode. We know the timelapse frames are packed at 29.97. So we can multiply the inteval by
+It's also possible to calculate actual recording time according to mode. We know the timelapse frames are packed at 29.97 per second. So we can multiply the interval by frame rate.
 
 Using TimeLapse 0.5 second mode as an example; `29.97` * `0.5` = actual recording time for 1 second = 59.94 seconds.
 
 Or for TimeLapse mode 60 seconds; `29.97` * `60` = actual recording time for 1 second = 1798.2 seconds (29.97 minutes).
-
 
 Still a little confused? Here I cycled round my block in each TimeLapse mode to demonstrate what the output of the same circuit looks like (you can see the actual recording times are all very similar)...
 
@@ -70,7 +69,6 @@ Still a little confused? Here I cycled round my block in each TimeLapse mode to 
 * Duration (`.360`): 10.88 s
 * Number of frames (`.360`): `10.88 * 29.97` = 326
 * Actual recording length (`.360`): `10.88 * (0.5 * 29.97)` = 163.0368s
-
 * [Download video files and metadata here (GS016145)](https://drive.google.com/open?id=1y5Fr12-WBOC92CfXuXbm_IF4bNpc--Ih&authuser=dgreenwood%40trekview.org&usp=drive_fs)
 
 ### GoPro MAX 360 Timelapse 1s (1_1) Sample
@@ -80,7 +78,6 @@ Still a little confused? Here I cycled round my block in each TimeLapse mode to 
 * Duration (`.360`): 5.07 s
 * Number of frames (`.360`): `5.07 * 29.97` = 151.9479
 * Actual recording length (`.360`): `5.07 * (1 * 29.97)` = 151.9479s
-
 * [Download video files and metadata here (GS016146)](https://drive.google.com/open?id=1p02nkRbkRXuGcjaJfVCi6EdKd7TqtlU0&authuser=dgreenwood%40trekview.org&usp=drive_fs)
 
 ### GoPro MAX 360 Timelapse 2s (1_2) Sample
@@ -90,7 +87,6 @@ Still a little confused? Here I cycled round my block in each TimeLapse mode to 
 * Duration (`.360`): 2.60 s
 * Number of frames (`.360`): `2.60 * 29.97` = 77.922
 * Actual recording length (`.360`): `2.60 * (2 * 29.97)` = 155.844s
-
 * [Download video files and metadata here (GS016147)](https://drive.google.com/open?id=1-nDq42ZCbGnCp_U7g-yeBKQ6kUeMk1PE&authuser=dgreenwood%40trekview.org&usp=drive_fs)
 
 ### GoPro MAX 360 Timelapse 5s (1_5) Sample

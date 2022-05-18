@@ -33,7 +33,11 @@ There are 6 speed options; `2X`, `5X`, `10X`, `15X`, `30X`, and `AUTO` (only in 
 
 The speed setting determines how fast the real world time is sped up.
 
-For example, if you selected a speed mode of `2X` and the recording will be twice as fast as real world time -- with a recording time is 5 minutes (300 seconds), the resulting TimeWarp video will be 2.5 minutes (150 seconds) long.
+Time is sped up because GoPro packs the resulting .mp4 (or dual .mp4's from the Fusion or .360 from the MAX) to a video with a frame rate of 30 FPS (29.971) `X` times as fast.
+
+For example, if you selected a speed mode of `2X`, the recording will be twice as fast as real world time. That is, each second has 2 seconds worth of frames (15 from 1st second of real time, 15 from 2nd second of real time -- put another way, each frame in the TimeWarp video is spaced 0.066 second apart). That means with a recording time is 5 minutes (300 seconds), the resulting TimeWarp video will be 2.5 minutes (150 seconds) long.
+
+Another example, if you selected a speed mode of `30X`, the recording will be thirty times as fast as real world time. That is, each second has 30 seconds worth of frames (1 frame from 1st second of real time, 1 frame from 2nd second of real time, ..., 1 frame from 30th second of real time -- put another way, each frame in the TimeWarp video is spaced 1 second apart).
 
 Here are examples for other TimeWarp speed options;
 
@@ -48,42 +52,52 @@ Here are examples for other TimeWarp speed options;
 
 Auto mode (HERO mode only and not shown in the above table) automatically adjusts the recording speed based on motion, scene detection, and lighting. However, I will ignore Auto mode for this post as we're only considering 360 videos.
 
-Still a little confused? Here I cycled round my block 5 times in each TimeWarp mode to demonstrate what the output of the same circuit looks like...
+Still a little confused? Here I cycled round my block 5 times in each TimeWarp mode to demonstrate what the output of the same circuit looks like (you can see the actual recording times are all very similar)...
 
 ### GoPro MAX 360 TimeWarp 30x Sample
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_LUMzQpl2cM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-* [Download processed GS019004.mp4](https://drive.google.com/open?id=13f_z-PmKTdzsJtue873JVZ24p6eVDCVy&authuser=dgreenwood%40trekview.org&usp=drive_fs) ([see metadata here](https://drive.google.com/open?id=149VOmNJtkn5JSgUiEUxudTwAwlpZRjXQ&authuser=dgreenwood%40trekview.org&usp=drive_fs))
-* [Download raw GS019004.360](https://drive.google.com/open?id=11mo4Ks_d6MjayTBR8EH35f_0sr05GjR4&authuser=dgreenwood%40trekview.org&usp=drive_fs) ([see metadata here](https://drive.google.com/open?id=12rLKXvXpHOyR-LN-xr_Wc3EWVbTEyhVA&authuser=dgreenwood%40trekview.org&usp=drive_fs))
+* Duration (`.360`): 5.71 s
+* Number of frames (`.360`): `5.71 * 29.971` = 171.13441
+* Actual recording length (`.360`): `5.71 * 30` = 171.4s
+* [Download video files and metadata here (GS019004)](https://drive.google.com/open?id=11mlvuadcfU1drHwerg15C9Hiq77Hwxes&authuser=dgreenwood%40trekview.org&usp=drive_fs)
 
 ### GoPro MAX 360 TimeWarp 15x Sample
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/FLlXZZcKn-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-* [Download processed GS019005.mp4](https://drive.google.com/open?id=13fMr5bpJsO9no5z7qKPZMY0qQ1RG3L0o&authuser=dgreenwood%40trekview.org&usp=drive_fs) ([see metadata here](https://drive.google.com/open?id=14-rkw14_uBc4uysRsx7qdCSc19DANNkj&authuser=dgreenwood%40trekview.org&usp=drive_fs))
-* [Download raw GS019005.360](https://drive.google.com/open?id=11qsl3T7gZ4YBBpsm7selJKyxJexUUYJ_&authuser=dgreenwood%40trekview.org&usp=drive_fs) ([see metadata here](https://drive.google.com/open?id=133GITrOM8YqhNolqL7f7M4ip51nVyLO9&authuser=dgreenwood%40trekview.org&usp=drive_fs))
+* Duration (`.360`): 10.88 s
+* Number of frames (`.360`): `10.88 * 29.971` = 326.08448
+* Actual recording length (`.360`): `10.88 * 15` = 163.2s
+* [Download video files and metadata here (GS019005)](https://drive.google.com/open?id=11YFA486GP9qFra-od5dP7VS7O1b8tWB8&authuser=dgreenwood%40trekview.org&usp=drive_fs)
 
 ### GoPro MAX 360 TimeWarp 10x Sample
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/z6KENviZq_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-* [Download processed GS019006.mp4](https://drive.google.com/open?id=13c9nzS6-KJHMDCSCumyZt_GfZqI9JIRP&authuser=dgreenwood%40trekview.org&usp=drive_fs) ([see metadata here](https://drive.google.com/open?id=13u3zBlXUOpC2VFDDsraKLTGCOb2hZs7Z&authuser=dgreenwood%40trekview.org&usp=drive_fs))
-* [Download raw GS019006.360](https://drive.google.com/open?id=12EWI7DAdLmSZmTOuKv62h6q6_yoMMot0&authuser=dgreenwood%40trekview.org&usp=drive_fs) ([see metadata here](https://drive.google.com/open?id=12xUteOsdFhPrnEtpzMrr5g_w1AXN8Gbv&authuser=dgreenwood%40trekview.org&usp=drive_fs))
+* Duration (`.360`): 15.92 s
+* Number of frames (`.360`): `15.92 * 29.971` = 477.13832
+* Actual recording length (`.360`): `15.92 * 10` = 159.2s
+* [Download video files and metadata here (GS019006)](https://drive.google.com/open?id=11TWFk_Kpl3SVraGnEtJZOGb_A-_Q2fNT&authuser=dgreenwood%40trekview.org&usp=drive_fs)
 
 ### GoPro MAX 360 TimeWarp 5x Sample
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/R17wvnr9FaQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-* [Download processed GS019007.mp4](https://drive.google.com/open?id=13YBp6zCdUzjfBbqWM9BZoh-J6nDuAYEY&authuser=dgreenwood%40trekview.org&usp=drive_fs) ([see metadata here](https://drive.google.com/open?id=13jXc4xXtme2sl_0Bk4Xehz64WIxsP_EF&authuser=dgreenwood%40trekview.org&usp=drive_fs))
-* [Download raw GS019007.360](https://drive.google.com/open?id=12Q03iji0mlOd9dI9DVEkmwILbQXv4saj&authuser=dgreenwood%40trekview.org&usp=drive_fs) ([see metadata here](https://drive.google.com/open?id=13A9UXnyyFL_CYDRfrFVzU7GewbfGl75E&authuser=dgreenwood%40trekview.org&usp=drive_fs))
+* Duration (`.360`): 0:00:33
+* Number of frames (`.360`): `33 * 29.971` = 989.043
+* Actual recording length (`.360`): `0:00:33 * 5` = 0:02:45 (165s)
+* [Download video files and metadata here (GS019007)](https://drive.google.com/open?id=11SyxF4AJavyrX6g26d5_NsfZ72W-0iic&authuser=dgreenwood%40trekview.org&usp=drive_fs)
 
 ### GoPro MAX 360 TimeWarp 2x Sample
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/j7UUVRFXFns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-* [Download processed GS019008.mp4](https://drive.google.com/open?id=13XaXCKxyYF4wOzYH2sPo_ICt3aJNsEUZ&authuser=dgreenwood%40trekview.org&usp=drive_fs) ([see metadata here](https://drive.google.com/open?id=13nLub7Ympd3ElggcL-2HvydekhXhGtRW&authuser=dgreenwood%40trekview.org&usp=drive_fs))
-* [Download raw GS019008.360](https://drive.google.com/open?id=12_NVfiuxW09xSWtwrScZ2EvtEdv4chH2&authuser=dgreenwood%40trekview.org&usp=drive_fs) ([see metadata here](https://drive.google.com/open?id=13XYODbZ4aif_moSKQBnwSlIG8SGziOdo&authuser=dgreenwood%40trekview.org&usp=drive_fs))
+* Duration (`.360`): 0:01:21
+* Number of frames (`.360`): `81 * 29.971` = 2427.651
+* Actual recording length (`.360`): `0:01:21 * 2` = 0:02:22 (142s)
+* [Download video files and metadata here (GS019008)](https://drive.google.com/open?id=11RM3G77fXCbo7nAD9DM4je2HZyJe7x_H&authuser=dgreenwood%40trekview.org&usp=drive_fs)
 
 ## Identifying videos shot in TimeWarp
 
