@@ -55,6 +55,8 @@ You can easily identify roll (and it's severity) after looking at a few equirect
 
 <img class="img-fluid" src="/assets/images/blog/2022-05-20/roll-0.jpg" alt="Equirectangular roll 0 horizon annotated" title="Equirectangular roll 0 horizon annotated" />
 
+_Note, this photo is not truly level. A level horizon on flat ground would cross then center of the image as a flat line._
+
 ### Roll 45 degrees (right roll)
 
 <img class="img-fluid" src="/assets/images/blog/2022-05-20/roll-plus45.jpg" alt="Equirectangular roll 45 horizon annotated" title="Equirectangular roll 45 horizon annotated" />

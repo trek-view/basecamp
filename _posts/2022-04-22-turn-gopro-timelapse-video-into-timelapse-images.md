@@ -54,6 +54,85 @@ The calculation to work out Video length (secs) in the table above is; `recordin
 
 You can see when shooting at a 60 second interval, even 10 mins of recording (600 seconds) produces just 0.3 seconds worth of TimeLapse video (to get a second, you'd need to record for 30 minutes!).
 
+It's also possible to calculate actual recording time according to mode. We know the timelapse frames are packed at 29.97. So we can multiply the inteval by
+
+Using TimeLapse 0.5 second mode as an example; `29.97` * `0.5` = actual recording time for 1 second = 59.94 seconds.
+
+Or for TimeLapse mode 60 seconds; `29.97` * `60` = actual recording time for 1 second = 1798.2 seconds (29.97 minutes).
+
+
+Still a little confused? Here I cycled round my block in each TimeLapse mode to demonstrate what the output of the same circuit looks like (you can see the actual recording times are all very similar)...
+
+### GoPro MAX 360 Timelapse 0.5s (2_1) Sample
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HEnMVB7aQFU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+* Duration (`.360`): 10.88 s
+* Number of frames (`.360`): `10.88 * 29.97` = 326
+* Actual recording length (`.360`): `10.88 * (0.5 * 29.97)` = 163.0368s
+
+* [Download video files and metadata here (GS016145)](https://drive.google.com/open?id=1y5Fr12-WBOC92CfXuXbm_IF4bNpc--Ih&authuser=dgreenwood%40trekview.org&usp=drive_fs)
+
+### GoPro MAX 360 Timelapse 1s (1_1) Sample
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NBZD49z4B9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+* Duration (`.360`): 5.07 s
+* Number of frames (`.360`): `5.07 * 29.97` = 151.9479
+* Actual recording length (`.360`): `5.07 * (1 * 29.97)` = 151.9479s
+
+* [Download video files and metadata here (GS016146)](https://drive.google.com/open?id=1p02nkRbkRXuGcjaJfVCi6EdKd7TqtlU0&authuser=dgreenwood%40trekview.org&usp=drive_fs)
+
+### GoPro MAX 360 Timelapse 2s (1_2) Sample
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/16FoWbEzW7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+* Duration (`.360`): 2.60 s
+* Number of frames (`.360`): `2.60 * 29.97` = 77.922
+* Actual recording length (`.360`): `2.60 * (2 * 29.97)` = 155.844s
+
+* [Download video files and metadata here (GS016147)](https://drive.google.com/open?id=1-nDq42ZCbGnCp_U7g-yeBKQ6kUeMk1PE&authuser=dgreenwood%40trekview.org&usp=drive_fs)
+
+### GoPro MAX 360 Timelapse 5s (1_5) Sample
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/onyXxat9DAI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+* Duration (`.360`): 1.07 s
+* Number of frames (`.360`): `1.07 * 29.97` = 32.0679
+* Actual recording length (`.360`): `1.07 * (5 * 29.97)` = 160.3395s
+
+* [Download video files and metadata here (GS016148)](https://drive.google.com/open?id=1Og3y76m9xPkqwg0AD7V_0APBzu1Epyey&authuser=dgreenwood%40trekview.org&usp=drive_fs)
+
+### GoPro MAX 360 Timelapse 10s (1_10) Sample
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JcatPT2jPWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+* Duration (`.360`): 0.57 s
+* Number of frames (`.360`): `0.57 * 29.97` = 17.0829
+* Actual recording length (`.360`): `0.57 * (10 * 29.97)` = 170.829s
+
+* [Download video files and metadata here (GS016149)](https://drive.google.com/open?id=1Blneavuy9yHPA8lbv2VABg7lAUch8sVV&authuser=dgreenwood%40trekview.org&usp=drive_fs)
+
+### GoPro MAX 360 Timelapse 30s (1_30) Sample
+
+* Duration (`.360`): 0.20 s
+* Number of frames (`.360`): `0.2 * 29.97` = 5.994
+* Actual recording length (`.360`): `0.20 * (30 * 29.97)` = 179.82s
+
+Too short for YouTube upload (but can be processed by GoPro Player).
+
+* [Download video files and metadata here (GS016150)](https://drive.google.com/open?id=1hoFOTtojoPvRilLLtK_zORRMqUS-1eur&authuser=dgreenwood%40trekview.org&usp=drive_fs)
+
+### GoPro MAX 360 Timelapse 60s (1_60) Sample
+
+* Duration (`.360`): 0.10 s
+* Number of frames (`.360`): `0.1 * 29.97` = 2.997
+* Actual recording length (`.360`): `0.10 * (60 * 29.97)` = 179.82s)
+
+Too short to be processed by GoPro Player.
+
+* [Download video files and metadata here (GS016152)](https://drive.google.com/open?id=1eTvMf8WTa9E9VA3W90emYddEiQe_u6vH&authuser=dgreenwood%40trekview.org&usp=drive_fs)
+
 ## Identifying videos shot in TimeLapse
 
 GoPro expose if the video was shot in TimeLapse mode using the `GoPro:Rate` metatag as follows; 0.5s = `2_1SEC`, 1s = `1_1SEC`, 2s = `1_2SEC`, 5s = `1_5SEC`, 10s = `1_10SEC`, 30s = `1_30SEC`, 60s = `1_60SEC`
