@@ -51,13 +51,36 @@ Now, this data makes sense in orientation because of gravity. We know that if an
 
 The direction of gravitational force is always same with respect to the Earth’s frame but based on the orientation of IMU, it will experience different amount of acceleration along the three axes (this means you can't calculate roll using the horizontal (`x`) axis alone).
 
+
+
 To calculate pitch using accelerometer values we can use the following calculation ([source](https://wiki.dfrobot.com/How_to_Use_a_Three-Axis_Accelerometer_for_Tilt_Sensing));
 
 `roll = atan2(y_Buff , z_Buff) * 57.3`
 
 (_57.3 converts radians to degrees -- 180 degrees/PI_).
 
-So to calculate roll for the first point in the telemetry (shown above);
+So to calculate roll for the first point in the telemetry:
+
+* `z`: -9.741007194244604
+* `x`: 0.8513189448441247
+* `y`: -2.1247002398081536
+
+We can first need to cal
+
+acc_total_vector = sqrt((acc_x * acc_x) + (acc_y * acc_y) + (acc_z * acc_z))
+acc_total_vector = sqrt((0.8513189448441247 * 0.8513189448441247) + (-2.1247002398081536 * -2.1247002398081536) + (-9.741007194244604 * -9.741007194244604))
+acc_total_vector = sqrt(100.126316213)
+acc_total_vector = 10.0063138174
+
+
+
+
+angle_roll_x = asin(acc_y / acc_total_vector)
+angle_roll_x = asin(-2.1247002398081536 / 10.0063138174)
+angle_roll_x = asin(-0.21233595893)
+angle_roll_x = -12.25928063
+
+
 
 ```
 roll = atan2(-2.1247002398081536, -9.741007194244604) * (180/PI)
@@ -71,15 +94,16 @@ roll = -102.30458848
 
 
 
-acc_total_vector = sqrt((acc_x * acc_x) + (acc_y * acc_y) + (acc_z * acc_z))
 
 
 
-angle_roll = asin(acc_y / acc_total_vector)
 
 
 
 angle_pitch = asin(acc_x / acc_total_vector)
+
+
+
 
 
 

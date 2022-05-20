@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2022-05-20/gopro-video-horizon-level-meta.jpg
 featured_image: /assets/images/blog/2022-05-20/gopro-video-horizon-level-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Analysing what camera roll looks like equirectangular videos and how to account for it.**
@@ -104,6 +104,4 @@ Generally videos we record suffer from the type of roll in the example above -- 
 
 Therefore we need a dynamic way to read each frame and set the roll adjustment accordingly.
 
-This is not as difficult as it sounds.
-
-I'll explain more next week, but it's fairly simply -- [the GoPro's gyroscope sensor tells us exactly how much the camera is rolling at any given point in time](/blog/2020/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer).
+I'll be looking into that more next week, but here's a clue -- [the GoPro's gyroscope sensor tells us exactly how much the camera is rolling at any given point in time](/blog/2020/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer).
