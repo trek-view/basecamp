@@ -79,7 +79,7 @@ So now you have; `pitch(θ) = tan(θ) = opposite / adjacent = elevation change /
 
 You'll notice in the diagram Tourer generates a forward and backward connection (P1 - P2 and P2 - P1) for each connected photo. This is so you can move forward and backwards between photos.
 
-## Heading (Azimuth)
+## Heading
 
 <img class="img-fluid" src="/assets/images/blog/2020-01-17/azimuth-altitude-schematic.png" alt="Heading / Azimuth" title="Heading / Azimuth" />
 
@@ -89,7 +89,7 @@ You'll notice in the diagram Tourer generates a forward and backward connection 
 
 Heading or orientation is generally measured from North (0°), and is often referred to as the azimuth.
 
-If I'm facing North my heading is 0°. If I'm facing South my heading is 180°. And so on.
+If I'm facing magnetic North my heading is 0°. If I'm facing magnetic South my heading is 180°. And so on.
 
 All our tours are currently shot in time order. The start / end of the tour is the first / last photo.
 

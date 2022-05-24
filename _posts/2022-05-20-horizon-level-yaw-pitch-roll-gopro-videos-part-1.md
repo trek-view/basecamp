@@ -1,17 +1,17 @@
 ---
 date: 2022-05-20
 title: "Automatic horizon leveling of GoPro 360 videos (Part 1)"
-description: "Analysing what camera roll looks like equirectangular videos and how to account for it."
+description: "Analysing what camera roll looks like in equirectangular videos and how to account for it."
 categories: developers
 tags: [ffmpeg, yaw, pitch, roll, equirectangular, video, gopro studio]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2022-05-20/gopro-video-horizon-level-meta.jpg
 featured_image: /assets/images/blog/2022-05-20/gopro-video-horizon-level-sm.jpg
 layout: post
-published: true
+published: false
 ---
 
-**Analysing what camera roll looks like equirectangular videos and how to account for it.**
+**Analysing what camera roll looks like in equirectangular videos and how to account for it.**
 
 I've talked previously about the concepts of [yaw, pitch, and roll](/blog/2020/yaw-pitch-roll-360-degree-photography) in 360 imagery.
 
@@ -21,11 +21,11 @@ For example, when converting .360's shot on the GoPro MAX [using GoPro Studio so
 
 ## An example of a bad horizon
 
-Here is a video I recorded it with a GoPro MAX with a 45 degree horizontal tilt (roll) to the right (0:02), then almost level (0:05), then a 45 degree tilt to the left (0:08).
+Here is a video I recorded it with a GoPro MAX with a 45 degree horizontal roll to the right (0:02), then almost level (0:05), then a 45 degree roll to the left (0:08).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lEHA91gu3TQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Here are screenshots to show how this looks for the entire equirectangular frame (not in a 360 viewer), extracted using ffmpeg (`ffmpeg -i GS016143.mp4 -r 1 -q:v 2 img%d.jpg`);
+Here are screenshots to show how this looks for the entire equirectangular frame (not in a 360 viewer), extracted using ffmpeg (`ffmpeg -i INPUT.mp4 -r 1 -q:v 2 img%d.jpg`);
 
 ### Roll 45 degrees (right roll) (0:02)
 
@@ -41,13 +41,17 @@ Here are screenshots to show how this looks for the entire equirectangular frame
 
 ## Identifying roll visually
 
-You can easily identify roll (and it's severity) after looking at a few equirectangular images. To really demonstrate it, I've highlighted how the horizon looks at varying roll angles below:
+You can often identify the severity of the roll after looking at a few equirectangular images. To really demonstrate it, I've highlighted how the horizon looks at varying roll angles below.
 
-### Roll -90 degrees (left roll)
+_Note, positive roll is above the x axis, negative roll is below the x axis._
+
+### Roll -135 degrees (negative left roll)
+
+### Roll -90 degrees (positive left roll)
 
 <img class="img-fluid" src="/assets/images/blog/2022-05-20/roll-minus90.jpg" alt="Equirectangular roll -90 horizon annotated" title="Equirectangular roll -90 horizon annotated" />
 
-### Roll -45 degrees (left roll)
+### Roll -45 degrees (positive left roll)
 
 <img class="img-fluid" src="/assets/images/blog/2022-05-20/roll-minus45.jpg" alt="Equirectangular roll -45 horizon annotated" title="Equirectangular roll -45 horizon annotated" />
 
@@ -57,13 +61,21 @@ You can easily identify roll (and it's severity) after looking at a few equirect
 
 _Note, this photo is not truly level. A level horizon on flat ground would cross then center of the image as a flat line._
 
-### Roll 45 degrees (right roll)
+### Roll 45 degrees (positive right roll)
 
 <img class="img-fluid" src="/assets/images/blog/2022-05-20/roll-plus45.jpg" alt="Equirectangular roll 45 horizon annotated" title="Equirectangular roll 45 horizon annotated" />
 
-### Roll 90 degrees (right roll)
+### Roll 90 degrees (positive right roll)
 
 <img class="img-fluid" src="/assets/images/blog/2022-05-20/roll-plus90.jpg" alt="Equirectangular roll 90 horizon annotated" title="Equirectangular roll 90 horizon annotated" />
+
+### Roll 135 degrees (negative right roll)
+
+### Roll 180 degrees (upside-down) 
+
+
+
+
 
 ## Dealing with roll uniformly
 
