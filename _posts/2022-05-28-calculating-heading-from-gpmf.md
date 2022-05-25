@@ -61,6 +61,14 @@ I've talked about extracting GoPro telemetry previously with regards to GPS poin
 * GYRO z,x,y in rad/s (approximate frequency 200Hz)
 * MAGN z,x,y in 5T (approximate frequency 24Hz)
 
+Our aim for this is to capture initial heading (to work out World Lock heading) and then the subsequence headings for each frame to work out the offset.
+
+The GoPro MAX can shoot up to 60 frames per second (FPS), but as you'll see the magnometer only captures at 24Hz (similar to the GPS5 sensor which captures at 16Hz).
+
+For our purposes, it is fine to use a lower sampling frequency than these sensors, as a very high-degree of accuracy is not required.
+
+Capturing heading at 0.1 second intervals (10 per minute) is more than adequate for our needs.
+
 With this information we can calculate heading like so....
 
 TODO
