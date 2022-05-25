@@ -55,7 +55,17 @@ Though to improve accuracy (or if you want to keep the video intact), you can ca
 
 I've talked about extracting GoPro telemetry previously with regards to GPS points.
 
-[The GPMD telemetry includes a whole host of data](/blog/2022/evolution-of-gopro-camera-sensors-gpmf), most importantly for us is the ACCL (accelerometer), GYRO (gyroscope), and MAGN (magnometer) sensor measurements.
+[The GPMD telemetry includes a whole host of data](/blog/2022/evolution-of-gopro-camera-sensors-gpmf), including samples;
+
+* ACCL z,x,y in m/s2 (approximate frequency 200Hz)
+* GYRO z,x,y in rad/s (approximate frequency 200Hz)
+* MAGN z,x,y in 5T (approximate frequency 24Hz)
+
+With this information we can calculate heading like so....
+
+TODO
+
+
 
 
 
