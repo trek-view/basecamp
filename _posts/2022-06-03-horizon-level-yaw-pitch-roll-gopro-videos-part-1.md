@@ -1,5 +1,5 @@
 ---
-date: 2022-05-20
+date: 2022-06-09
 title: "Automatic horizon leveling of GoPro 360 videos (Part 1)"
 description: "Analysing what camera roll looks like in equirectangular videos and how to account for it."
 categories: developers

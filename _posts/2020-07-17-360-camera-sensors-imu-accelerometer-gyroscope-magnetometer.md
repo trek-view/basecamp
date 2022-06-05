@@ -15,7 +15,7 @@ published: true
 
 What was once a device that simply exposed light to film, is now a device that [measures light hitting a sensor](/blog/what-is-global-shutter-rolling-shutter-360-cameras) and a whole host of other things; location, direction of travel, temperature...
 
-In the world of 360 tour photography, these sensors can be particularly important. For example, recording the pitch and roll of the camera at the time of capture can help improve stitching quality (e.g by making automatic horizon leveling possible).
+In the world of 360 tour photography, these sensors can be particularly important. For example, being able to determine the pitch and roll of the camera at the time of capture can help improve stitching quality (e.g by making automatic horizon leveling possible).
 
 Last year a I explained more about [Yaw, Pitch and Roll](/blog/2020/yaw-pitch-roll-360-degree-photography).
 
@@ -87,12 +87,8 @@ You'll see Magnetometers reporting data in µT (microteslas) on GoPro cameras.
 
 ## How 360 cameras report IMU data
 
-As mentioned, the data is fused together to report telemetry.
-
-Once fused these values can be embedded into the metadata of an image or video.
-
-In the case of image files this is commonly reported in the XMP fields; [XMP] `PoseHeadingDegrees`, [XMP] `PosePitchDegrees`...
-
 [For videos this is written into the telemetry track](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd). Typically telemetry formats for 360 cameras are reported in two standards, either [gpmf](https://github.com/trek-view/360-camera-metadata/blob/master/0-standards/gpmf.md) (GoPro) or [camm](https://github.com/trek-view/360-camera-metadata/blob/master/0-standards/camm.md) (most other cameras).
+
+In the case of image files, the data can be fused together to report additional telemetry (like yaw, pitch, and roll) and then commonly reported in the XMP fields (e.g. [XMP] `PoseHeadingDegrees`, [XMP] `PosePitchDegrees`) -- _although GoPro cameras do not embed any of this calculated data to still images_.
 
 You can see real examples of what this data looks like for both image and video files for a variety of 360 cameras in our [360 Camera Metadata repository on GitHub](https://github.com/trek-view/360-camera-metadata).
