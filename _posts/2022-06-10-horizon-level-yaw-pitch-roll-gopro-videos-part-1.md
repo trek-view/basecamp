@@ -117,3 +117,18 @@ Generally videos we record suffer from the type of roll in the example above -- 
 Therefore we need a dynamic way to read each frame and set the roll adjustment accordingly.
 
 I'll be looking into that more next week, but here's a clue -- [the GoPro's gyroscope sensor tells us exactly how much the camera is rolling at any given point in time](/blog/2020/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer).
+
+
+
+
+
+[The GPMD telemetry includes a whole host of data](/blog/2022/evolution-of-gopro-camera-sensors-gpmf), 
+
+
+
+
+
+
+With this value, we can then dynamically update the corresponding frames in the video.
+
+Nicely for us, Camera Orientation is reported at the same frame rate as the video (which can vary depending on what framerate setting was set on the camera, and is also reported in the telemetry as `"frames/second"`). This means we can calculate a heading for every single frame in the video.

@@ -1,0 +1,110 @@
+---
+date: 2022-05-27
+title: "Using ffmpeg to dynamically adjust the yaw of GoPro 360 videos (Part 1)"
+description: "Understand the telemetry needed to ensure your 360 videos are loaded in 360 players facing the same direction as they were shot."
+categories: developers
+tags: [ffmpeg, yaw, pitch, roll, equirectangular, video, gopro studio]
+author_staff_member: dgreenwood
+image: /assets/images/blog/2022-05-27/gopro-cori-telemetry-example-meta.jpg
+featured_image: /assets/images/blog/2022-05-27/gopro-cori-telemetry-example-sm.jpg
+layout: post
+published: true
+---
+
+**Understand the telemetry needed to ensure your 360 videos are loaded in 360 players facing the same direction as they were shot.**
+
+Did you see my post last week?; [Adjusting the yaw of an equirectangular 360 photo using ImageMagick](/blog/2022/adjusting-yaw-equirectangular-images).
+
+The example used extracted equirectangular frames. However, in the case of videos there are more efficient ways to achieve the same thing, as I'll show you in this post.
+
+Assuming the yaw is off by a fixed direction during the video, for example the camera was facing the wrong direction, this is quite easy using ffmpeg.
+
+I'll use the same World Lock example video from last week.
+
+Here it is before yaw adjustment:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3Hces_LyGZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+And now with yaw adjusted by 180 degrees using the ffmpeg command
+
+```shell
+ffmpeg -i GS010013-worldlock.mp4 -vf v360=e:e:yaw=180 -c:v libx265 GS010013-worldlock-yaw180.mp4
+```
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jr5xV4ZziYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+See how the video now faces in the opposite direction, because the yaw has been offset in each video frame by 180 degrees.
+
+Of course, this hasn't helped me in World Lock. Unlike a fixed offset for yaw a badly angled tripod will cause, the World Lock offset is dynamic with each frame.
+
+Luckily for us, the GoPro's GPMD telemetry allows us to calculate true heading for each frame in the video. 
+
+I've talked about extracting GoPro telemetry previously with regards to GPS points.
+
+[The GPMD telemetry includes a whole host of data](/blog/2022/evolution-of-gopro-camera-sensors-gpmf), including `MAGN` (values recorded by the cameras Magnetometer) and `CORI` (Camera Orientation).
+
+Heading can be calculated by synchronising `CORI` and `MAGN` data. Before we jump into that, let's first better understand the values for these fields.
+
+For reference here is GoPro sensor axis configuration too;
+
+<img class="img-fluid" src="/assets/images/blog/2022-05-20/CameraIMUOrientationSM.png" alt="GoPro Camera Axis Orientation" title="GoPro Camera Axis Orientation" />
+
+
+### `CORI` (Camera orientation values)
+
+In GMPD, Camera orientation is a relative measurement (the orientation relative to the orientation the sensor had when the acquisition started), as opposed to an absolute measurement, like we calculated for heading in a previous step (the orientation absolute to magnetic north).
+
+The first `CORI` value for our original example video (`GS010013-worldlock.mp4`) looks like this ([extracted using gopro-telemetry](/blog/2022/gopro-telemetry-exporter-getting-started));
+
+```json
+"CORI":{
+  "samples":[{
+    "value":[0.9989318521683401,-0.024964140751365705,0.02621539963988159,0.029206213568529312],
+    "cts":176.62,
+    "date":"2022-05-26T08:35:42.485Z",
+    "sticky":{
+      "VPTS":1261037}
+    },
+```
+
+The values shown (`0.9989318521683401,-0.024964140751365705,0.02621539963988159,0.029206213568529312`) are Quaternions.
+
+Quaternions contain 4 scalar variables  (sometimes known as Euler Parameters not to be confused with Euler angles). For GoPro cameras these are printed in the following axis order; `w`,`x`,`y`,`z` (according to this thread](https://github.com/gopro/gpmf-parser/issues/100).
+
+I won't try explaining Quaternions here, but recommend this video which helped me to understand the concept and why they're needed (because of Gimbal Lock):
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zjMuIxRvygQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Camera Orientation is reported at the same frame rate as the video (which can vary depending on what framerate setting was set on the camera, and is also reported in the telemetry as `"frames/second"`)
+
+The relative Quarternation samples can therefore be used to calculate absolute pitch and roll angles for each frame in the video.
+
+### `MAGN` (Magnetometer values)
+
+The first `MAGN` value for our original example video (`GS010013-worldlock.mp4`) looks like this ([extracted using gopro-telemetry](/blog/2022/gopro-telemetry-exporter-getting-started));
+
+
+```json
+"MAGN":{
+	"samples":[{
+		"value":[-4,88,27],
+		"cts":163.461,
+		"date":"2022-05-26T08:35:42.485Z"
+	},
+```
+
+Values from the Magnetometer are reported in the axis order `z`,`x`,`y` in MicroTeslas. 
+
+MicroTeslas measure magnetic flux density (often referred to as the magnetic fields).
+
+`MAGN` samples are taken at an approximate frequency pf 24Hz (which can be less than the framerate of the video -- thus, not each frame has a directly corresponding `MAGN` measurement).
+
+Using the `x`, `y` components of Magnetometer samples in addition to the yaw and pitch angles calculated from the `ACCL` samples, we can calculate the absolute degrees the camera was facing from magnetic North (it's heading).
+
+## Calculating pitch, roll and yaw
+
+Stay tuned for part 2 of this post next week showing a proof-of concept to calculate these values, and how to use the calculated yaw value to dynamically the adjust the yaw of each frame in ffmpeg.
+
+## Update 2022-06-03
+
+[Using ffmpeg to dynamically adjust the yaw of GoPro 360 videos (Part 2)](/blog/2022/calculating-heading-of-gopro-video-using-gpmf-part-2).
