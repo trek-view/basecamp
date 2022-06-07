@@ -31,7 +31,20 @@ And now with yaw adjusted by 180 degrees using the ffmpeg command
 ffmpeg -i GS010013-worldlock.mp4 -vf v360=e:e:yaw=180 -c:v libx265 GS010013-worldlock-yaw180.mp4
 ```
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jr5xV4ZziYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* `v360` : filter name
+  * `e` : abbreviation for "equirectangular" (this is the input format)
+  * `e` : abbreviation for "equirectangular" (this is the desired output format)
+  * `yaw`: horizontal center of equirectangular output [`0` - `360`] relative to current yaw (`0`)
+
+_Don't forget to copy over global metadata too (the above ffmpeg command will only copy streams):_
+
+```shell
+exiftool -TagsFromFile GS010013-worldlock.mp4 "-all:all>all:all" GS010013-worldlock-yaw180.mp4
+```
+
+And after:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sBFqLfqVLQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 See how the video now faces in the opposite direction, because the yaw has been offset in each video frame by 180 degrees.
 
@@ -48,7 +61,6 @@ Heading can be calculated by synchronising `CORI` and `MAGN` data. Before we jum
 For reference here is GoPro sensor axis configuration too;
 
 <img class="img-fluid" src="/assets/images/blog/2022-05-20/CameraIMUOrientationSM.png" alt="GoPro Camera Axis Orientation" title="GoPro Camera Axis Orientation" />
-
 
 ### `CORI` (Camera orientation values)
 
@@ -69,13 +81,15 @@ The first `CORI` value for our original example video (`GS010013-worldlock.mp4`)
 
 The values shown (`0.9989318521683401,-0.024964140751365705,0.02621539963988159,0.029206213568529312`) are Quaternions.
 
-Quaternions contain 4 scalar variables  (sometimes known as Euler Parameters not to be confused with Euler angles). For GoPro cameras these are printed in the following axis order; `w`,`x`,`y`,`z` (according to this thread](https://github.com/gopro/gpmf-parser/issues/100).
+Quaternions contain 4 scalar variables  (sometimes known as Euler Parameters not to be confused with Euler angles). For GoPro cameras these are printed in the following axis order; `w`,`x`,`y`,`z` (according to this thread](https://github.com/gopro/gpmf-parser/issues/100). `w` is a scalar that stores the rotation around the vector.
 
 I won't try explaining Quaternions here, but recommend this video which helped me to understand the concept and why they're needed (because of Gimbal Lock):
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zjMuIxRvygQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Camera Orientation is reported at the same frame rate as the video (which can vary depending on what framerate setting was set on the camera, and is also reported in the telemetry as `"frames/second"`)
+I'd also recommend this post on the subject; [How to think about Quaternions](https://scriptinghelpers.org/blog/how-to-think-about-quaternions).
+
+Camera Orientation is reported at the same frame rate as the video (which can vary depending on what framerate setting was set on the camera, and is also reported in the telemetry as `"frames/second"`).
 
 The relative Quarternation samples can therefore be used to calculate absolute pitch and roll angles for each frame in the video.
 
@@ -97,9 +111,9 @@ Values from the Magnetometer are reported in the axis order `z`,`x`,`y` in Micro
 
 MicroTeslas measure magnetic flux density (often referred to as the magnetic fields).
 
-`MAGN` samples are taken at an approximate frequency pf 24Hz (which can be less than the framerate of the video -- thus, not each frame has a directly corresponding `MAGN` measurement).
+`MAGN` samples are taken at an approximate frequency of 24Hz (which can be less than the framerate of the video -- thus, not each frame has a directly corresponding `MAGN` measurement).
 
-Using the `x`, `y` components of Magnetometer samples in addition to the yaw and pitch angles calculated from the `ACCL` samples, we can calculate the absolute degrees the camera was facing from magnetic North (it's heading).
+Using the `x`, `y` components of Magnetometer samples in addition to the yaw and pitch angles calculated from the `CORI` samples, we can calculate the absolute degrees the camera was facing from magnetic North (it's heading).
 
 ## Calculating pitch, roll and yaw
 

@@ -270,7 +270,6 @@ You can also get total frames (`356`);
 
 ```shell
 ffprobe -v error -select_streams v:0 -count_packets -show_entries stream=nb_read_packets -of csv=p=0 GX010044.MP4
-356
 ```
 
 This actually counts packets instead of frames but it is much faster. Result should be the same. If you want to verify by counting frames change `-count_packets` to `-count_frames` and `nb_read_packets` to `nb_read_frames`.
