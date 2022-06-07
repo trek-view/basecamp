@@ -25,6 +25,14 @@ Here it is before yaw adjustment:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3Hces_LyGZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+If you remember back to a post I did for dynamic yaw adjustment in GoPro 360 videos earlier this month, I showed you a static way of using ffmpeg
+
+```shell
+ffmpeg -i GS010013-worldlock.mp4 -vf v360=e:e:yaw=180 -c:v libx265 GS010013-worldlock-yaw180.mp4
+```
+
+In addition to `yaw`, the `v360` filter also takes the arguements:
+
 And now with yaw adjusted by 180 degrees using the ffmpeg command
 
 ```shell

@@ -5,10 +5,10 @@ description: "Converting GoPro telemetry into magnetic heading values to ensure 
 categories: developers
 tags: [ffmpeg, yaw, pitch, roll, equirectangular, video, gopro studio]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-06-03/GSAD1297-roll180-meta.JPG
-featured_image: /assets/images/blog/2022-06-03/GSAD1297-roll180-sm.JPG
+image: /assets/images/blog/2022-06-03/GSAN2363-bad-yaw-meta.JPG
+featured_image: /assets/images/blog/2022-06-03/GSAN2363-bad-yaw-sm.JPG
 layout: post
-published: false
+published: true
 ---
 
 **Converting GoPro telemetry into magnetic heading values to ensure videos are shown in 360 players facing the same direction as they were shot.**
@@ -114,7 +114,7 @@ Insert graphs here
 
 Insert graphs here
 
-## In summary
+## In summary...
 
 The `HEAD` value now reported for each frame tells us what compass direction the camera is pointing.
 
