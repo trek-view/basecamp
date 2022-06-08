@@ -17,7 +17,7 @@ published: true
 
 In that post I wrote;
 
-> Using the `x`, `y` components of Magnetometer samples in addition to the ro;; and pitch angles calculated from the `ACCL` samples, we can calculate the absolute degrees the camera was facing from magnetic North (it's heading).
+> Using the `x`, `y` components of Magnetometer samples in addition to the roll and pitch angles calculated from the `ACCL` samples, we can calculate the absolute degrees the camera was facing from magnetic North (it's heading).
 
 So let's start by calculating roll and pitch.
 
@@ -87,34 +87,33 @@ In summary this gives us 5 new streams in the telemetry file
 
 ## Some examples
 
-Let's take a look at what this data looks like for some sample videos where I've deliberately exagerated yaw, pitch and roll (sorry about the wind noise!).
+Let's take a look at what this data looks like for some sample videos where I've deliberately exaggerated yaw, pitch and roll (sorry about the wind noise!).
+
+[You can download the files used here](https://drive.google.com/drive/u/1/folders/1cgAmMHVTFZA2RK7ZYpEs50B-XGdIP_Sz).
 
 ### Pitch change (GS010010.mp4)
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xCjSPYIKN68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-* [Original telemetry file](https://drive.google.com/file/d/1ILaUw0bmgUb1qJh_q1G5ffwY_W2FClD0/view?usp=sharing)
-* Processed telemetry file
+<img class="img-fluid" src="/assets/images/blog/2022-06-03/GS010010-pitch-RPY.png" alt="GS010010 roll pitch yaw" title="GS010010 roll pitch yaw" />
 
-Insert graphs here
+<img class="img-fluid" src="/assets/images/blog/2022-06-03/GS010010-pitch-heading.png" alt="GS010010 heading" title="GS010010 heading" />
 
 ### Roll change (GS010011.mp4)
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GDtz_K6k-Dg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-* [Original telemetry file](https://drive.google.com/file/d/1zJpFSf-d0D7uptsy9iEGLV-UE-w3hzO3/view?usp=sharing)
-* Processed telemetry file
+<img class="img-fluid" src="/assets/images/blog/2022-06-03/GS010011-roll-RPY.png" alt="GS010011 roll pitch yaw" title="GS010011 roll pitch yaw" />
 
-Insert graphs here
+<img class="img-fluid" src="/assets/images/blog/2022-06-03/GS010011-roll-heading.png" alt="GS010011 heading" title="GS010011 rheading" />
 
 ### Yaw change (GS010012.mp4)
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kBlqZx21_6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-* [Original telemetry file](https://drive.google.com/file/d/1ncZIhTg-jm7eXdsuVzN2ZWz6Us7GUHkv/view?usp=sharing)
-* Processed telemetry file
+<img class="img-fluid" src="/assets/images/blog/2022-06-03/GS010012-yaw-RPY.png" alt="GS010012 roll pitch yaw" title="GS010012 roll pitch yaw" />
 
-Insert graphs here
+<img class="img-fluid" src="/assets/images/blog/2022-06-03/GS010012-yaw-heading.png" alt="GS010012 heading" title="GS010012 rheading" />
 
 ## In summary...
 
@@ -122,4 +121,4 @@ The `HEAD` value now reported for each frame tells us what compass direction the
 
 Next week I will use the calculated `HEAD` samples with an ffmpeg filter to dynamically adjust the yaw of our World Lock video (to reverse the World Lock effect).
 
-_A big shoutout to Kanishk K who helped me understand the mathematics that contibuted to this post._
+_A big shoutout to [Kanishk K](https://www.linkedin.com/in/kanishk-k/) who (patiently) helped me understand the mathematics that contibuted to this post._

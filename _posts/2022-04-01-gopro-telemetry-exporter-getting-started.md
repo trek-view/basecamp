@@ -97,11 +97,17 @@ And in the directory, you should see a `.json` file called `GS018422-full-teleme
 
 ## 4. Examining the output
 
-Depending on the camera, model, settings and accessories used, you will see values reported for various `streams`, e.g. (`ACCL`: 3-axis accelerometer, `GYRO`: 3-axis gyroscope, `GPS5`: Latitude, longitude, altitude (WGS 84), 2D ground speed, and 3D speed...)
+Depending on the camera, model, settings and accessories used, you will see values reported for various `streams`, e.g. (`ACCL`: 3-axis accelerometer, `GYRO`: 3-axis gyroscope, `GPS5`: Latitude, longitude, altitude (WGS 84), 2D ground speed, and 3D speed...).
+
+It's also worth pointing out, older cameras report the same type of data in different ways. For example, the `GPS5` stream is used on newer GoPro cameras, whereas I'm told (although can't validate) for HERO 4 and older cameras this is reported as `GLPI`.
 
 [You can find information on what many sensors are called (and what cameras / modes produce data for them) here](https://github.com/gopro/gpmf-parser#where-to-find-gpmf-data).
 
-For our work we're mainly interested values from the GPS, accelerometer and gyroscope sensors. Here are some snippets of how this data is presented (I have added comments into the code to describe some of the values too):
+For our work we're mainly interested values from the GPS, accelerometer and gyroscope sensors. Here are some snippets of how this data is presented for a GoPro MAX (I have added comments into the code to describe some of the values too).
+
+For reference, here is GoPro sensor `x`, `y`, and `z` axis configuration;
+
+<img class="img-fluid" src="/assets/images/blog/2022-04-01/CameraIMUOrientationSM.png" alt="GoPro IMU Orientation" title="GoPro IMU Orientation" />
 
 ### GPS `GPS5`
 
@@ -185,9 +191,16 @@ Which is reported like so;
         "units":"rad/s"}
 ```
 
-### `x`, `y`, and `z` axes
+### Camera / video information
 
-<img class="img-fluid" src="/assets/images/blog/2022-04-01/CameraIMUOrientationSM.png" alt="GoPro IMU Orientation" title="GoPro IMU Orientation" />
+At the end of the JSON document you'll also find the camera and framerate used to create the video, like so
+
+```json
+    "device name":"GoPro Max"
+  },
+  "frames/second":23.976023976023978
+}
+```
 
 ## 5. Experiment with some custom options
 

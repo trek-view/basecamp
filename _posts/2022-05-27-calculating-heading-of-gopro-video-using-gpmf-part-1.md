@@ -66,7 +66,7 @@ Luckily for us, the GoPro GPMD telemetry allows us to calculate true heading for
 
 For reference here is GoPro sensor axis configuration for the sensors;
 
-<img class="img-fluid" src="/assets/images/blog/2022-05-20/CameraIMUOrientationSM.png" alt="GoPro Camera Axis Orientation" title="GoPro Camera Axis Orientation" />
+<img class="img-fluid" src="/assets/images/blog/2022-05-27/CameraIMUOrientationSM.png" alt="GoPro Camera Axis Orientation" title="GoPro Camera Axis Orientation" />
 
 ### `CORI` (Camera orientation values)
 

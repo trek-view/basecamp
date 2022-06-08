@@ -19,13 +19,13 @@ To do this, we can take exactly the same approach as I showed you for images in 
 
 That is;
 
-1. take the first heading reported in telemetry, and assume that as the World Lock heading
+1. take the first heading reported in the calculated telemetry file, and assume that as the World Lock heading
 2. calculate the yaw adjustment needed using the calculation `true heading` (reported in telemetry .json) - `World Lock heading` (calculated at step 1)
 3. pass the value to ffmpeg
 
-It's easy to align frames to heading values, because we have a `HEAD` value for each frame, so we just iterate through frames and `HEAD` values to make the adjustment.
+It's easy to align frames to heading values, because we have a `HEAD` value for each frame (with `date` and `cts` times), so we just iterate through frames and `HEAD` values to make the adjustment.
 
-`cts`
+TODO
 
 
 ## Is dynamic yaw adjustment only useful for World Lock mode?
