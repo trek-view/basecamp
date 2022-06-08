@@ -17,7 +17,7 @@ Did you see my post last week?; [Adjusting the yaw of an equirectangular 360 pho
 
 The example used extracted equirectangular frames. However, in the case of videos there are more efficient ways to achieve the same thing, as I'll show you in this post.
 
-Assuming the yaw is off by a fixed direction during the video, for example the camera was facing the wrong direction, this is quite easy using ffmpeg.
+Assuming the yaw is off by a fixed direction during the video, for example the camera was facing the wrong direction or the monopod was angled slightly left or right for the duration of the video, this is quite easy using ffmpeg.
 
 I'll use the same World Lock example video from last week.
 
@@ -56,25 +56,23 @@ And after:
 
 See how the video now faces in the opposite direction, because the yaw has been offset in each video frame by 180 degrees.
 
-Of course, this hasn't helped me in World Lock. Unlike a fixed offset for yaw a badly angled tripod will cause, the World Lock offset is dynamic with each frame.
+Of course, this hasn't helped my video processed in World Lock mode. Unlike a fixed offset for yaw, the World Lock offset is dynamic with each frame.
 
-Luckily for us, the GoPro's GPMD telemetry allows us to calculate true heading for each frame in the video. 
+Luckily for us, the GoPro GPMD telemetry allows us to calculate true heading for each frame in the video. 
 
-I've talked about extracting GoPro telemetry previously with regards to GPS points.
+[I've talked about extracting GoPro telemetry previously with regards to GPS points](/blog/2022/gopro-telemetry-exporter-getting-started).
 
 [The GPMD telemetry includes a whole host of data](/blog/2022/evolution-of-gopro-camera-sensors-gpmf), including `MAGN` (values recorded by the cameras Magnetometer) and `CORI` (Camera Orientation).
 
-Heading can be calculated by synchronising `CORI` and `MAGN` data. Before we jump into that, let's first better understand the values for these fields.
-
-For reference here is GoPro sensor axis configuration too;
+For reference here is GoPro sensor axis configuration for the sensors;
 
 <img class="img-fluid" src="/assets/images/blog/2022-05-20/CameraIMUOrientationSM.png" alt="GoPro Camera Axis Orientation" title="GoPro Camera Axis Orientation" />
 
 ### `CORI` (Camera orientation values)
 
-In GMPD, Camera orientation is a relative measurement (the orientation relative to the orientation the sensor had when the acquisition started), as opposed to an absolute measurement, like we calculated for heading in a previous step (the orientation absolute to magnetic north).
+In GMPD, Camera orientation is a relative measurement (the orientation relative to the orientation the sensor had when the acquisition started), as opposed to an absolute measurement (like orientation to magnetic north).
 
-The first `CORI` value for our original example video (`GS010013-worldlock.mp4`) looks like this ([extracted using gopro-telemetry](/blog/2022/gopro-telemetry-exporter-getting-started));
+The first `CORI` value for our example World Lock video (`GS010013-worldlock.mp4`) looks like this ([extracted using gopro-telemetry](/blog/2022/gopro-telemetry-exporter-getting-started));
 
 ```json
 "CORI":{
@@ -97,9 +95,9 @@ I won't try explaining Quaternions here, but recommend this video which helped m
 
 I'd also recommend this post on the subject; [How to think about Quaternions](https://scriptinghelpers.org/blog/how-to-think-about-quaternions).
 
-Camera Orientation is reported at the same frame rate as the video (which can vary depending on what framerate setting was set on the camera, and is also reported in the telemetry as `"frames/second"`).
+Camera Orientation (Quaternions) is reported at the same frame rate as the video (which can vary depending on what framerate setting was set on the camera, and is also reported in the telemetry as `"frames/second"`).
 
-The relative Quarternation samples can therefore be used to calculate absolute pitch and roll angles for each frame in the video.
+The relative Quarternation samples can therefore be used to calculate absolute yaw, pitch, and roll angles for each frame in the video.
 
 ### `MAGN` (Magnetometer values)
 

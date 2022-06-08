@@ -76,7 +76,6 @@ _Note, this photo is not truly level. A level horizon on flat ground would cross
 
 
 
-
 ## Dealing with roll uniformly
 
 In cases where the roll is fixed throughout the video, for example, where the camera is mounted to a fixed point, but the mount point is not level, can be trivial.
@@ -103,6 +102,10 @@ Breaking down the arguments passed to the video filter flag `-vf`:
 Note, passing 0 for `yaw`, `pitch` or `roll` essentially means leave it unchanged, so passing `yaw=0` and `pitch=0` has no effect here. I just include them as a demo of passing multiple parameters to the filter.
 
 [Check out the full documentation for the `v360` filter here](https://ffmpeg.org/ffmpeg-filters.html#v360).
+
+
+
+
 
 This command results in a video like this:
 

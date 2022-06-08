@@ -26,3 +26,15 @@ That is;
 It's easy to align frames to heading values, because we have a `HEAD` value for each frame, so we just iterate through frames and `HEAD` values to make the adjustment.
 
 `cts`
+
+
+## Is dynamic yaw adjustment only useful for World Lock mode?
+
+Unlike pitch and roll adjustments (that I will talk about next week), yaw is much more subjective. 
+
+When World Lock mode is not used, yaw=0 will always be the direction the front lens is facing.
+
+As noted in post on
+
+
+## Automatinng t

@@ -38,6 +38,8 @@ Therefore, we can also use the magnetometer samples (in addition to roll and pit
 
 ## Calculation Yaw from `MAGN` and `CORI` samples
 
+Heading can be calculated by synchronising `CORI` and `MAGN` data. Before we jump into that, let's first better understand the values for these fields.
+
 The first challenge is the difference is sampling rates.
 
 `CORI` reports samples at the same framerate the video was shot. The magnetometer `MAGN` samples are taken at an approximate frequency of 24Hz.
