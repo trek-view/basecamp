@@ -105,7 +105,7 @@ Let's take a look at what this data looks like for some sample videos where I've
 
 <img class="img-fluid" src="/assets/images/blog/2022-06-03/GS010011-roll-RPY.png" alt="GS010011 roll pitch yaw" title="GS010011 roll pitch yaw" />
 
-<img class="img-fluid" src="/assets/images/blog/2022-06-03/GS010011-roll-heading.png" alt="GS010011 heading" title="GS010011 rheading" />
+<img class="img-fluid" src="/assets/images/blog/2022-06-03/GS010011-roll-heading.png" alt="GS010011 heading" title="GS010011 heading" />
 
 ### Yaw change (GS010012.mp4)
 
@@ -113,12 +113,10 @@ Let's take a look at what this data looks like for some sample videos where I've
 
 <img class="img-fluid" src="/assets/images/blog/2022-06-03/GS010012-yaw-RPY.png" alt="GS010012 roll pitch yaw" title="GS010012 roll pitch yaw" />
 
-<img class="img-fluid" src="/assets/images/blog/2022-06-03/GS010012-yaw-heading.png" alt="GS010012 heading" title="GS010012 rheading" />
+<img class="img-fluid" src="/assets/images/blog/2022-06-03/GS010012-yaw-heading.png" alt="GS010012 heading" title="GS010012 heading" />
 
 ## In summary...
 
 The `HEAD` value now reported for each frame tells us what compass direction the camera is pointing.
 
 Next week I will use the calculated `HEAD` samples with an ffmpeg filter to dynamically adjust the yaw of our World Lock video (to reverse the World Lock effect).
-
-_A big shoutout to [Kanishk K](https://www.linkedin.com/in/kanishk-k/) who (patiently) helped me understand the mathematics that contibuted to this post._
