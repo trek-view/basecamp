@@ -99,7 +99,7 @@ And in the directory, you should see a `.json` file called `GS018422-full-teleme
 
 Depending on the camera, model, settings and accessories used, you will see values reported for various `streams`, e.g. (`ACCL`: 3-axis accelerometer, `GYRO`: 3-axis gyroscope, `GPS5`: Latitude, longitude, altitude (WGS 84), 2D ground speed, and 3D speed...).
 
-It's also worth pointing out, older cameras report the same type of data in different ways. For example, the `GPS5` stream is used on newer GoPro cameras, whereas I'm told (although can't validate) for HERO 4 and older cameras this is reported as `GLPI`.
+It's also worth pointing out, older cameras report the same type of data in different ways. For example, the `GPS5` stream is used on newer GoPro cameras, whereas I'm told (although the only place I can validate this stream ever existed is in the [exiftool docs](https://exiftool.org/TagNames/GoPro.html)) for HERO 4 and older cameras this is reported as `GLPI`.
 
 [You can find information on what many sensors are called (and what cameras / modes produce data for them) here](https://github.com/gopro/gpmf-parser#where-to-find-gpmf-data).
 

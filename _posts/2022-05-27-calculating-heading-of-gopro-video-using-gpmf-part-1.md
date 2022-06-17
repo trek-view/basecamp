@@ -25,15 +25,7 @@ Here it is before yaw adjustment:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3Hces_LyGZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-If you remember back to a post I did for dynamic yaw adjustment in GoPro 360 videos earlier this month, I showed you a static way of using ffmpeg
-
-```shell
-ffmpeg -i GS010013-worldlock.mp4 -vf v360=e:e:yaw=180 -c:v libx265 GS010013-worldlock-yaw180.mp4
-```
-
-In addition to `yaw`, the `v360` filter also takes the arguements:
-
-And now with yaw adjusted by 180 degrees using the ffmpeg command
+The `v360` filter takes a fixed `yaw` values to apply to all frames like so;
 
 ```shell
 ffmpeg -i GS010013-worldlock.mp4 -vf v360=e:e:yaw=180 -c:v libx265 GS010013-worldlock-yaw180.mp4
@@ -50,7 +42,7 @@ _Don't forget to copy over global metadata too (the above ffmpeg command will on
 exiftool -TagsFromFile GS010013-worldlock.mp4 "-all:all>all:all" GS010013-worldlock-yaw180.mp4
 ```
 
-And after:
+And the result:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sBFqLfqVLQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -64,7 +56,7 @@ Luckily for us, the GoPro GPMD telemetry allows us to calculate true heading for
 
 [The GPMD telemetry includes a whole host of data](/blog/2022/evolution-of-gopro-camera-sensors-gpmf), including `MAGN` (values recorded by the cameras Magnetometer) and `CORI` (Camera Orientation).
 
-For reference here is GoPro sensor axis configuration for the sensors;
+For reference here is the GoPro sensor axis configuration for the sensors;
 
 <img class="img-fluid" src="/assets/images/blog/2022-05-27/CameraIMUOrientationSM.png" alt="GoPro Camera Axis Orientation" title="GoPro Camera Axis Orientation" />
 
