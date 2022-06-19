@@ -19,7 +19,7 @@ After receiving a common theme of questions, I'll dig a bit deeper into these co
 
 We'll treat it as a flying lesson.
 
-## Pitch (up to down)
+## Pitch (`x` axis on GoPro's) (up to down)
 
 <img class="img-fluid" src="/assets/images/blog/2020-03-06/aircraft-pitch.jpg" alt="Aircraft pitch diagram" title="Aircraft pitch diagram" />
 
@@ -27,11 +27,11 @@ Imagine sitting on the runway, waiting to take off. The plane speed down the run
 
 The angle the plane is facing from the horizon is the pitch. On the runway the pitch is 0. You are level with the ground. As the plane takes off, the pitch will be somewhere between 10-15 degrees (though it usually feels steeper!).
 
-Here's a visual example of pitch changing (pitch along the x axis):
+Here's a visual example of pitch changing:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xCjSPYIKN68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Roll (side to side)
+## Roll (`y` axis on GoPro's) (side to side)
 
 <img class="img-fluid" src="/assets/images/blog/2020-03-06/aircraft-roll.jpg" alt="Aircraft roll diagram" title="Aircraft roll diagram" />
 
@@ -39,11 +39,11 @@ Now we're in the air. Imagine the plane turning. One wing drops as the plane ban
 
 The angle of the wings, measured from a level position on the horizon, is the roll. If you're upside down (hopefully not!) the roll is 180 degrees.
 
-Here's a visual example of roll changing (roll along the z axis):
+Here's a visual example of roll changing (roll along the y axis):
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GDtz_K6k-Dg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Yaw (left to right)
+## Yaw (always `z` axis) (left to right)
 
 <img class="img-fluid" src="/assets/images/blog/2020-03-06/aircraft-yaw.jpg" alt="Aircraft yaw diagram" title="Aircraft yaw diagram" />
 
@@ -53,11 +53,11 @@ Yaw is the hardest to "feel" in flight. Have you ever seen a video of a plane la
 
 You'll see the fuselage of the plane is not parallel with the runway. It's at an angle (yaw) to the runway.
 
+Commonly yaw and heading are used interchangeable, however, they are not the same thing. Heading is absolute measurement from magnetic north, whereas yaw is relative (to whatever point you want to measure from).
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kBlqZx21_6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Commonly yaw and heading are used interchangeable, however, are not the same thing. Heading is absolute measurement from magnetic north, whereas yaw is relative (to whatever point you want to measure from).
-
-For example, in the video above you can measure yaw from the start of the video at 0, adding to the yaw angle as I turn until a full circle (360 degrees is completed). Whereas I am actually roughly facing South East (towards Cairngorm Mountain).
+For example, in the video above you can measure yaw from the start of the video at 0, adding to the yaw angle as I turn until a full circle (360 degrees is completed). Whereas I am actually roughly facing South East (towards the mountains).
 
 ## 360-Degree photos
 

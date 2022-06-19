@@ -48,7 +48,17 @@ And the result:
 
 See how the video now faces in the opposite direction, because the yaw has been offset in each video frame by 180 degrees.
 
-Of course, this hasn't helped my video processed in World Lock mode. Unlike a fixed offset for yaw, the World Lock offset is dynamic with each frame.
+## A note on `XMP-GSpherical` metadata tags
+
+A better way to account for fixed yaw offset is to use the [`XMP-GSpherical` `InitialViewHeadingDegrees` video metadata tag](https://exiftool.org/TagNames/XMP.html#GSpherical) to achieve the same result.
+
+The `InitialViewHeadingDegrees` determines the starting yaw of the camera. It will default to the center of the image horizontally (0 degrees). However, if you know there is a fixed offset you can account for it here.
+
+So using my previous example, I could set `XMP-GSpherical:InitialViewHeadingDegrees` to 180  and the video would play in the viewer in the same way as my ffmpeg processed video above (without any need for post-processing). 
+
+End note.
+
+Of course, in either case this does not my video processed in World Lock mode. Unlike a fixed offset for yaw, the World Lock offset is dynamic with each frame.
 
 Luckily for us, the GoPro GPMD telemetry allows us to calculate true heading for each frame in the video. 
 
@@ -59,6 +69,10 @@ Luckily for us, the GoPro GPMD telemetry allows us to calculate true heading for
 For reference here is the GoPro sensor axis configuration for the sensors;
 
 <img class="img-fluid" src="/assets/images/blog/2022-05-27/CameraIMUOrientationSM.png" alt="GoPro Camera Axis Orientation" title="GoPro Camera Axis Orientation" />
+
+* `x` = pitch
+* `y` = roll
+* `z` = yaw
 
 ### `CORI` (Camera orientation values)
 
@@ -105,7 +119,7 @@ The first `MAGN` value for our original example video (`GS010013-worldlock.mp4`)
 	},
 ```
 
-Values from the Magnetometer are reported in the axis order `z`,`x`,`y` in MicroTeslas. 
+Values from the Magnetometer are reported in the axis order `z` (yaw),`x` (pitch),`y` (roll) in MicroTeslas. 
 
 MicroTeslas measure magnetic flux density (often referred to as the magnetic fields).
 

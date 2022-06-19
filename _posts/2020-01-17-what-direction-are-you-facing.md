@@ -137,12 +137,6 @@ This an easy calculation to estimate using existing heading fields; `adjusted he
 
 You will see there is no adjusted heading for the next photo by time (e.g P2 to P3). It does exist, but is not shown in the diagram because the adjusted photo heading for the next photo by time (heading) will always be 0. For example, heading from P2 to P3 = x, and adjusted heading for P2 to P3 = x (heading) - x (connection heading) = 0.
 
-## Jump into the code
-
-We are not geospacial experts and know these calculations can probably be improved in place of estimates. You can help us out...
-
-[All the code for our Sequence Maker is open source](https://github.com/trek-view/sequence-maker).
-
 ## Update 2021-10-07
 
 You might also like the post; [Using trigonometry to calculate how north, east, and vertical velocity](/blog/2021/calculating-velocity-between-two-sequence-photos)

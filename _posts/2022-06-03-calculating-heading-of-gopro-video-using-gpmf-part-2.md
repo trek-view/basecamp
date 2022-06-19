@@ -28,7 +28,11 @@ To calculate these values we take the four Quarternation values (Euler Parameter
 Now the equations to do this are somewhat complex, as you'll see from a cursory scan of this Wikipedia article; [Conversion between Quaternions and Euler angles](
 https://en.wikipedia.org/wiki/Conversion_between_quaternions_and_Euler_angles).
 
-As we have data for all three axis it is possible to calculate yaw in addition to roll and pitch as `roll_x`, `pitch_y`, `yaw_z` in radians for every frame in the video (remember the sample rate for `CORI` data matches the framerate of the video).
+As we have data for all three axis it is possible to calculate yaw in addition to roll and pitch as `pitch_x`, `roll_y`, `yaw_z` in radians for every frame in the video (remember the sample rate for `CORI` data matches the framerate of the video).
+
+Specifically for `roll_y` and `pitch_x`, the measurements in line with the way GoPro orientate the `x` and `y` axis;
+
+<img class="img-fluid" src="/assets/images/blog/2022-06-03/CameraIMUOrientationSM.png" alt="GoPro IMU Orientation" title="GoPro IMU Orientation" />
 
 We can store this in a new stream value `RPYR`. We can also convert it to degrees knowing that `1Rad × 180/π` = `57.296` degrees as a field `RPYD`.
 
@@ -73,10 +77,10 @@ We can store the `M_yaw` values in a new stream `HEAR` which reports the magneti
 In summary this gives us 5 new streams in the telemetry file
 
 * `RPYR`:
-	* name: roll, pitch, yaw (x,y,z)
+	* name: roll, pitch, yaw (y,x,z)
 	* units: radians
 * `RPYD`
-	* name: roll, pitch, yaw (x,y,z)
+	* name: roll, pitch, yaw (y,x,z)
 	* units: degrees
 * `HEAR`
 	* name: magnetic heading
@@ -91,7 +95,7 @@ Let's take a look at what this data looks like for some sample videos where I've
 
 [You can download the files used here](https://drive.google.com/drive/u/1/folders/1cgAmMHVTFZA2RK7ZYpEs50B-XGdIP_Sz).
 
-### Pitch change (GS010010.mp4)
+### Pitch (`x` axis) change (GS010010.mp4)
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xCjSPYIKN68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -99,7 +103,7 @@ Let's take a look at what this data looks like for some sample videos where I've
 
 <img class="img-fluid" src="/assets/images/blog/2022-06-03/GS010010-pitch-heading.png" alt="GS010010 heading" title="GS010010 heading" />
 
-### Roll change (GS010011.mp4)
+### Roll (`y` axis) change (GS010011.mp4)
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GDtz_K6k-Dg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -107,7 +111,7 @@ Let's take a look at what this data looks like for some sample videos where I've
 
 <img class="img-fluid" src="/assets/images/blog/2022-06-03/GS010011-roll-heading.png" alt="GS010011 heading" title="GS010011 heading" />
 
-### Yaw change (GS010012.mp4)
+### Yaw (`z` axis) change (GS010012.mp4)
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kBlqZx21_6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

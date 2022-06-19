@@ -35,8 +35,8 @@ My proposed ffmpeg workflow is as follows;
 3. Take the first frames heading from the telemetry `HEAD` stream (the World Lock heading)
 4. Take each frames heading value from the telemetry `HEAD` stream
 5. Calculate the delta (frame `HEAD` value - first frames `HEAD` value)
-6. Adjust each framee using ffmpeg `v360` filter with the `yaw` value set to the delta calculated at step 5 for each frame
-	* `ffmpeg -i <frame_path> -vf v360=input=e:e:<yaw:roll:pitch> <out_path>`
+6. Adjust each frame using ffmpeg `v360` filter with the `yaw` `Z` value set to the delta calculated at step 5 for each frame
+	* `ffmpeg -i <frame_path> -vf v360=input=e:e:yaw=Z <out_path>`
 7. Rebuild the video from frames adjusted in the last step
 	* `ffmpeg -y -r <frame_rate_str> -f concat -safe 0 -i images.txt -c:v libx264 -vf "fps=<frame_rate_str>,format=yuv420p" <out.mp4>`
 7. Copy the other video streams (audio and telemetry) to the newly processed video (with adjusted yaw) from the original video
@@ -72,11 +72,11 @@ Though it sounds simple, this topic gets complex very quickly. If I wanted to, I
 
 ## Is dynamic yaw adjustment only useful for World Lock mode?
 
-Unlike pitch and roll adjustments (that I will talk about next week), yaw is more of a creative option.
+When World Lock mode is not used, yaw=0 will always be the direction the front lens is facing. 
 
-When World Lock mode is not used, yaw=0 will always be the direction the front lens is facing. 99% of the time this is fine.
+Many smoothing algorithms that stabilise the footage, for example GoPro's Hypersmooth, use yaw (`z`), roll (`y`), and pitch (`x`) as inputs. Having the whole panorama available means these algorithms can take advantage of these three planes combined to create the smoothest visual output.
 
-The other use-case for dynamic yaw adjustment in non-World Lock modes is target fixation.
+The other main use-case for dynamic yaw adjustment in non-World Lock modes is target fixation, a technique that is becoming increasingly popular.
 
 For example, lets say in my video I wanted the camera to stay fixed on a car as I moved.
 
@@ -92,4 +92,8 @@ With actual heading for each frame, and heading of the object you can then find 
 
 The implementation discussed over the last 3 weeks was fully implemented by us as proof-of-concept code.
 
-If you want to give it a try for yourself, [check out our GoPro RPY repository on GitHub](https://github.com/trek-view/gopro-rpy/), which will perform the UnWorld Lock process described.
+If you want to give it a try for yourself, [check out our GoPro RPY repository on GitHub](https://github.com/trek-view/gopro-rpy/), which will perform the UnWorld Lock process described using the following command;
+
+```shell
+python3 main.py TELEMETRY.json --plot true --video_input VIDEO.mp4 --mode unworldlock
+```

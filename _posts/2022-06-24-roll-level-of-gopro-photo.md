@@ -1,7 +1,7 @@
 ---
 date: 2022-05-27
 title: "Automatic horizon leveling of GoPro 360 videos (Part 2)"
-description: "A proof-of-concept to dynamically adjust for camera roll in equirectangular videos."
+description: "Analysing what camera roll looks like in equirectangular videos and how to account for it."
 categories: developers
 tags: [ffmpeg, yaw, pitch, roll, equirectangular, video]
 author_staff_member: dgreenwood
@@ -10,6 +10,15 @@ featured_image: /assets/images/blog/2022-05-27/
 layout: post
 published: false
 ---
+
+Analysing what camera roll looks like in equirectangular videos and how to account for it.
+
+
+usually in `XMP-GPano` tags:
+
+
+
+
 
 **A proof-of-concept to dynamically adjust for camera roll in equirectangular videos.**
 
