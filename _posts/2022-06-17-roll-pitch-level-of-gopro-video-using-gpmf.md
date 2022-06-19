@@ -67,7 +67,7 @@ Using my example roll video from a few weeks ago;
 
 And then implementing the steps described to level roll gives an output like so;
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VUIww0_675A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sLwrGJQMIxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 It works, but like with yaw, it is a bit shaky, hence a high or low pass filter on the telemetry during calculations should really be considered ([see last weeks post for more on that subject](/blog/2022/calculating-heading-of-gopro-video-using-gpmf-part-3)).
 
@@ -93,7 +93,7 @@ As a reminder, here's the original pitching video:
 
 And the output of GoPro RPY with pitch level:
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rjPtyUIOqSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9fwi2JO08D4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Important note: our GoPro RPY script does not account for pitch outside of `-90` to `90` degrees (that is, when camera is upside down).
 

@@ -48,7 +48,7 @@ Reviewing the original World Lock video I built this proof-of-concept for:
 
 And now, here it is after adjusting for World Lock (or as I like to call it, UnWorld Lock):
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rZxu6p-ABJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nCFRQ0pFDNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 It works!
 
