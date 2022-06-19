@@ -52,7 +52,7 @@ See how the video now faces in the opposite direction, because the yaw has been 
 
 A better way to account for fixed yaw offset is to use the [`XMP-GSpherical` `InitialViewHeadingDegrees` video metadata tag](https://exiftool.org/TagNames/XMP.html#GSpherical) to achieve the same result.
 
-The `InitialViewHeadingDegrees` determines the starting yaw of the camera. It will default to the center of the image horizontally (0 degrees). However, if you know there is a fixed offset you can account for it here.
+The `InitialViewHeadingDegrees` determines the starting yaw of the camera. It will default to the center of the image. However, if you know there is a fixed offset you can account for it here.
 
 So using my previous example, I could set `XMP-GSpherical:InitialViewHeadingDegrees` to 180  and the video would play in the viewer in the same way as my ffmpeg processed video above (without any need for post-processing). 
 
