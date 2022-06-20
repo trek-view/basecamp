@@ -120,6 +120,12 @@ In our videos, we often want to ignore the first few seconds and last few second
 
 If you need to extract only a specific part of your input, you'll need to use the seeking option to get to that specific part in the input first](https://trac.ffmpeg.org/wiki/Seeking.
 
+To extract frames at a certain time (time is passed as either `HH:MM:SS` or `HH:MM:SS.SSS` when subseconds are needed):
+
+```shell
+ffmpeg -ss 00:23:45.000 -i GS018421.mp4 -r 1 -q:v 2 GS018421_002345.jpg
+```
+
 To extract all frames between 5 and 14 seconds:
 
 ```shell

@@ -241,22 +241,25 @@ Choose the file format suited to the software you're planning to use the outputt
 
 In this post I'm only considering `GPSLatitude`, `GPSLongitude`, `GPSAltitude` and `GPSDateTime` values.
 
-EXIF defined telemetry orientation data tags also include:
+[Other GPS orientation data tags are](https://exiftool.org/TagNames/GPS.html):
 
-* GPSSpeed
-* GPSImgDirection
-* GPSPitch        
-* GPSTrackRef
-* GPSSpeedRef
-* GPSImgDirectionRef
-* GPSRoll
-* CameraElevationAngle
+* `GPS:GPSSpeed`
+* `GPS:GPSSpeedRef`
+* `GPS:GPSTrackRef`
+* `GPS:GPSImgDirection`
+* `GPS:GPSImgDirectionRef`
+* `GPS:GPSPitch`      
+* `GPS:GPSRoll`
 
-XMP telemetry orientation data tags include:
+* [EXIF orientation data tags are](https://exiftool.org/TagNames/EXIF.html):
 
-* PoseHeadingDegrees
-* PosePitchDegrees
-* PoseRollDegrees
+* `EXIF:CameraElevationAngle`
+
+[XMP orientation data tags are](https://exiftool.org/TagNames/XMP.html#GPano):
+
+* `XMP-GPano:PoseHeadingDegrees`
+* `XMP-GPano:PosePitchDegrees`
+* `XMP-GPano:PoseRollDegrees`
 
 It's important to note that none of these are valid `gpx` fields.
 
