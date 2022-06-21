@@ -1,71 +1,71 @@
 ---
 date: 2022-06-24
-title: "Automatic horizon leveling of GoPro 360 videos (Part 2)"
-description: "Analysing what camera roll looks like in equirectangular videos and how to account for it."
+title: "Automatic horizon leveling of GoPro 360 photos (Part 1)"
+description: "Analysing what camera roll looks like in equirectangular photos and how to account for it."
 categories: developers
-tags: [ffmpeg, yaw, pitch, roll, equirectangular, video]
+tags: [ffmpeg, yaw, pitch, roll, equirectangular, photo]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-06-24/
-featured_image: /assets/images/blog/2022-06-24/
+image: /assets/images/blog/2022-06-24/GS018421_000003-meta.jpg
+featured_image: /assets/images/blog/2022-06-24/GS018421_000003-sm.jpg
 layout: post
 published: false
 ---
 
-Analysing what camera roll looks like in equirectangular videos and how to account for it.
+**Analysing what camera roll looks like in equirectangular photos and how to account for it.**
 
-As I've mentioned on the blog many times, almost all cameras include the following [GPS tags](https://exiftool.org/TagNames/GPS.html) in the metadata of photos they take;
+As I have mentioned on the blog many times, almost all 360 cameras include the following [GPS tags](https://exiftool.org/TagNames/GPS.html) in the metadata of photos they take;
 
-* `GPS:GPSLatitudeRef`
-* `GPS:GPSLatitude`
-* `GPS:GPSLongitudeRef`
-* `GPS:GPSLongitude`
-* `GPS:GPSAltitudeRef`
-* `GPS:GPSAltitude`
-* `GPS:GPSTimeStamp`
-* `GPS:GPSDateStamp`
+* `GPS:GPSLatitude`: [decimal Latitude](/blog/2021/reading-decimal-gps-coordinates-like-a-computer)
+* `GPS:GPSLatitudeRef`: `E` (East) or `W` (West)
+* `GPS:GPSLongitude`: decimal Longitude
+* `GPS:GPSLongitudeRef`: `N` (North) or `S` (South)
+* `GPS:GPSAltitude`: decimal Altitude
+* `GPS:GPSAltitudeRef`: `0` (Above Sea Level) or `1` (Below Sea Level)
+* `GPS:GPSTimeStamp`: UTC time of GPS fix
+* `GPS:GPSDateStamp`: Date of GPS fix
 
-I have also previously mentioned, [including in my last 4 posts looking at roll, pitch and yaw](/blog/2022/calculating-heading-of-gopro-video-using-gpmf-part-1), how some manufacturers include additional [`GPS`](https://exiftool.org/TagNames/GPS.html),
- [EXIF](https://exiftool.org/TagNames/EXIF.html) and [`XMP-GPano`](https://exiftool.org/TagNames/XMP.html#GPano) metadata in photos taken that contain information or have been derived from information by other sensors from the camera, in addition to GPS. In addition commonly these include:
+I have also previously touched on, [including in my last 4 posts looking at roll, pitch and yaw](/blog/2022/calculating-heading-of-gopro-video-using-gpmf-part-1), how some manufacturers include additional [`GPS`](https://exiftool.org/TagNames/GPS.html), [EXIF](https://exiftool.org/TagNames/EXIF.html) and [`XMP-GPano`](https://exiftool.org/TagNames/XMP.html#GPano) metadata in photos taken that contain information or have been derived from information by other sensors in the camera, in addition to GPS. These include:
 
-
-* `XMP-GPano:PoseHeadingDegrees`
-* `XMP-GPano:PosePitchDegrees`
-* `XMP-GPano:PoseRollDegrees`
-* `GPS:GPSImgDirection`
-* `GPS:GPSImgDirectionRef`
-* `GPS:GPSPitch`      
-* `GPS:GPSRoll`
-* `EXIF:CameraElevationAngle`
+* `XMP-GPano:PoseHeadingDegrees`: Heading in degrees
+* `XMP-GPano:PosePitchDegrees`: Pitch in degrees
+* `XMP-GPano:PoseRollDegrees`: Roll in degrees
+* `GPS:GPSImgDirection`: Heading in degrees
+* `GPS:GPSImgDirectionRef`: either `T` (True direction) or `M` (Magnetic direction)
+* `GPS:GPSPitch`: Pitch angle in degrees
+* `GPS:GPSRoll`: Roll angle in degrees
+* `EXIF:CameraElevationAngle`: Pitch angle in degrees with positive pitch upwards
 
 Note, it is important to note the difference between `XMP-GPano:Pose...` and `XMP-GPano:InitialView...` tags;
 
-* `XMP-GPano:InitialViewHeadingDegrees`
-* `XMP-GPano:InitialViewPitchDegrees`
-* `XMP-GPano:InitialViewRollDegrees`
+* `XMP-GPano:InitialViewHeadingDegrees`: Heading offset in degrees
+* `XMP-GPano:InitialViewPitchDegrees`: Pitch offset in degrees
+* `XMP-GPano:InitialViewRollDegrees`: Roll offset in degrees
 
-As touched on in the last few posts, `XMP-GPano:InitialView...`, is only concerned with the viewer. Any value (in degrees) set for these fields will offset the viewer, but have no relation to the actual heading, pitch, or roll in the real world.
+As touched on in the last few posts, `XMP-GPano:InitialView...`, is only concerned with the viewer. Any value (in degrees) set for these fields will offset the viewer from corresponding `XMP-GPano:Pose...` values, but have no relation to the actual heading, pitch, or roll in the real world.
 
 Where as `XMP-GPano:Pose...` considers the real world heading, pitch, or roll.
 
-If `XMP-GPano:Pose...` values are not set, the `XMP-GPano:InitialView...` values entered will be offset from 0 (it's default). If `XMP-GPano:Pose...` values are set, the respective `XMP-GPano:InitialView...` values will be offset from the `XMP-GPano:Pose...` values set.
+If `XMP-GPano:Pose...` values are not set, the `XMP-GPano:InitialView...` values entered will be offset from 0 (its default value if none set). If `XMP-GPano:Pose...` values are set, the respective `XMP-GPano:InitialView...` values will be offset from the `XMP-GPano:Pose...` values set.
 
-All being said, GoPro 360 Cameras do not include any information in photos taken on the MAX and Fusion 360 cameras beyond GPS positional information.
+All that being said, GoPro 360 Cameras do not include any information in photos beyond GPS positional information.
 
-[I've talked previously about calculating rough values](/blog/2020/what-direction-are-you-facing) for heading and pitch by working out the heading and the pitch to the next photo in a photo sequence (using latitude, longitude, and altitude values which are reported in the photos metadata).
+[I've talked previously about calculating rough values](/blog/2020/what-direction-are-you-facing) for heading and pitch by working out the heading and the pitch to the next photo in a photo sequence (using latitude, longitude, and altitude values which are reported in the photos metadata) that could be used for some of these additional meta tags.
 
-In an attempt to try an level the horizon of my 360 photos (like I did for videos), I need to the calculate roll values, however, non of the aforementioned data captured helps to determine this like pitch and yaw.
+In an attempt to try an level the horizon of my 360 photos (like I did for videos), I need to be able to calculate roll values, however, non of the aforementioned data captured (or calculated) allows me to do this.
 
-Therefore the following posts detail my attempt to try and estimate roll in photos taken from my GoPro 360 cameras.
+Therefore the following posts detail my attempt to try and estimate roll in photos taken on GoPro 360 cameras (or any 360 camera where such values are not written into the photos).
 
 ## What roll looks like in equirectangular projections
 
-When you have look at enough equirectangular photos outside of a 360 viewer, you begin to identify roll by eye.
+When you have look at enough equirectangular photos outside of a 360 viewer you begin to identify roll by eye.
 
-Let me demonstrate.
+Let me demonstrate...
 
 Using my example roll video from a few weeks ago;
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GDtz_K6k-Dg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+_It's important to note, the horizon/ground I'm standing on is fairly flat (more on why that is important later)._
 
 I have extracted frames at roughly (done by eye) 0 degrees, 45 degrees, 90 degrees, 135 degrees, 180 degrees, 225 degrees, 270 degrees, and 315 degrees.
 
@@ -141,10 +141,20 @@ ffmpeg -ss 00:00:16 -i GS010011.mp4 -frames:v 1 -q:v 40 GS018421_000016.jpg
 
 <img class="img-fluid" src="/assets/images/blog/2022-06-24/GS018421_000016-annotated.jpg" alt="Example Roll 315 Degrees" title="Example Roll 315 Degrees" />
 
-## Reviewing the wave
+#### Reviewing the wave (with a clear horizon)
 
-You can see clear patterns as the camera rolls around the `y` axis. As the roll increases to 45 the sine wave gets increasingly distorted. As it reaches 90 degrees the curve gets flatter and it gets closer to a square wave. As it gets closer to 135 degrees, the sine wave flattens and is a mirror (horizontally) of the 45 degree wave.
+You can see clear patterns as the camera rolls around the `y` axis.
 
-As a human, this pattern is easy to spot assuming a good proportion of the ground is visible. Though could a computer detect this?
+As the roll increases to 45 the sine wave gets increasingly distorted. As it reaches 90 degrees the curve gets flatter and it gets closer to a square wave. As it gets closer to 135 degrees, the sine wave flattens again, and this time is a horizontal mirror of the 45 degree wave.
 
+As a human, this pattern is fairly easy to spot assuming a good proportion of a horizon is visible and fairly level. It gets a bit more complicated when there are obstructions to the horizon.
 
+#### Dealing with obstructions to the horizon
+
+Here is a photo taken along a ridge line.
+
+<img class="img-fluid" src="/assets/images/blog/2022-06-24/GSAD0340-annotated.jpg" alt="Example Roll 315 Degrees" title="Example Roll 315 Degrees" />
+
+The camera is fairly level, as you can see from the annotated horizon. However, without the annotation, the rising ridge in front of the camera makes it a little harder to spot as a human at first glance.
+
+But what about a computer? More on that next week...
