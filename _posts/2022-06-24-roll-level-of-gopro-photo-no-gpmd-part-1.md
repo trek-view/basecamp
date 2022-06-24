@@ -1,6 +1,6 @@
 ---
 date: 2022-06-24
-title: "Automatic horizon leveling of GoPro 360 photos (Part 1)"
+title: "Automatic horizon leveling of GoPro 360 photos (with no GPMD) (Part 1)"
 description: "Analysing what camera roll looks like in equirectangular photos and how to account for it."
 categories: developers
 tags: [ffmpeg, yaw, pitch, roll, equirectangular, photo]
@@ -8,7 +8,7 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2022-06-24/GS018421_000003-meta.jpg
 featured_image: /assets/images/blog/2022-06-24/GS018421_000003-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **Analysing what camera roll looks like in equirectangular photos and how to account for it.**
@@ -157,4 +157,4 @@ Here is a photo taken along a ridge line.
 
 The camera is fairly level, as you can see from the annotated horizon. However, without the annotation, the rising ridge in front of the camera makes it a little harder to spot as a human at first glance.
 
-But what about a computer? More on that next week...
+But what about a computer? I will take a look at that next week...
