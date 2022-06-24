@@ -141,7 +141,7 @@ ffmpeg -ss 00:00:16 -i GS010011.mp4 -frames:v 1 -q:v 40 GS018421_000016.jpg
 
 <img class="img-fluid" src="/assets/images/blog/2022-06-24/GS018421_000016-annotated.jpg" alt="Example Roll 315 Degrees" title="Example Roll 315 Degrees" />
 
-#### Reviewing the wave (with a clear horizon)
+## Reviewing the wave (with a clear horizon)
 
 You can see clear patterns as the camera rolls around the `y` axis.
 
@@ -149,7 +149,7 @@ As the roll increases to 45 degrees the sine wave gets increasingly distorted. A
 
 As a human, this pattern is fairly easy to spot assuming a good proportion of a horizon is visible and fairly level. It gets a bit more complicated when there are obstructions to the horizon or the photos is in an enclosed space.
 
-#### Dealing with obstructions to the horizon
+## Dealing with obstructions to the horizon
 
 As almost all our photos are taken outdoors, I won't consider photos taken indoors in these posts.
 
