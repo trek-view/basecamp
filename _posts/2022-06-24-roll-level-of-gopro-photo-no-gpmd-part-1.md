@@ -24,7 +24,7 @@ As I have mentioned on the blog many times, almost all 360 cameras include the f
 * `GPS:GPSTimeStamp`: UTC time of GPS fix
 * `GPS:GPSDateStamp`: Date of GPS fix
 
-I have also previously touched on, [including in my last 4 posts looking at roll, pitch and yaw](/blog/2022/calculating-heading-of-gopro-video-using-gpmf-part-1), how some manufacturers include additional [`GPS`](https://exiftool.org/TagNames/GPS.html), [EXIF](https://exiftool.org/TagNames/EXIF.html) and [`XMP-GPano`](https://exiftool.org/TagNames/XMP.html#GPano) metadata in photos taken that contain information or have been derived from information by other sensors in the camera, in addition to GPS. These include:
+I have also previously touched on how some manufacturers include additional [`GPS`](https://exiftool.org/TagNames/GPS.html), [`EXIF`](https://exiftool.org/TagNames/EXIF.html) and [`XMP-GPano`](https://exiftool.org/TagNames/XMP.html#GPano) metadata in photos derived from other sensors in the camera. These include:
 
 * `XMP-GPano:PoseHeadingDegrees`: Heading in degrees
 * `XMP-GPano:PosePitchDegrees`: Pitch in degrees
@@ -43,17 +43,19 @@ Note, it is important to note the difference between `XMP-GPano:Pose...` and `XM
 
 As touched on in the last few posts, `XMP-GPano:InitialView...`, is only concerned with the viewer. Any value (in degrees) set for these fields will offset the viewer from corresponding `XMP-GPano:Pose...` values, but have no relation to the actual heading, pitch, or roll in the real world.
 
-Where as `XMP-GPano:Pose...` considers the real world heading, pitch, or roll.
+Where as `XMP-GPano:Pose...` considers the real world heading, pitch, or roll (and not the viewer).
 
 If `XMP-GPano:Pose...` values are not set, the `XMP-GPano:InitialView...` values entered will be offset from 0 (its default value if none set). If `XMP-GPano:Pose...` values are set, the respective `XMP-GPano:InitialView...` values will be offset from the `XMP-GPano:Pose...` values set.
 
-All that being said, GoPro 360 Cameras do not include any information in photos beyond GPS positional information.
+All that being said, GoPro 360 Cameras do not include any information in photos beyond GPS positional information (`lat`, `lon`, and `alt`).
 
-[I've talked previously about calculating rough values](/blog/2020/what-direction-are-you-facing) for heading and pitch by working out the heading and the pitch to the next photo in a photo sequence (using latitude, longitude, and altitude values which are reported in the photos metadata) that could be used for some of these additional meta tags.
+[I've talked previously about calculating rough values for heading and pitch when other sensor telemetry is not available](/blog/2020/what-direction-are-you-facing) by working out the heading and the pitch to the next photo in a photo sequence (using latitude, longitude, and altitude).
 
-In an attempt to try an level the horizon of my 360 photos (like I did for videos), I need to be able to calculate roll values, however, non of the aforementioned data captured (or calculated) allows me to do this.
+In an attempt to try an level the horizon of my 360 photos I need to be able to determine the camera roll, however, `lat`, `lon`, and `alt` values cannot be used to do this.
 
-Therefore the following posts detail my attempt to try and estimate roll in photos taken on GoPro 360 cameras (or any 360 camera where such values are not written into the photos).
+So down the rabbit whole I went.
+
+The following posts detail my attempt to try and estimate roll in photos taken on GoPro 360 cameras (or any 360 camera where limited metadata is written into the photos).
 
 ## What roll looks like in equirectangular projections
 
@@ -65,9 +67,7 @@ Using my example roll video from a few weeks ago;
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/GDtz_K6k-Dg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-_It's important to note, the horizon/ground I'm standing on is fairly flat (more on why that is important later)._
-
-I have extracted frames at roughly (done by eye) 0 degrees, 45 degrees, 90 degrees, 135 degrees, 180 degrees, 225 degrees, 270 degrees, and 315 degrees.
+I have extracted frames at roughly (done by eye) at 0 degrees, 45 degrees, 90 degrees, 135 degrees, 180 degrees, 225 degrees, 270 degrees, and 315 degrees.
 
 You can see the timestamps I used to capture the frames in ffmpeg command;
 
@@ -145,13 +145,15 @@ ffmpeg -ss 00:00:16 -i GS010011.mp4 -frames:v 1 -q:v 40 GS018421_000016.jpg
 
 You can see clear patterns as the camera rolls around the `y` axis.
 
-As the roll increases to 45 the sine wave gets increasingly distorted. As it reaches 90 degrees the curve gets flatter and it gets closer to a square wave. As it gets closer to 135 degrees, the sine wave flattens again, and this time is a horizontal mirror of the 45 degree wave.
+As the roll increases to 45 degrees the sine wave gets increasingly distorted. As it reaches 90 degrees the curve gets closer to a square wave. As it gets closer to 135 degrees, the sine wave flattens again (and is a horizontal mirror of the 45 degree wave).
 
-As a human, this pattern is fairly easy to spot assuming a good proportion of a horizon is visible and fairly level. It gets a bit more complicated when there are obstructions to the horizon.
+As a human, this pattern is fairly easy to spot assuming a good proportion of a horizon is visible and fairly level. It gets a bit more complicated when there are obstructions to the horizon or the photos is in an enclosed space.
 
 #### Dealing with obstructions to the horizon
 
-Here is a photo taken along a ridge line.
+As almost all our photos are taken outdoors, I won't consider photos taken indoors in these posts.
+
+Regarding obstructions, here is a photo taken along a ridge line.
 
 <img class="img-fluid" src="/assets/images/blog/2022-06-24/GSAD0340-annotated.jpg" alt="Example Roll 315 Degrees" title="Example Roll 315 Degrees" />
 
