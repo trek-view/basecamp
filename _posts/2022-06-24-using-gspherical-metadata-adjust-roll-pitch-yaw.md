@@ -1,12 +1,12 @@
 ---
-date: 2022-06-17
+date: 2022-06-24
 title: "Using GSpherical and GPano Metadata tags to adjust for roll, pitch and heading"
 description: "Ensure your photos are loaded as you want them to be displayed"
 categories: developers
 tags: [ffmpeg, yaw, pitch, roll, equirectangular, video, mp4]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-06-17/
-featured_image: /assets/images/blog/2022-06-17/
+image: /assets/images/blog/2022-06-24/
+featured_image: /assets/images/blog/2022-06-24/
 layout: post
 published: true
 ---
