@@ -1,12 +1,12 @@
 ---
-date: 2022-06-24
+date: 2022-07-01
 title: "Automatic horizon leveling of GoPro 360 photos (with no GPMD) (Part 1)"
 description: "Analysing what camera roll looks like in equirectangular photos and how to account for it."
 categories: developers
 tags: [ffmpeg, yaw, pitch, roll, equirectangular, photo]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-06-24/GS018421_000003-meta.jpg
-featured_image: /assets/images/blog/2022-06-24/GS018421_000003-sm.jpg
+image: /assets/images/blog/2022-07-01/GS018421_000003-meta.jpg
+featured_image: /assets/images/blog/2022-07-01/GS018421_000003-sm.jpg
 layout: post
 published: true
 ---
@@ -83,7 +83,7 @@ I've also annotated the horizon in red in each frame.
 ffmpeg -ss 00:00:01 -i GS010011.mp4 -frames:v 1 -q:v 40 GS018421_000001.jpg
 ```
 
-<img class="img-fluid" src="/assets/images/blog/2022-06-24/GS018421_000001-annotated.jpg" alt="Example Roll 0 Degrees" title="Example Roll 0 Degrees" />
+<img class="img-fluid" src="/assets/images/blog/2022-07-01/GS018421_000001-annotated.jpg" alt="Example Roll 0 Degrees" title="Example Roll 0 Degrees" />
 
 #### 45 degrees (`00:00:03`)
 
@@ -91,7 +91,7 @@ ffmpeg -ss 00:00:01 -i GS010011.mp4 -frames:v 1 -q:v 40 GS018421_000001.jpg
 ffmpeg -ss 00:00:03 -i GS010011.mp4 -frames:v 1 -q:v 40 GS018421_000003.jpg
 ```
 
-<img class="img-fluid" src="/assets/images/blog/2022-06-24/GS018421_000003-annotated.jpg" alt="Example Roll 45 Degrees" title="Example Roll 45 Degrees" />
+<img class="img-fluid" src="/assets/images/blog/2022-07-01/GS018421_000003-annotated.jpg" alt="Example Roll 45 Degrees" title="Example Roll 45 Degrees" />
 
 #### 90 degrees (`00:00:06`)
 
@@ -99,7 +99,7 @@ ffmpeg -ss 00:00:03 -i GS010011.mp4 -frames:v 1 -q:v 40 GS018421_000003.jpg
 ffmpeg -ss 00:00:06 -i GS010011.mp4 -frames:v 1 -q:v 40 GS018421_000006.jpg
 ```
 
-<img class="img-fluid" src="/assets/images/blog/2022-06-24/GS018421_000006-annotated.jpg" alt="Example Roll 90 Degrees" title="Example Roll 90 Degrees" />
+<img class="img-fluid" src="/assets/images/blog/2022-07-01/GS018421_000006-annotated.jpg" alt="Example Roll 90 Degrees" title="Example Roll 90 Degrees" />
 
 #### 135 degrees (`00:00:08`)
 
@@ -107,7 +107,7 @@ ffmpeg -ss 00:00:06 -i GS010011.mp4 -frames:v 1 -q:v 40 GS018421_000006.jpg
 ffmpeg -ss 00:00:08 -i GS010011.mp4 -frames:v 1 -q:v 40 GS018421_000008.jpg
 ```
 
-<img class="img-fluid" src="/assets/images/blog/2022-06-24/GS018421_000008-annotated.jpg" alt="Example Roll 135 Degrees" title="Example Roll 135 Degrees" />
+<img class="img-fluid" src="/assets/images/blog/2022-07-01/GS018421_000008-annotated.jpg" alt="Example Roll 135 Degrees" title="Example Roll 135 Degrees" />
 
 #### 180 degrees (`00:00:10`)
 
@@ -115,7 +115,7 @@ ffmpeg -ss 00:00:08 -i GS010011.mp4 -frames:v 1 -q:v 40 GS018421_000008.jpg
 ffmpeg -ss 00:00:10 -i GS010011.mp4 -frames:v 1 -q:v 40 GS018421_000010.jpg
 ```
 
-<img class="img-fluid" src="/assets/images/blog/2022-06-24/GS018421_000010-annotated.jpg" alt="Example Roll 180 Degrees" title="Example Roll 180 Degrees" />
+<img class="img-fluid" src="/assets/images/blog/2022-07-01/GS018421_000010-annotated.jpg" alt="Example Roll 180 Degrees" title="Example Roll 180 Degrees" />
 
 #### 225 degrees (`00:00:12`)
 
@@ -123,7 +123,7 @@ ffmpeg -ss 00:00:10 -i GS010011.mp4 -frames:v 1 -q:v 40 GS018421_000010.jpg
 ffmpeg -ss 00:00:12 -i GS010011.mp4 -frames:v 1 -q:v 40 GS018421_000012.jpg
 ```
 
-<img class="img-fluid" src="/assets/images/blog/2022-06-24/GS018421_000012-annotated.jpg" alt="Example Roll 225 Degrees" title="Example Roll 225 Degrees" />
+<img class="img-fluid" src="/assets/images/blog/2022-07-01/GS018421_000012-annotated.jpg" alt="Example Roll 225 Degrees" title="Example Roll 225 Degrees" />
 
 #### 270 degrees (`00:00:14`)
 
@@ -131,7 +131,7 @@ ffmpeg -ss 00:00:12 -i GS010011.mp4 -frames:v 1 -q:v 40 GS018421_000012.jpg
 ffmpeg -ss 00:00:14 -i GS010011.mp4 -frames:v 1 -q:v 40 GS018421_000014.jpg
 ```
 
-<img class="img-fluid" src="/assets/images/blog/2022-06-24/GS018421_000014-annotated.jpg" alt="Example Roll 270 Degrees" title="Example Roll 270 Degrees" />
+<img class="img-fluid" src="/assets/images/blog/2022-07-01/GS018421_000014-annotated.jpg" alt="Example Roll 270 Degrees" title="Example Roll 270 Degrees" />
 
 #### 315 degrees (`00:00:16`)
 
@@ -139,7 +139,7 @@ ffmpeg -ss 00:00:14 -i GS010011.mp4 -frames:v 1 -q:v 40 GS018421_000014.jpg
 ffmpeg -ss 00:00:16 -i GS010011.mp4 -frames:v 1 -q:v 40 GS018421_000016.jpg
 ```
 
-<img class="img-fluid" src="/assets/images/blog/2022-06-24/GS018421_000016-annotated.jpg" alt="Example Roll 315 Degrees" title="Example Roll 315 Degrees" />
+<img class="img-fluid" src="/assets/images/blog/2022-07-01/GS018421_000016-annotated.jpg" alt="Example Roll 315 Degrees" title="Example Roll 315 Degrees" />
 
 ## Reviewing the wave (with a clear horizon)
 
@@ -155,7 +155,7 @@ As almost all our photos are taken outdoors, I won't consider photos taken indoo
 
 Regarding obstructions, here is a photo taken along a ridge line.
 
-<img class="img-fluid" src="/assets/images/blog/2022-06-24/GSAD0340-annotated.jpg" alt="Example Roll 315 Degrees" title="Example Roll 315 Degrees" />
+<img class="img-fluid" src="/assets/images/blog/2022-07-01/GSAD0340-annotated.jpg" alt="Example Roll 315 Degrees" title="Example Roll 315 Degrees" />
 
 The camera is fairly level, as you can see from the annotated horizon. However, without the annotation, the rising ridge in front of the camera makes it a little harder to spot as a human at first glance.
 

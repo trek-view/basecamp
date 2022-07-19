@@ -70,9 +70,9 @@ For reference here is the GoPro sensor axis configuration for the sensors;
 
 <img class="img-fluid" src="/assets/images/blog/2022-05-27/CameraIMUOrientationSM.png" alt="GoPro Camera Axis Orientation" title="GoPro Camera Axis Orientation" />
 
-* `x` = pitch
-* `y` = roll
-* `z` = yaw
+* `x` rotation = pitch
+* `y` rotation = roll
+* `z` rotation = yaw
 
 ### `CORI` (Camera orientation values)
 

@@ -13,7 +13,7 @@ published: true
 
 **A proof-of-concept to dynamically adjust for camera roll and pitch in equirectangular videos.**
 
-In my last series of posts,[Using ffmpeg to dynamically adjust the yaw of GoPro 360 videos](/blog/2022/calculating-heading-of-gopro-video-using-gpmf-part-2) part of the process required converting `CORI` samples into yaw, pitch, and roll (for the intent of fixing yaw).
+In my last series of posts, [Using ffmpeg to dynamically adjust the yaw of GoPro 360 videos](/blog/2022/calculating-heading-of-gopro-video-using-gpmf-part-2) part of the process required converting `CORI` samples into yaw, pitch, and roll (for the intent of fixing yaw).
 
 Of course, this data can also be used to fix pitch and roll issues.
 

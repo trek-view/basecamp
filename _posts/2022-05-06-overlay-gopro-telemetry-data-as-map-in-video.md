@@ -330,7 +330,6 @@ One of the downsides of MapBox is that it only creates static images with length
 
 As such the map overlay in this video (5312x2988) appears fairly small. For videos shot with resolutions below 5k, the map overlay will be much more visible (as it will be much larger in the video, assuming you use the same `mapbox_img_` percentages as I did below).
 
-
 `variables.txt` used:
 
 ```
