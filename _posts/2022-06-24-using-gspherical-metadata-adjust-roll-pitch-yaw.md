@@ -27,7 +27,7 @@ However, there are a number of other useful metadata tags in these specification
 
 In parts of this post I am going to be using the Facebook photo viewer to display photos. [Pannellum](https://pannellum.org/), like many other photo viewers, does not support the use of `XMP-GPano:InitialViewXXX` tags (it only supports `XMP-GPano:PoseXXX` tags). Therefore for all demos of `XMP-GPano:InitialViewXXX` photos I will use Facebook.
 
-I will use YouTube for rendering videos, which fully supports the `XMP-GSpherical` specification (it is a Google spec after all). However, again, there are video viewers that will only have partial support the specification (and crucially not the `XMP-GSpherical:InitialViewXXX` tags).
+I will use Facebook for rendering videos, which fully supports the `XMP-GSpherical` specification. There are video viewers (inc. YouTube!) that only have partial support the specification (and crucially not the `XMP-GSpherical:InitialViewXXX` tags).
 
 You should keep this in mind based on how you plan to share content.
 
@@ -246,7 +246,7 @@ exiftool -X GS010013-worldlock.mp4
 
 You can see there are only the essential `GSpherical` tags to ensure it is loaded correctly in the viewer.
 
-Let me know adjust the heading by 180 degrees so that it faces the other way in the viewer (before the user pans) -- [I will use Google's Spatial Media Metadata Injector
+Let me now adjust the heading by 180 degrees so that it faces the other way in the viewer (before the user pans) -- [I will use Google's Spatial Media Metadata Injector
  for this](https://github.com/google/spatial-media/tree/master/spatialmedia).
 
 The Spatial Media Metadata Injector does not support the addition of any `IntialView` tags by default. As a quick hack for this demo, I simply modified the [metadata_utils.py](https://github.com/google/spatial-media/blob/master/spatialmedia/metadata_utils.py) file to include a hardcoded tag with `<GSpherical:InitialViewHeadingDegrees>180</GSpherical:InitialViewHeadingDegrees>` ([see line 51](https://gist.github.com/himynamesdave/6b7261ecfe389e54789f221a7375b0dd)). Once I updated this file, I ran the tool like so;
@@ -256,6 +256,24 @@ cp GS010013-worldlock.mp4 GS010013-worldlockInitialViewHeadingDegrees180.mp4
 python spatialmedia -i GS010013-worldlock.mp4 GS010013-worldlock-out.mp4
 ```
 
-Which produced a video that loads in a viewer like so;
+Which produces a new video (GS010013-worldlock-out.mp4) with metadata;
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aHxXyeBy0SA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+```shell
+exiftool -X GS010013-worldlock-out.mp4
+```
+
+```xml
+ <XMP-GSpherical:Spherical>true</XMP-GSpherical:Spherical>
+ <XMP-GSpherical:Stitched>true</XMP-GSpherical:Stitched>
+ <XMP-GSpherical:StitchingSoftware>Spherical Metadata Tool</XMP-GSpherical:StitchingSoftware>
+ <XMP-GSpherical:ProjectionType>equirectangular</XMP-GSpherical:ProjectionType>
+ <XMP-GSpherical:InitialViewHeadingDegrees>180</XMP-GSpherical:InitialViewHeadingDegrees>
+```
+
+Note, Spatial Media Metadata Injector actually removes `XMP-GSpherical:Spherical` and `XMP-GSpherical:Stitched` tags during processing (as these are also not supported in the default version).
+
+And the video itself;
+
+<iframe src="https://www.facebook.com/plugins/video.php?height=280&href=https%3A%2F%2Fwww.facebook.com%2Ftrekview%2Fvideos%2F808867640524468%2F&show_text=false&width=560&t=0" width="560" height="280" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+
+Voila, it is now loaded in the viewer facing backwards (compared to the original).
