@@ -19,7 +19,7 @@ Sometimes this is overkill as it is possible to achieve the same result using th
 
 Many viewers use GPano (photo) and GSpherical metadata tags to render equirectangular content.
 
-I have talked about the importance of setting `GPano:ProjectionType = equirectangular` and `GSpherical:ProjectionType = equirectangular` for photo and video files respectively to ensure 360 viewer controls are shown.
+I have talked previously about the importance of setting `GPano:ProjectionType = equirectangular` and `GSpherical:ProjectionType = equirectangular` for photo and video files respectively to ensure 360 viewer controls are shown.
 
 However, there are a number of other useful metadata tags in these specifications that can be used to adjust roll, pitch and yaw in the viewer.
 
@@ -73,17 +73,11 @@ Therefore if I modify `PosePitchDegrees` post processing, the value I use to off
 
 This is where `InitialView` becomes useful because it is not relative to the center of the photo.
 
-The `InitialView` considers the "real world" axis, that is a level imaginary horizon for roll and pitch and magnetic heading in the case of heading. This is a concept much easier to understand. For example, if I look up 45 degrees, my `InitialViewPitch` is 45 degrees (however, my `PosePitchDegrees` is 0 as the sky as I look up is still in the center of my view).
+The `InitialView` considers the "real world" axis, that is a level imaginary horizon for roll and pitch and magnetic heading in the case of heading. This is a concept much easier to understand. For example, if I look up 45 degrees from straight ahead, my `InitialViewPitch` goes from 0 to 45 degrees (however, my `PosePitchDegrees` is 0 in both examples as the sky as I look up and the view directly in front of me is always in the center of my view).
 
-So in the case of the first photo I would set the `InitialView` equal to whatever the pitch of the camera is against the imaginary level horizon (close to 0 in my photo), taken from the camera sensors (or whatever other method used to calculate it).
+It is much easier to demonstrate these concepts using examples.
 
-For the artificially modified image, I would just add 45 to the `InitialViewPitch` of the original image (because that's how much I artificially increased roll by).
-
-So now you might be wondering, why have both `Pose` and `InitialView` values in the GPano spec.
-
-Lets first look at some examples.
-
-I will use the following photo to demonstrate
+I will use the following photo to demonstrate;
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2022-06-24/GSAQ3296.JPG&amp;autoLoad=true"></iframe>
 
@@ -217,9 +211,9 @@ exiftool -XMP-GPano:PoseHeadingDegrees=225 -XMP-GPano:PosePitchDegrees=-5 -XMP-G
 
 And here are what the adjustments look like;
 
-<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2022-06-24/GSAQ3296.JPG GSAQ3296-H225P5Rminus5.JPG&amp;autoLoad=true"></iframe>
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2022-06-24/GSAQ3296-H225P5Rminus5.JPG&amp;autoLoad=true"></iframe>
 
-The changes are minor, but offer some improvements in usability when panning around the image.
+The changes are minor, but offer some improvements in usability when panning around the image. The greater the roll or pitch, the greater the improvements such adjustments will make.
 
 ## Using GSpherical tags 360 video
 
@@ -252,15 +246,16 @@ exiftool -X GS010013-worldlock.mp4
 
 You can see there are only the essential `GSpherical` tags to ensure it is loaded correctly in the viewer.
 
-Lets adjust the heading by 180 degrees, so that it faces the other way in the viewer (before the user pans) -- [I will use Google's Spatial Media Metadata Injector
+Let me know adjust the heading by 180 degrees so that it faces the other way in the viewer (before the user pans) -- [I will use Google's Spatial Media Metadata Injector
  for this](https://github.com/google/spatial-media/tree/master/spatialmedia).
 
+The Spatial Media Metadata Injector does not support the addition of any `IntialView` tags by default. As a quick hack for this demo, I simply modified the [metadata_utils.py](https://github.com/google/spatial-media/blob/master/spatialmedia/metadata_utils.py) file to include a hardcoded tag with `<GSpherical:InitialViewHeadingDegrees>180</GSpherical:InitialViewHeadingDegrees>` ([see line 51](https://gist.github.com/himynamesdave/6b7261ecfe389e54789f221a7375b0dd)). Once I updated this file, I ran the tool like so;
 
 ```shell
 cp GS010013-worldlock.mp4 GS010013-worldlockInitialViewHeadingDegrees180.mp4
-exiftool -XMP-GSpherical:InitialViewHeadingDegrees=180 GS010013-worldlockInitialViewHeadingDegrees180.mp4
+python spatialmedia -i GS010013-worldlock.mp4 GS010013-worldlock-out.mp4
 ```
 
+Which produced a video that loads in a viewer like so;
 
-GS010013-worldlock.mp4
-
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/aHxXyeBy0SA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
