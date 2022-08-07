@@ -8,6 +8,7 @@ node_modules
 gulpfile.js
 package.json
 package-lock.json
+.jekyll-cache
 
 # OS or Editor folders
 .DS_Store
