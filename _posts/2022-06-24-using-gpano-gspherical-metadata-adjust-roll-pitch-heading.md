@@ -215,6 +215,25 @@ And here are what the adjustments look like;
 
 The changes are minor, but offer some improvements in usability when panning around the image. The greater the roll or pitch, the greater the improvements such adjustments will make.
 
+### A real world example (Explorer)
+
+Occasionally I point the camera in the wrong direction on my mount.
+
+Here is such an example;
+
+<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2022-06-24/GSAB8719-sm.JPG&amp;autoLoad=true"></iframe>
+
+These images are problematic when uploaded to Explorer due to [the crude way Explorer determines heading](/blog/2020/what-direction-are-you-facing) -- Explorer is calculating the heading to the next photo, not the heading of the camera.
+
+In Trail Maker, a user can define if the camera was facing backwards whilst shooting. If set to `true`, then two values are calculated;
+
+1. The calculated heading to next photo
+2. The calculated heading of the camera (calculated using; `calculated heading to next photo - 180 degrees` in degrees.
+
+e.g. if user sets camera facing backwards to `true` and the calculated heading to next photo is `10` degrees, but the calculated heading of the camera will be `190` degrees.
+
+The corresponding GPano tags would be `XMP-GPano:PoseHeadingDegrees=190` (the real heading) and `-XMP-GPano:InitialViewHeadingDegrees=180` (to spin the viewer 180 degrees to get it facing towards the next photo).
+
 ## Using GSpherical tags 360 video
 
 You can see the full Google Spherical video (v1) specification here: https://github.com/google/spatial-media/blob/master/docs/spherical-video-rfc.md

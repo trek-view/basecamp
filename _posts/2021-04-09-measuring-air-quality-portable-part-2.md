@@ -3,7 +3,7 @@ date: 2021-04-09
 title: "Measuring the Air Quality of Your Trek (Part 2)"
 description: "Our initial thoughts after testing the AtmoTube Pro."
 categories: guides
-tags: [Atmotube Pro, air quality, Volatile Organic Compounds, Particulate Matter, Air Quality Score, VOC, PM]
+tags: [Atmotube Pro, air quality, Volatile Organic Compounds, Particulate Matter, Air Quality Score, VOC, PM, aqi]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-04-09/AQS-map-Farnborough-Airport-Loop-2021-03-14-meta.jpg
 featured_image: /assets/images/blog/2021-04-09/AQS-map-Farnborough-Airport-Loop-2021-03-14-sm.jpg
@@ -134,7 +134,3 @@ The receiver also seems to struggle to stay locked to satellites in places with 
 For us this is not a deal breaker. If you use a reliable GPS tracker ([like your 360 camera](/blog/2020/metadata-exif-xmp-360-photo-files)) to record your journey, you can match the time of each measurement on each device to overwrite the incorrect GPS points reported in the AtmoTube Pro output.
 
 I also noticed that altitude was not reported in the output file, despite claims on the box and instructions that this was captured. Using an external tracker again or a [Digital Elevation Model](/blog/2020/what-is-a-digital-elevation-model) will solve this problem.
-
-## Coming soon...
-
-We are building functionality that will allow AtmoTube Pro AQS data to be attached to [Map the Paths sequences](https://www.mapthepaths.com/) so that you and viewers of your virtual tours can see the air quality at the time the image was taken.
