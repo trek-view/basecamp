@@ -1,6 +1,6 @@
 ---
 date: 2020-05-22
-title: "Turning a 360 Timelapse or Video into a GPX or KML track"
+title: "Turning a 360 Timelapse or Video into a GPX or KML track using exiftool"
 description: "Here's how to use the GPS points inside your 360 timelapses or videos with tools like Strava and Google Earth."
 categories: developers
 tags: [GPS, XMP, EXIF, exiftool, GPX]

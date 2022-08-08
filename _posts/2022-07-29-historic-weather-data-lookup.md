@@ -1,12 +1,12 @@
 ---
-date: 2022-07-31
+date: 2022-07-29
 title: "Historic Weather Data Lookup"
 description: "In this post I will show you how to find the weather conditions at the time and location  a photo was taken."
 categories: developers
 tags: [weather, OpenWeather, WeatherStack, WeatherBit, Meteostat]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-07-31/weatherstack-api-response-meta.jpg
-featured_image: /assets/images/blog/2022-07-31/weatherstack-api-response-sm.jpg
+image: /assets/images/blog/2022-07-29/weatherstack-api-response-meta.jpg
+featured_image: /assets/images/blog/2022-07-29/weatherstack-api-response-sm.jpg
 layout: post
 published: true
 ---
@@ -36,7 +36,7 @@ I narrowed my choices to WeatherStack and Meteostat, simply due to price.
 
 To test them, I used a photo taken in a fairly remote location (Helvellyn, Lake District, UK) because I wanted to test how measurements were reported when far from a weather station.
 
-<img class="img-fluid" src="/assets/images/blog/2022-07-31/GSAL15920-sm.JPG" alt="GSAL1592 Helvellyn" title="GSAL1592 Helvellyn" />
+<img class="img-fluid" src="/assets/images/blog/2022-07-29/GSAL15920-sm.JPG" alt="GSAL1592 Helvellyn" title="GSAL1592 Helvellyn" />
 
 Here is the metadata in the photo needed to make the requests to the APIs.
 
