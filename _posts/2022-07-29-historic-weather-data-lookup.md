@@ -1,6 +1,6 @@
 ---
 date: 2022-07-29
-title: "Historic Weather Data Lookup"
+title: "Enrich your Photos with Historic Weather Data"
 description: "In this post I will show you how to find the weather conditions at the time and location  a photo was taken."
 categories: developers
 tags: [weather, OpenWeather, WeatherStack, WeatherBit, Meteostat]

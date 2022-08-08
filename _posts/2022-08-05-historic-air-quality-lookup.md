@@ -1,6 +1,6 @@
 ---
 date: 2022-08-05
-title: "Historic Air Quality Lookup"
+title: "Enrich your Photos with Historic Air Quality Data"
 description: "In this post I will show you how to find the air quality at the time and location  a photo was taken."
 categories: developers
 tags: [Atmotube Pro, air quality, Particulate Matter, Air Quality Score, aqi, PM, openweather, WeatherBit]

@@ -1,6 +1,6 @@
 ---
 date: 2022-07-22
-title: "Turning a photo or video footage into Strava activity"
+title: "Turn timelapse photos or video footage into Strava activities"
 description: "Use the telemetry captured by your camera to automatically create and upload an activity to Strava."
 categories: developers
 tags: [strava, gpx, gps]
