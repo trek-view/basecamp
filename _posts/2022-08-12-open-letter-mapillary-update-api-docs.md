@@ -76,7 +76,7 @@ Where;
 * `{x}`: x Cartesian coordinate
 * `{y}`: y Cartesian coordinate
 
-p.s. If you're new to XYZ tiles, [this post](https://developers.planet.com/docs/planetschool/xyz-tiles-and-slippy-maps/) and [this post](https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#X_and_Y) will prove very helpful.
+p.s. If you're new to XYZ tiles, [this post](https://developers.planet.com/docs/planetschool/xyz-tiles-and-slippy-maps/) and [this post](https://wiki.openstreetmap.org/wiki/Slippy_map_tilenames#X_and_Y) will prove very helpful. For even more on the subject, the [Mapbox Cookbook by Bill Kastanakis](https://www.packtpub.com/product/mapbox-cookbook/9781784397357) will prove another useful resource.
 
 To find the x,y co-ordinates of the tile, we use the middle image in the sequence (so we can hopefully capture the most images either side) and convert the latitude and longitude to x,y;
 
@@ -123,7 +123,7 @@ Whilst this flow works (and is mostly documented), we decided that this approach
 
 As such, we came up with a Plan B by watching the request of Mapillary Web.
 
-## Plan B (tl;dr, still hacky, but works)
+## Plan B (tl;dr, still hacky, but works, our current approach)
 
 This approach required using Chrome Developer tools to watch the requests the Mapillary Web app made to the Mapillary APIs.
 
@@ -180,4 +180,6 @@ If you don't plan to continue development on the API or its documentation, just 
 
 It would be incredibly helpful to have some clarity on what we can expect in the future (good or bad) so we can make design decisions accordingly.
 
-- everyone at Trek View
+Yours sincerely,
+
+Everyone at Trek View
