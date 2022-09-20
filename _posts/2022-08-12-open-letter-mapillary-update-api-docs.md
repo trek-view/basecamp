@@ -114,7 +114,7 @@ If a match exist, we can be fairly certain that the image on Mapillary is the sa
 
 The response of the Image endpoint also contains `sequence_id` which means if a match exists we can then link each Explorer image to both a Mapillary image ID and a Sequence on Mapillary.
 
-Whilst this flow works, we decided that this approach was not viable;
+Whilst this flow works (and is mostly documented), we decided that this approach was not viable;
 
 * It is excessive. The amount of requests needed to iterate through (potentially) thousands of images is problematic for both client and server at scale
 * I have a suspicion Mapillary adjusts the co-ordinates of some images. In cases where this happens, this approach will fail.
