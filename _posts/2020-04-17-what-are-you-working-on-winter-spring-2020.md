@@ -55,7 +55,7 @@ In attempt to provide better answers, faster, we want to tap into the vast knowl
 
 To do this we've spun up a new public forum, Campfire.
 
-**Update 2021-09-06:** [Campfire has now been replaced by a Discord server](https://discord.gg/ZVk7h9hCfw).
+**Update 2021-09-06:** [Campfire has now been replaced by a Slack community](https://join.slack.com/t/trekview/shared_invite/zt-1gb4upchi-52pmWhPiwhFaAQqm0vWmJg).
 
 We make everything we do here at Trek View public and freely available, and we want that to include our knowledge. From the design of our [Trek Pack](/trek-pack) to the [software we build](https://github.com/trek-view).
 

@@ -36,9 +36,9 @@ Before merging any changes to master, check for 404's:
 
 ## Support
 
-Join our Discord community and get in direct contact with the Trek View team, and the wider Trek View community.
+Join our Slack community and get in direct contact with the Trek View team, and the wider Trek View community.
 
-[Join the Trek View Discord server](https://discord.gg/ZVk7h9hCfw).
+[Join the Trek View Slack community](https://join.slack.com/t/trekview/shared_invite/zt-1gb4upchi-52pmWhPiwhFaAQqm0vWmJg).
 
 ## License
 
