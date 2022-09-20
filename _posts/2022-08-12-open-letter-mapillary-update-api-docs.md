@@ -170,6 +170,8 @@ It shows four steps and their status; failed, success, or pending.
 
 This information allows us to 1) link images uploaded by a user to an Image ID / Sequence ID on Mapillary, and 2) track the status of sequence uploaded by Explorer on Mapillary.
 
+If you're interested, [here is our proof-of-concept for this workflow](https://gist.github.com/himynamesdave/2e2048790096e4e41e845c839fc02717).
+
 It's still not perfect, but solves our use-case and so far is proving stable. My biggest worry is non of these endpoints are documented, and therefore assumed not supported (and could change at any time).
 
 ## Dear Meta, Mapillary,
