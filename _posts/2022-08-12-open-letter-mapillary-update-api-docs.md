@@ -45,19 +45,18 @@ Whilst not documented [the actual upload flow can be deduced from mapillary_tool
 2. [An upload session is created and upload begins to the upload endpoint (currently `https://rupload.facebook.com/mapillary_public_uploads`)](https://github.com/mapillary/mapillary_tools/blob/main/mapillary_tools/upload_api_v4.py)
 3. [The upload session is closed](https://github.com/mapillary/mapillary_tools/blob/main/mapillary_tools/upload_api_v4.py#L162)
 
-The Mapillary API provides the following responses at step 2;
-
-TODO
-
-and step 3;
-
-TODO
-
 The problem is, after closing the upload session, there is no direct link to what sequences (IDs) or images (IDs) are created. This makes sense, because as noted earlier, the Mapillary server now begins the processing of images into Sequences.
 
 Nor is their a documented endpoint to track the status of an upload and what Sequences are created from it.
 
-This means whilst we can upload images, it is very hard to tie an Explorer image/sequence uploaded to Mapillary, to corresponding Mapillary image/sequence. Two of the features we wanted to implement on Explorer, 1) the ability to track Mapillary upload status, and 2) the ability for a user to open the corresponding Mapillary sequence (on mapillary.com) from the Explorer web interface, as we do for other integration points (e.g. Street View).
+The Mapillary API does provide the following responses at step 3 (from `https://graph.mapillary.com/finish_upload)`:
+
+```
+{'cluster_id': 'XXXXXXXXXXXXX'}
+```
+The `cluster_id` is assume to be related to the Sequence in some way (more on that in a bit). We're not quite sure if it's the same as `sfm_cluster` in the docs (which references the [OpenSFM cluster processed by Mapillary](https://opensfm.org/)).
+
+This means whilst we can upload images, it appears very hard to tie an Explorer image/sequence uploaded to Mapillary, to corresponding Mapillary image/sequence. Two of the features we wanted to implement on Explorer, 1) the ability to track Mapillary upload status, and 2) the ability for a user to open the corresponding Mapillary sequence (on mapillary.com) from the Explorer web interface, as we do for other integration points (e.g. Street View).
 
 Therefore we started to Explorer potential workarounds to implement these two features...
 
