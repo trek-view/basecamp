@@ -128,7 +128,7 @@ This approach required using Chrome Developer tools to watch the requests the Ma
 
 <img class="img-fluid" src="/assets/images/blog/2022-08-12/mapillary-web-api-requests-sm.jpg" alt="Mapillary API Chrome Dev tools" title="Mapillary API Chrome Dev tools" />
 
-One of the first things we noticed when on the user page in the Mapillary web app, e.g. https://www.mapillary.com/app/user/trekviewhq, was that a request to get new sequences accepted a username variable (and returned a user id in the response -- needed for other endpoints).
+One of the first things we noticed when on the user page and opening the sidebar in the Mapillary web app, e.g. https://www.mapillary.com/app/user/trekviewhq, was that a request to get new sequences accepted a username variable (and returned a user id in the response -- needed for other endpoints).
 
 ```
 https://graph.mapillary.com/graphql?doc=query getNewSequences
@@ -138,23 +138,108 @@ For us, [and others](https://forum.mapillary.com/t/how-to-query-user-info-from-v
 
 One advantage we have with Explorer is being able to ask the user for their username during the OAuth process (and keep our fingers crossed they enter it correctly -- because there is no way to validate it is correct, remember, no endpoint for user info!).
 
-Using the username we tried to query the `getNewSequences`.
+Using the username we tried to query the `getNewSequences` using the `username` variable.
 
 Here comes the first issue. This endpoint, like all Mapillary API endpoint required authentication. We tried to use our applications `access_token`, but were denied.
 
 We then noticed Mapillary hardcoded their own `access_token` in all requests from the web app to the API. Using their `access_token` we were able to successfully get a response from this endpoint.
 
-The endpoint returns a `userinfo` object which contains `user_id` (needed for many of the other endpoints).
+This returns a response like so;
 
-One of the endpoints we identified in the web app using the `user_id` in requests was the `latestActivity` endpoint (also undocumented) which returns the uploads from the user sorted by most recent first (note, the response is paginated).
+```json
+
+{
+  "data": {
+    "user_by_username": {
+      "id": "101176865463974",
+      "new_sequences": {
+        "sequence_keys": [
+          "T1jwvlYndsWVzhuDHOSb7i",
+          "UmFYLgu9n15aBxXbiQH6vs",
+          "BsUTIV4RDXhidW7aM6Zvte",
+          "Y52dBvChfEaUlLt0TyGMmP",
+          "LNShFtI5X9EnqZc07dDRYg",
+          "5wiWDzQ1oBrlAeFb27gTER",
+          "eBcQxLG1sKJalMomPOYjfU",
+          "updPmsU57SQ9T3MlhHWaLV"
+        ],
+        "geojson": "{XXXXXXXXX}",
+        "__typename": "MLYNewSequencesData"
+      },
+      "__typename": "User"
+    },
+    "__typename": "Query"
+  },
+  "extensions": {
+    "is_final": true
+  }
+}
+```
+
+[Full example response for trekviewhq](https://gist.github.com/himynamesdave/c940d1eb5311b74e14014e5aed102853).
+
+The endpoint returns a `user_by_username` object which contains `id` (needed for many of the other endpoints). The trekviewhq user id is 101176865463974.
+
+One of the endpoints we identified in the web app using the `user_id` in requests was the `latestActivity` endpoint (also undocumented) which returns the uploads from the user sorted by most recent first (note, the response is paginated, you can use the `first` and `after` parameters to page through the response).
 
 ```
 https://graph.mapillary.com/graphql?doc=query getLatestActivity
 ```
 
-In this response a `cluster_id` is included (remember, a `cluster_id` is also included in the response of the upload).
+This request takes variables:
 
-With this information we can compare each upload reported by the API for a user against the upload `cluster_id`s for that user in Explorer. If we get a match we can link the sequence on Mapillary to Sequence on Explorer.
+* `id`; the user ID obtained at last step (for trekviewhq = 101176865463974)
+* `first`; the number of items (`nodes`) to be returned (I think) -- the Mapillary web app uses `50`
+* `after`; seems to be some sort of ID but no idea for what -- for example, when scrolling to load more results in the sidebar, a request was made with the value for this variable `AQHRAAK9wQE4i9s139Bh_DJev3-CV-L_o9SmWd6lHElM3SI2-BW5djTqY-dphpwUdoskjd_4nBTCS58-oz6ni8RSbA`
+
+```
+curl -H "Authorization: OAuth <ACCESS_TOKEN>"
+```
+
+In the response from this endpoint, a `node` object with a `cluster_id` is included (remember, a `cluster_id` is also included in the response of the upload).
+
+```json
+{
+    "data":{
+        "fetch__User":{
+            "id":"XXXXXXXXXXX",
+            "feed":{
+                "page_info":{
+                    "start_cursor":null,
+                    "end_cursor":null,
+                    "has_next_page":false,
+                    "has_previous_page":false
+                },
+                "nodes":[
+                    {
+                        "cluster_id":"XXXXXXXXXXX",
+                        "type":"UPLOAD",
+                        "thumb_url":null,
+                        "item_count":null,
+                        "image_id":null,
+                        "status":"IN_PROGRESS",
+                        "initial_processing_status":"IN_PROGRESS",
+                        "anonymization_status":"IN_PROGRESS",
+                        "tiler_status":"IN_PROGRESS",
+                        "error_code":"UNSET",
+                        "__typename":"ClusterLatestActivityItem"
+                    }
+                ],
+                "__typename":"UserFeedConnection"
+            },
+            "__typename":"User"
+        },
+        "__typename":"Query"
+    },
+    "extensions":{
+        "is_final":true
+    }
+}
+```
+
+[Here is a full sample response for trekviewhq](https://gist.github.com/himynamesdave/f968885b1b60fdbea33bd11e0dd67dbd).
+
+With this information we can compare each upload reported by the API (each `node`) for a user against the upload `cluster_id`s for that user in Explorer (that we got when the upload was closed). If we get a match we can link the sequence on Mapillary to Sequence on Explorer.
 
 The `cluster_id` object also contains the upload state of the sequence, used to power one of the newer features in the Mapillary UI shows you the state of a sequence upload.
 
@@ -163,11 +248,13 @@ The `cluster_id` object also contains the upload state of the sequence, used to 
 It shows four steps and their status; failed, success, or pending.
 
 1. Image ingestion
-2. Image processing
-3. Map data processing
-4. Map update
+2. Image processing (`initial_processing_status`)
+3. Map data processing (`anonymization_status`)
+4. Map update (`tiler_status`)
 
 This information allows us to 1) link images uploaded by a user to an Image ID / Sequence ID on Mapillary, and 2) track the status of sequence uploaded by Explorer on Mapillary.
+
+The response also contains a `error_code` property, allowing the ability to identify the reason for potential failures.
 
 If you're interested, [here is our proof-of-concept for this workflow](https://gist.github.com/himynamesdave/2e2048790096e4e41e845c839fc02717).
 
