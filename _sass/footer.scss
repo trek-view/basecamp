@@ -68,7 +68,7 @@
 
 footer {
 	padding: 50px 0 50px 0;
-	font-size: 1.1em;
+	font-size: 1.0em;
 	position: relative;
 	background: #2b2b40;
 	color: #fff;
@@ -88,6 +88,19 @@ footer {
 		color: #999;
 	}
 
+	p {
+		font-size: 1.2em;
+	}
+
+	ul, ol, dl {
+	  li {
+	    font-size: 1.2em;
+	    color: #666;
+	    font-weight: 300;
+	    line-height: 1.3em;
+	  }
+	}
+	
 	h2 {
 		font-size: 1.4em;
 		margin: 30px 0;
