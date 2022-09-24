@@ -3,7 +3,7 @@ date: 2021-02-05
 title: "Turn 360 photos to non-360 (flat) photos"
 description: "Use GIMP to transform a 360 photo into a flat photo that looks perfect, and is easy to share."
 categories: guides
-tags: [GIMP, Photoshop]
+tags: [GIMP, Photoshop, thumbnail]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-02-05/gimp-transform-360-meta.jpg
 featured_image: /assets/images/blog/2021-02-05/gimp-transform-360.jpg

@@ -49,7 +49,7 @@ magick trek-view-square-nadir.png -rotate 180 trek-view-square-nadir-1.png
 ### 1.2 DePolar Distortion
 
 ```
-magick trek-view-square-nadir-1.png -distort DePolar 0  trek-view-square-nadir-2.png
+magick trek-view-square-nadir-1.png -distort DePolar 0 trek-view-square-nadir-2.png
 ```
 
 <img class="img-fluid" src="/assets/images/blog/2021-10-22/trek-view-square-nadir-2.png" alt="DePolar Distortion" title="DePolar Distortion" />
@@ -59,7 +59,7 @@ magick trek-view-square-nadir-1.png -distort DePolar 0  trek-view-square-nadir-2
 ### 1.3 Flip
 
 ```
-magick trek-view-square-nadir-2.png -flip  trek-view-square-nadir-3.png
+magick trek-view-square-nadir-2.png -flip trek-view-square-nadir-3.png
 ```
 
 <img class="img-fluid" src="/assets/images/blog/2021-10-22/trek-view-square-nadir-3.png" alt="Flip" title="Flip" />
@@ -69,7 +69,7 @@ Flip vertically.
 ### 1.4 Flop
 
 ```
-magick trek-view-square-nadir-3.png -flop  trek-view-square-nadir-4.png
+magick trek-view-square-nadir-3.png -flop trek-view-square-nadir-4.png
 ```
 
 <img class="img-fluid" src="/assets/images/blog/2021-10-22/trek-view-square-nadir-4.png" alt="Flop" title="Flop" />
