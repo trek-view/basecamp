@@ -192,10 +192,6 @@ This request takes variables:
 * `first`; the number of items (`nodes`) to be returned (I think) -- the Mapillary web app uses `50`
 * `after`; seems to be some sort of ID but no idea for what -- for example, when scrolling to load more results in the sidebar, a request was made with the value for this variable `AQHRAAK9wQE4i9s139Bh_DJev3-CV-L_o9SmWd6lHElM3SI2-BW5djTqY-dphpwUdoskjd_4nBTCS58-oz6ni8RSbA`
 
-```
-curl -H "Authorization: OAuth <ACCESS_TOKEN>"
-```
-
 In the response from this endpoint, a `node` object with a `cluster_id` is included (remember, a `cluster_id` is also included in the response of the upload).
 
 ```json
