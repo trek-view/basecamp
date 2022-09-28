@@ -19,7 +19,7 @@ In this episode of ExPODition, David talks to Benjamin Sadd and James Trundle ab
 
 The conversation was recorded remotely on September 23rd, 2020.
 
-<iframe src="https://open.spotify.com/embed-podcast/episode/6zINVgfzQ0JcrKMrHw7H8b" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/SIAqzM6qF4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Related links**
 

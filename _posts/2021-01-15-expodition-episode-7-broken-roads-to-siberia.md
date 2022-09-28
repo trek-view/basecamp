@@ -23,7 +23,7 @@ In this episode of ExPODition, David talks with Jyri Koski and Tuukka Josefsson 
 
 The conversation was recorded remotely on December 21st, 2020.
 
-<iframe src="https://open.spotify.com/embed-podcast/episode/3FB6Sc1ayxWsIgUdRhDR7I" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/oZQFw2BOUpY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Related links**
 

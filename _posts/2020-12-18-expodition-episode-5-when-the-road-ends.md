@@ -21,7 +21,7 @@ In this episode of ExPODition, David talks with Dylan Wickrama about what it's l
 
 The conversation was recorded remotely on November 5th, 2020.
 
-<iframe src="https://open.spotify.com/embed-podcast/episode/2NaZ5ffYnrlfzfnN6RjfCA" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2jNIM1qFVGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Related links**
 

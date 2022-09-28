@@ -29,7 +29,7 @@ In the first episode of ExPODition I talk with British adventurer Chris Lucas ab
 
 The conversation was recorded remotely on September 30th, 2020.
 
-<iframe src="https://open.spotify.com/embed-podcast/episode/0VhvB3JAOq6CcJJRmj9hf3" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nqKyOcQ0bdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Related links**
 

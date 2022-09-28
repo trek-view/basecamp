@@ -19,8 +19,7 @@ In this episode of ExPODition, David talks with Garrett Martin about the trip. G
 
 The conversation was recorded remotely on September 24th, 2020.
 
-<iframe src="https://open.spotify.com/embed-podcast/episode/1Op70vXYOoummILxAZzeBG" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Qz-ikMNw-hQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 **Related links**
 
 Garrett's website: [https://garrettrmartin.com/](https://garrettrmartin.com/)

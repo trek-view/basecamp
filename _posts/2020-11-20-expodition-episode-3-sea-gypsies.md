@@ -21,7 +21,7 @@ In this episode of ExPODition, David talks with director Nico Edwards about bein
 
 The conversation was recorded remotely on September 29th, 2020.
 
-<iframe src="https://open.spotify.com/embed-podcast/episode/1WoUIJxeqTsh2lUp9Eip2z" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HUdJ1jqpYso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Related links**
 

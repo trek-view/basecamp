@@ -23,7 +23,7 @@ In this episode of ExPODition, David talks with Zac Newham about his bicycle rid
 
 The conversation was recorded remotely on January 11th, 2021.
 
-<iframe src="https://open.spotify.com/embed-podcast/episode/4l4o5xHBmY6CoNyu9db6bW" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-KowiSmYEb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Related links**
 
