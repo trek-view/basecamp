@@ -75,7 +75,6 @@ Using the above to create a thumbnail at the top and bottom of the image would r
 
 <img class="img-fluid" src="/assets/images/blog/2022-08-26/GSAA4862-distorted-thumb-top.jpg" alt="GSAA4862 distorted thumbnail" title="GSAA4862 distorted thumbnail" />
 
-
 Lets say I wanted to create a thumbnail at the top of the image. Using the previously described approach would give me a command;
 
 ```shell
@@ -86,5 +85,31 @@ Which gives the following thumbnail;
 
 <img class="img-fluid" src="/assets/images/blog/2022-08-26/GSAA4862-crop-top.JPG" alt="GSAA4862 distorted thumbnail crop" title="GSAA4862 distorted thumbnail crop" />
 
+This is because of the equirectangular projection. If I roughly annotate how a Cartesian image is mapped in the equirectangular space it would look something like;
 
-TODO
+<img class="img-fluid" src="/assets/images/blog/GSAA4862-distorted-thumb-top-annotated.jpg" alt="GSAA4862 Equirectangular to Cartesian" title="GSAA4862 Equirectangular to Cartesian" />
+
+The top of the selected area for the thumbnail is stretched when compared to the bottom.
+
+Introducing [pano2thumb](https://github.com/trek-view/pano2thumb/).
+
+I couldn't find a way to convert a selected area in an equirectangular image to Cartesian co-ordinates in imagemagick, so I decided to take a custom approach.
+
+Using pano2thumb you can select the latitude and longitude for the center of the thumbnail, the length and width of the desired thumbnail output, and the field of view to be captured from the center (latitude / longitude);
+
+```shell
+python3 pano2thumb.py --input GSAD6231.JPG --width=1200 --height=675 --fov=120 --latitude=90 --longitude=90 --output GSAD6231-up.JPG
+```
+
+Which produces an un-distorted thumbnail facing straight up;
+
+<img class="img-fluid" src="/assets/images/blog/GSAD6231-up.JPG" alt="GSAD6231 up" title="GSAD6231 up" />
+
+pano2thumb will also produce a better result for the first example of the thumbnail facing directly forward because it will remove any distortion (even if it's minimal), like so;
+
+```shell
+python3 pano2thumb.py --input GSAD6231.JPG --width=1200 --height=675 --fov=120 --latitude=0 --longitude=-90 --output GSAD6231-forward.JPG
+```
+<img class="img-fluid" src="/assets/images/blog/GSAD6231-forward.JPG" alt="GSAD6231 forward" title="GSAD6231 forward" />
+
+Give it a try. [Download pano2thumb here](https://github.com/trek-view/pano2thumb/)
