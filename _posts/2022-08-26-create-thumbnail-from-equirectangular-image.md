@@ -1,6 +1,6 @@
 ---
 date: 2022-08-26
-title: "Programmatically creating a thumbnail image from a equirectangular image using ImageMagick"
+title: "Programmatically creating a thumbnail image from a equirectangular image"
 description: "In this post I will show you two approaches you can use to create thumbnails from any part of an equirectangular image."
 categories: developers
 tags: [imagemagick, thumbnail]
@@ -105,7 +105,7 @@ Which produces an un-distorted thumbnail facing straight up;
 
 <img class="img-fluid" src="/assets/images/blog/GSAD6231-up.JPG" alt="GSAD6231 up" title="GSAD6231 up" />
 
-pano2thumb will also produce a better result for the first example of the thumbnail facing directly forward because it will remove any distortion (even if it's minimal), like so;
+pano2thumb will also produce a better result for the first example of the thumbnail facing directly forward (because it will remove any distortion, however minimal), like so;
 
 ```shell
 python3 pano2thumb.py --input GSAD6231.JPG --width=1200 --height=675 --fov=120 --latitude=0 --longitude=-90 --output GSAD6231-forward.JPG
