@@ -87,7 +87,7 @@ Which gives the following thumbnail;
 
 This is because of the equirectangular projection. If I roughly annotate how a Cartesian image is mapped in the equirectangular space it would look something like;
 
-<img class="img-fluid" src="/assets/images/blog/GSAA4862-distorted-thumb-top-annotated.jpg" alt="GSAA4862 Equirectangular to Cartesian" title="GSAA4862 Equirectangular to Cartesian" />
+<img class="img-fluid" src="/assets/images/blog/2022-08-26/GSAA4862-distorted-thumb-top-annotated.jpg" alt="GSAA4862 Equirectangular to Cartesian" title="GSAA4862 Equirectangular to Cartesian" />
 
 The top of the selected area for the thumbnail is stretched when compared to the bottom.
 
@@ -103,13 +103,14 @@ python3 pano2thumb.py --input GSAD6231.JPG --width=1200 --height=675 --fov=120 -
 
 Which produces an un-distorted thumbnail facing straight up;
 
-<img class="img-fluid" src="/assets/images/blog/GSAD6231-up.JPG" alt="GSAD6231 up" title="GSAD6231 up" />
+<img class="img-fluid" src="/assets/images/blog/2022-08-26/GSAD6231-up.JPG" alt="GSAD6231 up" title="GSAD6231 up" />
 
 pano2thumb will also produce a better result for the first example of the thumbnail facing directly forward (because it will remove any distortion, however minimal), like so;
 
 ```shell
 python3 pano2thumb.py --input GSAD6231.JPG --width=1200 --height=675 --fov=120 --latitude=0 --longitude=-90 --output GSAD6231-forward.JPG
 ```
-<img class="img-fluid" src="/assets/images/blog/GSAD6231-forward.JPG" alt="GSAD6231 forward" title="GSAD6231 forward" />
 
-Give it a try. [Download pano2thumb here](https://github.com/trek-view/pano2thumb/)
+<img class="img-fluid" src="/assets/images/blog/2022-08-26/GSAD6231-forward.JPG" alt="GSAD6231 forward" title="GSAD6231 forward" />
+
+Give it a try. [Download pano2thumb here](https://github.com/trek-view/pano2thumb/).
