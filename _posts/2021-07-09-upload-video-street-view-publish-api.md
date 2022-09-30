@@ -100,15 +100,16 @@ With the body of the request [containing a variety of available parameters](http
   },
   "uploadReference": {
     "uploadUrl": "https://streetviewpublish.googleapis.com/media/user/<account_id>/photo/<uploadReference>"
-  }
+  },
+  "gpsSource": "PHOTO_SEQUENCE"
 }
 ```
 
-Where `captureTimeOverride.seconds` is the first photo time, `uploadReference.uploadUrl` is the URL where the video was uploaded to previously, and the `rawGpsTimeline` contains the available GPS information from the captured sequence (usually generated from a GPX file).
+Where `captureTimeOverride.seconds` is the first photo time, `uploadReference.uploadUrl` is the URL where the video was uploaded to previously, `gpsSource` is either `CAMERA_MOTION_METADATA_TRACK` (if video has CAMM track) or `PHOTO_SEQUENCE` (if using `rawGpsTimeline` object), and a `rawGpsTimeline` (if `PHOTO_SEQUENCE`) that contains the available GPS information from the captured sequence (usually generated from a GPX file).
 
 e.g. https://github.com/smarquardt/samples-for-svpub/blob/master/video_upload/gopro_fusion_timelapse_uploader.py#L243
 
-Note, if the uploaded video contains a CAMM telemetry track you can simply pass the `uploadReference.uploadUrl` in the body of the request (no GPS information is required).
+Note, if the uploaded video contains a CAMM telemetry track you can simply pass the `uploadReference.uploadUrl` and `gpsSource` in the body of the request -- no GPS information (`rawGpsTimeline`) is required.
 
 After publishing a `photoSequence`, you will recieve a response with the `processingState`.
 

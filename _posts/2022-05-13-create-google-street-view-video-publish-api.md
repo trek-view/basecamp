@@ -80,7 +80,8 @@ Once the timestamps have been updated to match the video frame rate, we now need
 		"altitude": alt,
 		"gpsRecordTimestampUnixEpoch": {
 			"seconds": epoch
-		}
+		},
+		"gpsSource": source
 	}
 ]
 ```
@@ -95,7 +96,7 @@ For example;
       "longitude": 90
     },
     "altitude": 90,
-    "gpsRecordTimestampUnixEpoch": "2014-10-02T15:01:23.045123456Z"
+    "gpsRecordTimestampUnixEpoch": "2014-10-02T15:01:23.045123456Z",
   },
   {
     "latLngPair": {
