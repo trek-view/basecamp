@@ -14,7 +14,7 @@ show_drafts: false
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: assets/images/icons/siteicon.png
-description: Help build an open 3D map of the natural world
+description: Help build an open street-level map of the natural world
 author:
   name:
 twitter:
