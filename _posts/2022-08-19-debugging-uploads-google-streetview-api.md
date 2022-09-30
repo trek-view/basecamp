@@ -17,7 +17,7 @@ Last week I complained about Mapillary. This week, Google Street View is in my c
 
 I've posted before about the Google Street View API;
 
-1. [Google Street View Publish API - Quick Start Guide](https://www.trekview.org/blog/2020/street-view-publish-api-quick-start-guide/](/blog/2020/street-view-publish-api-quick-start-guide/)
+1. [Google Street View Publish API - Quick Start Guide](/blog/2020/street-view-publish-api-quick-start-guide/)
 2. [Upload a Video to the Street View Publish](/blog/2021/upload-video-street-view-publish-api)
 3. [Creating a Video File Ready to be Uploaded to the Google Street View API](/blog/2022/create-google-street-view-video-publish-api)
 
