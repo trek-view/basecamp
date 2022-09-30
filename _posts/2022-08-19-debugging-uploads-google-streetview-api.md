@@ -301,4 +301,4 @@ However, all these services are paid.
 
 At the time of writing the first $200 of API charges are waived, however, as you can see 100,000 requests to the Maps Javascript API to retrieve Street View images [would cost $1,400](https://mapsplatform.google.com/pricing/), or about $0.014 per request. At first glance that doesn't sound too bad, but now imagine a user navigating between 50 images in Street View, which equates to 50 API requests, or $0.70. As you can see, it could quickly get expensive, and is a cost you have no control over unless you limit how a user in your app browses through Street View images.
 
-Pricing is not so much an issue (or at least more controllable) for the Street View Static API, as it returns individual images and does not allow users the interactively browse through many Street View images by default.
+Pricing is not so much an issue (or at least more controllable) for the Street View Static API as it returns individual images and does not allow users the interactively browse through as many Street View as they want by default.
