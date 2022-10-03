@@ -23,7 +23,6 @@ I've curated some of my favourite talks most closely linked to the work we do he
 
 [_Don't forget to check out my favourite talks from last year too_](/blog/2020/state-of-the-map-2020).
 
-
 ## 3D Rendering with OSM2World
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zGmanoRWY50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
