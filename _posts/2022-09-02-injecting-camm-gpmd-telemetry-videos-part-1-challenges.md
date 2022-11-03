@@ -85,4 +85,6 @@ If with open up the outputted binary file `GS018423-telemetry.dat` in [Hex Fiend
 
 <img class="img-fluid" src="/assets/images/blog/2022-09-02/gpmf-hex-sm.jpg" alt="GPMF HEX" title="GPMF HEX" />
 
-The parsed output might look messy at this point, however, over the coming weeks I will explain how GPMD and CAMM binary files can be written and embedded into videos.
+The parsed output might look messy at this point, however, over the coming weeks I will explain how GPMD and CAMM can be written and embedded into videos.
+
+In the next post we'll go back to basics (while, maybe for you, not me) as I attempt to explain the mp4 standard and why it's important when embedding telemetry.
