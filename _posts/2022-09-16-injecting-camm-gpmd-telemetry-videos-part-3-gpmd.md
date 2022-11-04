@@ -74,9 +74,39 @@ Turning back to the books ([aka the mp4 specification](https://drive.google.com/
 
 In the case of GPMF, `minf` contains 3 nested boxes:
 
+### `gmhd`
+
+TODO
+
+
+### `dinf`
+
+TODO
+
+
+### `stbl`
+
+The sample table box `stbl`, you can find the corresponding sample description information (`stsd`), timing information (`stts`), sample size information (`stsz`), chunk location information (`stco`), and GoPro metadata (`gpmd`).
+
+`stsd`, `stts`, `stsz`, and `stts` are all box types in the mp4 specification. `gpmd` is custom.
+
+TODO
+
+## Writing values into boxes
+
+
+
+
+
+Lets start with a simple examp
+
 * 
 
-
+	   '' < sample table within >
+	      'stsd' < sample description with data format 'gpmd', the type used for GPMF >
+	      'stts' < GPMF sample duration for each payload >
+	      'stsz' < GPMF byte size for each payload >
+	      'stco'
 
 
 

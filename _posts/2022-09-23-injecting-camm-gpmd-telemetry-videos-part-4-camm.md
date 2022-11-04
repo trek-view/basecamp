@@ -13,3 +13,4 @@ published: false
 
 **In this post I will the structure of Google's CAMM standard, how to create a CAMM binary, and how to inject it into a mp4 video file.**
 
+To first understand CAMM we first need to understand what makes an mp4 file.

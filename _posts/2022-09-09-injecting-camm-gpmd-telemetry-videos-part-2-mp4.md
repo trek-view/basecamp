@@ -47,7 +47,19 @@ moov [all the header/index info]
     ‘trak’ subtype ‘meta’, name “GoPro MET”, GPMF telemetry
 ```
 
-We will go into GPMF in the next post, but the point I am trying to make is here being there is a box structure.
+Remember in the last post that ffprobe showed the GPMF sample video had 3 tracks;
+
+```
+Stream #0:0[0x1](eng): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 3072x1536 [SAR 1:1 DAR 2:1], 38042 kb/s, 59.94 fps, 59.94 tbr, 600 tbn (default)
+Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 188 kb/s (default)
+Stream #0:2[0x3](eng): Data: bin_data (gpmd / 0x646D7067), 117 kb/s (default)
+```
+
+These map to the `trak`s `vide` (`0:0`), `soun` (`0:1`) and `meta` (`0:2`). 
+
+Note, the `tmcd` track is missing (as it's not applicable to this video type -- you tend to see this on unprocessed .360 videos). Another point to note is that there might be more than one of the track type depending on the video mode (e.g. .360's (which follow the mp4 standard, and thus mp4s in all but name) have two `vide` tracks).
+
+We will go into GPMF in the next post, but the point I am trying to make is here being there is a box structure nested in each of these 3 boxes `vide`, `soun`, and `meta`.
 
 ```
 +-- moov
@@ -55,13 +67,13 @@ We will go into GPMF in the next post, but the point I am trying to make is here
         +-- ...
     +-- soun
         +-- ...
-    +-- tmcd
-        +-- ...
     +-- meta
         +-- tkhd
         +-- mdia
             +-- ...
 ```
+
+Writing data into nested boxes inside the `meta` box is what we're interested in for this exercise.
 
 Without revealing the CAMM structure (before the full post) the box structure is very similar. CAMM data is nested under `moov` -> `meta`;
 
