@@ -33,7 +33,7 @@ In my sample video (equirectangular with GPMF telemetry) you can see 5 top level
 * `mdat` (media) box: contains the audio/video payload.
 * `moov` (movie) box: contains metadata organised in a nested structure of other boxes -- this is where the telemetry is nested
 
-To help my own understanding, I took the [mp4 specification](/assets/images/blog/2022-09-09/14496-12-ed5_0-en.pdf) and copied the box structure (and box descriptions) [into a spreadsheet to demo the nested box structure](https://docs.google.com/spreadsheets/d/1QDWCgIl2nnM65IfzSnqk_igMd1jeJCTT0rJFD5MdPfs/edit?usp=sharing). If you're new to the subject, I'm certain you'll find it useful too.
+To help my own understanding, I took the [mp4 specification](https://drive.google.com/file/d/1ZdSwSrFzjXeL-6Syw1PjLsyYSln09mPh/view?usp=share_link) and copied the box structure (and box descriptions) [into a spreadsheet to demo the nested box structure](https://docs.google.com/spreadsheets/d/1QDWCgIl2nnM65IfzSnqk_igMd1jeJCTT0rJFD5MdPfs/edit?usp=sharing). If you're new to the subject, I'm certain you'll find it useful too.
 
 [GoPro themselves describe the box structure of their telemetry in their docs](https://github.com/gopro/gpmf-parser/blob/main/docs/README.md#gopros-mp4-structure);
 
@@ -41,10 +41,10 @@ To help my own understanding, I took the [mp4 specification](/assets/images/blog
 ftyp [type ‘mp41’]
 mdat [all the data for all tracks are interleaved]
 moov [all the header/index info]
-  ‘trak’ subtype ‘vide’, name “GoPro AVC”, H.264 video data 
-  ‘trak’ subtype ‘soun’, name “GoPro AAC”, to AAC audio data
-  ‘trak’ subtype ‘tmcd’, name “GoPro TCD”, starting timecode (time of day as frame since midnight)
-  ‘trak’ subtype ‘meta’, name “GoPro MET”, GPMF telemetry
+    ‘trak’ subtype ‘vide’, name “GoPro AVC”, H.264 video data 
+    ‘trak’ subtype ‘soun’, name “GoPro AAC”, to AAC audio data
+    ‘trak’ subtype ‘tmcd’, name “GoPro TCD”, starting timecode (time of day as frame since midnight)
+    ‘trak’ subtype ‘meta’, name “GoPro MET”, GPMF telemetry
 ```
 
 We will go into GPMF in the next post, but the point I am trying to make is here being there is a box structure.
@@ -52,15 +52,15 @@ We will go into GPMF in the next post, but the point I am trying to make is here
 ```
 +-- moov
     +-- vide
-		+-- ...
+        +-- ...
     +-- soun
-		+-- ...
+        +-- ...
     +-- tmcd
-		+-- ...
+        +-- ...
     +-- meta
-		+-- tkhd
-		+-- mdia
-			+-- ...
+        +-- tkhd
+        +-- mdia
+            +-- ...
 ```
 
 Without revealing the CAMM structure (before the full post) the box structure is very similar. CAMM data is nested under `moov` -> `meta`;
@@ -69,6 +69,6 @@ Without revealing the CAMM structure (before the full post) the box structure is
 
 <img class="img-fluid" src="/assets/images/blog/2022-09-09/Camera-Motion-Metadata-Spec-Street-View-Publish-API-Google-Developers.jpeg" alt="CAMM Spec" title="CAMM Spec" />
 
-_[CAMM Spec](https://developers.google.com/streetview/publish/camm-spec)_
+_[CAMM Specification](https://developers.google.com/streetview/publish/camm-spec)._
 
 Now that's a bit cleared (hopefully), in the next post I will dive into the specifics of GPMF "boxes".
