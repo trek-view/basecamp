@@ -29,7 +29,7 @@ _[https://github.com/gopro/gpmf-write](https://github.com/gopro/gpmf-write)_
 
 OK, that's quite a mouthful. I promise by the end of this post it will all make sense.
 
-Let us start by picking up where the last post left off, the box structure of GMPF;
+Let us start by picking up where the last post left off, the box specification of GMPF;
 
 ```
 ftyp [type ‘mp41’]
@@ -41,11 +41,17 @@ moov [all the header/index info]
     ‘trak’ subtype ‘meta’, name “GoPro MET”, GPMF telemetry
 ```
 
+## Raw telemetry (inside `mdat` box)
+
+TO DO
+
+## Telemetry metadata (inside `moov` box)
+
 Inside the `meta` `trak` box you'll see more nested boxes;
 
 ```
 'moov'
-	'meta'
+	'trak'
 	    'tkhd' < track header data >
 	    'mdia' 
 	        'mdhd' < media header data >
@@ -60,18 +66,27 @@ Inside the `meta` `trak` box you'll see more nested boxes;
 		            'stts' < GPMF sample duration for each payload >
 		            'stsz' < GPMF byte size for each payload >
 		            'stco' < GPMF byte offset with the MP4 for each payload >
-	```
+```
 
-Turning back to the books ([aka the mp4 specification](https://drive.google.com/file/d/1ZdSwSrFzjXeL-6Syw1PjLsyYSln09mPh/view?usp=share_link)) for a second.
+I won't go over `trak`s again, [this was covered last week](/blog/2022/injecting-camm-gpmd-telemetry-videos-part-2-mp4). Today I will focus exclusively on the `meta` `trak`.
 
-* `trak` (track) box: a container box, and its sub-boxes contain references and descriptions of the track's media data. The media in an MP4 file can contain multiple tracks, and there is at least one track. These tracks are independent of each other and have their own time and space information. `trak` must contain a `tkhd` and a `mdia`, in addition to many optional boxes (omitted).
-	* `tkhd` (track header) box: for the track described by tkhd, if it is a video, it will have width and height information, as well as file creation time, modification time, etc.
+But let us recap just one thing; the boxes in the meta `trak` 
+
+Turning back to the books ([aka the mp4 specification](https://drive.google.com/file/d/1ZdSwSrFzjXeL-6Syw1PjLsyYSln09mPh/view?usp=share_link)) for a second and looking at the boxes nested in the GMPF meta `trak`;
+
+
+* `tkhd` (track header) box: for the track described by tkhd, if it is a video, it will have width and height information, as well as file creation time, modification time, etc.
 	* `mdia` (track media structure) box: describes the main information of the media data sample of this audio and video track/stream (`trak`), and is a very important box for the player...
+
+
+## A deeper look at the `minf` (media info) box
+
+
+The boxes Almost all boxes contain a concept of time (or a stream). The most obvious is the content in the `mdat` box -- the audio and imagery in the video is streamed over time. This is the same for other boxes too, including those of interest to this exercise for the metadata streams (more on that next week when I talk a bit more about what is in "a box").
+
 		* `mdhd` (media header) box: The overall information of the current audio/video track/stream (`trak`). The box has a duration field and a timescale field. The value of duration/timescale is the duration of the current stream.
 		* `hdlr` (handler) box: is used to specify the type of the stream (in this case always `GoPro MET`)
 		* `minf`: (media info) box; media information container. This is where the main telemetry is housed...
-
-## A deeper look at the `minf` (media info) box
 
 In the case of GPMF, `minf` contains 3 nested boxes:
 
