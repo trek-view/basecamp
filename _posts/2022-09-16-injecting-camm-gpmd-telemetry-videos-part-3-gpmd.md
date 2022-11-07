@@ -1,14 +1,14 @@
 ---
 date: 2022-09-16
-title: "Injecting Telemetry into Video Files (Part 2): GPMF"
+title: "Injecting Telemetry into Video Files (Part 3): GPMF"
 description: "In this post I will the structure of GoPro's GPMF standard, how to create a GPMF binary, and how to inject it into a mp4 video file."
 categories: developers
 tags: [gpmd, camm, telemetry, gpmf, gpx]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-09-16/
-featured_image: /assets/images/blog/2022-09-16/
+image: /assets/images/blog/2022-09-16/gopro-gpmf-structure-meta.jpg
+featured_image: /assets/images/blog/2022-09-16/gopro-gpmf-structure-sm.jpg
 layout: post
-published: false
+published: true
 ---
 
 **In this post I will the structure of GoPro's GPMF standard, how to create a GPMF binary, and how to inject it into a mp4 video file.**
@@ -44,22 +44,23 @@ moov [all the header/index info]
 Inside the `meta` `trak` box you'll see more nested boxes;
 
 ```
-'trak'
-    'tkhd' < track header data >
-    'mdia' 
-        'mdhd' < media header data >
-        'hdlr' < ... Component type = 'mhlr', Component subtype = 'meta', ... Component name = “GoPro MET” ... >
-        'minf' 
-	        'gmhd' 
-	            'gmin' < media info data >
-	            'gpmd' < the type for GPMF data >
-	        'dinf' < data information >
-	        'stbl' < sample table within >
-	            'stsd' < sample description with data format 'gpmd', the type used for GPMF >
-	            'stts' < GPMF sample duration for each payload >
-	            'stsz' < GPMF byte size for each payload >
-	            'stco' < GPMF byte offset with the MP4 for each payload >
-```
+'moov'
+	'meta'
+	    'tkhd' < track header data >
+	    'mdia' 
+	        'mdhd' < media header data >
+	        'hdlr' < ... Component type = 'mhlr', Component subtype = 'meta', ... Component name = “GoPro MET” ... >
+	        'minf' 
+		        'gmhd' 
+		            'gmin' < media info data >
+		            'gpmd' < the type for GPMF data >
+		        'dinf' < data information >
+		        'stbl' < sample table within >
+		            'stsd' < sample description with data format 'gpmd', the type used for GPMF >
+		            'stts' < GPMF sample duration for each payload >
+		            'stsz' < GPMF byte size for each payload >
+		            'stco' < GPMF byte offset with the MP4 for each payload >
+	```
 
 Turning back to the books ([aka the mp4 specification](https://drive.google.com/file/d/1ZdSwSrFzjXeL-6Syw1PjLsyYSln09mPh/view?usp=share_link)) for a second.
 

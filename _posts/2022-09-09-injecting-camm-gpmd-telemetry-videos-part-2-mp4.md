@@ -17,7 +17,7 @@ MP4, aka MPEG-4, [is a standard](https://www.iso.org/obp/ui/#iso:std:iso-iec:144
 
 Simply put, MP4 acts like a wrapper around multimedia files and associated data that's necessary for playing the file correctly. But note that, MP4 stores data instead of compressing them, so it has to work with other codecs, for example, H.264/AVC and HEVC for video, AAC, and MP3 for audio, and CAMM or GPMD for telemetry.
 
-If you look at it as a whole, all the data of mp4 is stored in a box structure.
+If you look at it as a whole, all the data of mp4 is stored in a box structure (you will often here to boxes referred to as atoms, but I will use the term boxes for simplicity in this post).
 
 <img class="img-fluid" src="/assets/images/blog/2022-09-09/mp4-box-structure.png" alt="mp4 box structure" title="mp4 box structure" />
 
@@ -62,15 +62,15 @@ Note, the `tmcd` track is missing (as it's not applicable to this video type -- 
 We will go into GPMF in the next post, but the point I am trying to make is here being there is a box structure nested in each of these 3 boxes `vide`, `soun`, and `meta`.
 
 ```
-+-- moov
-    +-- vide
-        +-- ...
-    +-- soun
-        +-- ...
-    +-- meta
-        +-- tkhd
-        +-- mdia
-            +-- ...
+├── moov
+    ├── vide
+    │   └── ...
+    ├── soun
+    │   └── ...
+    └── meta
+        ├── tkhd
+        └── mdia
+            ├── ...
 ```
 
 Writing data into nested boxes inside the `meta` box is what we're interested in for this exercise.
@@ -83,4 +83,101 @@ Without revealing the CAMM structure (before the full post) the box structure is
 
 _[CAMM Specification](https://developers.google.com/streetview/publish/camm-spec)._
 
-Now that's a bit cleared (hopefully), in the next post I will dive into the specifics of GPMF "boxes".
+Each box also has a size in bytes. Let's take a look at this using the help of [Google's Spatial Media tool](https://github.com/google/spatial-media/tree/master/spatialmedia);
+
+```shell
+git clone https://github.com/google/spatial-media
+cd spatial-media
+source spatial-media_venv/bin/activate
+cd spatialmedia
+curl https://gist.githubusercontent.com/himynamesdave/6220ed9b3ab29770c9a5c9019da470e7/raw/0e77d28cc3a00d1f6c801ad01d91c09ce0c13610/print_media.py > print_media.py
+python3 print_media.py GS018423.mp4 
+```
+
+Which shows prints;
+
+```
+mpeg4 [89002995]
+ ├── b'ftyp' [8, 12]
+ ├── b'skip' [8, 19660]
+ ├── b'free' [8, 40784]
+ ├── b'mdat' [8, 88922385]
+ └── b'moov' [8, 20114]
+     ├── b'mvhd' [8, 100]
+     ├── b'trak' [8, 11882]
+     │   ├── b'tkhd' [8, 84]
+     │   ├── b'mdia' [8, 10838]
+     │   │   ├── b'mdhd' [8, 24]
+     │   │   ├── b'hdlr' [8, 41]
+     │   │   └── b'minf' [8, 10749]
+     │   │       ├── b'vmhd' [8, 12]
+     │   │       ├── b'hdlr' [8, 25]
+     │   │       ├── b'dinf' [8, 28]
+     │   │       └── b'stbl' [8, 10652]
+     │   │           ├── b'stsd' [8, 182]
+     │   │           │   └── b'avc1' [8, 166]
+     │   │           ├── b'stsz' [8, 4464]
+     │   │           ├── b'stsc' [8, 20]
+     │   │           ├── b'stco' [8, 4460]
+     │   │           ├── b'stts' [8, 192]
+     │   │           ├── b'stss' [8, 160]
+     │   │           └── b'sdtp' [8, 1118]
+     │   ├── b'edts' [8, 28]
+     │   ├── b'uuid' [8, 446]
+     │   └── b'uuid' [8, 446]
+     ├── b'trak' [8, 7526]
+     │   ├── b'tkhd' [8, 84]
+     │   ├── b'mdia' [8, 7390]
+     │   │   ├── b'mdhd' [8, 24]
+     │   │   ├── b'hdlr' [8, 25]
+     │   │   └── b'minf' [8, 7317]
+     │   │       ├── b'smhd' [8, 8]
+     │   │       ├── b'hdlr' [8, 25]
+     │   │       ├── b'dinf' [8, 28]
+     │   │       └── b'stbl' [8, 7224]
+     │   │           ├── b'stsd' [8, 160]
+     │   │           │   └── b'mp4a' [8, 144]
+     │   │           │       └── b'wave' [8, 92]
+     │   │           │           ├── b'frma' [8, 4]
+     │   │           │           ├── b'enda' [8, 2]
+     │   │           │           ├── b'esds' [8, 42]
+     │   │           │           ├── b'\x00\x00\x00\x00' [8, 0]
+     │   │           │           └── b'mp4a' [8, 4]
+     │   │           ├── b'stsz' [8, 3496]
+     │   │           ├── b'stsc' [8, 20]
+     │   │           ├── b'stco' [8, 3492]
+     │   │           └── b'stts' [8, 16]
+     │   └── b'edts' [8, 28]
+     └── b'trak' [8, 574]
+         ├── b'tkhd' [8, 84]
+         ├── b'mdia' [8, 438]
+         │   ├── b'mdhd' [8, 24]
+         │   ├── b'hdlr' [8, 34]
+         │   └── b'minf' [8, 356]
+         │       ├── b'gmhd' [8, 24]
+         │       ├── b'dinf' [8, 28]
+         │       └── b'stbl' [8, 280]
+         │           ├── b'stsd' [8, 24]
+         │           │   └── b'gpmd' [8, 8]
+         │           ├── b'stsz' [8, 88]
+         │           ├── b'stsc' [8, 20]
+         │           ├── b'stco' [8, 84]
+         │           └── b'stts' [8, 24]
+         └── b'edts' [8, 28]
+```
+
+Here we can see the mp4 file has size 89002995 (bytes). As expected, most of this is taken up by the `mdat` box (the actual movie) at 88922385 bytes.
+
+You can the size of each box as the last digit of the square brackets. The `moov` box is 20114 bytes, which includes the sum of all boxes inside it.
+
+Each box has a header, shown above as the first digit in square brackets (always `8` above). The minimum size of an atom is 8 bytes (the first 4 bytes specify size (which I just explained) and the next 4 bytes specify box type).
+
+You will notice nested in the `moov` box are 3 `trak` boxes -- these cover metadata for each stream (including the audio and video stream). Still unsure? Remember back to the ffprobe output for this video, it had three streams (audio, video, and metadata in GPMF). We have three `trak` boxes to cover these.
+
+There can be a varying number of `trak` boxes depending on how the video is created. For example, if there is only video and no audio/metadata track then there would be only one `trak` box present.
+
+In this case (because we know the video contains GPMF) we can identify the metadata `trak` by looking for the GoPro definition. We can find it in the last `trak` (as ordered above); `moov` > `trak` > `mdia` > `minf` > `gmhd`.
+
+Finally, one final thing to think about is timing. Videos are not static, they run over a period of time. Almost all boxes contain a concept of time (or a stream). The most obvious is the content in the `mdat` box -- the audio and imagery in the video is streamed over time. This is the same for other boxes too, including those of interest to this exercise for the metadata streams (more on that next week when I talk a bit more about what is in "a box").
+
+Now that is slightly clearer (hopefully), in the next post I will dive into the specifics of GPMF "boxes".
