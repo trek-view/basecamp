@@ -43,6 +43,65 @@ moov [all the header/index info]
 
 ## Raw telemetry (inside `mdat` box)
 
+To begin with, it is worth familiarising yourself with the data that GPMF supports (put another way, the types and values of telemetry that can be recorded).
+
+[You can see the specifics of what each GoPro camera writes (generally, the newer the GoPro camera, the more telemetry data is written because there are more sensors)](https://github.com/gopro/gpmf-parser#where-to-find-gpmf-data).
+
+<img class="img-fluid" src="/assets/images/blog/2022-09-16/gpmf-max-camera-telemetry.png" alt="GoPro MAX GPMF" title="GoPro MAX GPMF" />
+
+Above is a snippet of what telemetry the GoPro MAX writes into GPMF.
+
+Note how the first column is titled "FourCC". e.g. the data for the 3-axis accelerometer is recorded under "ACCL" in the format; Z,X,Y.
+
+Now lets start thinking about representing this as binary...
+
+<img class="img-fluid" src="/assets/images/blog/2022-09-16/gopro-gpmf-structure-sm.jpg" alt="GoPro GPMF Key Length Value design" title="GoPro GPMF Key Length Value design" />
+
+Here we can see the FourCC value is the Key (so in the previous example, `key` = `ACCL`). The key has a Length and a Value.
+
+So lets look an example, of GPS data to start with. [In GPMF the key for this data is recorded under the key `GPS5`](https://github.com/gopro/gpmf-parser#hero11-changes-otherwise-supports-all-hero10-metadata) which can be used to record the values; latitude (degrees), longitude (degrees), altitude (meters), 2D ground speed (meters/second), and 3D speed (meters/second).
+
+Let us assume we start with a GPX file with the following;
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="https://github.com/juanirache/gopro-telemetry">
+    <trk>
+        <name>undefined</name>
+        <desc>GPS (Lat., Long., Alt., 2D speed, 3D speed) - [deg,deg,m,m/s,m/s]</desc>
+        <src>GoPro Max</src>
+        <trkseg>
+            <trkpt lat="51.2725595" lon="-0.8459936">
+                <ele>84.067</ele>
+            <time>2021-09-04T07:25:17.352Z</time>
+              <fix>3d</fix>
+              <hdop>139</hdop>
+              <cmt>altitude system: MSLV; 2dSpeed: 0.094; 3dSpeed: 0.12</cmt>
+            </trkpt>
+```
+
+If this looks familiar, it's the output from [GoPro Telemetry](/blog/2021/gopro-telemetry-exporter-getting-started).
+
+It gives us all the values needed for the `GPS5` key.
+
+* latitude = 51.2725595 degrees
+* longitude = -0.8459936 degrees
+* altitude = 84.067 meters
+* 2dSpeed = 0.094 meters/second
+* 3dSpeed = 0.12 meters/second
+
+
+
+We know in 
+
+
+
+
+
+
+
+
+
 TO DO
 
 ## Telemetry metadata (inside `moov` box)
@@ -70,13 +129,24 @@ Inside the `meta` `trak` box you'll see more nested boxes;
 
 I won't go over `trak`s again, [this was covered last week](/blog/2022/injecting-camm-gpmd-telemetry-videos-part-2-mp4). Today I will focus exclusively on the `meta` `trak`.
 
-But let us recap just one thing; the boxes in the meta `trak` 
+But let us recap just one thing; the boxes in the meta `trak` describe data inside the `mdat` (e.g. duration, track type etc.) and what you can find where.
+
+Let's have a look at out sample video
+
+* `tkhd` (track header) box: this is the track header data, for 
+	* `mdia` (track media structure) box: describes the main information of the media data sample of this audio and video track/stream (`trak`), and is a very important box for the player...
+
+
+* description about data inside the `mdat` (e.g. duration, track type etc.) and what you can find where (e.g. `stco`/`co64` which provides the offset value to fetch the right data from the `mdat` `trak`).
+
+
+
+ (e.g. `stco`/`co64` which provides the offset value to fetch the right data from the `mdat` `trak`).
 
 Turning back to the books ([aka the mp4 specification](https://drive.google.com/file/d/1ZdSwSrFzjXeL-6Syw1PjLsyYSln09mPh/view?usp=share_link)) for a second and looking at the boxes nested in the GMPF meta `trak`;
 
 
-* `tkhd` (track header) box: for the track described by tkhd, if it is a video, it will have width and height information, as well as file creation time, modification time, etc.
-	* `mdia` (track media structure) box: describes the main information of the media data sample of this audio and video track/stream (`trak`), and is a very important box for the player...
+
 
 
 ## A deeper look at the `minf` (media info) box

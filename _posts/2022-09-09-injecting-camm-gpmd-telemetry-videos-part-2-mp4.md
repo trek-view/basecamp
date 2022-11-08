@@ -101,6 +101,7 @@ Each box also has a size in bytes. Let us take a look at this using the help of 
 ```shell
 git clone https://github.com/google/spatial-media
 cd spatial-media
+python3 -m venv spatial-media_venv
 source spatial-media_venv/bin/activate
 cd spatialmedia
 curl https://gist.githubusercontent.com/himynamesdave/6220ed9b3ab29770c9a5c9019da470e7/raw/0e77d28cc3a00d1f6c801ad01d91c09ce0c13610/print_media.py > print_media.py
@@ -187,6 +188,10 @@ Each box has a header, shown above as the first digit in square brackets (always
 
 You can see the `moov` box and the three nested `trak`.
 
-In this case (because we know the video contains GPMF) we can identify the metadata `trak` by looking for the GoPro definition. We can find it in the last `trak` (as ordered above); `moov` > `trak` > `mdia` > `minf` > `gmhd`. There are better ways to do this automatically (when video type is unknown) that I will introduce in a later post so not to make it more confusing.
+In this case (because we know the video contains GPMF) we can identify the metadata `trak` by looking for the GoPro definition. We can find it in the last `trak` (as ordered above); `moov` > `trak` > `mdia` > `minf` > `stbl` > `stsd` > `gpmd`. There are better ways to do this automatically (when video type is unknown) that I will introduce in a later post so not to make it more confusing.
 
 Now that is slightly clearer (hopefully), in the next post I will dive into the specifics of GPMF "boxes".
+
+## A special thanks...
+
+...to the Apple team who wrote [a brilliant overview to video files atoms (boxes) here](https://developer.apple.com/library/archive/documentation/QuickTime/QTFF/QTFFChap2/qtff2.html) that signicantly helped me understand the topic and write this post.

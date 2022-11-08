@@ -71,7 +71,7 @@ Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'GS018423.mp4':
       handler_name    : GoPro MET
 ```
 
-We can see in stream (track) 4 (`[0x3]`) contains the telemetry information.
+We can see in stream (track) 4 (`[0x3]`) contains `gpmd`.
 
 You will notice that the stream wrapper contains `bin_data`. Essentially this tells us how the data is packed -- as binary. This is true for CAMM too.
 
@@ -85,6 +85,10 @@ If with open up the outputted binary file `GS018423-telemetry.dat` in [Hex Fiend
 
 <img class="img-fluid" src="/assets/images/blog/2022-09-02/gpmf-hex-sm.jpg" alt="GPMF HEX" title="GPMF HEX" />
 
-The parsed output might look messy at this point, however, over the coming weeks I will explain how GPMD and CAMM can be written and embedded into videos.
+But this is not the actual telemetry, this is the telemetry metadata.
+
+Confused yet?
+
+Over the coming weeks I will explain what all these different parts of a video file do and ultimately how GPMD and CAMM telemetry can be embedded into videos.
 
 In the next post we'll go back to basics (while, maybe for you, not me) as I attempt to explain the mp4 standard and why it's important when embedding telemetry.
