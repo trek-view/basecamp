@@ -1,12 +1,12 @@
 ---
-date: 2022-09-30
-title: "Injecting Telemetry into Video Files (Part 5): Telemetry Injector"
+date: 2022-10-07
+title: "Injecting Telemetry into Video Files (Part 6): Telemetry Injector"
 description: "In this post I will show you a proof of concept that can be used to turn a series of geotagged images into a video with a CAMM or GPMD telemetry track."
 categories: developers
 tags: [gpmd, camm, telemetry, gpmf, gpx]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-09-23/
-featured_image: /assets/images/blog/2022-09-23/
+image: /assets/images/blog/2022-10-07/
+featured_image: /assets/images/blog/2022-10-07/
 layout: post
 published: true
 ---
@@ -50,8 +50,77 @@ pip3 install -r requirements.txt
 
 The script is fairly simplistic. It assumes you have a series of geotagged images (either equirectangular or cartesian).
 
+
+### 1. equi photo input
+
 In this example, I will use a directory containing 96 geotagged photos (`NLAB009v204`). If you want to follow along, [you can download them here](https://drive.google.com/drive/folders/1Dvz1vwoO2hdsGCkerjAsExu3DdJ-bA_p?usp=sharing).
 
 ```shell
-python3 telemetry-injector.py -c -i NLAB009v204/ -o NLAB009v204.mp4
+python3 telemetry-injector.py -c -i UKBC003-in/ -o UKBC003-out-camm/
 ```
+
+Let's take a look using exiftool at the output
+
+
+```shell
+cd UKBC003-out-camm
+exiftool -ee -G3 -api LargeFileSupport=1 -X metadata-video.mp4 > metadata-video.txt
+```
+
+### 2. non equi photo input
+
+```shell
+python3 telemetry-injector.py -c -i tes-her10-004g-non-equi-in/ -o tes-her10-004g-non-equi-out-camm/
+```
+
+### 3. equi video input
+
+An easy way 
+
+```shell
+python3 telemetry-injector.py -c -v UKBC002-in.mp4 -x testing-video-gpx_000001-53pts.gpx -o UKBC002-out.mp4
+```
+
+```
+exiftool -ee -G3 -api LargeFileSupport=1 -X UKBC002-out-gpmf.mp4 > UKBC002-out-gpmf-exif.txt
+```
+
+
+
+UKBC002-out-camm.mp4
+
+
+```shell
+python3 telemetry-injector.py -g -v testing-video-gpx_000001.mp4 -x testing-video-gpx_000001.gpx -o testing-video-gpx_000001-out-gpmf.mp4
+```
+
+```
+exiftool -ee -G3 -api LargeFileSupport=1 -X testing-video-gpx_000001-out-gpmf.mp4 > testing-video-gpx_000001-out-gpmf.txt
+```
+
+
+
+ffmpeg -y -r 5 -start_number 0 -vcodec mjpeg -i UKBC002-in/ -vcodec libx264 -pix_fmt yuv420p UKBC002-in.mp4
+
+
+
+
+## Injecting GPMF data
+
+
+```shell
+python3 telemetry-injector.py -g -i UKBC002-in/ -o UKBC002-out-gpmf/
+```
+
+```shell
+cd UKBC002-out-gpmf
+exiftool -ee -G3 -api LargeFileSupport=1 -X UKBC002-out-gpmf.mp4 > UKBC002-out-gpmf.txt
+```
+
+
+
+
+
+
+
+

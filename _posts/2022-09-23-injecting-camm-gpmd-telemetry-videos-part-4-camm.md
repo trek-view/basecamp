@@ -1,6 +1,6 @@
 ---
 date: 2022-09-23
-title: "Injecting Telemetry into Video Files (Part 3): CAMM"
+title: "Injecting Telemetry into Video Files (Part 4): CAMM"
 description: "In this post I will the structure of Google's CAMM standard, how to create a CAMM binary, and how to inject it into a mp4 video file."
 categories: developers
 tags: [gpmd, camm, telemetry, gpmf, gpx]
@@ -162,7 +162,7 @@ mpeg4 [154972743]
 
 There are two `trak`s, one for the video metadata, the other for the telemetry metadata. The first `trak`, as ordered above, contains the camm data; `moov` > `trak` > `mdia` > `minf` > `stbl` > `stsd` > `camm`. This is the same path as GPMF if you remember back to last weeks post.
 
-OK, lets start to reverse engineer this to understand what we're looking at.
+OK, lets start to reverse engineer this to understand how this was all created.
 
 ## Raw telemetry (inside `mdat` box)
 
@@ -186,11 +186,13 @@ In the part of the specification shown above (case 6) you can see the following 
 
 In the CAMM specification there are a total of 8 "cases". Above is case 6, this is concerned with positional information. If you take a look at the specification each case contains different measurement types. case 0 is camera angle, case 1 is camera exposure information, and so on.
 
-Cameras come equipt with different sensors. It is not a requiredment to print each case.
+Cameras come equipt with different sensors. Some have more than others, hence it is not a requiredment to print each CAMM case.
 
-For example, lets say a camera only has a GPS chip and produces GPS information. To illustrrate the point I will use a sample GPX file
+For example, lets say a camera only has a GPS chip and produces GPS information.
 
-Let us assume we start with a GPX file with the following;
+Similarly, it's important to consider that sensors on a camera produce measurements at different rates. For example, a GPS chip might report up to 16 measurements a second and an accelerometer might report 24 measurements a second. The reporting rate might be variable, especially in the case of GPS. [In poor conditions where the GPS satellites are out of view](), significantly fewer (or even no) measurements might be reported. 
+
+Let me demonstrate with an example using telemetry stored in a GPX file. Here's the first reading;
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -220,7 +222,37 @@ It gives us all values the map to case 5 and case 6 in CAMM. case 5 and 6 are ve
 * 2dSpeed = 0.094 meters/second
 * 3dSpeed = 0.12 meters/second
 
-All of which are covered in case 6. Therefore, if we we're writing a CAMM entry for this point, I would use case 6 to do so.
+All of which are covered in case 6. Therefore, if we we're writing a CAMM entry for this point, we can use case 6 to do so (and not bother with case 5 as it's duplicate data).
+
+As you'll see in the CAMM specification, each reported point is essentially a json object. In this example, the CAMM json object for this measurement would look like;
+
+```json
+  {
+    "time_gps_epoch": "2021-09-04T07:25:17.352Z",
+    "gps_fix_type": 3,
+    "latitude": 51.2725595,
+    "longitude": -0.8459936,
+    "altitude": 84.06700134277344,
+  },
+```
+
+Note, we are missing the following CAMM fields
+
+```json
+    "horizontal_accuracy": 0.0,
+    "vertical_accuracy": 0.0,
+    "velocity_east": 0.0,
+    "velocity_north": 0.0,
+    "velocity_up": 0.0,
+    "speed_accuracy": 0.0
+```
+
+Let's take a look at this ca,,
+
+python camm_test.py file.gpx
+
+
+
 
 Converting this to CAMM is quite simple. Ultimatley each telemetry entry is a JSON object. So in this case (once each value has been correctly converted to the format defined by CAMM) we get;
 
@@ -264,7 +296,7 @@ The  can then be converted to binary embedded into the `mdat` box as follows
 TODO
 
 
-
+On CAMM Standard, lets say I wanted to include case 
 
 
 

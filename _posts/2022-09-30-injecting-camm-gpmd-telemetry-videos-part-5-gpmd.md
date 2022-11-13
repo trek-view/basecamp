@@ -1,12 +1,12 @@
 ---
-date: 2022-09-16
-title: "Injecting Telemetry into Video Files (Part 3): GPMF"
+date: 2022-09-30
+title: "Injecting Telemetry into Video Files (Part 5): GPMF"
 description: "In this post I will the structure of GoPro's GPMF standard, how to create a GPMF binary, and how to inject it into a mp4 video file."
 categories: developers
 tags: [gpmd, camm, telemetry, gpmf, gpx]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-09-16/gopro-gpmf-structure-meta.jpg
-featured_image: /assets/images/blog/2022-09-16/gopro-gpmf-structure-sm.jpg
+image: /assets/images/blog/2022-09-30/gopro-gpmf-structure-meta.jpg
+featured_image: /assets/images/blog/2022-09-30/gopro-gpmf-structure-sm.jpg
 layout: post
 published: true
 ---
@@ -47,7 +47,7 @@ To begin with, it is worth familiarising yourself with the data that GPMF suppor
 
 [You can see the specifics of what each GoPro camera writes (generally, the newer the GoPro camera, the more telemetry data is written because there are more sensors)](https://github.com/gopro/gpmf-parser#where-to-find-gpmf-data).
 
-<img class="img-fluid" src="/assets/images/blog/2022-09-16/gpmf-max-camera-telemetry.png" alt="GoPro MAX GPMF" title="GoPro MAX GPMF" />
+<img class="img-fluid" src="/assets/images/blog/2022-09-30/gpmf-max-camera-telemetry.png" alt="GoPro MAX GPMF" title="GoPro MAX GPMF" />
 
 Above is a snippet of what telemetry the GoPro MAX writes into GPMF.
 
@@ -55,7 +55,7 @@ Note how the first column is titled "FourCC". e.g. the data for the 3-axis accel
 
 Now lets start thinking about representing this as binary...
 
-<img class="img-fluid" src="/assets/images/blog/2022-09-16/gopro-gpmf-structure-sm.jpg" alt="GoPro GPMF Key Length Value design" title="GoPro GPMF Key Length Value design" />
+<img class="img-fluid" src="/assets/images/blog/2022-09-30/gopro-gpmf-structure-sm.jpg" alt="GoPro GPMF Key Length Value design" title="GoPro GPMF Key Length Value design" />
 
 Here we can see the FourCC value is the Key (so in the previous example, `key` = `ACCL`). The key has a Length and a Value.
 
@@ -203,5 +203,43 @@ If you open up the binary file, [example in last post](/blog/2022/injecting-camm
 
 
 
+starting point for our script will be at end of video/audio binary data as we append telemetry binary to the end of this binary
 
+
+The GPMF defined `trak`s in the `moov` box map to `vide` (`0:0`), `soun` (`0:1`) and `meta` (`0:2`) in ffprobe -- each stream in the `mdat` track has its own corresponding metadata `moov` metadata `trak`.
+
+Note, the `tmcd` `trak` shown in the GPMF spec in the sample video is missing (as it is not applicable to this video type -- I've only seen this in unprocessed GoPro `.360` video files).
+
+There can be a varying number of `trak` boxes depending on how the video is created. For example, if there is only video and no audio/metadata track then there would be only one `trak` box present.
+
+Another point to note is that there might be more than one of the stream of the same type depending on the video mode, e.g a `.360` output (note, 360's follow the mp4 standard, and thus are mp4s in all but name) from ffprobe which contains two video streams in the `mdat` box;
+
+```
+Stream #0:0[0x1](eng): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 3072x1536 [SAR 1:1 DAR 2:1], 38042 kb/s, 59.94 fps, 59.94 tbr, 600 tbn (default)
+Stream #0:1[0x2](eng): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 3072x1536 [SAR 1:1 DAR 2:1], 38042 kb/s, 59.94 fps, 59.94 tbr, 600 tbn (default)
+```
+
+Thus this video will have two `trak` boxes in the `moov` box to describe the metadata of the two video streams in the `mdat` box.
+
+I will go into GPMF in the next post, but back to the main point I am trying to make; the metadata for the telemetry (not the telemetry itself) is housed in the `moov` box. In the `moov` box is nested `trak` files for the streams held in the `mdat` file.
+
+```
+├── b'mdat'
+└── b'moov'
+    ├── b'mvhd'
+    ├── b'trak' (vide)
+    │   └── ...
+    ├── b'trak' (soun)
+    │   └── ...
+    └── b'trak' (meta)
+        └── ...
+```
+
+Writing data into 1) nested boxes inside the `trak` (meta) boxes and 2) raw telemetry in the `mdat` is what we're interested in for this exercise.
+
+I'll leave the raw telemetry (`mdat`) aside for a minute.
+
+
+
+As noted, more than one `trak` box (aka atom) can exist -- in our sample video there are three `trak` boxes.
 
