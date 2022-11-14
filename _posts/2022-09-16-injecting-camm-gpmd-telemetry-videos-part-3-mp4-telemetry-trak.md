@@ -429,7 +429,26 @@ Take CAMM for example. CAMM not only reports GPS data (as shown in example one).
 
 In short, this adds a lot more variance to sample sizes value (in `stsz`), the time of each sample (`stts`) and the offsets (`stco`) -- and this is where having multiple samples per chunk becomes very useful (`stsc`).
 
-TODO
+Lets delve into CAMM for a minute.
+
+camm case 2 is for Gyroscope samples. Each sample has a size of 16 bytes. Here's an example: 
+
+```json
+{"gyro": [0.9989318521683401,-0.024964140751365705,0.02621539963988159]}
+```
+
+camm case 3 is for Accelerometer samples. Each sample has a size of 16 bytes. Here's an example: 
+
+```json
+{"acceleration": [0.9989318521683401,-0.024964140751365705,0.02621539963988159]}
+```
+
+camm case 6 is for GPS samples. Each sample has a size of 60 bytes. Here's an example: 
+
+```json
+{"time_gps_epoch": "2021-09-04T07:25:17.352000Z", "gps_fix_type": 3, "latitude": 51.2725595, "longitude": "", "altitude": "", "horizontal_accuracy": "", "vertical_accuracy": "", "velocity_east": "", "velocity_north": "", "velocity_up": "", "speed_accuracy": "", 
+```
+
 
 
 ## Other important boxes I've glossed over...
