@@ -446,14 +446,10 @@ camm case 3 is for Accelerometer samples. Each sample has a size of 16 bytes. He
 camm case 6 is for GPS samples. Each sample has a size of 60 bytes. Here's an example: 
 
 ```json
-{"time_gps_epoch": "2021-09-04T07:25:17.352000Z", "gps_fix_type": 3, "latitude": 51.2725595, "longitude": "", "altitude": "", "horizontal_accuracy": "", "vertical_accuracy": "", "velocity_east": "", "velocity_north": "", "velocity_up": "", "speed_accuracy": "", 
+{"time_gps_epoch": "2021-09-04T07:25:17.352000Z", "gps_fix_type": 3, "latitude": 51.2725595, "longitude": -1.5853544, "altitude": 183.94700622558594, "horizontal_accuracy": 0, "vertical_accuracy": 0, "velocity_east": 0, "velocity_north": 0, "velocity_up": 0, "speed_accuracy": 0}
 ```
 
-
-
-## Other important boxes I've glossed over...
-
-Next week I will show you an example of writing CAMM telemetry (and the following week GPMF) detailing information about all the other boxes in telemetry `trak` I've glossed over in this post.
+Next week I will show you how multiple CAMM case samples, like those shown above, can be written into the media (`mdat`) and telemetry `trak` boxes (`moov`). I will also show a full example of writing all the other boxes in telemetry `trak` that I've glossed over in this post (e.g. `tkhd`) for CAMM data.
 
 ## A special thanks to...
 
