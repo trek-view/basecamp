@@ -51,7 +51,7 @@ Reports Gyroscope samples.
 
 ### CAMM case 3
 
-Reports the Accelerometer samples. Each sample has a size of 16 bytes. Here's an example: 
+Reports Accelerometer samples.
 
 ```json
 {"acceleration": [0.9989318521683401,-0.024964140751365705,0.02621539963988159]}
@@ -59,7 +59,7 @@ Reports the Accelerometer samples. Each sample has a size of 16 bytes. Here's an
 
 ### CAMM case 4 
 
-Reports the 3D position of the camera. 3D position and angle axis rotation together defines the 6DoF pose of the camera. Each sample has a size of 16 bytes. Here's an example: 
+Reports 3D position of the camera.
 
 ```json
 {"position": [0.9989318521683401,-0.024964140751365705,0.02621539963988159]}
@@ -67,7 +67,7 @@ Reports the 3D position of the camera. 3D position and angle axis rotation toget
 
 ### CAMM case 5
 
-Reports basic GPS samples. Each sample has a size of 28 bytes. Here's an example: 
+Reports basic GPS samples. 
 
 ```json
 {"latitude": 51.2725595, "longitude": -1.5853544, "altitude": 183.94700622558594}
@@ -75,7 +75,7 @@ Reports basic GPS samples. Each sample has a size of 28 bytes. Here's an example
 
 ### CAMM case 6
 
-Reports richer GPS samples than CAMM case 5 (when available). Each sample has a size of 60 bytes. Here's an example: 
+Reports richer GPS samples than CAMM case 5 (when available).
 
 ```json
 {"time_gps_epoch": "2021-09-04T07:25:17.352000Z", "gps_fix_type": 3, "latitude": 51.2725595, "longitude": -1.5853544, "altitude": 183.94700622558594, "horizontal_accuracy": 0, "vertical_accuracy": 0, "velocity_east": 0, "velocity_north": 0, "velocity_up": 0, "speed_accuracy": 0}
@@ -83,7 +83,7 @@ Reports richer GPS samples than CAMM case 5 (when available). Each sample has a 
 
 ### CAMM case 7
 
-Reports the ambient magnetic field.  Here's an example: 
+Reports the ambient magnetic field. 
 
 ```json
 {"magnetic_field": [0.9989318521683401,-0.024964140751365705,0.02621539963988159]}
@@ -100,7 +100,7 @@ Lets use this CAMM case 6 sample to demonstrate;
 **Sample 0**
 
 ```json
-{"time_gps_epoch": "1553343930000", "gps_fix_type": 3, "latitude": 51.26006666666667, "longitude": -0.9531388888888889, "altitude": 127.7, "horizontal_accuracy": 1.0, "vertical_accuracy": 1.0, "velocity_east": -0.42552019866750024, "velocity_north": 0.2466133528597531, "velocity_up": 0.0, "speed_accuracy": 0.0}
+{"time_gps_epoch": "1553343930000.0", "gps_fix_type": 3, "latitude": 51.26006666666667, "longitude": -0.9531388888888889, "altitude": 127.7, "horizontal_accuracy": 1.0, "vertical_accuracy": 1.0, "velocity_east": -0.42552019866750024, "velocity_north": 0.2466133528597531, "velocity_up": 0.0, "speed_accuracy": 0.0}
 ```
 
 Here's how we can convert the values to Python bytes using struct;
@@ -191,7 +191,7 @@ Now let's continue the example. Imagine there are 5 more samples reported by the
 Input values:
 
 ```json
-{"time_gps_epoch": "1553343930000", "gps_fix_type": 3, "latitude": 51.26006666666667, "longitude": -0.9531388888888889, "altitude": 127.7, "horizontal_accuracy": 1.0, "vertical_accuracy": 1.0, "velocity_east": -0.42552019866750024, "velocity_north": 0.2466133528597531, "velocity_up": 0.0, "speed_accuracy": 0.0}
+{"time_gps_epoch": "1553343930000.0", "gps_fix_type": 3, "latitude": 51.26006666666667, "longitude": -0.9531388888888889, "altitude": 127.7, "horizontal_accuracy": 1.0, "vertical_accuracy": 1.0, "velocity_east": -0.42552019866750024, "velocity_north": 0.2466133528597531, "velocity_up": 0.0, "speed_accuracy": 0.0}
 ```
 
 Binary output:
@@ -205,7 +205,7 @@ b'\x00\x00\x06\x00Bv\x9a\xa85\xe9\x00\x00\x00\x00\x00\x03@I\xa1I\xddR\x0ey\xbf\x
 Input values:
 
 ```json
-{"time_gps_epoch": "1553343930200", "gps_fix_type": 3, "latitude": 51.26007777777778, "longitude": -0.9531694444444444, "altitude": 126.2, "horizontal_accuracy": 1.0, "vertical_accuracy": 1.0, "velocity_east": -0.2960776004545653, "velocity_north": 0.18875339246390743, "velocity_up": 0, "speed_accuracy": 0}
+{"time_gps_epoch": "1553343930200.0", "gps_fix_type": 3, "latitude": 51.26007777777778, "longitude": -0.9531694444444444, "altitude": 126.2, "horizontal_accuracy": 1.0, "vertical_accuracy": 1.0, "velocity_east": -0.2960776004545653, "velocity_north": 0.18875339246390743, "velocity_up": 0, "speed_accuracy": 0}
 ```
 
 Binary output:
@@ -219,7 +219,7 @@ b'\x00\x00\x06\x00Bv\x9a\xa85\xf5\x80\x00\x00\x00\x00\x03@I\xa1J:\x86\xfch\xbf\x
 Input values:
 
 ```json
-{"time_gps_epoch": "1553343930400", "gps_fix_type": 3, "latitude": 51.26009444444445, "longitude": -0.9532111111111111, "altitude": 124.3, "horizontal_accuracy": 1.0, "vertical_accuracy": 1.0, "velocity_east": -0.30465075085200577, "velocity_north": 0.1477752379350783, "velocity_up": 0, "speed_accuracy": 0}
+{"time_gps_epoch": "1553343930400.0", "gps_fix_type": 3, "latitude": 51.26009444444445, "longitude": -0.9532111111111111, "altitude": 124.3, "horizontal_accuracy": 1.0, "vertical_accuracy": 1.0, "velocity_east": -0.30465075085200577, "velocity_north": 0.1477752379350783, "velocity_up": 0, "speed_accuracy": 0}
 ```
 
 Binary output:
@@ -233,7 +233,7 @@ b'\x00\x00\x06\x00Bv\x9a\xa86\x02\x00\x00\x00\x00\x00\x03@I\xa1J\xc6VaN\xbf\xee\
 Input values:
 
 ```json
-{"time_gps_epoch": "1553343930600", "gps_fix_type": 3, "latitude": 51.26011388888889, "longitude": -0.953275, "altitude": 122.6, "horizontal_accuracy": 1.0, "vertical_accuracy": 1.0, "velocity_east": -0.20935273424251769, "velocity_north": 0.11122101212837258, "velocity_up": 0, "speed_accuracy": 0}
+{"time_gps_epoch": "1553343930600.0", "gps_fix_type": 3, "latitude": 51.26011388888889, "longitude": -0.953275, "altitude": 122.6, "horizontal_accuracy": 1.0, "vertical_accuracy": 1.0, "velocity_east": -0.20935273424251769, "velocity_north": 0.11122101212837258, "velocity_up": 0, "speed_accuracy": 0}
 ```
 
 Binary output:
@@ -247,7 +247,7 @@ b'\x00\x00\x06\x00Bv\x9a\xa86\x0e\x80\x00\x00\x00\x00\x03@I\xa1Kis\x01\xaf\xbf\x
 Input values:
 
 ```json
-{"time_gps_epoch": "1553343930800", "gps_fix_type": 3, "latitude": 51.260133333333336, "longitude": -0.9533333333333333, "altitude": 120.8, "horizontal_accuracy": 1.0, "vertical_accuracy": 1.0, "velocity_east": -0.1918253910417178, "velocity_north": 0.11464815023472924, "velocity_up": 0, "speed_accuracy": 0}
+{"time_gps_epoch": "1553343930800.0", "gps_fix_type": 3, "latitude": 51.260133333333336, "longitude": -0.9533333333333333, "altitude": 120.8, "horizontal_accuracy": 1.0, "vertical_accuracy": 1.0, "velocity_east": -0.1918253910417178, "velocity_north": 0.11464815023472924, "velocity_up": 0, "speed_accuracy": 0}
 ```
 
 Binary output:
@@ -261,7 +261,7 @@ b'\x00\x00\x06\x00Bv\x9a\xa86\x1b\x00\x00\x00\x00\x00\x03@I\xa1L\x0c\x8f\xa2\x11
 Input values:
 
 ```json
-{"time_gps_epoch": "1553343931000", "gps_fix_type": 3, "latitude": 51.26015833333334, "longitude": -0.9533999999999999, "altitude": 120.1, "horizontal_accuracy": 1.0, "vertical_accuracy": 1.0, "velocity_east": -0.18010009841425276, "velocity_north": 0.11694262588071799, "velocity_up": 0, "speed_accuracy": 0}
+{"time_gps_epoch": "1553343931000.0", "gps_fix_type": 3, "latitude": 51.26015833333334, "longitude": -0.9533999999999999, "altitude": 120.1, "horizontal_accuracy": 1.0, "vertical_accuracy": 1.0, "velocity_east": -0.18010009841425276, "velocity_north": 0.11694262588071799, "velocity_up": 0, "speed_accuracy": 0}
 ```
 
 Binary output:

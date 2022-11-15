@@ -315,13 +315,13 @@ However it is still important because we do need to count the number of bytes un
 
 Therefore in our telemetry `trak`, the first `stco` chunk offset table row value is `8`.
 
-Before the second telemetry point is 2 more video samples (each of 28 bytes), so this means the total offset to the second piece of telemetry is; `5 (preceding chunks) * 28 bytes (each chunk size) = 140 bytes`.
+Before the second telemetry point is 2 more video samples (each of 8 bytes), so this means the total offset to the second piece of telemetry is; `4 (preceding chunks of video) * 4 bytes (each chunk size) + 28 bytes (1st telemetry sample) = 44 bytes `.
 
 This gives a telemetry `stco` chunk offset table for this binary as follows;
 
 ```
 8
-140
+44
 ```
 
 ### `stsc`
@@ -332,15 +332,13 @@ Now our first telemetry sample looks like this;
 \x00\x00\x05\x00\x19\xf9a)7\xacI@\x02\xd4\xd4\xb2\xb5~\xf5\xbf33333\x03g@
 ```
 
-For reference, decoded this gives;
+For reference, decoded this reports a CAMM case 5 sample with the following values;
 
 ```json
 {"latitude": 51.3454334, "longitude": -1.343435, "altitude": 184.1}
 ```
 
-Which is a single point of CAMM telemetry (case 5), but that doesn't matter right now.
-
-What's important is that this chunk contains a single sample, as do all chunks with telemetry samples in this entry. The samples are also report the same type of data.
+What's important is that this chunk contains a single sample, as do all chunks with telemetry samples in this entry. The telemetry samples also all report the same type of data (CAMM case 5).
 
 So the sample to chunk table for my telemetry looks like this;
 
@@ -384,13 +382,13 @@ The boxes would now contain data as follows;
 Chunk offset table;
 
 ```
-56
-140
-224
-308
+8
+44
+80
+116
 ```
 
-Before the third telemetry point is 2 more video samples (each of 28 bytes). So we get 140 + 28 (2nd telemetry sample) + 28 (5th video sample) + 28 (6th video sample) = 224 offset. Then the same pattern again, 224 + 28 + 28 + 28 = 308.
+Before the third telemetry point is 2 more video samples (each of 4 bytes). So we get 44 + 28 (2nd telemetry sample) + 4 (5th video sample) + 4 (6th video sample) = 80 offset. Then the same pattern again, 80 + 28 + 4 + 4 = 116.
 
 ### `stsc`
 
