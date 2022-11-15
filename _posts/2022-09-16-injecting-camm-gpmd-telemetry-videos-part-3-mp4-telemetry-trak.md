@@ -425,7 +425,10 @@ And finally the time-to-sample table needs the additional 2 points of telemetry 
 
 I hate to be the bearer of bad news, but most telemetry, including GPMF and CAMM is not typically stored as simply as shown in example one, but hopefully you're getting the idea of things.
 
-Take CAMM for example. CAMM not only reports GPS data (as shown in example one). It can also be used to report acceleration, roll, etc in different samples (1 sample for GPS, 1 sample for acceleration, etc). Each of these samples are reported at different frequencies (rates). For example GPS might be reported 10 times a second, whilst acceleration might be reported 100 times per second. Each sample type from each sensor is a different size. 
+Take CAMM for example. CAMM not only reports GPS data (as shown in example one). It can also be used to report acceleration, roll, etc in different samples (1 sample for GPS, 1 sample for acceleration, etc). Each of these samples are reported at different frequencies (rates). For example GPS might be reported 10 times a second, whilst acceleration might be reported 100 times per second. Each sample type from each sensor is a different size.
+
+Similarly, its not always a fixed frequency that a sensor will report data. For example, a GPS chip might report up to 16 measurements a second. Up to being the key words. [In poor conditions where the GPS satellites are out of view](/blog/2022/gps-101), significantly fewer (or even no) measurements might be reported. 
+
 
 In short, this adds a lot more variance to sample sizes value (in `stsz`), the time of each sample (`stts`) and the offsets (`stco`) -- and this is where having multiple samples per chunk becomes very useful (`stsc`).
 

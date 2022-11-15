@@ -402,7 +402,6 @@ TODO -- WALKTHROUGH EXAMPLE OF HOW THIS IS DONE.
 
 For example, lets say a camera only has a GPS chip and produces GPS information.
 
-Similarly, it's important to consider that sensors on a camera produce measurements at different rates. For example, a GPS chip might report up to 16 measurements a second and an accelerometer might report 24 measurements a second. The reporting rate might be variable, especially in the case of GPS. [In poor conditions where the GPS satellites are out of view](), significantly fewer (or even no) measurements might be reported. 
 
 
 
