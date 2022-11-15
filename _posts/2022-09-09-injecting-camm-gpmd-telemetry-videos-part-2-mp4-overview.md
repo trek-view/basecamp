@@ -90,7 +90,7 @@ And finally, to help further understand this structure I've built some basic too
 git clone https://github.com/trek-view/telemetry-injector
 cd telemetry-injector
 python3 -m venv telemetry-injector_venv
-source c/bin/activate
+source telemetry-injector_venv/bin/activate
 pip3 install -r requirements.txt
 cd tools
 ```
@@ -98,7 +98,7 @@ cd tools
 To demonstrate I will use my example GPMF video;
 
 ```shell
-python3 print_video_atoms.py GS018423.mp4
+python3 print_video_atoms_overview.py GS018423.mp4
 ```
 
 Which prints;

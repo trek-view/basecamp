@@ -303,7 +303,7 @@ Let me draw this out visually, in case it proves helpful;
 
 ### `stco`
 
-So the first chunk of video binary is (which is 28 bytes);
+So the first chunk of video binary is (which is 4 bytes);
 
 ```
 \x00\x00\x00\x00\x00\x00\x00
@@ -311,16 +311,16 @@ So the first chunk of video binary is (which is 28 bytes);
 
 But in the telemetry `trak`, we don't need to worry about this. That's handled by the boxes (`stsz`, etc) in the video `trak`.
 
-However it is still important because we do need to count the number of bytes until we reach the first telemetry sample which in this case is `28 bytes (first chunk of video) + 28 bytes (second chunk of video) = 56 bytes`.
+However it is still important because we do need to count the number of bytes until we reach the first telemetry sample which in this case is `4 bytes (first chunk of video) + 4 bytes (second chunk of video) = 8 bytes`.
 
-Therefore in our telemetry `trak`, the first `stco` chunk offset table row value is `56`.
+Therefore in our telemetry `trak`, the first `stco` chunk offset table row value is `8`.
 
 Before the second telemetry point is 2 more video samples (each of 28 bytes), so this means the total offset to the second piece of telemetry is; `5 (preceding chunks) * 28 bytes (each chunk size) = 140 bytes`.
 
 This gives a telemetry `stco` chunk offset table for this binary as follows;
 
 ```
-56
+8
 140
 ```
 
@@ -421,35 +421,15 @@ And finally the time-to-sample table needs the additional 2 points of telemetry 
 4,45000
 ```
 
-## Example 2
+## More examples
 
-I hate to be the bearer of bad news, but most telemetry, including GPMF and CAMM is not typically as simple as shown in example one, but hopefully you're getting the idea of things.
+I hate to be the bearer of bad news, but most telemetry, including GPMF and CAMM is not typically stored as simply as shown in example one, but hopefully you're getting the idea of things.
 
-Take CAMM for example. CAMM not only reports GPS data (as shown in example one). It can also be used to report acceleration, roll, etc in different samples (1 sample for GPS, 1 sample for acceleration, etc). Each of these samples are reported at different frequencies (rates). For example GPS might be reported 10 times a second, whilst acceleration might be reported 100 times per second.
+Take CAMM for example. CAMM not only reports GPS data (as shown in example one). It can also be used to report acceleration, roll, etc in different samples (1 sample for GPS, 1 sample for acceleration, etc). Each of these samples are reported at different frequencies (rates). For example GPS might be reported 10 times a second, whilst acceleration might be reported 100 times per second. Each sample type from each sensor is a different size. 
 
 In short, this adds a lot more variance to sample sizes value (in `stsz`), the time of each sample (`stts`) and the offsets (`stco`) -- and this is where having multiple samples per chunk becomes very useful (`stsc`).
 
-Lets delve into CAMM for a minute.
-
-camm case 2 is for Gyroscope samples. Each sample has a size of 16 bytes. Here's an example: 
-
-```json
-{"gyro": [0.9989318521683401,-0.024964140751365705,0.02621539963988159]}
-```
-
-camm case 3 is for Accelerometer samples. Each sample has a size of 16 bytes. Here's an example: 
-
-```json
-{"acceleration": [0.9989318521683401,-0.024964140751365705,0.02621539963988159]}
-```
-
-camm case 6 is for GPS samples. Each sample has a size of 60 bytes. Here's an example: 
-
-```json
-{"time_gps_epoch": "2021-09-04T07:25:17.352000Z", "gps_fix_type": 3, "latitude": 51.2725595, "longitude": -1.5853544, "altitude": 183.94700622558594, "horizontal_accuracy": 0, "vertical_accuracy": 0, "velocity_east": 0, "velocity_north": 0, "velocity_up": 0, "speed_accuracy": 0}
-```
-
-Next week I will show you how multiple CAMM case samples, like those shown above, can be written into the media (`mdat`) and telemetry `trak` boxes (`moov`). I will also show a full example of writing all the other boxes in telemetry `trak` that I've glossed over in this post (e.g. `tkhd`) for CAMM data.
+Next week I will go through the CAMM specification to explain some of these factors in a bit more detail and walk you through an example of taking sensor data to writing it as CAMM telelemetry in the video.
 
 ## A special thanks to...
 
