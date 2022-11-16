@@ -74,7 +74,7 @@ Stream #0:0[0x1](eng): Data: none (camm / 0x6D6D6163), 2 kb/s (default)
 Stream #0:1[0x2](eng): Video: h264 (Baseline) (avc1 / 0x31637661), yuv420p(tv, bt2020nc/bt2020/bt709, progressive), 7680x3840, 103310 kb/s, SAR 1:1 DAR 2:1, 7 fps, 7 tbr, 90k tbn (default)
 ```
 
-At first I thought this meant there would be 3 and 2 distinct streams of data in my GPMF and CAMM videos respectively. This is wrong. All the raw data for the streams is together in binary found in the `mdat` folder. ffprobe knows there are 3 and 2 streams (types of data) in each video because of the description (metadata) of the `mdat` box nested in the `moov` box.
+At first I thought this meant there would be 3 (GPMF) and 2 (CAMM) distinct streams of data in these videos. This is wrong. All the raw data for the streams is together in binary found in the `mdat` box. ffprobe knows there are 3 and 2 streams (types of data) in each video because of the description (metadata) of the `mdat` box nested in the `moov` box.
 
 The `moov` box itself can contain a lot of data. To help grasp its complexity I first took the [mp4 specification](https://drive.google.com/file/d/1ZdSwSrFzjXeL-6Syw1PjLsyYSln09mPh/view?usp=share_link) and copied the entirety of all possible box structures (and box descriptions) [into a spreadsheet to demo the nested box structure](https://docs.google.com/spreadsheets/d/1QDWCgIl2nnM65IfzSnqk_igMd1jeJCTT0rJFD5MdPfs/edit?usp=sharing). If you're new to the subject, I'm certain you'll find it a useful stating point too.
 
@@ -183,7 +183,7 @@ The output printed above demonstrates clearly that only the `moov` box has neste
 
 It is from these `moov` > `trak` boxes the ffprobe is pulling all the stream information from. It knows what the stream contains by interrogating the correct boxes.
 
-In the case of telemetry for our GoPro video, this comes from the last `trak` box;
+In the case of telemetry for our GoPro video, this comes from the last `trak` container box;
 
 ```
      └── b'trak' [8, 574]

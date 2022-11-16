@@ -1,12 +1,12 @@
 ---
-date: 2022-09-30
-title: "Injecting Telemetry into Video Files (Part 5): GPMF"
+date: 2022-10-07
+title: "Injecting Telemetry into Video Files (Part 6): GPMF"
 description: "In this post I will the structure of GoPro's GPMF standard, how to create a GPMF binary, and how to inject it into a mp4 video file."
 categories: developers
 tags: [gpmd, camm, telemetry, gpmf, gpx]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-09-30/gopro-gpmf-structure-meta.jpg
-featured_image: /assets/images/blog/2022-09-30/gopro-gpmf-structure-sm.jpg
+image: /assets/images/blog/2022-10-07/gopro-gpmf-structure-meta.jpg
+featured_image: /assets/images/blog/2022-10-07/gopro-gpmf-structure-sm.jpg
 layout: post
 published: true
 ---
@@ -47,7 +47,7 @@ To begin with, it is worth familiarising yourself with the data that GPMF suppor
 
 [You can see the specifics of what each GoPro camera writes (generally, the newer the GoPro camera, the more telemetry data is written because there are more sensors)](https://github.com/gopro/gpmf-parser#where-to-find-gpmf-data).
 
-<img class="img-fluid" src="/assets/images/blog/2022-09-30/gpmf-max-camera-telemetry.png" alt="GoPro MAX GPMF" title="GoPro MAX GPMF" />
+<img class="img-fluid" src="/assets/images/blog/2022-10-07/gpmf-max-camera-telemetry.png" alt="GoPro MAX GPMF" title="GoPro MAX GPMF" />
 
 Above is a snippet of what telemetry the GoPro MAX writes into GPMF.
 
@@ -55,7 +55,7 @@ Note how the first column is titled "FourCC". e.g. the data for the 3-axis accel
 
 Now lets start thinking about representing this as binary...
 
-<img class="img-fluid" src="/assets/images/blog/2022-09-30/gopro-gpmf-structure-sm.jpg" alt="GoPro GPMF Key Length Value design" title="GoPro GPMF Key Length Value design" />
+<img class="img-fluid" src="/assets/images/blog/2022-10-07/gopro-gpmf-structure-sm.jpg" alt="GoPro GPMF Key Length Value design" title="GoPro GPMF Key Length Value design" />
 
 Here we can see the FourCC value is the Key (so in the previous example, `key` = `ACCL`). The key has a Length and a Value.
 

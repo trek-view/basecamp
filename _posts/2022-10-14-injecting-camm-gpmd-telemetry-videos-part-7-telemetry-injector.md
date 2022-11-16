@@ -1,12 +1,12 @@
 ---
-date: 2022-10-07
-title: "Injecting Telemetry into Video Files (Part 6): Telemetry Injector"
+date: 2022-10-14
+title: "Injecting Telemetry into Video Files (Part 7): Telemetry Injector"
 description: "In this post I will show you a proof of concept that can be used to turn a series of geotagged images into a video with a CAMM or GPMD telemetry track."
 categories: developers
 tags: [gpmd, camm, telemetry, gpmf, gpx]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-10-07/
-featured_image: /assets/images/blog/2022-10-07/
+image: /assets/images/blog/2022-10-14/
+featured_image: /assets/images/blog/2022-10-14/
 layout: post
 published: true
 ---

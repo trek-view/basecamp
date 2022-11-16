@@ -1,6 +1,6 @@
 ---
 date: 2022-09-16
-title: "Injecting Telemetry into Video Files (Part 3): Telemetry trak's in mp4 videos"
+title: "Injecting Telemetry into Video Files (Part 3): Structuring telemetry trak's in mp4 videos"
 description: "In this post I will focus on the structure of trak boxes in mp4 with of a focus on using them to describe video telemetry."
 categories: developers
 tags: [gpmd, camm, telemetry, gpmf, gpx, mp4]
@@ -15,12 +15,100 @@ published: true
 
 [Recapping on last week...](/blog/2022/injecting-camm-gpmd-telemetry-videos-part-2-mp4-overview)
 
-This week, lets start by comparing out GPMF and CAMM `trak` boxes.
+To understant the `moov` boxes introduced last week, you must first know a bit more about the media binary written into the `mdat` box.
+
+## Jumping into `mdat` binaries
+
+In addition to the video and audio captured by the cameras lens(es) and microphone(s), the cameras sensors ([GPS](/blog/2022/gps-101), [IMU](/blog/2022/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer), etc) are recording many measurements per second.
+
+As data is being generated it is being stored (because a camera has limited memory). The camera firmware is built to be efficient and write data to the file quickly, the decoding and understanding of the data can be understood later.
+
+If you think of a single binary file, this means the camera is generating a mix of video, audio, and telemetry and writing it all to a single binary as time progresses. Once the recording has finished you are left with a binary containing bytes of video, audio and telemetry data all interleaved (that is impossible to understand as a human reading it).
+
+For example;
+
+```
+24 bytes of video
+16 bytes of audio
+8 bytes of telemetry
+8 bytes of telemetry
+16 bytes of telemetry
+16 bytes of telemetry
+24 bytes of audio
+16 bytes of video
+...
+```
+
+The above sample is completely made up. I am simply trying to highlight the "visual messiness" of this binary file. For example, below is a CAMM case 5 sample containing 28 bytes of telemetry. 
+
+```python3
+\x00\x00\x05\x00\x19\xf9a)7\xacI@\x02\xd4\xd4\xb2\xb5~\xf5\xbf33333\x03g@
+```
+
+It probably won't make any sense (yet) but imagine the `mdat` being a document with many binary samples like this for video, audio, and telemetry (and possible other things too) all mixed together in one big document.
+
+The understanding of where everything lives in this file (mix) is handled in the `moov` box `trak`s. The video `trak` tells decoders where the video bytes are (and their time in relation to the video), the audio `trak` tells decoders where/when the audio bytes are, and yes, the telemetry `trak` tells decoders where/when the telemetry bytes are. 
+
+## Jumping into `moov` binaries
+
+Below is an illustration of the box structure of a video file with CAMM telemetry.
+```
+mpeg4 [154972743]
+ ├── b'ftyp' [8, 16]
+ ├── b'mdat' [16, 154967524]
+ └── b'moov' [8, 5171]
+     ├── b'mvhd' [8, 100]
+     ├── b'meta' [8, 111]
+     ├── b'trak' [8, 2565]
+     │   ├── b'tkhd' [8, 84]
+     │   └── b'mdia' [8, 2465]
+     │       ├── b'mdhd' [8, 24]
+     │       ├── b'hdlr' [8, 36]
+     │       └── b'minf' [8, 2381]
+     │           ├── b'nmhd' [8, 4]
+     │           ├── b'dinf' [8, 28]
+     │           └── b'stbl' [8, 2325]
+     │               ├── b'stsd' [8, 33]
+     │               │   └── b'camm' [8, 17]
+     │               ├── b'stts' [8, 1352]
+     │               ├── b'stsz' [8, 724]
+     │               ├── b'stsc' [8, 80]
+     │               └── b'co64' [8, 96]
+```
+
+I've already explained the `mdat` is a single binary stream. The `moov` data is written as binary, however in a more structured in a way that allows for easier identification of the child boxes that can be present as per the mp4 specification.
+
+Lets start with the `moov` box which can contain a number of data elements. For the purpose of telemetry we only need to set the following data elements for this container box:
+
+* size: how many bytes the `moov` container box contains (this is the sum of all bytes for the child boxes within it -- above that's `5171`)
+* type: always `moov` 
+
+So writing the structure of the `moov` container box you have; `size + type` which we can encode in binary.
+
+Once this is written we can write the next box -- `mvhd`. Once we define the `mvhd` contents (the data elements) and encode as binary we can append to the end of the `moov` binary already written.
+
+We start to get a binary file with a structure that is structured;
+
+```
+moov box binary
+mvhd box binary
+meta box binary
+trak box binary (for telemetry)
+tkhd box binary
+mdia box binary
+...
+trak box binary (for video)
+...
+```
+
+When the entire telemetry `moov` container is decoded, the type fields (that all conform to mp4 spec) can be easily located and the data they contain read as defined. For example, the `trak` container box for telemetry can be located, and the start and end of the nested boxes in the binary can be identified using the size property (for example, I know the `trak` box containing CAMM metadata is exactly 2565 in total when all nested boxes are added up). This sizing information makes it easy to understand for decoders to decipher the nested structure.
+
+To illustrate the telemetry `trak` boxes that are used specifically for telemetry we can start by comparing our GPMF and CAMM `trak` boxes using the Telemetry Injector script (`print_video_atoms_overview.py`)
 
 **GPMF;**
 
 ```shell
-python3 print_video_atoms.py GS018423.mp4
+python3 print_video_atoms_overview.py GS018423.mp4
 ```
 
 ```
@@ -45,7 +133,7 @@ python3 print_video_atoms.py GS018423.mp4
 **CAMM;**
 
 ```shell
-python3 print_video_atoms.py 200619_161801314.mp4
+python3 print_video_atoms_overview.py 200619_161801314.mp4
 ```
 
      ├── b'trak' [8, 2565]
@@ -64,62 +152,27 @@ python3 print_video_atoms.py 200619_161801314.mp4
      │               ├── b'stsc' [8, 80]
      │               └── b'co64' [8, 96]
 
+As you can see, the box structure and types are almost identical between the GPMF and CAMM video. What I am trying to illustrate here is that the boxes and their structure are defined in the mp4 specification (and not unique to a specific telemetry type). This means any decoder can read the contents of a box and get the data within it (whether it knows how to interpret it or not).
 
-As you can see, the box types are almost identical, as is how the data "looks" inside of them.
+Though before we can start writing all the boxes in the telemetry `trak` we first we need to actually define the crucial data that is held in these nested boxes to define the telemetry.
 
-Lets start with the `stbl` (sample table) box.
+I've briefly explained some of the boxes in the `moov` container box, and will gloss over many in this post to focus on those that are most critical in describing how the telemetry in `mdat` is deciphered. I will come back to the other boxes, like `hdlr`, when we talk about specific telemetry types.
 
-> The sample table atom contains information for converting from media time to sample number to sample location. This atom also indicates how to interpret the sample (for example, whether to decompress the video data and, if so, how). This section describes the format and content of the sample table atom.
+I'm also going to gloss over the entirety of the contents of each box (that needs to be written as binary) for now and just explain the most important data elements for this explanation (those nested in the `stbl` (sample table) box).
 
-Source: [Quicktime specification](https://developer.apple.com/library/archive/documentation/QuickTime/QTFF/QTFFChap2/qtff2.html)
+Next week, when we start writing this data to binary in more detail, I will explain more, promise.
 
-In the case of video telemetry this could be worded as;
-
-The sample table atom contains information about the video telemetry, including it's type, where each telemetry point can be found in the `mdat` box, and how it can be interpreted.
-
-Each box nested in the `stbl` box have a relationship to each other, with each box responsible for different "descriptions".
-
-OK, but before we jump into these we need to understand a bit more about the `mdat` binary, and how it's created.
-
-## Jumping into `mdat` binaries
-
-Telemetry is usually written at the time of recording into a video files. In addition to the video and audio they captured by the cameras lens(es) and microphone(s), the cameras sensors ([GPS](/), [IMU](/), etc) are recording many measurements per second.
-
-As data is being generated it is being stored (because a camera has limited memory). The camera firmware is built to be efficient and write data to the file quickly, the decoding and understanding of the data can be understood later.
-
-If you think of a single binary file, this means the camera is generating a mix of video, audio, and telemetry and writing it all to a single binary as time progresses. Once the recording has finished you are left with a binary containing bytes of video, audio and telemetry data all interleaved (that is impossible to understand as a human reading it).
-
-For example;
-
-```
-24 bytes of video
-16 bytes of audio
-8 bytes of telemetry
-8 bytes of telemetry
-16 bytes of telemetry
-16 bytes of telemetry
-24 bytes of audio
-16 bytes of video
-...
-```
-
-The above sample is completely made up. I am simply trying to highlight the "visual messiness" of this binary file (the actual byte sizes are kept simple for demonstration).
-
-The understanding of where everything lives in this file is handled in the `moov` box `trak`s. The video `trak` tells decoders where the video bytes are (and their time in relation to the video), the audio `trak` tells decoders where/when the audio bytes are, and yes, the telemetry `trak` tells decoders where/when the telemetry bytes are. Here's how...
-
-## Telemetry `trak` boxes
-
-The following boxes nested in `stbl` box (of the telemetry `trak`) play the key part in locating telemetry (and video/audio) bytes in the `mdat` binary. With a focus on CAMM and GPMF telemetry, these boxes are as follows;
+Let's start with the `stsd` (sample description) box.
 
 ### `stsd`
 
-The sample description atom stores information that allows readers to decode samples in the media. In the case of our telemetry (gpmd and camm), there is where a structured description of the table is held.
+The [sample description box](https://developer.apple.com/library/archive/documentation/QuickTime/QTFF/QTFFChap2/qtff2.html#//apple_ref/doc/uid/TP40000939-CH204-25691) stores information that allows readers to decode samples in the media. In the case of our telemetry (GPMF and CAMM), there is where a structured description of the table is held.
 
 The box itself contains the following elements;
 
 <img class="img-fluid" src="/assets/images/blog/2022-09-16/stsd-box.gif" alt="stsd boxes" title="stsd boxes" />
 
-The exact format of the sample description table data element varies by media type. That is, in our case the `stsd` will differ depending on the standard, either GPMF or camm. You can see this clearly as for each telemetry type, the `stsd` box contains two different nested boxes. 
+The exact format of the sample description table data element varies by media type. That is, in our case the `stsd` will differ depending on the standard, either GPMF or CAMM. You can see this clearly as for each telemetry type, the `stsd` container box contains two different nested boxes. 
 
 Demonstrating using the earlier examples;
 
@@ -135,7 +188,10 @@ and
          │           │   └── b'gpmd' [8, 8]
 ```
 
-I won't go into too much detail here, and will cover this off later when explaining the details of each standard. For now I have purposely kept it generic.
+In the case of the CAMM samples, lets start by printing the data elements inside each of the boxes (`stsd` and `camm`).
+
+TODO
+
 
 ### `stco` (used by gpmf) / `co64` (used by camm) (chunk offset box)
 
@@ -292,7 +348,7 @@ Here is a made up example of data for video and telemetry samples inside a `mdat
 \x00\x00\x05\x00\x19\xf9a)7\xacI@\x02\xd4\xd4\xb2\xb5~\xf5\xbf33333\x03g@
 \x00\x00\x00\x00\x00\x00\x00
 \x00\x00\x00\x00\x00\x00\x00
-\x00\x00\x05\x00\x19\xf9a)7\xacI@\x02\xd4\xd4\xb2\xb5~\xf5\xbf33333\x03g@
+\x00\x00\x05\x00\x86\x92\xc9\xa9\x9d\xadI@\x9a\x99\x99\x99\x99\x99\xf5\xbf\x00\x00\x00\x00\x00\x80f@
 ```
 
 Each _line_ of the binary is a sample of either video or telemetry data. Each line is also chunk. Therefore each chunk contains one sample.
@@ -300,6 +356,29 @@ Each _line_ of the binary is a sample of either video or telemetry data. Each li
 Let me draw this out visually, in case it proves helpful;
 
 <img class="img-fluid" src="/assets/images/blog/2022-09-16/example-1-sample-structure-mp4.jpg" alt="example one mapping trak boxes to mdat samples" title="example one mapping trak boxes to mdat samples" />
+
+The first telemetry sample looks like this;
+
+```
+\x00\x00\x05\x00\x19\xf9a)7\xacI@\x02\xd4\xd4\xb2\xb5~\xf5\xbf33333\x03g@
+```
+
+And second like this;
+
+```
+\x00\x00\x05\x00\x86\x92\xc9\xa9\x9d\xadI@\x9a\x99\x99\x99\x99\x99\xf5\xbf\x00\x00\x00\x00\x00\x80f@
+```
+
+Each telemetry sample is 24 bytes (3 `double` values of 8 bytes + 4 byte header).
+
+For reference, decoded this reports CAMM case 5 samples with the following values;
+
+```json
+{"latitude": 51.3454334, "longitude": -1.343435, "altitude": 184.1}
+{"latitude": 51.356374, "longitude": -1.35, "altitude": 180.0}
+```
+
+[If you're curious to see how I converted these to binary see this script](https://gist.github.com/himynamesdave/d603ac9aa42c0c43e364f1c5fd23b6e0). I will also explain in much more detail next week.
 
 ### `stco`
 
@@ -326,19 +405,7 @@ This gives a telemetry `stco` chunk offset table for this binary as follows;
 
 ### `stsc`
 
-Now our first telemetry sample looks like this;
-
-```
-\x00\x00\x05\x00\x19\xf9a)7\xacI@\x02\xd4\xd4\xb2\xb5~\xf5\xbf33333\x03g@
-```
-
-For reference, decoded this reports a CAMM case 5 sample with the following values;
-
-```json
-{"latitude": 51.3454334, "longitude": -1.343435, "altitude": 184.1}
-```
-
-What's important is that this chunk contains a single sample, as do all chunks with telemetry samples in this entry. The telemetry samples also all report the same type of data (CAMM case 5).
+We've decided that one chunk of telemetry contains one sample. The telemetry samples also all report the same type of data (CAMM case 5).
 
 So the sample to chunk table for my telemetry looks like this;
 
@@ -346,7 +413,7 @@ So the sample to chunk table for my telemetry looks like this;
 1,1,1
 ```
 
-Essentially all chunks of telemetry from chunk 1 on wards all contain 1 sample which matches the description ID 1 (found in the `stsd` box).
+Written in words; all chunks of telemetry from chunk 1 onwards all contain 1 telemetry sample which matches the description ID 1 (found in the `stsd` box).
 
 ### `stsz`
 
@@ -427,10 +494,9 @@ Take CAMM for example. CAMM not only reports GPS data (as shown in example one).
 
 Similarly, its not always a fixed frequency that a sensor will report data. For example, a GPS chip might report up to 16 measurements a second. Up to being the key words. [In poor conditions where the GPS satellites are out of view](/blog/2022/gps-101), significantly fewer (or even no) measurements might be reported. 
 
-
 In short, this adds a lot more variance to sample sizes value (in `stsz`), the time of each sample (`stts`) and the offsets (`stco`) -- and this is where having multiple samples per chunk becomes very useful (`stsc`).
 
-Next week I will go through the CAMM specification to explain some of these factors in a bit more detail and walk you through an example of taking sensor data to writing it as CAMM telelemetry in the video.
+I briefly talked about writing the data into binary this week. In the next post I will put theory into practice and walk-through writing both telemetry binary into the `mdat` box and the required metadata into the `moov` box.
 
 ## A special thanks to...
 
