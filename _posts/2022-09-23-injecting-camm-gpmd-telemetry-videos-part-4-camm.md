@@ -361,11 +361,15 @@ To give a chunk offset table that looks like this;
 
 Last week I glossed over the other 5 data elements that make up the `co64` box in addition to the chunk offset table (above);
 
-* atom size (32-bit integer): the total size in bytes of this atom
+* atom size (32-bit integer): the total size in bytes of this atom, always `4`
 * type (32-bit integer): sets the box type, always `stco`
-* version (1-byte specification): the version of this chunk offset atom. TODO
-* flags (3-byte space): set to 0
-* number of entries (32-bit integer): number of entries in the chunk offset table, above is 7
+* version (1-byte specification): default `0`, if version is 1 then date and duration values are 8 bytes in length
+* flags (3-byte space): always set to `0`
+* number of entries (32-bit integer): number of entries in the chunk offset table, above is `7`
+
+
+
+
 
 To demonstrate this I'll turn to another script in the Telemetry Injector repository I introduced in the second post in this series. Once in the tools folder, you can run the `print_video_boxes.py`. Let's try that on a sample CAMM video (`200619_161801314.mp4`);
 
@@ -377,7 +381,7 @@ Now there's lots to this file, [but head to line 590](https://gist.github.com/hi
 
 Here the script prints the content of the telemetry `trak`.
 
-TODO -- WHY DOES SCRIPT NOT PRINT ALL DATA ELEMENTS? NEED TO FIX THIS IF MISSING
+TODO -- WHY DOES SCRIPT NOT PRINT ALL DATA ELEMENTS INSIDE THE TELEMETRY RACK? NEED TO FIX THIS IF MISSING
 
 Now your next question will be, now you have all the data elements for the `co64` box; how do you structure them and write them into the box?
 
