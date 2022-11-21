@@ -190,7 +190,7 @@ and
 
 In the case of the CAMM samples, lets start by printing the data elements inside each of the boxes (`stsd` and `camm`).
 
-TODO
+TODO -- WHAT DOES THIS BOX ACTUALLY CONTAIN
 
 
 ### `stco` (used by gpmf) / `co64` (used by camm) (chunk offset box)

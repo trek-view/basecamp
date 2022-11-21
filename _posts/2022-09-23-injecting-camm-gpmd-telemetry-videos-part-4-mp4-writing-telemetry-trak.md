@@ -302,7 +302,7 @@ Now this is complete, we need to describe the data that's been added (appended) 
 
 We've now added CAMM case 5 telemetry to the `mdat` media. Now we need to describe it.
 
-In the last post, using a sample CAMM video we saw how we need to update (in the case of `moov`, `mvhd`, `meta`) and create the boxes;
+In the last post, using a sample CAMM video we saw how we need to update the boxes nested in the `stbl`. 
 
 ```
  └── b'moov' [8, 5171]
@@ -325,14 +325,11 @@ In the last post, using a sample CAMM video we saw how we need to update (in the
      │               └── b'co64' [8, 96]
 ```
 
+To do this we first need to write the `stbl` box; which contains `stsd` (and `camm`), `stts`, `stsz`, `stsc`, and `co64` boxes. Note, it is also required to write to other boxes, but I will cover these in the standard specific posts.
 
+Lets walk through this using the earlier example by first explaining each box. I will then cover how to write these as binary.
 
-
- the following `trak `
-
-
-
-### `stbl` box
+### `stbl` (and `camm`) box
 
 > The sample table atom contains information for converting from media time to sample number to sample location. This atom also indicates how to interpret the sample (for example, whether to decompress the video data and, if so, how). This section describes the format and content of the sample table atom.
 
@@ -342,13 +339,7 @@ In short, for telemetry, the sample table box contains information about the tel
 
 Here's an example of the data elements contained in the `stbl` box for CAMM telemetry;
 
-TODO
-
-
-
-
-
-In the case of telemetry to following elements are required;
+In the case of telemetry the following elements are required;
 
 * atom size (32-bit integer): the total size in bytes of this atom, always `4`
 * type (32-bit integer): sets the box type, always `stsd`
@@ -357,6 +348,107 @@ In the case of telemetry to following elements are required;
 * number of entries (32-bit integer): number of entries in the sample descriptions that follow.
 * sample description table: An array of sample descriptions
 
+The sample description table looks as follows;
+
+TODO -- WHAT DOES THIS BOX CONTAIN
+
+### `stsd` (and `camm`) bo
+
+TODO -- WHAT DOES THIS BOX ACTUALLY CONTAIN -- NEED TO COMPLETE IN LAST WEEKS POST
+
+### `stts` (time to sample box) box
+
+Let's assume the timescale in the `mdhd` box is defined as 90000.
+
+As we have one point every 0.2 seconds, each sample covers 18000 (`90000/5`).
+
+Therefore we get the following time-to-sample table
+
+```
+6,18000
+```
+
+6 points, each covering 18000.
+
+The `stts` box also requires the following data elements;
+
+* atom size (32-bit integer): the total size in bytes of this atom (no nested atom, so sum of box)
+* type (32-bit integer): sets the box type, always `stts`
+* version (1-byte specification): default `0` (meets our requirements), if version is 1 then date and duration values are 8 bytes in length
+* flags (3-byte space): always set to `0`
+* number of entries (32-bit integer): number of entries in the sample descriptions that follow (in our example `1`)
+* sample description table: An array of sample descriptions (see above)
+
+So taking all this information, we can write the following binary;
+
+TODO -- WHAT IS ACTUALLY WRITTEN HERE
+
+### `stsz` (sample size box)
+
+As we're dealing with CAMM case 6 telemetry we know that each sample is exactly 60 bytes, which gives a sample size table of;
+
+```
+60
+60
+60
+60
+60
+60
+```
+
+The `stsz` box also requires the following data elements;
+
+* atom size (32-bit integer): the total size in bytes of this atom (no nested atom, so sum of box)
+* type (32-bit integer): sets the box type, always `stsz`
+* version (1-byte specification): default `0` (meets our requirements), if version is 1 then date and duration values are 8 bytes in length
+* flags (3-byte space): always set to `0`
+* sample size: count of samples (in our example `6`)
+* number of entries (32-bit integer): number of entries in the sample descriptions that follow (in our example `1`)
+* sample size table: An array of sample descriptions (see above)
+
+So taking all this information, we can write the following binary;
+
+TODO -- WHAT IS ACTUALLY WRITTEN HERE
+
+### `stsc` (sample to chunk box)
+
+TODO -- NEED TO KNOW WHAT STSD LOOKS LIKE
 
 
-go through the CAMM specification to explain some of these factors in a bit more detail and walk you through an example of taking sensor data to writing it as CAMM telelemetry in the video.
+### `co64` (chunk offset box)
+
+The chunk offset table is fairly easy to write in our example as we appended the telemetry to the end of the `mdat` file.
+
+Remember earlier in the post;
+
+> first byte of telemetry will be at `294196361` bytes in the `mdat`
+
+Thus we get a `co64` chunk offset table as follows;
+
+```
+294196361
+294196421
+294196481
+294196541
+294196601
+294196661
+```
+
+The `co64` box also requires the following data elements;
+
+* atom size (32-bit integer): the total size in bytes of this atom (no nested atom, so sum of box)
+* type (32-bit integer): sets the box type, always `co64`
+* version (1-byte specification): default `0` (meets our requirements), if version is 1 then date and duration values are 8 bytes in length
+* flags (3-byte space): always set to `0`
+* number of entries (32-bit integer): number of entries in the sample descriptions that follow (in our example `6`)
+* chunk offset table: An array of sample descriptions (see above)
+
+So taking all this information, we can write the following binary;
+
+TODO -- WHAT IS ACTUALLY WRITTEN HERE
+
+## Writing the final boxes
+
+So far we've written some of the required boxes. In order to ensure telemetry is read correctly you will also need to write data into some of the other boxes shown in the structure earlier.
+
+In the coming 2 weeks I will finish off the series of posts by showing you what these boxes should contain and how they should be written for CAMM and GPMF.

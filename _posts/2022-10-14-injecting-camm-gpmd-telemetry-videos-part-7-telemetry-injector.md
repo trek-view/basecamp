@@ -118,6 +118,9 @@ exiftool -ee -G3 -api LargeFileSupport=1 -X UKBC002-out-gpmf.mp4 > UKBC002-out-g
 ```
 
 
+```shell
+python3 telemetry-injector.py -g -i ESLG004v204-in/ -o ESLG004v204.mp4
+```
 
 
 
