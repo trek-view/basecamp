@@ -346,7 +346,7 @@ In the case of telemetry the following elements are required;
 * version (1-byte specification): default `0` (meets our requirements), if version is 1 then date and duration values are 8 bytes in length
 * flags (3-byte space): always set to `0`
 * number of entries (32-bit integer): number of entries in the sample descriptions that follow.
-* sample description table: An array of sample descriptions
+* sample description table: An array of sample descriptions;
 
 The sample description table looks as follows;
 

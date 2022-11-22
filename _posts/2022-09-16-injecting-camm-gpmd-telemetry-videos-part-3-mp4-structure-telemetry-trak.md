@@ -174,7 +174,7 @@ The box itself contains the following elements;
 
 The exact format of the sample description table data element varies by media type. That is, in our case the `stsd` will differ depending on the standard, either GPMF or CAMM. You can see this clearly as for each telemetry type, the `stsd` container box contains two different nested boxes.
 
-The sample description table data element is fairly simple in terms of the data it contains. The table has four columns; size, data format, format reserved data, and reference index.
+The sample description table data element is fairly simple in terms of the data it contains. The table has four columns; size, data format, format reserved data, and reference index (this last column is used later by the `stsc` box).
 
 In our case, they key column is data format, which is either `camm` or `gpmf` depending on the format.
 
