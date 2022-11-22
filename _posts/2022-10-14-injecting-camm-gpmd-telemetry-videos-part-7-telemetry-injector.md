@@ -124,6 +124,9 @@ python3 telemetry-injector.py -g -i ESLG004v204-in/ -o ESLG004v204.mp4
 
 
 
+```shell
+exiftool -ee -G3 -api LargeFileSupport=1 -X GS028542.mp4 > GS028542-exif.json
+```
 
 
 

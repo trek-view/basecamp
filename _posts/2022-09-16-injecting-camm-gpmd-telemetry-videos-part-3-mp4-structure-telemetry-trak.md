@@ -172,9 +172,13 @@ The box itself contains the following elements;
 
 <img class="img-fluid" src="/assets/images/blog/2022-09-16/stsd-box.gif" alt="stsd boxes" title="stsd boxes" />
 
-The exact format of the sample description table data element varies by media type. That is, in our case the `stsd` will differ depending on the standard, either GPMF or CAMM. You can see this clearly as for each telemetry type, the `stsd` container box contains two different nested boxes. 
+The exact format of the sample description table data element varies by media type. That is, in our case the `stsd` will differ depending on the standard, either GPMF or CAMM. You can see this clearly as for each telemetry type, the `stsd` container box contains two different nested boxes.
 
-Demonstrating using the earlier examples;
+The sample description table data element is fairly simple in terms of the data it contains. The table has four columns; size, data format, format reserved data, and reference index.
+
+In our case, they key column is data format, which is either `camm` or `gpmf` depending on the format.
+
+You will also notice that the `stsd` box has a nested box, either `camm` or `gpmf` depending on the datatype.
 
 ```
      │               ├── b'stsd' [8, 33]
@@ -188,10 +192,9 @@ and
          │           │   └── b'gpmd' [8, 8]
 ```
 
-In the case of the CAMM samples, lets start by printing the data elements inside each of the boxes (`stsd` and `camm`).
+You can see the `gpmf` box is 8 bytes, and the `camm` box 17 bytes.
 
-TODO -- WHAT DOES THIS BOX ACTUALLY CONTAIN
-
+TODO - WHAT DO THESE BOXES CAMM/GPMF CONTAIN.
 
 ### `stco` (used by gpmf) / `co64` (used by camm) (chunk offset box)
 

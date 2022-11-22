@@ -292,7 +292,7 @@ print(all_samples)
 
 Now all that's left to do is append `all_samples` to the `mdat` media (starting at `294196361` bytes)
 
-To do this;
+To do this is easy, take the `mdat` binary and add the `all_samples`
 
 TODO - HOW DO WE ACTUALLY DO THIS IN CODE? -- TAKE THIS BINARY AND APPEND IT TO PRODUCE THE ABOVE?
 

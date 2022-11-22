@@ -160,38 +160,6 @@ TODO -- WALKTHROUGH EXAMPLE OF HOW THIS IS DONE.
 
 
 
-`
-
-### `stsd` box
-
-
-### `stsd` box
-
-
-
-
-
-
-
-
-
-For example, lets say a camera only has a GPS chip and produces GPS information.
-
-
-
-
-
-
-The  can then be converted to binary embedded into the `mdat` box as follows
-
-TODO
-
-
-On CAMM Standard, lets say I wanted to include case 
-
-
-
-
 
 
 
