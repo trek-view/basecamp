@@ -327,6 +327,8 @@ In the last post, using a sample CAMM video we saw how we need to update the box
 
 To do this we first need to write the `stbl` box; which contains `stsd` (and `camm`), `stts`, `stsz`, `stsc`, and `co64` boxes. Note, it is also required to write to other boxes, but I will cover these in the standard specific posts.
 
+<img class="img-fluid" src="/assets/images/blog/2022-09-23/stbl-children.png" alt="stbl children boxes" title="stbl children boxes" />
+
 Lets walk through this using the earlier example by first explaining each box. I will then cover how to write these as binary.
 
 ### `stbl` (and `camm`) box
@@ -335,7 +337,22 @@ Lets walk through this using the earlier example by first explaining each box. I
 
 Source: [Quicktime specification](https://developer.apple.com/library/archive/documentation/QuickTime/QTFF/QTFFChap2/qtff2.html)
 
-So writing this 
+In short this box has a size (of all nested atoms) and type (`stbl`) but then it simply acts as a containter for the boxes that follow.
+
+For example, when writing as binary, I would fitst convert the size and type like so;
+
+```python3
+TODO
+stbl_hearer=x
+```
+
+Then I would simply append the nested boxes described from the next section onwards.
+
+```python3
+stbl_box=(stbl_hearer+stsd_box+stts_box+stsz_box+stsc_box+co64_box)
+```
+
+Here is how to create those variables...
 
 ### `stsd` (and `camm`) box
 
