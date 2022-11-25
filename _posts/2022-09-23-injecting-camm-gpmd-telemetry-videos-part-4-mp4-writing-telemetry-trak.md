@@ -5,8 +5,8 @@ description: "In this post I will take what we learned in the last post and use 
 categories: developers
 tags: [gpmd, camm, telemetry, gpmf, gpx, mp4]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-09-23/
-featured_image: /assets/images/blog/2022-09-23/
+image: /assets/images/blog/2022-09-23/writting-camm-6-telemetry-meta.jpg
+featured_image: /assets/images/blog/2022-09-23/writting-camm-6-telemetry-sm.jpg
 layout: post
 published: true
 ---
@@ -89,7 +89,7 @@ b'\x00\x00\xe95\xa8\x9avB\x03\x00\x00\x00y\x0eR\xddI\xa1I@\x91Z\x8a \x1d\x80\xee
 
 Now we also need to account for the header to define the CAMM case as per the specification (in this example, case 6).
 
-<img class="img-fluid" src="/assets/images/blog/2022-09-30/camm-specification-header.png" alt="camm specification header" title="camm specification header" />
+<img class="img-fluid" src="/assets/images/blog/2022-09-23/camm-header.png" alt="camm specification header" title="camm specification header" />
 
 The header consists of 2 parts: the first 2 bytes contains `0` as defined by the specification and next 2 bytes contains CAMM case number. We can write this like so;
 
@@ -335,26 +335,30 @@ Lets walk through this using the earlier example by first explaining each box. I
 
 Source: [Quicktime specification](https://developer.apple.com/library/archive/documentation/QuickTime/QTFF/QTFFChap2/qtff2.html)
 
+So writing this 
+
+### `stsd` (and `camm`) box
+
 In short, for telemetry, the sample table box contains information about the telemetry, including the different types and structure of data that can be found in reported samples (e.g. from different sensors) and how it can be interpreted.
 
-Here's an example of the data elements contained in the `stbl` box for CAMM telemetry;
+Here's an example of the data elements contained in the `stsd` box for CAMM telemetry;
 
-In the case of telemetry the following elements are required;
-
-* atom size (32-bit integer): the total size in bytes of this atom, always `4`
+* atom size (32-bit integer): the total size in bytes of this box (and all child boxes)
 * type (32-bit integer): sets the box type, always `stsd`
 * version (1-byte specification): default `0` (meets our requirements), if version is 1 then date and duration values are 8 bytes in length
 * flags (3-byte space): always set to `0`
-* number of entries (32-bit integer): number of entries in the sample descriptions that follow.
-* sample description table: An array of sample descriptions;
+* number of entries (32-bit integer): number of entries in the sample descriptions that follow (1 in my example)
+* sample description table: An array of sample descriptions
 
-The sample description table looks as follows;
+A basic sample description table (for CAMM) looks as follows;
 
-TODO -- WHAT DOES THIS BOX CONTAIN
+```
+8,camm,0,1
+```
 
-### `stsd` (and `camm`) bo
+That is, the row is `8` bytes, the data type is `camm`, format reserved data `0`, and the data reference index is `1`.
 
-TODO -- WHAT DOES THIS BOX ACTUALLY CONTAIN -- NEED TO COMPLETE IN LAST WEEKS POST
+TODO -- CAN YOU SUPPLY CODE TO DEMO CREATING THE STSD BOX
 
 ### `stts` (time to sample box) box
 
@@ -381,7 +385,7 @@ The `stts` box also requires the following data elements;
 
 So taking all this information, we can write the following binary;
 
-TODO -- WHAT IS ACTUALLY WRITTEN HERE
+TODO -- CAN YOU SUPPLY CODE TO DEMO CREATING THE STTS BOX
 
 ### `stsz` (sample size box)
 
@@ -408,14 +412,35 @@ The `stsz` box also requires the following data elements;
 
 So taking all this information, we can write the following binary;
 
-TODO -- WHAT IS ACTUALLY WRITTEN HERE
+TODO -- CAN YOU SUPPLY CODE TO DEMO CREATING THE STSZ BOX
 
 ### `stsc` (sample to chunk box)
 
-TODO -- NEED TO KNOW WHAT STSD LOOKS LIKE
+To keep things simple, mainly because our telemetry is simple (just one CAMM case), I will assign each sample to a chunk, giving a sample to chunk data element in the `stsc` box as follows;
 
+```
+1,1,1
+```
+
+Each table entry corresponds to a set of consecutive chunks, each of which contains the same number of samples (thus we only need one line).
+
+This translates to; Chunk 1 has 1 sample in it, and the sample is described in the `stsd` under sample description table where the data reference index column is 1. Chunk 2 has 1 sample in it and the data reference is one, and so on...
+
+The `stsc` box also requires the following data elements;
+
+* atom size (32-bit integer): the total size in bytes of this atom (no nested atom, so sum of box)
+* type (32-bit integer): sets the box type, always `stsc`
+* version (1-byte specification): default `0` (meets our requirements), if version is 1 then date and duration values are 8 bytes in length
+* flags (3-byte space): always set to `0`
+* number of entries: in our example `1`
+* number of entries (32-bit integer): number of entries in the sample to chunk table 
+* sample to chunk table table: An array of sample descriptions (see above)
+
+TODO -- CAN YOU SUPPLY CODE TO DEMO CREATING THE STSC BOX
 
 ### `co64` (chunk offset box)
+
+Firstly we use the `co64` box (not not the `stco`) box, as CAMM can use up to 64 bits.
 
 The chunk offset table is fairly easy to write in our example as we appended the telemetry to the end of the `mdat` file.
 
@@ -445,7 +470,7 @@ The `co64` box also requires the following data elements;
 
 So taking all this information, we can write the following binary;
 
-TODO -- WHAT IS ACTUALLY WRITTEN HERE
+TODO -- CAN YOU SUPPLY CODE TO DEMO CREATING THE CO64 BOX
 
 ## Writing the final boxes
 

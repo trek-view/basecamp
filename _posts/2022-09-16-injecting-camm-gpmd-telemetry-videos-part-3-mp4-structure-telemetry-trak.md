@@ -174,9 +174,17 @@ The box itself contains the following elements;
 
 The exact format of the sample description table data element varies by media type. That is, in our case the `stsd` will differ depending on the standard, either GPMF or CAMM. You can see this clearly as for each telemetry type, the `stsd` container box contains two different nested boxes.
 
-The sample description table data element is fairly simple in terms of the data it contains. The table has four columns; size, data format, format reserved data, and reference index (this last column is used later by the `stsc` box).
+The sample description table data element is fairly simple in terms of the data it contains. The video sample description contains information that defines how to interpret video media data.
 
-In our case, they key column is data format, which is either `camm` or `gpmf` depending on the format.
+The table has four columns; size, data format, format reserved data, and data reference index (this last column is used later by the `stsc` box).
+
+In the telemetry example the sample description can be be very simple;
+
+```
+17,camm,0,1
+```
+
+Above the size of the description (row) is 33 bytes, the data format is camm, the format reserved data is 0 (which is always the case), the reference ID is 1 (you'll see me use this ID in the `stsc` box later).
 
 You will also notice that the `stsd` box has a nested box, either `camm` or `gpmf` depending on the datatype.
 
@@ -192,9 +200,23 @@ and
          │           │   └── b'gpmd' [8, 8]
 ```
 
-You can see the `gpmf` box is 8 bytes, and the `camm` box 17 bytes.
+[Where these boxes come from is described here](https://developer.apple.com/library/archive/documentation/QuickTime/QTFF/QTFFChap2/qtff2.html#//apple_ref/doc/uid/TP40000939-CH204-61112);
 
-TODO - WHAT DO THESE BOXES CAMM/GPMF CONTAIN.
+> These four fields (of the sample description table) may be followed by additional data specific to the media type and data format.
+
+In some camm videos I've seen this data contain, `application/gyro\x00`, e.g 
+
+```
+17,camm,0,1,application/gyro\x00
+```
+
+...but it's not actually nessasary.
+
+The box name `camm` is inherited from the data format column in the sample description table. As long as the data format column is set to `camm` (or `gpmf`), the `camm` box will appear like this in a nested structure.
+
+If you're wondering why this section doesn't define the CAMM cases (or GPMF data types), that's because that's done in the binary.
+
+If this is still unclear, in the next weeks I will walk through a real life example demonstrating everything needed to write valid telemetry into a video.
 
 ### `stco` (used by gpmf) / `co64` (used by camm) (chunk offset box)
 
@@ -304,7 +326,7 @@ The box itself contains the following elements;
 
 The sample to chunk table (the data element in this box where chunk information is held) has 3 columns; first chunk, samples per chunk, sample description IDs.
 
-The sample description IDs referenced are contained in the `stsd` box. I will cover this in a later post.
+The sample description IDs referenced are contained in the `stsd` box (in the sample description tables data reference index column, mentioned earlier in this post). I will cover this in a later post.
 
 A simple `stsc` table might contain the following values;
 
@@ -383,7 +405,7 @@ For reference, decoded this reports CAMM case 5 samples with the following value
 
 [If you're curious to see how I converted these to binary see this script](https://gist.github.com/himynamesdave/d603ac9aa42c0c43e364f1c5fd23b6e0). I will also explain in much more detail next week.
 
-### `stco`
+### `co64` (not `stco` because CAMM type)
 
 So the first chunk of video binary is (which is 4 bytes);
 
@@ -447,7 +469,7 @@ Let's assume the video from example 1.0 continues in the same pattern for anothe
 
 The boxes would now contain data as follows;
 
-### `stco`
+### `co64`
 
 Chunk offset table;
 
