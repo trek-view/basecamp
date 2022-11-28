@@ -292,9 +292,7 @@ print(all_samples)
 
 Now all that's left to do is append `all_samples` to the `mdat` media (starting at `294196361` bytes)
 
-To do this is easy, take the `mdat` binary and add the `all_samples`
-
-TODO - HOW DO WE ACTUALLY DO THIS IN CODE? -- TAKE THIS BINARY AND APPEND IT TO PRODUCE THE ABOVE?
+To do this is easy, take the `mdat` binary and just simple add `all_samples` (e.g. `mdat` + `all_samples`).
 
 Now this is complete, we need to describe the data that's been added (appended) to the `mdat` binary so that the telemetry is contains can be decoded and processed correctly.
 

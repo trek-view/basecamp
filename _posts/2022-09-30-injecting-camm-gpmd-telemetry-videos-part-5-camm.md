@@ -13,11 +13,9 @@ published: true
 
 **In this post I will the structure of Google's CAMM standard, how to create a CAMM binary, and how to inject it into a mp4 video file.**
 
-The CAMM specification is quite a bit simpler to GPMF in its design, so I've decided to take the conceptual knowledge from the last few weeks, and use CAMM as the first standard I will walk-through an example of writing telemetry.
+The CAMM specification is quite a bit simpler to GPMF in its design. In fact, you're probably pretty familiar with it aleady from the examples in the previous weeks. In this post I will go into a bit more detail.  
 
-GPMF will follow next week. 
-
-In this post it will prove useful to have the [Google CAMM Specification](https://developers.google.com/streetview/publish/camm-spec) open as a reference.
+It will prove handy to have a copy of [Google's CAMM Specification](https://developers.google.com/streetview/publish/camm-spec) open as a reference.
 
 ## CAMM cases 
 
@@ -89,13 +87,7 @@ Reports the ambient magnetic field.
 {"magnetic_field": [0.9989318521683401,-0.024964140751365705,0.02621539963988159]}
 ```
 
-
-
-## Writing the `moov` `trak` data
-
-I will start with what we covered last week the `co64`, `stsc`, `stsz`, and `stts` boxes.
-
-### `co64` box (chunk offset box)
+## What we know about CAMM cases
 
 Here's what we know about all CAMM samples written into an `mdat` box based on the specifications;
 
@@ -110,62 +102,37 @@ Here's what we know about all CAMM samples written into an `mdat` box based on t
 
 We can be sure of the byte sizes of each CAMM case sample will be the same as shown above, as all field values must be reported in the payload.
 
-As mention previously, not all case types need to be present in telemetry. For example, if the device logging the data only has an accelerometer, only case 3 data could be reported.
+As mention previously, not all case types need to be present in telemetry. For example, if the device logging the data only has an accelerometer, only CAMM case 3 data could be reported.
 
-The data we wrote into the `mdat` was 6 CAMM case 6 samples (each of 60 bytes).
+Similarly, the more sensors a camera has, the more cases that are reported. On 360 cameras you will often see case 2, 3 and 6 reported.
 
-We also know that there are 24 bytes of video.
+## Writing CAMM metadata in `moov`
 
-Therefore the offset in bytes to the first telemetry is 24, the second 84 (60 bytes of telemetry in first sample + 24 bytes of video), 144, 204, 264, 324, and 384 bytes to the final telemetry point.
+[Last week](/blog/2022/injecting-camm-gpmd-telemetry-videos-part-4-mp4-writing-telemetry-trak) I wrote into the `mdat` media 6 CAMM case 6 samples (each of 60 bytes). I also showed you how to write the data in the `stbl` box, and all its nested boxes.
 
-To give a chunk offset table that looks like this;
+All thats left to write is the following boxes inside the `trak` box;
 
 ```
-24
-84
-144
-204
-264
-324
-384
+     ├── b'trak' [8, 6989]
+     │   ├── b'tkhd' [8, 84]
+     │   ├── b'tapt' [8, 60]
+     │   ├── b'edts' [8, 28]
+     │   ├── b'mdia' [8, 6331]
+     │   │   ├── b'mdhd' [8, 24]
+     │   │   ├── b'hdlr' [8, 41]
+     │   │   └── b'minf' [8, 6242]
+     │   │       ├── b'vmhd' [8, 12]
+     │   │       ├── b'hdlr' [8, 48]
+     │   │       ├── b'dinf' [8, 28]
 ```
 
-Last week I glossed over the other 5 data elements that make up the `co64` box in addition to the chunk offset table (above);
+Let's work from the bottom of the tree upwards.
 
-* atom size (32-bit integer): the total size in bytes of this atom, always `4`
-* type (32-bit integer): sets the box type, always `stco`
-* version (1-byte specification): default `0`, if version is 1 then date and duration values are 8 bytes in length
-* flags (3-byte space): always set to `0`
-* number of entries (32-bit integer): number of entries in the chunk offset table, above is `7`
+### dinf
 
+### hdlr
 
-
-
-
-To demonstrate this I'll turn to another script in the Telemetry Injector repository I introduced in the second post in this series. Once in the tools folder, you can run the `print_video_atoms_detail.py`. Let's try that on a sample CAMM video (`200619_161801314.mp4`);
-
-```shell
-python3 print_video_atoms_detail.py 200619_161801314.mp4 > 200619_161801314-atom-detail.txt
-```
-
-Now there's lots to this file, [but head to line 590](https://gist.github.com/himynamesdave/0525dd51c251990cb85a176a9e2ca3fc#file-200619_161801314-atom-detail-txt-L590).
-
-Here the script prints the content of the telemetry `trak`.
-
-TODO -- WHY DOES SCRIPT NOT PRINT ALL DATA ELEMENTS INSIDE THE TELEMETRY RACK? NEED TO FIX THIS IF MISSING
-
-Now your next question will be, now you have all the data elements for the `co64` box; how do you structure them and write them into the box?
-
-TODO -- WALKTHROUGH EXAMPLE OF HOW THIS IS DONE.
-
-
-
-
-
-
-
-
-
+### vmhd
 
 
 

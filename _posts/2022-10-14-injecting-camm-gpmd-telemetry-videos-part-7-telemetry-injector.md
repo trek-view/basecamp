@@ -117,6 +117,11 @@ cd UKBC002-out-gpmf
 exiftool -ee -G3 -api LargeFileSupport=1 -X UKBC002-out-gpmf.mp4 > UKBC002-out-gpmf.txt
 ```
 
+exiftool -ee -G3 -api LargeFileSupport=1 -X 200619_161801314.mp4 > 200619_161801314.xml
+
+
+
+
 
 ```shell
 python3 telemetry-injector.py -g -i ESLG004v204-in/ -o ESLG004v204.mp4
