@@ -329,7 +329,7 @@ To do this we first need to write the `stbl` box; which contains `stsd` (and `ca
 
 Lets walk through this using the earlier example by first explaining each box. I will then cover how to write these as binary.
 
-### `stbl` (and `camm`) box
+### `stbl`
 
 > The sample table atom contains information for converting from media time to sample number to sample location. This atom also indicates how to interpret the sample (for example, whether to decompress the video data and, if so, how). This section describes the format and content of the sample table atom.
 

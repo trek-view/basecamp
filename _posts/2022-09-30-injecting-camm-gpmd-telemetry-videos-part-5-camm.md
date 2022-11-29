@@ -1,6 +1,6 @@
 ---
 date: 2022-09-30
-title: "Injecting Telemetry into Video Files (Part 4): CAMM"
+title: "Injecting Telemetry into Video Files (Part 5): CAMM"
 description: "In this post I will the structure of Google's CAMM standard, how to create a CAMM binary, and how to inject it into a mp4 video file."
 categories: developers
 tags: [gpmd, camm, telemetry, gpmf, gpx]
