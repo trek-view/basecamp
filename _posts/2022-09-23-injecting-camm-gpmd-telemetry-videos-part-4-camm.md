@@ -1,6 +1,6 @@
 ---
 date: 2022-09-23
-title: "Injecting Telemetry into Video Files (Part 4): Writing telemetry trak's into mp4 videos"
+title: "Injecting Telemetry into Video Files (Part 4): CAMM"
 description: "In this post I will take what we learned in the last post and use it to write some telemetry into a video."
 categories: developers
 tags: [gpmd, camm, telemetry, gpmf, gpx, mp4]
@@ -15,11 +15,102 @@ published: true
 
 After reading last weeks post, you're now ready to start writing some telemetry of your own.
 
-Lets start with the telemetry itself;
+Lets start by writing telemetry in CAMM standard, seeing as I briefly introduced it in the previous posts.
+
+It will prove handy to have a copy of [Google's CAMM Specification](https://developers.google.com/streetview/publish/camm-spec) open as a reference.
+
+## CAMM cases 
+
+<img class="img-fluid" src="/assets/images/blog/2022-09-30/camm-case6-specification-meta.jpg" alt="CAMM Spec case6" title="CAMM Spec case6" />
+
+First it is important to understand the CAMM cases, and the data they hold. Each CAMM case reports different types of data (closely linked to the types of sensors inside cameras);
+
+### CAMM case 0
+
+Reports the angle axis orientation in radians representing the rotation from local camera coordinates to a world coordinate system.
+
+```json
+{"angle_axis": [0.9989318521683401,-0.024964140751365705,0.02621539963988159]}
+```
+
+### CAMM case 1 
+
+Reports lens data and is recorded per video frame. 
+
+```json
+{"pixel_exposure_time": 100, "rolling_shutter_skew_time": 50}
+```
+
+### CAMM case 2
+
+Reports Gyroscope samples. 
+
+```json
+{"gyro": [0.9989318521683401,-0.024964140751365705,0.02621539963988159]}
+```
+
+### CAMM case 3
+
+Reports Accelerometer samples.
+
+```json
+{"acceleration": [0.9989318521683401,-0.024964140751365705,0.02621539963988159]}
+```
+
+### CAMM case 4 
+
+Reports 3D position of the camera.
+
+```json
+{"position": [0.9989318521683401,-0.024964140751365705,0.02621539963988159]}
+```
+
+### CAMM case 5
+
+Reports basic GPS samples. 
+
+```json
+{"latitude": 51.2725595, "longitude": -1.5853544, "altitude": 183.94700622558594}
+```
+
+### CAMM case 6
+
+Reports richer GPS samples than CAMM case 5 (when available).
+
+```json
+{"time_gps_epoch": "2021-09-04T07:25:17.352000Z", "gps_fix_type": 3, "latitude": 51.2725595, "longitude": -1.5853544, "altitude": 183.94700622558594, "horizontal_accuracy": 0, "vertical_accuracy": 0, "velocity_east": 0, "velocity_north": 0, "velocity_up": 0, "speed_accuracy": 0}
+```
+
+### CAMM case 7
+
+Reports the ambient magnetic field. 
+
+```json
+{"magnetic_field": [0.9989318521683401,-0.024964140751365705,0.02621539963988159]}
+```
+
+## What we know about CAMM cases
+
+Here's what we know about all CAMM samples written into an `mdat` box based on the specifications;
+
+* CAMM case 0 (angle axis orientation): each sample is 16 bytes (3 `float` values of 4 bytes + 4 byte header)
+* CAMM case 1 (lens data): each sample is 12 bytes (2 `int32` values of 4 bytes + 4 byte header)
+* CAMM case 2 (gyroscope): each sample is 16 bytes (3 `float` values of 4 bytes + 4 byte header)
+* CAMM case 3 (accelerometer): each sample is 16 bytes (3 `float` values of 4 bytes + 4 byte header)
+* CAMM case 4 (3D position): each sample is 16 bytes (3 `float` values of 4 bytes + 4 byte header)
+* CAMM case 5 (basic GPS samples): each sample is 28 bytes (3 `double` values of 8 bytes + 4 byte header)
+* CAMM case 6 (rich GPS samples): each sample is 60 bytes (3 `double` values of 8 bytes + 1 `int32` value of 4 bytes + 7 `float` values of 4 bytes + 4 byte header)
+* CAMM case 7 (ambient magnetic field): each sample is 16 bytes (3 `double` values of 8 bytes + 4 byte header)
+
+We can be sure of the byte sizes of each CAMM case sample will be the same as shown above, as all field values must be reported in the payload.
+
+As mention previously, not all case types need to be present in telemetry. For example, if the device logging the data only has an accelerometer, only CAMM case 3 data could be reported.
+
+Similarly, the more sensors a camera has, the more cases that are reported. On 360 cameras you will often see case 2, 3 and 6 reported.
 
 ## Writing telemetry samples as binary (for `mdat` box)
 
-As you now now, each telemetry samples need to be turned into binary for injection into the `mdat` box.
+As you now know from last week, each telemetry samples need to be turned into binary for injection into the `mdat` box.
 
 The [Python3 struct library](https://docs.python.org/3/library/struct.html) can be used to perform conversions between Python values and C structs represented as Python bytes objects which can be written into `mdat`. 
 
@@ -33,12 +124,10 @@ Lets use this CAMM case 6 sample to demonstrate;
 
 Here's how we can convert the values to Python bytes using struct;
 
-```shell
-python3
-```
-
 ```python
+python3
 import struct
+
 time_gps_epoch_0 = struct.pack('<d', 1553343930000.0)
 gps_fix_type_0 = struct.pack('<i', 3)
 latitude_0 = struct.pack('<d', 51.26006666666667)

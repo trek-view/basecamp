@@ -1,12 +1,12 @@
 ---
-date: 2022-10-07
-title: "Injecting Telemetry into Video Files (Part 6): GPMF"
+date: 2022-09-30
+title: "Injecting Telemetry into Video Files (Part 5): GPMF"
 description: "In this post I will the structure of GoPro's GPMF standard, how to create a GPMF binary and accompanying metadata, and finally how to inject it into a mp4 video file."
 categories: developers
 tags: [gpmd, camm, telemetry, gpmf, gpx]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-10-07/gopro-gpmf-structure-meta.jpg
-featured_image: /assets/images/blog/2022-10-07/gopro-gpmf-structure-sm.jpg
+image: /assets/images/blog/2022-09-30/gopro-gpmf-structure-meta.jpg
+featured_image: /assets/images/blog/2022-09-30/gopro-gpmf-structure-sm.jpg
 layout: post
 published: true
 ---
@@ -54,21 +54,21 @@ To begin with, it is worth familiarising yourself with the data that GPMF suppor
 
 [You can see the specifics of what each GoPro camera writes (generally, the newer the GoPro camera, the more telemetry data is written because there are more sensors in the camera)](https://github.com/gopro/gpmf-parser#where-to-find-gpmf-data).
 
-<img class="img-fluid" src="/assets/images/blog/2022-10-07/gpmf-max-camera-telemetry.png" alt="GoPro MAX GPMF" title="GoPro MAX GPMF" />
+<img class="img-fluid" src="/assets/images/blog/2022-09-30/gpmf-max-camera-telemetry.png" alt="GoPro MAX GPMF" title="GoPro MAX GPMF" />
 
 Above is a snippet of what telemetry the GoPro MAX writes into GPMF as it builds the video file.
 
 This is written into the `mdat` as a stream in the following structure;
 
-<img class="img-fluid" src="/assets/images/blog/2022-10-07/gpmf-devc-tree.png" alt="GoPro MAX GPMF DEVC tree" title="GoPro MAX GPMF DEVC tree" />
+<img class="img-fluid" src="/assets/images/blog/2022-09-30/gpmf-devc-tree.png" alt="GoPro MAX GPMF DEVC tree" title="GoPro MAX GPMF DEVC tree" />
 
 Each part of the tree has a Key, Length Value structure.
 
-<img class="img-fluid" src="/assets/images/blog/2022-10-07/gopro-gpmf-structure-sm.jpg" alt="GoPro GPMF Key Length Value design" title="GoPro GPMF Key Length Value design" />
+<img class="img-fluid" src="/assets/images/blog/2022-09-30/gopro-gpmf-structure-sm.jpg" alt="GoPro GPMF Key Length Value design" title="GoPro GPMF Key Length Value design" />
 
 Broken out this looks as follows;
 
-<img class="img-fluid" src="/assets/images/blog/2022-10-07/gopro-klv-breakout.png" alt="GoPro GPMF Key Length Value breakout design" title="GoPro GPMF Key Length Value breakout design" />
+<img class="img-fluid" src="/assets/images/blog/2022-09-30/gopro-klv-breakout.png" alt="GoPro GPMF Key Length Value breakout design" title="GoPro GPMF Key Length Value breakout design" />
 
 Which in more detail can be explained as;
 
@@ -502,7 +502,7 @@ Note there are a few other box types with a relation to `GPS5` that also need to
 
 I won't go into each of these, nor the other sensor box types (e.g. `ACCL`, `GYRO`, etc.). You have enough information to start writing these yourself with the help of the specification.
 
-OK now the raw telemettry is written into the `mdat` media, now we need to describe it in the movie box (`moov`).
+OK now the raw telemetry is written into the `mdat` media, now we need to describe it in the movie box (`moov`).
 
 ## Telemetry metadata (inside `moov` box)
 
@@ -527,104 +527,100 @@ Inside the `meta` `trak` for the gpmf telemetry you'll see more nested boxes [as
 		            'stco' < GPMF byte offset with the MP4 for each payload >
 ```
 
-The boxes contain the day are almost identical to CAMM. Though a few things to be aware of...
+The boxes contain the day are almost identical to CAMM. You can see how the boxes are structured (and the data they contained) in the tree above.
 
-### 
+First lets start by printing the `trak` box from a real GoPro 360 video shot on a GoPro MAX to show this structure;
 
-
-
-
-## A deeper look at the `minf` (media info) box
-
-
-The boxes Almost all boxes contain a concept of time (or a stream). The most obvious is the content in the `mdat` box -- the audio and imagery in the video is streamed over time. This is the same for other boxes too, including those of interest to this exercise for the metadata streams (more on that next week when I talk a bit more about what is in "a box").
-
-		* `mdhd` (media header) box: The overall information of the current audio/video track/stream (`trak`). The box has a duration field and a timescale field. The value of duration/timescale is the duration of the current stream.
-		* `hdlr` (handler) box: is used to specify the type of the stream (in this case always `GoPro MET`)
-		* `minf`: (media info) box; media information container. This is where the main telemetry is housed...
-
-In the case of GPMF, `minf` contains 3 nested boxes:
-
-### `gmhd`
-
-TODO
-
-
-### `dinf`
-
-TODO
-
-
-### `stbl`
-
-The sample table box `stbl`, you can find the corresponding sample description information (`stsd`), timing information (`stts`), sample size information (`stsz`), chunk location information (`stco`), and GoPro metadata (`gpmd`).
-
-`stsd`, `stts`, `stsz`, and `stts` are all box types in the mp4 specification. `gpmd` is custom.
-
-TODO
-
-## Writing values into boxes
-
-
-
-
-
-Lets start with a simple examp
-
-* 
-
-	   '' < sample table within >
-	      'stsd' < sample description with data format 'gpmd', the type used for GPMF >
-	      'stts' < GPMF sample duration for each payload >
-	      'stsz' < GPMF byte size for each payload >
-	      'stco'
-
-
-
-
-> 32-bit aligned payload
-
-If you open up the binary file, [example in last post](/blog/2022/injecting-camm-gpmd-telemetry-videos-part-1-challenges), you will see each line is 32 characters long.
-
-
-
-starting point for our script will be at end of video/audio binary data as we append telemetry binary to the end of this binary
-
-
-The GPMF defined `trak`s in the `moov` box map to `vide` (`0:0`), `soun` (`0:1`) and `meta` (`0:2`) in ffprobe -- each stream in the `mdat` track has its own corresponding metadata `moov` metadata `trak`.
-
-Note, the `tmcd` `trak` shown in the GPMF spec in the sample video is missing (as it is not applicable to this video type -- I've only seen this in unprocessed GoPro `.360` video files).
-
-There can be a varying number of `trak` boxes depending on how the video is created. For example, if there is only video and no audio/metadata track then there would be only one `trak` box present.
-
-Another point to note is that there might be more than one of the stream of the same type depending on the video mode, e.g a `.360` output (note, 360's follow the mp4 standard, and thus are mp4s in all but name) from ffprobe which contains two video streams in the `mdat` box;
-
-```
-Stream #0:0[0x1](eng): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 3072x1536 [SAR 1:1 DAR 2:1], 38042 kb/s, 59.94 fps, 59.94 tbr, 600 tbn (default)
-Stream #0:1[0x2](eng): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 3072x1536 [SAR 1:1 DAR 2:1], 38042 kb/s, 59.94 fps, 59.94 tbr, 600 tbn (default)
+```shell
+python3 print_video_atoms_overview.py GS018423.mp4
 ```
 
-Thus this video will have two `trak` boxes in the `moov` box to describe the metadata of the two video streams in the `mdat` box.
-
-I will go into GPMF in the next post, but back to the main point I am trying to make; the metadata for the telemetry (not the telemetry itself) is housed in the `moov` box. In the `moov` box is nested `trak` files for the streams held in the `mdat` file.
+Which prints;
 
 ```
-├── b'mdat'
-└── b'moov'
-    ├── b'mvhd'
-    ├── b'trak' (vide)
-    │   └── ...
-    ├── b'trak' (soun)
-    │   └── ...
-    └── b'trak' (meta)
-        └── ...
+     └── b'trak' [8, 574]
+         ├── b'tkhd' [8, 84]
+         ├── b'mdia' [8, 438]
+         │   ├── b'mdhd' [8, 24]
+         │   ├── b'hdlr' [8, 34]
+         │   └── b'minf' [8, 356]
+         │       ├── b'gmhd' [8, 24]
+         │       ├── b'dinf' [8, 28]
+         │       └── b'stbl' [8, 280]
+         │           ├── b'stsd' [8, 24]
+         │           │   └── b'gpmd' [8, 8]
+         │           ├── b'stsz' [8, 88]
+         │           ├── b'stsc' [8, 20]
+         │           ├── b'stco' [8, 84]
+         │           └── b'stts' [8, 24]
+         └── b'edts' [8, 28]
 ```
 
-Writing data into 1) nested boxes inside the `trak` (meta) boxes and 2) raw telemetry in the `mdat` is what we're interested in for this exercise.
+Now, switching back to my example. have only one sample entry, as shown earlier in this post. Let's assume the `mdat` box has 1,000,000 bytes of video and audio, followed by this telemetry cappended starting at 1,000,001 bytes.
 
-I'll leave the raw telemetry (`mdat`) aside for a minute.
+I'm not going to go into as much detail as I did with CAMM, but here's a few entries to show you that the theory is identical between the two standards (with a few small things to be aware of).
 
+### `stsd` (and `gpmf`) box
 
+The sample description table for gpmf will look something like this;
 
-As noted, more than one `trak` box (aka atom) can exist -- in our sample video there are three `trak` boxes.
+```
+8,gpmf,0,1
+```
+
+That is in my example; the row is `8` bytes, the data type is `gpmf` (always the case for gpmf), format reserved data `0`, and the data reference index is `1`.
+
+TODO -- CAN YOU SUPPLY CODE TO DEMO CREATING THE STSD BOX
+
+### `stts` (time to sample box) box
+
+Let's assume the timescale in the `mdhd` box is defined as 90000.
+
+Our single point covers 1 second.
+
+Therefore we get the following time-to-sample table
+
+```
+1,90000
+```
+
+TODO -- CAN YOU SUPPLY CODE TO DEMO CREATING THE STTS BOX
+
+### `stsz` (sample size box)
+
+As we're dealing with GoPro GPS5 telemetry only we know that each sample is exactly 220 bytes (and in this example we only have 1 sample), which gives a sample size table of;
+
+```
+220
+```
+
+Note, if there were other types of samples, e.g. `ACCL`, the bytes sizes would be different.
+
+TODO -- CAN YOU SUPPLY CODE TO DEMO CREATING THE STSZ BOX
+
+### `stsc` (sample to chunk box)
+
+My telemetry only contains I will assign each sample to a chunk, giving a sample to chunk data element in the `stsc` box as follows;
+
+```
+1,3,1
+```
+
+Here we have 1 chunk, that contains 3 measurements (`STRM`, `SCAL`, `GPS5`) that map to the `stsd` table data reference index ID 1.
+
+### `stco` (chunk offset box)
+
+Our telemetry sample is at 1,000,001 bytes giving a chunk offset table as follows;
+
+```
+1000001
+```
+
+TODO -- CAN YOU SUPPLY CODE TO DEMO CREATING THE STCO BOX
+
+## Next Up: Telemetry Injector
+
+Now you're up to speed with the basics, next week I'll introduce you to our tool, Telemetry Injector, that takes either a movie file and GPX file, or a series of geotagged images and creates a video with CAMM or GPMF telemetry.
+
+If you're still struggling to understand some of the concepts introduced in this series of post, Telemetry Injector will show you from end-to-end how telemetry is injected and written into mp4 video files.
 

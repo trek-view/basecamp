@@ -521,7 +521,7 @@ Similarly, its not always a fixed frequency that a sensor will report data. For 
 
 In short, this adds a lot more variance to sample sizes value (in `stsz`), the time of each sample (`stts`) and the offsets (`stco`) -- and this is where having multiple samples per chunk becomes very useful (`stsc`).
 
-I briefly talked about writing the data into binary this week. In the next post I will put theory into practice and walk-through writing both telemetry binary into the `mdat` box and the required metadata into the `moov` box.
+I briefly talked about writing the data into binary this week. In the next post I will put theory into practice and walk-through writing both telemetry binary into the `mdat` box and the required metadata into the `moov` box in the CAMM standard.
 
 ## A special thanks to...
 
