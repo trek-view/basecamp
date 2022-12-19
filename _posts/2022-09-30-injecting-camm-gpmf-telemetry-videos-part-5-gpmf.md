@@ -13,7 +13,7 @@ published: true
 
 **In this post I will the structure of GoPro's GPMF standard, how to create a GPMF binary and accompanying metadata, and finally how to inject it into a mp4 video file.**
 
-In [my last post I showed how to write CAMM (a telemetry standard) into videos so that sensor data (including GPS) from the camera could be captured](/blog/2022/injecting-camm-gpmd-telemetry-videos-part-5-camm).
+In [my last post I showed how to write CAMM (a telemetry standard) into videos so that sensor data (including GPS) from the camera could be captured](/blog/2022/injecting-camm-gpmd-telemetry-videos-part-4-camm).
 
 The past five posts have given you a good amount of fundamental knowledge to understand how to write GPMF into videos, all that's left is to cover the specifics.
 
@@ -570,8 +570,6 @@ The sample description table for gpmf will look something like this;
 
 That is in my example; the row is `8` bytes, the data type is `gpmf` (always the case for gpmf), format reserved data `0`, and the data reference index is `1`.
 
-TODO -- CAN YOU SUPPLY CODE TO DEMO CREATING THE STSD BOX
-
 ### `stts` (time to sample box) box
 
 Let's assume the timescale in the `mdhd` box is defined as 90000.
@@ -584,7 +582,19 @@ Therefore we get the following time-to-sample table
 1,90000
 ```
 
-TODO -- CAN YOU SUPPLY CODE TO DEMO CREATING THE STTS BOX
+Like last week we can use Telemetry Injector to write the binary.
+
+```shell
+vi stts.json
+{"version": 0, "flags": [0, 0, 0], "entries": [[1,90000]]}
+```
+
+Which can then be passed to the script;
+
+```python3
+python3 sttsBox.py -l stts.json
+b'\x00\x00\x00\x18stts\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x01_\x90'
+```
 
 ### `stsz` (sample size box)
 
@@ -595,8 +605,6 @@ As we're dealing with GoPro GPS5 telemetry only we know that each sample is exac
 ```
 
 Note, if there were other types of samples, e.g. `ACCL`, the bytes sizes would be different.
-
-TODO -- CAN YOU SUPPLY CODE TO DEMO CREATING THE STSZ BOX
 
 ### `stsc` (sample to chunk box)
 
@@ -616,11 +624,8 @@ Our telemetry sample is at 1,000,001 bytes giving a chunk offset table as follow
 1000001
 ```
 
-TODO -- CAN YOU SUPPLY CODE TO DEMO CREATING THE STCO BOX
-
 ## Next Up: Telemetry Injector
 
-Now you're up to speed with the basics, next week I'll introduce you to our tool, Telemetry Injector, that takes either a movie file and GPX file, or a series of geotagged images and creates a video with CAMM or GPMF telemetry.
+Now you're up to speed with the basics, next week I will fully introduce you to our tool, [Telemetry Injector](https://github.com/trek-view/telemetry-injector), that takes either a movie file and GPX file, or a series of geotagged images and creates a video with CAMM or GPMF telemetry.
 
 If you're still struggling to understand some of the concepts introduced in this series of post, Telemetry Injector will show you from end-to-end how telemetry is injected and written into mp4 video files.
-

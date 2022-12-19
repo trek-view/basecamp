@@ -424,24 +424,21 @@ Lets walk through this using the earlier example by first explaining each box. I
 
 Source: [Quicktime specification](https://developer.apple.com/library/archive/documentation/QuickTime/QTFF/QTFFChap2/qtff2.html)
 
-In short this box has a size (of all nested atoms) and type (`stbl`) but then it simply acts as a containter for the boxes that follow.
+In short this box has a size (of all nested atoms) and type (`stbl`) but then it simply acts as a container for the boxes that follow.
 
-For example, when writing as binary, I would fitst convert the size and type like so;
+As we don't know the types or size of the other boxes that will be nested yet (we'll work that out in a minute), we can't write it just yet.
 
-```python3
-TODO
-stbl_hearer=x
-```
-
-Then I would simply append the nested boxes described from the next section onwards.
+Writing some basic code to illustrate this, it would look something like so;
 
 ```python3
-stbl_box=(stbl_hearer+stsd_box+stts_box+stsz_box+stsc_box+co64_box)
+stbl_box=(stbl_size+stbl_type+stsd_box+stts_box+stsz_box+stsc_box+co64_box)
 ```
 
 Here is how to create those variables...
 
 ### `stsd` (and `camm`) box
+
+Unlike the `stbl` container box, the `stsd` box has no more nested boxes, and thus can be written into binary.
 
 In short, for telemetry, the sample table box contains information about the telemetry, including the different types and structure of data that can be found in reported samples (e.g. from different sensors) and how it can be interpreted.
 
@@ -450,8 +447,8 @@ Here's an example of the data elements contained in the `stsd` box for CAMM tele
 * atom size (32-bit integer): the total size in bytes of this box (and all child boxes)
 * type (32-bit integer): sets the box type, always `stsd`
 * version (1-byte specification): default `0` (meets our requirements), if version is 1 then date and duration values are 8 bytes in length
-* flags (3-byte space): always set to `0`
-* number of entries (32-bit integer): number of entries in the sample descriptions that follow (1 in my example)
+* flags (3-byte space): always set to `0,0,0`
+* number of entries (32-bit integer): number of entries in the sample descriptions that follow (`1` in my example)
 * sample description table: An array of sample descriptions
 
 A basic sample description table (for CAMM) looks as follows;
@@ -462,8 +459,6 @@ A basic sample description table (for CAMM) looks as follows;
 
 That is, the row is `8` bytes, the data type is `camm`, format reserved data `0`, and the data reference index is `1`.
 
-TODO -- CAN YOU SUPPLY CODE TO DEMO CREATING THE STSD BOX
-
 ### `stts` (time to sample box) box
 
 Let's assume the timescale in the `mdhd` box is defined as 90000.
@@ -473,7 +468,7 @@ As we have one point every 0.2 seconds, each sample covers 18000 (`90000/5`).
 Therefore we get the following time-to-sample table
 
 ```
-6,18000
+[6,18000]
 ```
 
 6 points, each covering 18000.
@@ -483,13 +478,29 @@ The `stts` box also requires the following data elements;
 * atom size (32-bit integer): the total size in bytes of this atom (no nested atom, so sum of box)
 * type (32-bit integer): sets the box type, always `stts`
 * version (1-byte specification): default `0` (meets our requirements), if version is 1 then date and duration values are 8 bytes in length
-* flags (3-byte space): always set to `0`
+* flags (3-byte space): always set to `0,0,0`
 * number of entries (32-bit integer): number of entries in the sample descriptions that follow (in our example `1`)
 * sample description table: An array of sample descriptions (see above)
 
-So taking all this information, we can write the following binary;
+So taking all this information, we can write the binary for this entry.
 
-TODO -- CAN YOU SUPPLY CODE TO DEMO CREATING THE STTS BOX
+To simplify things you can use the tools in our telemetry injector script to see exactly how this works.
+
+First you need supply the unknown variables in a json file, like so;
+
+```shell
+vi stts.json
+{"version": 0, "flags": [0, 0, 0], "entries": [[6,18000]]}
+```
+
+Which can then be passed to the script;
+
+```python3
+python3 sttsBox.py -l stts.json
+b'\x00\x00\x00\x18stts\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x06\x00\x00FP'
+```
+
+If you're still not sure how this is working, [check out the code implementation](https://github.com/trek-view/telemetry-injector/tree/main/tutorial).
 
 ### `stsz` (sample size box)
 
@@ -509,14 +520,22 @@ The `stsz` box also requires the following data elements;
 * atom size (32-bit integer): the total size in bytes of this atom (no nested atom, so sum of box)
 * type (32-bit integer): sets the box type, always `stsz`
 * version (1-byte specification): default `0` (meets our requirements), if version is 1 then date and duration values are 8 bytes in length
-* flags (3-byte space): always set to `0`
-* sample size: count of samples (in our example `6`)
-* number of entries (32-bit integer): number of entries in the sample descriptions that follow (in our example `1`)
+* flags (3-byte space): always set to `0,0,0`
+* sample size: the size of each sample (in our example `6`)
+* number of entries (32-bit integer): number of entries in the sample descriptions that follow (in our example `5`)
 * sample size table: An array of sample descriptions (see above)
 
-So taking all this information, we can write the following binary;
+Again, creating the binary with telemetry injector;
 
-TODO -- CAN YOU SUPPLY CODE TO DEMO CREATING THE STSZ BOX
+```shell
+vi stsz.json
+{"version": 0, "flags": [0, 0, 0], "block_size": 0, "entries": [60, 60, 60, 60, 60]}
+```
+
+```python3
+python3 stszBox.py -l stsz.json
+b'\x00\x00\x00$stsz\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00<\x00\x00\x00<\x00\x00\x00<\x00\x00\x00<\x00\x00\x00<'
+```
 
 ### `stsc` (sample to chunk box)
 
@@ -535,12 +554,20 @@ The `stsc` box also requires the following data elements;
 * atom size (32-bit integer): the total size in bytes of this atom (no nested atom, so sum of box)
 * type (32-bit integer): sets the box type, always `stsc`
 * version (1-byte specification): default `0` (meets our requirements), if version is 1 then date and duration values are 8 bytes in length
-* flags (3-byte space): always set to `0`
+* flags (3-byte space): always set to `0,0,0`
 * number of entries: in our example `1`
 * number of entries (32-bit integer): number of entries in the sample to chunk table 
 * sample to chunk table table: An array of sample descriptions (see above)
 
-TODO -- CAN YOU SUPPLY CODE TO DEMO CREATING THE STSC BOX
+```shell
+vi stsc.json
+{"version": 0, "flags": [0, 0, 0], "entries": [[1, 1, 1]]}
+```
+
+```python3
+python3 stscBox.py -l stsc.json
+b'\x00\x00\x00\x1cstsc\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x01'
+```
 
 ### `co64` (chunk offset box)
 
@@ -574,10 +601,88 @@ The `co64` box also requires the following data elements;
 
 So taking all this information, we can write the following binary;
 
-TODO -- CAN YOU SUPPLY CODE TO DEMO CREATING THE CO64 BOX
+```shell
+vi co64.json
+{"version": 0, "flags": [0, 0, 0], "entries": [294196361, 294196421, 294196481, 294196541, 294196601, 294196661]}
+```
 
-## Writing the final boxes
+```python3
+python3 co64Box.py -l co64.json
+b'\x00\x00\x00(co64\x00\x00\x00\x00\x00\x00\x00\x06\x11\x89\x14\x89\x11\x89\x14\xc5\x11\x89\x15\x01\x11\x89\x15=\x11\x89\x15y\x11\x89\x15\xb5'
+```
+
+### Going back to `stbl`
+
+Remember earlier I said..
+
+```python3
+stbl_box=(stbl_size+stbl_type+stsd_box+stts_box+stsz_box+stsc_box+co64_box)
+```
+
+Now we (almost) have all the information we need. Now all we need is to work out the length of each of the boxes created (to write as the `stbl` size value)
+
+```python3
+python3
+import struct
+
+
+stsd_box_len = len(b'\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x19cammapplication/gyro\x00')
+print(stts_box_len)
+33
+
+stts_box_len = len('\x00\x00\x00\x18stts\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x06\x00\x00FP')
+print(stts_box_len)
+24
+
+stsz_box_len = len('\x00\x00\x00$stsz\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00<\x00\x00\x00<\x00\x00\x00<\x00\x00\x00<\x00\x00\x00<')
+print(stsz_box_len)
+36
+
+stsc_box_len = len('\x00\x00\x00\x1cstsc\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x00\x01')
+print(stsc_box_len)
+38
+
+co64_box_len = len('\x00\x00\x00(co64\x00\x00\x00\x00\x00\x00\x00\x06\x11\x89\x14\x89\x11\x89\x14\xc5\x11\x89\x15\x01\x11\x89\x15=\x11\x89\x15y\x11\x89\x15\xb5')
+print(co64_box_len)
+40
+
+total_len = 33 + 24 + 36 + 38 + 40
+print(total_len)
+171
+```
+
+So now we have all the data to build the `stbl` box
+
+```python3
+stbl_box=(stbl_size+stbl_type+stsd_box+stts_box+stsz_box+stsc_box+co64_box)
+```
+
+## Writing the final telemetry meta boxes
+
+I haven't covered these boxes yet;
+
+```
+ └── b'moov' [8, 5171]
+     ├── b'mvhd' [8, 100]
+     ├── b'meta' [8, 111]
+     ├── b'trak' [8, 2565]
+     │   ├── b'tkhd' [8, 84]
+     │   └── b'mdia' [8, 2465]
+     │       ├── b'mdhd' [8, 24]
+     │       ├── b'hdlr' [8, 36]
+     │       └── b'minf' [8, 2381]
+     │           ├── b'nmhd' [8, 4]
+     │           ├── b'dinf' [8, 28]
+```
 
 So far we've written some of the required boxes. In order to ensure telemetry is read correctly you will also need to write data into some of the other boxes shown in the structure earlier.
 
-In the coming 2 weeks I will finish off the series of posts by showing you what these boxes should contain and how they should be written for CAMM and GPMF.
+Hopefully the examples have given you enough information to follow along with the mp4 specification to write all required telemetry boxes.
+
+Next week I'll show you a similar exercise, but using GPMF as the target telemetry type. 
+
+In the sixth and final post I will introduce [Telemetry Injector](https://github.com/trek-view/telemetry-injector) properly (which handles the entire injection of telemetry to mp4s).
+
+## A special thanks to...
+
+...the Apple team who wrote [a brilliant overview to video files atoms (boxes) here](https://developer.apple.com/library/archive/documentation/QuickTime/QTFF/QTFFChap2/qtff2.html) that significantly helped me understand the topic and write this post.

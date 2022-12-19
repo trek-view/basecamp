@@ -41,7 +41,7 @@ To demonstrate this, I'll first start by walking you through how to run the scri
 
 ## Installing Telemetry Injector
 
-First, lets start by installing the software
+First, lets start by installing the software;
 
 ```shell
 git clone https://github.com/trek-view/telemetry-injector
@@ -161,8 +161,6 @@ And taking a snippet of that output, we can see the injected telemetry;
 <Track3:AngleAxis>0 5.51012976947947e-40 -3221225472</Track3:AngleAxis>
 ```
 
-TODO -- TIME IS INCORRECT HERE, SHOULD MATCH VIDEO FRAME RATE SPACING
-
 #### Video Input Example 2: GPMF (Equirectangular)
 
 Same input as example 1 with 605 frames, but now out is GPMF;
@@ -198,7 +196,7 @@ And taking a snippet of that output, we can see the injected telemetry;
 <Track3:MetaFormat>gpmd</Track3:MetaFormat>
  <Track3:SampleTime>0 s</Track3:SampleTime>
  <Track3:SampleDuration>0 s</Track3:SampleDuration>
- <Track3:DeviceName>GoPro Max</Track3:DeviceName>
+ <Track3:DeviceName>Trek View Telemetry Injector</Track3:DeviceName>
  <Track3:TimeStamp>0.001001</Track3:TimeStamp>
  <Track3:GPSMeasureMode>3-Dimensional Measurement</Track3:GPSMeasureMode>
  <Track3:GPSDateTime>2020:08:08 15:48:25.000</Track3:GPSDateTime>
@@ -210,86 +208,7 @@ And taking a snippet of that output, we can see the injected telemetry;
  <Track3:GPSSpeed3D>0.89</Track3:GPSSpeed3D>
  <Track3:SampleTime>0 s</Track3:SampleTime>
  <Track3:SampleDuration>0.20 s</Track3:SampleDuration>
- <Track3:DeviceName>GoPro Max</Track3:DeviceName>
 ```
-
-#### Video Input Example 3: CAMM (Flat)
-
-Check frames;
-
-```shell
-ffprobe -v error -select_streams v:0 -count_packets \
-    -show_entries stream=nb_read_packets -of csv=p=0 GH010145.MP4
-```
-
-900 frames.
-
-Looking at the streams;
-
-```shell
-ffprobe GH010145.MP4
-```
-
-Prints
-
-```
-    Metadata:
-      creation_time   : 2020-08-02T13:41:09.000000Z
-      handler_name    : GoPro AVC  
-      vendor_id       : [0][0][0][0]
-      encoder         : GoPro AVC encoder
-      timecode        : 13:40:20:29
-  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 188 kb/s (default)
-    Metadata:
-      creation_time   : 2020-08-02T13:41:09.000000Z
-      handler_name    : GoPro AAC  
-      vendor_id       : [0][0][0][0]
-      timecode        : 13:40:20:29
-  Stream #0:2[0x3](eng): Data: none (tmcd / 0x64636D74), 0 kb/s (default)
-    Metadata:
-      creation_time   : 2020-08-02T13:41:09.000000Z
-      handler_name    : GoPro TCD  
-      timecode        : 13:40:20:29
-  Stream #0:3[0x4](eng): Data: bin_data (gpmd / 0x646D7067), 54 kb/s (default)
-    Metadata:
-      creation_time   : 2020-08-02T13:41:09.000000Z
-      handler_name    : GoPro MET  
-  Stream #0:4[0x5](eng): Data: none (fdsc / 0x63736466), 14 kb/s (default)
-    Metadata:
-      creation_time   : 2020-08-02T13:41:09.000000Z
-      handler_name    : GoPro SOS  
-```
-
-There is some GPMF telemetry in this video (accelerometer, gyroscope, etc.), but no GPS telemetry;
-
-Now we use this flat input with 900 frames, and with CAMM telemetry;
-
-```shell
-python3 telemetry-injector.py -c -v GH010145.MP4 -x 900-points.gpx -o GH010145-out-camm-flat.mp4
-```
-
-Examining the video with ffprobe;
-
-```shell
-ffprobe GH010145-out-camm-flat.mp4
-```
-
-Shows our new telemetry stream appended;
-
-```
-  Stream #0:5[0x2](und): Data: none (camm / 0x6D6D6163), 2 kb/s
-    Metadata:
-      creation_time   : 2020-08-08T14:48:25.000000Z
-      handler_name    : CameraMetadataMotionHandler
-```
-
-Examining further with exiftool;
-
-```shell
-exiftool -ee -G3 -api LargeFileSupport=1 -X GH010145-out-camm-flat.mp4 > GH010145-out-camm-flat.xml
-```
-
-TODO -- THIS IS BROKEN, NO CAMM TLELEMETRY IS PRINTED
 
 ### Photo input
 
@@ -411,22 +330,69 @@ This time I'll use the same input to create a video with GPMF telemetry;
 python3 telemetry-injector.py -g -i UKBC003-in/ -o UKBC003-out-gpmf.mp4
 ```
 
-TODO 
+Looking at the new video with ffprobe;
 
-#### Photo Input Example 3: CAMM (Flat image)
+```shell
+ffprobe UKBC003-out-gpmf.mp4
+```
 
-TODO 
+Which shows;
+
+```
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'UKBC003-out-gpmf.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf59.27.100
+  Duration: 00:00:11.20, start: 0.000000, bitrate: 49080 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt470bg/unknown/unknown, progressive), 5760x2880, 49066 kb/s, 5 fps, 5 tbr, 10240 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc59.37.100 libx264
+    Side data:
+      spherical: equirectangular (0.000000/0.000000/0.000000) 
+  Stream #0:1[0x2](und): Data: bin_data (gpmd / 0x646D7067), 11 kb/s
+    Metadata:
+      creation_time   : 2019-03-23T12:25:30.000000Z
+      handler_name    : GoPro MET
+```
+
+Finally looking at it with exiftool;
+
+```shell
+exiftool -ee -G3 -api LargeFileSupport=1 -X UKBC003-out-gpmf.mp4 > UKBC003-out-gpmf.xml
+```
+
+And you can see the gpmf telemetry;
+
+```xml
+ <Track2:DeviceName>Trek View Telemetry Injector</Track2:DeviceName>
+ <Track2:TimeStamp>0.001001</Track2:TimeStamp>
+ <Track2:GPSMeasureMode>3-Dimensional Measurement</Track2:GPSMeasureMode>
+ <Track2:GPSDateTime>2019:03:23 12:25:30.000</Track2:GPSDateTime>
+ <Track2:GPSHPositioningError>5.37</Track2:GPSHPositioningError>
+ <Track2:GPSLatitude>51 deg 15&#39; 36.24&quot; N</Track2:GPSLatitude>
+ <Track2:GPSLongitude>0 deg 57&#39; 11.30&quot; W</Track2:GPSLongitude>
+ <Track2:GPSAltitude>127.7 m</Track2:GPSAltitude>
+ <Track2:GPSSpeed>0.865</Track2:GPSSpeed>
+ <Track2:GPSSpeed3D>0.89</Track2:GPSSpeed3D>
+ <Track2:SampleTime>0 s</Track2:SampleTime>
+ <Track2:SampleDuration>0.20 s</Track2:SampleDuration>
+```
 
 ## The helper tools
 
-Throughout this series I've use a varietry of tools to explain how telemetry is stored and structured in videos with the help of Telemetry Injector scripts. To recap these, and use them to examine my newly created videos...
+Throughout this series I've use a varietry of tools to explain how telemetry is stored and structured in videos. These are stored in this repository for reference (the full implementation of there purpose is in the four examples shown above).
+
+To recap these, and use them to examine my newly created videos...
 
 * `mp4_detail.py`: Creates a json file that shows the boxes inside the video and the data they contain. This is especially useful for trying to understand how metadata boxes are structured.
 * `print_video_atoms_overview.py`: Prints an overview of the box structure and the size of each box
 * `print_video_atoms_detail.py`: Prints the both `mp4_details.py` and `print_video_atoms_overview.py` as well as the raw binary telemetry samples.
+* `/tutorial`: The scripts in these directories are explained in part three and part four.
 
 ## Wrapping things up
 
-Hopefully this series of posts has gib
-
-Telemetry 
+This series has been designed as a basic introduction to the topic of mp4 telemetry. As noted from the outset, I'm no expert and have been learning by hacking (please do point out any mistakes I'be made). I do hope you'll find them useful and perhaps inspire you to come up with some of your own projects.
