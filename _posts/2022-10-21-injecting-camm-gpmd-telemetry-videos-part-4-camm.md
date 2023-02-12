@@ -1,12 +1,12 @@
 ---
-date: 2022-09-23
+date: 2022-10-21
 title: "Injecting Telemetry into Video Files (Part 4): CAMM"
 description: "In this post I will take what we learned in the last post and use it to write some telemetry into a video."
 categories: developers
 tags: [gpmd, camm, telemetry, gpmf, gpx, mp4]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-09-23/writting-camm-6-telemetry-meta.jpg
-featured_image: /assets/images/blog/2022-09-23/writting-camm-6-telemetry-sm.jpg
+image: /assets/images/blog/2022-10-21/writting-camm-6-telemetry-meta.jpg
+featured_image: /assets/images/blog/2022-10-21/writting-camm-6-telemetry-sm.jpg
 layout: post
 published: true
 ---
@@ -178,7 +178,7 @@ b'\x00\x00\xe95\xa8\x9avB\x03\x00\x00\x00y\x0eR\xddI\xa1I@\x91Z\x8a \x1d\x80\xee
 
 Now we also need to account for the header to define the CAMM case as per the specification (in this example, case 6).
 
-<img class="img-fluid" src="/assets/images/blog/2022-09-23/camm-header.png" alt="camm specification header" title="camm specification header" />
+<img class="img-fluid" src="/assets/images/blog/2022-10-21/camm-header.png" alt="camm specification header" title="camm specification header" />
 
 The header consists of 2 parts: the first 2 bytes contains `0` as defined by the specification and next 2 bytes contains CAMM case number. We can write this like so;
 
@@ -414,7 +414,7 @@ In the last post, using a sample CAMM video we saw how we need to update the box
 
 To do this we first need to write the `stbl` box; which contains `stsd` (and `camm`), `stts`, `stsz`, `stsc`, and `co64` boxes. Note, it is also required to write to other boxes, but I will cover these in the standard specific posts.
 
-<img class="img-fluid" src="/assets/images/blog/2022-09-23/stbl-children.png" alt="stbl children boxes" title="stbl children boxes" />
+<img class="img-fluid" src="/assets/images/blog/2022-10-21/stbl-children.png" alt="stbl children boxes" title="stbl children boxes" />
 
 Lets walk through this using the earlier example by first explaining each box. I will then cover how to write these as binary.
 

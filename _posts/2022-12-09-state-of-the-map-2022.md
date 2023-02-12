@@ -1,12 +1,12 @@
 ---
-date: 2022-10-14
+date: 2022-12-09
 title: "My Favourite Talks from State of the Map 2022"
 description: "Navigation for prams, GPS accuracy of cameras, pedestrian and bike infrastructure, entry-level mapping, and a 360 street-level imagery project in Belgium."
 categories: guides
 tags: [OSM, OpenStreetMap]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-10-14/sotm_2022-meta.jpg
-featured_image: /assets/images/blog/2022-10-14/sotm_2022-sm.jpg
+image: /assets/images/blog/2022-12-09/sotm_2022-meta.jpg
+featured_image: /assets/images/blog/2022-12-09/sotm_2022-sm.jpg
 layout: post
 published: true
 ---

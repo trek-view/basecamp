@@ -1,12 +1,12 @@
 ---
-date: 2022-09-09
+date: 2022-09-23
 title: "Injecting Telemetry into Video Files (Part 2): A high-level introduction to the mp4 specification"
 description: "In this post I will introduce the structure of an mp4 file and describe how players use this structure to decode the its contents."
 categories: developers
 tags: [gpmd, camm, telemetry, gpmf, gpx]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-09-09/mp4-root-level-boxes-meta.jpeg
-featured_image: /assets/images/blog/2022-09-09/mp4-root-level-boxes.jpeg
+image: /assets/images/blog/2022-09-23/mp4-root-level-boxes-meta.jpeg
+featured_image: /assets/images/blog/2022-09-23/mp4-root-level-boxes.jpeg
 layout: post
 published: true
 ---
@@ -19,13 +19,13 @@ Simply put, MP4 acts like a wrapper around multimedia files and associated data 
 
 If you look at it as a whole, all the data of mp4 is stored in a box structure (you will often here to boxes referred to as atoms, but I will use the term boxes for simplicity in this post).
 
-<img class="img-fluid" src="/assets/images/blog/2022-09-09/mp4-box-structure.png" alt="mp4 box structure" title="mp4 box structure" />
+<img class="img-fluid" src="/assets/images/blog/2022-09-23/mp4-box-structure.png" alt="mp4 box structure" title="mp4 box structure" />
 
 You can put more boxes in a box (assuming it conforms to the mp4 specification). Each box has a type which defines different meanings and functions of that box.
 
 To demonstrate we can use a really useful online tool; [Online MP4 file parser](https://www.onlinemp4parser.com/).
 
-<img class="img-fluid" src="/assets/images/blog/2022-09-09/mp4-root-level-boxes.jpeg" alt="mp4 root boxes" title="mp4 root boxes" />
+<img class="img-fluid" src="/assets/images/blog/2022-09-23/mp4-root-level-boxes.jpeg" alt="mp4 root boxes" title="mp4 root boxes" />
 
 In my sample video (equirectangular with GPMF telemetry) you can see 5 top level boxes (`fytp`, `skip`, `free`, `mdat`, `moov` -- note `skip`, `free` and free space and can be ignored here).
 
@@ -80,7 +80,7 @@ The `moov` box itself can contain a lot of data. To help grasp its complexity I 
 
 The following image will also help you to visualise the nested structure of common `moov` boxes;
 
-<img class="img-fluid" src="/assets/images/blog/2022-09-09/qtff_08.gif" alt="MP4 movie box structure" title="MP4 movie box structure" />
+<img class="img-fluid" src="/assets/images/blog/2022-09-23/qtff_08.gif" alt="MP4 movie box structure" title="MP4 movie box structure" />
 
 _[Image source](https://developer.apple.com/library/archive/documentation/QuickTime/QTFF/QTFFChap2/qtff2.html)._
 

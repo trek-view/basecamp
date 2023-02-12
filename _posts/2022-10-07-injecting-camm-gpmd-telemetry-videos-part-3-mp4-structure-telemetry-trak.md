@@ -1,12 +1,12 @@
 ---
-date: 2022-09-16
+date: 2022-10-07
 title: "Injecting Telemetry into Video Files (Part 3): Structuring telemetry trak's in mp4 videos"
 description: "In this post I will focus on the structure of trak boxes in mp4 with of a focus on using them to describe video telemetry."
 categories: developers
 tags: [gpmd, camm, telemetry, gpmf, gpx, mp4]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-09-16/moov-atom-structure-meta.jpg
-featured_image: /assets/images/blog/2022-09-16/moov-atom-structure-sm.jpg
+image: /assets/images/blog/2022-10-07/moov-atom-structure-meta.jpg
+featured_image: /assets/images/blog/2022-10-07/moov-atom-structure-sm.jpg
 layout: post
 published: true
 ---
@@ -170,7 +170,7 @@ The [sample description box](https://developer.apple.com/library/archive/documen
 
 The box itself contains the following elements;
 
-<img class="img-fluid" src="/assets/images/blog/2022-09-16/stsd-box.gif" alt="stsd boxes" title="stsd boxes" />
+<img class="img-fluid" src="/assets/images/blog/2022-10-07/stsd-box.gif" alt="stsd boxes" title="stsd boxes" />
 
 The exact format of the sample description table data element varies by media type. That is, in our case the `stsd` will differ depending on the standard, either GPMF or CAMM. You can see this clearly as for each telemetry type, the `stsd` container box contains two different nested boxes.
 
@@ -236,7 +236,7 @@ The offset to the first video entry is 0 bytes and offset to the first audio ent
 
 The box itself contains the following elements;
 
-<img class="img-fluid" src="/assets/images/blog/2022-09-16/stco-box.gif" alt="stco boxes" title="stco boxes" />
+<img class="img-fluid" src="/assets/images/blog/2022-10-07/stco-box.gif" alt="stco boxes" title="stco boxes" />
 
 Here, the chunk offset table is where the key information about the telemetry data is held.
 
@@ -263,7 +263,7 @@ In each telemetry specification (camm/gmpd) samples represent a measurement (mor
 
 The box itself contains the following elements;
 
-<img class="img-fluid" src="/assets/images/blog/2022-09-16/stsx-box.gif" alt="stsz boxes" title="stsz boxes" />
+<img class="img-fluid" src="/assets/images/blog/2022-10-07/stsx-box.gif" alt="stsz boxes" title="stsz boxes" />
 
 The key one being the sample size table (the other elements are really information about the box itself).
 
@@ -284,7 +284,7 @@ This box stores duration information for the samples, providing a mapping from a
 
 The box itself contains the following elements;
 
-<img class="img-fluid" src="/assets/images/blog/2022-09-16/stts-box.gif" alt="stts boxes" title="stts boxes" />
+<img class="img-fluid" src="/assets/images/blog/2022-10-07/stts-box.gif" alt="stts boxes" title="stts boxes" />
 
 The time-to-sample table contains two columns. Sample count and sample duration for each telemetry point. Here's an example;
 
@@ -316,13 +316,13 @@ Here the first 5 samples are all 18000 long, the sixth is 90000 long, and the fi
 
 As telemetry samples are recorded, they can be collected into chunks. Chunks allow for data optimisation. One chunk can represent one sample (least efficient), or one chunk could represent many samples (more efficient). This box tracks how many samples are recorded in each chunk.
 
-<img class="img-fluid" src="/assets/images/blog/2022-09-16/chunk-illustration.gif" alt="media chunks" title="media chunks" />
+<img class="img-fluid" src="/assets/images/blog/2022-10-07/chunk-illustration.gif" alt="media chunks" title="media chunks" />
 
 A good example of this is CAMM telemetry where we can have samples reported from GPS, accelerometers, magnetometers, etc all at different rates. It is therefore often more efficient to group these as chunks.
 
 The box itself contains the following elements;
 
-<img class="img-fluid" src="/assets/images/blog/2022-09-16/stsc-box.gif" alt="stsc boxes" title="stsc boxes" />
+<img class="img-fluid" src="/assets/images/blog/2022-10-07/stsc-box.gif" alt="stsc boxes" title="stsc boxes" />
 
 The sample to chunk table (the data element in this box where chunk information is held) has 3 columns; first chunk, samples per chunk, sample description IDs.
 
@@ -345,7 +345,7 @@ Turning this to a real example, this could be CAMM telemetry whereby the first c
 
 The table can get more complex.
 
-<img class="img-fluid" src="/assets/images/blog/2022-09-16/sample-to-chunk-table-example.gif" alt="sample to chunk table example" title="sample to chunk table example" />
+<img class="img-fluid" src="/assets/images/blog/2022-10-07/sample-to-chunk-table-example.gif" alt="sample to chunk table example" title="sample to chunk table example" />
 
 This table illustrates the sample to chunk table for the chunk example shown in the image above (with 5 chunks).
 
@@ -361,7 +361,7 @@ So far this explanation has been fairly abstract. Let me fix that and jump into 
 
 For reference, here's a reminder how these boxes map against the data held in the `mdat` binary;
 
-<img class="img-fluid" src="/assets/images/blog/2022-09-16/sample-structure-mp4.jpg" alt="mapping trak boxes to mdat samples" title="mapping trak boxes to mdat samples" />
+<img class="img-fluid" src="/assets/images/blog/2022-10-07/sample-structure-mp4.jpg" alt="mapping trak boxes to mdat samples" title="mapping trak boxes to mdat samples" />
 
 ## Example 1.0
 
@@ -380,7 +380,7 @@ Each _line_ of the binary is a sample of either video or telemetry data. Each li
 
 Let me draw this out visually, in case it proves helpful;
 
-<img class="img-fluid" src="/assets/images/blog/2022-09-16/example-1-sample-structure-mp4.jpg" alt="example one mapping trak boxes to mdat samples" title="example one mapping trak boxes to mdat samples" />
+<img class="img-fluid" src="/assets/images/blog/2022-10-07/example-1-sample-structure-mp4.jpg" alt="example one mapping trak boxes to mdat samples" title="example one mapping trak boxes to mdat samples" />
 
 The first telemetry sample looks like this;
 

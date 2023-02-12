@@ -1,12 +1,12 @@
 ---
-date: 2022-09-30
+date: 2022-11-04
 title: "Injecting Telemetry into Video Files (Part 5): GPMF"
 description: "In this post I will the structure of GoPro's GPMF standard, how to create a GPMF binary and accompanying metadata, and finally how to inject it into a mp4 video file."
 categories: developers
 tags: [gpmd, camm, telemetry, gpmf, gpx]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-09-30/gopro-gpmf-structure-meta.jpg
-featured_image: /assets/images/blog/2022-09-30/gopro-gpmf-structure-sm.jpg
+image: /assets/images/blog/2022-11-04/gopro-gpmf-structure-meta.jpg
+featured_image: /assets/images/blog/2022-11-04/gopro-gpmf-structure-sm.jpg
 layout: post
 published: true
 ---
@@ -54,21 +54,21 @@ To begin with, it is worth familiarising yourself with the data that GPMF suppor
 
 [You can see the specifics of what each GoPro camera writes (generally, the newer the GoPro camera, the more telemetry data is written because there are more sensors in the camera)](https://github.com/gopro/gpmf-parser#where-to-find-gpmf-data).
 
-<img class="img-fluid" src="/assets/images/blog/2022-09-30/gpmf-max-camera-telemetry.png" alt="GoPro MAX GPMF" title="GoPro MAX GPMF" />
+<img class="img-fluid" src="/assets/images/blog/2022-11-04/gpmf-max-camera-telemetry.png" alt="GoPro MAX GPMF" title="GoPro MAX GPMF" />
 
 Above is a snippet of what telemetry the GoPro MAX writes into GPMF as it builds the video file.
 
 This is written into the `mdat` as a stream in the following structure;
 
-<img class="img-fluid" src="/assets/images/blog/2022-09-30/gpmf-devc-tree.png" alt="GoPro MAX GPMF DEVC tree" title="GoPro MAX GPMF DEVC tree" />
+<img class="img-fluid" src="/assets/images/blog/2022-11-04/gpmf-devc-tree.png" alt="GoPro MAX GPMF DEVC tree" title="GoPro MAX GPMF DEVC tree" />
 
 Each part of the tree has a Key, Length Value structure.
 
-<img class="img-fluid" src="/assets/images/blog/2022-09-30/gopro-gpmf-structure-sm.jpg" alt="GoPro GPMF Key Length Value design" title="GoPro GPMF Key Length Value design" />
+<img class="img-fluid" src="/assets/images/blog/2022-11-04/gopro-gpmf-structure-sm.jpg" alt="GoPro GPMF Key Length Value design" title="GoPro GPMF Key Length Value design" />
 
 Broken out this looks as follows;
 
-<img class="img-fluid" src="/assets/images/blog/2022-09-30/gopro-klv-breakout.png" alt="GoPro GPMF Key Length Value breakout design" title="GoPro GPMF Key Length Value breakout design" />
+<img class="img-fluid" src="/assets/images/blog/2022-11-04/gopro-klv-breakout.png" alt="GoPro GPMF Key Length Value breakout design" title="GoPro GPMF Key Length Value breakout design" />
 
 Which in more detail can be explained as;
 

@@ -1,12 +1,12 @@
 ---
-date: 2022-09-02
+date: 2022-09-09
 title: "Injecting Telemetry into Video Files (Part 1): An Introduction"
 description: "In this post I will explain why we, finally, have decided to figure out how to write geo-telemetry into video files created using ffmpeg."
 categories: developers
 tags: [gpmd, camm, telemetry, gpmf, gpx]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-09-02/gmpf-telemetry-ffprobe-meta.jpg
-featured_image: /assets/images/blog/2022-09-02/gmpf-telemetry-ffprobe-sm.jpg
+image: /assets/images/blog/2022-09-09/gmpf-telemetry-ffprobe-meta.jpg
+featured_image: /assets/images/blog/2022-09-09/gmpf-telemetry-ffprobe-sm.jpg
 layout: post
 published: true
 ---

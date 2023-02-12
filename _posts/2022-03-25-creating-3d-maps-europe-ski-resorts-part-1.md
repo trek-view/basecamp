@@ -1,6 +1,6 @@
 ---
 date: 2022-03-25
-title: "Creating 360 Tours of the Best Ski Resorts in France"
+title: "Creating 360 Tours of the Best Ski Resorts in France (Part 1)"
 description: "And a brief update on using the GoPro MAX cold weather setup."
 categories: treks
 tags: [GoPro, MAX, battery, ski, winter, Alps, mountain]
