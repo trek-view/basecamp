@@ -3,7 +3,7 @@ date: 2021-06-18
 title: "Solutions for tracking your position when underground or under-canopy"
 description: "How to keep track of your position when your line-of-sight to the sky is impeded."
 categories: guides
-tags: [Map the Paths, GPS, ArduSimple, GoPro, LabPano]
+tags: [GPS, ArduSimple, GoPro, LabPano]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-06-18/jim-david-bath-to-bristol-tunnel-sm.png
 featured_image: /assets/images/blog/2021-06-18/jim-david-bath-to-bristol-tunnel-sm.png
@@ -34,8 +34,6 @@ The tunnel was originally built for trains carrying coal. With the requirements 
 Though 0.5 km, and fairly deep underground it introduces problems of GPS tracking.
 
 I rode the route a few weeks ago. I did not manage to get one accurate GPS position from my GoPro MAX in the tunnel.
-
-My inspiration for this ride came from [Map the Paths user Jim Gayes](https://www.mapthepaths.com/user/JG360/profile/) who has recently been working with Sustrans.
 
 Thanks to some careful planning and forethought to equipment, Jim was able to capture a GPS track through the entire tunnel, as shown below!
 

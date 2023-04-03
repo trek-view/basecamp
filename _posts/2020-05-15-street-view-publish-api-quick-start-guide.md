@@ -3,7 +3,7 @@ date: 2020-05-15
 title: "Google Street View Publish API - Quick Start Guide"
 description: "All third-party Street View tools are built around the Google Street View Publish API. Here's a closer look at how it works for uploading short sequences."
 categories: developers
-tags: [Google, Street View, Map the Paths]
+tags: [Google, Street View]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-05-15/google-street-view-documentation-meta.jpg
 featured_image: /assets/images/blog/2020-05-15/google-street-view-documentation-sm.jpg

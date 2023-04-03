@@ -35,8 +35,6 @@ Similarly, more advanced software, notably Google Street View, can seemingly rem
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2019-03-13/teide.jpeg&amp;autoLoad=true"></iframe>
 
-[View on Map the Paths](https://www.mapthepaths.com/sequence/faa0b0a3-43b0-4a12-97ff-8a96c11dc845/tour/3444c03c-b184-4ab0-8ed7-ad86da3e8cbc).
-
 The GoPro Fusion's and MAX's we use with our trekker pack do have a partial blind spot in the nadir and zenith area -- evident in the "join lines" between the stitched photograph (look down in the image above)... but we still have enough space to point viewers and passers-by to [trekview.org](https://www.trekview.org) using the Trek Pack branding!
 
 Perhaps that's how you found us?

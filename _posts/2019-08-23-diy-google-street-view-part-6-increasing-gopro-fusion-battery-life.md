@@ -3,7 +3,7 @@ date: 2019-08-23
 title: "DIY Google Street View (6/5): Increasing the Battery Life of Your GoPro Fusion"
 description: "Power your GoPro Fusion with an external power pack, the equivilant of 10 GoPro Fusion batteries."
 categories: guides
-tags: [Trek Pack, Google, Street View, GoPro, Fusion, Fusion Studio, Anker, PowerCore, Tourer, Map the Paths]
+tags: [Trek Pack, Google, Street View, GoPro, Fusion, Fusion Studio, Anker, PowerCore]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2019-08-23/UKFR010-MULTISHOT_7262_000120-meta.jpg
 featured_image: /assets/images/blog/2019-08-23/trek-pack-external-power.jpg

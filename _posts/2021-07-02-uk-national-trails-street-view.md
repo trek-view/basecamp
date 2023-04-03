@@ -3,7 +3,7 @@ date: 2021-07-02
 title: "Collecting street-level imagery of the UK National Trails"
 description: "The network covers over 4,000km of England and Wales. With your help, we want to capture street-level images for every single one of those kilometers."
 categories: guides
-tags: [National Trails, walk, hike, Map the Paths]
+tags: [National Trails, walk, hike]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-07-02/uk-national-trails-meta.jpeg
 featured_image: /assets/images/blog/2021-07-02/uk-national-trails-sm.jpeg
@@ -48,8 +48,6 @@ Here are some snippets of the kilometers that I've covered of some...
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-07-02/national-trails-south-west-coast-path.jpeg&amp;autoLoad=true"></iframe>
 
-[View on Map the Paths](https://www.mapthepaths.com/).
-
 The South West Coast Path (England's longest National Trail) follows the UK's rugged coastline through Somerset, Devon, Cornwall and Dorset .
 
 This tour was captured above the picturesque harbour of Boscastle, Cornwall (just one of many along the route).
@@ -60,8 +58,6 @@ More info: [National Trails website](https://www.nationaltrail.co.uk/en_GB/trail
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-07-02/national-trails-south-downs-way.jpeg&amp;autoLoad=true"></iframe>
 
-[View on Map the Paths](https://www.mapthepaths.com/).
-
 The South Downs Way is another spectacular trail, starting inland at the UK's first capital city, Winchester, and ending in Eastbourne, close to the Seven Sisters cliffs shown in the image above.
 
 More info: [National Trails website](https://www.nationaltrail.co.uk/en_GB/trails/south-downs-way/)
@@ -70,8 +66,6 @@ More info: [National Trails website](https://www.nationaltrail.co.uk/en_GB/trail
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2021-07-02/national-trails-north-downs-way.jpeg&amp;autoLoad=true"></iframe>
 
-[View on Map the Paths](https://www.mapthepaths.com/).
-
 The North Downs Way follows ancient routes on a modern-day pilgrimage starting in Farnham, Surrey, and finishing on the Kent Coast at Dover.
 
 Following a ridgeline for much of the trail, the trail offers some stunning views en route. The image above taken at Saint Martha's Church on the trail, about 3 km outside of Guildford, Surrey.
@@ -79,8 +73,6 @@ Following a ridgeline for much of the trail, the trail offers some stunning view
 More info: [National Trails website](https://www.nationaltrail.co.uk/en_GB/trails/north-downs-way/)
 
 ## Your walk here?
-
-[Take part in a Map the Paths capture challenge by uploading your imagery of the UK's National Trails (or your own local hikes)](https://www.mapthepaths.com/challenge/capture/list/).
 
 Not sure how to get started? [This post will explain everything](/blog/2021/trek-pack-v2-quick-start-virtual-photography).
 

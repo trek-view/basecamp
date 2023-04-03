@@ -3,7 +3,7 @@ date: 2020-03-27
 title: "Google Tour Creator - A Quick Start Guide"
 description: "Build immersive, 360-degree tours and become a virtual tour guide to show friends, family, or an entire class your creations."
 categories: guides
-tags: [Treehouse, VR, Google, Tour Creator, Expeditions, Map the Paths]
+tags: [Treehouse, VR, Google, Tour Creator, Expeditions]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-03-27/google-tour-creator-add-a-scene-meta.jpg
 featured_image: /assets/images/blog/2020-03-27/google-tour-creator-add-a-scene-sm.png
@@ -13,7 +13,7 @@ published: true
 
 **Build immersive, 360-degree tours and become a virtual tour guide to show friends, family, or an entire class your creations.**
 
-**Update November 2020: Tour Creator will no longer be available on June 30, 2021. [Map the Paths now offers alternative tour creation software](/blog/2021/google-tour-creator-alternatives).**
+**Update November 2020: Tour Creator will no longer be available on June 30, 2021. [Here are some alternatives](/blog/2021/google-tour-creator-alternatives).**
 
 You might have seen the launch of our Treehouse virtual classes for students during the COVID-19 outbreak last week -- we've had some brilliant lessons so far [(you can still register)](/blog/2020/treehouse-academy-emergency-timetable).
 
@@ -139,8 +139,6 @@ Find us on:
 * [Instagram](https://www.instagram.com/trekviewed/)
 * [Facebook](https://www.facebook.com/trekview/)
 
-_Update August 2020: [You can now create virtual guidebooks in Map the Paths too](/blog/2020/map-the-paths-guidebooks)._
-
 ## Update (2021-06-13)
 
-Google Tour Creator will shutdown on June 30th 2021. [Map the Paths now offers alternative tour creation software](/blog/2021/google-tour-creator-alternatives).
+Google Tour Creator will shutdown on June 30th 2021.

@@ -190,7 +190,7 @@ You can now use these values to determine the tag values to inject.
 exiftool -make="GoPro" -model=Fusion -ProjectionType=equirectangular -UsePanoramaViewer=True -CroppedAreaImageWidthPixels=3840 -CroppedAreaImageHeightPixels=1920 -FullPanoWidthPixels=3840 -FullPanoHeightPixels=1920 -CroppedAreaLeftPixels=0 -CroppedAreaTopPixels=0 
 ```
 
-These EXIF and XMP values provide enough metadata to upload to Map the Paths, Mapillary, and Google Street View... though you can add other tags as you wish.
+These EXIF and XMP values provide enough metadata to upload to Mapillary, and Google Street View... though you can add other tags as you wish.
 
 ## Update 2021-10-15
 

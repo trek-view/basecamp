@@ -309,4 +309,4 @@ Please do share the use-cases you're using the Mapillary API for -- I can’t wa
 
 ## Update 2021-06-16
 
-v4 of the Mapillary API is here. [In this post I take a brief look at the changes we've made to Map the Paths to support the move from v3, described above, to the new v4 API](/blog/2021/migrating-from-mapillary-api-v3-to-v4).
+v4 of the Mapillary API is here. [In this post I take a brief look at some of the changes to support the move from v3, described above, to the new v4 API](/blog/2021/migrating-from-mapillary-api-v3-to-v4).

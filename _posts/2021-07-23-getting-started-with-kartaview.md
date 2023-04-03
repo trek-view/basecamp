@@ -3,7 +3,7 @@ date: 2021-07-23
 title: "An Introduction to KartaView"
 description: "Formerly named OpenStreetView and then OpenStreetCam, KartaView is a completely open-source street-level image platform."
 categories: guides
-tags: [KartaView, Map the Paths]
+tags: [KartaView]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-07-23/kartaview-index-map-meta.jpg
 featured_image: /assets/images/blog/2021-07-23/kartaview-index-map-sm.jpg
@@ -13,7 +13,7 @@ published: true
 
 **Formerly named OpenStreetView and then OpenStreetCam, KartaView is a completely open-source street-level image platform.**
 
-I've recently begun exploring the possibility of adding an integration with [KartaView](https://kartaview.org/) to the [Map the Paths Uploader](https://www.mapthepaths.com/uploader).
+I've recently begun exploring the possibility of adding an integration with [KartaView](https://kartaview.org/) to our software.
 
 KartaView was founded in 2009 as OpenStreetView. In 2016, [TeleNav](https://www.telenav.com/) took over the openstreetview.org domain and started its own service under the name. The service was renamed to OpenStreetCam after an intervention by an unnamed trademark holder (probably Google).
 

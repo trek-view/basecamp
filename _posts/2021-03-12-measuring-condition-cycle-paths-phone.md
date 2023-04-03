@@ -101,8 +101,6 @@ The bike will be cost effective, and have similar functions to the Iowa data bik
 
 If you think a data bike could be a valuable addition to your local area, [please contact us for an early look at what we're planning](/contact).
 
-In the meantime, avid cyclists should [see how Map the Paths can help improve accessibility](/blog/2021/how-map-the-paths-used-improve-accessibility), [take part in our safer.bike initiative](https://www.safer.bike/), or [grab some inspiration to build your own data bike](/blog/2019/diy-street-view-bike-tours).
-
 ## Update 2021-04-16
 
 [Here are two other consumer mobile apps that can measure sensor data on your phone to record ride quality](/blog/2021/measuring-condition-cycle-paths-phone-update).

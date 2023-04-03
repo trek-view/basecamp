@@ -3,7 +3,7 @@ date: 2020-08-21
 title: "Using Street-Level Imagery to Improve the Map"
 description: "Some useful tools to help you make additions or modifications to OpenStreetMap using Mapillary images."
 categories: guides
-tags: [OSM, OpenStreetMap, Mapillary, Mapbox, Map the Paths]
+tags: [OSM, OpenStreetMap, Mapillary, Mapbox]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-08-21/osm-id-editor-meta.jpg
 featured_image: /assets/images/blog/2020-08-21/osm-id-editor-sm.jpg
@@ -54,5 +54,3 @@ It will open up a new window where you can start to add context to the map.
 For example, click a path and look at how it has already been classified. Is the surface type noted? Are there any additional tags that might be useful?
 
 After a few minutes of editing, you'll get the hang of it and will be an expert map maker in no time.
-
-Expect to see this functionality make its way into [Map the Paths](https://www.mapthepaths.com) over the coming weeks.

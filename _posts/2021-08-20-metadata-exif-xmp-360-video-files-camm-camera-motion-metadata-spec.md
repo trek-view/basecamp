@@ -3,7 +3,7 @@ date: 2021-08-20
 title: "An Introduction to the Camera Motion Metadata (CAMM) standard (video telemetry)"
 description: "With the help of a 360 video shot using an Insta360 Pro2, I take a look at Google's CAMM video telemetry standard."
 categories: developers
-tags: [GPS, XMP, EXIF, CAMM, mp4, Insta360 Pro2, Insta360, exiftool, Camera Motion Metadata, Map the Paths]
+tags: [GPS, XMP, EXIF, CAMM, mp4, Insta360 Pro2, Insta360, exiftool, Camera Motion Metadata]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-08-20/camm-acceleration-velocity-meta.jpg
 featured_image: /assets/images/blog/2021-08-20/camm-acceleration-velocity-sm.jpg

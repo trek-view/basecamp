@@ -93,15 +93,7 @@ The app also includes gamification of image capture in the form of badges. You c
 
 * Explorer: 1km of images published to Street View
 * Expert: 100km of images published to Street View
-* Master: 1000km of images published to Street View 
-
-## 3rd Party Software
-
-<img class="img-fluid" src="/assets/images/blog/2021-03-19/mtpu-screenshot.jpg" alt="Map the Paths Uploader" title="Map the Paths Uploader" />
-
-There is a variety of other bits of software also available offering additional functionality over the Street View app for off-road photographers wanting to upload their photos to Street View, including the [Map the Paths Uploader](https://www.mapthepaths.com/uploader).
-
-Stay tuned for a post next week comparing software to upload off-road images and videos to Google Street View...
+* Master: 1000km of images published to Street View
 
 ## Update 2021-03-19
 

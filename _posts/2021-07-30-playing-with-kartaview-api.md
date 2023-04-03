@@ -1,9 +1,9 @@
 ---
 date: 2021-07-30
 title: "A Quick Start Guide to the KartaView API"
-description: "Here's my notes about the KartaView API from my research planning an integration for Map the Paths."
+description: "Here's my notes about the KartaView API from my research planning an integration."
 categories: developers
-tags: [KartaView, Map the Paths]
+tags: [KartaView]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-07-30/kartaview-api-docs-meta.jpg
 featured_image: /assets/images/blog/2021-07-30/kartaview-api-docs-sm.jpg
@@ -11,7 +11,7 @@ layout: post
 published: true
 ---
 
-**Here are my notes about the KartaView API from my research planning an integration for Map the Paths.**
+**Here are my notes about the KartaView API from my research planning an integration.**
 
 [Last week I took a brief look at KartaView, a street-level imagery platform](/blog/2021/getting-started-with-kartaview).
 
@@ -164,11 +164,3 @@ Once you start adding content to KartaView the [`usermetrics`](http://doc.kartav
 ## Protip for existing Mapillary contributors
 
 [SviMik has built a Mapillary to OpenStreetCam synchronisation tool allowing you to clone your existing images automatically between the two products without having to re-upload anything](https://forum.mapillary.com/t/mapillary-openstreetcam-synchronization-tool/4246).
-
-## Coming soon to Map the Paths Uploader...
-
-<img class="img-fluid" src="/assets/images/blog/2021-07-30/mapthepaths-uploader-integrations-sm.jpg" alt="Map the Paths Uploader integrations" title="Map the Paths Uploader integrations" />
-
-I'm working on a new KartaView integration to upload your Sequences using the [Map the Paths Uploader](https://www.mapthepaths.com/uploader).
-
-Stay tuned for the release announcement by signing up for Trek View updates below.

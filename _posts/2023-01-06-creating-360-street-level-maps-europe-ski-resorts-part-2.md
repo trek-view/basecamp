@@ -13,7 +13,7 @@ published: true
 
 **I look back at my imagery from last season and show how you can do the same this year.**
 
-[Last March I promised you street-level imagery of some of the best French ski resorts](/blog/2022/creating-3d-maps-europe-ski-resorts-part-1).
+[Last March I promised you street-level imagery of some of the best French ski resorts](/blog/2022/creating-360-street-level-maps-europe-ski-resorts-part-1).
 
 In this case I believe the saying _"better late than never"_ holds true.
 
@@ -23,15 +23,11 @@ With the ski season already well underway in the French Alps, here is the long p
 
 <img class="img-fluid" src="/assets/images/blog/2023-01-06/val-thorens-map.png" alt="Val Thorens, Meribel, and Courchevel map" title="Val Thorens, Meribel, and Courchevel map" />
 
-2022-02-26 to 2022-03-05
-
 [Explore it all here](https://www.mapillary.com/app/?lat=45.295186218182&lng=6.5789666618182&z=10&username%5B%5D=trekviewhq).
 
 ## La Plagne and Les Arcs
 
 <img class="img-fluid" src="/assets/images/blog/2023-01-06/la-plagne-map.png" alt="La Plagne and Les Arcs map" title="La Plagne and Les Arcs map" />
-
-2022-03-05 to 2022-03-12
 
 [Explore it all here](https://www.mapillary.com/app/?lat=45.510255285185&lng=6.70060485&z=10&username%5B%5D=trekviewhq).
 
@@ -39,15 +35,11 @@ With the ski season already well underway in the French Alps, here is the long p
 
 <img class="img-fluid" src="/assets/images/blog/2023-01-06/chamonix-map.png" alt="Chamonix Valley map" title="Chamonix Valley map" />
 
-2022-03-12 to 2022-03-19
-
 [Explore it all here](https://www.mapillary.com/app/?lat=45.96727777239363&lng=6.874316773334613&z=10&username%5B%5D=trekviewhq).
 
 ## Tignes
 
 <img class="img-fluid" src="/assets/images/blog/2023-01-06/tignes-map.png" alt="Tignes and Val d'Isere map" title="Tignes and Val d'Isere map" />
-
-2022-03-19 to 2022-03-26
 
 [Explore it all here](https://www.mapillary.com/app/?lat=45.452570735577&lng=6.8979346884615&z=10&username%5B%5D=trekviewhq).
 

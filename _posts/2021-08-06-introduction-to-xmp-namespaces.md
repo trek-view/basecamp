@@ -3,7 +3,7 @@ date: 2021-08-06
 title: "What are XMP Namespaces?"
 description: "Adobe's eXtensible Metadata Platform (XMP) is a labeling technology that allows you to embed data about a file, known as metadata, into the file itself."
 categories: developers
-tags: [ffmpeg, exiftool, Adobe, XMP, EXIF, Map the Paths]
+tags: [ffmpeg, exiftool, Adobe, XMP, EXIF]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-08-06/gpano-reference-docs-meta.jpg
 featured_image: /assets/images/blog/2021-08-06/gpano-reference-docs-sm.jpg
@@ -178,11 +178,3 @@ There is the option to inject via the command line too:
 ```
 python spatialmedia -i demo-video-no-meta.mp4 demo-video-with-meta.mp4
 ```
-
-## Coming soon to Map the Paths Uploader...
-
-<img class="img-fluid" src="/assets/images/blog/2021-08-06/mapthepaths-uploader-integrations-sm.jpg" alt="Map the Paths Uploader integrations" title="Map the Paths Uploader integrations" />
-
-I'm working on turning a sequence of images into videos automatically (with full metadata) using the [Map the Paths Uploader](https://www.mapthepaths.com/uploader) ([to better support Google Street View uploads](/blog/2021/upload-video-street-view-publish-api)).
-
-Stay tuned for the release announcement by signing up for Trek View updates below.

@@ -3,7 +3,7 @@ date: 2021-03-26
 title: "Software for Uploading Your Off-Road Imagery to Google Street View"
 description: "Here are four options you can use to upload your 360 photos to Street View."
 categories: guides
-tags: [Google, Street View, Mapillary, Strava, GoThru, Trailblazer, Map the Paths]
+tags: [Google, Street View, Mapillary, Strava, GoThru, Trailblazer]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2021-03-26/panoskin-trailblazer-meta.jpg
 featured_image: /assets/images/blog/2021-03-26/panoskin-trailblazer.jpg
@@ -100,42 +100,5 @@ Trailblazer was the app that got me into capturing adventure footage for Street 
 The app only works with GoPro Fusion video and photo files. Content from the newer GoPro MAX cameras are not compatible.
 
 What I really like about Trailblazer is its ability to add local metadata to content, for example, what method of transport you used to capture with. The fact they don't charge for uploads to Street View also earns it a plus point!
-
-## Map the Paths Uploader
-
-<img class="img-fluid" src="/assets/images/blog/2021-03-26/mtpu-screenshot.jpg" alt="Map the Paths Uploader" title="Map the Paths Uploader" />
-
-**Cost**
-
-* Free
-
-**Type**
-
-* Desktop app
-	- [Mac](https://www.mapthepaths.com/uploader)
-	- [PC](https://www.mapthepaths.com/uploader)
-	- [Linux](https://www.mapthepaths.com/uploader)
-
-**Version reviewed**
-
-0.0.3
-
-**Overview**
-
-We know outdoor photographers shoot with a wide variety of different cameras to match the conditions, they create a large volume of content, that requires a high degree of post-processing, all on a shoestring budget.
-
-OK, I'm biased on this one, however, the Map the Paths Uploader was built to solve these problems outdoor street-level photographers face by allowing them to:
-
-* Add metadata to sequences for easy management and discovery
-* Convert 360 video to 360 photo frames to store locally for photo editing
-* Geotag images using GPS track files (if photos are not geotagged)
-* Flexibly edit photos (including the ability to add a nadir, adjust location information, etc.)
-* Upload to multiple web platforms
-	- [Map the Paths](https://www.mapthepaths.com/)
-	- [Mapillary](https://www.mapillary.com/)
-	- [Google Street View](https://www.google.co.uk/maps)
-	- [Strava](https://www.strava.com/)
-
-[It's also open-source, should you want to modify the code to make it do something more](https://github.com/trek-view/mtp-desktop-uploader).
 
 Which one is your favourite?

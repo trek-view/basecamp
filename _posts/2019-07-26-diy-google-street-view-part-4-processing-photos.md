@@ -3,7 +3,7 @@ date: 2019-07-26
 title: "DIY Google Street View (4/5): Stitching 360-Degree Photos Using GoPro Fusion Studio"
 description: "How to create the perfect 360-degree photo for Google Street View, and the things I've learned using GoPro Fusion Studio."
 categories: guides
-tags: [Trek Pack, Google, Street View, GoPro, Fusion, Fusion Studio, Anker, PowerCore, Tourer, Map the Paths]
+tags: [Trek Pack, Google, Street View, GoPro, Fusion, Fusion Studio, Anker, PowerCore]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2019-07-26/ukdp019-MULTISHOT_9059_000105-meta.jpg
 featured_image: /assets/images/blog/2019-07-26/gopro-fusion-studio-edit.jpg

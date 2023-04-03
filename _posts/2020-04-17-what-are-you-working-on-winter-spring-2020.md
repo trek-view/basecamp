@@ -3,7 +3,7 @@ date: 2020-04-17
 title: "What are you working on? (Winter/Spring 2020)"
 description: "It has been over 6 months since I last gave you an update about what we're working on. I think you're well overdue an update. Albeit a short one."
 categories: updates
-tags: [Campfire, Treehouse, Map the Paths]
+tags: [Campfire, Treehouse]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-04-17/ceasers-camp-aldershot-fleet-meta.jpg
 featured_image: /assets/images/blog/2020-04-17/ceasers-camp-aldershot-fleet-sm.png

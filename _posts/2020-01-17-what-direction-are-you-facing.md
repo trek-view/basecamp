@@ -3,7 +3,7 @@ date: 2020-01-17
 title: "What Direction are you Facing?"
 description: "North, South, East or, West? Calculating bearings between photos."
 categories: developers
-tags: [Tourer, Explorer, Map the Paths, Trek Pack, Bellingcat, distance, pitch, heading]
+tags: [Trek Pack, Bellingcat, distance, pitch, heading]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2020-01-17/tourer-connection-heading-calculation-meta.jpg
 featured_image: /assets/images/blog/2020-01-17/tourer-connection-heading-calculation-sm.png
@@ -33,7 +33,7 @@ Though in some case it's life or death. This is no exaggeration.
 
 [Take Bellingcat](https://www.bellingcat.com/category/resources/case-studies/). Their crowdsourced work often involves taking a photograph and determining the location, heading, and even time (using shadows) it was taken to aid their investigations ([like the downing of MH17](https://www.bellingcat.com/news/uk-and-europe/2017/07/17/mh17-open-source-investigation-three-years-later/)).
 
-Because the Trek Pack camera (GoPro Fusion) does not support heading or pitch when shooting timelapse tours, we needed to manually calculate this information when building Tourer.
+Because the Trek Pack camera (GoPro Fusion) does not support heading or pitch when shooting timelapse tours, we needed to manually calculate this information when building some of our software.
 
 Now you might be wondering why pitch or heading is important. _"Surely a user can define where they want to be looking using a 360-degree photo viewer?"_, you might be asking. This is true. Though when trying to link 360-degree photos in a tour (e.g what direction is the next photo?), this information is vital.
 
@@ -77,8 +77,6 @@ The GPS logs the elevation, so you can work this out; `source photo elevation - 
 
 So now you have; `pitch(θ) = tan(θ) = opposite / adjacent = elevation change / distance`.
 
-You'll notice in the diagram Tourer generates a forward and backward connection (P1 - P2 and P2 - P1) for each connected photo. This is so you can move forward and backwards between photos.
-
 ## Heading
 
 <img class="img-fluid" src="/assets/images/blog/2020-01-17/azimuth-altitude-schematic.png" alt="Heading / Azimuth" title="Heading / Azimuth" />
@@ -113,11 +111,11 @@ In some cases, you might have multiple connections. For example, at a fork where
 
 So you not only need to know the heading to the next photo based on time, but also the direction to all connected photos so that a user can move through a tour virtually (think Google Street View).
 
-First you need to consider what photos are connected. In Tourer photos are considered connected if the horizontal distance between photos is <=10 metres of the elevation change is <=+/-5 (both these values calculated earlier).
+First you need to consider what photos are connected. In some of our software photos are considered connected if the horizontal distance between photos is <=10 metres of the elevation change is <=+/-5 (both these values calculated earlier).
 
 So you can use the same logic as before to work out heading for all connected photos.
 
-As with pitch, you'll notice in the diagram Tourer generates a forward and backward connection heading (P1 - P2 and P2 - P1) for each connected photo. And like with pitch, it is so you can move forward and backwards between photos.
+As with pitch, you'll notice in the diagram there is a forward and backward connection heading (P1 - P2 and P2 - P1) for each connected photo. And like with pitch, it is so you can move forward and backwards between photos.
 
 ## Adjusted Headings
 

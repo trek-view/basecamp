@@ -68,7 +68,7 @@ To start teaching the computer, we need some training data that is labelled with
 
 To do this we can use the approach to extract telemetry from a video (and then assign it to extracted images from the same video), as discussed in the post [Automatic horizon and pitch leveling of GoPro 360 videos](/blog/2022/roll-pitch-level-of-gopro-video-using-gpmf).
 
-Trail Maker uses gopro-rpy to assign roll, pitch, and yaw to images to each photo (inside the `XMP` tags (e.g. `XMP-GPano:PoseRollDegrees`) so is perfect for this requirement.
+Trail Maker uses gopro-rpy to assign roll, pitch, and yaw to images to each photo (inside the `XMP` tags (e.g. `XMP-GPano:PoseRollDegrees`) so is well suited for creating this training data.
 
 The roll value is also stored against each photos record in a `sequence.json` file that accompanies the images.
 

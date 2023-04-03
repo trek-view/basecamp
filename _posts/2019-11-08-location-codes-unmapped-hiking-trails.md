@@ -57,14 +57,6 @@ Enter a location and the online Plus Code tool will generate a code[Plus Codes](
 
 Enter a Plus Code and Google Maps will return the exact location -- perfect for the millions of people with the Google Maps app installed on their phones.
 
-Tourer currently takes advantage of [the open-source Python Open Location Code library available on Github that converts co-ordinates into Plus Codes](https://github.com/google/open-location-code).
-
-Every photo you now add to Tourer will be tagged with a Plus Code allowing you to easily share even the most remote locations you've captured 360-degree photos in.
+I currently take advantage of [the open-source Python Open Location Code library available on Github that converts co-ordinates into Plus Codes](https://github.com/google/open-location-code).
 
 _**Update January 2020**: [Call for Trekkers to "map the unmapped"](/blog/2020/mapping-the-unmapped-using-360-degree-photos)_.
-
-## Download Tourer
-
-[Download now](https://github.com/trek-view/tourer).
-
-_Update October 2020: Tourer has been replaced with the Map the Paths Desktop Uploader. [More information and download links are here](/blog/2020/map-the-paths-desktop-uploader)._

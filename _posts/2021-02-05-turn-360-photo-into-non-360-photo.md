@@ -46,9 +46,7 @@ In this example I'll us GIMP because it's completely free and easy to use.
 
 You'll need an image file. 
 
-The manufacturers software often supports grabbing part of a video frame.
-
-[The Map the Paths Desktop Uploader allows you to convert 360 videos into 360 photo frames](https://www.mapthepaths.com/uploader), which could be another solution to get a 360 image from a video to use with GIMP.
+The manufacturers supplied camera software often supports grabbing part of a video frame.
 
 ### Step 2: Convert to a flat image
 

@@ -3,7 +3,7 @@ date: 2019-06-28
 title: "DIY Google Street View (2/5): My Basic Kit for Creating Outdoor Street View Tours"
 description: "The bare minimum you'll need, and some recommended accessories for building a Trek Pack to shoot 360-degree tours."
 categories: guides
-tags: [Trek Pack, Google, Street View, GoPro, Fusion, Fusion Studio, Tourer, Anker, PowerCore, Map the Paths]
+tags: [Trek Pack, Google, Street View, GoPro, Fusion, Fusion Studio, Anker, PowerCore]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2019-06-28/uklw006-MULTISHOT_0854_000140-meta.jpg
 featured_image: /assets/images/blog/2019-06-28/trek-view-pack-version-1-sm.jpg

@@ -15,9 +15,9 @@ published: true
 
 Many of you have been uploading to Google Street View for years.
 
-I know this because many of you have also asked if it’s possible to sync Google Street View data with Map the Paths because you don't have a backup of the original uploads.
+I know this because many of you have also asked if it’s possible to sync Google Street View data with other tools because you don't have a backup of the original uploads.
 
-Whilst a direct sync between Map the Paths and Street View is not possible due to limitations imposed by Google, you can download images from Google to your computer, and then reupload to Map the Paths.
+Due to Google's API pricing model and functionality this is not a simple task. Though I think I've found a workaround...
 
 Here's how to download all of your own imagery that is hosted on Google Street View:
 
