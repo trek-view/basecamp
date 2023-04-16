@@ -68,7 +68,7 @@ High and low pass filters, filter out or smooth the desired extreme frequencies 
 
 These types of filter are used by a lot of software, including the all current GoPro camera firmware and in GoPro's post-processing tools.
 
-Though it sounds simple, this topic gets complex very quickly. If I wanted to, I could use post-processing to stabilise horizontal jitter in the video (using the original telemetry). Whilst I won't for this post, if I did, [Gyroflow, in my limited experience, is a useful tool for this (and supports a variety of cameras)](https://gyroflow.xyz/).
+Though it sounds simple, this topic gets complex very quickly. If I wanted to, I could use post-processing to stabilise horizontal jitter in the video (using the original telemetry). Whilst I won't for this post, if I did, [Gyroflow, in my limited experience, is a useful tool for non-360 action cameras (and supports a variety of cameras)](https://gyroflow.xyz/).
 
 ## Is dynamic yaw adjustment only useful for World Lock mode?
 
