@@ -41,7 +41,7 @@ Ofcourse, the visible horizon is not always going to be `z=0`, this requires fur
 
 ## Using a computer to draw the horizon
 
-The next step in the process is to get a computer to idenfify 
+The next step in the process is to get a computer to idenfify;
 
 1. the horizon in the image, and
 2. identify the orientation of the camera (right way up or upside down) 
@@ -62,38 +62,35 @@ Remember, in a GoPro equirectangular image we don't have access to the IMU data,
 
 By teaching a computer what "upside down" looks like (e.g. sky, orientation of identified objects, etc.), we can also determing this.
 
-## Training a model
+## Roll and pitch labelling
 
-To start teaching the computer, we need some training data that is labelled with roll. The computer can then start understand what roll looks like using the roll value and the visual of the photo itself.
+To start teaching the computer, we need some training data that is labelled with roll and pitch in 360 photos (yaw is not so important). A computer can then start understand what roll looks like using the roll value and the visual of the photo itself.
 
-To do this we can use the approach to extract telemetry from a video (and then assign it to extracted images from the same video), as discussed in the post [Automatic horizon and pitch leveling of GoPro 360 videos](/blog/2022/roll-pitch-level-of-gopro-video-using-gpmf).
+To do this I used the approach to extract telemetry from a video (and then assign it to extracted images from the same video), as discussed in the post [Automatic horizon and pitch leveling of GoPro 360 videos](/blog/2022/roll-pitch-level-of-gopro-video-using-gpmf).
 
-Trail Maker uses gopro-rpy to assign roll, pitch, and yaw to images to each photo (inside the `XMP` tags (e.g. `XMP-GPano:PoseRollDegrees`) so is well suited for creating this training data.
+However, I was still not 100% confident of the accuracy of my code. Therefore, I also decided to use another training set.
 
-The roll value is also stored against each photos record in a `sequence.json` file that accompanies the images.
+The Samsung Gear360 records roll and pitch from the gyro in the photos it produces (in `XMP` data). Fortunatley, as the Gear360 was released over 6 years ago and was moderatley popular at the time, there are many cheap second hand versions available on eBay (I picked one up for about $20).
 
-Here is a snippet of that file for an extracted image (`GS010011_000002.jpg`). Note, a lot of the files content has been removed for brevity;
+Here's a snippet of said metadata from a photo provided by the [Des Moines Area Metropolitan Planning Organization](/blog/2021/measuring-condition-cycle-paths-phone);
 
 ```json
-		{
-			"TM_Photo_UUID": "f0eae2a7-1913-40ad-8109-e6abd3f36827",
-			"Metadata": {
-				"EXIF:FileName": "GS010011_000002.jpg",
-			},
-			"GoProTelemetry": {
-				"CalculatedyawDegrees": 0.030782303720489807,
-				"CalculatedpitchDegrees": -8.28162520045328,
-				"CalculatedrollDegrees": 0.44657817026389207,
-				"CalculatedheadingDegrees": 76.34777453686402,
-				"GPSfix": 3,
-				"GPSprecision": 243,
-				"GPSaltitudeSystem": "MSLV"
-			}
-		},
+  "XMP:PosePitchDegrees": {
+    "id": "PosePitchDegrees",
+    "table": "XMP::GPano",
+    "val": -2.672500
+  },
+  "XMP:PoseRollDegrees": {
+    "id": "PoseRollDegrees",
+    "table": "XMP::GPano",
+    "val": -3.743900
+  },
 ```
 
-Now all that was left was to shoot the videos to extract frames from that we could use in the training library.
+## Collecting training data
 
-Essentially the more training videos (and the variety of visual landscapes in them) will help train the model.
+Now for the fun part!
 
-This library of 
+Essentially the more training images labelled with roll and pitch values, and the variety of visual landscapes within them will help make the model more accurate at detecting roll and pitch where this telemetry does not already exist.
+
+TODO
