@@ -1,12 +1,24 @@
 ---
+title: Trek Pack v1 Getting Started
+heading: Trek Pack v1 Getting Started
 description: What's in the box, what it looks like...
+image: /assets/images/pages/trek-pack/v1/trek-pack-v1-emptied.jpg
+layout: page
 ---
+
+[**The Trek Pack v2 is now available (June 2020). Click here for more information.**](/trek-pack/v2/table-of-contents)
 
 # Kit Setup
 
-{% hint style="warning" %}
-[**The Trek Pack v2 is now available (June 2020). Click here for more information.**](https://app.gitbook.com/@dgreenwood-trekview/s/trek-view/\~/drafts/-MGZS3QJdkKSR1bua7Ub/trek-pack/v2)**​**​
-{% endhint %}
+## The Camera
+
+### Basics
+
+<img class="img-fluid" src="/assets/images/pages/trek-pack/v1/kit-fusion-front.jpeg" alt="Fusion Front Back" title="Fusion Front Back" />
+
+<img class="img-fluid" src="/assets/images/pages/trek-pack/v1/kit-fusion-side.jpeg" alt="Fusion Side" title="Fusion Front Side" />
+
+# Kit Setup
 
 ### The Camera
 
@@ -66,44 +78,76 @@ To permanently delete the .trashes folder and free up the space, you can insert 
 
 **Protip**; The cards are formatted to each slot, and must always be replaced in the corresponding slot otherwise the camera will show an error when turned on. It's therefore worth marking the SD Cards with 1 and 2, so you can easily identify them.
 
-![](https://lh6.googleusercontent.com/l-dYxnDzY0B7UbucbcyYnlVq4nmGW28PCl8GbP8DGHY4-2qRc\_9oE3rbo2CvqLOYrQfxh-5S\_uwqeEJAiGTrUHB5cD5w80UmVdWamwf5hUquMtcsWKiVlJF8OSIsgh0JMspxLzIL)
+<img class="img-fluid" src="/assets/images/pages/trek-pack/v1/kit-sd-cards.jpeg" alt="Fusion SD Cards" title="Fusion SD Cards" />
 
 ### The Pack
 
-**Setting up the Pack**
+For this I use a GoPro Seeker pack and set it up as follows....
 
-You’ll notice on the left side of the backpack (if looking from the non-strap side) there are two elasticated hooks.
+<img class="img-fluid" src="/assets/images/pages/trek-pack/v1/kit-seeker-side.jpeg" alt="GoPro Seeker pack" title="GoPro Seeker pack" />
 
-![](https://lh3.googleusercontent.com/CzvSz7xHswZlvtCzwlVvQlQmufQlZUCfDv5rksMyfjEqYH0H-ctiJuqLdWGZP7xDV0ZekNuw8Zs9QB7X8Q31BKdl4QZac2UUttJPRRFMTp\_j8rOujztGO6N2dg-P\_u\_O7eiELoVW)
+<img class="img-fluid" src="/assets/images/pages/trek-pack/v1/kit-seeker-side-full.jpeg" alt="GoPro Seeker pack" title="GoPro Seeker pack" />
 
-Release both of these.
+<img class="img-fluid" src="/assets/images/pages/trek-pack/v1/kit-seeker-front.jpeg" alt="GoPro Seeker pack" title="GoPro Seeker pack" />
 
-![](https://lh3.googleusercontent.com/xI\_3KYNyxt2fWxf65CZ5g3\_siatlaShM4Qm1BWl5kebFCpWIQQPW2e1ELOZfPLa4Np3-4xuk8gpMkPR6x-Ps3ONSYYb2a3uKbxBriNj8K8itzE3lpf6zrRC0FNz5tyKSRc-6tcF8)
+### Modes
 
-Place the monopod into the elasticated side pouch the with the flat side facing inwards toward the pack. Place some padding material (a pair of sports socks are perfect) to fill out the elasticated pouch and keep the monopod from moving around when moving around whilst shooting.
+The GoPro Fusion supports both video and timelapse image photography in 360 mode.
 
-![](https://lh6.googleusercontent.com/JcpbmvgfjmIqviaH0maR0SlhwDLmizINFWAeq5Lrccp3CmKLwv4RGFPW-\_JjvIPk14\_OJzlGMVtoIuoZuN0XzSSvJJ4pUrgKicBnSgzkL-T9hZnSNMTYz-QXwCx7ih7BBgRpfCEy)
+**We recommend shooting in timelapse mode to create virtual tours.**
 
-Now secure both of the straps around the monopod, ensuring that the top two release clasps on the monopod are above the top strap (so both can be extended).
+However each shoot is different. When planning a shoot, there are a few considerations to keep in mind when choosing a mode.
 
-Now tighten both straps.
+#### Considerations when selecting a mode
 
-**Check the Shooting Angle**
+**GoPro Fusion Studio is intensive**
 
-Now, extend the monopod to it’s full extension.
+You need to use Fusion Studio to process both mp4's the camera shoots, into a single equirectangular file.
 
-Attach the camera to the monopod, ensuring the ps close to vertical (in line with the pole) as possible. It doesn’t need to be perfect, you can always adjust when processing the images.
+The mode content Fusion Studio has to process, the more processing power is required by your computer.
 
-![](https://lh4.googleusercontent.com/ZciebnpcNs0bYQehcpp1v6P\_Tfx5bezfcgWledYc\_aidFl0CNEI0aG-cNrj-DBmhOSFXKRvn3AEJeDT2-IjQj5KunHbgUt5ufX4ksFxAbo7fDfS\_KIEIUTQN5xDwyi4UCrGeVYki)
+Even on a fairly well built machine 16GB RAM / Intel i7 it can be very slow.
 
-For reference, the back of the camera is the side with the LCD screen (this should be facing backwards).
+Therefore, if shooting very long content its often better to choose timelapse mode otherwise you might struggle with processing time / errors with Fusion Studio when processing lots of long videos.
 
-![](https://lh5.googleusercontent.com/i8hmH1l1MoKHhSfaoDHskck8CZxrU6czQuV-WZjfvTtEmJNZPemGNfFnFjcpdGNuHYAf4lJsPTEgylYIHwP4V36T\_g1Tnbw31DTqs9D015Owg0KC\_rRc5-G-lrta71NpF2-nHRLR)
+##### Video mode requires a lot more power
 
-Tighten the camera into position. Just twist until it feels secure. Don’t be tempted to overtighten as doing so will eventually break the nut securing the screw.
+Based on my own experience, I find that I can shoot video for about a total of 60 minutes using one GoPro Fusion battery (in short intervals, see overheating issue).
 
-![](https://lh3.googleusercontent.com/q2LIS8ZW9Ehe7o6jAJG0mZZW06QGKkKKk4Uy6LVfML9epIns6nrmmpR9BHKnoyE1-0aNTHi2\_PcJqy0Bk60Vwel4o5cgDR5OAWXSet2Weu033UThFns9m7KYcvU9PbpYt1csVaT-)
+This can mean potentially having to spend over £50 on spare batteries to get 2 hours of filming time (inc. the battery supplied with the camera). You'll also have to carry them.
 
-You’ll notice an adjustable wheel that loosens the screw that attaches the GoPro mount to the monopod. Loosen this slightly so you can rotate the GoPro Fusion to line up parallel to the back of the pack. That is, the camera should face straight ahead of the pack.
+As a rough guide, set to a 5 second interval on a mild day (16°C), a fully charged battery can support up to 4 hours of shooting (2 second interval offers about 3 hours). Both batteries provided will therefore keep you shooting for a whole day.
 
-Don’t worry too much about making either the pitch (up / down) or yaw (left / right) of the camera perfect as you can compensate for directional changes during processing.
+##### The Fusion tends to overheat in video mode
+
+Though the stock GoPro Fusion Lithium Ion batteries present a larger problem than recording time, heat. The more photos being taken, the more processing power the camera requires, the hotter the battery becomes.
+
+To prevent damage, the GoPro Fusion will automatically turn off if it begins to overheat. In video mode, even on milder days (20C), the battery has a tendency to overheat after 20 minutes. Put it in direct sunlight, the problem gets worse, almost to the point where the camera becomes unusable.
+
+##### Timelapse photos are higher resolution than videos
+
+360 photos on the Fusion are 18mp (5760x2880).
+
+The Fusion has two video modes, 4k (3840x1920 processed mp4 video) and 3k (3072x1536  processed mp4 video). Note, the GoPro Fusion advertised 4k, but this is not possible using mp4 codecs (only ProRes).
+
+##### Post processing options are the same, whatever mode
+
+GoPro Fusion Studio offers the same post-processing features for video and timelapse images.
+
+##### Videos can produce large file sizes (but are equivalent timelapses)
+
+8 minutes of Fusion 360 video is roughly 5 GB in filesize (2.5GB front/2.5GB back). An individual 360 photo frame shot in timelapse is about 20MB.
+
+Shooting in timelapse mode at the highest rate (0.5 FPS) produces 120 frames per minute. That's 960 frames per 8 minutes, which works out larger than 5GB.
+
+Keep in mind, you will also need to process the mp4 file, which will result in a 2x increase in storage required (if you want to keep a copy of the original .mp4s, which I'd recommend for future reprocessing).
+
+The other big difference is getting access to files in the future. If you store files on other machines/cloud services, it's generally easier to download one or two images when needed. Grabbing a whole movie can take a long time on slower connections.
+
+##### Video mode has a far superior frame rate
+
+Videos can be recorded at a much higher frame rate. In video mode you can record up to 30 FPS @ 5.2k. In timelapse mode, the camera will only capture up to a rate of one photo every 0.5  seconds (2 FPS).
+
+Travelling at 10 km/h (2.75 m/s) in 0.5 second timelapse mode will produce one photo about every 1.5 meters. Ideally you're looking for a distance of less than 5 meters between photos at an absolute maximum.
+
+Generally this frame rate is fast enough for most human powered methods of transport (to capture 1 photo every 5 meter), which is why we tend to shoot in timelapse photo mode over video given the other considerations (especially power consumption).

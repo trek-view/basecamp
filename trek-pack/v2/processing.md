@@ -2,7 +2,7 @@
 title: Trek Pack v2 Processing
 heading: Trek Pack v2 Processing
 description: How to process your MAX content...
-image: /assets/images/pages/trek-pack/trek-pack-v2-emptied.jpg
+image: /assets/images/pages/trek-pack/v2/trek-pack-v2-emptied.jpg
 layout: page
 ---
 

@@ -2,7 +2,7 @@
 title: Trek Pack v2 Setup
 heading: Trek Pack v2 Setup
 description: Setting it up, what goes where...
-image: /assets/images/pages/trek-pack/trek-pack-v2-emptied.jpg
+image: /assets/images/pages/trek-pack/v2/trek-pack-v2-emptied.jpg
 layout: page
 ---
 
@@ -142,7 +142,7 @@ Firstly, [GPS won’t work underwater](/blog/2020/underwater-google-street-view/
 
 You do have the option, if you don’t want to invest in a GPS logger and are not worried about taking your phone out onto the water, to use it as a GPS logger.
 
-[Mobile phones on land generally offer better positional accuracy where mobile signal is available.](https://www.trekview.org/blog/2020/gps-101)
+[Mobile phones on land generally offer better positional accuracy where mobile signal is available.](/blog/2020/gps-101)
 
 Out on the water (away from onshore mobile signal) they generally rely on the same technology as GPS loggers to record location.
 

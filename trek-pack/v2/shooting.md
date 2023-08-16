@@ -2,7 +2,7 @@
 title: Trek Pack v2 Shooting
 heading: Trek Pack v2 Shooting
 description: How to capture tours, useful checklists...
-image: /assets/images/pages/trek-pack/trek-pack-v2-emptied.jpg
+image: /assets/images/pages/trek-pack/v2/trek-pack-v2-emptied.jpg
 layout: page
 ---
 

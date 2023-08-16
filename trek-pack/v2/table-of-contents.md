@@ -2,7 +2,7 @@
 title: Trek Pack v2 Getting Started
 heading: Trek Pack v2 Getting Started
 description: Getting started with the Trek Pack v2...
-image: /assets/images/pages/trek-pack/trek-pack-v2-emptied.jpg
+image: /assets/images/pages/trek-pack/v2/trek-pack-v2-emptied.jpg
 layout: page
 ---
 
@@ -46,6 +46,6 @@ We hope you like them...
 
 ### Browse the instructions
 
-* [Kit Setup](kit-setup.md)
-* [Shooting](shooting.md)
-* [Processing](processing.md)
+* [Kit Setup](/trek-pack/v2/kit-setup)
+* [Shooting](/trek-pack/v2/shooting)
+* [Processing](/trek-pack/v2/processing)

@@ -1,14 +1,16 @@
 ---
+title: Trek Pack v1 Shooting
+heading: Trek Pack v1 Shooting
 description: How to capture tours, useful checklists...
+image: /assets/images/pages/trek-pack/v1/trek-pack-v1-emptied.jpg
+layout: page
 ---
+
+[**The Trek Pack v2 is now available (June 2020). Click here for more information.**](/trek-pack/v2/table-of-contents)
 
 # Shooting
 
-{% hint style="warning" %}
-[**The Trek Pack v2 is now available (June 2020). Click here for more information.**](https://app.gitbook.com/@dgreenwood-trekview/s/trek-view/\~/drafts/-MGZS3QJdkKSR1bua7Ub/trek-pack/v2)**​**​
-{% endhint %}
-
-### Before You Leave the House
+## Before You Leave the House
 
 This part is written from bitter experience -- turning up, excited to start filming, and realising I’ve forgotten something.
 
@@ -23,7 +25,7 @@ Now I perform the following checks before leaving home:
 
 You should also consider safety. Have you got the right gear for the environment? Are you prepared for changes in the weather? Are you going out with a friend? Does someone at home know your plans? Have you packed water and food?
 
-### **Choosing timelapse interval speed**
+## **Choosing timelapse interval speed**
 
 At present we use still imagery to create panoramic tours (versus video).
 
@@ -44,13 +46,11 @@ Below are recommendations, based on our experience, for the best timelapse setti
 
 You can modify the timelapse setting under the Settings > Timelapse.
 
-_**High-speed timelapses (0.5 seconds): A word of warning**_
+**High-speed timelapses (0.5 seconds): A word of warning**
 
 Travelling at over 30 km/h (8.333 metres /s) is about the recommended top end speed for the 0.5 second timelapse mode. You can still use it for tour photography (and the shutter speed will support it) but your photos will be more than 5 metres apart (above the recommended Street View distance).
 
 ### Capturing a Tour
-
-![](../../.gitbook/assets/IMG-20191027-WA0001.jpg)
 
 Put on the pack, set the mode to time-lapse (ensuring the settings are correct), make sure that the GPS is locked on (the GPS pin icon is a solid colour), and start press the red button.
 
