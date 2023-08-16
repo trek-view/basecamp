@@ -1,7 +1,5 @@
 - links:
-  - name: Explorer
-    link: https://landing.mailerlite.com/webforms/landing/p3p7h9
-  - name: Trek Pack
+  - name: Do It Yourself
     link: /trek-pack
   - name: Podcast
     link: https://www.trekview.org/blog/category/expodition/
@@ -15,10 +13,6 @@
     link: /blog
   - name: About
     link: /about
-  - name: Become a Trekker
-    link: /trek-pack
-  - name: Guides
-    link: https://guides.trekview.org
   - name: Contact
     link: /contact
     
@@ -33,10 +27,6 @@
     new_window: true
   - name: Facebook
     link: https://www.facebook.com/trekview/
-    social_icon: 
-    new_window: true
-  - name: Twitter
-    link: https://twitter.com/trekview
     social_icon: 
     new_window: true
   - name: Instagram

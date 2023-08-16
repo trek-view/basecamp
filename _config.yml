@@ -6,7 +6,7 @@ url: "https://www.trekview.org"
 baseurl: 
 google_analytics_key: G-B3316TFM2H
 # google_maps_javascript_api_key:
-disqus_shortname: trekviewhq
+disqus_shortname: 
 
 # Do not publish future blog posts or drafts
 future: false
@@ -29,7 +29,6 @@ social:
   links:
     - https://www.instagram.com/trekviewed/
     - https://www.facebook.com/trekview/
-    - https://www.twitter.com/trekview/
     
 # -----
 # Build

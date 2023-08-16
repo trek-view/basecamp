@@ -70,20 +70,20 @@ To do this I used the approach to extract telemetry from a video (and then assig
 
 However, I was still not 100% confident of the accuracy of my code. Therefore, I also decided to use another training set.
 
-The Samsung Gear360 records roll and pitch from the gyro in the photos it produces (in `XMP` data). Fortunatley, as the Gear360 was released over 6 years ago and was moderatley popular at the time, there are many cheap second hand versions available on eBay (I picked one up for about $20).
+The Ricoh Theta records roll and pitch from the gyro in the photos it produces (in `XMP` data). Fortunatley, as the Ricoh Theta was released over 6 years ago and was moderatley popular at the time, there are many cheap second hand versions available on eBay (I picked one up for about $50).
 
-Here's a snippet of said metadata from a photo provided by the [Des Moines Area Metropolitan Planning Organization](/blog/2021/measuring-condition-cycle-paths-phone);
+Here's a snippet of said metadata from a photo provided;
 
 ```json
   "XMP:PosePitchDegrees": {
     "id": "PosePitchDegrees",
     "table": "XMP::GPano",
-    "val": -2.672500
+    "val": -9.6
   },
   "XMP:PoseRollDegrees": {
     "id": "PoseRollDegrees",
     "table": "XMP::GPano",
-    "val": -3.743900
+    "val": -131.6
   },
 ```
 
@@ -92,5 +92,3 @@ Here's a snippet of said metadata from a photo provided by the [Des Moines Area 
 Now for the fun part!
 
 Essentially the more training images labelled with roll and pitch values, and the variety of visual landscapes within them will help make the model more accurate at detecting roll and pitch where this telemetry does not already exist.
-
-TODO

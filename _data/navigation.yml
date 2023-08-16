@@ -2,15 +2,7 @@
   link: /blog
   new_window: false
   highlight: false
-- name: Become a Trekker
+- name: Do it Yourself
   link: /trek-pack
   new_window: false
   highlight: false
-- name: Upload Imagery
-  link: https://landing.mailerlite.com/webforms/landing/p3p7h9
-  new_window: true
-  highlight: true
-- name: Explore the Map
-  link: https://landing.mailerlite.com/webforms/landing/p3p7h9
-  new_window: true
-  highlight: true

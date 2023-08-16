@@ -89,7 +89,7 @@ _Note: I've also included files for photo mode that can be used if you want to t
 
 You also need two blend mask files, one for the front, the other for the back.
 
-To generate them you need to know the 1/4 and 3/4 positions of the output equirectangular output video horizontally.
+To generate them you need to know the 1/4 and 3/4 positions (width) of the output equirectangular output video horizontally.
 
 I then create a centered rectangular selection of the blend width I want, must be less than the blend width used in fusion2sphere (which is currently 5 degrees). To work out the pixel blend width you can used the calculation `(output width / 360)*5`, e.g. `(5760/360)*5)=80px`.
 
