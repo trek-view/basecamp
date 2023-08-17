@@ -151,3 +151,7 @@ Videos can be recorded at a much higher frame rate. In video mode you can record
 Travelling at 10 km/h (2.75 m/s) in 0.5 second timelapse mode will produce one photo about every 1.5 meters. Ideally you're looking for a distance of less than 5 meters between photos at an absolute maximum.
 
 Generally this frame rate is fast enough for most human powered methods of transport (to capture 1 photo every 5 meter), which is why we tend to shoot in timelapse photo mode over video given the other considerations (especially power consumption).
+
+## Next
+
+[Shooting](/trek-pack/v1/shooting)

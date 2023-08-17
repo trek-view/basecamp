@@ -192,3 +192,7 @@ For snorkelling we recommend a more agile case (with minimal air volume, hence l
 <img class="img-fluid" src="/assets/images/pages/trek-pack/v2/dive-cheap-case.jpeg" alt="Cheap underwater case MAX" title="Cheap underwater case MAX" />
 
 These cases can be picked up on eBay and Amazon fairly cheaply.
+
+## Next
+
+[Shooting](/trek-pack/v2/shooting)

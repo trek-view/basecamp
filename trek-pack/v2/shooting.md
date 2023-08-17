@@ -129,3 +129,7 @@ Usually the default settings will suffice for most environments.
 Beware of over stylising photos if you plan to upload the images to online services. For example, [the Google Street View policy states](https://support.google.com/contributionpolicy/answer/7411351):
 
 > Stylistic adjustments (such as applied filters) are acceptable, provided that these stylistic changes are minimal and are not appended elements such as borders, text, collaged images, etc.
+
+## Next
+
+[Processing](/trek-pack/v2/processing)

@@ -92,3 +92,7 @@ Now all the videos in the queue will have the correct export settings.
 You can now press the play button to start the export.
 
 When complete, you'll have an `.mp4` file in the output directory specified (shown and configurable in bottom menu of app).
+
+## End
+
+This completes the guide to the Trek Pack v2.

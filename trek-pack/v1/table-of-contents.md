@@ -1,7 +1,7 @@
 ---
 title: Trek Pack v1 Getting Started
 heading: Trek Pack v1 Getting Started
-description: Getting started with the Trek Pack v2...
+description: Getting started with the Trek Pack v1...
 image: /assets/images/pages/trek-pack/v1/trek-pack-v1-emptied.jpg
 layout: page
 ---

@@ -6,6 +6,8 @@ image: /assets/images/pages/trek-pack/v2/trek-pack-v2-emptied.jpg
 layout: page
 ---
 
+<div class="text-container">
+
 # GoPro MAX Version
 
 **Version 2.0 (last updated: July 2020)**
@@ -49,3 +51,5 @@ We hope you like them...
 * [Kit Setup](/trek-pack/v2/kit-setup)
 * [Shooting](/trek-pack/v2/shooting)
 * [Processing](/trek-pack/v2/processing)
+
+</div>

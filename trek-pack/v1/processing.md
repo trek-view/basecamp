@@ -105,3 +105,7 @@ You can stitch time-lapse photos to video files using GoPro Fusion Studio, howev
 **3.3.2 Render performance**
 
 Rendering in GoPro Fusion Studio is memory intensive. I use a MacBook Pro with a good CPU (i7 processor) and 16GB of RAM. Whilst fairly powerful, the rendering process will make my computer unusable until the process completes. As a rough estimate, on my computer it takes 10 minutes for every 1GB of photo output.
+
+## End
+
+This completes the guide to the Trek Pack v1.
