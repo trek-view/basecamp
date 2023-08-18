@@ -21,7 +21,7 @@ Let's say you wanted to cut the first 20 seconds of video from your capture whil
 
 The problem; many software programs will completely strip the GPS telemetry from the video if you do this, others will remove other important metadata from the video, [such as [XMP] ProjectionType](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd) (used by software to recognise the video as either 360 or 2D).
 
-I'm yet to find the perfect 360 video editing tool for mapping. [This is one of the reasons we don't recommend capturing virtual tours in video mode using the Trek Pack](https://guides.trekview.org/trek-pack/v2).
+I'm yet to find the perfect 360 video editing tool for mapping. [This is one of the reasons we don't recommend capturing virtual tours in video mode using the Trek Pack](/trek-pack/).
 
 That said, sometimes you might have captured a brilliant video of a trail -- perhaps skiing a piste or a downhill MTB trail -- where your intention was not to use the images for mapping, but to share with friends on YouTube, however, now realise that video would be great to use on Mapillary or Google Street View.
 

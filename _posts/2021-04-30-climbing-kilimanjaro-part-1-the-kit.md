@@ -49,13 +49,13 @@ Our Trek Pack is designed for conditions exactly like these.
 
 <img class="img-fluid" src="/assets/images/blog/2021-04-30/IMG_20200702_164256.jpeg" alt="Trek View Trek Pack v2" title="Trek View Trek Pack v2" />
 
-For those unfamiliar, our [Trek Pack v2](https://guides.trekview.org/trek-pack/v2/about), built around the GoPro MAX is designed for just these conditions.
+For those unfamiliar, our [Trek Pack v2](/trek-pack/), built around the GoPro MAX is designed for just these conditions.
 
 Most Kilimanjaro treks last between 6-8 days. There are no places to recharge devices on the mountain. Our kit needed to be self-powered, running for up to 9 hours of walking each day.
 
 <img class="img-fluid" src="/assets/images/blog/2021-04-30/IMG_20200620_111520.jpeg" alt="Trek View GoPro MAX external power pack" title="Trek View GoPro MAX external power pack" />
 
-[The good news is that the GoPro supports an external power pack](https://guides.trekview.org/trek-pack/v2/kit-setup#multi-day-pack-add-ons). One 26000 Anker powerpack was more than adequate for a 7 day trek when shooting in timelapse mode on the MAX (at 5 second intervals).
+The good news is that the GoPro supports an external power pack. One 26000 Anker powerpack was more than adequate for a 7 day trek when shooting in timelapse mode on the MAX (at 5 second intervals).
 
 ## The Plan
 

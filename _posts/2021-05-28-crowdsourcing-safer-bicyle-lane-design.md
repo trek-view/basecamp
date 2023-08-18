@@ -54,7 +54,7 @@ The beauty of it being, you don't need too much kit to get started, nor do you n
 2. Capture your imagery
 3. Upload your videos / photos
 
-[We've created some guides for those just starting out](https://guides.trekview.org/trek-pack/v2/the-kit#bike-pack).
+[We've created some guides for those just starting out](/trek-pack/).
 
 Using what we learn analysing the images from locations around the world, our aim is to provide local governments with the data to make the best investment decisions for new bicycle infrastructure to eliminate all avoidable cyclist deaths.
 

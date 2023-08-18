@@ -53,7 +53,7 @@ I realised quite quickly, that for optimum conditions I would need to rely on an
 
 ## Using an External batter GoPro MAX Insulation
 
-It is possible to use an external power source with the MAX. [We actually recommend using one with our Trek Pack for long hikes to reduce the reliance on expensive GoPro batteries](https://guides.trekview.org/trek-pack/v2/kit-setup/external-power-pack).
+It is possible to use an external power source with the MAX. [We actually recommend using one with our Trek Pack for long hikes to reduce the reliance on expensive GoPro batteries](/trek-pack/).
 
 The advantage of using an external pack means not only can it be kept warm more easily, but also offers more power.
 

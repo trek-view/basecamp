@@ -37,7 +37,7 @@ Let's put the science to the test...
 
 ## Equipment used
 
-At the time of the test, [I didn't have access to the 360Bubble that I usually use for underwater recordings](https://guides.trekview.org/trek-pack/v2/the-kit#scuba-dive-pack). This would have improved the results closer to the surface by providing a larger volume of air between the camera and surface.
+At the time of the test, [I didn't have access to the 360Bubble that I usually use for underwater recordings](/trek-pack/). This would have improved the results closer to the surface by providing a larger volume of air between the camera and surface.
 
 So I decided to take my GoPro MAX with a smaller water-proof cover for the camera ([here's the one I bought via Amazon](https://www.amazon.co.uk/VGSION-Accessory-Underwater-Housing-Waterproof/dp/B083HQ7NWW)). The MAX is waterproof, [but as noted in this post](/blog/2020/underwater-google-street-view), you should be aware water changes the effect of light. This cover doesn't fully solve that issue, but it does help by providing a small air-gap between the camera an lens.
 

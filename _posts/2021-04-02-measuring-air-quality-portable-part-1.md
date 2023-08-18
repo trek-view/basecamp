@@ -22,7 +22,7 @@ Speaking to experts in the field we quickly realised that to achieve a high degr
 
 > Trying to monitor air quality accurately you are looking into the £1000's  to do it properly. Low cost particulate matter sensors are really indoor dust monitors only and without a heated element for high humidity readings the accuracy is less than 20%.
 
-And even if we could afford one, such sensors require a large amount of power thus making them unsuitable for our [Trek Packs](https://guides.trekview.org/trek-pack/v2).
+And even if we could afford one, such sensors require a large amount of power thus making them unsuitable for our [Trek Packs](/trek-pack/).
 
 Though accuracy is indeed important, we are looking to capture aggregate statistics to answer questions like:
 
