@@ -6,130 +6,143 @@ image: /assets/images/pages/trek-pack/v2/trek-pack-v2-emptied.jpg
 layout: page
 ---
 
-# Shooting
+<div class="text-container">
 
-### Before You Leave the House
+<h4 id="before-you-leave-the-house">Before You Leave the House</h4>
 
-This part is written from bitter experience -- turning up, excited to start filming, and realising I’ve forgotten something.
+<p>This part is written from bitter experience -- turning up, excited to start filming, and realising I’ve forgotten something.</p>
 
-Now I perform the following checks before leaving home:
+<p>Now I perform the following checks before leaving home:</p>
 
-1. Are the batteries fully charged and is one in the camera? Have you packed a spare?
-2. Do the MicroSD cards have enough free space for everything you plan to shoot? Are they both in the camera?
-3. Is the monopod in/on the pack (including GoPro mounts and screws)?
-4. Have you enabled GPS mode? Is the time correct for your location?
-5. Is time-lapse mode on the correct interval for the type of transport you will use to shoot?
-6. What is the weather like? Have you checked the best source of weather information available for the location?
+<ul>
+<li>Are the batteries fully charged and is one in the camera? Have you packed a spare?</li>
+<li>Do the MicroSD cards have enough free space for everything you plan to shoot? Are they both in the camera?</li>
+<li>Is the monopod in/on the pack (including GoPro mounts and screws)?</li>
+<li>Have you enabled GPS mode? Is the time correct for your location?</li>
+<li>Is time-lapse mode on the correct interval for the type of transport you will use to shoot?</li>
+<li>What is the weather like? Have you checked the best source of weather information available for the location?</li>
+</ul>
 
-You should also consider safety. Have you got the right gear for the environment? Are you prepared for changes in the weather? Are you going out with a friend? Does someone at home know your plans? Have you packed water and food?
+<p>You should also consider safety. Have you got the right gear for the environment? Are you prepared for changes in the weather? Are you going out with a friend? Does someone at home know your plans? Have you packed water and food?</p>
 
-### Capturing a Sequence
+<h4 id="capturing-a-sequence">Capturing a Sequence</h4>
 
-<img class="img-fluid" src="/assets/images/pages/trek-pack/v2/shooting-david.jpeg
-" alt="Trek pack in action" title="Trek pack in action" />
+<ul>
+<li>Make sure to remove the lens caps on the camera before shooting</li>
+<li>Before shooting, make sure the GPS is locked on (this can take a few minutes, depending on your location).</li>
+<li>Avoid capturing in the rain and in low-light situations. The images will turn out much worse than what you see with the human eye. (This particularly applies when you're in a car.)</li>
+<li>Be prepared for questions. Many people will be intrigued by your Trek Pack. We encourage Trekkers to share what they’re doing with others, and why. Many people will, rightly, be concerned about their privacy. Be prepared to explain how your photos will be used.</li>
+<li>Make sure you comply with local laws around public photography too. Generally don’t shoot on private property or around children, but make sure you know what is and isn’t allowed beforehand.</li>
+<li>Above all, enjoy the outdoors!</li>
+</ul>
 
-Mount the camera, turn it on, set the mode, put on the pack, and start the capture.
+<h5 id="timelapse-mode">Timelapse Mode</h5>
 
-You don’t need any more instructions -- you’re all set. Below you'll find some tips, but above all just get outdoors and start shooting. You'll figure it our as you go.
+<p>Required Settings</p>
 
-### General tips
+<p>The camera must have GPS turned on to position your photos. Go to preferences > Regional.</p>
 
-* Make sure to remove the lens caps on the camera before shooting
-* Before shooting, make sure the GPS is locked on (this can take a few minutes, depending on your location).
-* Avoid capturing in the rain and in low-light situations. The images will turn out much worse than what you see with the human eye. (This particularly applies when you're in a car.)
-* Be prepared for questions. Many people will be intrigued by your Trek Pack. We encourage Trekkers to share what they’re doing with others, and why. Many people will, rightly, be concerned about their privacy. Be prepared to explain how your photos will be used.
-* Make sure you comply with local laws around public photography too. Generally don’t shoot on private property or around children, but make sure you know what is and isn’t allowed beforehand.
-* Above all, enjoy the outdoors!
+<p><strong>Turn GPS to On.</strong></p>
 
-# Timelapse Mode
+<p>You can now select timelapse mode.</p>
 
-### Required Settings
+<p><strong>Press the mode button until Timelapse is shown.</strong></p>
 
-The camera must have GPS turned on to position your photos. Go to preferences > Regional.
+<p>The GoPro MAX’s timelapse mode can be used in Timewarp video mode and timelapse photo mode.</p>
 
-**Turn GPS to On.**
+<p><strong>Select timelapse photo mode.</strong></p>
 
-You can now select timelapse mode.
+<p>You can also select between single lens HERO capture (photo icon) and 360 capture.</p>
 
-**Press the mode button until Timelapse is shown.**
+<p><strong>Select 360 capture mode.</strong></p>
 
-The GoPro MAX’s timelapse mode can be used in Timewarp video mode and timelapse photo mode.
+<h6 id="optional-settings">Optional Settings</h6>
 
-**Select timelapse photo mode.**
+<p><strong>Photo interval</strong></p>
 
-You can also select between single lens HERO capture (photo icon) and 360 capture.
+<p>360 timelapse photo mode allows you to capture photos at either 2, 5, 10, 30 or 60 second intervals.</p>
 
-**Select 360 capture mode.**
+<p>This means you can start the time-lapse and let the camera capture photos at the designated intervals automatically.</p>
 
-### Optional Settings
+<p>As a rough guide, set to a 5 second interval on a mild day (16°C), a fully charged battery can support up to 2.5 hours of shooting.</p>
 
-#### Photo interval
+<p>Ideally to create a tour that’s easy to navigate virtually, you want to capture photos no more than 5 metres apart.</p>
 
-360 timelapse photo mode allows you to capture photos at either 2, 5, 10, 30 or 60 second intervals.
+<p>Below are recommendations, based on our experience, for the best timelapse setting for the mode of transport you’ll be using.</p>
 
-This means you can start the time-lapse and let the camera capture photos at the designated intervals automatically.
+<table>
+<thead>
+<tr>
+<th><strong>Timelapse setting (secs)</strong></th>
+<th><strong>Sport</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2</strong></td>
+<td><strong>Downhill sports (skiing, MTB, etc), cycling, kayaking (downstream), walking, paddleboarding</strong></td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td><strong>Hiking (uphill)</strong></td>
+</tr>
+</tbody>
+</table>
 
-As a rough guide, set to a 5 second interval on a mild day (16°C), a fully charged battery can support up to 2.5 hours of shooting.
+<p>Generally it’s better to capture at a higher setting (you can always remove unnecessary photos later) -- the trade-off is battery. More photos = the faster the battery drains.</p>
 
-Ideally to create a tour that’s easy to navigate virtually, you want to capture photos no more than 5 metres apart.
+<h6 id="protune">Protune</h6>
 
-Below are recommendations, based on our experience, for the best timelapse setting for the mode of transport you’ll be using.
+<p>You can play around with the ProTune settings -- they’re particularly useful in low light settings.</p>
+<p>Usually the default settings will suffice for most environments.</p>
 
-| **Timelapse setting (secs)** | **Sport**                                                                                       |
-| ---------------------------- | ----------------------------------------------------------------------------------------------- |
-| **2**                        | **Downhill sports (skiing, MTB, etc), cycling, kayaking (downstream), walking, paddleboarding** |
-| **5**                        | **Hiking (uphill)**                                                                             |
+<p>Beware of over stylising photos if you plan to upload the images to online services. For example, <a href="https://support.google.com/contributionpolicy/answer/7411351">the Google Street View policy states</a>:</p>
 
-Generally it’s better to capture at a higher setting (you can always remove unnecessary photos later) -- the trade-off is battery. More photos = the faster the battery drains.
+<blockquote>
+<p>Stylistic adjustments (such as applied filters) are acceptable, provided that these stylistic changes are minimal and are not appended elements such as borders, text, collaged images, etc.</p>
+</blockquote>
 
-#### Protune
+<h5 id="video-mode">Video Mode</h5>
 
-You can play around with the ProTune settings -- they’re particularly useful in low light settings.
+<h6 id="required-settings">Required Settings</h6>
 
-Usually the default settings will suffice for most environments.
+<p>The camera must have GPS turned on to position your photos. Go to preferences > Regional.</p>
 
-Beware of over stylising photos if you plan to upload the images to online services. For example, [the Google Street View policy states](https://support.google.com/contributionpolicy/answer/7411351):
+<p><strong>Turn GPS to On.</strong></p>
 
-> Stylistic adjustments (such as applied filters) are acceptable, provided that these stylistic changes are minimal and are not appended elements such as borders, text, collaged images, etc.
+<p>You can now select video mode.</p>
 
-# Video Mode
+<p><strong>Press the mode button until Video is shown.</strong></p>
 
-### Required Settings
+<p>The GoPro MAX’s video mode has a number of settings.</p>
 
-The camera must have GPS turned on to position your photos. Go to preferences > Regional.
+<p><strong>Click the pill to modify them;</strong></p>
 
-**Turn GPS to On.**
+<p>Now set the following;</p>
 
-You can now select video mode.
+<p><strong>Select 5.6k resolution</strong></p>
 
-**Press the mode button until Video is shown.**
+<p><strong>Select 24 FPS.</strong></p>
 
-The GoPro MAX’s video mode has a number of settings.
+<p>You can also select between single lens HERO capture (photo icon) and 360 capture.</p>
 
-**Click the pill to modify them;**
+<p><strong>Select 360 capture mode.</strong></p>
 
-Now set the following;
+<h6 id="optional-settings">Optional Settings</h6>
 
-**Select 5.6k resolution**
+<p><strong>Protune</strong></p>
 
-**Select 24 FPS.**
+<p>You can play around with the ProTune settings -- they’re particularly useful in low light settings.</p>
+<p>Usually the default settings will suffice for most environments.</p>
 
-You can also select between single lens HERO capture (photo icon) and 360 capture.
+<p>Beware of over stylising photos if you plan to upload the images to online services. For example, <a href="https://support.google.com/contributionpolicy/answer/7411351">the Google Street View policy states</a>:</p>
 
-**Select 360 capture mode.**
+<blockquote>
+<p>Stylistic adjustments (such as applied filters) are acceptable, provided that these stylistic changes are minimal and are not appended elements such as borders, text, collaged images, etc.</p>
+</blockquote>
 
-### Optional Settings
+<h4 id="next">Next</h4>
 
-#### Protune
+<p><a href="/trek-pack/v2/processing">Processing</a></p>
 
-You can play around with the ProTune settings -- they’re particularly useful in low light settings.
-
-Usually the default settings will suffice for most environments.
-
-Beware of over stylising photos if you plan to upload the images to online services. For example, [the Google Street View policy states](https://support.google.com/contributionpolicy/answer/7411351):
-
-> Stylistic adjustments (such as applied filters) are acceptable, provided that these stylistic changes are minimal and are not appended elements such as borders, text, collaged images, etc.
-
-## Next
-
-[Processing](/trek-pack/v2/processing)
+</div>
