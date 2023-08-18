@@ -1,6 +1,6 @@
 ---
-title: Trek Pack v2 Setup
-heading: Trek Pack v2 Setup
+title: Trek Pack v2 Kit Setup
+heading: Trek Pack v2 Kit Setup
 description: Setting it up, what goes where...
 image: /assets/images/pages/trek-pack/v2/trek-pack-v2-emptied.jpg
 layout: page
@@ -8,11 +8,11 @@ layout: page
 
 <div class="text-container">
 
-<h4 id="kit-setup">Kit Setup</h4>
+<h4>Kit Setup</h4>
 
-<h5 id="the-camera">The Camera</h5>
+<h5>The Camera</h5>
 
-<h6 id="basics">Basics</h6>
+<h6>Basics</h6>
 
 <p>Back (lens cap off)</p>
 
@@ -46,17 +46,17 @@ layout: page
 
 <p><img class="img-fluid" src="/assets/images/pages/trek-pack/v2/kit-top-of-camera.jpeg" alt="Top of camera" title="Top of camera"></p>
 
-<h6 id="setting-correct-time">Setting correct time</h6>
+<h6>Setting correct time</h6>
 
 <p>It is important that the camera time matches the local time. Using the GoPro app you can configure this under the camera setting by clicking “Set Date and Time” or by connecting the camera to your phone via the GoPro mobile app.</p>
 
-<h6 id="setting-correct-time">Turning on "Beeps"</h6>
+<h6>Turning on "Beeps"</h6>
 
 <p>You can turn on sound (beep) to indicate key actions on the camera (when a capture is started or stopped, the camera is turned on or off, etc.).</p>
 
 <p>This is a particularly useful setting with the camera mounted on your pack (especially when the battery runs out)  -- so you don’t continue trekking, to realise the camera has stopped shooting.</p>
 
-<h6 id="limitations">Limitations</h6>
+<h6>Limitations</h6>
 
 <p><strong>Weather</strong></p>
 
@@ -94,9 +94,9 @@ layout: page
 
 <p><img class="img-fluid" src="/assets/images/pages/trek-pack/v2/kit-battery-side.jpeg" alt="GoPro extended Battery kit" title="GoPro extended Battery kit"></p>
 
-<h5 id="pack-options">Pack options</h5>
+<h5>Pack options</h5>
 
-<h6 id="back-pack-mount">Back Pack Mount</h6>
+<h6>Back Pack Mount</h6>
 
 <p>For this I use a GoPro Seeker pack and set it up as follows....</p>
 
@@ -120,7 +120,7 @@ layout: page
 <li>Keep the camera door clear: It is a good idea to keep the GoPro mount screw on the side opposite the battery and SD card door. That way you can open and close the door without removing the camera from the monopod.</li>
 </ul>
 
-<h6 id="helmet-pack-mount">Helmet Pack Mount</h6>
+<h6>Helmet Pack Mount</h6>
 
 <p>I use a curved GoPro mount attached to the helmet using 3M Adhesive Pad (many on Amazon if needed).</p>
 
@@ -132,7 +132,7 @@ layout: page
 
 <p><img class="img-fluid" src="/assets/images/pages/trek-pack/v2/helmet-side.jpeg" alt="Helmet mount" title="Helmet mount"></p>
 
-<h6 id="dive-mount">Dive mount</h6>
+<h6>Dive mount</h6>
 
 <p><strong>Setting up the Underwater Pack</strong></p>
 
@@ -199,7 +199,7 @@ layout: page
 
 <p>These cases can be picked up on eBay and Amazon fairly cheaply.</p>
 
-<h4 id="next">Next</h4>
+<h4>Next</h4>
 
 <p><a href="/trek-pack/v2/shooting">Shooting</a></p>
 

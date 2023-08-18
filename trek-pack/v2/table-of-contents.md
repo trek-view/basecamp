@@ -8,21 +8,21 @@ layout: page
 
 <div class="text-container">
 
-<h4 id="gopro-max-version">GoPro MAX Version</h4>
+<h4>GoPro MAX Version</h4>
 
 <p><strong>Version 2.0 (last updated: July 2020)</strong></p>
 
 <p>A backpack mounted 360-degree camera system designed to capture stunning 360-degree Street View tours in all terrains.</p>
 
-<p><img class="img-fluid" src="/assets/images/pages/trek-pack/v2/contents-trek-pack-mounted-front.jpeg" alt="Trek Pack mounted" title="Trek Pack mounted" /></p>
+<p><img class="img-fluid" src="/assets/images/pages/trek-pack/v2/contents-trek-pack-mounted-front.jpeg" alt="Trek Pack mounted" title="Trek Pack mounted"></p>
 
-<p><img class="img-fluid" src="/assets/images/pages/trek-pack/v2/contents-trek-pack-mounted-back.jpeg" alt="Trek Pack mounted" title="Trek Pack mounted" /></p>
+<p><img class="img-fluid" src="/assets/images/pages/trek-pack/v2/contents-trek-pack-mounted-back.jpeg" alt="Trek Pack mounted" title="Trek Pack mounted"></p>
 
-<p><img class="img-fluid" src="/assets/images/pages/trek-pack/v2/contents-trek-pack-camera-front.jpeg" alt="Trek Pack Camera" title="Trek Pack Camera" /></p>
+<p><img class="img-fluid" src="/assets/images/pages/trek-pack/v2/contents-trek-pack-camera-front.jpeg" alt="Trek Pack Camera" title="Trek Pack Camera"></p>
 
-<p><img class="img-fluid" src="/assets/images/pages/trek-pack/v2/contents-trek-pack-camera-back.jpeg" alt="Trek Pack Camera" title="Trek Pack Camera" /></p>
+<p><img class="img-fluid" src="/assets/images/pages/trek-pack/v2/contents-trek-pack-camera-back.jpeg" alt="Trek Pack Camera" title="Trek Pack Camera"></p>
 
-<h4 id="a-quick-hello">A Quick Hello</h4>
+<h4>A Quick Hello</h4>
 
 <p>Hello, Trekker!</p>
 
@@ -32,7 +32,7 @@ layout: page
 
 <p>I can't wait to see your images.</p>
 
-<h4 id="about-the-v2-packs">About the v2 Packs</h4>
+<h4>About the v2 Packs</h4>
 
 <p>Some of you will have already seen our <a href="/trek-pack/v1/">Trek Pack v1</a>. A few of you reading this probably own one too.</p>
 
@@ -46,7 +46,7 @@ layout: page
 
 <p>We hope you like them...</p>
 
-<h4 id="browse-the-instructions">Browse the instructions</h4>
+<h4>Browse the instructions</h4>
 
 <ul>
 <li><a href="/trek-pack/v2/kit-setup">Kit Setup</a></li>

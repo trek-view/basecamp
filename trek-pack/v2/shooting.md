@@ -8,7 +8,7 @@ layout: page
 
 <div class="text-container">
 
-<h4 id="before-you-leave-the-house">Before You Leave the House</h4>
+<h4>Before You Leave the House</h4>
 
 <p>This part is written from bitter experience -- turning up, excited to start filming, and realising I’ve forgotten something.</p>
 
@@ -25,7 +25,7 @@ layout: page
 
 <p>You should also consider safety. Have you got the right gear for the environment? Are you prepared for changes in the weather? Are you going out with a friend? Does someone at home know your plans? Have you packed water and food?</p>
 
-<h4 id="capturing-a-sequence">Capturing a Sequence</h4>
+<h4>Capturing a Sequence</h4>
 
 <ul>
 <li>Make sure to remove the lens caps on the camera before shooting</li>
@@ -36,7 +36,7 @@ layout: page
 <li>Above all, enjoy the outdoors!</li>
 </ul>
 
-<h5 id="timelapse-mode">Timelapse Mode</h5>
+<h5>Timelapse Mode</h5>
 
 <p>Required Settings</p>
 
@@ -56,7 +56,7 @@ layout: page
 
 <p><strong>Select 360 capture mode.</strong></p>
 
-<h6 id="optional-settings">Optional Settings</h6>
+<h6>Optional Settings</h6>
 
 <p><strong>Photo interval</strong></p>
 
@@ -91,7 +91,7 @@ layout: page
 
 <p>Generally it’s better to capture at a higher setting (you can always remove unnecessary photos later) -- the trade-off is battery. More photos = the faster the battery drains.</p>
 
-<h6 id="protune">Protune</h6>
+<h6>Protune</h6>
 
 <p>You can play around with the ProTune settings -- they’re particularly useful in low light settings.</p>
 <p>Usually the default settings will suffice for most environments.</p>
@@ -102,9 +102,9 @@ layout: page
 <p>Stylistic adjustments (such as applied filters) are acceptable, provided that these stylistic changes are minimal and are not appended elements such as borders, text, collaged images, etc.</p>
 </blockquote>
 
-<h5 id="video-mode">Video Mode</h5>
+<h5>Video Mode</h5>
 
-<h6 id="required-settings">Required Settings</h6>
+<h6>Required Settings</h6>
 
 <p>The camera must have GPS turned on to position your photos. Go to preferences > Regional.</p>
 
@@ -128,7 +128,7 @@ layout: page
 
 <p><strong>Select 360 capture mode.</strong></p>
 
-<h6 id="optional-settings">Optional Settings</h6>
+<h6>Optional Settings</h6>
 
 <p><strong>Protune</strong></p>
 
@@ -141,7 +141,7 @@ layout: page
 <p>Stylistic adjustments (such as applied filters) are acceptable, provided that these stylistic changes are minimal and are not appended elements such as borders, text, collaged images, etc.</p>
 </blockquote>
 
-<h4 id="next">Next</h4>
+<h4>Next</h4>
 
 <p><a href="/trek-pack/v2/processing">Processing</a></p>
 

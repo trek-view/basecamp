@@ -8,15 +8,15 @@ layout: page
 
 <div class="text-container">
 
-<h4 id="processing">Processing</h4>
+<h4>Processing</h4>
 
-<h5 id="backup-files-from-the-sd-card">Backup files from the SD Card</h5>
+<h5>Backup files from the SD Card</h5>
 
 <p>Make sure to keep make a copy of the videos / images on the microSD card before you start processing/modifying them. You might need them again later.</p>
 
-<h5 id="timelapse-mode">Timelapse Mode</h5>
+<h5>Timelapse Mode</h5>
 
-<h6 id="processing-your-photos">Processing Your Photos</h6>
+<h6>Processing Your Photos</h6>
 
 <p>After shooting, copy the files for each segment of the tour onto your computer using the MicroSD USB card reader.</p>
 
@@ -38,9 +38,9 @@ layout: page
 
 <p>This can be useful information to know when organising tours. For example, you might shoot sequences over multiple shoots. In such cases, knowing the filename behaviour might help you organise them.</p>
 
-<h5 id="video-mode">Video Mode</h5>
+<h5>Video Mode</h5>
 
-<h6 id="processing-your-videos">Processing Your Videos</h6>
+<h6>Processing Your Videos</h6>
 
 <p><strong>1. Download GoPro Player</strong></p>
 
@@ -102,7 +102,7 @@ layout: page
 
 <p>When complete, you'll have an <code>.mp4</code> file in the output directory specified (shown and configurable in bottom menu of app).</p>
 
-<h4 id="end">End</h4>
+<h4>End</h4>
 
 <p>This completes the guide to the Trek Pack v2.</p>
 
