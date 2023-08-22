@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-04-10/google-earth-project-annotate-feature-meta
 featured_image: /assets/images/blog/2020-04-10/google-earth-project-annotate-feature.png
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/google-earth-projects-quick-start-guide
 ---
 
 **Create customised maps and stories about places anywhere in the world.**

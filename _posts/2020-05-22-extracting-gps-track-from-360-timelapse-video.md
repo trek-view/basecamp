@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-05-22/google-kml-docs-meta.jpg
 featured_image: /assets/images/blog/2020-05-22/google-kml-docs-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/extracting-gps-track-from-360-timelapse-video
 ---
 
 **Here's how to use the GPS points inside your 360 timelapses or videos with tools like Strava and Google Earth.**

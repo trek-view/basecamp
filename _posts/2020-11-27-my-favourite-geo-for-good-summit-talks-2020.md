@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-11-27/geo-for-good-conference-meta.jpg
 featured_image: /assets/images/blog/2020-11-27/geo-for-good-conference-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/my-favourite-geo-for-good-summit-talks-2020
 ---
 
 **Using mapping tools for a positive impact in the world including; Seascapes, PlusCodes, Reforestation, Migrant Settlements, and Map Lessons.**

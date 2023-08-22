@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-08-21/osm-id-editor-meta.jpg
 featured_image: /assets/images/blog/2020-08-21/osm-id-editor-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/using-street-level-imagery-to-improve-the-map
 ---
 
 **Some useful tools to help you make additions or modifications to OpenStreetMap using Mapillary images.**

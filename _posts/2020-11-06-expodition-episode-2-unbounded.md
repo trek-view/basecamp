@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-11-06/expodition-episode-2-unbounded-meta.jpg
 featured_image: /assets/images/blog/2020-11-06/expodition-episode-2-unbounded-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/expodition-episode-2-unbounded
 ---
 
 **A young, unaided crew of four as they hike and pack-raft for four months into the infinite region known as Patagonia.**

@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-03-13/horizon-coords-meta.jpg
 featured_image: /assets/images/blog/2020-03-13/horizon-coords-sm.png
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/what-is-a-nadir
 ---
 
 **In short, directly below, and directly above, respectively.**

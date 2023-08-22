@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-05-08/exif-tool-command-line-mp4-meta.jpg
 featured_image: /assets/images/blog/2020-05-08/exif-tool-command-line-mp4-sm.png
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd
 ---
 
 **With the help of a 360 video shot using a GoPro Fusion, I take a look at GoPro's GPMF video telemetry standard.**

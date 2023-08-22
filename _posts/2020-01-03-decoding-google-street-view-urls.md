@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-01-03/google-street-view-url-meta.jpg
 featured_image: /assets/images/blog/2020-01-03/google-street-view-url-sm.png
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/decoding-google-street-view-urls
 ---
 
 **Analysing the structure of Street View URL's to better understand exposed functionality.**

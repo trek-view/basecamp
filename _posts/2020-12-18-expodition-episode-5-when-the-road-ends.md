@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-12-18/expodition-episode-5-when-the-road-ends-vi
 featured_image: /assets/images/blog/2020-12-18/expodition-episode-5-when-the-road-ends-video-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/expodition-episode-5-when-the-road-ends
 ---
 
 **The story of one mans journey from Central to South America on the Pacific on a raft, powered by a motorcycle.**

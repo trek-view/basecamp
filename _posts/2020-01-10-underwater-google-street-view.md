@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-01-10/street-view-underwater-meta.jpg
 featured_image: /assets/images/blog/2020-01-10/street-view-underwater-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/underwater-google-street-view
 ---
 
 **The challenges we've faced and resulting solutions when capturing underwater 360-degree tours.**

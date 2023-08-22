@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-09-11/lidar-point-cloud-meta.jpg
 featured_image: /assets/images/blog/2020-09-11/lidar-point-cloud-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/lidar-photogrammetry-101
 ---
 
 **How Google Maps make their satellite imagery look three-dimensional.**

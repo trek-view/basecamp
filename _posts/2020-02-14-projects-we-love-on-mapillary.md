@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-02-14/field-research-in-norway-mapillary-meta.jp
 featured_image: /assets/images/blog/2020-02-14/field-research-in-norway-mapillary-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/projects-we-love-on-mapillary
 ---
 
 **We recently discovered Mapillary (yes, we're late) and wanted to share some the great things we've discovered on the platform.**

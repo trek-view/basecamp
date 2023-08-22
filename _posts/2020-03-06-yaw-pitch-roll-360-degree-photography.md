@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-03-06/aircraft-flight-dynamics-meta.jpg
 featured_image: /assets/images/blog/2020-03-06/aircraft-flight-dynamics-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/yaw-pitch-roll-360-degree-photography
 ---
 
 **Three spatial concepts that are important to understand in 360 photography.**

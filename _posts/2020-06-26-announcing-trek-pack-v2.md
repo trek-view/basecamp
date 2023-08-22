@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-06-26/trek-pack-v2-meta.jpg
 featured_image: /assets/images/blog/2020-06-26/trek-pack-v2-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/announcing-trek-pack-v2
 ---
 
 **Over the Winter we've been experimenting with new cameras for an updated version of our Trek Pack.**

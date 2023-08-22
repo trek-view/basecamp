@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-06-19/gimp-create-nadir-meta.jpg
 featured_image: /assets/images/blog/2020-06-19/gimp-create-nadir-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/adding-a-custom-nadir-to-360-video-photo
 ---
 
 **Branding your public images can be a great way to promote your 360 work. A custom nadir is perfect for this.**

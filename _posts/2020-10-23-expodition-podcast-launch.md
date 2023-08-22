@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-10-23/expodition-episode-1-yukon-assignment-meta
 featured_image: /assets/images/blog/2020-10-23/expodition-episode-1-yukon-assignment-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/expodition-podcast-launch
 ---
 
 **Climb. Ski. Hike. Bike. Paddle. Run. Travel. Stories from 'everyday people' who have embarked on amazing adventures.**

@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-01-24/bidibidi-openstreetmap-meta.jpg
 featured_image: /assets/images/blog/2020-01-24/bidibidi-openstreetmap-sm.png
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/mapping-the-unmapped-using-360-degree-photos
 ---
 
 **In emergency settings it is extremely important to have information on the location of people and infrastructure.**

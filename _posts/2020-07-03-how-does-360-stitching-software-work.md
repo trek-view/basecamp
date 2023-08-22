@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-07-03/hugin-screenshot-meta.jpg
 featured_image: /assets/images/blog/2020-07-03/hugin-screenshot-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/how-does-360-stitching-software-work
 ---
 
 **An ELI5 description of how software takes 2 or more photos to create a 360 image.**

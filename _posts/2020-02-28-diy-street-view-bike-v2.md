@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-02-28/360-degree-street-view-helmet-cam-meta.jpg
 featured_image: /assets/images/blog/2020-02-28/360-degree-street-view-helmet-cam-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/diy-street-view-bike-v2
 ---
 
 **The second iteration of my Street View bike, this time designed for downhill trails.**

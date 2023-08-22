@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-05-15/google-street-view-documentation-meta.jpg
 featured_image: /assets/images/blog/2020-05-15/google-street-view-documentation-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/street-view-publish-api-quick-start-guide
 ---
 
 **All third-party Street View tools are built around the Google Street View Publish API. Here's a closer look at how it works for uploading short sequences.**

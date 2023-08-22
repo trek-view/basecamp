@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-08-28/digital-elevation-model-meta.png
 featured_image: /assets/images/blog/2020-08-28/digital-elevation-model-sm.png
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/what-is-a-digital-elevation-model
 ---
 
 **A Digital Elevation Model (DEM) is a 3D computer graphics representation of elevation data to represent terrain.**

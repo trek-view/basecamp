@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-06-05/rolling-shutter-global-shutter-photo-compa
 featured_image: /assets/images/blog/2020-06-05/rolling-shutter-global-shutter-photo-comparison.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/what-is-global-shutter-rolling-shutter-360-cameras
 ---
 
 **Why does it matter? And do you need one for 360 tour photography?**

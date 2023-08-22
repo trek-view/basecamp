@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-10-02/google-street-view-coverage-sept-2020-meta
 featured_image: /assets/images/blog/2020-10-02/google-street-view-coverage-sept-2020-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/google-street-view-microsoft-bing-maps-facebook-mapillary-apple-look-around
 ---
 
 **How do the major street-level mapping products compare?**

@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-11-20/expodition-episode-3-sea-gypsies-meta.jpg
 featured_image: /assets/images/blog/2020-11-20/expodition-episode-3-sea-gypsies-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/expodition-episode-3-sea-gypsies
 ---
 
 **A crew of 16 left New Zealand on an 8,000 mile pacific crossing to Patagonia, with a stop in Antarctica.**

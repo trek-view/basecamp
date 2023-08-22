@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-12-04/expodition-episode-4-dugout-meta.jpg
 featured_image: /assets/images/blog/2020-12-04/expodition-episode-4-dugout-meta.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/expodition-episode-4-dugout
 ---
 
 **A journey through the Ecuadorian rainforest in a self-made dugout canoe.**

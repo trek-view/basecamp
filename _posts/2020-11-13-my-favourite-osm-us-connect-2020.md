@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-11-13/osm-us-connect-2020-meta.jpg
 featured_image: /assets/images/blog/2020-11-13/osm-us-connect-2020-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/my-favourite-osm-us-connect-2020
 ---
 
 **Street art, 3D maps, reinventing the wheel, and saving cyclists. All available to watch now.**

@@ -1,6 +1,6 @@
 ---
 date: 2019-06-14
-title: "DIY Google Street View (1/5): How I (Trek View) Started Capturing 360-Degree Tours"
+title: "DIY Google Street View (1/5): How I Started Capturing 360-Degree Tours"
 description: "How I built the original Trek View Trek Pack, then used it to shoot, process, and publish 360-degree photo tours to Google Street View."
 categories: guides
 tags: [Trek Pack, Google, Street View, GoPro, Fusion, Fusion Studio, Anker, PowerCore]

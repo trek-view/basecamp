@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-09-18/mapillary-object-detections-meta.jpg
 featured_image: /assets/images/blog/2020-09-18/mapillary-api-object-detections.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/playing-with-mapillary-api
 ---
 
 **A quick look at some of the API queries we've used against the Mapillary API.**

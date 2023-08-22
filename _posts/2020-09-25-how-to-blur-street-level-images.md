@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-09-25/google-street-view-blur-meta.jpg
 featured_image: /assets/images/blog/2020-09-25/google-street-view-blur-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/how-to-blur-street-level-images
 ---
 
 **If you see that your face or license plate requires additional blurring after being captured by a camera car, here's how you can do it.**

@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-04-24/google-street-view-terms-and-conditions-me
 featured_image: /assets/images/blog/2020-04-24/google-street-view-terms-and-conditions-sm.png
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/image-copyright-and-publishing-your-photos-to-google-street-view
 ---
 
 **A deeper look into Google's Terms of Service, and what it means for imagery you've contributed to Google Street View.**

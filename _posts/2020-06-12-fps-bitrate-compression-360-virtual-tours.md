@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-06-12/bit-rate-and-file-size-meta.jpg
 featured_image: /assets/images/blog/2020-06-12/bit-rate-and-file-size.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/fps-bitrate-compression-360-virtual-tours
 ---
 
 **The image quality of video frames can vary significantly between two cameras offering the same resolution, but why?**

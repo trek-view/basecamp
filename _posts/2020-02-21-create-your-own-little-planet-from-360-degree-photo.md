@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-02-21/trek-view-little-planet-gimp-demo-meta.jpg
 featured_image: /assets/images/blog/2020-02-21/trek-view-little-planet-gimp-demo-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/create-your-own-little-planet-from-360-degree-photo
 ---
 
 **urn your 360-degree photos into eye-catching miniature planets.**

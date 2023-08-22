@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-07-31/sotm2020-meta.jpg
 featured_image: /assets/images/blog/2020-07-31/sotm2020-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/state-of-the-map-2020
 ---
 
 **360 cameras, 3D models, aerial imagery, drones, and privacy.**

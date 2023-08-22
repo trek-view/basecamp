@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-01-17/tourer-connection-heading-calculation-meta
 featured_image: /assets/images/blog/2020-01-17/tourer-connection-heading-calculation-sm.png
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/what-direction-are-you-facing
 ---
 
 **North, South, East or, West? Calculating bearings between photos.**

@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-07-17/3dof-6dof-meta.jpg
 featured_image: /assets/images/blog/2020-07-17/3dof-6dof-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/camera-sensors-imu-accelerometer-gyroscope-magnetometer
 ---
 
 **360 Cameras are full of sensors (and not just image sensors).**

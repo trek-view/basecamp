@@ -9,6 +9,8 @@ image: /assets/images/blog/2020-05-01/apolloone-example-meta.jpg
 featured_image: /assets/images/blog/2020-05-01/apolloone-example-sm.png
 layout: post
 published: true
+redirect_from:
+  - /blog/2020/metadata-exif-xmp-360-photo-files
 ---
 
 **Every photo you take is filled with metadata. Here's why it's important for outdoor 360 street-level photography.**
