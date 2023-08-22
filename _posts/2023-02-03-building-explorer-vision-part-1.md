@@ -8,19 +8,6 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2023-01-20/trek-view-Street-View-Studio.png
 featured_image: /assets/images/blog/2023-01-20/trek-view-Street-View-Studio.png
 layout: post
-redirect_from:
-  - /blog/2019/diy-google-street-view-part-5-uploading-photos-using-your-computer
-  - /blog/2020/announcing-explorer-360-degree-tours-natural-world
-  - /blog/2020/map-the-paths-marketplace
-  - /blog/2020/map-the-paths-guidebooks
-  - /blog/2020/map-the-paths-mapillary-import
-  - /blog/2020/challenge-map-amsterdam-by-bicycle
-  - /blog/2020/map-the-paths-hall-of-fame
-  - /blog/2020/map-the-paths-desktop-uploader
-  - /blog/2021/map-the-paths-tours
-  - /blog/2021/map-the-paths-whats-new-january
-  - /blog/2021/how-map-the-paths-used-improve-accessibility
-  - /blog/2021/google-tour-creator-alternatives
 published: false
 ---
 

@@ -8,9 +8,6 @@ author_staff_member: dgreenwood
 image: /assets/images/blog/2020-06-26/trek-pack-v2-meta.jpg
 featured_image: /assets/images/blog/2020-06-26/trek-pack-v2-sm.jpg
 layout: post
-redirect_from:
-  - /blog/2020/trek-pack-pro
-  - /blog/2021/trek-pack-v2-quick-start-virtual-photography
 published: true
 ---
 
