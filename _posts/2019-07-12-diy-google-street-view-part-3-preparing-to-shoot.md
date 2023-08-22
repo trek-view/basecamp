@@ -53,7 +53,7 @@ It is important each photo is tagged with GPS co-ordinates so that it can be cor
 
 Fortunately the GoPro Fusion will add GPS co-ordinates to the front facing photos it captures (GF) if GPS mode is turned on. These co-ordinates are then stitched into the resulting 360-degree photo file by GoPro Fusion Studio in post-processing.
 
-To learn how to enable settings, [read the GoPro Fusion manual here](/assets/content/2019-07-12/Fusion_UM_ENG_REVC.pdf).
+To learn how to enable settings, [read the GoPro Fusion manual here](https://drive.google.com/file/d/1mW7s9HdNWRadRdNIGzykIPH6qGRMrZCV/view?usp=drive_link).
 
 When on site you can see of the camera is locked on to GPS on by ensuring the pin icon is a solid black colour (as shown in the photo above).
 
