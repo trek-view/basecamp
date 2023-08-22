@@ -7,8 +7,10 @@ Jekyll pages site for https://www.trekview.org
 Clone the repo:
 
 ```shell
-git clone https://github.com/trek-view/basecamp`
+git clone https://github.com/trek-view/basecamp
 cd basecamp
+rbenv install 2.7.7
+rbenv local 2.7.7
 bundle install
 bundle exec jekyll serve
 ```

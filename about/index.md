@@ -13,6 +13,10 @@ redirect_from:
   - /blog/2019/make-it-visual
   - /blog/2019/whats-in-your-trek-pack
   - /blog/2019/year-in-review
+  - /blog/2019/call-for-trekkers-summer-autumn
+  - /blog/2020/export-your-photos-from-google-street-view
+  - /blog/2020/preparing-for-an-image-mapping-party
+  - /blog/2020/build-virtual-expeditions-for-your-class
   - /blog/2020/pano-party-new-forest-uk-may-23-2020
   - /blog/2020/treehouse-academy-emergency-timetable
   - /blog/2020/virtual-tours-guided-by-local-experts
