@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-12-17/GB089220_GF089220-merge-meta.jpg
 featured_image: /assets/images/blog/2021-12-17/GB089220_GF089220-merge-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/gopro-fusion-fisheye-stitching-part-1
 ---
 
 **A deeper look into GoPro Fusion fish-eye images (with the aim of reducing our reliance on GoPro’s software).**

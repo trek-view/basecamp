@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-05-21/road-surface-classification-meta.jpg
 featured_image: /assets/images/blog/2021-05-21/road-surface-classification-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/trek-view-ride-quality-index-computer-vision-part-1
 ---
 
 **Using the imagery captured by the Data Bike to measure cycle path surface quality.**

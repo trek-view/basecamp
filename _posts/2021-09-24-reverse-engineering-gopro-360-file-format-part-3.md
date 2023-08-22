@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-09-24/gopro-cubemap-meta.jpg
 featured_image: /assets/images/blog/2021-09-24/gopro-cubemap-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/reverse-engineering-gopro-360-file-format-part-3
 ---
 
 **I continue taking apart a .360 file, and trying to rebuild it with a equirectangular projection (without GoPro software).**

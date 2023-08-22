@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-01-01/expodition-episode-6-break-free-meta.jpg
 featured_image: /assets/images/blog/2021-01-01/expodition-episode-6-break-free-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/expodition-episode-6-break-free
 ---
 
 **Two totally different characters, jammed together in two square metres of space for almost two years as they travel across Africa.**

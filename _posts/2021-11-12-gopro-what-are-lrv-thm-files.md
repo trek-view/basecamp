@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-11-12/gopro-360-thm-lrv-files.png
 featured_image: /assets/images/blog/2021-11-12/gopro-360-thm-lrv-files-sm.png
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/gopro-what-are-lrv-thm-files
 ---
 
 **An explanation of the LRV, THM and WAV files that are generated when you shoot GoPro videos.**

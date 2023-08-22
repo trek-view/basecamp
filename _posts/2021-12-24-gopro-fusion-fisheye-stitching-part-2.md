@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-12-24/GF064364-photoshop-guides.png
 featured_image: /assets/images/blog/2021-12-24/GF064364-photoshop-guides-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/gopro-fusion-fisheye-stitching-part-2
 ---
 
 **Understanding the Fusion's fisheye projections with the aim of turning them into a single equirectangular image.**

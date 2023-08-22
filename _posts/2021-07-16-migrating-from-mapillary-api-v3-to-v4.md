@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-07-16/mapillary-js-docs-meta.jpg
 featured_image: /assets/images/blog/2021-07-16/mapillary-js-docs-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/migrating-from-mapillary-api-v3-to-v4
 ---
 
 **The Mapillary v3 API is being shutdown on August 18. Here's a summary of the updates we'll need to make to our software as a result.**

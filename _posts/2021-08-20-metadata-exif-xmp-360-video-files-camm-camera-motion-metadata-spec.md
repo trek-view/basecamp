@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-08-20/camm-acceleration-velocity-meta.jpg
 featured_image: /assets/images/blog/2021-08-20/camm-acceleration-velocity-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/metadata-exif-xmp-360-video-files-camm-camera-motion-metadata-spec
 ---
 
 **With the help of a 360 video shot using an Insta360 Pro2, I take a look at Google's CAMM video telemetry standard.**

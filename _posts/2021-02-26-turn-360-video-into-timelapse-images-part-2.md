@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-02-26/image-metadata-exiftool-meta.jpg
 featured_image: /assets/images/blog/2021-02-26/image-metadata-exiftool-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/turn-360-video-into-timelapse-images-part-2
 ---
 
 **In the second part of this post I will show you how to add metadata to images previously extracted from frames.**

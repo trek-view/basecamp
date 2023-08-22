@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-04-09/AQS-map-Farnborough-Airport-Loop-2021-03-1
 featured_image: /assets/images/blog/2021-04-09/AQS-map-Farnborough-Airport-Loop-2021-03-14-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/measuring-air-quality-portable-part-2
 ---
 
 **Our initial thoughts after testing the AtmoTube Pro.**

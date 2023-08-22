@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-08-27/prime-meridian-meta.jpg
 featured_image: /assets/images/blog/2021-08-27/prime-meridian-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/reading-decimal-gps-coordinates-like-a-computer
 ---
 
 **We are often reliant on GPS co-ordinates being delivered to our devices for locating places. With a little practice it's not hard to read a decimal latitude and longitude value to determine a rough position.**

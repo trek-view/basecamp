@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-07-23/kartaview-index-map-meta.jpg
 featured_image: /assets/images/blog/2021-07-23/kartaview-index-map-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/getting-started-with-kartaview
 ---
 
 **Formerly named OpenStreetView and then OpenStreetCam, KartaView is a completely open-source street-level image platform.**

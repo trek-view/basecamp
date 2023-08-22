@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-02-19/360-video-to-image-meta.jpg
 featured_image: /assets/images/blog/2021-02-19/360-video-to-image-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/turn-360-video-into-timelapse-images-part-1
 ---
 
 **In the first part of this post I will show you how to turn a video into a series of images for more flexible editing options.**

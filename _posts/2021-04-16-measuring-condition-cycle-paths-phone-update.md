@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-04-16/physics-toolbox-sensor-suite-pro-meta.jpeg
 featured_image: /assets/images/blog/2021-04-16/physics-toolbox-sensor-suite-pro-sm.jpeg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/measuring-condition-cycle-paths-phone-update
 ---
 
 **Two consumer apps that can measure sensor data on your phone to record ride quality.**

@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-06-18/jim-david-bath-to-bristol-tunnel-sm.png
 featured_image: /assets/images/blog/2021-06-18/jim-david-bath-to-bristol-tunnel-sm.png
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/gps-collecting-underground-tunnel-360-imagery
 ---
 
 **How to keep track of your position when your line-of-sight to the sky is impeded.**

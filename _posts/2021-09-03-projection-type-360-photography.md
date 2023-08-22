@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-09-03/globe-cubemap-projection-meta.jpg
 featured_image: /assets/images/blog/2021-09-03/globe-cubemap-projection-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/projection-type-360-photography
 ---
 
 **Equirectangular, non-equalangle cubemap, equi-angular cubemap, pyramid...**

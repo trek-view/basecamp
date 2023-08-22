@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-04-23/trail-roughness-index-meta.jpg
 featured_image: /assets/images/blog/2021-04-23/trail-roughness-index-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/trek-view-ride-quality-index
 ---
 
 **We continue to build out our Data Bike and are now trying to establish a global standard to measure cycle trail quality.**

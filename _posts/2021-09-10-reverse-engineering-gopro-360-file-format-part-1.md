@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-09-10/youtube-eac-meta.jpeg
 featured_image: /assets/images/blog/2021-09-10/youtube-eac-sm.jpeg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/reverse-engineering-gopro-360-file-format-part-1
 ---
 
 **A deeper look into GoPro's proprietary .360 video format (with the aim of reducing our reliance on GoPro's software).**

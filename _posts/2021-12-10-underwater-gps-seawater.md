@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-12-10/gps-5cm-below-GSAC8564.JPG
 featured_image: /assets/images/blog/2021-12-10/gps-5cm-below-GSAC8564-sm.JPG
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/underwater-gps-seawater
 ---
 
 **A DIY science experiment to examine GPS signal loss underwater using a GoPro MAX.**

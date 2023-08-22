@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-10-22/example-nadir-percentage-of-pano-meta.jpeg
 featured_image: /assets/images/blog/2021-10-22/example-nadir-percentage-of-pano-sm.jpeg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/adding-a-custom-nadir-to-360-video-photo
 ---
 
 **Automate the process of adding a custom branded nadir to all your equirectangular photos using Python and Imagemagick.**

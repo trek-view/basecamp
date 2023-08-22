@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-02-05/gimp-transform-360-meta.jpg
 featured_image: /assets/images/blog/2021-02-05/gimp-transform-360.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/turn-360-photo-into-non-360-photo
 ---
 
 **Use GIMP to transform a 360 photo into a flat photo that looks perfect, and is easy to share.**

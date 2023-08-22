@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-10-29/sotm2021-logo-meta.jpg
 featured_image: /assets/images/blog/2021-10-29/sotm2021-logo-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/state-of-the-map-2021
 ---
 
 **3D rendering, long distance hiking trails, biking maps, building detection, Irish heritage, and photos of entrances.**

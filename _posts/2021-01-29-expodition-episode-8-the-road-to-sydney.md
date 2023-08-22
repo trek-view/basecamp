@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-01-29/expodition-road-to-sydney-meta.jpg
 featured_image: /assets/images/blog/2021-01-29/expodition-road-to-sydney-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/expodition-episode-8-the-road-to-sydney
 ---
 
 **Zac Newham embarks on a 25,000 mile ride from his home in Ifield, England to Sydney, Australia.**

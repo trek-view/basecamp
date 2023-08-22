@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-07-30/kartaview-api-docs-meta.jpg
 featured_image: /assets/images/blog/2021-07-30/kartaview-api-docs-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/playing-with-kartaview-api
 ---
 
 **Here are my notes about the KartaView API from my research planning an integration.**

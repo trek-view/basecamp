@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-07-09/photosequence-google-street-view-api-meta.
 featured_image: /assets/images/blog/2021-07-09/photosequence-google-street-view-api-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/upload-video-street-view-publish-api
 ---
 
 **All third-party Street View tools are built around the Google Street View Publish API. Here's a closer look at how it works for uploading long sequences.**

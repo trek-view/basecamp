@@ -37,6 +37,8 @@ redirect_from:
   - /blog/2021/google-tour-creator-alternatives
   - /blog/2020/trek-pack-pro
   - /blog/2021/trek-pack-v2-quick-start-virtual-photography
+  - /blog/2021/using-google-street-view-app
+  - /blog/2021/software-upload-panoramas-street-view
 ---
 
 <div class="text-container">

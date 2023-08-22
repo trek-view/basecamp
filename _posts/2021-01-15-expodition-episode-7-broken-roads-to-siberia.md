@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-01-15/expodition-ep-7-broken-roads-to-siberia-me
 featured_image: /assets/images/blog/2021-01-15/expodition-ep-7-broken-roads-to-siberia-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/expodition-episode-7-broken-roads-to-siberia
 ---
 
 **A 10,000 km, one month long journey through the Russian wilderness.**

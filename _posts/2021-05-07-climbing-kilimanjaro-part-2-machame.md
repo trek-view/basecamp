@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-05-07/machame-route-kilimanjaro-guidebook-meta.j
 featured_image: /assets/images/blog/2021-05-07/machame-route-kilimanjaro-guidebook-sm.jpeg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/climbing-kilimanjaro-part-2-machame
 ---
 
 **The second most popular route on Mount Kilimanjaro can now be hiked from home.**

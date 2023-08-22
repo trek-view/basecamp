@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-10-01/gopro-eac-output-equirectangular-meta.jpg
 featured_image: /assets/images/blog/2021-10-01/gopro-eac-output-equirectangular-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/reverse-engineering-gopro-360-file-format-part-4
 ---
 
 **In the final part of this series, I convert a GoPro EAC projected frame into an equirectangular projection to be displayed in other software.**

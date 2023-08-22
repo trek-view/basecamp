@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-05-14/rongai-route-kilimanjaro-guidebook-meta.jp
 featured_image: /assets/images/blog/2021-05-14/rongai-route-kilimanjaro-guidebook-sm.jpeg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/climbing-kilimanjaro-part-3-rongai
 ---
 
 **Trek one of the quietest trails up Kilimanjaro from home.**

@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-07-02/uk-national-trails-meta.jpeg
 featured_image: /assets/images/blog/2021-07-02/uk-national-trails-sm.jpeg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/uk-national-trails-street-view
 ---
 
 **The network covers over 4,000km of England and Wales. With your help, we want to capture street-level images for every single one of those kilometers.**

@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-01-08/hot-logo-meta.jpg
 featured_image: /assets/images/blog/2021-01-08/hot-logo-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/my-favourite-humanitarian-openstreetmap-summit-2020-talks
 ---
 
 **Mapping projects to improve disaster and development outcomes, including; Trashsites, Land Rights and Resources, Wildfires and Cycling.**

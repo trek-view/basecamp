@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-04-02/uk-air-quality-meta.jpg
 featured_image: /assets/images/blog/2021-04-02/uk-air-quality-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/measuring-air-quality-portable-part-1
 ---
 
 **Our hunt for a device that could measure air quality during adventures.**

@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-12-31/fish2sphere220b.jpeg
 featured_image: /assets/images/blog/2021-12-31/fish2sphere220b-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/gopro-fusion-fisheye-stitching-part-3
 ---
 
 **Preparing to create an equirectangular projection from two GoPro Fusion fisheye images.**

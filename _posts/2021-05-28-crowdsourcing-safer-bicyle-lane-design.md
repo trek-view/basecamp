@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-05-28/map-the-paths-devonshire-tunnel-meta.jpg
 featured_image: /assets/images/blog/2021-05-28/map-the-paths-devonshire-tunnel-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/crowdsourcing-safer-bicyle-lane-design
 ---
 
 **Time to dust off the helmet cameras and take part in some cycling capture challenges.**

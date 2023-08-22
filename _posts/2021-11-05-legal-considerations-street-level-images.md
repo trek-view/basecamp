@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-11-05/paddington-basin-meta.jpeg
 featured_image: /assets/images/blog/2021-11-05/paddington-basin-sm.jpeg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/legal-considerations-street-level-images
 ---
 
 **A general guide to the legal considerations when capturing outdoor virtual tours.**

@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-10-15/gpx-track-sample-meta.jpg
 featured_image: /assets/images/blog/2021-10-15/gpx-track-sample-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/lessons-learned-when-geotagging-photos
 ---
 
 **Exiftool is a powerful bit of software for geotagging photos, understanding how the process works will save you a few headaches.**

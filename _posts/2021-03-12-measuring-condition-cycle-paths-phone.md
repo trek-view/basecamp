@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-03-12/dmampo-data-bike-trail-quality-2019-meta.j
 featured_image: /assets/images/blog/2021-03-12/dmampo-data-bike-trail-quality-2019-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/measuring-condition-cycle-paths-phone
 ---
 
 **Use the rRuf mobile app on your bicycle to measure the ride quality.**

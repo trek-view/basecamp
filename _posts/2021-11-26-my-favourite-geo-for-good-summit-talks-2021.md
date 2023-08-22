@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-11-26/google-geo-for-good-2021-meta.jpg
 featured_image: /assets/images/blog/2021-11-26/google-geo-for-good-2021.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/my-favourite-geo-for-good-summit-talks-2021
 ---
 
 **Using mapping tools for a positive impact in the world including; forest data, accessibility, wildfires, and augmented reality.**

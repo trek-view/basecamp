@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-10-08/velocity-x-y-meta.jpg
 featured_image: /assets/images/blog/2021-10-08/velocity-x-y-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/calculating-velocity-between-two-sequence-photos
 ---
 
 **Speed = distance / time. But what about speed along the x (east, west), y (north, south), z (altitude) axes?**

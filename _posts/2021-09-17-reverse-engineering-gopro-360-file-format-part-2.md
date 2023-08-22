@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-09-17/img-track0-5-grid-marked.jpg
 featured_image: /assets/images/blog/2021-09-17/img-track0-5-grid-marked-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/reverse-engineering-gopro-360-file-format-part-2
 ---
 
 **Taking apart a .360 file to reveal its contents to try and understand how it can be processed (without GoPro software).**

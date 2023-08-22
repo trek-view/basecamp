@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-11-19/gopro-studio-bulk-exporter-meta.jpg
 featured_image: /assets/images/blog/2021-11-19/gopro-studio-bulk-exporter-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/using-gopro-studio-process-360-files
 ---
 
 **Once you've shot a video on the MAX, you will need to process it using GoPro Studio. Here are our recommended settings.**

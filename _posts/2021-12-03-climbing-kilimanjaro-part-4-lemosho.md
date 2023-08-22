@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-12-03/lemosho-route-meta.jpeg
 featured_image: /assets/images/blog/2021-12-03/lemosho-route-sm.jpeg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/climbing-kilimanjaro-part-4-lemosho
 ---
 
 **Trek the entire Western face of Kilimanjaro from home.**

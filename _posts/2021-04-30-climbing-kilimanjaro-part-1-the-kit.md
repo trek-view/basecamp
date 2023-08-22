@@ -9,6 +9,8 @@ image: /assets/images/blog/2021-04-30/kilimanjaro-summit-little-planet-meta.jpeg
 featured_image: /assets/images/blog/2021-04-30/kilimanjaro-summit-little-planet-sm.jpeg
 layout: post
 published: true
+redirect_from:
+  - /blog/2021/climbing-kilimanjaro-part-1-the-kit
 ---
 
 **In 2020/21 we set out to Map the Mountain. Here's an insight into our planning.**
