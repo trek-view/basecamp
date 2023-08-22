@@ -62,6 +62,8 @@ redirect_from:
 
 <p>If you're interested in the more technical side of 360 photography, <a href="/blog">I use our blog as a place to "learn in public".</a>.</p>
 
+<p>I hope you find some of the content here useful, and cannot wait to see your imagery!</p>
+
 <p>-dave</p>
 
 </div>
