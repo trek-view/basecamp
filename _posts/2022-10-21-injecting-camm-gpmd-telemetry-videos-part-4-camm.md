@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-10-21/writting-camm-6-telemetry-meta.jpg
 featured_image: /assets/images/blog/2022-10-21/writting-camm-6-telemetry-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/injecting-camm-gpmd-telemetry-videos-part-4-camm
 ---
 
 **In this post I will take what we learned in the last post and use it to write some telemetry into a video.**

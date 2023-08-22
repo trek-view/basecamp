@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-06-17/gopro-max-roll-examples-roll-front-meta.jp
 featured_image: /assets/images/blog/2022-06-17/gopro-max-roll-examples-roll-front-meta.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/roll-pitch-level-of-gopro-video-using-gpmf
 ---
 
 **A proof-of-concept to dynamically adjust for camera roll and pitch in equirectangular videos.**

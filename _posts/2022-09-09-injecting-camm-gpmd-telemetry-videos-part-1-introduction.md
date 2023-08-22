@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-09-09/gmpf-telemetry-ffprobe-meta.jpg
 featured_image: /assets/images/blog/2022-09-09/gmpf-telemetry-ffprobe-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/injecting-camm-gpmd-telemetry-videos-part-1-introduction
 ---
 
 **In this post I will explain why we, finally, have decided to figure out how to write geo-telemetry into video files created using ffmpeg.**

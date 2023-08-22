@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-04-01/gopro-telemetry-overlay.jpeg
 featured_image: /assets/images/blog/2022-04-01/gopro-telemetry-overlay-sm.jpeg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/gopro-telemetry-exporter-getting-started
 ---
 
 **A more comprehensive alternative to exiftool when working with GPMD.**

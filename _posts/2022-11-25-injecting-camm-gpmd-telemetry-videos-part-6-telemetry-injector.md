@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-11-25/telemetry-injector-meta.jpg
 featured_image: /assets/images/blog/2022-11-25/telemetry-injector-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/injecting-camm-gpmd-telemetry-videos-part-6-telemetry-injector
 ---
 
 **In this post I will show you a proof of concept that can be used to turn a series of geo-tagged images into a video with a CAMM or GPMD telemetry track.**

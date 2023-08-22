@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-04-08/GOPRO_MAX_Teardown-meta.jpg
 featured_image: /assets/images/blog/2022-04-08/GOPRO_MAX_Teardown-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/evolution-of-gopro-camera-sensors-gpmf
 ---
 
 **And the data they produce in the GPMF stream.**

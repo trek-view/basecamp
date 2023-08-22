@@ -9,6 +9,8 @@ image: /assets/images/blog/2023-03-30/courmayeur-meta.png
 featured_image: /assets/images/blog/2023-03-30/courmayeur-meta.png
 layout: post
 published: true
+redirect_from:
+  - /blog/2023/creating-360-street-level-maps-europe-ski-resorts-part-3
 ---
 
 **I look back at my imagery from this season and show how you can do the same this year.**

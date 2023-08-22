@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-09-23/mp4-root-level-boxes-meta.jpeg
 featured_image: /assets/images/blog/2022-09-23/mp4-root-level-boxes.jpeg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/injecting-camm-gpmd-telemetry-videos-part-2-mp4-overview
 ---
 
 **In this post I will introduce the structure of an mp4 file and describe how players use this structure to decode the its contents.**

@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-01-14/GPAA1088-watermark-65transp-meta.jpg
 featured_image: /assets/images/blog/2022-01-14/GPAA1088-watermark-65transp-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/adding-a-custom-watermark-to-hero-photo-video
 ---
 
 **Automate the process of adding a custom branded watermark to all your timelapse photos using Imagemagick** 

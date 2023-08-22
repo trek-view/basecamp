@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-04-22/gopro-hero5-black-time-lapse-settings-meta
 featured_image: /assets/images/blog/2022-04-22/gopro-hero5-black-time-lapse-settings-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/turn-gopro-timelapse-video-into-timelapse-images
 ---
 
 **TimeLapse video mode is perfect for creating beautiful TimeLapses, but poses some unique challenges when trying to split them into individual frames.**

@@ -9,6 +9,8 @@ image: /assets/images/blog/2023-01-06/tignes-street-level-view.png
 featured_image: /assets/images/blog/2023-01-06/tignes-street-level-view.png
 layout: post
 published: true
+redirect_from:
+  - /blog/2023/creating-360-street-level-maps-europe-ski-resorts-part-2
 ---
 
 **I look back at my imagery from last season and show how you can do the same this year.**

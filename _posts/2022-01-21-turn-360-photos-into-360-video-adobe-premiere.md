@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-01-21/adobe-premier-video.png
 featured_image: /assets/images/blog/2022-01-21/adobe-premier-video-sm.png
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/turn-360-photos-into-360-video-adobe-premiere
 ---
 
 **A less technical way to create timelapse videos with spherical metadata. No command line in sight (but you will need an Adobe Premiere subscription).**

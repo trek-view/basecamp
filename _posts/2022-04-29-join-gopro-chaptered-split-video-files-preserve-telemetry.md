@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-04-29/merge-gopro-chaptered-videos-meta.jpg
 featured_image: /assets/images/blog/2022-04-29/merge-gopro-chaptered-videos-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/join-gopro-chaptered-split-video-files-preserve-telemetry
 ---
 
 **Use ffmpeg to create full length GoPro footage which retains full GPS information.**

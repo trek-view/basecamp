@@ -9,6 +9,8 @@ image: /assets/images/blog/2023-02-03/hybrid-3d-2d-stabilization.jpeg
 featured_image: /assets/images/blog/2023-02-03/hybrid-3d-2d-stabilization.jpeg
 layout: post
 published: true
+redirect_from:
+  - /blog/2023/video-stabilisation-basic-part-1
 ---
 
 **In this post I will share my initial research into the field of video stabilisation (as a layperson).**

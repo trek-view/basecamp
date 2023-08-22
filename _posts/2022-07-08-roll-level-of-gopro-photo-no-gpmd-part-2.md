@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-07-07/roll-plus-70-meta.jpg
 featured_image: /assets/images/blog/2022-07-07/roll-plus-70-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/roll-level-of-gopro-photo-no-gpmd-part-2
 ---
 
 **Understanding the geometry of an equirectangular image and training a computer to detect the horizon.**

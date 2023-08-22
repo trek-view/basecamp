@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-07-22/strava-upload-file-meta.jpg
 featured_image: /assets/images/blog/2022-07-22/strava-upload-file-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/turn-photo-video-footage-strava-activty
 ---
 
 **Use the telemetry captured by your camera to automatically create and upload an activity to Strava.**

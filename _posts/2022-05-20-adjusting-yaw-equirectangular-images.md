@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-05-20/heading-video-map-meta.jpg
 featured_image: /assets/images/blog/2022-05-20/heading-video-map-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/adjusting-yaw-equirectangular-images
 ---
 
 **Ensure your 360 photos are loaded in 360 viewers facing the same direction as they were shot.**

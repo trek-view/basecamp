@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-11-04/gopro-gpmf-structure-meta.jpg
 featured_image: /assets/images/blog/2022-11-04/gopro-gpmf-structure-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/injecting-camm-gpmf-telemetry-videos-part-5-gpmf
 ---
 
 **In this post I will the structure of GoPro's GPMF standard, how to create a GPMF binary and accompanying metadata, and finally how to inject it into a mp4 video file.**

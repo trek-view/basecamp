@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-08-19/streetview-api-docs-meta.jpg
 featured_image: /assets/images/blog/2022-08-19/streetview-api-docs-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/debugging-uploads-google-streetview-api
 ---
 
 **Uploading videos is relatively straight forward, but here are some of the things we've learned the hard way (and you should be aware of).**

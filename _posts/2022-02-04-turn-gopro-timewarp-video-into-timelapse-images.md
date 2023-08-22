@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-02-04/gopro-timewarp-reference-meta.jpg
 featured_image: /assets/images/blog/2022-02-04/gopro-timewarp-reference-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/turn-gopro-timewarp-video-into-timelapse-images
 ---
 
 **TimeWarp videos are perfect for creating beautiful TimeLapses, but pose some unique challenges when trying to split them into individual frames.**

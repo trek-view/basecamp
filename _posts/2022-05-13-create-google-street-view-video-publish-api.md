@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-05-13/streetview-rawgpstimeline-meta.jpg
 featured_image: /assets/images/blog/2022-05-13/streetview-rawgpstimeline-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/create-google-street-view-video-publish-api
 ---
 
 **Using ffmpeg to create a video file with accompanying GPS telemetry.**

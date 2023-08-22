@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-06-03/GSAN2363-bad-yaw-meta.JPG
 featured_image: /assets/images/blog/2022-06-03/GSAN2363-bad-yaw-sm.JPG
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/calculating-heading-of-gopro-video-using-gpmf-part-2
 ---
 
 **Converting GoPro telemetry into magnetic heading values to ensure videos are shown in 360 players facing the same direction as they were shot.**

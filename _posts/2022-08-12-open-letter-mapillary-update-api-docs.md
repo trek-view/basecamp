@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-08-12/mapillary-web-api-requests-meta.jpg
 featured_image: /assets/images/blog/2022-08-12/mapillary-web-api-requests-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/open-letter-mapillary-update-api-docs
 ---
 
 **In this post I will go through some of the challenges (mainly though lack of documentation) with the v4 Mapillary API we experienced when building Explorer.**

@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-08-26/GSAA4862-meta.jpg
 featured_image: /assets/images/blog/2022-08-26/GSAA4862-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/create-thumbnail-from-equirectangular-image
 ---
 
 **In this post I will show you two approaches you can use to create thumbnails from any part of an equirectangular image.**

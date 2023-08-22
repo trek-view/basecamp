@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-12-09/sotm_2022-meta.jpg
 featured_image: /assets/images/blog/2022-12-09/sotm_2022-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/state-of-the-map-2022
 ---
 
 **Navigation for prams, GPS accuracy of cameras, pedestrian and bike infrastructure, entry-level mapping, and a 360 street-level imagery project in Belgium.**

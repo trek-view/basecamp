@@ -9,6 +9,8 @@ image: /assets/images/blog/2023-01-20/trek-view-Street-View-Studio.png
 featured_image: /assets/images/blog/2023-01-20/trek-view-Street-View-Studio.png
 layout: post
 published: true
+redirect_from:
+  - /blog/2023/google-street-view-studio-versus-mapillary-desktop-uploader
 ---
 
 **In this post I will compare how the two products stack up with the aim of using the best bits of both to build our own 360 video uploader.**

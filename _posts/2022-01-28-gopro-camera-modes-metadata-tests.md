@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-01-28/trekview-guide-test-cases.png
 featured_image: /assets/images/blog/2022-01-28/trekview-guide-test-cases-sm.png
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/gopro-camera-modes-metadata-tests
 ---
 
 **What we've learned whilst building a library of GoPro camera test cases for Explorer.**

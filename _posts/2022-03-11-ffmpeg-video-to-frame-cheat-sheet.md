@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-03-11/ffmpeg-virtual-tour-cheat-sheet-meta.jpg
 featured_image: /assets/images/blog/2022-03-11/ffmpeg-virtual-tour-cheat-sheet-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/ffmpeg-video-to-frame-cheat-sheet
 ---
 
 **A guide that shows some of the commands we use most for processing 360 virtual tour videos.**

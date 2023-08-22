@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-03-25/vallee-blanche-360-meta.JPG
 featured_image: /assets/images/blog/2022-03-25/vallee-blanche-360-sm.JPG
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/creating-360-street-level-maps-europe-ski-resorts-part-1
 ---
 
 **And a brief update on using the GoPro MAX cold weather setup.**

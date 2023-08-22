@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-02-11/gps-speed-3d-2d-haversine-meta.jpg
 featured_image: /assets/images/blog/2022-02-11/gps-speed-3d-2d-haversine.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/choosing-right-frame-extraction-rate-ffmpeg
 ---
 
 **How we optimised the process of turning a video into frames to create virtual tours in Explorer using speed as a variable.**

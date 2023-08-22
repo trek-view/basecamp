@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-04-15/dual-fisheye-fusion-meta.jpg
 featured_image: /assets/images/blog/2022-04-15/dual-fisheye-fusion-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/using-ffmpeg-process-gopro-fusion-fisheye
 ---
 
 **In our continued effort to avoid reliance on GoPro software, I look at how ffmpeg can be used to process the GoPro Fusion's Dual Fisheyes videos to a single equirectangular video.**

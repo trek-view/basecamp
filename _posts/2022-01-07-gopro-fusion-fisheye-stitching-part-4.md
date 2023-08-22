@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-01-07/front-equirectangular-blend-annotated-meta
 featured_image: /assets/images/blog/2022-01-07/front-equirectangular-blend-annotated-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/gopro-fusion-fisheye-stitching-part-4
 ---
 
 **Taking what we've learned over the last 3 weeks and putting it all together to create a script to convert 2 GoPro Fusion fisheye to one equirectangular image.**

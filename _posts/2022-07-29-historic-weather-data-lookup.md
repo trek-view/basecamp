@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-07-29/weatherstack-api-response-meta.jpg
 featured_image: /assets/images/blog/2022-07-29/weatherstack-api-response-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/historic-weather-data-lookup
 ---
 
 **In this post I will show you how to find the weather conditions at the time and location  a photo was taken.**

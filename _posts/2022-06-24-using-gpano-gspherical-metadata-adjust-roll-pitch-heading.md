@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-06-24/GSAQ3296-annotatedpose-meta.jpg
 featured_image: /assets/images/blog/2022-06-24/GSAQ3296-annotatedpose-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/using-gpano-gspherical-metadata-adjust-roll-pitch-heading
 ---
 
 **In this post I will show you how to use these tags to ensure your equirectangular images and videos are loaded correctly in viewers.**

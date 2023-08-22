@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-10-07/moov-atom-structure-meta.jpg
 featured_image: /assets/images/blog/2022-10-07/moov-atom-structure-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/injecting-camm-gpmd-telemetry-videos-part-3-mp4-structure-telemetry-trak
 ---
 
 **In this post I will focus on the structure of trak boxes in mp4 with of a focus on using them to describe video telemetry.**

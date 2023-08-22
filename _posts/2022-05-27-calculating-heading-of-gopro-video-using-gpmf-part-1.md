@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-05-27/gopro-cori-telemetry-example-meta.jpg
 featured_image: /assets/images/blog/2022-05-27/gopro-cori-telemetry-example-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/calculating-heading-of-gopro-video-using-gpmf-part-1
 ---
 
 **Understand the telemetry needed to ensure your 360 videos are loaded in 360 players facing the same direction as they were shot.**

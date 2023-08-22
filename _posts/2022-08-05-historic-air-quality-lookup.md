@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-08-05/openweather-aqi-api-meta.jpg
 featured_image: /assets/images/blog/2022-08-05/openweather-aqi-api-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/historic-air-quality-lookup
 ---
 
 **In this post I will show you how to find the air quality at the time and location  a photo was taken.**

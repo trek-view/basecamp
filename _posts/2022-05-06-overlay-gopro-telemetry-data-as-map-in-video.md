@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-05-06/gopro-map-overlay-meta.jpg
 featured_image: /assets/images/blog/2022-05-06/gopro-map-overlay-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/overlay-gopro-telemetry-data-as-map-in-video
 ---
 
 **Put a map inside your GoPro video showing exactly where is was shot.**

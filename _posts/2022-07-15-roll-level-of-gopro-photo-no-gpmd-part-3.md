@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-07-01/GS018421_000003-meta.jpg
 featured_image: /assets/images/blog/2022-07-01/GS018421_000003-sm.jpg
 layout: post
 published: false
+redirect_from:
+  - /blog/2022/roll-level-of-gopro-photo-no-gpmd-part-3
 ---
 
 The easiest way to to train a computer is using real (and labelled) training data.

@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-06-10/gopro-rpy-meta.jpg
 featured_image: /assets/images/blog/2022-06-10/gopro-rpy-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/calculating-heading-of-gopro-video-using-gpmf-part-3
 ---
 
 **Using calculated heading values to ensure videos are shown in 360 players facing the same direction as they were shot.**

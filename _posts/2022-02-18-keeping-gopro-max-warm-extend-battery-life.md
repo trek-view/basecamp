@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-02-18/helmet-trek-pack.jpg
 featured_image: /assets/images/blog/2022-02-18/helmet-trek-pack-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/keeping-gopro-max-warm-extend-battery-life
 ---
 
 **If you've ever tried using electronics in very cold weather you might have observed your battery draining quickly.**

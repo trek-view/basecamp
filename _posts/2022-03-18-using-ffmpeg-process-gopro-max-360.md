@@ -9,6 +9,8 @@ image: /assets/images/blog/2022-03-18/ffmpeg-eac-360-console-meta.jpg
 featured_image: /assets/images/blog/2022-03-18/ffmpeg-eac-360-console-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2022/using-ffmpeg-process-gopro-max-360
 ---
 
 **In our continued effort to avoid reliance on GoPro software, I look at how ffmpeg can be used to process GoPro EAC projected videos (.360's) to equirectangular projections.**
