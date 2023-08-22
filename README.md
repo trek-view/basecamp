@@ -18,8 +18,10 @@ bundle exec jekyll serve
 Before merging any changes to master, check for 404's:
 
 ```shell
-bundle exec htmlproofer ./_site
+htmlproofer --assume-extension ./_site --url-swap '^/BASEURL/:/' --alt-ignore '/.*/'
 ```
+
+* `--alt-ignore '/.*/'`: ignores empty img alt tags
 
 ## Hosting
 
