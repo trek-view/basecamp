@@ -51,7 +51,7 @@ None of the currently available GoPro software offers the functionality to merge
 
 ### Merging GoPro mp4 videos (all GoPro cameras)
 
-For this demo I will use examples of stitched `.mp4`'s shot on a GoPro MAX ([stitched with our recommended settings to retain gpmf telemetry in GoPro Studio, as outlined here](/blog/2021/using-gopro-studio-process-360-files)).
+For this demo I will use examples of stitched `.mp4`'s shot on a GoPro MAX ([stitched with our recommended settings to retain gpmf telemetry in GoPro Studio, as outlined here](/blog/using-gopro-studio-process-360-files)).
 
 These instructions will work for most HERO cameras (version 5 and newer) and stitched 360 videos from the Fusion and MAX cameras. This method could also be employed for dual GoPro Fusion fisheye `.mp4` videos.
 
@@ -170,7 +170,7 @@ You can see it contains the same 3 streams as the inputs, and the length is 1109
 
 Playing the video, you can also check the video and sound track.
 
-To double check the telemetry is concatenated correctly you can use exiftool ([or gopro-telemetry](/blog/2022/gopro-telemetry-exporter-getting-started)).
+To double check the telemetry is concatenated correctly you can use exiftool ([or gopro-telemetry](/blog/gopro-telemetry-exporter-getting-started)).
 
 Using exiftool;
 
@@ -194,7 +194,7 @@ Which gives GPS time range of 00:18:29.900 (`12:01:30.060`-`11:43:00.160`), whic
 
 Finally, all that's left to do is copy the global metadata. To do this I will only copy the metadata from the first video. This is because global metadata should be identical in each of the input videos (e.g. camera name, make).
 
-Using exiftool for this job ([and not ffmpeg for the reasons described here](/blog/2022/ffmpeg-video-to-frame-cheat-sheet)) I first make a copy of the newly merged video;
+Using exiftool for this job ([and not ffmpeg for the reasons described here](/blog/ffmpeg-video-to-frame-cheat-sheet)) I first make a copy of the newly merged video;
 
 ```shell
 cp GS0141-merged.mp4 GS0141-merged-meta.mp4

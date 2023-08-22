@@ -13,7 +13,7 @@ published: true
 
 **Taking what we've learned over the last 3 weeks and putting it all together to create a script to convert 2 GoPro Fusion fisheye to one equirectangular image.**
 
-[I finished last weeks post talking about field of view](/blog/2021/gopro-fusion-fisheye-stitching-part-3).
+[I finished last weeks post talking about field of view](/blog/gopro-fusion-fisheye-stitching-part-3).
 
 It was clear we needed to understand the field of view of the lenses on the Fusion in order for stitching to work correctly (because the FOV will determine the blend zone).
 
@@ -21,7 +21,7 @@ It was clear we needed to understand the field of view of the lenses on the Fusi
 
 Once both fisheye images are mapped into equirectangular space, as shown last week, stitching of both images can happen to create a single equirectangular image.
 
-The HFOV on the Fusion is [roughly](/blog/2021/gopro-fusion-fisheye-stitching-part-3) 190 degrees, so a blend zone of 5 degrees on the left and right side of the front image exists (180 + 5 + 5).
+The HFOV on the Fusion is [roughly](/blog/gopro-fusion-fisheye-stitching-part-3) 190 degrees, so a blend zone of 5 degrees on the left and right side of the front image exists (180 + 5 + 5).
 
 <img class="img-fluid" src="/assets/images/blog/2022-01-07/front-equirectangular-blend-annotated.png" alt="Fisheye front to equirectangular" title="Fisheye front to equirectangular" />
 
@@ -41,7 +41,7 @@ A bit of blending is required to map/smooth the duplicate pixels in the blend zo
 
 Remember GoPro mentioned their D.WARP algorithm in the first post of this series? This algorithm identifies duplicate pixels and normalises the colour between the front and back images (due to lighting differences on either side of the camera).
 
-We used alpha blending in our [MAX2Sphere script](/blog/2021/reverse-engineering-gopro-360-file-format-part-3).
+We used alpha blending in our [MAX2Sphere script](/blog/reverse-engineering-gopro-360-file-format-part-3).
 
 There are many more open-source blending algorithms available too.
 
@@ -92,16 +92,16 @@ ffmpeg -i GPFR0002.MP4 -r 1 -q:v 1 track0/front_img_%d.jpg
 ffmpeg -i GPBK0002.MP4 -r 1 -q:v 1 track1/back_img_%d.jpg 
 ```
 
-If desired, you can then recreate an equirectangular mp4 video from the frames after processing to equirectangular images, [as described in this post](/blog/2021/turn-360-photos-into-360-video).
+If desired, you can then recreate an equirectangular mp4 video from the frames after processing to equirectangular images, [as described in this post](/blog/turn-360-photos-into-360-video).
 
 ### Improvements
 
-The current script does not carry over any of the metadata retained in the original fisheyes. [You will therefore need to write the 360 metadata into the outputted image files created](/blog/2020/metadata-exif-xmp-360-photo-file) to make sure they are rendered properly by 360 viewers (or accepted as 360's by products like Street View).
+The current script does not carry over any of the metadata retained in the original fisheyes. [You will therefore need to write the 360 metadata into the outputted image files created](/blog/metadata-exif-xmp-360-photo-file) to make sure they are rendered properly by 360 viewers (or accepted as 360's by products like Street View).
 
-Another feature missing that is present in GoPro Fusion Studio is the horizon leveling feature. GoPro Fusion Studio does this by allowing you to adjust the [roll, pitch, and yaw](/blog/2020/yaw-pitch-roll-360-degree-photography) before processing. Other tools like PtGui (and others) do this too. It is something I'm considering adding in the future.
+Another feature missing that is present in GoPro Fusion Studio is the horizon leveling feature. GoPro Fusion Studio does this by allowing you to adjust the [roll, pitch, and yaw](/blog/yaw-pitch-roll-360-degree-photography) before processing. Other tools like PtGui (and others) do this too. It is something I'm considering adding in the future.
 
 It's likely this missing functionality will be included in Explorer, [but more on that soon](https://landing.mailerlite.com/webforms/landing/p3p7h9)...
 
 ## Update 2022-04-15
 
-Another alternative to stitching dual GoPro fisheyes; [Using ffmpeg to Process Raw GoPro Fusion Dual Fisheyes to Equirectangular Projections](/blog/2022/using-ffmpeg-process-gopro-fusion-fisheye)
+Another alternative to stitching dual GoPro fisheyes; [Using ffmpeg to Process Raw GoPro Fusion Dual Fisheyes to Equirectangular Projections](/blog/using-ffmpeg-process-gopro-fusion-fisheye)

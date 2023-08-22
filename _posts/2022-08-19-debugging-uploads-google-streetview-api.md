@@ -17,9 +17,9 @@ Last week I complained about Mapillary. This week, Google Street View is in my c
 
 I've posted before about the Google Street View API;
 
-1. [Google Street View Publish API - Quick Start Guide](/blog/2020/street-view-publish-api-quick-start-guide/)
-2. [Upload a Video to the Street View Publish](/blog/2021/upload-video-street-view-publish-api)
-3. [Creating a Video File Ready to be Uploaded to the Google Street View API](/blog/2022/create-google-street-view-video-publish-api)
+1. [Google Street View Publish API - Quick Start Guide](/blog/street-view-publish-api-quick-start-guide/)
+2. [Upload a Video to the Street View Publish](/blog/upload-video-street-view-publish-api)
+3. [Creating a Video File Ready to be Uploaded to the Google Street View API](/blog/create-google-street-view-video-publish-api)
 
 The second and third post introduces the concept of creating a Google Street View video and then uploading it to the Street View API.
 

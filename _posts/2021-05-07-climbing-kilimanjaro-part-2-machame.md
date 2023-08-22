@@ -13,7 +13,7 @@ published: true
 
 **The second most popular route on Mount Kilimanjaro can now be hiked from home.**
 
-If you missed last weeks post, [we're in the process of mapping Kilimanjaro with our Trek Packs](/blog/2021/climbing-kilimanjaro-part-1-the-kit).
+If you missed last weeks post, [we're in the process of mapping Kilimanjaro with our Trek Packs](/blog/climbing-kilimanjaro-part-1-the-kit).
 
 For our first trek our guide and cameraman, Joshua, will be tackling the Machame route.
 
@@ -78,4 +78,4 @@ Next week I'll be sharing Joshua's imagery from the Rongai Route...
 
 ## Update 2021-05-14
 
-[Part 3: Rongai Route. Trek one of the quitest trails up Kilimanjaro from home](/blog/2021/climbing-kilimanjaro-part-3-rongai).
+[Part 3: Rongai Route. Trek one of the quitest trails up Kilimanjaro from home](/blog/climbing-kilimanjaro-part-3-rongai).

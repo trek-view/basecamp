@@ -44,7 +44,7 @@ Here is the metadata in the photo needed to make the requests to the APIs.
 exiftool -GPSLatitude -GPSLongitude -GPSDateTime -n GSAL1592.JPG 
 ```
 
-[Exiftool by default prints data as Degrees, Minutes, and Seconds (DMS)](/blog/2021/reading-decimal-gps-coordinates-like-a-computer/). Using the `-n` flag turns DMS into Decimal Degrees (DD), required for both the APIs.
+[Exiftool by default prints data as Degrees, Minutes, and Seconds (DMS)](/blog/reading-decimal-gps-coordinates-like-a-computer/). Using the `-n` flag turns DMS into Decimal Degrees (DD), required for both the APIs.
 
 ```
 GPS Latitude                    : 54.5255907

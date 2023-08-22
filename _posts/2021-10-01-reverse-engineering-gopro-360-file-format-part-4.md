@@ -13,11 +13,11 @@ published: true
 
 **In the final part of this series, I convert a GoPro EAC projected frame into an equirectangular projection to be displayed in other software.**
 
-[Last week I blended the overlapping pixels in .360 cubefaces](/blog/2021/reverse-engineering-gopro-360-file-format-part-3). For the final step, I need to convert into equirectangular frames (the most widely understood projection type in software for 360 images).
+[Last week I blended the overlapping pixels in .360 cubefaces](/blog/reverse-engineering-gopro-360-file-format-part-3). For the final step, I need to convert into equirectangular frames (the most widely understood projection type in software for 360 images).
 
 Luckily, [I discovered that Paul Bourke has published a significant amount of his work on converting to/from cubemaps](http://paulbourke.net/panorama/cubemaps/), as well as lots of other related works.
 
-Taking inspiration from this work and with the help of Paul himself, [MAX2sphere](https://github.com/trek-view/MAX2sphere) takes the 2 GoPro EAC tracks and converts them to equirectangular (as well as performing the blending mentioned last week).
+Taking inspiration from this work and with the help of Paul himself, [MAX2sphere](https://github.com/trek-view/max2sphere) takes the 2 GoPro EAC tracks and converts them to equirectangular (as well as performing the blending mentioned last week).
 
 Used in its simplest form for what we need two directories that contain the two extracted Pro EAC tracks.
 
@@ -37,7 +37,7 @@ $ @SYSTEM_PATH/max2spherebatch -w 4096 -n 1 -m 1000 track%d/frame%4d.jpg
 
 All that's left to do now is add the correct metadata to the new equirectangular frame, all of which has been lost during processing.
 
-For more details about injection metadata (most importantly telemetry), [read this post](/blog/2021/turn-360-video-into-timelapse-images-part-2/), but at a minimum, we need to add the `projectiontype` tag so the image is rendered correctly in 360 viewers.
+For more details about injection metadata (most importantly telemetry), [read this post](/blog/turn-360-video-into-timelapse-images-part-2/), but at a minimum, we need to add the `projectiontype` tag so the image is rendered correctly in 360 viewers.
 
 ```
 exiftool -ProjectionType=equirectangular img1.jpg
@@ -56,19 +56,19 @@ ffmpeg -i FRAMES/%d.jpg -c:v libx264 -framerate 1 -pix_fmt yuv420p GS070135.mp4
 ```
 _Note: I use a 1 second framerate, as we extracted 1 FPS at step one. Whatever framerate value selected during extraction should **probably** be used here._
 
-Like the images, metadata will need to be written into the video to ensure video players read it correctly. Read my post, [Turn 360 photos into 360 videos](/blog/2021/turn-360-photos-into-360-video), to see how this can be done.
+Like the images, metadata will need to be written into the video to ensure video players read it correctly. Read my post, [Turn 360 photos into 360 videos](/blog/turn-360-photos-into-360-video), to see how this can be done.
 
 ## tl;dr
 
-1. Broke .360 down into 2 frames using ffmpeg ([see part 2](/blog/2021/reverse-engineering-gopro-360-file-format-part-2))
-2. Blended cubefaces in each frame with overlapping pixels ([see part 3](/blog/2021/reverse-engineering-gopro-360-file-format-part-3))
-3. Rebuilt each frame as a cubemap ([see part 3](/blog/2021/reverse-engineering-gopro-360-file-format-part-3))
+1. Broke .360 down into 2 frames using ffmpeg ([see part 2](/blog/reverse-engineering-gopro-360-file-format-part-2))
+2. Blended cubefaces in each frame with overlapping pixels ([see part 3](/blog/reverse-engineering-gopro-360-file-format-part-3))
+3. Rebuilt each frame as a cubemap ([see part 3](/blog/reverse-engineering-gopro-360-file-format-part-3))
 4. Converted each cubemap to equirectangular frames and added metadata (this post)
 5. Converted frames to a video and added metadata (this post)
 
 ## Future improvements
 
-One feature missing is GoPro Studio's horizon leveling feature. It does this by automatically by analysing the frame and working out the horizon and then adjusting the [roll, pitch, and yaw](/blog/2020/yaw-pitch-roll-360-degree-photography). This is what other tools like PtGui (and others) do too. It is something I'm considering adding in the future.
+One feature missing is GoPro Studio's horizon leveling feature. It does this by automatically by analysing the frame and working out the horizon and then adjusting the [roll, pitch, and yaw](/blog/yaw-pitch-roll-360-degree-photography). This is what other tools like PtGui (and others) do too. It is something I'm considering adding in the future.
 
 For now though, these two options will turn your images or videos with GoPro EAC projections into equirectangular ones...
 
@@ -80,4 +80,4 @@ MAX2sphere takes a raw GoPro .360 frame (both tracks of EAC projection) and conv
 
 ### 2. FFMpeg (EAC video to equirectangular video)
 
-[This post explains how you can use ffmpeg to achieve the same result](/blog/2022/using-ffmpeg-process-gopro-max-360/).
+[This post explains how you can use ffmpeg to achieve the same result](/blog/using-ffmpeg-process-gopro-max-360/).

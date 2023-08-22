@@ -23,7 +23,7 @@ If you've tried running with one-eye closed you'll notice it's harder to judge a
 
 Cameras suffer the same issue.
 
-Having more than one sensor on a 360 camera helps display depth better than using a single sensor, [but it's not perfect because of the minimal overlap between images each sensor captures](/blog/2020/how-does-360-stitching-software-work).
+Having more than one sensor on a 360 camera helps display depth better than using a single sensor, [but it's not perfect because of the minimal overlap between images each sensor captures](/blog/how-does-360-stitching-software-work).
 
 To help compensate for a cameras limitations reproducing visual depth in imagery, other techniques be employed...
 
@@ -37,7 +37,7 @@ You have two eyes (two sensors), processing a live feed of your surroundings. Be
 
 Your brain knows how far apart your eyes are, which allows it to process this info into a sense of distance by merging both feeds into a single perspective.
 
-In the world of 360 photography, photogrammetry is used during stitching to identify control points, the same point in space in two (or more) photos. [I recommend reading this post which covers control points in more detail](/blog/2020/how-does-360-stitching-software-work).
+In the world of 360 photography, photogrammetry is used during stitching to identify control points, the same point in space in two (or more) photos. [I recommend reading this post which covers control points in more detail](/blog/how-does-360-stitching-software-work).
 
 Photogrammetry is often used to produce 3D surveys too. Here control points between two or more photos might be used to build a 3D model by identifying the same objects (but at different angles) in each image to model it in real space.
 
@@ -59,9 +59,9 @@ Invented in the 1960s, LiDaR stands for “light detection and ranging,” and i
 
 LiDaR can be likened to sonar or radar, which use sound and radio waves respectively to map surfaces and detect objects. In most cases, LiDaR uses infrared light.
 
-Its hardware can be mounted on a plane, tripod, or automobile, as well as a drone. It’s sometimes called 3D laser scanning. [Google use a pair of LiDaR scanners on their Street View cars](/blog/2020/google-street-view-cameras-more-than-meets-the-eye).
+Its hardware can be mounted on a plane, tripod, or automobile, as well as a drone. It’s sometimes called 3D laser scanning. [Google use a pair of LiDaR scanners on their Street View cars](/blog/google-street-view-cameras-more-than-meets-the-eye).
 
-LiDAR mapping uses a laser scanning system with an integrated [Inertial Measurement Unit (IMU)](/blog/2020/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer) and GNSS receiver, which allows each measurement, or point in the resulting point cloud, to be geo-referenced. Each ‘point’ combines to create a 3D representation of the target object or area.
+LiDAR mapping uses a laser scanning system with an integrated [Inertial Measurement Unit (IMU)](/blog/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer) and GNSS receiver, which allows each measurement, or point in the resulting point cloud, to be geo-referenced. Each ‘point’ combines to create a 3D representation of the target object or area.
 
 During a LiDaR survey, an active optical sensor transmits laser beams toward a target (think millions of points for top-of-the-range scanners). The laser energy is reflected by the target and is detected and analyzed by receivers in the LiDaR sensor.
 

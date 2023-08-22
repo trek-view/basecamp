@@ -13,7 +13,7 @@ published: true
 
 **Converting GoPro telemetry into magnetic heading values to ensure videos are shown in 360 players facing the same direction as they were shot.**
 
-[Last weeks post teased you with the mathematics that were ahead](/blog/2022/calculating-heading-of-gopro-video-using-gpmf-part-1). Now that day has come.
+[Last weeks post teased you with the mathematics that were ahead](/blog/calculating-heading-of-gopro-video-using-gpmf-part-1). Now that day has come.
 
 In that post I wrote;
 

@@ -13,7 +13,7 @@ published: true
 
 **Taking apart a .360 file to reveal its contents to try and understand how it can be processed (without GoPro software).**
 
-[Last week I looked at some of the theory behind the GoPro's proprietary .360 format](/blog/2021/reverse-engineering-gopro-360-file-format-part-1). 
+[Last week I looked at some of the theory behind the GoPro's proprietary .360 format](/blog/reverse-engineering-gopro-360-file-format-part-1). 
 
 This week I'll use a video I shot on a [Trek Pack v2 (GoPro Max)](/trek-pack) to try and understand how to work with .360's in practice.
 
@@ -25,7 +25,7 @@ It was uploaded to YouTube after being converted from .360 to .mp4 (EAC to equir
 
 [You can download the mp4 file (GS070135.mp4) here](https://drive.google.com/open?id=1ZYyfeGyqtV2bnkRnWPXNlTUyau8fWer_&authuser=dgreenwood%40trekview.org&usp=drive_fs).
 
-I can extract a frames from this .mp4 video with ffmpeg by following the instruction in my post; [Turning a 360 Video into Timelapse Images](/blog/2021/turn-360-video-into-timelapse-images-part-1).
+I can extract a frames from this .mp4 video with ffmpeg by following the instruction in my post; [Turning a 360 Video into Timelapse Images](/blog/turn-360-video-into-timelapse-images-part-1).
 
 For this example, I'll use 1 frame every second:
 
@@ -37,7 +37,7 @@ $ ffmpeg -i GS070135.mp4 -r 1 -q:v 2 MP4-FRAMES/img%d.jpg
 
 Above is the first frame (reduced in resolution for this post, original = 4096x2048) from the extraction, `img1.jpg`.
 
-[Although it is equirectangular, I have not injected any spatial metadata (as described in the linked post) to this image file. Therefore, it won't render in a 360 viewer correctly](/blog/2021/turn-360-video-into-timelapse-images-part-2).
+[Although it is equirectangular, I have not injected any spatial metadata (as described in the linked post) to this image file. Therefore, it won't render in a 360 viewer correctly](/blog/turn-360-video-into-timelapse-images-part-2).
 
 Now going back a step, let's look at the original .360 file ([download it here](https://drive.google.com/open?id=1X_IRW-ut3yew97Ep3HkZ0DuZrZGzUsCW&authuser=dgreenwood%40trekview.org&usp=drive_fs)). 
 
@@ -116,4 +116,4 @@ But really this video is useless. In EAC (or GoPro EAC) projection, other softwa
 
 ## Update 2021-09-24: Part 3 now available
 
-[I continue taking apart a .360 file, and trying to rebuild it with a equirectangular projection (without GoPro software)](/blog/2021/reverse-engineering-gopro-360-file-format-part-3).
+[I continue taking apart a .360 file, and trying to rebuild it with a equirectangular projection (without GoPro software)](/blog/reverse-engineering-gopro-360-file-format-part-3).

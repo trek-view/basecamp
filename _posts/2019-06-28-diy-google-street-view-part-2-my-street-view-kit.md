@@ -80,7 +80,7 @@ The biggest limitation is battery life. I found shooting using a 5 second time-l
 
 In this mode I get around 3 hours of continuous shooting. To make sure I'd have enough for a 5 hour shoot, I also purchased an official [GoPro Fusion spare battery](https://gopro.com/en/gb/shop/accessories/rechargeable-battery/ASBBA-001.html) for £25 on Amazon. Don't be tempted by the cheap batteries available. I was, and discovered many were 75% less efficient than the official offerings.
 
-**Update (2019-08-23)**: [Read more about increasing the battery life of your GoPro Fusion to shoot videos here](/blog/2019/diy-google-street-view-part-6-increasing-gopro-fusion-battery-life).
+**Update (2019-08-23)**: [Read more about increasing the battery life of your GoPro Fusion to shoot videos here](/blog/diy-google-street-view-part-6-increasing-gopro-fusion-battery-life).
 
 <img class="img-fluid" src="/assets/images/blog/2019-06-28/trek-view-micro-sd-usb.jpg" alt="MicroSD card reader" title="MicroSD card reader" />
 
@@ -100,8 +100,8 @@ To help promote Trek View (and let passers by understand what the camera was for
 
 ## Part 3
 
-Read Part 3 now: [Preparing to Shoot 360-Degree Tours for Google Street View](/blog/2019/diy-google-street-view-part-3-preparing-to-shoot)
+Read Part 3 now: [Preparing to Shoot 360-Degree Tours for Google Street View](/blog/diy-google-street-view-part-3-preparing-to-shoot)
 
 _Update December 2019: [You can now access the Trek Pack Getting Started Guide online with all the latest information you need to create, process and publish your own Street View Tours](/trek-pack/version-one)._
 
-_Update June 2020: [A newer version of the Trek Pack (v2) exists, that superseeds the pack (v1) described in this post](/blog/2020/announcing-trek-pack-v2)._
+_Update June 2020: [A newer version of the Trek Pack (v2) exists, that superseeds the pack (v1) described in this post](/blog/announcing-trek-pack-v2)._

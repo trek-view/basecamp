@@ -55,4 +55,4 @@ Emily and Russ talk about their invention, the CurbWheel, to help them better co
 
 We want to eliminate all road cyclist-vehicle deaths by crowdsourcing safer bike lane design. Using action cameras, accident data, computer vision and OpenStreetMap; potential hazards to cyclists can be automatically identified,  the optimum bike lane design deduced, and recommended improvements provided to infrastructure planners.
 
-[You can start contributing to this project today. Here's how](/blog/2020/challenge-map-amsterdam-by-bicycle).
+[You can start contributing to this project today. Here's how](/blog/challenge-map-amsterdam-by-bicycle).

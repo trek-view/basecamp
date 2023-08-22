@@ -65,4 +65,4 @@ Related OSM project [Humanitarian Open Street Map Team](https://www.hotosm.org/)
 
 ## Update 2021-10-28
 
-[Check out my favourite talks from State of the Map 2021](/blog/2021/state-of-the-map-2021).
+[Check out my favourite talks from State of the Map 2021](/blog/state-of-the-map-2021).

@@ -45,8 +45,8 @@ Individuals, groups, or organisations looking to capture 360-degree tours of our
 
 ## Part 2
 
-Read Part 2 now: [My Basic Kit for Creating Outdoor Street View Tours](/blog/2019/diy-google-street-view-part-2-my-street-view-kit)
+Read Part 2 now: [My Basic Kit for Creating Outdoor Street View Tours](/blog/diy-google-street-view-part-2-my-street-view-kit)
 
 _Update December 2019: [You can now access the Trek Pack Getting Started Guide online with all the latest information you need to create, process and publish your own Street View Tours](/trek-pack/version-one)._
 
-_Update June 2020: [A newer version of the Trek Pack (v2) exists, that superseeds the pack (v1) described in this post](/blog/2020/announcing-trek-pack-v2)._
+_Update June 2020: [A newer version of the Trek Pack (v2) exists, that superseeds the pack (v1) described in this post](/blog/announcing-trek-pack-v2)._

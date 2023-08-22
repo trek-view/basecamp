@@ -23,7 +23,7 @@ On the GoPro MAX cameras we use for the [Trek Pack v2](/trek-pack) this stitchin
 
 If you're anything like me, you will have pondered how this process actually works.
 
-[As I mentioned a few weeks ago](/blog/2020/what-is-global-shutter-rolling-shutter-360-cameras), software is often where many manufacturers are competing, and there are some very good stitching tools that have been developed by manufacturers.
+[As I mentioned a few weeks ago](/blog/what-is-global-shutter-rolling-shutter-360-cameras), software is often where many manufacturers are competing, and there are some very good stitching tools that have been developed by manufacturers.
 
 Unfortunately all of this software is proprietary, but the general workflows to process images into 360 projections are all very similar.
 

@@ -13,7 +13,7 @@ published: true
 
 **Understanding the geometry of an equirectangular image and training a computer to detect the horizon.**
 
-About a year ago, [I briefly touched on how various projection types for 360 photos](/blog/2021/projection-type-360-photography/).
+About a year ago, [I briefly touched on how various projection types for 360 photos](/blog/projection-type-360-photography/).
 
 In todays post I am going to go deeper into the geometry of equirectangular projections as a way to idenfify roll mathmatically (and with the help of a computer).
 
@@ -66,7 +66,7 @@ By teaching a computer what "upside down" looks like (e.g. sky, orientation of i
 
 To start teaching the computer, we need some training data that is labelled with roll and pitch in 360 photos (yaw is not so important). A computer can then start understand what roll looks like using the roll value and the visual of the photo itself.
 
-To do this I used the approach to extract telemetry from a video (and then assign it to extracted images from the same video), as discussed in the post [Automatic horizon and pitch leveling of GoPro 360 videos](/blog/2022/roll-pitch-level-of-gopro-video-using-gpmf).
+To do this I used the approach to extract telemetry from a video (and then assign it to extracted images from the same video), as discussed in the post [Automatic horizon and pitch leveling of GoPro 360 videos](/blog/roll-pitch-level-of-gopro-video-using-gpmf).
 
 However, I was still not 100% confident of the accuracy of my code. Therefore, I also decided to use another training set.
 

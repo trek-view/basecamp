@@ -31,8 +31,8 @@ This is why we're going to allow trekkers to upload regular photos taken on GoPr
 
 For these trekkers, we also wanted to allow them to brand their imagery in the same way as we will do with equirectangular photos (by using a logo in the nadir). I've documented how to add a nadir to a 360 equirectangular photo here:
 
-* [manually (using GIMP)](/blog/2020/adding-a-custom-nadir-to-360-video-photo), and here:
-* [programmatically (using ImageMagick)](/blog/2021/adding-a-custom-nadir-to-360-video-photo)
+* [manually (using GIMP)](/blog/adding-a-custom-nadir-to-360-video-photo), and here:
+* [programmatically (using ImageMagick)](/blog/adding-a-custom-nadir-to-360-video-photo)
 
 This week I'll show you how to add a watermark to regular photos (2D plane).
 

@@ -13,7 +13,7 @@ published: true
 
 **A lesson, mostly, in wrangling metadata to ensure proper playback of 360 videos created from a series of photos.**
 
-In previous posts I've covered, turning 360 videos into a series of timelapse images ([part 1](/blog/2021/turn-360-video-into-timelapse-images-part-1) and [part 2](/blog/2021/turn-360-video-into-timelapse-images-part-2))
+In previous posts I've covered, turning 360 videos into a series of timelapse images ([part 1](/blog/turn-360-video-into-timelapse-images-part-1) and [part 2](/blog/turn-360-video-into-timelapse-images-part-2))
 
 You might also want to do the reverse; turn photos into a 360 video.
 
@@ -57,7 +57,7 @@ The video is looking good. There are 55 images in my sequence and the video is 5
 
 ## 3. Add the required metadata
 
-[As I talked about last year](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd), video files, and specifically 360 video files, hold metadata that is important for video players to render and display the video correctly. 
+[As I talked about last year](/blog/metadata-exif-xmp-360-video-files-gopro-gpmd), video files, and specifically 360 video files, hold metadata that is important for video players to render and display the video correctly. 
 
 Looking at the metadata of the video I just created using exiftool:
 
@@ -162,7 +162,7 @@ Gives a .xml file with the contents:
 
 There is already a lot here. We can see the video resolution, the duration, and lots of other default fields that are not really required for our use-case.
 
-[Let's start by looking inside the first photo used in the video to see some of the metadata we'll need to add to the video](/blog/2020/metadata-exif-xmp-360-photo-files).
+[Let's start by looking inside the first photo used in the video to see some of the metadata we'll need to add to the video](/blog/metadata-exif-xmp-360-photo-files).
 
 ```
 $ exiftool -X MULTISHOT_9698_000000.jpg > MULTISHOT_9698_000000_metadata.xml
@@ -256,9 +256,9 @@ Here we can see a lot of data that will prove useful for copying over to the vid
 
 In fact, for our purposes, all the `XMP-GPano` namespace tags from the photo are useful to copy over to the video. However, `XMP-GPano` is the namespace for photos, we need to use `XMP-GSpherical` for video files.
 
-If you didn't read last weeks post introducing XMP namespaces, [I recommend taking a look before continuing with this post](/blog/2021/introduction-to-xmp-namespaces).
+If you didn't read last weeks post introducing XMP namespaces, [I recommend taking a look before continuing with this post](/blog/introduction-to-xmp-namespaces).
 
-Let's first use the [Spatial Media Metadata Injector](https://github.com/google/spatial-media/tree/master/spatialmedia) to embed the essential `XMP-GSpherical` tags required for Google (inc. YouTube) to correctly detect that it is a 360 video. [Running this script (and why exiftool can't be used) was also described in last weeks post](/blog/2021/introduction-to-xmp-namespaces), so I won't cover it here.
+Let's first use the [Spatial Media Metadata Injector](https://github.com/google/spatial-media/tree/master/spatialmedia) to embed the essential `XMP-GSpherical` tags required for Google (inc. YouTube) to correctly detect that it is a 360 video. [Running this script (and why exiftool can't be used) was also described in last weeks post](/blog/introduction-to-xmp-namespaces), so I won't cover it here.
 
 Checking the metadata after running the tool you should see 4 new tags:
 
@@ -295,12 +295,12 @@ $ exiftool XMP-tiff:Copyright:'https://www.trekview.org' XMP-tiff:Artist:'https:
 
 ## Update 2022-01-21
 
-[How to Create a 360 Video from a Timelapse of 360 Images (using Adobe Premiere Pro)](/blog/2022/turn-360-photos-into-360-video-adobe-premiere).
+[How to Create a 360 Video from a Timelapse of 360 Images (using Adobe Premiere Pro)](/blog/turn-360-photos-into-360-video-adobe-premiere).
 
 ## Update 2022-03-11
 
-[ffmpeg Cheat Sheet for virtual tours and 360 videos (includes how to use ffmpeg to copy telemetry streams to outputted video files)](/blog/2022/ffmpeg-video-to-frame-cheat-sheet).
+[ffmpeg Cheat Sheet for virtual tours and 360 videos (includes how to use ffmpeg to copy telemetry streams to outputted video files)](/blog/ffmpeg-video-to-frame-cheat-sheet).
 
 ## Update 2022-05-13
 
-[How to Create a Video File Ready to be Uploaded to the Google Street View API](/blog/2022/create-google-street-view-video-publish-api).
+[How to Create a Video File Ready to be Uploaded to the Google Street View API](/blog/create-google-street-view-video-publish-api).

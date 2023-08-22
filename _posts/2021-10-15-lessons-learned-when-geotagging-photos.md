@@ -13,7 +13,7 @@ published: true
 
 **Exiftool is a powerful bit of software for geotagging photos, understanding how the process works will save you a few headaches.**
 
-[I've talked previously about creating frames (photos) from video files and how to inject a GPS track log](/blog/2021/turn-360-video-into-timelapse-images-part-2). 
+[I've talked previously about creating frames (photos) from video files and how to inject a GPS track log](/blog/turn-360-video-into-timelapse-images-part-2). 
 
 It's a process that's useful for when you're uploading or viewing 360 content, for example, to Mapillary, that doesn't accept video.
 
@@ -43,7 +43,7 @@ Knowing this, we can then simply iterate the SubSecDateTimeOriginal for each pho
 
 Let's start with the GPX track. One of the great features of exiftool is its ability to geotag a sequence with a GPX track.
 
-It's particularly useful for when you're using a secondary GPS device, like a phone, in addition to your camera ([which might be significantly less accurate than an external device](/blog/2020/gps-101)).
+It's particularly useful for when you're using a secondary GPS device, like a phone, in addition to your camera ([which might be significantly less accurate than an external device](/blog/gps-101)).
 
 [GPX (the GPS Exchange Format)](https://www.topografix.com/gpx.asp) is a light-weight XML data format for the interchange of GPS data (waypoints, routes, and tracks).
 
@@ -89,7 +89,7 @@ xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/
 
 But let's stick with the basic fields for now, as I am yet to see any device output much more than these standard values in a GPX track file ([_although Garmin does produce lots of its own custom tags_](https://www8.garmin.com/xmlschemas/GpxExtensionsv3.xsd)).
 
-Latitude (reported: -90.0 <= value <= 90.0), longitude (reported: -180.0 <= value < 180.0) and altitude/elevation (reported: -X <= value < Y). _If you want to learn more about latitude and longitude values, read my post titled; [How to read decimal latitude and longitude values like a computer](/blog/2021/reading-decimal-gps-coordinates-like-a-computer)._
+Latitude (reported: -90.0 <= value <= 90.0), longitude (reported: -180.0 <= value < 180.0) and altitude/elevation (reported: -X <= value < Y). _If you want to learn more about latitude and longitude values, read my post titled; [How to read decimal latitude and longitude values like a computer](/blog/reading-decimal-gps-coordinates-like-a-computer)._
 
 In addition to these three spatial measurements, time, is a crucial consideration when geotagging.
 
@@ -128,7 +128,7 @@ Using the example GSV video earlier (at 5 FPS), if we only report to second leve
 
 ## Obtaining sub-second GPS times (a GoPro example)
 
-[Let's take GoPro's GPMD as an example](/blog/2021/metadata-exif-xmp-360-video-files-gopro-gpmd).
+[Let's take GoPro's GPMD as an example](/blog/metadata-exif-xmp-360-video-files-gopro-gpmd).
 
 Note: other manufacturers will write `GPSDateTime` values based on their own hardware and software designs, so this is a very specific example for GoPro camera's only.
 
@@ -136,7 +136,7 @@ As noted in the post linked above, there are many GPS points reported (up to 18)
 
 The points without time are assumed to be calculated, as there are not always 18 points reported.
 
-Exactly how this estimations is calculated is not clear (and probably proprietary), but some combination of [IMU measurements](/blog/2020/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer) in conjunction with GPS point captured every second is likely used.
+Exactly how this estimations is calculated is not clear (and probably proprietary), but some combination of [IMU measurements](/blog/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer) in conjunction with GPS point captured every second is likely used.
 
 Assuming these points are evenly spaced by time (that is, the camera was traveling at the same velocity over the time period) we can calculate times for each of these points.
 
@@ -188,7 +188,7 @@ In this case, we can calculate the final time as follows:
 
 In some cases, the telemetry might report duplicate points, because you're standing still. If latitude, longitude and altitude are all the same this is true.
 
-However, due to GPS inaccuracies and [GPS approximation calculations done by the camera's IMU software](/blog/2020/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer) you can also end up with points that are incorrect duplicates where latitude and longitude are the same, but altitude is not.
+However, due to GPS inaccuracies and [GPS approximation calculations done by the camera's IMU software](/blog/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer) you can also end up with points that are incorrect duplicates where latitude and longitude are the same, but altitude is not.
 
 For example:
 
@@ -203,7 +203,7 @@ For example:
  <Track4:GPSAltitude>84.118 m</Track4:GPSAltitude>
 ```
 
-Assuming you are not going up vertically (e.g. while standing still in an elevator), this is incorrect. Here you might want to consider some logic to normalise altitude. At the most simplistic level this could be done by calculating a single mean average for all such duplicate points. [A more accurate approach would be to use a digital elevation model to reassign altitude values to these points](/blog/2020/what-is-a-digital-elevation-model).
+Assuming you are not going up vertically (e.g. while standing still in an elevator), this is incorrect. Here you might want to consider some logic to normalise altitude. At the most simplistic level this could be done by calculating a single mean average for all such duplicate points. [A more accurate approach would be to use a digital elevation model to reassign altitude values to these points](/blog/what-is-a-digital-elevation-model).
 
 ## Writing sub-second GPS times
 

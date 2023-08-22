@@ -13,13 +13,13 @@ published: true
 
 **A deeper look into GoPro Fusion fish-eye images (with the aim of reducing our reliance on GoPro’s software).**
 
-[In the summer of 2019 I bought a GoPro Fusion](/blog/2019/hello-trekkers), and Trek View was born.
+[In the summer of 2019 I bought a GoPro Fusion](/blog/hello-trekkers), and Trek View was born.
 
 2.5 years later the cameras we used have changed ([our Trek Pack now uses the GoPro Max](/trek-pack)), but the mission to create 360-degree imagery of the natural world remains the same.
 
 I receive many emails from people capturing 360 imagery of their adventures each week, many of whom still use the Fusion.
 
-Many of these emails also ask for recommended alternatives to GoPro Fusion Studio, [the GoPro software required to stitch the images and videos created by the Fusion camera](/blog/2019/diy-google-street-view-part-1-how-trek-view-started).
+Many of these emails also ask for recommended alternatives to GoPro Fusion Studio, [the GoPro software required to stitch the images and videos created by the Fusion camera](/blog/diy-google-street-view-part-1-how-trek-view-started).
 
 The Fusion was officially discontinued in 2019, with the release of the Max. Since then new operating systems versions have been released, causing breaking changes in the GoPro Fusion Studio software.
 
@@ -96,4 +96,4 @@ I'll talk more about that of next week...
 
 ## Update 2021-12-24
 
-[Stitching GoPro Fusion Images Without GoPro Fusion Studio (Part 2)](/blog/2021/gopro-fusion-fisheye-stitching-part-2)
+[Stitching GoPro Fusion Images Without GoPro Fusion Studio (Part 2)](/blog/gopro-fusion-fisheye-stitching-part-2)

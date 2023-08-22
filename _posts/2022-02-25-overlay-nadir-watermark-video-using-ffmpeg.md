@@ -15,12 +15,12 @@ published: true
 
 In previous post I have covered how to add a nadir to equirectangular images:
 
-* [manually (using GIMP)](/blog/2020/adding-a-custom-nadir-to-360-video-photo), and here:
-* [programmatically (using ImageMagick)](/blog/2021/adding-a-custom-nadir-to-360-video-photo)
+* [manually (using GIMP)](/blog/adding-a-custom-nadir-to-360-video-photo), and here:
+* [programmatically (using ImageMagick)](/blog/adding-a-custom-nadir-to-360-video-photo)
 
 And how to add a watermark to normal photos:
 
-* [programmatically (using ImageMagick)](/blog/2022/adding-a-custom-watermark-to-hero-photo-video)
+* [programmatically (using ImageMagick)](/blog/adding-a-custom-watermark-to-hero-photo-video)
 
 All of these approaches required breaking videos down into frames, overlaying the nadir or watermark, and then re-rendering into a video.
 
@@ -83,7 +83,7 @@ Gives;
 
 ### 3. Identify video tracks
 
-Each GoPro camera contains a range of tracks (video track, audio track, [gpmd](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd) track).
+Each GoPro camera contains a range of tracks (video track, audio track, [gpmd](/blog/metadata-exif-xmp-360-video-files-gopro-gpmd) track).
 
 The types of tracks included depend on the camera and mode used.
 
@@ -194,7 +194,7 @@ I was not able to figure out how to copy this track across to the new video usin
 
 If during step 1 video was identified to be equirectangular the logo used for the nadir overlay needs to first be converted into an equirectangular projection so that it renders correctly in a 360 viewer.
 
-[I describe how to do this using ImageMagick here](/blog/2021/adding-a-custom-nadir-to-360-video-photo)
+[I describe how to do this using ImageMagick here](/blog/adding-a-custom-nadir-to-360-video-photo)
 
 ### 5. Adjust size of nadir (equirectangular) or watermark (flat)
 
@@ -209,8 +209,8 @@ It is easy to do this using the video track where `ImageWidth` and `ImageHeight`
 
 You can then use these values to adjust the nadir / watermark image accordingly using ImageMagick. Again this is described in two previous posts:
 
-* [For equirectangular videos (nadir)](/blog/2021/adding-a-custom-nadir-to-360-video-photo)
-* [For normal videos (watermarks)](/blog/2022/adding-a-custom-watermark-to-hero-photo-video)
+* [For equirectangular videos (nadir)](/blog/adding-a-custom-nadir-to-360-video-photo)
+* [For normal videos (watermarks)](/blog/adding-a-custom-watermark-to-hero-photo-video)
 
 
 ### 6. Overlay nadir or watermark image using ffmpeg

@@ -21,7 +21,7 @@ _[Via GoPro](https://gopro.com/help/articles/block/what-is-timewarp-video?sf9580
 
 When it comes to turning GoPro TimeWarp videos into photo frames, there are a few extra things to consider when compared to normal GoPro videos (non-timelapse).
 
-If you've reached this post looking to convert a regular video into frames, [the process for doing so is described in this post from 2021](/blog/2021/turn-360-video-into-timelapse-images-part-1).
+If you've reached this post looking to convert a regular video into frames, [the process for doing so is described in this post from 2021](/blog/turn-360-video-into-timelapse-images-part-1).
 
 ## TimeWarp 101
 
@@ -101,7 +101,7 @@ Still a little confused? Here I cycled round my block 5 times in each TimeWarp m
 
 ## Identifying videos shot in TimeWarp
 
-[As I described last week](/blog/2022/gopro-camera-modes-metadata-tests), videos shot in Timelapse mode (vs. normal video mode) and the setting used can be identified using the `<GoPro:Rate>` tag. 
+[As I described last week](/blog/gopro-camera-modes-metadata-tests), videos shot in Timelapse mode (vs. normal video mode) and the setting used can be identified using the `<GoPro:Rate>` tag. 
 
 As an example; `<GoPro:Rate>2X</GoPro:Rate>`, identifies the video being shot in TimeWarp mode at `2X` speed.
 
@@ -181,8 +181,8 @@ For example, if the time spacing between images is 2 seconds and the first GPSDa
 
 All that is left to do now is actually write the correct times into the photos.
 
-[The steps to do this are described in this post (as well as how to extract and write GPS points extracted from the TimeWarp video to each image)](/blog/2021/turn-360-video-into-timelapse-images-part-2).
+[The steps to do this are described in this post (as well as how to extract and write GPS points extracted from the TimeWarp video to each image)](/blog/turn-360-video-into-timelapse-images-part-2).
 
 ## Update 2022-04-22
 
-Using a GoPro in TimeLapse video mode (without TimeWarp)? [Here is a guide detailing how to do a similar conversion of the video into properly timed frames](/blog/2022/turn-gopro-timelapse-video-into-timelapse-images).tr
+Using a GoPro in TimeLapse video mode (without TimeWarp)? [Here is a guide detailing how to do a similar conversion of the video into properly timed frames](/blog/turn-gopro-timelapse-video-into-timelapse-images).tr

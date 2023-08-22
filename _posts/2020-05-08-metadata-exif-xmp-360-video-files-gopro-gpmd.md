@@ -13,7 +13,7 @@ published: true
 
 **With the help of a 360 video shot using a GoPro Fusion, I take a look at GoPro's GPMF video telemetry standard.**
 
-[Last week I explained the metadata found in 360 photos](/blog/2020/metadata-exif-xmp-360-photo-files), and promised a post on video metadata. Well, here it is.
+[Last week I explained the metadata found in 360 photos](/blog/metadata-exif-xmp-360-photo-files), and promised a post on video metadata. Well, here it is.
 
 _If you haven't already read that post, it is well worth wrapping your head around some of the concepts discussed before you jump into this one._
 
@@ -37,7 +37,7 @@ Though before I make a decision, the geek in me wants to get down into the nuts 
 
 ## An introduction to video metadata
 
-[Like photos](/blog/2020/metadata-exif-xmp-360-photo-files), videos contain metadata.
+[Like photos](/blog/metadata-exif-xmp-360-photo-files), videos contain metadata.
 
 Video files have metadata for the complete video (e.g. file name) and for different times in the video (e.g. GPS values at a specific time in the video).
 
@@ -45,7 +45,7 @@ Data is not written into each frame in videos. This is different to how metadata
 
 Unlike photos, much of this metadata for videos is written as a track (a video track, an audio track, etc.).
 
-If you've ever wanted to extract audio or a GPS track from a video file (_update [2020-05-22: Turning a 360 Timelapse or Video into a GPX or KML track](/blog/2020/extracting-gps-track-from-360-timelapse-video)_, you are extracting the corresponding track.
+If you've ever wanted to extract audio or a GPS track from a video file (_update [2020-05-22: Turning a 360 Timelapse or Video into a GPX or KML track](/blog/extracting-gps-track-from-360-timelapse-video)_, you are extracting the corresponding track.
 
 All these tracks run in parallel so that the data matches up correctly; image with sound, with metadata (e.g. GPS), etc.
 
@@ -255,26 +255,14 @@ We can also see each individual frame's `ExposureTimes` that makes up this secon
 
 The rest of Track3 follows this format. Every sample interval, 1 measurement for `Track3:Accelerometer`, `Track3:Gyroscope`, `Track3:Magnetometer` etc. is printed and GPSDateTime and subsequent positions are printed.
 
-## Help us Build Great Software
-
-Unfortunately we don't have the budget to buy every single 360 camera to test the photos and videos they produce with our software.
-
-Whilst having standards like EXIF, XMP and GPMF is very helpful, many manufacturers do things slightly differently (especially given the flexibility of fields in XMP data).
-
-In order to make sure our [free, open-source software works for everyone](https://github.com/trek-view/), we need to test it using 360 image and video files produced by a range of cameras and manufacturers.
-
-And that's why we need your help.
-
-If you have a 360 camera and want to support our work, [please share samples from your camera with us by raising a new issue here with a link to the photo or video file](https://github.com/trek-view/360-camera-metadata/issues).
-
 ## Update 2021-08-06
 
-If you'd like to read more about XMP namespaces, [read my latest introductory post here](/blog/2021/introduction-to-xmp-namspaces).
+If you'd like to read more about XMP namespaces, [read my latest introductory post here](/blog/introduction-to-xmp-namspaces).
 
 ## Update 2021-08-20
 
-[Here's a deeper look into the Camera Motion Metadata Spec (CAMM), an alternative to GPMF, here](/blog/2021/metadata-exif-xmp-360-video-files-camm-camera-motion-metadata-spec).
+[Here's a deeper look into the Camera Motion Metadata Spec (CAMM), an alternative to GPMF, here](/blog/metadata-exif-xmp-360-video-files-camm-camera-motion-metadata-spec).
 
 ## Update 2021-10-15
 
-You might also like the post; [Lessons learned when geotagging GoPro timelapse photos and video frames](/blog/2021/lessons-learned-when-geotagging-photos)
+You might also like the post; [Lessons learned when geotagging GoPro timelapse photos and video frames](/blog/lessons-learned-when-geotagging-photos)

@@ -19,13 +19,13 @@ There are many theories as to why. The most convincing is that [since we were ab
 
 However, mathematical applications tend to prefer longitude followed by latitude.
 
-In the world of geospatial software this has led to a fundamental inconsistency: the order in which longitude and latitude is displayed in [Decimal Degrees](/blog/2021/reading-decimal-gps-coordinates-like-a-computer).
+In the world of geospatial software this has led to a fundamental inconsistency: the order in which longitude and latitude is displayed in [Decimal Degrees](/blog/reading-decimal-gps-coordinates-like-a-computer).
 
 Let us start by taking a look at the problem this causes.
 
 The summit of Mount Everest has a latitude of `27.986065` and longitude is `86.922623`.
 
-Google search expect [decimal co-ordinates](/blog/2021/reading-decimal-gps-coordinates-like-a-computer) provided as `lat,lon`.
+Google search expect [decimal co-ordinates](/blog/reading-decimal-gps-coordinates-like-a-computer) provided as `lat,lon`.
 
 If I search lat,lon; [`27.986065,86.922623`](https://www.google.com/search?q=86.922623%2C27.986065), it resolves correctly.
 
@@ -65,7 +65,7 @@ Some examples...
 
 ## What if I don't know the syntax?
 
-As noted in a previous post, [How to Read Co-Ordinates Like a Computer](/blog/2021/reading-decimal-gps-coordinates-like-a-computer), Latitude only ever spans 180 degrees (90 North, 90 South), and longitude 360 degrees (180 East, 180 West).
+As noted in a previous post, [How to Read Co-Ordinates Like a Computer](/blog/reading-decimal-gps-coordinates-like-a-computer), Latitude only ever spans 180 degrees (90 North, 90 South), and longitude 360 degrees (180 East, 180 West).
 
 Therefore if you see a number above 90, it must be referring to a longitude.
 

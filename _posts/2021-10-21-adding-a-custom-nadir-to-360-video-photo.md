@@ -13,13 +13,13 @@ published: true
 
 **Automate the process of adding a custom branded nadir to all your equirectangular photos using Python and Imagemagick.**
 
-[Last year I showed you how to use GIMP to manually add a branded nadir to your photos](/blog/2020/adding-a-custom-nadir-to-360-video-photo).
+[Last year I showed you how to use GIMP to manually add a branded nadir to your photos](/blog/adding-a-custom-nadir-to-360-video-photo).
 
 In many cases, you will want to add a branded nadir to all of your photos, not just one or two. Using GIMP to do this manually isn't viable -- unless you have A LOT of time on your hands.
 
 For those that have a large amount of images, it's relatively simple to do this programmatically with the help of [Imagemagick](https://imagemagick.org/index.php).
 
-Imagemagick provides a huge variety of functions to manipulate image files. If you're a follower of this blog, [you might have seen me use it previously to create a cubemap](/blog/2021/reverse-engineering-gopro-360-file-format-part-3).
+Imagemagick provides a huge variety of functions to manipulate image files. If you're a follower of this blog, [you might have seen me use it previously to create a cubemap](/blog/reverse-engineering-gopro-360-file-format-part-3).
 
 This time I'll show you how to use it to overlay a logo file onto an equirectangular photo to create a branded nadir.
 
@@ -35,7 +35,7 @@ You can use a logo with a transparent background (in `.png` format), but in my e
 
 ## Step 1: Convert the logo to an equirectangular projection
 
-[I explain why we need to do this in the previous post detailing how to add a branded nadir using GIMP](/blog/2020/adding-a-custom-nadir-to-360-video-photo).
+[I explain why we need to do this in the previous post detailing how to add a branded nadir using GIMP](/blog/adding-a-custom-nadir-to-360-video-photo).
 
 Here's how to do it with Imagemagick:
 
@@ -136,4 +136,4 @@ To save you some time here's one we prepared earlier, [our Nadir Patcher script]
 
 Not shooting in 360? No problem.
 
-[How to Add a Custom Watermark to a Photo Programmatically](/blog/2022/adding-a-custom-watermark-to-hero-photo-video).
+[How to Add a Custom Watermark to a Photo Programmatically](/blog/adding-a-custom-watermark-to-hero-photo-video).

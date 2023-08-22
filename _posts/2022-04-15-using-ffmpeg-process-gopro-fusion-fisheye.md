@@ -13,7 +13,7 @@ published: true
 
 **In our continued effort to avoid reliance on GoPro software, I look at how ffmpeg can be used to process the GoPro Fusion's Dual Fisheyes videos to a single equirectangular video.**
 
-You might have seen my previous series of posts; [Turning dual GoPro Fusion Fisheye videos and images into equirectangular projections](/blog/2021/gopro-fusion-fisheye-stitching-part-1).
+You might have seen my previous series of posts; [Turning dual GoPro Fusion Fisheye videos and images into equirectangular projections](/blog/gopro-fusion-fisheye-stitching-part-1).
 
 There is also the option in ffmpeg to convert dual fisheyes too.
 
@@ -26,7 +26,7 @@ Here is an example of the files (shot at 5.2k, each with a resolution of 2704x26
 * [GPFR0002.MP4](https://drive.google.com/file/d/1bbyvicY2b_KkSf-0MaKISwyR4fHr5Aqf/view?usp=sharing)
 * [GPBK0002.MP4](https://drive.google.com/file/d/1bZQyCc0ci7bnXahlJxppf1E08nQC023C/view?usp=sharing)
 
-[Read my previous post with lots more detail about these fisheyes](/blog/2021/gopro-fusion-fisheye-stitching-part-1).
+[Read my previous post with lots more detail about these fisheyes](/blog/gopro-fusion-fisheye-stitching-part-1).
 
 ## Method 1: Using ffmpeg (proof of concept method)
 
@@ -58,7 +58,7 @@ Breaking down the arguements passed to the video filter flag `-vf`:
 * `v360` : filter name
   * `dfisheye` : double fisheye (rectangular image containing two spheres/fisheye)
   * `e` : abbreviation for "equirectangular"
-  * `ih_fov` : input horizontal Field Of View ([see our last post on GoPro field of view](/blog/2021/gopro-fusion-fisheye-stitching-part-4))
+  * `ih_fov` : input horizontal Field Of View ([see our last post on GoPro field of view](/blog/gopro-fusion-fisheye-stitching-part-4))
   * `iv_fov` : input vertical Field Of View, usually (bit not always) identical to `ih_fov` (as above)
 
 The output looks like this;
@@ -71,7 +71,7 @@ Looking closely, you can the stitch lines as well as some duplicate pixels visib
 
 Some of this is due to overlapping pixels and slight variations in the field of view.
 
-It is at these points we need to provide a blend. The blend zone is around 5 degrees (full photo width is 360 degrees). _[You can see why it is 5 degrees in our previous series on converting dual fisheye frames from the Fusion here](/blog/2021/gopro-fusion-fisheye-stitching-part-1)._
+It is at these points we need to provide a blend. The blend zone is around 5 degrees (full photo width is 360 degrees). _[You can see why it is 5 degrees in our previous series on converting dual fisheye frames from the Fusion here](/blog/gopro-fusion-fisheye-stitching-part-1)._
 
 It is possible to use ffmpeg filters to achieve a blend.
 
@@ -85,7 +85,7 @@ The fusion2sphere repository has these pre-generated for each camera mode on the
 * [video mode (5.2k)](https://github.com/trek-view/fusion2sphere/tree/main/pgm-examples/video-5_2k)
 * [video mode (3k)](https://github.com/trek-view/fusion2sphere/tree/main/pgm-examples/video-3k)
 
-_Note: I've also included files for photo mode that can be used if you want to turn GoPro Fusion fisheye images into a video, [like described in this post](/blog/2021/turn-360-photos-into-360-video)._
+_Note: I've also included files for photo mode that can be used if you want to turn GoPro Fusion fisheye images into a video, [like described in this post](/blog/turn-360-photos-into-360-video)._
 
 You also need two blend mask files, one for the front, the other for the back.
 

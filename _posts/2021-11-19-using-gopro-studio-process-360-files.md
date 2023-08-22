@@ -39,7 +39,7 @@ Resolution defines the size of the video. Generally you want the largest possibl
 
 Different Codec's have limitations in the resolutions they can support.
 
-If you want to learn more about why different codec's exist, [I'd suggest reading this post](/blog/2020/fps-bitrate-compression-360-virtual-tours).
+If you want to learn more about why different codec's exist, [I'd suggest reading this post](/blog/fps-bitrate-compression-360-virtual-tours).
 
 H.264 and HEVC (H.265) are two of the most widely known Codec's available.
 
@@ -165,7 +165,7 @@ Therefore we can't enable 360 Audio, even if we wanted to.
 
 ## GPMF
 
-If you're a regular follower of this blog you'll be very familiar with GPMF (GoPro Metadata Format) from past posts, [like this one](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd).
+If you're a regular follower of this blog you'll be very familiar with GPMF (GoPro Metadata Format) from past posts, [like this one](/blog/metadata-exif-xmp-360-video-files-gopro-gpmd).
 
 The GoPro Metadata telemetry captures information captured by the camera's IMU and GPS chips -- data including; orientation, pitch, heading, GPS position, etc.
 

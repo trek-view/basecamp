@@ -15,11 +15,11 @@ published: true
 
 "But this video is only 4K (8.5 megapixels)."
 
-[Said me when looking at the metadata of a video created using a GoPro Fusion](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd).
+[Said me when looking at the metadata of a video created using a GoPro Fusion](/blog/metadata-exif-xmp-360-video-files-gopro-gpmd).
 
 So what is going on here?
 
-A large part of the answer comes down to what happens to the image data after it hits [the sensor](/blog/2020/what-is-global-shutter-rolling-shutter-360-cameras), bit rate being a critical factor.
+A large part of the answer comes down to what happens to the image data after it hits [the sensor](/blog/what-is-global-shutter-rolling-shutter-360-cameras), bit rate being a critical factor.
 
 ## Bit rate 101
 
@@ -89,7 +89,7 @@ By applying these algorithms before the data is transmitted, you can reduce the 
 
 ## GoPro Example
 
-A single sensor on the GoPro Fusion shooting at the highest quality in photo mode ([18 megapixels](/blog/2020/metadata-exif-xmp-360-photo-files)) gives a final image of about 2.5 Megabytes or 20 Megabits. If I take one photo every second it would require a bit rate of 20 Megabits per second per sensor.
+A single sensor on the GoPro Fusion shooting at the highest quality in photo mode ([18 megapixels](/blog/metadata-exif-xmp-360-photo-files)) gives a final image of about 2.5 Megabytes or 20 Megabits. If I take one photo every second it would require a bit rate of 20 Megabits per second per sensor.
 
 Shooting single photos won't trouble the Fusion's maximum bit rate. But video is a different story. 
 
@@ -175,4 +175,4 @@ You'll get higher image quality, and it will be easier to process them. The down
 
 ## Update 2021-09-10
 
-Here's a real world example about why encoding is important when dealing with large video files: [Reverse Engineering GoPro's 360 Video File Format](/blog/2021/reverse-engineering-gopro-360-file-format)
+Here's a real world example about why encoding is important when dealing with large video files: [Reverse Engineering GoPro's 360 Video File Format](/blog/reverse-engineering-gopro-360-file-format)

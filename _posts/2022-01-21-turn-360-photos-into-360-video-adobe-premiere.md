@@ -13,7 +13,7 @@ published: true
 
 **A less technical way to create timelapse videos with spherical metadata. No command line in sight (but you will need an Adobe Premiere subscription).**
 
-[Last summer I wrote about how you can use ffmpeg and Google's Spatial Media Metadata Injector to take a series of timelapse photos to create a single timelapse movie](/blog/2021/turn-360-photos-into-360-video) -- perfect for sharing on YouTube.
+[Last summer I wrote about how you can use ffmpeg and Google's Spatial Media Metadata Injector to take a series of timelapse photos to create a single timelapse movie](/blog/turn-360-photos-into-360-video) -- perfect for sharing on YouTube.
 
 Though many of you emailed in asking if there was an easier way, without having to jump into an unfamiliar command line.
 
@@ -66,9 +66,9 @@ You can play around with the settings depending on how you intend to use the vid
 * Format: H.264
 * Preset: VR Monoscopic Match Source Stereo
 
-It's worth playing around with the bitrate on export to suit the quality you want. [Higher bitrates offer better quality, but result in larger files](/blog/2020/fps-bitrate-compression-360-virtual-tours).
+It's worth playing around with the bitrate on export to suit the quality you want. [Higher bitrates offer better quality, but result in larger files](/blog/fps-bitrate-compression-360-virtual-tours).
 
-If the files imported contain correct spherical information in the metadata ([GPano tags](/blog/2020/metadata-exif-xmp-360-photo-files)), then the "Video is VR" should be auto selected (if not, be sure to check it). This is vital to ensure the correct 360 metadata is included in the video.
+If the files imported contain correct spherical information in the metadata ([GPano tags](/blog/metadata-exif-xmp-360-photo-files)), then the "Video is VR" should be auto selected (if not, be sure to check it). This is vital to ensure the correct 360 metadata is included in the video.
 
 Clicking Export will start the creation of the .mp4 timelapse.
 

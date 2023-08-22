@@ -29,7 +29,7 @@ These days we take for granted the ability to search mapping apps on our phones 
 
 In refugee camps, where new buildings, streets, or neighbourhoods can appear by the day, being able to direct someone to where they need to go can be very difficult.
 
-Co-ordinates are complex and location codes, like [Plus Codes](https://plus.codes/) or [What3Words](https://what3words.com/), are not widely adopted. [Yet](/blog/2019/location-codes-unmapped-hiking-trails).
+Co-ordinates are complex and location codes, like [Plus Codes](https://plus.codes/) or [What3Words](https://what3words.com/), are not widely adopted. [Yet](/blog/location-codes-unmapped-hiking-trails).
 
 In emergency settings, it is extremely important to get accurate information on the location of people and infrastructure, to understand their needs and plan the response.
 
@@ -45,7 +45,7 @@ Regardless, the value is clear. New residents can quickly find much needed ameni
 
 As we develop Trek View, we're finding an ever-increasing number of ways to use street-level imagery for good.
 
-We put out a _Call for Trekkers_ twice yearly with a focus on the natural world. [Here's our Winter / Spring 2020 focus](/blog/2019/call-for-trekkers-winter-spring).
+We put out a _Call for Trekkers_ twice yearly with a focus on the natural world. [Here's our Winter / Spring 2020 focus](/blog/call-for-trekkers-winter-spring).
 
 Though I want to open an indefinite _Call for Trekkers_ to those pursuing humanitarian causes.
 

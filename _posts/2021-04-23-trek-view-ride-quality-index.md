@@ -13,7 +13,7 @@ published: true
 
 **We continue to build out our Data Bike and are now trying to establish a global standard to measure cycle trail quality.**
 
-[In the previous post I considered some apps that can be used to record raw data from your phones IMU](/blog/2021/measuring-condition-cycle-paths-phone-update).
+[In the previous post I considered some apps that can be used to record raw data from your phones IMU](/blog/measuring-condition-cycle-paths-phone-update).
 
 <img class="img-fluid" src="/assets/images/blog/2021-04-23/ResearchBikeInfographic-sm.jpeg" alt="Minnesota Research Bike" title="Minnesota Research Bike" />
 
@@ -27,7 +27,7 @@ This posts details my attempt at creating a Trail Quality Index using a similar 
 
 ## Orientation
 
-[I strongly recommend reading about Accelerometers in this post if you're new to their functionality](/blog/2020/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer/).
+[I strongly recommend reading about Accelerometers in this post if you're new to their functionality](/blog/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer/).
 
 <img class="img-fluid" src="/assets/images/blog/2021-04-23/accelerometer-axes.png" alt="Accelerometer Phone Orientation" title="Accelerometer Phone Orientation" />
 
@@ -43,7 +43,7 @@ To ensure accuracy with this approach requires the phone to be mounted in a secu
 
 ## Choosing what data to measure
 
-To capture data I used [the Physics Toolbox Sensor Suite Pro app on my phone](/blog/2021/measuring-condition-cycle-paths-phone-update). Any app that can measure raw accelerometer data will work using my approach.
+To capture data I used [the Physics Toolbox Sensor Suite Pro app on my phone](/blog/measuring-condition-cycle-paths-phone-update). Any app that can measure raw accelerometer data will work using my approach.
 
 The linear accelerometer measures acceleration in a straight line in three different dimensions. Linear acceleration changes whenever the mobile device speeds up, slows down, or changes direction. When the mobile device is at rest with respect to the surface of the earth, it reads acceleration values of 0, 0, 0.
 
@@ -291,4 +291,4 @@ If you have any experience in this area, [I'd love to hear from you](/contact/).
 
 ## Update 2021-05-21
 
-[Trek View Trail Quality Index: An Alternative Method Using Computer Vision](/blog/2021/trek-view-ride-quality-index-computer-vision-part-1).
+[Trek View Trail Quality Index: An Alternative Method Using Computer Vision](/blog/trek-view-ride-quality-index-computer-vision-part-1).

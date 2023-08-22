@@ -25,8 +25,8 @@ Firstly, you need to turn your timelapse photos or video file into a gpx file.
 
 I have previously explained how to do this;
 
-* For video: [Getting started with GoPro Telemetry to parse GPMD](/blog/2022/gopro-telemetry-exporter-getting-started)
-* For photo:  [Turning a 360 Timelapse or Video into a GPX or KML track using exiftool](/blog/2022/extracting-gps-track-from-360-timelapse-video)
+* For video: [Getting started with GoPro Telemetry to parse GPMD](/blog/gopro-telemetry-exporter-getting-started)
+* For photo:  [Turning a 360 Timelapse or Video into a GPX or KML track using exiftool](/blog/extracting-gps-track-from-360-timelapse-video)
 
 ## Option 1: Using the Strava website
 

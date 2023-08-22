@@ -13,7 +13,7 @@ published: true
 
 **Put a map inside your GoPro video showing exactly where is was shot.**
 
-[A few weeks back I showed how to use gopro-telemetry to extract gpmf metadata from GoPro videos](/blog/2022/gopro-telemetry-exporter-getting-started).
+[A few weeks back I showed how to use gopro-telemetry to extract gpmf metadata from GoPro videos](/blog/gopro-telemetry-exporter-getting-started).
 
 Given the types of videos created when making virtual tours, one of the uses for the resulting `.json` telemetry file is mapping.
 
@@ -34,7 +34,7 @@ For this example I will use two videos:
 1. `GX010044.MP4`: a HERO video shot on the GoPro HERO 10 with a resolution of 5312x2988 (5.3k).
 2. `GS020176.mp4`: an equirectangular video shot on the GoPro MAX and stitched with GoPro Studio with a resolution 5376x2688 (5.6k). 
 
-[I have extracted the `GPS5` telemetry stream using `gopro-telemetry` for both these videos](/blog/2022/gopro-telemetry-exporter-getting-started).
+[I have extracted the `GPS5` telemetry stream using `gopro-telemetry` for both these videos](/blog/gopro-telemetry-exporter-getting-started).
 
 Below is the first GPS point from `GX010044.MP4`:
 
@@ -152,7 +152,7 @@ In the second GeoJSON (`000001.geojson`), the `LineString` object will remain th
         },
 ```
 
-...and so on for all of the remaining GeoJSON files. Note, [the geojson is in `lon,lat` format](/blog/2022/latitude-longitude-standard).
+...and so on for all of the remaining GeoJSON files. Note, [the geojson is in `lon,lat` format](/blog/latitude-longitude-standard).
 
 ## 3. Calculate images size and overlay position
 
@@ -176,11 +176,11 @@ So for the example `GX010044.MP4` (5312x2988) gives;
 
 ### 3B. 360 (equirectangular) videos
 
-You can identify equirectangular videos using the metdata tag `<XMP-GSpherical:ProjectionType>equirectangular</XMP-GSpherical:ProjectionType>` ([using exiftool](/blog/2020/metadata-exif-xmp-360-photo-files)).
+You can identify equirectangular videos using the metdata tag `<XMP-GSpherical:ProjectionType>equirectangular</XMP-GSpherical:ProjectionType>` ([using exiftool](/blog/metadata-exif-xmp-360-photo-files)).
 
 <img class="img-fluid" src="/assets/images/blog/2022-05-06/map-in-video-overlay-equi.jpg" alt="Map in video 360 map" title="Map in video 360 map" />
 
-[I explained the need to convert a normal projected file into the equirectangular space in my post on generating a nadir using imagemagick last year](/blog/2021/adding-a-custom-nadir-to-360-video-photo/).
+[I explained the need to convert a normal projected file into the equirectangular space in my post on generating a nadir using imagemagick last year](/blog/adding-a-custom-nadir-to-360-video-photo/).
 
 Now, you could convert the map to an equirectangular projection too. However, as I noted in that post:
 
@@ -220,7 +220,7 @@ $ curl -g "https://api.mapbox.com/styles/v1/mapbox/outdoors-v11/static/geojson({
 
 These are the required parameters, [but there are more documented here should you want to play around](https://docs.mapbox.com/api/maps/static-images/#retrieve-a-static-map-from-a-style).
 
-`{LON},{LAT}` are the map center ([MapBox also expects `lon,lat` format](/blog/2022/latitude-longitude-standard)), `{ZOOM}` is the [MapBox zoom level](https://docs.mapbox.com/help/glossary/zoom-level/), and {WIDTH}x{HEIGHT} were calculated at step 3.
+`{LON},{LAT}` are the map center ([MapBox also expects `lon,lat` format](/blog/latitude-longitude-standard)), `{ZOOM}` is the [MapBox zoom level](https://docs.mapbox.com/help/glossary/zoom-level/), and {WIDTH}x{HEIGHT} were calculated at step 3.
 
 Using the GeoJSON code snippet shared above (minified), the full command would be;
 
@@ -232,7 +232,7 @@ You might run into issues here depending on how many points are in your telemetr
 
 There are three options in this case;
 
-* filter the number of points generated in the telemetry by using the options in GoPro telemetry ([read more here](/blog/2022/gopro-telemetry-exporter-getting-started))
+* filter the number of points generated in the telemetry by using the options in GoPro telemetry ([read more here](/blog/gopro-telemetry-exporter-getting-started))
 * uploading a new style using the `.geojson` file in the MapBox Studio UI
 * [creating a new style using the `.geojson` file via the MapBox API](https://docs.mapbox.com/api/maps/styles/#example-request-create-a-style) (recommended)
 
@@ -310,7 +310,7 @@ ffmpeg -i GX010044.MP4 -i MAP_IMAGES.MP4 -filter_complex [0][1]overlay=eof_actio
 
 You can set the coordinates of the overlay filter using x (from left) and y (from top) like so:
 
-You'll also see I map all the streams using `-map [s0] -map 0:1 -map 0:2 -map 0:3`. Be careful with this, use ffmpeg to first determine what streams exist in the original video, and update the command above with the correct streams. [More about this and how to copy global metadata, essential for equirectangular videos, here](/blog/2022/ffmpeg-video-to-frame-cheat-sheet).
+You'll also see I map all the streams using `-map [s0] -map 0:1 -map 0:2 -map 0:3`. Be careful with this, use ffmpeg to first determine what streams exist in the original video, and update the command above with the correct streams. [More about this and how to copy global metadata, essential for equirectangular videos, here](/blog/ffmpeg-video-to-frame-cheat-sheet).
 
 ## Automating this flow
 

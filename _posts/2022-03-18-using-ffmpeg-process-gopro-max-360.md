@@ -13,7 +13,7 @@ published: true
 
 **In our continued effort to avoid reliance on GoPro software, I look at how ffmpeg can be used to process GoPro EAC projected videos (.360's) to equirectangular projections.**
 
-You might have seen my previous series of posts; [Reversing engineering GoPro MAX .360 videos (convert to equirectangular projection)](/blog/2021/reverse-engineering-gopro-360-file-format-part-1).
+You might have seen my previous series of posts; [Reversing engineering GoPro MAX .360 videos (convert to equirectangular projection)](/blog/reverse-engineering-gopro-360-file-format-part-1).
 
 The outcome of this post was a proof-of-concept called [MAX2Sphere](https://github.com/trek-view/MAX2sphere).
 
@@ -23,7 +23,7 @@ Of course this meant I had to play with them... and here is what I found.
 
 ## 1. GoPro MAX `.360` input
 
-The GoPro MAX produces a single `.360` file (GoPro's EAC projection type) for 360 videos. [I've talked about these in detail previously](/blog/2021/everse-engineering-gopro-360-file-format-part-1).
+The GoPro MAX produces a single `.360` file (GoPro's EAC projection type) for 360 videos. [I've talked about these in detail previously](/blog/everse-engineering-gopro-360-file-format-part-1).
 
 In short GoPro's `.360`'s contain two video tracks which form a EAC custom cubemap projection. You can see the structure of `.360`'s using ffprobe:
 
@@ -180,7 +180,7 @@ This command gives a final output that looks like this:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lLSQF6HEg9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-_Note: no equirectangular metadata has been added to the video (hence no 360 controls). [See how to do this here](/blog/2021/turn-360-photos-into-360-video)._
+_Note: no equirectangular metadata has been added to the video (hence no 360 controls). [See how to do this here](/blog/turn-360-photos-into-360-video)._
 
 Both video and audio look and sound good, it is equirectangular, but what about the streams?
 

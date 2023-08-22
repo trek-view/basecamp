@@ -13,7 +13,7 @@ published: true
 
 **Speed = distance / time. But what about speed along the x (east, west), y (north, south), z (altitude) axes?**
 
-Over the last few weeks I've been digging into creating and injecting [CAMM telemetry](/blog/2021/metadata-exif-xmp-360-video-files-camm-camera-motion-metadata-spec) from [videos created from static frames](/blog/2021/turn-360-photos-into-360-video).
+Over the last few weeks I've been digging into creating and injecting [CAMM telemetry](/blog/metadata-exif-xmp-360-video-files-camm-camera-motion-metadata-spec) from [videos created from static frames](/blog/turn-360-photos-into-360-video).
 
 [The CAMM spec requires](https://developers.google.com/streetview/publish/camm-spec), in addition to latitude, longitude, and altitude:
 
@@ -23,7 +23,7 @@ Over the last few weeks I've been digging into creating and injecting [CAMM tele
 
 For the old school followers of our work, you might remember our old CLI tool, [Sequence Maker](https://github.com/trek-view/sequence-maker).
 
-This generated speed between photos as well as a whole host of other values like photo heading. [This post explains everything](/blog/2020/what-direction-are-you-facing).
+This generated speed between photos as well as a whole host of other values like photo heading. [This post explains everything](/blog/what-direction-are-you-facing).
 
 Speed in this example was simplistically calculated (speed = distance/time) from point A to point B (the photo co-ordinates) along a 2D plane (no concept of the vertical axis).
 

@@ -23,7 +23,7 @@ The GoPro Fusion camera shoots both.
 
 My tours tend to cover 10+ kilometres / 2+ hours in total. Shooting video for this length of time quickly drains the cameras battery and can often cause overheating issues (especially on warmer days).
 
-_Update (2019-07-05): [Read more about increasing the battery life of your GoPro Fusion to shoot videos here](/blog/2019/diy-google-street-view-part-6-increasing-gopro-fusion-battery-life)._
+_Update (2019-07-05): [Read more about increasing the battery life of your GoPro Fusion to shoot videos here](/blog/diy-google-street-view-part-6-increasing-gopro-fusion-battery-life)._
 
 I also like the to edit the final imagery (i.e. deleting frames I don't want to publish, without using third-party software).
 
@@ -125,8 +125,8 @@ _Disclaimer: I'm not a legal professional._
 
 ## Part 4
 
-Read Part 4 now: [Stitching 360-Degree Photos Using GoPro Fusion Studio](/blog/2019/diy-google-street-view-part-4-processing-photos/)
+Read Part 4 now: [Stitching 360-Degree Photos Using GoPro Fusion Studio](/blog/diy-google-street-view-part-4-processing-photos/)
 
 _Update December 2019: [You can now access the Trek Pack Getting Started Guide online with all the latest information you need to create, process and publish your own Street View Tours](/trek-pack/version-one)._
 
-_Update June 2020: [A newer version of the Trek Pack (v2) exists, that superseeds the pack (v1) described in this post](/blog/2020/announcing-trek-pack-v2)._
+_Update June 2020: [A newer version of the Trek Pack (v2) exists, that superseeds the pack (v1) described in this post](/blog/announcing-trek-pack-v2)._

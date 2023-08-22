@@ -13,7 +13,7 @@ published: true
 
 **A DIY science experiment to examine GPS signal loss underwater using a GoPro MAX.**
 
-[Previously I've talked about GPS underwater, or lack of it](/blog/2020/underwater-google-street-view), and setups for capturing GPS when scuba-diving.
+[Previously I've talked about GPS underwater, or lack of it](/blog/underwater-google-street-view), and setups for capturing GPS when scuba-diving.
 
 I was recently snorkeling with the camera no more than a few centimeters below the ocean surface. Using a swim buoy with a GPS was cumbersome and fairly inaccurate because the buoy has to be moved away from the camera to ensure it didn't enter the shot.
 
@@ -39,7 +39,7 @@ Let's put the science to the test...
 
 At the time of the test, [I didn't have access to the 360Bubble that I usually use for underwater recordings](/trek-pack/). This would have improved the results closer to the surface by providing a larger volume of air between the camera and surface.
 
-So I decided to take my GoPro MAX with a smaller water-proof cover for the camera ([here's the one I bought via Amazon](https://www.amazon.co.uk/VGSION-Accessory-Underwater-Housing-Waterproof/dp/B083HQ7NWW)). The MAX is waterproof, [but as noted in this post](/blog/2020/underwater-google-street-view), you should be aware water changes the effect of light. This cover doesn't fully solve that issue, but it does help by providing a small air-gap between the camera an lens.
+So I decided to take my GoPro MAX with a smaller water-proof cover for the camera ([here's the one I bought via Amazon](https://www.amazon.co.uk/VGSION-Accessory-Underwater-Housing-Waterproof/dp/B083HQ7NWW)). The MAX is waterproof, [but as noted in this post](/blog/underwater-google-street-view), you should be aware water changes the effect of light. This cover doesn't fully solve that issue, but it does help by providing a small air-gap between the camera an lens.
 
 ## Test conditions
 
@@ -49,13 +49,13 @@ Some things to note in these results:
 * I took more than ten photos at each depth to get a wider sample, only selected images are shown below
 * The conditions were perfect on the day (clear skies)
 * I don't know where the GPS receiver is in the camera (which might alter measurements by up to 1cm, but this is negligible -- see first point on accuracy)
-* I don't know how many (if any) GPS positions are calculated in each test by the cameras [IMU (Inertial Measurement Unit)](/blog/2020/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer)
+* I don't know how many (if any) GPS positions are calculated in each test by the cameras [IMU (Inertial Measurement Unit)](/blog/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer)
 
 ## A note on altitude values
 
-[In a previous post I've talked about factors that can impact the accuracy of reported GPS positions](/blog/2020/gps-101) -- that post explains why the altitude measurements in my test are widely erroneous (more-so than latitude/longitude). 
+[In a previous post I've talked about factors that can impact the accuracy of reported GPS positions](/blog/gps-101) -- that post explains why the altitude measurements in my test are widely erroneous (more-so than latitude/longitude). 
 
-_[If needed, I could use a Digital Elevation Model to fix them](/blog/2020/what-is-a-digital-elevation-model)._
+_[If needed, I could use a Digital Elevation Model to fix them](/blog/what-is-a-digital-elevation-model)._
 
 ## Test results
 
@@ -117,7 +117,7 @@ No GPS reported in any photos at this depth.
 
 Depths of 5-10cm below the surface of the ocean causes the cameras GPS receiver to start failing significantly. Any deeper and it's unusable.
 
-In summary, your MAX is great for snorkeling where you can keep your camera on, or slightly below the surface. However, you're going to need another way of tracking GPS if you intend to go on deeper ([see our post Underwater Street View for some ideas](/blog/2020/underwater-google-street-view)).
+In summary, your MAX is great for snorkeling where you can keep your camera on, or slightly below the surface. However, you're going to need another way of tracking GPS if you intend to go on deeper ([see our post Underwater Street View for some ideas](/blog/underwater-google-street-view)).
 
 ## A final note on freshwater
 

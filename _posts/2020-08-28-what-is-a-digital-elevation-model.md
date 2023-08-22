@@ -15,7 +15,7 @@ published: true
 
 There are plenty of devices that can approximate your elevation (or depression) compared to sea level.
 
-[You're probably most familiar with GPS receivers -- like the one in your phone or 360 camera -- recording your vertical position (altitude), as well as your horizontal position (latitude and longitude)](/blog/2020/gps-101).
+[You're probably most familiar with GPS receivers -- like the one in your phone or 360 camera -- recording your vertical position (altitude), as well as your horizontal position (latitude and longitude)](/blog/gps-101).
 
 A 3 satellite fix gives your position on the face of the earth at sea level, whether or not you are at sea level.
 

@@ -21,7 +21,7 @@ There were some brilliant talks at this years conference, [now available to watc
 
 I've curated some of my favourite talks most closely linked to the work we do here at Trek View that I know you'll enjoy.
 
-_Don't forget to check out my favourite talks from [2020](/blog/2020/state-of-the-map-2020) and [2021](/blog/2021/state-of-the-map-2021) too._
+_Don't forget to check out my favourite talks from [2020](/blog/state-of-the-map-2020) and [2021](/blog/state-of-the-map-2021) too._
 
 ## Routing not only for Prams
 

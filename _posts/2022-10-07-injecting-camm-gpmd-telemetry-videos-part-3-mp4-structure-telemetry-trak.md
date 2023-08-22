@@ -13,13 +13,13 @@ published: true
 
 **In this post I will focus on the structure of trak boxes in mp4 with of a focus on using them to describe video telemetry.**
 
-[Recapping on last week...](/blog/2022/injecting-camm-gpmd-telemetry-videos-part-2-mp4-overview)
+[Recapping on last week...](/blog/injecting-camm-gpmd-telemetry-videos-part-2-mp4-overview)
 
 To understant the `moov` boxes introduced last week, you must first know a bit more about the media binary written into the `mdat` box.
 
 ## Jumping into `mdat` binaries
 
-In addition to the video and audio captured by the cameras lens(es) and microphone(s), the cameras sensors ([GPS](/blog/2022/gps-101), [IMU](/blog/2022/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer), etc) are recording many measurements per second.
+In addition to the video and audio captured by the cameras lens(es) and microphone(s), the cameras sensors ([GPS](/blog/gps-101), [IMU](/blog/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer), etc) are recording many measurements per second.
 
 As data is being generated it is being stored (because a camera has limited memory). The camera firmware is built to be efficient and write data to the file quickly, the decoding and understanding of the data can be understood later.
 
@@ -517,7 +517,7 @@ I hate to be the bearer of bad news, but most telemetry, including GPMF and CAMM
 
 Take CAMM for example. CAMM not only reports GPS data (as shown in example one). It can also be used to report acceleration, roll, etc in different samples (1 sample for GPS, 1 sample for acceleration, etc). Each of these samples are reported at different frequencies (rates). For example GPS might be reported 10 times a second, whilst acceleration might be reported 100 times per second. Each sample type from each sensor is a different size.
 
-Similarly, its not always a fixed frequency that a sensor will report data. For example, a GPS chip might report up to 16 measurements a second. Up to being the key words. [In poor conditions where the GPS satellites are out of view](/blog/2022/gps-101), significantly fewer (or even no) measurements might be reported. 
+Similarly, its not always a fixed frequency that a sensor will report data. For example, a GPS chip might report up to 16 measurements a second. Up to being the key words. [In poor conditions where the GPS satellites are out of view](/blog/gps-101), significantly fewer (or even no) measurements might be reported. 
 
 In short, this adds a lot more variance to sample sizes value (in `stsz`), the time of each sample (`stts`) and the offsets (`stco`) -- and this is where having multiple samples per chunk becomes very useful (`stsc`).
 

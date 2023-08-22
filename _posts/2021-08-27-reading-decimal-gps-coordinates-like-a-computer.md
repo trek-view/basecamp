@@ -57,7 +57,7 @@ Here are some example of cities in each of the quadrants and their latitudes and
 * Top left quadrant: Northern latitudes, Western longitudes
 	* e.g San Francisco = 37.7749° N, 122.4194° W (37.7749,-122.4194)
 
-You might have come across other systems reporting latitude and longitude including; Degrees, Minutes, and Seconds (DMS) -- the oldest format for geographic coordinates (though still used extensively today ([including in camera metadata](/blog/2020/metadata-exif-xmp-360-photo-files)).
+You might have come across other systems reporting latitude and longitude including; Degrees, Minutes, and Seconds (DMS) -- the oldest format for geographic coordinates (though still used extensively today ([including in camera metadata](/blog/metadata-exif-xmp-360-photo-files)).
 
 For example, here's a snippet of the metadata from a GoPro 360 photo reporting latitude and longitude in DMS:
 
@@ -126,4 +126,4 @@ In a world without computers decimal places were a major consideration. As compu
 
 The biggest issue with GPS accuracy today is down to the device and conditions.
 
-A device might report to 8 decimal places ([good for millimeter level accuracy](https://en.wikipedia.org/wiki/Decimal_degrees)), but if the measurement calculated by the GPS receiver based on satellite fixes is inaccurate then the measurement will be reported to a high degree of accuracy, but is in fact not very accurate at all ([see GPS 101 for causes of inaccuracy](/blog/2020/gps-101)).
+A device might report to 8 decimal places ([good for millimeter level accuracy](https://en.wikipedia.org/wiki/Decimal_degrees)), but if the measurement calculated by the GPS receiver based on satellite fixes is inaccurate then the measurement will be reported to a high degree of accuracy, but is in fact not very accurate at all ([see GPS 101 for causes of inaccuracy](/blog/gps-101)).

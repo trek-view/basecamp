@@ -13,7 +13,7 @@ published: true
 
 **A proof-of-concept to dynamically adjust for camera roll and pitch in equirectangular videos.**
 
-In my last series of posts, [Using ffmpeg to dynamically adjust the yaw of GoPro 360 videos](/blog/2022/calculating-heading-of-gopro-video-using-gpmf-part-2) part of the process required converting `CORI` samples into yaw, pitch, and roll (for the intent of fixing yaw).
+In my last series of posts, [Using ffmpeg to dynamically adjust the yaw of GoPro 360 videos](/blog/calculating-heading-of-gopro-video-using-gpmf-part-2) part of the process required converting `CORI` samples into yaw, pitch, and roll (for the intent of fixing yaw).
 
 Of course, this data can also be used to fix pitch and roll issues.
 
@@ -21,7 +21,7 @@ Of course, this data can also be used to fix pitch and roll issues.
 
 Fixing roll is commonly an option for in post-processing video software (like GoPro Player for the GoPro MAX) -- it is a feature known as horizon leveling (or roll lock).
 
-For example, when converting .360's shot on the GoPro MAX [using GoPro Studio software you can select "Horizon level"](/blog/2021/using-gopro-studio-process-360-files) that will automatically adjust the roll of the camera to ensure the horizon remains level.
+For example, when converting .360's shot on the GoPro MAX [using GoPro Studio software you can select "Horizon level"](/blog/using-gopro-studio-process-360-files) that will automatically adjust the roll of the camera to ensure the horizon remains level.
 
 Action cameras are often mounted to moving objects, like people, which have a tendency to roll left and right when moving.
 
@@ -51,9 +51,9 @@ The `y` axis is somewhat of an imaginary measurement, but think of it this way; 
 
 To level the camera to `y=0` in the 3 examples above, all that is needed is to adjust roll in; example one by -10 degrees, the second by -135 degrees, and the third by -340 degrees to make `y=0`.
 
-[As we know from the previous posts](/blog/2022/calculating-heading-of-gopro-video-using-gpmf-part-2), we know that roll for each frame can be calculated from measurements captured by the gyroscope.
+[As we know from the previous posts](/blog/calculating-heading-of-gopro-video-using-gpmf-part-2), we know that roll for each frame can be calculated from measurements captured by the gyroscope.
 
-As such, to adjust for roll we can use [a similar approach with ffmpeg as implemented for adjusting yaw](/blog/2022/calculating-heading-of-gopro-video-using-gpmf-part-3) that is; extract all the frames, adjust each frame based on roll measurement using the ffmpeg `v360` `roll` filter (`ffmpeg -i <frame_path> -vf v360=input=e:e:roll=Y <out_path>`) and then rebuild the video.
+As such, to adjust for roll we can use [a similar approach with ffmpeg as implemented for adjusting yaw](/blog/calculating-heading-of-gopro-video-using-gpmf-part-3) that is; extract all the frames, adjust each frame based on roll measurement using the ffmpeg `v360` `roll` filter (`ffmpeg -i <frame_path> -vf v360=input=e:e:roll=Y <out_path>`) and then rebuild the video.
 
 Our GoPro RPY script performs all these steps automatically using the command;
 
@@ -69,7 +69,7 @@ And then implementing the steps described to level roll gives an output like so;
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/sLwrGJQMIxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-It works, but like with yaw, it is a bit shaky, hence a high or low pass filter on the telemetry during calculations should really be considered ([see last weeks post for more on that subject](/blog/2022/calculating-heading-of-gopro-video-using-gpmf-part-3)).
+It works, but like with yaw, it is a bit shaky, hence a high or low pass filter on the telemetry during calculations should really be considered ([see last weeks post for more on that subject](/blog/calculating-heading-of-gopro-video-using-gpmf-part-3)).
 
 ## Pitch (`x` axis)
 
@@ -121,7 +121,7 @@ Many 360 cameras embed a subset of sensor data in photo metadata too.
 
 Unfortunately in the case of GoPro's 360 cameras this is not the case. When shooting in timelapse photo or photo mode on the MAX or Fusion non of the sensor data is stored.
 
-[I've talked previously about calculating rough values](/blog/2020/what-direction-are-you-facing) for heading and pitch by working out the heading and the pitch to the next photo in a photo sequence (using latitude, longitude, and altitude values which are reported in the photos metadata).
+[I've talked previously about calculating rough values](/blog/what-direction-are-you-facing) for heading and pitch by working out the heading and the pitch to the next photo in a photo sequence (using latitude, longitude, and altitude values which are reported in the photos metadata).
 
 Though knowing where the next photo is does not give us anything to go on in terms of calculating camera roll.
 

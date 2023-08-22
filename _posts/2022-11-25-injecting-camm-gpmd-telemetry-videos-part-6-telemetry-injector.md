@@ -15,11 +15,11 @@ published: true
 
 Over the last month I've introduced the concepts of how telemetry is stored in mp4 video files in both CAMM and GPMF standards. If you missed any of the posts, start by reading them in order here;
 
-* [Part 1: An introduction](/blog/2022/injecting-camm-gpmd-telemetry-videos-part-1-introduction)
-* [Part 2: A high-level introduction to the mp4 specification](/blog/2022/injecting-camm-gpmd-telemetry-videos-part-2-mp4-overview)
-* [Part 3: Structuring telemetry trak's in mp4 videos](/blog/2022/injecting-camm-gpmd-telemetry-videos-part-3-mp4-structure-telemetry-trak)
-* [Part 4: CAMM](/blog/2022/injecting-camm-gpmd-telemetry-videos-part-4-camm)
-* [Part 5: CAMM](/blog/2022/injecting-camm-gpmd-telemetry-videos-part-5-gpmf)
+* [Part 1: An introduction](/blog/injecting-camm-gpmd-telemetry-videos-part-1-introduction)
+* [Part 2: A high-level introduction to the mp4 specification](/blog/injecting-camm-gpmd-telemetry-videos-part-2-mp4-overview)
+* [Part 3: Structuring telemetry trak's in mp4 videos](/blog/injecting-camm-gpmd-telemetry-videos-part-3-mp4-structure-telemetry-trak)
+* [Part 4: CAMM](/blog/injecting-camm-gpmd-telemetry-videos-part-4-camm)
+* [Part 5: CAMM](/blog/injecting-camm-gpmd-telemetry-videos-part-5-gpmf)
 
 The aim of this exercise was to learn how telemetry is housed in videos so we could create videos with embedded telemetry using Trail Maker so that the telemetry would not be lost over time with GPX files going missing,
 
@@ -32,9 +32,9 @@ The logic in Telemetry Injector has been purposely designed to be fairly simplis
 1. takes a:
 	* series of geo-tagged images;
 	* or a video file with an accompanying GPX file
-2. If image input, [parses out the telemetry into a GPX file](/blog/2020/extracting-gps-track-from-360-timelapse-video/)
-3. If image input, [creates a video file from photos](/blog/2021/turn-360-photos-into-360-video/)
-4. Creates a [CAMM](/blog/2022/injecting-camm-gpmd-telemetry-videos-part-4-camm) or [GPMF](/blog/2022/injecting-camm-gpmd-telemetry-videos-part-5-gpmf) binary file from GPX and appends it to any existing `mdat` media
+2. If image input, [parses out the telemetry into a GPX file](/blog/extracting-gps-track-from-360-timelapse-video/)
+3. If image input, [creates a video file from photos](/blog/turn-360-photos-into-360-video/)
+4. Creates a [CAMM](/blog/injecting-camm-gpmd-telemetry-videos-part-4-camm) or [GPMF](/blog/injecting-camm-gpmd-telemetry-videos-part-5-gpmf) binary file from GPX and appends it to any existing `mdat` media
 5. Create a corresponding `moov`>`trak` box to describe the injected telemetry.
 
 To demonstrate this, I'll first start by walking you through how to run the script;
@@ -212,7 +212,7 @@ And taking a snippet of that output, we can see the injected telemetry;
 
 ### Photo input
 
-Telemetry Injector is hard-coded to write telemetry in at 5 FPS ([as per this implementation](/blog/2022/create-google-street-view-video-publish-api)). This means timings in the photo metadata is ignored, except for the first photo GPS time which is used for the first entry.
+Telemetry Injector is hard-coded to write telemetry in at 5 FPS ([as per this implementation](/blog/create-google-street-view-video-publish-api)). This means timings in the photo metadata is ignored, except for the first photo GPS time which is used for the first entry.
 
 #### Photo Input Example 1: CAMM (Equirectangular image)
 

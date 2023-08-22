@@ -15,7 +15,7 @@ published: true
 
 In 2022 I wrote an introductory post on the GoPro Metadata Format (GPMF / GPMD) for video telemetry.
 
-[You can read it here](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd).
+[You can read it here](/blog/metadata-exif-xmp-360-video-files-gopro-gpmd).
 
 As work on Explorer has progressed, we've been learning lots about how different GoPro cameras write metadata to the image and video files they produce.
 
@@ -60,7 +60,7 @@ If you're looking for GPS and IMU telemetry, this, however, is in the file only.
 
 Here's an example of the metadata held in the [front photo](https://github.com/trek-view/gopro-metadata/blob/main/fusion/fus-360-pho-001u/GPFR0004.xml) and [back photo](https://github.com/trek-view/gopro-metadata/blob/main/fusion/fus-360-pho-001u/GPBK0004.xml).
 
-For videos, you can see there is a significant difference between the [front video](https://github.com/trek-view/gopro-metadata/blob/main/fusion/fus-360-vid-001u/GPFR0002.xml) and [back video](https://github.com/trek-view/gopro-metadata/blob/main/fusion/fus-360-vid-001u/GPBK0002.xml), with the [GPMD telemetry stream](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd) (and keep in mind the sample used is a short video).
+For videos, you can see there is a significant difference between the [front video](https://github.com/trek-view/gopro-metadata/blob/main/fusion/fus-360-vid-001u/GPFR0002.xml) and [back video](https://github.com/trek-view/gopro-metadata/blob/main/fusion/fus-360-vid-001u/GPBK0002.xml), with the [GPMD telemetry stream](/blog/metadata-exif-xmp-360-video-files-gopro-gpmd) (and keep in mind the sample used is a short video).
 
 #### A note determining front and back images
 

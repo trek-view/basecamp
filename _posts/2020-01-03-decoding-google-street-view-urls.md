@@ -119,7 +119,7 @@ Almost all the bang values are identical to the first image, except inside the 6
 
 <img class="img-fluid" src="/assets/images/blog/2020-01-03/google-street-view-place-name.png" alt="Google Street View Place name" title="Google Street View Place name" />
 
-Initially I thought the 4th bang might be referring to the [Google Place ID of the image](/blog/2019/place-id-google-street-view), however both images show "The Queen's Walk" as the place, [and a lookup](https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder) of the `place ID` for the "The Queen's Walk" returns `EixUaGUgUXVlZW4ncyBXYWxrLCBTb3V0aCBCYW5rLCBMb25kb24gU0UxLCBVSyIuKiwKFAoSCekLrB7HBHZIEQ5z1qt4guCgEhQKEgk_J5VMtgR2SBFYYta2uf8XCQ`. 
+Initially I thought the 4th bang might be referring to the [Google Place ID of the image](/blog/place-id-google-street-view), however both images show "The Queen's Walk" as the place, [and a lookup](https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder) of the `place ID` for the "The Queen's Walk" returns `EixUaGUgUXVlZW4ncyBXYWxrLCBTb3V0aCBCYW5rLCBMb25kb24gU0UxLCBVSyIuKiwKFAoSCekLrB7HBHZIEQ5z1qt4guCgEhQKEgk_J5VMtgR2SBFYYta2uf8XCQ`. 
 
 Digging deeper, lets take another Street View image taken by Google and it's decoded URL:
 

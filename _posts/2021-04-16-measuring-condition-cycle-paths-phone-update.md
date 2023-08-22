@@ -13,7 +13,7 @@ published: true
 
 **Two consumer apps that can measure sensor data on your phone to record ride quality.**
 
-[Last month I wrote about measuring ride quality with your phone using an app called rRuf](/blog/2021/measuring-condition-cycle-paths-phone).
+[Last month I wrote about measuring ride quality with your phone using an app called rRuf](/blog/measuring-condition-cycle-paths-phone).
 
 We chose rRuf as it had been used to great effect by the [DMAMPO Data Bike team](https://dmampo.org/data-bike/) (thanks to Gunnar and Zhi for all your help).
 
@@ -67,7 +67,7 @@ The raw sensor data can then be exported into a csv file for analysis in other p
 
 ## A footnote on working with data
 
-Both of these apps provide raw data from a phones [IMU (Inertial Measurement Unit)](/blog/2020/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer).
+Both of these apps provide raw data from a phones [IMU (Inertial Measurement Unit)](/blog/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer).
 
 Paid subscriptions on apps like rRuf provide `PavementCondition` or similar values that are an aggregated measurements of sensor data.
 
@@ -75,4 +75,4 @@ Next week I'll share a post detailing how we turn raw accelerometer data into a 
 
 ## Update 2021-04-23
 
-[My attempt at creating a Trail Quality Index using data from the Physics Toolbox Sensor Suite Pro app](/blog/2021/trek-view-ride-quality-index).
+[My attempt at creating a Trail Quality Index using data from the Physics Toolbox Sensor Suite Pro app](/blog/trek-view-ride-quality-index).

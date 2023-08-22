@@ -13,7 +13,7 @@ published: true
 
 **A deeper look into GoPro's proprietary .360 video format (with the aim of reducing our reliance on GoPro's software).**
 
-[As I described in last weeks post](/blog/2021/projection-type-360-photography), I've recently been trying to better understand the world of 360 videos.
+[As I described in last weeks post](/blog/projection-type-360-photography), I've recently been trying to better understand the world of 360 videos.
 
 One that we've been aware of for a long time is GoPro's proprietary `.360` video format.
 
@@ -28,7 +28,7 @@ There are a number of issues I've had with `.360's`:
 	* Relies solely on GoPro software (which can be buggy)
 	* Limited functionality based on GoPro's feature choices
 
-My suspicion is the `.360` format is used as a more efficient codec to capture high-quality / high-frame-rate videos than would otherwise be possible (see my post on [FPS, Bit rate, Compression and 360 Video Quality](/blog/2020/fps-bitrate-compression-360-virtual-tours)).
+My suspicion is the `.360` format is used as a more efficient codec to capture high-quality / high-frame-rate videos than would otherwise be possible (see my post on [FPS, Bit rate, Compression and 360 Video Quality](/blog/fps-bitrate-compression-360-virtual-tours)).
 
 I decided to take a deeper look and see if it was possible to remove the GoPro middleman and improve the user experience in converting them into mp4's.
 
@@ -46,7 +46,7 @@ As suspected, encoding and decoding such large equirectangular images was the ke
 
 > The best projection for this is Google’s Equal Area Cubemap, or EAC. EAC has a 25 percent drop in pixels for the same resolution as equirectangular. 
 
-[I wrote a post last week providing an explanation of various projection types, EAC being one](/blog/2021/projection-type-360-photography).
+[I wrote a post last week providing an explanation of various projection types, EAC being one](/blog/projection-type-360-photography).
 
 But GoPro then went one step further to account for issues a decoder would face when playing the video...
 
@@ -110,4 +110,4 @@ In the world of street-level mapping, EAC has seen no adoption. Google Street Vi
 
 ## Update 2021-09-17: Examining a real .360 file
 
-[Reverse Engineering GoPro's 360 Video File Format (Part 2)](/blog/2021/reverse-engineering-gopro-360-file-format-part-2)
+[Reverse Engineering GoPro's 360 Video File Format (Part 2)](/blog/reverse-engineering-gopro-360-file-format-part-2)

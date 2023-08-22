@@ -13,7 +13,7 @@ published: true
 
 **Create customised maps and stories about places anywhere in the world.**
 
-Two weeks ago, [I wrote about creating your own virtual tours using Google's Tour Creator](/blog/2020/build-virtual-expeditions-for-your-class/).
+Two weeks ago, [I wrote about creating your own virtual tours using Google's Tour Creator](/blog/build-virtual-expeditions-for-your-class/).
 
 This week I've been playing with Google Earth, creating a variety of Projects.
 
@@ -51,7 +51,7 @@ I'll leave you to it...
 
 OK let's get down to business.
 
-[Like my last post](/blog/2020/build-virtual-expeditions-for-your-class/), we'll create a tour of stunning Scotland.
+[Like my last post](/blog/build-virtual-expeditions-for-your-class/), we'll create a tour of stunning Scotland.
 
 On the left hand bar click the Project icon (map pin) and then click "create new tour".
 
@@ -166,4 +166,4 @@ We use Google Earth as a base for our free virtual guided tours.
 
 Join us on a live tour, led by local expert, to sites of cultural, historical, and geographic significance.
 
-Places go very quickly! [Sign up here today](/blog/2020/virtual-tours-guided-by-local-experts/).
+Places go very quickly! [Sign up here today](/blog/virtual-tours-guided-by-local-experts/).

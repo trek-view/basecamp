@@ -15,7 +15,7 @@ published: true
 
 A whole ecosystem has sprung up around Google Street View.
 
-[What was once just Google cars roaming the Streets](/blog/2019/history-of-google-street-view-cameras), is now a whole community of Google Maps users contributing both indoor (look-inside) and outdoor images to Street View [using approved products](https://www.google.com/streetview/contacts-tools/products/).
+[What was once just Google cars roaming the Streets](/blog/history-of-google-street-view-cameras), is now a whole community of Google Maps users contributing both indoor (look-inside) and outdoor images to Street View [using approved products](https://www.google.com/streetview/contacts-tools/products/).
 
 In fact, all signs point to Google increasing their reliance on external contributors to Street View --  both at hobby level through the Street View app and at professional level thanks to manufacturers building direct Street View integrations for their products.
 
@@ -43,7 +43,7 @@ When you [`create`](https://developers.google.com/streetview/publish/reference/r
 
 Each `photo` resource has a `pose`.
 
-`pose` takes the metadata in the uploaded [photo](/blog/2020/metadata-exif-xmp-360-photo-files) to tell Street View more about the camera position and orientation when the photo was taken.
+`pose` takes the metadata in the uploaded [photo](/blog/metadata-exif-xmp-360-photo-files) to tell Street View more about the camera position and orientation when the photo was taken.
 
 [The `pose` resource](https://developers.google.com/streetview/publish/reference/rest/v1/photo#pose) can contain the following information:
 
@@ -67,7 +67,7 @@ Each `photo` resource has a `pose`.
 
 [`latitude` and `longitude` are essential to make sure the photo is positioned correctly](https://cloud.google.com/datastore/docs/reference/rest/Shared.Types/LatLng).
 
-All other information is optional, but highly recommended to [make sure your Street View photo appears correctly when viewed on Google Maps](/blog/2020/decoding-google-street-view-urls).
+All other information is optional, but highly recommended to [make sure your Street View photo appears correctly when viewed on Google Maps](/blog/decoding-google-street-view-urls).
 
 * `altitude`: Altitude of the pose in metres above [WGS84 ellipsoid](https://en.wikipedia.org/wiki/World_Geodetic_System).
 * `heading`: Compass heading, measured at the center of the photo in degrees clockwise from North. Value must be >=0 and <360. 
@@ -165,7 +165,7 @@ The timestamp should be in [RFC3339 UTC "Zulu" format](https://tools.ietf.org/ht
 
 For Street View, `placeIds` will probably fall somewhere in between this spectrum (unless you're doing an indoor tour of a specific address).
 
-For a brief explanation about Place ID's, and why they are important for Street View, [read this post](/blog/2019/place-id-google-street-view).
+For a brief explanation about Place ID's, and why they are important for Street View, [read this post](/blog/place-id-google-street-view).
 
 ## A real example
 
@@ -293,7 +293,7 @@ You might have noticed my emphasis on the word _public_ API endpoints earlier.
 
 The Street Publish API also supports video uploads if they use the [Camera Motion Metadata Spec (CAMM)](https://developers.google.com/streetview/publish/camm-spec) standard.
 
-For more information about the CAMM standard, [read this post introducing the concept of video metadata](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd).
+For more information about the CAMM standard, [read this post introducing the concept of video metadata](/blog/metadata-exif-xmp-360-video-files-gopro-gpmd).
 
 The `photoSequence` method is required for video uploads to the Street View Publish API, but requires authorisation from Google to access. I emailed them earlier this week and received this response:
 
@@ -312,4 +312,4 @@ If you're looking to use Street View images on your website or app without using
 
 ## Update 2021-07-09
 
-[This post describes a more scalable approach to uploading longer sequences using the `photoSequence` resource available on the Google Street View Publish API](/blog/2021/upload-video-street-view-publish-api).
+[This post describes a more scalable approach to uploading longer sequences using the `photoSequence` resource available on the Google Street View Publish API](/blog/upload-video-street-view-publish-api).

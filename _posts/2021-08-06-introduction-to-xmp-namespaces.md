@@ -32,7 +32,7 @@ _Source: [https://developers.google.com/streetview/spherical-metadata](https://d
 
 Or for 360 photos, the [`XMP-GPano`](https://exiftool.org/TagNames/XMP.html#GPano) is a namespace used for panorama photo tags written by Google Photosphere ([see this page for the namespace specification](https://developers.google.com/panorama/metadata/). In this namespace you will find tags like `PoseHeadingDegrees` and `FullPanoHeightPixels` used for rendering 360 photos properly.
 
-Here's an example of `XMP-GPano`, `GPS`, and `IFD0` namespace tags from my post last year, [A deeper look into a 360 photo and the metadata it holds](/blog/2020/metadata-exif-xmp-360-photo-files).
+Here's an example of `XMP-GPano`, `GPS`, and `IFD0` namespace tags from my post last year, [A deeper look into a 360 photo and the metadata it holds](/blog/metadata-exif-xmp-360-photo-files).
 
 CLI:
 

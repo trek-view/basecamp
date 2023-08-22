@@ -13,7 +13,7 @@ published: true
 
 **In this post I will the structure of GoPro's GPMF standard, how to create a GPMF binary and accompanying metadata, and finally how to inject it into a mp4 video file.**
 
-In [my last post I showed how to write CAMM (a telemetry standard) into videos so that sensor data (including GPS) from the camera could be captured](/blog/2022/injecting-camm-gpmd-telemetry-videos-part-4-camm).
+In [my last post I showed how to write CAMM (a telemetry standard) into videos so that sensor data (including GPS) from the camera could be captured](/blog/injecting-camm-gpmd-telemetry-videos-part-4-camm).
 
 The past five posts have given you a good amount of fundamental knowledge to understand how to write GPMF into videos, all that's left is to cover the specifics.
 

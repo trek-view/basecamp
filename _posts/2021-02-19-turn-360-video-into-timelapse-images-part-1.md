@@ -13,13 +13,13 @@ published: true
 
 **In the first part of this post I will show you how to turn a video into a series of images for more flexible editing options.**
 
-In the last year I've covered topics [about the metadata found in a 360 video](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd), [how to extract a GPS track from them](/blog/2020/extracting-gps-track-from-360-timelapse-video), and [video compression](/blog/2020/fps-bitrate-compression-360-virtual-tours).
+In the last year I've covered topics [about the metadata found in a 360 video](/blog/metadata-exif-xmp-360-video-files-gopro-gpmd), [how to extract a GPS track from them](/blog/extracting-gps-track-from-360-timelapse-video), and [video compression](/blog/fps-bitrate-compression-360-virtual-tours).
 
 The problem with video files is they're often difficult to work with as a beginner.
 
 Let's say you wanted to cut the first 20 seconds of video from your capture whilst standing still. Removing the first 20 seconds is trivial in many programs.
 
-The problem; many software programs will completely strip the GPS telemetry from the video if you do this, others will remove other important metadata from the video, [such as [XMP] ProjectionType](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd) (used by software to recognise the video as either 360 or 2D).
+The problem; many software programs will completely strip the GPS telemetry from the video if you do this, others will remove other important metadata from the video, [such as [XMP] ProjectionType](/blog/metadata-exif-xmp-360-video-files-gopro-gpmd) (used by software to recognise the video as either 360 or 2D).
 
 I'm yet to find the perfect 360 video editing tool for mapping. [This is one of the reasons we don't recommend capturing virtual tours in video mode using the Trek Pack](/trek-pack/).
 
@@ -76,7 +76,7 @@ Looking at the metadata of the video, the reported image size is 3840x1920 or 7.
 [Main]          AvgBitrate                      : 45.2 Mbps
 ```
 
-[The reason why this happens is described in this post](/blog/2020/fps-bitrate-compression-360-virtual-tours).
+[The reason why this happens is described in this post](/blog/fps-bitrate-compression-360-virtual-tours).
 
 ## 3. Re-embed metadata
 
@@ -86,8 +86,8 @@ I'll show how to re-embed metadata next week...
 
 ## Update 2021-02-26
 
-[Turning a 360 Video into Timelapse Images (Part 2/2)](/blog/2021/turn-360-video-into-timelapse-images-part-2)
+[Turning a 360 Video into Timelapse Images (Part 2/2)](/blog/turn-360-video-into-timelapse-images-part-2)
 
 ## Update 2021-08-06
 
-If you'd like to read more about XMP namespaces, [read my latest introductory post here](/blog/2021/introduction-to-xmp-namspaces).
+If you'd like to read more about XMP namespaces, [read my latest introductory post here](/blog/introduction-to-xmp-namspaces).

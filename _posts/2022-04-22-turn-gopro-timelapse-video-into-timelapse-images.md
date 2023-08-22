@@ -13,7 +13,7 @@ published: true
 
 **TimeLapse video mode is perfect for creating beautiful TimeLapses, but poses some unique challenges when trying to split them into individual frames.**
 
-[Earlier in the year I talked about turning videos shot on HERO and MAX cameras in TimeWarp mode into still frames](/blog/2022/turn-gopro-timewarp-video-into-timelapse-images).
+[Earlier in the year I talked about turning videos shot on HERO and MAX cameras in TimeWarp mode into still frames](/blog/turn-gopro-timewarp-video-into-timelapse-images).
 
 The GoPro Fusion camera was released before TimeWarp mode was introduced by GoPro into their lineup of cameras ([TimeWarp 1.0 with the Hero 7 in 2019](https://community.gopro.com/s/article/what-is-timewarp-video) and [TimeWarp 2.0 with HERO 8 Black in 2020](https://community.gopro.com/s/article/HERO8-Black-TimeWarp-2-0?language=en_US)).
 
@@ -21,7 +21,7 @@ TimeLapse video mode, available on all GoPro cameras (HERO cameras 7 and older),
 
 Like with TimeWarp videos, when it comes to turning GoPro TimeLapse videos into photo frames, there are a few extra things to consider when compared to normal GoPro videos (non-TimeLapse/TimeWarp).
 
-If you've reached this post looking to convert a regular video into frames, [the process for doing so is described in this post from 2021](/blog/2021/turn-360-video-into-timelapse-images-part-1).
+If you've reached this post looking to convert a regular video into frames, [the process for doing so is described in this post from 2021](/blog/turn-360-video-into-timelapse-images-part-1).
 
 ## TimeLapse 101
 
@@ -145,7 +145,7 @@ As an example; `<GoPro:Rate>2_1SEC</GoPro:Rate>`, identifies the video being sho
 * HERO:
   * for HERO videos, in the .mp4 file metadata.
 
-[Be careful, the `GoPro:Rate` metatag is used to identify TimeWarp videos too (but the values are different)](/blog/2022/turn-gopro-timewarp-video-into-timelapse-images)).
+[Be careful, the `GoPro:Rate` metatag is used to identify TimeWarp videos too (but the values are different)](/blog/turn-gopro-timewarp-video-into-timelapse-images)).
 
 Also, a secondary check can be made to validate the videos do not have an audio track (no TimeLapse videos, in any mode, contain an audio track). If the below was present in the video metadata, it would confirm the video was shot in normal video mode (not TimeLapse mode);
 
@@ -201,4 +201,4 @@ For example, if the time spacing between images is 12 seconds and the first GPSD
 
 All that is left to do now is actually write the correct times into the photos.
 
-[The steps to do this are described in this post (as well as how to extract and write GPS points extracted from the Timewarp video to each image)](/blog/2021/turn-360-video-into-timelapse-images-part-2).
+[The steps to do this are described in this post (as well as how to extract and write GPS points extracted from the Timewarp video to each image)](/blog/turn-360-video-into-timelapse-images-part-2).

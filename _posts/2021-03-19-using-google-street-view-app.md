@@ -97,4 +97,4 @@ The app also includes gamification of image capture in the form of badges. You c
 
 ## Update 2021-03-19
 
-[Here are our initial thoughts after testing the AtmoTube Pro](/blog/2021/software-upload-panoramas-street-view).
+[Here are our initial thoughts after testing the AtmoTube Pro](/blog/software-upload-panoramas-street-view).

@@ -25,17 +25,17 @@ Sadly my budget wasn't going to stretch to a custom built bike, so I decided to 
 
 ## Problems biking with the Trek Pack 
 
-[For simplicity (and cost), I originally wanted to use a Trek Pack to shoot tours](/blog/2019/diy-google-street-view-part-1-how-trek-view-started/).
+[For simplicity (and cost), I originally wanted to use a Trek Pack to shoot tours](/blog/diy-google-street-view-part-1-how-trek-view-started/).
 
 However, the vibrations, torso movements, etc. encountered on a bike often caused problems. From camera roll to shaking the camera out of position.
 
-[These are similar to the issues that ruled the Trek Pack out for kayaking and canoeing too](/blog/2019/360-degree-view-water-tours).
+[These are similar to the issues that ruled the Trek Pack out for kayaking and canoeing too](/blog/360-degree-view-water-tours).
 
 It became clear that I would need to secure the monopod to the bike frame rather than my body.
 
 ## Solutions for mounting the camera
 
-[Similar to the criteria for building the Trek Pack](/blog/2019/diy-google-street-view-part-2-my-street-view-kit), one of the key requirements was to mount the camera above my head for the largest field of view.
+[Similar to the criteria for building the Trek Pack](/blog/diy-google-street-view-part-2-my-street-view-kit), one of the key requirements was to mount the camera above my head for the largest field of view.
 
 I also wanted something that could easily be detached from the bike yet still be very rugged.
 
@@ -51,7 +51,7 @@ On well maintained gravel tracks with clear headroom this mounting system is per
 
 The yaw, pitch, and roll of the images remains stable throughout. The GoPro Fusion's shutter speed is more than adequate, even when moving at 30km/h.
 
-Controlling the start and stop of time-lapse captures using a GoPro Wireless remote mounted to the handlebars also means [I can break up tours for post-processing easily whilst on the move](/blog/2019/diy-google-street-view-part-4-processing-photos/).
+Controlling the start and stop of time-lapse captures using a GoPro Wireless remote mounted to the handlebars also means [I can break up tours for post-processing easily whilst on the move](/blog/diy-google-street-view-part-4-processing-photos/).
 
 However, on fast, uneven downhill mountain bike trails it falls way short (yet, ironically, is also too tall).
 
@@ -73,7 +73,7 @@ In the meantime I'll stick to scenic trails.
 
 ## Update (2020-02-28)
 
-[DIY Street View Bike V2: The second iteration of my Street View bike, this time designed for downhill trails](/blog/2020/diy-street-view-bike-v2).
+[DIY Street View Bike V2: The second iteration of my Street View bike, this time designed for downhill trails](/blog/diy-street-view-bike-v2).
 
 ## Update (2020-05-15)
 

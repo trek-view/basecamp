@@ -13,7 +13,7 @@ published: true
 
 **The second iteration of my Street View bike, this time designed for downhill trails.**
 
-[Last year I showed you the first iteration of my Street View bike](/blog/2019/diy-street-view-bike-tours/).
+[Last year I showed you the first iteration of my Street View bike](/blog/diy-street-view-bike-tours/).
 
 It was perfect for capturing smooth and flat trails, with no low-hanging obstructions overhead.
 
@@ -37,7 +37,7 @@ I found the adhesive pads and mounts to work much better. The downside of this s
 
 One criticism of having the camera mounted on your head is weight. Before mounting the camera I didn't think this would be an issue, the GoPro Fusion weighs just 226g, though on your head, being flung around with a higher centre of gravity, the weight does become noticeable after about an hour.
 
-[Street View bike cam V1 had a good line of sight in all directions as it was mounted well above my head](/blog/2019/diy-street-view-bike-tours/). The only other negative I would point out about the helmet cam is that much more of the field of view to the ground is obstructed by the helmet itself. That said, there is rarely anything interesting directly beneath me -- _I'm never that high off the ground._
+[Street View bike cam V1 had a good line of sight in all directions as it was mounted well above my head](/blog/diy-street-view-bike-tours/). The only other negative I would point out about the helmet cam is that much more of the field of view to the ground is obstructed by the helmet itself. That said, there is rarely anything interesting directly beneath me -- _I'm never that high off the ground._
 
 As they say, the proof is in the pudding.
 
@@ -47,4 +47,4 @@ Here's a 360-degree photo shot on a trail ([Blue 16](https://www.trailforks.com/
 
 Pretty good, if I do say so myself.
 
-In summary, for long distance touring on open roads, [I'll use the v1 setup](/blog/2019/diy-street-view-bike-tours/). For anything off-road (non-tarmacked surface) I'll use the v2 setup described in this post.
+In summary, for long distance touring on open roads, [I'll use the v1 setup](/blog/diy-street-view-bike-tours/). For anything off-road (non-tarmacked surface) I'll use the v2 setup described in this post.

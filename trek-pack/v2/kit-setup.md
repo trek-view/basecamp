@@ -140,13 +140,13 @@ layout: page
 
 <p><strong>Set up a GPS logger / surface buoy</strong></p>
 
-<p>Firstly, <a href="/blog/2020/underwater-google-street-view/">GPS won’t work underwater</a>. Therefore you need to use the standalone GPS tracker to do this (I use the Columbus V-1000 GPS logger).</p>
+<p>Firstly, <a href="/blog/underwater-google-street-view/">GPS won’t work underwater</a>. Therefore you need to use the standalone GPS tracker to do this (I use the Columbus V-1000 GPS logger).</p>
 
 <p><img class="img-fluid" src="/assets/images/pages/trek-pack/v2/dive-columbus-gps.jpeg" alt="Columbus V-1000 GPS" title="Columbus V-1000 GPS"></p>
 
 <p>You do have the option, if you don’t want to invest in a GPS logger and are not worried about taking your phone out onto the water, to use it as a GPS logger.</p>
 
-<p><a href="/blog/2020/gps-101">Mobile phones on land generally offer better positional accuracy where mobile signal is available.</a></p>
+<p><a href="/blog/gps-101">Mobile phones on land generally offer better positional accuracy where mobile signal is available.</a></p>
 
 <p>Out on the water (away from onshore mobile signal) they generally rely on the same technology as GPS loggers to record location.</p>
 
@@ -161,7 +161,7 @@ layout: page
 
 <p><img class="img-fluid" src="/assets/images/pages/trek-pack/v2/dive-buoy.jpeg" alt="Dive Buoy" title="Dive Buoy"></p>
 
-<p>You can attach the GPS device to a surface buoy. Don’t worry about placing the GPS tracker inside the buoy (if possible) – <a href="/blog/2020/gps-101/">GPS will work through plastic</a>.</p>
+<p>You can attach the GPS device to a surface buoy. Don’t worry about placing the GPS tracker inside the buoy (if possible) – <a href="/blog/gps-101/">GPS will work through plastic</a>.</p>
 
 <p>When you’re ready to get in the water, tie a dive rope attached to the buoy to your dive belt (it will be less obtrusive this way, versus mounting it to the bubble). Once in the water, the aim is to keep the dive rope between you and the buoy as tight as possible so that the surface buoy records your position in the water as accurately as possible.</p>
 
@@ -177,7 +177,7 @@ layout: page
 
 <p><strong>Camera case</strong></p>
 
-<p><a href="/blog/2020/underwater-google-street-view">Due to the refraction of light</a>, some cases MAX cases can be problematic</p>
+<p><a href="/blog/underwater-google-street-view">Due to the refraction of light</a>, some cases MAX cases can be problematic</p>
 
 <p>To counter this, I user the 360bubble case.</p>
 

@@ -21,7 +21,7 @@ There were some brilliant talks at this years conference, [now available to watc
 
 I've curated some of my favourite talks most closely linked to the work we do here at Trek View that I know you'll enjoy.
 
-[_Don't forget to check out my favourite talks from last year too_](/blog/2020/state-of-the-map-2020).
+[_Don't forget to check out my favourite talks from last year too_](/blog/state-of-the-map-2020).
 
 ## 3D Rendering with OSM2World
 

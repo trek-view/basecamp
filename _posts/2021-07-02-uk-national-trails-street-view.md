@@ -13,9 +13,9 @@ published: true
 
 **The network covers over 4,000km of England and Wales. With your help, we want to capture street-level images for every single one of those kilometers.**
 
-[For the past few weeks I've been sharing a lot about 360 tours captured on bikes](/blog/2021/sustrans-uk-national-cycle-network-360-street-level-imagery). Don't worry, this is not another one.
+[For the past few weeks I've been sharing a lot about 360 tours captured on bikes](/blog/sustrans-uk-national-cycle-network-360-street-level-imagery). Don't worry, this is not another one.
 
-Instead, I thought I'd go back to [Trek View's roots](/blog/2019/hello-trekkers) and share some of my hiking adventures of National Trails here in the UK over the past few years. Hopefully it will inspire you to get out-and-about this summer.
+Instead, I thought I'd go back to [Trek View's roots](/blog/hello-trekkers) and share some of my hiking adventures of National Trails here in the UK over the past few years. Hopefully it will inspire you to get out-and-about this summer.
 
 For those unfamiliar, the UK National Trails are long distance walking routes through the best landscapes in England and Wales.
 
@@ -74,7 +74,7 @@ More info: [National Trails website](https://www.nationaltrail.co.uk/en_GB/trail
 
 ## Your walk here?
 
-Not sure how to get started? [This post will explain everything](/blog/2021/trek-pack-v2-quick-start-virtual-photography).
+Not sure how to get started? [This post will explain everything](/blog/trek-pack-v2-quick-start-virtual-photography).
 
 I believe that together that we can capture imagery for over 10% of the UK's network this summer.
 

@@ -15,7 +15,7 @@ published: true
 
 Well that sounds boring, but it is actually very cool. Every photo you take, on any camera, is likely filled with metadata. This data often contains location, camera model, lens type, and general information about how the image was taken.  It is this data that makes your photo library easier to browse, events are automatically grouped, and exposures auto corrected. 
 
-I've talked previously about having to [manually stitch GPS tracks into photos taken underwater](/blog/2020/underwater-google-street-view) (because GPS does not work below the surface) and about [manually calculating (estimating) the direction the camera was facing in a time lapse capture](/blog/2020/what-direction-are-you-facing) when it is not recorded by the camera.
+I've talked previously about having to [manually stitch GPS tracks into photos taken underwater](/blog/underwater-google-street-view) (because GPS does not work below the surface) and about [manually calculating (estimating) the direction the camera was facing in a time lapse capture](/blog/what-direction-are-you-facing) when it is not recorded by the camera.
 
 But where and how is this information stored?
 
@@ -316,7 +316,7 @@ This information is reported by the gyroscope on the Z1.
 
 Whilst the Fusion has a GPS receiver, along with an accelerometer, gyroscope and compass, GoPro decided not to write this information reported by these measurement devices into photo files (though the Fusion does for video files).
 
-Having this information reported at time of capture by the Z1 is much more accurate than [manual calculations required when it's omitted](/blog/2020/what-direction-are-you-facing).
+Having this information reported at time of capture by the Z1 is much more accurate than [manual calculations required when it's omitted](/blog/what-direction-are-you-facing).
 
 Other XMP `GPano` 360 photo tags include:
 
@@ -392,8 +392,8 @@ If you have a 360 camera and want to support our work, [please share more inform
 
 ## Update 2020-05-01
 
-[A deeper look into a 360 video and the metadata it holds](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd).
+[A deeper look into a 360 video and the metadata it holds](/blog/metadata-exif-xmp-360-video-files-gopro-gpmd).
 
 ## Update 2021-08-06
 
-If you'd like to read more about XMP namespaces, [read my latest introductory post here](/blog/2021/introduction-to-xmp-namspaces).
+If you'd like to read more about XMP namespaces, [read my latest introductory post here](/blog/introduction-to-xmp-namspaces).

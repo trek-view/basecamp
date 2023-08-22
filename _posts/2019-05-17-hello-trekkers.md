@@ -21,7 +21,7 @@ Allow me to share two recent observations;
 
 2. My niece and nephew watching David Attenborough documentaries in awe of the wildlife, not quite old enough to realise what they're seeing exists, but might not by the time they've grown up. As the the presenter notes with sorrow, "an area the size of a football pitch is being destroyed in the Amazon every minute^".
 
-^['Football pitch' of Amazon forest lost every minute](https://www.bbc.co.uk/news/science-environment-48827490)
+* Source: ['Football pitch' of Amazon forest lost every minute](https://www.bbc.co.uk/news/science-environment-48827490)
 
 I've always been fascinated by Google Street View imagery. Whether seeking out directions for an upcoming meeting or exploring new neighbourhoods thousands of kilometres away.
 
@@ -81,7 +81,7 @@ I've spoken to:
 * Schools who want to incorporate 360-degree imagery for interactive lessons on the natural world,
 * Conservationists who are exploring the use of 360-degree imagery to keep a record of changes to the environment,
 * Tourism boards who know 360-degree tours can be a powerful tool in attracting new visitors, and
-* [Hopefully many more people in the future](/contact)...
+* [Hopefully many more people in the future]({{ site.baseurl }}/contact)...
 
 I believe interactive 360-degree imagery of our world can inspire others to explore and protect it, benefiting both the viewer, creator, and in-turn, the planet.
 

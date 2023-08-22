@@ -13,7 +13,7 @@ published: true
 
 **Using the imagery captured by the Data Bike to measure cycle path surface quality.**
 
-Last month I shared a link to the [IEEE Global Road Damage Detection Challenge 2020](https://rdd2020.sekilab.global/), [after realising measuring the surface quality of a bike path from sensors in a phone was not particularly accurate at scale](/blog/2021/trek-view-ride-quality-index).
+Last month I shared a link to the [IEEE Global Road Damage Detection Challenge 2020](https://rdd2020.sekilab.global/), [after realising measuring the surface quality of a bike path from sensors in a phone was not particularly accurate at scale](/blog/trek-view-ride-quality-index).
 
 ## Damage detection
 

@@ -13,9 +13,9 @@ published: true
 
 **Using ffmpeg to create a video file with accompanying GPS telemetry.**
 
-[A few years ago I talked about creating a 360 video from frames](/blog/2021/turn-360-photos-into-360-video).
+[A few years ago I talked about creating a 360 video from frames](/blog/turn-360-photos-into-360-video).
 
-For example, [when you want to upload them to the Street View Publish API](/blog/2021/upload-video-street-view-publish-api).
+For example, [when you want to upload them to the Street View Publish API](/blog/upload-video-street-view-publish-api).
 
 In that last post I described how to upload the video, but only briefly touched on how to create the video. Well, a year late, here is a how-to post explaining it.
 
@@ -29,7 +29,7 @@ Creating the video is fairly trivial, but you should keep a few things in mind.
 
 This means at a frame rate of 5 FPS (0.2 seconds per frame), each video will contain a maximum of 300 frames (60 * 5).
 
-So first thing, batch your extracted photos ([extract from a video first, if needed](/blog/2021/turn-360-video-into-timelapse-images-part-1))) into groups of 300.
+So first thing, batch your extracted photos ([extract from a video first, if needed](/blog/turn-360-video-into-timelapse-images-part-1))) into groups of 300.
 
 Then pack into a video like so;
 
@@ -41,7 +41,7 @@ I won't add any global metadata to the video yet, here's why...
 
 ## Adjusting the GPS
 
-[As shown in the `gopro_fusion_timelapse_uploader.py` script I referenced here](/blog/2021/upload-video-street-view-publish-api),  positional information for the video can be passed separately (as a `rawGPSTimeline` object) alongside the video when uploading to Street View (as opposed to writing full telemetry into the video in [CAMM](https://developers.google.com/streetview/publish/camm-spec) or [GPMD](https://github.com/gopro/gpmf-parser) format).
+[As shown in the `gopro_fusion_timelapse_uploader.py` script I referenced here](/blog/upload-video-street-view-publish-api),  positional information for the video can be passed separately (as a `rawGPSTimeline` object) alongside the video when uploading to Street View (as opposed to writing full telemetry into the video in [CAMM](https://developers.google.com/streetview/publish/camm-spec) or [GPMD](https://github.com/gopro/gpmf-parser) format).
 
 By setting the framerate at a fixed 5 FPS we totally ignore the actual time spacing between photos, but that doesn't matter.
 
@@ -49,7 +49,7 @@ That's fine. The real time spacing between photos does not matter when it comes 
 
 However, it does matter the time spacing between GPS points matches the time spacing between the frames in the video. This we do need to adjust for.
 
-I talked a bit about this problem with GoPro's [TimeWarp](/blog/2022/turn-gopro-timewarp-video-into-timelapse-images) and [TimeLapse](/blog/2022/turn-gopro-timelapse-video-into-timelapse-images) video modes previously.
+I talked a bit about this problem with GoPro's [TimeWarp](/blog/turn-gopro-timewarp-video-into-timelapse-images) and [TimeLapse](/blog/turn-gopro-timelapse-video-into-timelapse-images) video modes previously.
 
 Like these modes, what we have from the above command is usually a photo sped up from real-time. So like these modes, we need to modify the GPS times for the photos.
 
@@ -123,8 +123,8 @@ exiftool -TagsFromFile FIRSTFRAME.jpg "-all:all>all:all" OUTPUT.mp4
 
 `FIRSTFRAME.jpg` should be substituted for the first photo frame in the video. If you've got multiple videos (as a result of limiting video frames), you will need to find the first frame for each video. In my case I batched videos into 300 frames, so the first frame for the first video will be the 1st frame in sequence, then for the second video the 301st frame in sequence, third video 601st frame, etc.
 
-In the case of 360 (equirectangular) videos you'll also need to use Google's Spatial Media Metadata Injector to add the required 360 metadata (photos use the `XMP-GPano:ProjectionType` tag, whilst videos use the `XMP-GSpherical:ProjectionType` tag). [A demo of how to use the Spatial Media Metadata Injector is covered in this post](/blog/2021/introduction-to-xmp-namespaces).
+In the case of 360 (equirectangular) videos you'll also need to use Google's Spatial Media Metadata Injector to add the required 360 metadata (photos use the `XMP-GPano:ProjectionType` tag, whilst videos use the `XMP-GSpherical:ProjectionType` tag). [A demo of how to use the Spatial Media Metadata Injector is covered in this post](/blog/introduction-to-xmp-namespaces).
 
 ## Upload the file
 
-[Described previously in this post](/blog/2021/upload-video-street-view-publish-api).
+[Described previously in this post](/blog/upload-video-street-view-publish-api).

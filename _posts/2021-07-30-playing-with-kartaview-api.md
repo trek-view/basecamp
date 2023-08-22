@@ -13,9 +13,9 @@ published: true
 
 **Here are my notes about the KartaView API from my research planning an integration.**
 
-[Last week I took a brief look at KartaView, a street-level imagery platform](/blog/2021/getting-started-with-kartaview).
+[Last week I took a brief look at KartaView, a street-level imagery platform](/blog/getting-started-with-kartaview).
 
-You will have read my recent posts documenting the [Google Street View Publish](/blog/2021/upload-video-street-view-publish-api) and [Mapillary v4](/blog/2021/migrating-from-mapillary-api-v3-to-v4) API's.
+You will have read my recent posts documenting the [Google Street View Publish](/blog/upload-video-street-view-publish-api) and [Mapillary v4](/blog/migrating-from-mapillary-api-v3-to-v4) API's.
 
 In my research of the KartaView API [I've been exploring their documentation](http://doc.kartaview.org/). This post is a short write up of what I've found.
 
@@ -52,7 +52,7 @@ The upload flow for an `photo` works like so:
 >
 > Usage of this resource for retrieving imagery is advisable only for debugging purposes.
 
-KartaView processes videos to photos server side, [as Street View does](/blog/2021/upload-video-street-view-publish-api). So once a video is uploaded the `photo` objects it produces can be obtained by:
+KartaView processes videos to photos server side, [as Street View does](/blog/upload-video-street-view-publish-api). So once a video is uploaded the `photo` objects it produces can be obtained by:
 
 1. querying the `GET /video?id=X` endpoint using the `id` of video provided in the upload response which returns the `sequenceid`
 2. then querying the `GET /photo?sequenceId=X` endpoint using the `sequenceid` returned from step one which returns all the `photo.id`'s in the `sequenceid` 
@@ -125,7 +125,7 @@ Looking inside the `photo` object gives a good overview of what's exposed:
 }
 ```
 
-The `photo` object contains the map position, projection, dates and path to download the processed and raw images ([something Mapillary removed in their v4 API](/blog/2021/migrating-from-mapillary-api-v3-to-v4)).
+The `photo` object contains the map position, projection, dates and path to download the processed and raw images ([something Mapillary removed in their v4 API](/blog/migrating-from-mapillary-api-v3-to-v4)).
 
 The `photo` endpoint also offers [`DELETE`](http://doc.kartaview.org/#operation/photoDeleteById) and [`UPDATE`](http://doc.kartaview.org/#operation/photoUpdateById) methods, including the ability to `UPDATE` the `payload` (the actual photo file).
 

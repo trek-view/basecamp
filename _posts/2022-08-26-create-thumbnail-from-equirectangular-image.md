@@ -13,7 +13,7 @@ published: true
 
 **In this post I will show you two approaches you can use to create thumbnails from any part of an equirectangular image.**
 
-Last year I showed how to turn a 360 photo into a traditional flat image [using GoPro Player, Insta360 Studio, and GIMP](/blog/2021/turn-360-photo-into-non-360-photo).
+Last year I showed how to turn a 360 photo into a traditional flat image [using GoPro Player, Insta360 Studio, and GIMP](/blog/turn-360-photo-into-non-360-photo).
 
 However, being able to do this programmatically became a requirement for us when processing sequences of photos.
 
@@ -25,7 +25,7 @@ This approach assumes you want the thumbnail in the center of the images, and th
 
 The reason for these two considerations comes down to the distortion and effects of roll in equirectangular images as you move away from the center of the photo vertically. 
 
-More on that in this post [A deeper look at 360 video projections](/blog/2021/projection-type-360-photography). You can see this distortion clearly in the top and bottom image below.
+More on that in this post [A deeper look at 360 video projections](/blog/projection-type-360-photography). You can see this distortion clearly in the top and bottom image below.
 
 Here's an example of an image I want to crop from the center;
 

@@ -17,7 +17,7 @@ published: true
 
 I wanted to add some of our favourite API requests for uncovering interesting data.
 
-[We recently ran a mapping party in the New Forest, UK](/blog/2020/pano-party-new-forest-uk-may-23-2020).
+[We recently ran a mapping party in the New Forest, UK](/blog/pano-party-new-forest-uk-may-23-2020).
 
 The photos are great to explore interactively to get a feel for the visual beauty of the area.
 
@@ -309,4 +309,4 @@ Please do share the use-cases you're using the Mapillary API for -- I can’t wa
 
 ## Update 2021-06-16
 
-v4 of the Mapillary API is here. [In this post I take a brief look at some of the changes to support the move from v3, described above, to the new v4 API](/blog/2021/migrating-from-mapillary-api-v3-to-v4).
+v4 of the Mapillary API is here. [In this post I take a brief look at some of the changes to support the move from v3, described above, to the new v4 API](/blog/migrating-from-mapillary-api-v3-to-v4).

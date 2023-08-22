@@ -17,7 +17,7 @@ What was once a device that simply exposed light to film, is now a device that [
 
 In the world of 360 tour photography, these sensors can be particularly important. For example, being able to determine the pitch and roll of the camera at the time of capture can help improve stitching quality (e.g by making automatic horizon leveling possible).
 
-Last year a I explained more about [Yaw, Pitch and Roll](/blog/2020/yaw-pitch-roll-360-degree-photography).
+Last year a I explained more about [Yaw, Pitch and Roll](/blog/yaw-pitch-roll-360-degree-photography).
 
 In this post I'll talk a bit more about how they're measured by cameras.
 
@@ -29,7 +29,7 @@ Three correspond to rotational movement around the x, y, and z axes, commonly te
 
 The other three correspond to translational movement along those axes, which can be thought of as moving forward or backward, moving left or right, and moving up or down (3-DOF for position).
 
-Sometimes you can estimate this information using reported GPS information. For example, [calculating pitch, heading and speed between two photos](/blog/2020/what-direction-are-you-facing).
+Sometimes you can estimate this information using reported GPS information. For example, [calculating pitch, heading and speed between two photos](/blog/what-direction-are-you-facing).
 
 As sensors become cheaper, many camera manufacturers are also including sensors that can more accurately measure this telemetry. In order for a camera to be [Street View Ready, it requires six degrees of freedom (6-DOF) to be reported](https://developers.google.com/streetview/ready/specs-svready).
 
@@ -87,8 +87,6 @@ You'll see Magnetometers reporting data in µT (microteslas) on GoPro cameras.
 
 ## How 360 cameras report IMU data
 
-[For videos this is written into the telemetry track](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd). Typically telemetry formats for 360 cameras are reported in two standards, either [gpmf](https://github.com/trek-view/360-camera-metadata/blob/master/0-standards/gpmf.md) (GoPro) or [camm](https://github.com/trek-view/360-camera-metadata/blob/master/0-standards/camm.md) (most other cameras).
+[For videos this is written into the telemetry track]. Typically telemetry formats for 360 cameras are reported in two standards, either [gpmf](https://github.com/trek-view/gopro-metadata/tree/main/notes/understanding_gpmf) (GoPro) or [camm](https://github.com/trek-view/gopro-metadata/tree/main/notes/understanding_camm) (most other cameras).
 
 In the case of image files, the data can be fused together to report additional telemetry (like yaw, pitch, and roll) and then commonly reported in the XMP fields (e.g. [XMP] `PoseHeadingDegrees`, [XMP] `PosePitchDegrees`) -- _although GoPro cameras do not embed any of this calculated data to still images_.
-
-You can see real examples of what this data looks like for both image and video files for a variety of 360 cameras in our [360 Camera Metadata repository on GitHub](https://github.com/trek-view/360-camera-metadata).

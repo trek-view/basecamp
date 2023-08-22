@@ -17,7 +17,7 @@ It's that time of year again. Google's Geo for Good annual summit took place fro
 
 The summit is intended for nonprofits, scientists and other change-makers who want to leverage technology and use mapping tools for a positive impact in the world.
 
-2021 was the 10th summit, [and like last years summit](/blog/2020/my-favourite-geo-for-good-summit-talks-2020), was held virtually.
+2021 was the 10th summit, [and like last years summit](/blog/my-favourite-geo-for-good-summit-talks-2020), was held virtually.
 
 You can view all of the videos from the Geo for Good Summit on the [Google Earth Outreach micro-site here](https://earthoutreachonair.withgoogle.com/events/geoforgood21/).
 

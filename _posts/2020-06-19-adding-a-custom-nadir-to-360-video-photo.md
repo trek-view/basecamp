@@ -27,7 +27,7 @@ When clicking the "[View on Google Maps](https://www.google.com/maps/@37.7458457
 
 Sometimes you want something more striking. Or if you're not using Google, something that stands out in place of your name.
 
-A custom nadir is perfect for achieving this. What is a nadir? [This post explains more](/blog/2020/what-is-a-nadir).
+A custom nadir is perfect for achieving this. What is a nadir? [This post explains more](/blog/what-is-a-nadir).
 
 Google allows custom nadirs in 360 imagery, [as long as they follow their branding guidelines](https://www.google.co.uk/streetview/sales/).
 
@@ -59,7 +59,7 @@ Simply overlaying this as a nadir or zenith (bottom or top) on a 360 equirectang
 
 To solve this problem, you first need to convert the proposed nadir image into an equirectangular projection and adjust to match the width of the original panoramic image for it to display without distortion.
 
-_Update 2021-09-03: [Read more about projection types used in 360 photography](/blog/2021/projection-type-360-photography)._
+_Update 2021-09-03: [Read more about projection types used in 360 photography](/blog/projection-type-360-photography)._
 
 ## How to create your own nadir
 

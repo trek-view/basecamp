@@ -51,7 +51,7 @@ Generally speaking, as the sensor gets larger and higher in resolution, the grea
 
 A global shutter captures all rows at the same time, so the objects in the image are always being captured at the same point in time, significantly reducing the chance of motion blur (but not eliminating it entirely).
 
-And whilst you might not [be downhill mountain biking when capturing 360 tours](/blog/2020/diy-street-view-bike-v2), if you have a [camera mounted to a backpack](/trek-pack) there is a certain amount of 'action' involved.
+And whilst you might not [be downhill mountain biking when capturing 360 tours](/blog/diy-street-view-bike-v2), if you have a [camera mounted to a backpack](/trek-pack) there is a certain amount of 'action' involved.
 
 <img class="img-fluid" src="/assets/images/blog/2020-06-05/360-camera-control-point.jpg" alt="360 camera control points" title="360 camera control points" />
 

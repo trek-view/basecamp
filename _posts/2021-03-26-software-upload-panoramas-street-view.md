@@ -21,7 +21,7 @@ Many of the software products mentioned in that video do include the ability to 
 
 I'm yet to find a comprehensive comparison of tools for outdoor, off-road Street View uploads.
 
-[Last week I took a look at the Google Street View app in detail](/blog/2021/using-google-street-view-app). This week I'll take a look at other alternatives available to off-road street-level 360 photographers.
+[Last week I took a look at the Google Street View app in detail](/blog/using-google-street-view-app). This week I'll take a look at other alternatives available to off-road street-level 360 photographers.
 
 ## Google Street View App
 

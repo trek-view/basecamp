@@ -38,15 +38,15 @@ For those wanting to contribute Street View images to Google Maps, the relativel
 
 Street View Studio accepts footage from almost all action cameras. Most major brands use the CAMM standard, except GoPro who use their own GPMF format. Both are supported.
 
-Where Street View Studio lacks functionality is the ability to upload a series of timelapse images. It only supports video file uploads. [At the end of last year I explained how to turn 360 timelapse images into geo-tagged videos](/blog/2021/injecting-camm-gpmd-telemetry-videos-part-1-introduction) that can then be uploaded to Street View Studio.
+Where Street View Studio lacks functionality is the ability to upload a series of timelapse images. It only supports video file uploads. [At the end of last year I explained how to turn 360 timelapse images into geo-tagged videos](/blog/injecting-camm-gpmd-telemetry-videos-part-1-introduction) that can then be uploaded to Street View Studio.
 
 In testing Street View Studio with GoPro MAX videos, the success rate of getting a blue line on Google Maps is high. 
 
 My assumption is the images go through a few stages in Google's pipeline;
 
-1. GPS in video telemetry checked for issues ([list of possible errors here](https://developers.google.com/streetview/publish/reference/rest/v1/photoSequence/create?authuser=2)). In most cases, insufficient or [noisy GPS](/blog/2020/gps-101) will lead to upload errors.
+1. GPS in video telemetry checked for issues ([list of possible errors here](https://developers.google.com/streetview/publish/reference/rest/v1/photoSequence/create?authuser=2)). In most cases, insufficient or [noisy GPS](/blog/gps-101) will lead to upload errors.
 2. Extracted GPS is compared against known paths (e.g. roads, footpaths, etc.). Where the GPS is similar enough to an existing path, Google snaps the video positions to that path.
-3. The uploaded video is turned into images spaced at set distances ([probably using some sort of ffmpeg pipeline](/blog/2021/turn-360-video-into-timelapse-images-part-1)) and extracted images geo-tagged.
+3. The uploaded video is turned into images spaced at set distances ([probably using some sort of ffmpeg pipeline](/blog/turn-360-video-into-timelapse-images-part-1)) and extracted images geo-tagged.
 4. Blue line published
 
 There are a few complaints with Google snapping GPS tracks to an existing path on Google Maps on the [Google Street View Trusted Photographers Facebook Group](https://www.facebook.com/groups/611098829065834).

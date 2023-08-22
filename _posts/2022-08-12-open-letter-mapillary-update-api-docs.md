@@ -13,7 +13,7 @@ published: true
 
 **In this post I will go through some of the challenges (mainly though lack of documentation) with the v4 Mapillary API we experienced when building Explorer.**
 
-[Last year I was excited to hear about the new Mapillary API (v4), and the improvements and the future updates it would bring](/blog/2021/migrating-from-mapillary-api-v3-to-v4).
+[Last year I was excited to hear about the new Mapillary API (v4), and the improvements and the future updates it would bring](/blog/migrating-from-mapillary-api-v3-to-v4).
 
 Alas, over a year later, [the API Documentation hasn't changed at all](https://www.mapillary.com/developer/api-documentation).
 

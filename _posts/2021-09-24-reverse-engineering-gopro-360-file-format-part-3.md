@@ -13,7 +13,7 @@ published: true
 
 **I continue taking apart a .360 file, and trying to rebuild it with a equirectangular projection (without GoPro software).**
 
-[After extracting the video tracks from GoPro's .360 format in last weeks post](/blog/2021/reverse-engineering-gopro-360-file-format-part-2), this week I wanted to better understand the structure of each frame.
+[After extracting the video tracks from GoPro's .360 format in last weeks post](/blog/reverse-engineering-gopro-360-file-format-part-2), this week I wanted to better understand the structure of each frame.
 
 I suspected there might be duplicate pixels written into the frames after [reading GoPro's post about their .360 format](https://gopro.com/en/au/news/max-tech-specs-stitching-resolution), and looking at the dimensions of the frames extracted last week.
 
@@ -113,4 +113,4 @@ Now we have a blended EAC cubemap that is ready to be converted to an equirectan
 
 ## Update 2021-10-01: Part 4 now available
 
-[In the final part of this series, I convert a GoPro EAC projected frame into an equirectangular projection to be displayed in other software.](/blog/2021/reverse-engineering-gopro-360-file-format-part-4).
+[In the final part of this series, I convert a GoPro EAC projected frame into an equirectangular projection to be displayed in other software.](/blog/reverse-engineering-gopro-360-file-format-part-4).

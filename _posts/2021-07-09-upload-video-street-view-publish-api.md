@@ -19,7 +19,7 @@ Google offers a coupld of ways to do this using the [Google Street View Publish 
 
 The `photo` resource can be used to upload single images.
 
-Those of you who like to take things apart woll enjoy [a previous post of mine introducing exactly how the Street View API and `photo` resource works](/blog/2020/street-view-publish-api-quick-start-guide/).
+Those of you who like to take things apart woll enjoy [a previous post of mine introducing exactly how the Street View API and `photo` resource works](/blog/street-view-publish-api-quick-start-guide/).
 
 This works well for individual photos, or for smaller sequences. However it starts to cause issues for tours of 30+ images. There are a few reasons for this:
 
@@ -149,4 +149,4 @@ However, processing can, and often does fail, producing one of the following pot
 
 One downside of using the `photoSequence` upload is that if one image in the uploaded video fails the Street View server side checks, the entire `photoSequence` will fail. As opposed to `photo` upload, where a single photo failure will not result in an entire failure for all photos uploaded in the sequence.
 
-Ultimately, if you're working with a sequence with more than 10 images, go with the `photoSequence` method (and make sure any bad images are removed before packing as a video to reduce the likelihood of failed checks), otherwise the `photo` approach [described here](/blog/2020/street-view-publish-api-quick-start-guide/) is probably preferable.
+Ultimately, if you're working with a sequence with more than 10 images, go with the `photoSequence` method (and make sure any bad images are removed before packing as a video to reduce the likelihood of failed checks), otherwise the `photo` approach [described here](/blog/street-view-publish-api-quick-start-guide/) is probably preferable.

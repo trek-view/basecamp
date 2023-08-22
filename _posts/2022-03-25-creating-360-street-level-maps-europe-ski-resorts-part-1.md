@@ -13,7 +13,7 @@ published: true
 
 **And a brief update on using the GoPro MAX cold weather setup.**
 
-[A few weeks ago I talked about the problems cold temperatures have on LiIon batteries, and how I was preparing my kit for cold weather](/blog/2022/keeping-gopro-max-warm-extend-battery-life).
+[A few weeks ago I talked about the problems cold temperatures have on LiIon batteries, and how I was preparing my kit for cold weather](/blog/keeping-gopro-max-warm-extend-battery-life).
 
 As those that know me might have guessed, this is because I was going skiing!
 

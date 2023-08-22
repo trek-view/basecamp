@@ -13,7 +13,7 @@ published: true
 
 **Three spatial concepts that are important to understand in 360 photography.**
 
-[Last year in my DIY Google Street View post](/blog/2019/diy-google-street-view-part-4-processing-photos), I introduced the concepts of yaw, pitch, and roll.
+[Last year in my DIY Google Street View post](/blog/diy-google-street-view-part-4-processing-photos), I introduced the concepts of yaw, pitch, and roll.
 
 After receiving a common theme of questions, I'll dig a bit deeper into these concepts in this post.
 

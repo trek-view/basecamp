@@ -148,4 +148,4 @@ They're no Google Trekker packs, granted. The upside being; they're **A LOT** mo
 
 ## Update: 2019-12-20
 
-[Google's Street View Cameras - More Than Meets the Eye](/blog/2019/google-street-view-cameras-more-than-meets-the-eye)
+[Google's Street View Cameras - More Than Meets the Eye](/blog/google-street-view-cameras-more-than-meets-the-eye)

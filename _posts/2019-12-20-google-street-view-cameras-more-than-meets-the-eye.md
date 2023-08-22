@@ -13,7 +13,7 @@ published: true
 
 **Lasers, gyroscopes, accelerometers... Street View camera rigs do much more than just take photos.**
 
-[Last month I looked at the history of the Street View camera](/blog/2019/history-of-google-street-view-cameras), from the early versions in 2007, to the drastically improved cameras Google now uses.
+[Last month I looked at the history of the Street View camera](/blog/history-of-google-street-view-cameras), from the early versions in 2007, to the drastically improved cameras Google now uses.
 
 Many of you followed up, asking me about the lasers I mentioned fleetingly in that post.
 
@@ -48,7 +48,7 @@ _Thanks for the tip, Daniel Yu!_
 
 <img class="img-fluid" src="/assets/images/blog/2019-12-20/google-street-view-camera-laser-output.png" alt="Google Street View laser render" title="Google Street View laser render" />
 
-As mentioned in my [history of the Street View camera](/blog/2019/history-of-google-street-view-cameras), even the prototype Street View cars had side and front-facing laser scanners installed to measure depth.
+As mentioned in my [history of the Street View camera](/blog/history-of-google-street-view-cameras), even the prototype Street View cars had side and front-facing laser scanners installed to measure depth.
 
 [All Street View cameras since the R5 (2008)](https://books.google.co.uk/books?id=dGpQDwAAQBAJ&pg=PA83&lpg=PA83) feature a pair of [$6000 Sick AG LMS 291](https://www.sick.com/gb/en/detection-and-ranging-solutions/2d-lidar-sensors/lms2xx/lms291-s05/p/p109849) laser profilers that are attached to the mast and continually measure a series of range or elevation profiles on either side of the mapping vehicle. A third SICK LMS291 profiler measures the road surface in front of the vehicle.
 

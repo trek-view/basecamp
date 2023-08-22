@@ -19,7 +19,7 @@ Overall they're very good. Especially when you consider almost all 360 cameras w
 
 However, in situations where your under a tree canopy, or even worse, a tunnel, it is very likely you'll see a few erroneous positioning measurements.
 
-This is not an issue with GPS receiver per se. [It is because GPS receivers need a clear line of site to a minimum of 4 GPS satellites](/blog/2020/gps-101).
+This is not an issue with GPS receiver per se. [It is because GPS receivers need a clear line of site to a minimum of 4 GPS satellites](/blog/gps-101).
 
 For our work, accurate positioning is important, but in most cases we can allow for some anomalous points, either discarding the image entirely or guessing what path it was taken on using existing OSM map data.
 
@@ -51,7 +51,7 @@ Jim’s solution was to pair up his Labpano Pilot One 360° camera with the [Ard
 
 <img class="img-fluid" src="/assets/images/blog/2021-06-18/jim-gayes-bike.jpg" alt="Jim Gayes ArduSimple simpleRTK2B-F9R" title="Jim Gayes ArduSimple simpleRTK2B-F9R" />
 
-The ArduSimple simpleRTK2B-F9R's [IMU](/blog/2020/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer) combined with it's Inertial Sensor Fusion calculates a reasonably accurate location when all satellite signals are lost.
+The ArduSimple simpleRTK2B-F9R's [IMU](/blog/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer) combined with it's Inertial Sensor Fusion calculates a reasonably accurate location when all satellite signals are lost.
 
 To be clear, this is not GPS resolving the position.
 

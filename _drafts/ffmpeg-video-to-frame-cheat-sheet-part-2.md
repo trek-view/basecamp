@@ -11,7 +11,7 @@ layout: post
 published: false
 ---
 
-At the end of last weeks post I teased you with a possible part 2 of my post; [FFmpeg Cheat Sheet for virtual 360 tours](/blog/2022/ffmpeg-video-to-frame-cheat-sheet).
+At the end of last weeks post I teased you with a possible part 2 of my post; [FFmpeg Cheat Sheet for virtual 360 tours](/blog/ffmpeg-video-to-frame-cheat-sheet).
 
 Well here it is.
 
@@ -20,7 +20,7 @@ In part one I talked about taking a video and turning it into frames, something 
 
 Thi
 
-If this sounds familiar, then it is. [I've talked briefly about doing this before](/blog/2021/turn-360-photos-into-360-video).
+If this sounds familiar, then it is. [I've talked briefly about doing this before](/blog/turn-360-photos-into-360-video).
 
 Though this didn't include modification of telemetry
 
@@ -35,7 +35,7 @@ Yes... but it requires a custom ffmpeg build.
 
 The master ffmpeg software build does not contain the right filters to convert GoPro’s EAC format out of the box (at the time of writing). As the process to do this will require copying the video, you will therefore need a custom ffmpeg fork with a GoPro EAC filter.
 
-[Early this year I showed how to install and run such an ffmpeg fork](/blog/2022/using-ffmpeg-process-gopro-max-360/) that will do this.
+[Early this year I showed how to install and run such an ffmpeg fork](/blog/using-ffmpeg-process-gopro-max-360/) that will do this.
 
 Once installed and running, you can use ffmpeg to remove the sound like so;
 

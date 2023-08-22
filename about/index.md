@@ -5,6 +5,7 @@ description: Trek View is using street-level panoramic imagery of the natural wo
 image: /assets/images/global/trek-view-360-degree-tour.jpg
 layout: page
 redirect_from:
+  - /blog/2019/360-degree-view-water-tours
   - /blog/2019/how-to-make-successful-trek-pack-loan-application
   - /blog/2019/what-are-you-working-on
   - /blog/2019/cash-for-cameras

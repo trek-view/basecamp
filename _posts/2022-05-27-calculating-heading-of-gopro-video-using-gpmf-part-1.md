@@ -13,7 +13,7 @@ published: true
 
 **Understand the telemetry needed to ensure your 360 videos are loaded in 360 players facing the same direction as they were shot.**
 
-Did you see my post last week?; [Adjusting the yaw of an equirectangular 360 photo using ImageMagick](/blog/2022/adjusting-yaw-equirectangular-images).
+Did you see my post last week?; [Adjusting the yaw of an equirectangular 360 photo using ImageMagick](/blog/adjusting-yaw-equirectangular-images).
 
 The example used extracted equirectangular frames. However, in the case of videos there are more efficient ways to achieve the same thing, as I'll show you in this post.
 
@@ -62,9 +62,9 @@ Of course, in either case this does not my video processed in World Lock mode. U
 
 Luckily for us, the GoPro GPMD telemetry allows us to calculate true heading for each frame in the video. 
 
-[I've talked about extracting GoPro telemetry previously with regards to GPS points](/blog/2022/gopro-telemetry-exporter-getting-started).
+[I've talked about extracting GoPro telemetry previously with regards to GPS points](/blog/gopro-telemetry-exporter-getting-started).
 
-[The GPMD telemetry includes a whole host of data](/blog/2022/evolution-of-gopro-camera-sensors-gpmf), including `MAGN` (values recorded by the cameras Magnetometer) and `CORI` (Camera Orientation).
+[The GPMD telemetry includes a whole host of data](/blog/evolution-of-gopro-camera-sensors-gpmf), including `MAGN` (values recorded by the cameras Magnetometer) and `CORI` (Camera Orientation).
 
 For reference here is the GoPro sensor axis configuration for the sensors;
 
@@ -78,7 +78,7 @@ For reference here is the GoPro sensor axis configuration for the sensors;
 
 In GMPD, Camera orientation is a relative measurement (the orientation relative to the orientation the sensor had when the acquisition started), as opposed to an absolute measurement (like orientation to magnetic north).
 
-The first `CORI` value for our example World Lock video (`GS010013-worldlock.mp4`) looks like this ([extracted using gopro-telemetry](/blog/2022/gopro-telemetry-exporter-getting-started));
+The first `CORI` value for our example World Lock video (`GS010013-worldlock.mp4`) looks like this ([extracted using gopro-telemetry](/blog/gopro-telemetry-exporter-getting-started));
 
 ```json
 "CORI":{
@@ -107,7 +107,7 @@ The relative Quarternation samples can therefore be used to calculate absolute y
 
 ### `MAGN` (Magnetometer values)
 
-The first `MAGN` value for our original example video (`GS010013-worldlock.mp4`) looks like this ([extracted using gopro-telemetry](/blog/2022/gopro-telemetry-exporter-getting-started));
+The first `MAGN` value for our original example video (`GS010013-worldlock.mp4`) looks like this ([extracted using gopro-telemetry](/blog/gopro-telemetry-exporter-getting-started));
 
 
 ```json
@@ -133,4 +133,4 @@ Stay tuned for part 2 of this post next week showing a proof-of concept to calcu
 
 ## Update 2022-06-03
 
-[Using ffmpeg to dynamically adjust the yaw of GoPro 360 videos (Part 2)](/blog/2022/calculating-heading-of-gopro-video-using-gpmf-part-2).
+[Using ffmpeg to dynamically adjust the yaw of GoPro 360 videos (Part 2)](/blog/calculating-heading-of-gopro-video-using-gpmf-part-2).

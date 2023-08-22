@@ -13,7 +13,7 @@ published: true
 
 **Use the rRuf mobile app on your bicycle to measure the ride quality.**
 
-In 2019 I briefly mentioned the Des Moines Area Metropolitan Planning Organization Data Bike in my [DIY Street View Bike post](/blog/2019/diy-street-view-bike-tours).
+In 2019 I briefly mentioned the Des Moines Area Metropolitan Planning Organization Data Bike in my [DIY Street View Bike post](/blog/diy-street-view-bike-tours).
 
 <img class="img-fluid" src="/assets/images/blog/2021-03-12/dmampo-data-bike.jpg" alt="DMAMPO Data Bike report 2019 Data Bike" title="DMAMPO Data Bike report 2019 Data Bike" />
 
@@ -40,7 +40,7 @@ The DMAMPO team used a five point grading system for the quality of each trail:
 
 For each trail captured, this grading system provides a very easy way to identify the trails in the best and worst conditions.
 
-This information is captured from the rRuf ('Road Roughness') app which  measures the roughness of a road using [the phones IMU (Inertial Measurement Unit)](/blog/2020/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer) and reports it on a scale known as a Riding Comfort Index (RCI).
+This information is captured from the rRuf ('Road Roughness') app which  measures the roughness of a road using [the phones IMU (Inertial Measurement Unit)](/blog/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer) and reports it on a scale known as a Riding Comfort Index (RCI).
 
 ## rRuf app
 
@@ -103,4 +103,4 @@ If you think a data bike could be a valuable addition to your local area, [pleas
 
 ## Update 2021-04-16
 
-[Here are two other consumer mobile apps that can measure sensor data on your phone to record ride quality](/blog/2021/measuring-condition-cycle-paths-phone-update).
+[Here are two other consumer mobile apps that can measure sensor data on your phone to record ride quality](/blog/measuring-condition-cycle-paths-phone-update).

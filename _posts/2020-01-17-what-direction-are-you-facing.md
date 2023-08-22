@@ -39,7 +39,7 @@ Now you might be wondering why pitch or heading is important. _"Surely a user ca
 
 On many newer cameras, the gyroscope and compass built into the camera alongside the GPS receiver will automatically record the pitch, roll, and heading of each frame.
 
-But we use an older GoPro Fusion for our camera packs and shoot in time lapse mode ([because of battery and heat issues](/blog/2019/diy-google-street-view-part-3-preparing-to-shoot)).  Whilst the Fusion has a an gyroscope and compass, the pitch, roll, and heading data is only included video captures.
+But we use an older GoPro Fusion for our camera packs and shoot in time lapse mode ([because of battery and heat issues](/blog/diy-google-street-view-part-3-preparing-to-shoot)).  Whilst the Fusion has a an gyroscope and compass, the pitch, roll, and heading data is only included video captures.
 
 Using the latitude, longitude, and altitude values captured by the GoPro Fusion GPS receiver you have all the information needed to make an fairly accurate calculation of these variables when shooting in time lapse mode.
 
@@ -95,8 +95,6 @@ Given photos are generally less than 3m apart and our Trek Pack cameras are alwa
 
 Now you can calculate the heading of the current photo by measuring the heading (angle) from North to the next photo (by time), as shown in the diagram.
 
-[The maths to calculate this angle is beautifully described here](https://math.stackexchange.com/a/1596518). [You can also see it in the code of Sequence Maker here](https://github.com/trek-view/sequence-maker/blob/master/sequence-maker.py#L25).
-
 There is a slight problem with this approach, you cannot get the heading of the last photo (because there is not a next photo by time). As a simple approach, you could just copy the heading calculated for the last photo in the sequence.
 
 ## Multiple Headings
@@ -137,4 +135,4 @@ You will see there is no adjusted heading for the next photo by time (e.g P2 to 
 
 ## Update 2021-10-07
 
-You might also like the post; [Using trigonometry to calculate how north, east, and vertical velocity](/blog/2021/calculating-velocity-between-two-sequence-photos)
+You might also like the post; [Using trigonometry to calculate how north, east, and vertical velocity](/blog/calculating-velocity-between-two-sequence-photos)

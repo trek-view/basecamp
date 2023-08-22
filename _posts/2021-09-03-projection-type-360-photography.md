@@ -23,7 +23,7 @@ Different projection types have different benefits. In the world of 360 videos (
 
 ## Equirectangular projections
 
-I talked about equirectangular projections [in my post last year about adding a custom nadir to a 360 photo](/blog/2020/adding-a-custom-nadir-to-360-video-photo).
+I talked about equirectangular projections [in my post last year about adding a custom nadir to a 360 photo](/blog/adding-a-custom-nadir-to-360-video-photo).
 
 To recap...
 
@@ -39,7 +39,7 @@ The diagram below might help you visualise this better (see how the top circles 
 
 <img class="img-fluid" src="/assets/images/blog/2021-09-03/equirectangular-globe-projection.png" alt="Equirectangular transformation" title="Equirectangular transformation" />
 
-Many of you will be familiar with equirectangular projection types. Most 360 cameras use this projection type for the final output of image and videos. This is largely because most 360 image software understands how to render equirectangular projection types ([when this projection type is present in the metadata](/blog/2020/metadata-exif-xmp-360-photo-files)).
+Many of you will be familiar with equirectangular projection types. Most 360 cameras use this projection type for the final output of image and videos. This is largely because most 360 image software understands how to render equirectangular projection types ([when this projection type is present in the metadata](/blog/metadata-exif-xmp-360-photo-files)).
 
 ### Example Equirectangular projection
 
@@ -140,4 +140,4 @@ Image credits for this post:
 
 ## Update 2021-09-03
 
-[Reverse Engineering GoPro's 360 Video File Format (Part 1)](/blog/2021/projection-type-360-photography)
+[Reverse Engineering GoPro's 360 Video File Format (Part 1)](/blog/projection-type-360-photography)

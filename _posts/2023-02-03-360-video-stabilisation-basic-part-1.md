@@ -43,7 +43,7 @@ There are third party tools that do a great job of stabilisation in post product
 
 Though like with everything on the blog, I wanted to figure out how this technology works (even if it's to a superficial level).
 
-After authoring, [Automatic horizon and pitch leveling of GoPro 360 videos](/blog/2022/roll-pitch-level-of-gopro-video-using-gpmf), I am fairly sure the Gyroscope, Accelerometer and Magnetometer samples are responsible for stabilisation. On the face of it, it makes perfect sense. If the camera is bouncing around, then these samples will fluctuate wildly. By calculating how much they are fluctuating, you can adjust the image frame accordingly.
+After authoring, [Automatic horizon and pitch leveling of GoPro 360 videos](/blog/roll-pitch-level-of-gopro-video-using-gpmf), I am fairly sure the Gyroscope, Accelerometer and Magnetometer samples are responsible for stabilisation. On the face of it, it makes perfect sense. If the camera is bouncing around, then these samples will fluctuate wildly. By calculating how much they are fluctuating, you can adjust the image frame accordingly.
 
 ## Video stabilisation 101
 
@@ -54,7 +54,7 @@ The brilliant Tom Scott has a good overview of video stabilisation (recorded in 
 In summary Tom talks through the evolution of post-processing stabilisation;
 
 * fixed point: uses on or more control points to lock video (not good for lots of movement as hard to have consistent control points)
-* de-shaker: uses all pixels to try and determine the movement of each pixel between frames and uses zooming/cropping/rotating to try and reduce movement. However, is not very good with newer cameras due to the way [rolling shutters work](/blog/2020/what-is-global-shutter-rolling-shutter-360-cameras)
+* de-shaker: uses all pixels to try and determine the movement of each pixel between frames and uses zooming/cropping/rotating to try and reduce movement. However, is not very good with newer cameras due to the way [rolling shutters work](/blog/what-is-global-shutter-rolling-shutter-360-cameras)
 * subspace warp: attempts to warp various parts of the frame differently to stabilise the entire frame. [See Adobe docs for more information](https://helpx.adobe.com/uk/premiere-pro/using/stabilize-motion-warp-stabilizer-effect.html)
 * YouTube: tries to map the frame in 3D (to see "behind" objects in frame) to try and smooth the movement. Full information in the research paper; [Auto-Directed Video Stabilization with Robust L1 Optimal Camera Paths](https://research.google.com/pubs/archive/37041.pdf)
 
@@ -112,7 +112,7 @@ One important thing to note, [GyroFlow and the links in the repository linked in
 
 When it comes to 360 video the stabilisation margin does exist, but it's much smaller. 360 cameras typically have an overlap between areas captured in the vision of their lenses (e.g. [the field of view on each of the GoPro Fusion lenses is about 190 degrees](/blog/gopro-fusion-fisheye-stitching-part-3)).
 
-So if the camera was to first crop the input from both lenses, before stitching, the field of view will be reduced, thus [there will be fewer control points to work from](/blog/2020/how-does-360-stitching-software-work), and as a result, the output quality after stitching the two videos might degrade (and the computation to account for cropping between frames would increase required power to stitch).
+So if the camera was to first crop the input from both lenses, before stitching, the field of view will be reduced, thus [there will be fewer control points to work from](/blog/how-does-360-stitching-software-work), and as a result, the output quality after stitching the two videos might degrade (and the computation to account for cropping between frames would increase required power to stitch).
 
 In 2016, [the Meta team showed off some of their 360 video stabilisation research](https://engineering.fb.com/2016/08/31/ai-research/360-video-stabilization-a-new-algorithm-for-smoother-360-video-viewing/) (note, many of the images are broken in that post, [luckily TechCrunch captured them here](https://techcrunch.com/2016/08/31/facebook-shows-commitment-to-video-with-new-360-video-stabilization-demo/)).
 
@@ -142,11 +142,11 @@ OpenSfM finds the relative positions of images and creates smooth transitions be
 
 What's not clear to me with Meta's approach is if; recorded movement (in the telemetry) is used as an input to analyse motion (in addition to the visual motion detected)
 
-[Almost all 360 cameras contain basic IMUs](/blog/2020/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer).
+[Almost all 360 cameras contain basic IMUs](/blog/360-camera-sensors-imu-accelerometer-gyroscope-magnetometer).
 
 Using these sensors movement can be reported to a high-degree of precision using the sensors in the camera increasing the data available for the smoothing algorithms to make a highly accurate understand the amount of movement they need to adjust for.
 
-Much of this telemetry can is now stored in metadata standards [CAMM](/blog/2021/metadata-exif-xmp-360-video-files-camm-camera-motion-metadata-spec) and [GPMF](blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd).
+Much of this telemetry can is now stored in metadata standards [CAMM](/blog/metadata-exif-xmp-360-video-files-camm-camera-motion-metadata-spec) and [GPMF](blog/metadata-exif-xmp-360-video-files-gopro-gpmd).
 
 Both the YouTube and Facebook approaches were written up before these telemetry standards were adopted in consumer cameras, which makes me think at the time of writing, the algorithms detected movement using the only information available in the video (the pixels in each frame). I suspect in the (many) intervening years, many stabilisation algorithms use IMU data as an input.
 

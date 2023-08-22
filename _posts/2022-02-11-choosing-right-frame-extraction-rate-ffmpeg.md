@@ -13,9 +13,9 @@ published: true
 
 **How we optimised the process of turning a video into frames to create virtual tours in Explorer using speed as a variable.**
 
-[Last week I talked about the importance of considering framerate for timewarp videos when extracting frames from it](/blog/2022/turn-gopro-timewarp-video-into-timelapse-images).
+[Last week I talked about the importance of considering framerate for timewarp videos when extracting frames from it](/blog/turn-gopro-timewarp-video-into-timelapse-images).
 
-With the Trek Pack v1 we shot in timelapse mode, [where the interval setting was determined by the speed of transport used during shooting](/blog/2019/diy-google-street-view-part-3-preparing-to-shoot). This was a compromise as the Fusion's video mode was very battery intensive.
+With the Trek Pack v1 we shot in timelapse mode, [where the interval setting was determined by the speed of transport used during shooting](/blog/diy-google-street-view-part-3-preparing-to-shoot). This was a compromise as the Fusion's video mode was very battery intensive.
 
 The MAX used on our v2 pack improved upon battery performance in video mode and we stated shooting in video mode only. The MAX also only supports a frame rate of 0.5 FPS (1 photo every 2 seconds), which is not paticularly fast for moderate-speed travel (e.g. biking).
 
@@ -29,7 +29,7 @@ In a perfect world, you would extract all video frames. For example, if a video 
 
 For a video of 10 minutes, that is 18000 frames (`(30x60)x10`).
 
-Assuming each frame is about 10Mb (about right for a 360 photo), that is 180Gb of images. This number is inflated, but you lose the advantage of the [compression provided by video codecs](/blog/2020/fps-bitrate-compression-360-virtual-tours).
+Assuming each frame is about 10Mb (about right for a 360 photo), that is 180Gb of images. This number is inflated, but you lose the advantage of the [compression provided by video codecs](/blog/fps-bitrate-compression-360-virtual-tours).
 
 At scale, this quickly adds up to very big numbers in terms of storage space and processing power required.
 
@@ -164,7 +164,7 @@ $ ffmpeg -i VIDEO.mp4 -r 5 -q:v 2 FRAMES/img%d.jpg
 
 Here you first work out speed at each stage of the video using the telemetry track.
 
-Note, you will get no more than 18 values for speed each second using a GoPro Camera ([18 Hz the max resolution of the GPS chip](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd)). This is less than the frame rate.
+Note, you will get no more than 18 values for speed each second using a GoPro Camera ([18 Hz the max resolution of the GPS chip](/blog/metadata-exif-xmp-360-video-files-gopro-gpmd)). This is less than the frame rate.
 
 Using the distance travelled and time between each second in the video allows you to calculate an average speed per second (e.g. `0-1 = 10m/s`, `1-2 = 12m/s`, `2-3....`).
 
@@ -197,7 +197,7 @@ $ ffmpeg -i VIDEO.mp4 -ss 00:02:00 -to 00:03:00 -r 8 -q:v 2 FRAMES/img%d.jpg
 
 In option 2 and 3 I calculated speed manually using distance and time values.
 
-GoPro videos offer some help with calculating speed -- the speed of travel is actually reported in the [GPMF metadata](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd).
+GoPro videos offer some help with calculating speed -- the speed of travel is actually reported in the [GPMF metadata](/blog/metadata-exif-xmp-360-video-files-gopro-gpmd).
 
 [Here is the metadata of a sample video shot on the MAX](https://github.com/trek-view/gopro-metadata/blob/main/max/max-360-vid-001s1/GS018421-5_6k-output.xml).
 

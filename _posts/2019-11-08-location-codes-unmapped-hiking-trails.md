@@ -59,4 +59,4 @@ Enter a Plus Code and Google Maps will return the exact location -- perfect for 
 
 I currently take advantage of [the open-source Python Open Location Code library available on Github that converts co-ordinates into Plus Codes](https://github.com/google/open-location-code).
 
-_**Update January 2020**: [Call for Trekkers to "map the unmapped"](/blog/2020/mapping-the-unmapped-using-360-degree-photos)_.
+_**Update January 2020**: [Call for Trekkers to "map the unmapped"](/blog/mapping-the-unmapped-using-360-degree-photos)_.

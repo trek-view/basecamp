@@ -13,11 +13,11 @@ published: true
 
 **Ensure your 360 photos are loaded in 360 viewers facing the same direction as they were shot.**
 
-[I've talked previously on a simplistic way to calculate the heading from a series of photos](/blog/2020/what-direction-are-you-facing).
+[I've talked previously on a simplistic way to calculate the heading from a series of photos](/blog/what-direction-are-you-facing).
 
 In short, you plot the two image co-ordinates and find the angle relative to North (heading) between the two.
 
-Recently I was posed a challenge; determine the heading of the [frames extracted from a GoPro MAX 360 video](/blog/2021/turn-360-video-into-timelapse-images-part-1) that was processed in [GoPro Studio with World Lock enabled](/blog/2021/using-gopro-studio-process-360-files) (so that the yaw of the image could be correctly adjusted to match true heading).
+Recently I was posed a challenge; determine the heading of the [frames extracted from a GoPro MAX 360 video](/blog/turn-360-video-into-timelapse-images-part-1) that was processed in [GoPro Studio with World Lock enabled](/blog/using-gopro-studio-process-360-files) (so that the yaw of the image could be correctly adjusted to match true heading).
 
 For those unfamiliar, World Lock will fix the orientation toward a fixed compass direction (the initial orientation of the video), regardless of where the camera is pointed.
 
@@ -164,4 +164,4 @@ I'll show you exactly how to do that next week.
 
 ## Update 2022-05-27
 
-[Using ffmpeg to dynamically adjust the yaw of GoPro 360 videos](/blog/2022/calculating-heading-of-gopro-video-using-gpmf-part-1).
+[Using ffmpeg to dynamically adjust the yaw of GoPro 360 videos](/blog/calculating-heading-of-gopro-video-using-gpmf-part-1).

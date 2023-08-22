@@ -15,12 +15,12 @@ published: true
 
 If you've been following our blog over the years you will have seen a few post with a focus on capturing 360 tours of bicycle lanes, using cameras and a variety of other sensors;
 
-* [My DIY Street View Bike (2019)](/blog/2019/diy-street-view-bike-tours)
-* [DIY Street View Bike v2 (2020)](/blog/2020/diy-street-view-bike-v2)
-* [Crowdsourcing safer bicycle lane design (2020)](/blog/2020/challenge-map-amsterdam-by-bicycle)
-* [Measuring the Condition of Cycle Paths With Only Your Phone](/blog/2021/measuring-condition-cycle-paths-phone)
-* [Trek View Trail Quality Index (2021)](/blog/2021/trek-view-ride-quality-index)
-* [Trek View Trail Quality Index: An Alternative Method Using Computer Vision (2021)](/blog/2021/trek-view-ride-quality-index-computer-vision-part-1)
+* [My DIY Street View Bike (2019)](/blog/diy-street-view-bike-tours)
+* [DIY Street View Bike v2 (2020)](/blog/diy-street-view-bike-v2)
+* [Crowdsourcing safer bicycle lane design (2020)](/blog/challenge-map-amsterdam-by-bicycle)
+* [Measuring the Condition of Cycle Paths With Only Your Phone](/blog/measuring-condition-cycle-paths-phone)
+* [Trek View Trail Quality Index (2021)](/blog/trek-view-ride-quality-index)
+* [Trek View Trail Quality Index: An Alternative Method Using Computer Vision (2021)](/blog/trek-view-ride-quality-index-computer-vision-part-1)
 
 We've now seen a ton imagery captured on bikes...
 
@@ -62,4 +62,4 @@ We can provide the software, but we need groups who can help us to promote this 
 
 ## Update 2021-06-25
 
-[Collecting street-level imagery of the UK's cycle networks](/blog/2021/sustrans-uk-national-cycle-network-360-street-level-imagery)
+[Collecting street-level imagery of the UK's cycle networks](/blog/sustrans-uk-national-cycle-network-360-street-level-imagery)

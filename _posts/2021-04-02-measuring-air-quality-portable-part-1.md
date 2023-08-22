@@ -13,7 +13,7 @@ published: true
 
 **Our hunt for a device that could measure air quality during adventures.**
 
-We've been on the hunt for a mobile air quality sensor [since we discovered they were fitted to Google Street View cars](/blog/2019/google-street-view-cameras-more-than-meets-the-eye
+We've been on the hunt for a mobile air quality sensor [since we discovered they were fitted to Google Street View cars](/blog/google-street-view-cameras-more-than-meets-the-eye
 ).
 
 The [Aclima](https://www.aclima.io/) sensors fitted to Street View offer a very high level of accuracy.
@@ -151,4 +151,4 @@ I'll report back on our experiences as we start using it with the [Trek Packs](/
 
 ## Update 2021-04-09
 
-[Here are three more options you can use to upload your 360 photos to Street View](/blog/2021/measuring-air-quality-portable-part-2).
+[Here are three more options you can use to upload your 360 photos to Street View](/blog/measuring-air-quality-portable-part-2).

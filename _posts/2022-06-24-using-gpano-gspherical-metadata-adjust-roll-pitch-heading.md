@@ -223,7 +223,7 @@ Here is such an example;
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2022-06-24/GSAB8719-sm.JPG&amp;autoLoad=true"></iframe>
 
-These images are problematic when uploaded to Explorer due to [the crude way Explorer determines heading](/blog/2020/what-direction-are-you-facing) -- Explorer is calculating the heading to the next photo, not the heading of the camera.
+These images are problematic when uploaded to Explorer due to [the crude way Explorer determines heading](/blog/what-direction-are-you-facing) -- Explorer is calculating the heading to the next photo, not the heading of the camera.
 
 In Trail Maker, a user can define if the camera was facing backwards whilst shooting. If set to `true`, then two values are calculated;
 

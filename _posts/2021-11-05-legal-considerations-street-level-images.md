@@ -49,6 +49,6 @@ It's also important to stress that this post covers the legalities of capturing 
 
 For example, I avoid capturing imagery in areas children might be playing. Whilst this is legal, morally, I know parents will be rightly concerned with someone capturing footage of their children.
 
-[People might not realise the imagery will be blurred](/blog/2020/how-to-blur-street-level-images). Others might not agree with [the privacy policies of the aforementioned services](/blog/2020/google-street-view-microsoft-bing-maps-facebook-mapillary-apple-look-around).
+[People might not realise the imagery will be blurred](/blog/how-to-blur-street-level-images). Others might not agree with [the privacy policies of the aforementioned services](/blog/google-street-view-microsoft-bing-maps-facebook-mapillary-apple-look-around).
 
 You will have to make your own moral judgements about where you shoot, and where you upload the content.

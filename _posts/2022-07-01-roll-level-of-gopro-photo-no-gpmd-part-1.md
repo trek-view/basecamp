@@ -15,7 +15,7 @@ published: true
 
 As I have mentioned on the blog many times, almost all 360 cameras include the following [GPS tags](https://exiftool.org/TagNames/GPS.html) in the metadata of photos they take;
 
-* `GPS:GPSLatitude`: [decimal Latitude](/blog/2021/reading-decimal-gps-coordinates-like-a-computer)
+* `GPS:GPSLatitude`: [decimal Latitude](/blog/reading-decimal-gps-coordinates-like-a-computer)
 * `GPS:GPSLatitudeRef`: `E` (East) or `W` (West)
 * `GPS:GPSLongitude`: decimal Longitude
 * `GPS:GPSLongitudeRef`: `N` (North) or `S` (South)
@@ -49,7 +49,7 @@ If `XMP-GPano:Pose...` values are not set, the `XMP-GPano:InitialView...` values
 
 All that being said, GoPro 360 Cameras do not include any information in photos beyond GPS positional information (`lat`, `lon`, and `alt`).
 
-[I've talked previously about calculating rough values for heading and pitch when other sensor telemetry is not available](/blog/2020/what-direction-are-you-facing) by working out the heading and the pitch to the next photo in a photo sequence (using latitude, longitude, and altitude).
+[I've talked previously about calculating rough values for heading and pitch when other sensor telemetry is not available](/blog/what-direction-are-you-facing) by working out the heading and the pitch to the next photo in a photo sequence (using latitude, longitude, and altitude).
 
 In an attempt to try an level the horizon of my 360 photos I need to be able to determine the camera roll, however, `lat`, `lon`, and `alt` values cannot be used to do this.
 

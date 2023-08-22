@@ -13,7 +13,7 @@ published: true
 
 **Understanding the Fusion's fisheye projections with the aim of turning them into a single equirectangular image.**
 
-[Last week I took a look at the GoPro Fusion imagery produced by the camera](/blog/2021/gopro-fusion-fisheye-stitching-part-1).
+[Last week I took a look at the GoPro Fusion imagery produced by the camera](/blog/gopro-fusion-fisheye-stitching-part-1).
 
 We figured out that the Fusion produces dual fisheye images. Lets start this week by quickly introducing fisheye projections...
 
@@ -39,7 +39,7 @@ As noted, the resulting fisheye images can have different fields of view, depend
 
 In the image above, you can see the field of view illustrated very nicely.
 
-The field of view is greater than 180 (it is actually 220). You can see this as the image goes "behind" the [zenith (top) and nadir (bottom)](/blog/2020/what-is-a-nadir) (and also left and right too).
+The field of view is greater than 180 (it is actually 220). You can see this as the image goes "behind" the [zenith (top) and nadir (bottom)](/blog/what-is-a-nadir) (and also left and right too).
 
 It's important to note, this is a very specific example. Different lenses will produce different field of views.
 
@@ -141,4 +141,4 @@ I'll need some of these values for next weeks post.
 
 ## Update 2021-12-24
 
-[Stitching GoPro Fusion Images Without GoPro Fusion Studio (Part 3)](/blog/2021/gopro-fusion-fisheye-stitching-part-3)
+[Stitching GoPro Fusion Images Without GoPro Fusion Studio (Part 3)](/blog/gopro-fusion-fisheye-stitching-part-3)

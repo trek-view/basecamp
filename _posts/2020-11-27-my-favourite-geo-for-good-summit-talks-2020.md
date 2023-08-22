@@ -15,7 +15,7 @@ published: true
 
 Google's Geo for Good Summit is an annual conference intended for nonprofits, scientists and other change-makers who want to leverage technology and use mapping tools for a positive impact in the world.
 
-2020 was the 9th summit, [and like the OSM US Connect 2020 Conference](/blog/2020/my-favourite-osm-us-connect-2020), was held virtually.
+2020 was the 9th summit, [and like the OSM US Connect 2020 Conference](/blog/my-favourite-osm-us-connect-2020), was held virtually.
 
 You can view all of the videos from the Geo for Good Summit on the [Google Earth YouTube channel here](https://www.youtube.com/playlist?list=PLLW-qoCMKQsze8jjRsfbXurFm3wUyOerb).
 
@@ -71,4 +71,4 @@ Pramod Sridharamurthy introduces some of the problems with pre-University educat
 
 ## Update: 2021-11-26
 
-[My favourite 2021 Geo For Good Summit talks](/blog/2021/my-favourite-geo-for-good-summit-talks-2021).
+[My favourite 2021 Geo For Good Summit talks](/blog/my-favourite-geo-for-good-summit-talks-2021).

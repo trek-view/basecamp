@@ -102,7 +102,7 @@ The endpoint for coverage tiles is `https://tiles.mapillary.com/maps/vtp/mly1_pu
 
 We have used Mapillary detections and features in some of our tools
 
-[If you're new to these Mapillary concepts, I would first recommend taking a look at a previous post from last year which describes the v3 API endpoints for these functions in detail and also defines the difference between detections and features](/blog/2020/playing-with-mapillary-api).
+[If you're new to these Mapillary concepts, I would first recommend taking a look at a previous post from last year which describes the v3 API endpoints for these functions in detail and also defines the difference between detections and features](/blog/playing-with-mapillary-api).
 
 For our usage, the changes are not significantly different between v3 and v4.
 

@@ -199,7 +199,7 @@ When creating a video, you might want to copy streams between them.
 
 A good example of this is to retain camera telemetry streams when rebuilding a video.
 
-In this post I added some global metadata: [How to Create a 360 Video from a Timelapse of 360 Images (using ffmpeg)](/blog/2021/turn-360-photos-into-360-video)), but I did not copy over the telemetry stream. Let me show you how to do this.
+In this post I added some global metadata: [How to Create a 360 Video from a Timelapse of 360 Images (using ffmpeg)](/blog/turn-360-photos-into-360-video)), but I did not copy over the telemetry stream. Let me show you how to do this.
 
 In the example video, we know the telemetry is in stream 2 (`Stream #0:2[0x3](eng)`).
 
@@ -257,7 +257,7 @@ ffmpeg -i GS018421.mp4 -i GS018421-no-meta.mp4 -c copy -map 0:2 -map 1:0 GS01842
 
 With `-c` (copy) the streams will be [stream copied](http://ffmpeg.org/ffmpeg.html#Stream-copy), not re-encoded, so there will be no quality loss. If you want to re-encode, see [FFmpeg Wiki: H.264 Encoding Guide](https://trac.ffmpeg.org/wiki/Encode/H.264).
 
-Note, you can also use `-map 0:v`, `-map 1:v`, etc. to copy all video (`v`) streams and  `-map 0:a`, `-map 1:a`, etc. to copy all audio (`a`) streams. Be careful with this, as some videos have multiple audio and video streams, e.g. [GoPro .360's](/blog/2022/reverse-engineering-gopro-360-file-format-part-1), so you might copy more streams than you want with this method.
+Note, you can also use `-map 0:v`, `-map 1:v`, etc. to copy all video (`v`) streams and  `-map 0:a`, `-map 1:a`, etc. to copy all audio (`a`) streams. Be careful with this, as some videos have multiple audio and video streams, e.g. [GoPro .360's](/blog/reverse-engineering-gopro-360-file-format-part-1), so you might copy more streams than you want with this method.
 
 **IMPORTANT**: Be very careful when rebuilding videos from frames if you have removed any frames as this will cause issues. For example, if you remove the first 5 seconds you must modify the other streams (e.g. audio and telemetry) to account for this reduction, else the streams will run out of sync.
 

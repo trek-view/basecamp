@@ -13,7 +13,7 @@ published: true
 
 **Here's how to use the GPS points inside your 360 timelapses or videos with tools like Strava and Google Earth.**
 
-Two weeks ago I talked about the [the metadata found in a 360 video](/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd). Before that it was [photo files](/blog/2020/metadata-exif-xmp-360-photo-files).
+Two weeks ago I talked about the [the metadata found in a 360 video](/blog/metadata-exif-xmp-360-video-files-gopro-gpmd). Before that it was [photo files](/blog/metadata-exif-xmp-360-photo-files).
 
 Now you know the theory, it's time to put that knowledge to work.
 
@@ -639,4 +639,4 @@ Be careful when adding new tags. If they do not conform to the [`gpx`](http://ww
 
 ## Update 2021-10-15
 
-See our latest post titled; [Lessons Learned when Geotagging Photos, which includes considerations when working with fractional seconds](/blog/2021/lessons-learned-when-geotagging-photos).
+See our latest post titled; [Lessons Learned when Geotagging Photos, which includes considerations when working with fractional seconds](/blog/lessons-learned-when-geotagging-photos).

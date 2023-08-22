@@ -13,7 +13,7 @@ published: true
 
 **Our initial thoughts after testing the AtmoTube Pro.**
 
-[My AtmoTube Pro arrived recently](/blog/2021/measuring-air-quality-portable-part-1). It didn't take long before I started testing it out.
+[My AtmoTube Pro arrived recently](/blog/measuring-air-quality-portable-part-1). It didn't take long before I started testing it out.
 
 This post is a short review of what I've liked and disliked so far.
 
@@ -99,7 +99,7 @@ Open the `.csv` on your computer and you'll find the following values recorded:
 * `Latitude`
 * `Longitude`
 
-[Take a look at the first post in this series for a deeper explanation on each value](/blog/2021/measuring-air-quality-portable-part-1).
+[Take a look at the first post in this series for a deeper explanation on each value](/blog/measuring-air-quality-portable-part-1).
 
 [Here's the resulting capture from my morning bike ride](https://docs.google.com/spreadsheets/d/1tK9C1pA1FxVW1fkH60rmpfiiPejtUFvzMo-nDWwZfaw/edit?usp=sharing).
 
@@ -125,12 +125,12 @@ Overtime I've been running the AtmoTube Pro indoors and the amount of VOC's meas
 
 ## Things I didn't like
 
-The most obvious flaw is that GPS receiver does not appear to be particularly good (see my post, [GPS 101](/blog/2020/gps-101), for reasons why this might be the case).
+The most obvious flaw is that GPS receiver does not appear to be particularly good (see my post, [GPS 101](/blog/gps-101), for reasons why this might be the case).
 
 In many instances, the latitude and longitude reported is significantly erroneous. I've drawn an outline of my route using the polygon on the map above. Compare that line to the plotted points and you can see many are 100's of metres off-line.
 
 The receiver also seems to struggle to stay locked to satellites in places with mild tree cover. I was moving the whole time on this journey, yet for 5 minutes the device reported that I was in the exact same place (between `11:54:00` and `11:59:00`, `latitude=51.2372807` and `longitude=-0.8153424)`.
 
-For us this is not a deal breaker. If you use a reliable GPS tracker ([like your 360 camera](/blog/2020/metadata-exif-xmp-360-photo-files)) to record your journey, you can match the time of each measurement on each device to overwrite the incorrect GPS points reported in the AtmoTube Pro output.
+For us this is not a deal breaker. If you use a reliable GPS tracker ([like your 360 camera](/blog/metadata-exif-xmp-360-photo-files)) to record your journey, you can match the time of each measurement on each device to overwrite the incorrect GPS points reported in the AtmoTube Pro output.
 
-I also noticed that altitude was not reported in the output file, despite claims on the box and instructions that this was captured. Using an external tracker again or a [Digital Elevation Model](/blog/2020/what-is-a-digital-elevation-model) will solve this problem.
+I also noticed that altitude was not reported in the output file, despite claims on the box and instructions that this was captured. Using an external tracker again or a [Digital Elevation Model](/blog/what-is-a-digital-elevation-model) will solve this problem.

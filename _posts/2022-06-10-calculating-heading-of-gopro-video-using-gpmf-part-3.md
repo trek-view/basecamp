@@ -13,9 +13,9 @@ published: true
 
 **Using calculated heading values to ensure videos are shown in 360 players facing the same direction as they were shot.**
 
-Now that we have the heading values for each frame in the video ([see last weeks post](/blog/2022/calculating-heading-of-gopro-video-using-gpmf-part-2)), we can use them to adjust the yaw in our World Lock video to reverse the effect.
+Now that we have the heading values for each frame in the video ([see last weeks post](/blog/calculating-heading-of-gopro-video-using-gpmf-part-2)), we can use them to adjust the yaw in our World Lock video to reverse the effect.
 
-To do this, we can take exactly the same approach as I showed you for images in the post; [Adjusting the yaw of an equirectangular 360 photo using ImageMagick](/blog/2022/adjusting-yaw-equirectangular-images).
+To do this, we can take exactly the same approach as I showed you for images in the post; [Adjusting the yaw of an equirectangular 360 photo using ImageMagick](/blog/adjusting-yaw-equirectangular-images).
 
 That is;
 
@@ -40,7 +40,7 @@ My proposed ffmpeg workflow is as follows;
 7. Rebuild the video from frames adjusted in the last step
 	* `ffmpeg -y -r <frame_rate_str> -f concat -safe 0 -i images.txt -c:v libx264 -vf "fps=<frame_rate_str>,format=yuv420p" <out.mp4>`
 7. Copy the other video streams (audio and telemetry) to the newly processed video (with adjusted yaw) from the original video
-	* [See my ffmpeg cheat sheet for how to do this](/blog/2022/ffmpeg-video-to-frame-cheat-sheet)
+	* [See my ffmpeg cheat sheet for how to do this](/blog/ffmpeg-video-to-frame-cheat-sheet)
 
 Reviewing the original World Lock video I built this proof-of-concept for:
 

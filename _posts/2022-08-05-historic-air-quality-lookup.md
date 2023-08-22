@@ -13,7 +13,7 @@ published: true
 
 **In this post I will show you how to find the air quality at the time and location  a photo was taken.**
 
-Did you read my post in 2020; [Measuring the Air Quality of Your Trek](/blog/2021/measuring-air-quality-portable-part-1), in which I used a Atmotube PRO to measure air quality.
+Did you read my post in 2020; [Measuring the Air Quality of Your Trek](/blog/measuring-air-quality-portable-part-1), in which I used a Atmotube PRO to measure air quality.
 
 The Atmotube PRO detected PM1, PM2.5, and PM10 pollutants, like dust, pollen, soot, and mold, plus a wide range of Volatile Organic Compounds (VOCs)
 
@@ -42,7 +42,7 @@ Here is the metadata in the photo needed to make the requests to the APIs.
 exiftool -GPSLatitude -GPSLongitude -GPSDateTime -n GSAL1592.JPG 
 ```
 
-[Exiftool by default prints data as Degrees, Minutes, and Seconds (DMS)](/blog/2021/reading-decimal-gps-coordinates-like-a-computer/). Using the `-n` flag turns DMS into Decimal Degrees (DD), required for both the APIs.
+[Exiftool by default prints data as Degrees, Minutes, and Seconds (DMS)](/blog/reading-decimal-gps-coordinates-like-a-computer/). Using the `-n` flag turns DMS into Decimal Degrees (DD), required for both the APIs.
 
 ```
 GPS Latitude                    : 54.5255907

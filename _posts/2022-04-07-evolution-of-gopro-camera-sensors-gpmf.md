@@ -19,7 +19,7 @@ The GPMF track (often referred to as a stream) contains various sensor telemetry
 
 Generally, the newer the camera, the more telemetry available (and in some cases, improved data). Watch out for the latter where sensor values between different cameras are sometimes printed in different formats and with different units.
 
-In this post I take a look at the sensor streams available by camera that can be extracted using tools like gopro-telemetry [(explained here)](/blog/2022/gopro-telemetry-exporter-getting-started).
+In this post I take a look at the sensor streams available by camera that can be extracted using tools like gopro-telemetry [(explained here)](/blog/gopro-telemetry-exporter-getting-started).
 
 ### HERO5 Black and Session 
 
@@ -105,4 +105,4 @@ _[Wikipedia has a very helpful page on GPSP (or DOP) here](https://en.wikipedia.
 | MSKP | Main video frame SKiP | frame rate | n/a | GoPro internal usage. Number frames skips or duplicated from sensor image captured to encoded frame. Normally 0. This is used for visual effects when precision timing of the video frame is required. |
 | LSKP | Low res video frame SKiP | frame rate | n/a | GoPro internal usage. Same as MSKP for the LRV video file (when present.) This improves sync with the main video when using the LRV as a proxy. |
 
-I'd recommend taking a look at what the data from each of these sensors looks like using gopro-telemetry. [This post describes everything needed to do just that](/blog/2022/gopro-telemetry-exporter-getting-started). 
+I'd recommend taking a look at what the data from each of these sensors looks like using gopro-telemetry. [This post describes everything needed to do just that](/blog/gopro-telemetry-exporter-getting-started). 

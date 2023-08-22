@@ -13,7 +13,7 @@ published: true
 
 **Preparing to create an equirectangular projection from two GoPro Fusion fisheye images.**
 
-[Last week I explained some of the theory behind fisheye images and what the GoPro Fusion fisheye images look like](/blog/2021/gopro-fusion-fisheye-stitching-part-2).
+[Last week I explained some of the theory behind fisheye images and what the GoPro Fusion fisheye images look like](/blog/gopro-fusion-fisheye-stitching-part-2).
 
 Now we know some of the fundamentals, this week, lets look at how we can merge the two fisheyes together into a single equirectangular projection.
 
@@ -50,7 +50,7 @@ Below shows the fisheye grid mapped in the equirectangular space;
 
 <img class="img-fluid" src="/assets/images/blog/2021-12-31/fish2sphere180b.jpeg" alt="Fisheye 180 equirectangular projection guides" title="Fisheye 180 equirectangular projection guides" />
 
-Note how the distortion of the horizontal is almost zero, whilst distortion along the vertical (y) axis increase as you move away from the center. We've already covered projection types and why this happens previously ([here](/blog/2021/projection-type-360-photography)).
+Note how the distortion of the horizontal is almost zero, whilst distortion along the vertical (y) axis increase as you move away from the center. We've already covered projection types and why this happens previously ([here](/blog/projection-type-360-photography)).
 
 Looking at this transformation in a real photo.
 
@@ -179,7 +179,7 @@ In the images, you can also see the top and the bottom images are cropped. There
 
 To account for all these factors, my guess is that GoPro software crops the circular fisheye during processing to only include the area of the fisheye that will always be captured and captured without any distortion.
 
-This cropping probably crops a perfect circle ([smaller than those shown last week](/blog/2021/gopro-fusion-fisheye-stitching-part-2)), so that stitching is easier. The example below shows what this cropping could look like:
+This cropping probably crops a perfect circle ([smaller than those shown last week](/blog/gopro-fusion-fisheye-stitching-part-2)), so that stitching is easier. The example below shows what this cropping could look like:
 
 <img class="img-fluid" src="/assets/images/blog/2021-12-31/GPFR0139-gopro-crop.jpg" alt="Fisheye fisheye crop" title="Fisheye fisheye crop" />
 
@@ -207,4 +207,4 @@ As such, I'm not sure mathematically calculating FOV would offer any benefit ove
 
 # Update 2021-01-07
 
-[Stitching GoPro Fusion Images Without GoPro Fusion Studio (Part 4)](/blog/2022/gopro-fusion-fisheye-stitching-part-4)
+[Stitching GoPro Fusion Images Without GoPro Fusion Studio (Part 4)](/blog/gopro-fusion-fisheye-stitching-part-4)

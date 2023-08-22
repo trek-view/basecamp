@@ -13,7 +13,7 @@ published: true
 
 **How do the major street-level mapping products compare?**
 
-[Google first launched Street View in 2007](/blog/2019/history-of-google-street-view-cameras). 
+[Google first launched Street View in 2007](/blog/history-of-google-street-view-cameras). 
 
 The tech giants -- Microsoft, Apple and Facebook -- now all have products built around street-level imagery.
 
@@ -48,7 +48,7 @@ Mapillary is prodominatly user submitted imagery. [It appears they did start to 
 
 ## Quality
 
-Google, Apple, and Microsoft all run their own driving programs using professional equipment. For example, [Google spend 10's of thousands on camera and sensor equipment for each car](/blog/2020/google-street-view-cameras-more-than-meets-the-eye). All imagery on these three services is 360.
+Google, Apple, and Microsoft all run their own driving programs using professional equipment. For example, [Google spend 10's of thousands on camera and sensor equipment for each car](/blog/google-street-view-cameras-more-than-meets-the-eye). All imagery on these three services is 360.
 
 [Google Street View also has very strict Street View Ready Pro criteria for user submitted imagery](https://developers.google.com/streetview/ready/specs-prograde).
 
@@ -58,7 +58,7 @@ That said, Mapillary also hosts lots of high-quality captures. The team at [Mosa
 
 ## Privacy 
 
-[Last week I took a look at each service deals with image removal and blurring](/blog/2020/how-to-blur-street-level-images), with the exception of Apple's Look Around.
+[Last week I took a look at each service deals with image removal and blurring](/blog/how-to-blur-street-level-images), with the exception of Apple's Look Around.
 
 [Apple's stance is as follows](https://maps.apple.com/imagecollection/):
 

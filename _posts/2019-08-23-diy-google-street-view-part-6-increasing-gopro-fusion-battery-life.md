@@ -17,11 +17,11 @@ published: true
 
 I received lots of comments after previos posts detailing how to build a DIY Trek Pack:
 
-* [DIY Google Street View (1/5): How I (Trek View) Started Capturing 360-Degree Tours](/blog/2019/diy-google-street-view-part-1-how-trek-view-started)
-* [DIY Google Street View (2/5): My Basic Kit for Creating Outdoor Street View Tours](/blog/2019/diy-google-street-view-part-2-my-street-view-kit)
-* [DIY Google Street View (3/5): Preparing to Shoot 360-Degree Tours](/blog/2019/diy-google-street-view-part-3-preparing-to-shoot)
-* [DIY Google Street View (4/5): Stitching 360-Degree Photos Using GoPro Fusion Studio](/blog/2019/diy-google-street-view-part-4-processing-photos)
-* [DIY Google Street View (5/5): Publish 360-Degree Photos to Street View](/blog/2019/diy-google-street-view-part-5-uploading-photos-using-your-computer) 
+* [DIY Google Street View (1/5): How I (Trek View) Started Capturing 360-Degree Tours](/blog/diy-google-street-view-part-1-how-trek-view-started)
+* [DIY Google Street View (2/5): My Basic Kit for Creating Outdoor Street View Tours](/blog/diy-google-street-view-part-2-my-street-view-kit)
+* [DIY Google Street View (3/5): Preparing to Shoot 360-Degree Tours](/blog/diy-google-street-view-part-3-preparing-to-shoot)
+* [DIY Google Street View (4/5): Stitching 360-Degree Photos Using GoPro Fusion Studio](/blog/diy-google-street-view-part-4-processing-photos)
+* [DIY Google Street View (5/5): Publish 360-Degree Photos to Street View](/blog/diy-google-street-view-part-5-uploading-photos-using-your-computer) 
 
 Keep them coming in the comments.
 
@@ -31,7 +31,7 @@ Hence, an unplanned part 6...
 
 ## The problem with the GoPro Fusion Lithium Ion batteries
 
-[In part 2](/blog/2019/diy-google-street-view-part-2-my-street-view-kit), I recommended an additional GoPro Fusion battery for £25. Each Fusion battery will give you around 3 hours of continuous shooting in time lapse mode when set at 5 second intervals.
+[In part 2](/blog/diy-google-street-view-part-2-my-street-view-kit), I recommended an additional GoPro Fusion battery for £25. Each Fusion battery will give you around 3 hours of continuous shooting in time lapse mode when set at 5 second intervals.
 
 The more photos you take, the quicker the battery will drain.
 
@@ -69,7 +69,7 @@ _Note, you don't a need a battery with charge capacity as high as the Anker Powe
 
 You're probably wondering how it's possible to run wires from a 360-degree camera a without capturing them in the imagery.
 
-[As described in part 4](/blog/2019/diy-google-street-view-part-4-processing-photos), GoPro Fusion Studio does not stitch a 100% true 360-degree photo due to small blind-spots between the two GoPro Fusion lenses. 
+[As described in part 4](/blog/diy-google-street-view-part-4-processing-photos), GoPro Fusion Studio does not stitch a 100% true 360-degree photo due to small blind-spots between the two GoPro Fusion lenses. 
 
 These blind-spots are virtually unnoticeable in the stitched photos, and in fact work as an advantage to ensure the photo does capture monopod stand. Or in this case, wires protruding from the sides of the camera.
 
@@ -97,8 +97,8 @@ I'm sure this solution will work with most hiking packs on the market with side 
 
 ## Update June 2020
 
-[A newer version of the Trek Pack (v2) exists, that superseeds the pack (v1) described in this post](/blog/2020/announcing-trek-pack-v2).
+[A newer version of the Trek Pack (v2) exists, that superseeds the pack (v1) described in this post](/blog/announcing-trek-pack-v2).
 
 ## Update 2022-02-11
 
-[Extending the battery life of a GoPro MAX in cold weather (using an external battery)](/blog/2022/keeping-gopro-max-warm-extend-battery-life).
+[Extending the battery life of a GoPro MAX in cold weather (using an external battery)](/blog/keeping-gopro-max-warm-extend-battery-life).

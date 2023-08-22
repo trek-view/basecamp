@@ -43,11 +43,11 @@ Hopefully this has inspired many of you to try to record your own footage this s
 
 Here is everything you need to know;
 
-1. [Buy a GoPro MAX and helmet mount](/blog/2020/announcing-trek-pack-v2)
-2. [Set it up so that it performs well in cold weather](/blog/2022/keeping-gopro-max-warm-extend-battery-life)
+1. [Buy a GoPro MAX and helmet mount](/blog/announcing-trek-pack-v2)
+2. [Set it up so that it performs well in cold weather](/blog/keeping-gopro-max-warm-extend-battery-life)
 3. Record footage in video mode (5.2k @ 24 FPS)
-4. [Break the footage up into frames (optional, not required if only for upload to apps)](/blog/2021/turn-360-video-into-timelapse-images-part-1)
+4. [Break the footage up into frames (optional, not required if only for upload to apps)](/blog/turn-360-video-into-timelapse-images-part-1)
 5. Upload to [Trek View Explorer](https://www.trekview.org/), [Google Street View](https://streetviewstudio.maps.google.com), and [Facebook's Mapillary](https://www.mapillary.com/desktop-uploader).
-6. Need more inspiration? [Here is some more ski footage from my adventures last year](/blog/2023/creating-360-street-level-maps-europe-ski-resorts-part-2).
+6. Need more inspiration? [Here is some more ski footage from my adventures last year](/blog/creating-360-street-level-maps-europe-ski-resorts-part-2).
 
 Don't forget to tag us in the footage [@trekviewed](https://www.instagram.com/trekviewed/)!
