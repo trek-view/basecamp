@@ -9,6 +9,8 @@ image: /assets/images/blog/2019-06-14/richmond-river-thames-virtual-tour-meta.jp
 featured_image: /assets/images/blog/2019-06-14/richmond-river-thames-virtual-tour-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2019/diy-google-street-view-part-1-how-trek-view-started
 ---
 
 **How I built the original Trek View Trek Pack, then used it to shoot, process, and publish 360-degree photo tours to Google Street View.**

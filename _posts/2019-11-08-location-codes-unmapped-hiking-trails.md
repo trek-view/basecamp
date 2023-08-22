@@ -9,6 +9,8 @@ image: /assets/images/blog/2019-11-08/open-location-code-plus-code-glenmore-scot
 featured_image: /assets/images/blog/2019-11-08/open-location-code-plus-code-glenmore-scotland-sm.png
 layout: post
 published: true
+redirect_from:
+  - /blog/2019/location-codes-unmapped-hiking-trails
 ---
 
 **Using location codes to map even the most remote hiking trails.**

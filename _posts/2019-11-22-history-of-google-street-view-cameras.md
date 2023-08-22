@@ -9,6 +9,8 @@ image: /assets/images/blog/2019-11-22/google-street-view-latest-camera-trekker-m
 featured_image: /assets/images/blog/2019-11-22/google-street-view-latest-camera-trekker-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2019/history-of-google-street-view-cameras
 ---
 
 **Street View has come a long way in 13 years during which time 360 camera technology has seen significant advancements too.**

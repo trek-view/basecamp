@@ -9,6 +9,8 @@ image: /assets/images/blog/2019-08-23/UKFR010-MULTISHOT_7262_000120-meta.jpg
 featured_image: /assets/images/blog/2019-08-23/trek-pack-external-power.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2019/diy-google-street-view-part-6-increasing-gopro-fusion-battery-life
 ---
 
 **Power your GoPro Fusion with an external power pack, the equivilant of 10 GoPro Fusion batteries.**

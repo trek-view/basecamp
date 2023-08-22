@@ -9,6 +9,8 @@ image: /assets/images/blog/2019-12-20/google-street-view-2017-camera-mounted-met
 featured_image: /assets/images/blog/2019-12-20/google-street-view-2017-camera-mounted-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2019/google-street-view-cameras-more-than-meets-the-eye
 ---
 
 **Lasers, gyroscopes, accelerometers... Street View camera rigs do much more than just take photos.**

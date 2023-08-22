@@ -9,6 +9,8 @@ image: /assets/images/blog/2019-11-15/trek-view-360-degree-bicycle-camera-v1-met
 featured_image: /assets/images/blog/2019-11-15/trek-view-360-degree-bicycle-camera-v1-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2019/diy-street-view-bike-tours
 ---
 
 **A proof-of-concept for capturing 360-degree tours of cycling adventures.**

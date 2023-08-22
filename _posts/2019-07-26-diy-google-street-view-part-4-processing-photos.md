@@ -9,6 +9,8 @@ image: /assets/images/blog/2019-07-26/ukdp019-MULTISHOT_9059_000105-meta.jpg
 featured_image: /assets/images/blog/2019-07-26/gopro-fusion-studio-edit.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2019/diy-google-street-view-part-4-processing-photos
 ---
 
 **How to create the perfect 360-degree photo for Google Street View, and the things I've learned using GoPro Fusion Studio.**

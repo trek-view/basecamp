@@ -8,6 +8,8 @@ image: /assets/images/blog/2019-12-06/unknown-place-google-street-view-meta.jpg
 featured_image: /assets/images/blog/2019-12-06/unknown-place-google-street-view-sm.png
 layout: post
 published: true
+redirect_from:
+  - /blog/2019/place-id-google-street-view
 ---
 
 **And how to make sure you're not missing out on Google Local Guide points from Street View photos.**

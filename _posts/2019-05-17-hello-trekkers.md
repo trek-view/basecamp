@@ -9,6 +9,8 @@ image: /assets/images/blog/2019-05-17/tiede-tenerife-virtual-tour-meta.jpg
 featured_image: /assets/images/blog/2019-05-17/tiede-tenerife-virtual-tour-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2019/hello-trekkers
 ---
 
 **I believe sharing interactive 360-degree imagery of our world can inspire others to explore and protect it.**

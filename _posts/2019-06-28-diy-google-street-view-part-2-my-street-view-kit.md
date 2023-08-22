@@ -9,6 +9,8 @@ image: /assets/images/blog/2019-06-28/uklw006-MULTISHOT_0854_000140-meta.jpg
 featured_image: /assets/images/blog/2019-06-28/trek-view-pack-version-1-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2019/diy-google-street-view-part-2-my-street-view-kit
 ---
 
 **The bare minimum you'll need, and some recommended accessories for building a Trek Pack to shoot 360-degree tours.**

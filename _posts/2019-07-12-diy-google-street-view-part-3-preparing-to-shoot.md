@@ -9,6 +9,8 @@ image: /assets/images/blog/2019-07-12/ukfr012-MULTISHOT_7588_000144-meta.jpg
 featured_image: /assets/images/blog/2019-07-12/trek-view-pack-version-1-setup-sm.jpg
 layout: post
 published: true
+redirect_from:
+  - /blog/2019/diy-google-street-view-part-3-preparing-to-shoot
 ---
 
 **Simple tips for setting up your Trek Pack to shoot a 360-degree photo tour for Google Street View.**
