@@ -4,7 +4,7 @@
 title: Trek View
 url: "https://www.trekview.org"
 baseurl: 
-google_analytics_key: G-B3316TFM2H
+google_analytics_key:
 # google_maps_javascript_api_key:
 disqus_shortname: 
 
@@ -41,7 +41,7 @@ collections:
 
 paginate: 10
 paginate_path: "/blog/:num/"
-permalink: "/blog/:year/:title/"
+permalink: "/blog/:title/"
 
 defaults:
   -

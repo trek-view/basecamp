@@ -57,7 +57,7 @@ Even better, all options would be much more mobile than the Google Camera Backpa
 
 After purchasing a Street View Ready camera, [I chose a GoPro Fusion](https://gopro.com/en/gb/shop/cameras/fusion/CHDHZ-103-master.html), all that was required was a backpack and monopod that could be used to mount the camera above my head to give it a clear line of site the world around me.
 
-[_Update 2019-06-01: Step-by-step guide of how I created a DIY Street View Camera Backpack_](/blog/2019/diy-google-street-view-part-1-how-trek-view-started).
+[_Update 2019-06-01: Step-by-step guide of how I created a DIY Street View Camera Backpack_]({% post_url 2019-06-14-diy-google-street-view-part-1-how-trek-view-started %}).
 
 Now I could start shooting.
 

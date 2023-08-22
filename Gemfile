@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'jekyll', '4.0.0'
 gem 'rake'
 gem 'html-proofer'
+gem "webrick", "~> 1.8"
 
 group :jekyll_plugins do
   gem 'jekyll-archives', '2.1.1'
@@ -12,3 +13,4 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap', '1.3.1'
   gem 'jekyll-redirect-from', '0.16.0'
 end
+
