@@ -62,7 +62,3 @@ _Also see: [OpenDroneMap](https://www.opendronemap.org/)._
 Privacy is always a big concern for us. And rightly so. When you have a 360 camera mounted to your backpack people will naturally get curious, ask questions and possibly become suspicious or hesitant to accept your data collection activities. This session explores one of the Humanitarian Open Street Map Teams field mapping projects implemented in Kampala. Despite all the correct steps taken, community entry in a specific jurisdiction felt impossible and field mapping could not be carried out. Find out why, and the lessons the team learned.
 
 Related OSM project [Humanitarian Open Street Map Team](https://www.hotosm.org/)
-
-## Update 2021-10-28
-
-[Check out my favourite talks from State of the Map 2021](/blog/state-of-the-map-2021).

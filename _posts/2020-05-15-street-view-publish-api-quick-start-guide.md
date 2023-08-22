@@ -309,7 +309,3 @@ If you're looking to use Street View images on your website or app without using
 
 * [Street View Static API](https://developers.google.com/maps/documentation/streetview/intro): The Street View Static API lets you embed a static (non-interactive) Street View panorama or thumbnail into your web page.
 * [Google Maps JavaScript API (Street View Service)](https://developers.google.com/maps/documentation/javascript/streetview): The Maps JavaScript API provides a Street View service for obtaining and manipulating the imagery used in Google Maps Street View. This Street View service is supported natively within the browser.
-
-## Update 2021-07-09
-
-[This post describes a more scalable approach to uploading longer sequences using the `photoSequence` resource available on the Google Street View Publish API](/blog/upload-video-street-view-publish-api).

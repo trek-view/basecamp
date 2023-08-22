@@ -94,7 +94,3 @@ The app also includes gamification of image capture in the form of badges. You c
 * Explorer: 1km of images published to Street View
 * Expert: 100km of images published to Street View
 * Master: 1000km of images published to Street View
-
-## Update 2021-03-19
-
-[Here are our initial thoughts after testing the AtmoTube Pro](/blog/software-upload-panoramas-street-view).

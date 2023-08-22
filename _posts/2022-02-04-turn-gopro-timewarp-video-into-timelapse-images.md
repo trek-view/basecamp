@@ -182,7 +182,3 @@ For example, if the time spacing between images is 2 seconds and the first GPSDa
 All that is left to do now is actually write the correct times into the photos.
 
 [The steps to do this are described in this post (as well as how to extract and write GPS points extracted from the TimeWarp video to each image)](/blog/turn-360-video-into-timelapse-images-part-2).
-
-## Update 2022-04-22
-
-Using a GoPro in TimeLapse video mode (without TimeWarp)? [Here is a guide detailing how to do a similar conversion of the video into properly timed frames](/blog/turn-gopro-timelapse-video-into-timelapse-images).tr

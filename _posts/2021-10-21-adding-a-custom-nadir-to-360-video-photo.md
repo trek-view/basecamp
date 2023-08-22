@@ -131,9 +131,3 @@ What's great is that approach retains all metadata between source and final imag
 Now all you need to do is run the final command (step 3) on all your equirectangular photos to add the nadir (that is, assuming all your photos are the same dimensions and you want the same nadir size overlaid on each).
 
 To save you some time here's one we prepared earlier, [our Nadir Patcher script](https://github.com/trek-view/nadir-patcher/).
-
-## Update 2022-01-14
-
-Not shooting in 360? No problem.
-
-[How to Add a Custom Watermark to a Photo Programmatically](/blog/adding-a-custom-watermark-to-hero-photo-video).

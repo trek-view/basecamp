@@ -68,7 +68,3 @@ Isabelle Tingzon talks about the migration crisis in Venezuela and the settlemen
 Pramod Sridharamurthy introduces some of the problems with pre-University education and how the team at the India Literacy Project are using Google Earth to create interactive lessons to address some of these issues.
 
 [More about the project here](https://www.ilpnet.org/).
-
-## Update: 2021-11-26
-
-[My favourite 2021 Geo For Good Summit talks](/blog/my-favourite-geo-for-good-summit-talks-2021).

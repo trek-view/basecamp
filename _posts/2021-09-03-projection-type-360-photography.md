@@ -137,7 +137,3 @@ Image credits for this post:
 
 * [Google Blog post; Bringing pixels front and center in VR video](https://blog.google/products/google-ar-vr/bringing-pixels-front-and-center-vr-video/)
 * [Paul Bourke; Converting to/from cubemaps](http://paulbourke.net/panorama/cubemaps/)
-
-## Update 2021-09-03
-
-[Reverse Engineering GoPro's 360 Video File Format (Part 1)](/blog/projection-type-360-photography)

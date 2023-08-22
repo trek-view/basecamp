@@ -130,7 +130,3 @@ Using the `x`, `y` components of Magnetometer samples in addition to the yaw and
 ## Calculating pitch, roll and yaw
 
 Stay tuned for part 2 of this post next week showing a proof-of concept to calculate these values, and how to use the calculated yaw value to dynamically the adjust the yaw of each frame in ffmpeg.
-
-## Update 2022-06-03
-
-[Using ffmpeg to dynamically adjust the yaw of GoPro 360 videos (Part 2)](/blog/calculating-heading-of-gopro-video-using-gpmf-part-2).

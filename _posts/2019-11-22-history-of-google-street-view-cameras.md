@@ -145,7 +145,3 @@ The program is split into two tiers:
 Our [Trek Packs](https://www.trekview.org/trek-pack/) are Street View Ready and designed to capture imagery on foot, by bicycle, paddle-boarding and even underwater whilst scuba-diving.
 
 They're no Google Trekker packs, granted. The upside being; they're **A LOT** more affordable and widely available. [Find out how to get your hands on one here](/trek-pack).
-
-## Update: 2019-12-20
-
-[Google's Street View Cameras - More Than Meets the Eye](/blog/google-street-view-cameras-more-than-meets-the-eye)

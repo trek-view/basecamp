@@ -76,11 +76,3 @@ Over the coming weeks I'll be sharing images from our completed treks and more d
 When the good weather returns in June, we plan to shoot the 5 remaining routes and complete our mission to map the mountain.
 
 Stay tuned!
-
-## Update 2021-05-07
-
-[Part 2: the Machame Route. The second most popular route on Mount Kilimanjaro can now be hiked from home](/blog/climbing-kilimanjaro-part-2-machame).
-
-## Update 2021-05-14
-
-[Part 3: Rongai Route. Trek one of the quitest trails up Kilimanjaro from home](/blog/climbing-kilimanjaro-part-3-rongai).

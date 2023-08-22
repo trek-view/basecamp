@@ -93,7 +93,3 @@ ffmpeg -i GPBK0006.MP4 -r 0.5 -q:v 1 BKimg%d.jpg
 You might have noticed the images are square. If you've extracted video frames at different resolutions, if you look closely you might also notice differences in the image positioning when comparing the front and back images.
 
 I'll talk more about that of next week...
-
-## Update 2021-12-24
-
-[Stitching GoPro Fusion Images Without GoPro Fusion Studio (Part 2)](/blog/gopro-fusion-fisheye-stitching-part-2)

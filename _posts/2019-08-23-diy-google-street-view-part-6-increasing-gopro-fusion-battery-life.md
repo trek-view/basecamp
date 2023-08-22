@@ -90,15 +90,3 @@ In such cases, I ditch the Trek Pack in favour of a larger rucksack. My 40L Berg
 Granted, these straps are not as good at holding the monopod stable -- they're not the dedicated elastic straps for a monopod found on the GoPro Seeker pack. A few pieces of fastening tape or zip-ties (cut off the protruding ends to keep them out of the photos) and padding in the pocket (usually a pair of socks) solves this problem on more adventurous hikes where the monopod is liable to move around.
 
 I'm sure this solution will work with most hiking packs on the market with side pouches too.
-
-## Update December 2019
-
-[You can now access the Trek Pack Getting Started Guide online with all the latest information you need to create, process and publish your own Street View Tours](/trek-pack/).
-
-## Update June 2020
-
-[A newer version of the Trek Pack (v2) exists, that superseeds the pack (v1) described in this post](/blog/announcing-trek-pack-v2).
-
-## Update 2022-02-11
-
-[Extending the battery life of a GoPro MAX in cold weather (using an external battery)](/blog/keeping-gopro-max-warm-extend-battery-life).

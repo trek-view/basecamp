@@ -132,7 +132,3 @@ In such case, we must therefore adjust the heading to connected photos to the ce
 This an easy calculation to estimate using existing heading fields; `adjusted heading = heading of source photo - heading of connection photo`.
 
 You will see there is no adjusted heading for the next photo by time (e.g P2 to P3). It does exist, but is not shown in the diagram because the adjusted photo heading for the next photo by time (heading) will always be 0. For example, heading from P2 to P3 = x, and adjusted heading for P2 to P3 = x (heading) - x (connection heading) = 0.
-
-## Update 2021-10-07
-
-You might also like the post; [Using trigonometry to calculate how north, east, and vertical velocity](/blog/calculating-velocity-between-two-sequence-photos)

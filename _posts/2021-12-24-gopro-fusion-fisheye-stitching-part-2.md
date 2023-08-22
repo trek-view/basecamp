@@ -138,7 +138,3 @@ Here's a description of the values reported:
 * Fisheye radius y (px): 769 (742+27)
 
 I'll need some of these values for next weeks post.
-
-## Update 2021-12-24
-
-[Stitching GoPro Fusion Images Without GoPro Fusion Studio (Part 3)](/blog/gopro-fusion-fisheye-stitching-part-3)

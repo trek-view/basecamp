@@ -70,15 +70,3 @@ In the coming weeks I'm going to search out new parts to improve my existing pro
 If anyone has any ideas or recommendations for a detachable and affordable camera mounting system that will work on a wide range of bikes, [please do email me](/contact).
 
 In the meantime I'll stick to scenic trails.
-
-## Update (2020-02-28)
-
-[DIY Street View Bike V2: The second iteration of my Street View bike, this time designed for downhill trails](/blog/diy-street-view-bike-v2).
-
-## Update (2020-05-15)
-
-Check out [this "Data Bike" from the The Des Moines Area Metropolitan Planning Organization](https://dmampo.org/data-bike/) for inspiration.
-
-<img class="img-fluid" src="/assets/images/blog/2019-11-15/dmampo-data-bike.jpg" alt="Des Moines Area Metropolitan Planning Organization Data Bike" title="Des Moines Area Metropolitan Planning Organization Data Bike" />
-
-The Data Bike uses a Samsung Gear 360 camera mounted above the rider to capture imagery for Google Street View in conjunction with a mobile app, [rRuf ('Road Roughness')](https://apps.apple.com/gb/app/rruf/id968766794), that measures the roughness of a trail using a scale known as a Riding Comfort Index (RCI). Very cool!

@@ -75,7 +75,3 @@ Sadly the weather meant we couldn't film the entire Machame route.
 When the good weather for trekking returns again in June, we'll be hoping for a few more drier days to [capture the missing imagery with our Trek Packs](/trek-pack).
 
 Next week I'll be sharing Joshua's imagery from the Rongai Route...
-
-## Update 2021-05-14
-
-[Part 3: Rongai Route. Trek one of the quitest trails up Kilimanjaro from home](/blog/climbing-kilimanjaro-part-3-rongai).

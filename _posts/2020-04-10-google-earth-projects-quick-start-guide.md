@@ -145,25 +145,3 @@ Hopefully everything looks good, but you can edit your Project at any time with 
 By default, the Project will only be visible to you, when logged into your Google account.
 
 Using Google sharing settings you can choose to open it up to specific people (using their email address), or open it up to the whole world to explore... in which case you might want to remove the photos of you lying by the pool, sunburnt.
-
-Tag us on social media with links to your Projects and we'll share our favourites.
-
-Find us on:
-
-* [Instagram](https://www.instagram.com/trekviewed/)
-* [Facebook](https://www.facebook.com/trekview/)
-
-## Update (2020-04-17)
-
-The Google team have pointed out two more useful resources:
-
-* [An even more comprehensive guide for creating Projects in Google Earth here](https://www.google.com/earth/outreach/learn/create-a-map-or-story-in-google-earth-web/).
-* [Google Earth Help](https://support.google.com/earth/answer/9394923?hl=en&ref_topic=939503).
-
-## Join us on a live tour
-
-We use Google Earth as a base for our free virtual guided tours.
-
-Join us on a live tour, led by local expert, to sites of cultural, historical, and geographic significance.
-
-Places go very quickly! [Sign up here today](/blog/virtual-tours-guided-by-local-experts/).

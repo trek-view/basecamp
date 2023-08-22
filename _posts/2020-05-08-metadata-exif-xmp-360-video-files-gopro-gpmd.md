@@ -165,7 +165,7 @@ The difference between Track1 and Track3 is, Track1 contains video level data fr
 
 In this video, we know GPMF is the metadata standard used because it is defined in:
 
-```
+```xml
  <Track3:HandlerClass>Media Handler</Track3:HandlerClass>
  <Track3:HandlerType>NRT Metadata</Track3:HandlerType>
  <Track3:HandlerDescription>GoPro MET</Track3:HandlerDescription>
@@ -177,7 +177,7 @@ GoPro have documented the [GoPro Metadata Format here](https://github.com/gopro/
 
 Let's take a look at what this actually looks like in our video, by looking at the first 1 second of telemetry:
 
-```
+```xml
  <Track3:SampleTime>0 s</Track3:SampleTime>
  <Track3:SampleDuration>1.00 s</Track3:SampleDuration>
  <Track3:DeviceName>Fusion</Track3:DeviceName>
@@ -254,15 +254,3 @@ Three things could lead to the missing measurements at certain intervals;
 We can also see each individual frame's `ExposureTimes` that makes up this second of video. I count 30 entries (e.g. `1/517`, which matches the video settings (30 FPS).
 
 The rest of Track3 follows this format. Every sample interval, 1 measurement for `Track3:Accelerometer`, `Track3:Gyroscope`, `Track3:Magnetometer` etc. is printed and GPSDateTime and subsequent positions are printed.
-
-## Update 2021-08-06
-
-If you'd like to read more about XMP namespaces, [read my latest introductory post here](/blog/introduction-to-xmp-namspaces).
-
-## Update 2021-08-20
-
-[Here's a deeper look into the Camera Motion Metadata Spec (CAMM), an alternative to GPMF, here](/blog/metadata-exif-xmp-360-video-files-camm-camera-motion-metadata-spec).
-
-## Update 2021-10-15
-
-You might also like the post; [Lessons learned when geotagging GoPro timelapse photos and video frames](/blog/lessons-learned-when-geotagging-photos)

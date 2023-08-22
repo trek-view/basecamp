@@ -100,7 +100,3 @@ We're designing a universal data bike that can be used by local communities  aro
 The bike will be cost effective, and have similar functions to the Iowa data bike offering the ability to capture 360 photos and record ride quality.
 
 If you think a data bike could be a valuable addition to your local area, [please contact us for an early look at what we're planning](/contact).
-
-## Update 2021-04-16
-
-[Here are two other consumer mobile apps that can measure sensor data on your phone to record ride quality](/blog/measuring-condition-cycle-paths-phone-update).

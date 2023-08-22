@@ -107,7 +107,3 @@ It seems that other older MAX videos on YouTube (uploaded over 6 months ago) sti
 ## A note on Google Street View and Mapillary
 
 In the world of street-level mapping, EAC has seen no adoption. Google Street View and Mapillary still only support equirectangular projections for upload and displaying imagery.
-
-## Update 2021-09-17: Examining a real .360 file
-
-[Reverse Engineering GoPro's 360 Video File Format (Part 2)](/blog/reverse-engineering-gopro-360-file-format-part-2)

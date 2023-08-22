@@ -161,7 +161,3 @@ Adjusting yaw for individual frames can be done efficiently with ImageMagick.
 However for videos (which are the output of World Lock processing in GoPro Player), there is an easier and more accurate way to perform the yaw adjustment dynamically.
 
 I'll show you exactly how to do that next week.
-
-## Update 2022-05-27
-
-[Using ffmpeg to dynamically adjust the yaw of GoPro 360 videos](/blog/calculating-heading-of-gopro-video-using-gpmf-part-1).

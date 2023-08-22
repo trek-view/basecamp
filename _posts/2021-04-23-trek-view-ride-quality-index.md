@@ -288,7 +288,3 @@ A quick search of the internet returns lots of research, for example the [IEEE G
 If it's possible to use the imagery captured by the Data Bike to measure cycle path quality, the cameras might prove even more valuable (and lower the amount of kit needed for the Data Bike).
 
 If you have any experience in this area, [I'd love to hear from you](/contact/).
-
-## Update 2021-05-21
-
-[Trek View Trail Quality Index: An Alternative Method Using Computer Vision](/blog/trek-view-ride-quality-index-computer-vision-part-1).

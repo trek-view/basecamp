@@ -72,7 +72,3 @@ Both of these apps provide raw data from a phones [IMU (Inertial Measurement Uni
 Paid subscriptions on apps like rRuf provide `PavementCondition` or similar values that are an aggregated measurements of sensor data.
 
 Next week I'll share a post detailing how we turn raw accelerometer data into a Trek View ride quality Index to provide a similar measure to rRuf's `PavementCondition` score.
-
-## Update 2021-04-23
-
-[My attempt at creating a Trail Quality Index using data from the Physics Toolbox Sensor Suite Pro app](/blog/trek-view-ride-quality-index).

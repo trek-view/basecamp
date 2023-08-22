@@ -83,11 +83,3 @@ Looking at the metadata of the video, the reported image size is 3840x1920 or 7.
 ffmpeg strips frames of metadata when converting from a video file. The metadata includes things like timestamps and GPS, both are crucial pieces of information when mapping.
 
 I'll show how to re-embed metadata next week...
-
-## Update 2021-02-26
-
-[Turning a 360 Video into Timelapse Images (Part 2/2)](/blog/turn-360-video-into-timelapse-images-part-2)
-
-## Update 2021-08-06
-
-If you'd like to read more about XMP namespaces, [read my latest introductory post here](/blog/introduction-to-xmp-namspaces).

@@ -110,7 +110,3 @@ $ convert img1_cubemap.png cubefaces/top_img1.jpg -geometry +2688+1344 -composit
 ```
 
 Now we have a blended EAC cubemap that is ready to be converted to an equirectangular projection.
-
-## Update 2021-10-01: Part 4 now available
-
-[In the final part of this series, I convert a GoPro EAC projected frame into an equirectangular projection to be displayed in other software.](/blog/reverse-engineering-gopro-360-file-format-part-4).

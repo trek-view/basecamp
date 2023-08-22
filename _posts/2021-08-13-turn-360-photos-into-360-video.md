@@ -266,7 +266,7 @@ Checking the metadata after running the tool you should see 4 new tags:
 $ exiftool -X demo-video-injected-meta.mp4 > demo-video-injected-meta.xml
 ```
 
-```
+```xml
 <?xml version='1.0' encoding='UTF-8'?>
 <rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
 
@@ -292,15 +292,3 @@ Now we can add the other spatial and non-spatial XMP data to the video. For exam
 ```
 $ exiftool XMP-tiff:Copyright:'https://www.trekview.org' XMP-tiff:Artist:'https://www.trekview.org' demo-video-injected-meta.mp4
 ```
-
-## Update 2022-01-21
-
-[How to Create a 360 Video from a Timelapse of 360 Images (using Adobe Premiere Pro)](/blog/turn-360-photos-into-360-video-adobe-premiere).
-
-## Update 2022-03-11
-
-[ffmpeg Cheat Sheet for virtual tours and 360 videos (includes how to use ffmpeg to copy telemetry streams to outputted video files)](/blog/ffmpeg-video-to-frame-cheat-sheet).
-
-## Update 2022-05-13
-
-[How to Create a Video File Ready to be Uploaded to the Google Street View API](/blog/create-google-street-view-video-publish-api).
