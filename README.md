@@ -25,7 +25,7 @@ htmlproofer --assume-extension ./_site --url-swap '^/BASEURL/:/' --alt-ignore '/
 
 ## Hosting
 
-The main branch of this repository is hosted by Cloudflare pages.
+The main branch of this repository is hosted by GitHub pages.
 
 ## License
 
