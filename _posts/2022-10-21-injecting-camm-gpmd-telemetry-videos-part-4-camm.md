@@ -502,7 +502,7 @@ python3 sttsBox.py -l stts.json
 b'\x00\x00\x00\x18stts\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x06\x00\x00FP'
 ```
 
-If you're still not sure how this is working, [check out the code implementation](https://github.com/trek-view/telemetry-injector/tree/main/tutorial).
+If you're still not sure how this is working, [check out the code implementation](https://github.com/trek-view/telemetry-injector/).
 
 ### `stsz` (sample size box)
 

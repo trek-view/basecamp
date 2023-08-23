@@ -98,7 +98,7 @@ If desired, you can then recreate an equirectangular mp4 video from the frames a
 
 ### Improvements
 
-The current script does not carry over any of the metadata retained in the original fisheyes. [You will therefore need to write the 360 metadata into the outputted image files created](/blog/metadata-exif-xmp-360-photo-file) to make sure they are rendered properly by 360 viewers (or accepted as 360's by products like Street View).
+The current script does not carry over any of the metadata retained in the original fisheyes. [You will therefore need to write the 360 metadata into the outputted image files created](/blog/metadata-exif-xmp-360-photo-files) to make sure they are rendered properly by 360 viewers (or accepted as 360's by products like Street View).
 
 Another feature missing that is present in GoPro Fusion Studio is the horizon leveling feature. GoPro Fusion Studio does this by allowing you to adjust the [roll, pitch, and yaw](/blog/yaw-pitch-roll-360-degree-photography) before processing. Other tools like PtGui (and others) do this too. It is something I'm considering adding in the future.
 

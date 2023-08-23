@@ -47,8 +47,6 @@ We love the handle, Anders (_riverview_).
 
 [The Red Cross collects and uses street-level imagery in disaster response, where time is critical](https://blog.mapillary.com/update/2018/03/21/how-red-cross-uses-data-during-global-disasters.html). For example in Dominica after the devastation wrought by hurricane Irma, imagery provides a glimpse into the challenges faced by communities impacted by the storm, situational awareness for organisations responding to the disaster, and created a baseline which could be used to examine changes during the recovery process.
 
-**Related**: [our trekker camera loan program is open to those looking to map areas in emergency situations](/blog/mapping-the-unmapped-using-360-degree-photos).
-
 ## Lesson on Rivers in the UK
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2020-02-14/river-thames-lesson.jpeg&amp;autoLoad=true"></iframe>

@@ -148,7 +148,7 @@ What's not clear to me with Meta's approach is if; recorded movement (in the tel
 
 Using these sensors movement can be reported to a high-degree of precision using the sensors in the camera increasing the data available for the smoothing algorithms to make a highly accurate understand the amount of movement they need to adjust for.
 
-Much of this telemetry can is now stored in metadata standards [CAMM](/blog/metadata-exif-xmp-360-video-files-camm-camera-motion-metadata-spec) and [GPMF](blog/metadata-exif-xmp-360-video-files-gopro-gpmd).
+Much of this telemetry can is now stored in metadata standards [CAMM](/blog/metadata-exif-xmp-360-video-files-camm-camera-motion-metadata-spec) and [GPMF](/blog/metadata-exif-xmp-360-video-files-gopro-gpmd).
 
 Both the YouTube and Facebook approaches were written up before these telemetry standards were adopted in consumer cameras, which makes me think at the time of writing, the algorithms detected movement using the only information available in the video (the pixels in each frame). I suspect in the (many) intervening years, many stabilisation algorithms use IMU data as an input.
 

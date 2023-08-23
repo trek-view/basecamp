@@ -25,7 +25,7 @@ Of course this meant I had to play with them... and here is what I found.
 
 ## 1. GoPro MAX `.360` input
 
-The GoPro MAX produces a single `.360` file (GoPro's EAC projection type) for 360 videos. [I've talked about these in detail previously](/blog/everse-engineering-gopro-360-file-format-part-1).
+The GoPro MAX produces a single `.360` file (GoPro's EAC projection type) for 360 videos. [I've talked about these in detail previously](/blog/reverse-engineering-gopro-360-file-format-part-1).
 
 In short GoPro's `.360`'s contain two video tracks which form a EAC custom cubemap projection. You can see the structure of `.360`'s using ffprobe:
 

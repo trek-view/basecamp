@@ -62,7 +62,7 @@ Like Google, [Microsoft also implements "industry-leading" blurring software](ht
 
 They also allow people to flag any image they feel is inappropriate or sensitive for review and possible removal. 
 
-[To do this from the Bing Maps website](www.bing.com/maps/);
+[To do this from the Bing Maps website](https://www.bing.com/maps/);
 
 1) Navigate to the Streetside view in question.
 
