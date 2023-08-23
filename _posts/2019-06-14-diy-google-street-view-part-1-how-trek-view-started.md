@@ -38,17 +38,3 @@ I'll detail my thought process in buying kit through to some of the lessons lear
 And, yes. I'll show you how to remove the monopod from the image. Hint: it's not magic.
 
 Though my general advice is; don't get lost reading too many internet posts, including mine. You learn the most by taking photos and making mistake (no one's perfect).
-
-## Trek View Camera Loan Program
-
-Have you heard about our camera loan program?
-
-Individuals, groups, or organisations looking to capture 360-degree tours of our natural world for non-commercial purposes are encouraged to [submit an application to our camera loan program here](/loan).
-
-## Part 2
-
-Read Part 2 now: [My Basic Kit for Creating Outdoor Street View Tours](/blog/diy-google-street-view-part-2-my-street-view-kit)
-
-_Update December 2019: [You can now access the Trek Pack Getting Started Guide online with all the latest information you need to create, process and publish your own Street View Tours](/trek-pack/version-one)._
-
-_Update June 2020: [A newer version of the Trek Pack (v2) exists, that superseeds the pack (v1) described in this post](/blog/announcing-trek-pack-v2)._

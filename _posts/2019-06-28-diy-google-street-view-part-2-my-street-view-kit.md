@@ -99,11 +99,3 @@ To help promote Trek View (and let passers by understand what the camera was for
 5. Vinyl stickers @ £3 (eBay)
 
 **Total Trek Pack cost: £245**
-
-## Part 3
-
-Read Part 3 now: [Preparing to Shoot 360-Degree Tours for Google Street View](/blog/diy-google-street-view-part-3-preparing-to-shoot)
-
-_Update December 2019: [You can now access the Trek Pack Getting Started Guide online with all the latest information you need to create, process and publish your own Street View Tours](/trek-pack/version-one)._
-
-_Update June 2020: [A newer version of the Trek Pack (v2) exists, that superseeds the pack (v1) described in this post](/blog/announcing-trek-pack-v2)._

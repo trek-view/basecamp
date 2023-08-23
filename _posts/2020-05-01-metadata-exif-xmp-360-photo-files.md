@@ -62,8 +62,8 @@ First, let's take a look at the `.jpg` image from a GoPro Fusion, the camera use
 
 CLI input: 
 
-```
-$ exiftool -X MULTISHOT_8302_000052.jpg > MULTISHOT_8302_000052_metadata.txt
+```shell
+exiftool -X MULTISHOT_8302_000052.jpg > MULTISHOT_8302_000052_metadata.txt
 ```
 
 This command includes the following arguments:
@@ -74,7 +74,7 @@ This command includes the following arguments:
 
 CLI output (cropped): 
 
-```
+```xml
 <?xml version='1.0' encoding='UTF-8'?>
 [...]
  <File:FileType>JPEG</File:FileType>
@@ -187,13 +187,13 @@ Now for the metadata output of a `.jpg` image from a Ricoh Theta Z1:
 
 CLI input: 
 
-```
-$ exiftool -X exiftool R0013800.JPG > R0013800_metadata.txt
+```shell
+exiftool -X exiftool R0013800.JPG > R0013800_metadata.txt
 ```
 
 CLI output:
 
-```
+```xml
 <?xml version='1.0' encoding='UTF-8'?>
 [...]
  <File:FileType>JPEG</File:FileType>
@@ -308,7 +308,7 @@ The manufacturer of the camera (or developer of processing software) defines the
 
 You'll see the the Ricoh Theta Z1 writes much more positing information into the photo. Unlike the Fusion, the Theta Z1 includes heading (azimuth), pitch and roll information at the time of capture in the XMP data; 
 
-```
+```xml
  <XMP-GPano:PoseHeadingDegrees>68.8</XMP-GPano:PoseHeadingDegrees>
  <XMP-GPano:PosePitchDegrees>0.0</XMP-GPano:PosePitchDegrees>
  <XMP-GPano:PoseRollDegrees>0.0</XMP-GPano:PoseRollDegrees>
@@ -379,15 +379,3 @@ Like photos, videos contain metadata too.
 In fact, the information they contain is very similar to that found in individual photos -- videos are, after all, a series of photos (frames) often with accompanying audio.
 
 In next weeks post, I'll take a deeper look at the metadata inside 360 video recordings. Stay tuned!
-
-## Help us Build Great Software
-
-Unfortunately we don't have the budget to buy every single 360 camera to test the photos and videos they produce with our software.
-
-Whilst having standards like EXIF and XMP is very helpful, many manufacturers do things slightly differently (especially given the flexibility of fields in XMP data).
-
-In order to make sure our [free, open-source software works for everyone](https://github.com/trek-view/), we need to test it using 360 image and video files produced by a range of cameras and manufacturers.
-
-And that's why we need your help.
-
-If you have a 360 camera and want to support our work, [please share more information about your camera with us using this form](https://docs.google.com/forms/d/e/1FAIpQLScgOk1W5jpyrQuDF5FuKqUpKK0EIpSlokckZd3OB-r_ZOjZmQ/viewform). Thank you!

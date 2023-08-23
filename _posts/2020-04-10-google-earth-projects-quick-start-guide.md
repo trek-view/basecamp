@@ -101,7 +101,7 @@ You can add as many places, or any feature for that matter, to your Project.
 
 **Add a fullscreen slide**
 
-<img class="img-fluid" src="/assets/images/blog/2020-04-10/google-earth-project-add-fullscreen-slide.png" alt="Google Earth Project add fullscreen slide" title="Google Earth Project add fullscreen slide" />
+<img class="img-fluid" src="/assets/images/blog/2020-04-10/google-earth-project-add-fullscreen-slide-settings.png" alt="Google Earth Project add fullscreen slide" title="Google Earth Project add fullscreen slide" />
 
 <img class="img-fluid" src="/assets/images/blog/2020-04-10/google-earth-project-add-fullscreen-slide-preview.png
 " alt="Google Earth Project add fullscreen slide preview" title="Google Earth Project add fullscreen preview" />

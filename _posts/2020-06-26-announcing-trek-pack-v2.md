@@ -15,7 +15,7 @@ redirect_from:
 
 **Over the Winter we've been experimenting with new cameras for an updated version of our Trek Pack.**
 
-[In addition to a whole heap of other things](/blog/what-are-you-working-on), we've spent the last few months improving the Trek Pack for 2020.
+In addition to a whole heap of other things, we've spent the last few months improving the Trek Pack for 2020.
 
 Our Trek Pack is a backpack mounted 360-degree camera system designed to capture stunning 360-degree Street View tours in all terrains.
 
@@ -29,7 +29,7 @@ One of the biggest gripes with the Fusion was that photo stitching had to be don
 
 Trekkers in the field complained about the Fusion Studio software making their computers unusable during stitching process (which can often take hours, even on high performing computers). In fact, some could not use it at all.
 
-[In 2019 we captured 100,000 images in the UK alone](/blog/year-in-review)... I despair to think how long they took to stitch... and how many times the dreaded "GoPro Fusion Studio has crashed" message was displayed.
+In 2019 we captured 100,000 images in the UK alone... I despair to think how long they took to stitch... and how many times the dreaded "GoPro Fusion Studio has crashed" message was displayed.
 
 Last year GoPro released the successor to the Fusion, the GoPro MAX, and we were delighted to hear it was offering on-camera stitching.
 

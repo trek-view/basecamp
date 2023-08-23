@@ -36,7 +36,7 @@ I then wanted to put them to a test.
 
 To do this, I used a photo taken in a fairly remote location (Helvellyn, Lake District, UK) because I wanted to test how measurements were reported when far from a weather station.
 
-<img class="img-fluid" src="/assets/images/blog/2022-08-05/GSAL15920-sm.JPG" alt="GSAL1592 Helvellyn" title="GSAL1592 Helvellyn" />
+<img class="img-fluid" src="/assets/images/blog/2022-08-05/GSAL1592-sm.JPG" alt="GSAL1592 Helvellyn" title="GSAL1592 Helvellyn" />
 
 Here is the metadata in the photo needed to make the requests to the APIs.
 

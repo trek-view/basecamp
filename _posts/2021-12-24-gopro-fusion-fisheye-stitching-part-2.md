@@ -81,7 +81,7 @@ Here's a description of the values reported:
 
 ### 18mp photo
 
-**Front image ([GF089220-16mp-img.JPG](/assets/images/blog/2021-12-24/GF089220-16mp-img.JPG]))** 
+**Front image ([GF089220-16mp-img.JPG](/assets/images/blog/2021-12-24/GF089220-16mp-img.JPG))** 
 
 * Image resolution (w x h): 3104 x 3000
 * Fisheye edges (l,t,r,b): 18,-32,3068,3000
@@ -90,7 +90,7 @@ Here's a description of the values reported:
 * Fisheye radius x (px): 1525 (1543-18)
 * Fisheye radius y (px): 1516 (1484+32)
 
-**Back image ([GB089220-16mp-img.JPG](/assets/images/blog/2021-12-24/GB089220-16mp-img.JPG]))** 
+**Back image ([GB089220-16mp-img.JPG](/assets/images/blog/2021-12-24/GB089220-16mp-img.JPG))** 
 
 * Image resolution (w x h): 3104 x 3000
 * Fisheye edges (l,t,r,b): 0,-32,3072,3032

@@ -79,7 +79,7 @@ Though if the files have been renamed and they hold no GPS, you won't be able to
 
 ## Filenames can be used to help identify the camera mode used
 
-The GoPro filename prefixes make it possible to determine some modes used ([MAX](https://guides.trekview.org/explorer/developer-docs/sequences/capture/gopro-max-camera-modes), [Fusion](https://guides.trekview.org/explorer/developer-docs/sequences/capture/gopro-fusion-camera-modes), [HERO 10](https://guides.trekview.org/explorer/developer-docs/sequences/capture/gopro-hero-10-modes)) that is, as noted previously, assuming the files have not renamed.
+The GoPro filename prefixes make it possible to determine some modes used ([MAX](https://github.com/trek-view/gopro-metadata/tree/main/max), [Fusion](https://github.com/trek-view/gopro-metadata/tree/main/fusion), [HERO 10](https://github.com/trek-view/gopro-metadata/tree/main/hero10)) that is, as noted previously, assuming the files have not renamed.
 
 Even so, that's not perfect.
 
@@ -160,6 +160,6 @@ In order to do this, we've created content from each mode available on GoPro cam
 
 All our test files (and indeed all our imagery) are released under a CC BY 4.0 license.
 
-[You can find the download links to all our samples (including the ones used in this post) in our Guides](https://guides.trekview.org/explorer/developer-docs/sequences/capture).
+[You can find the download links to all our samples (including the ones used in this post) in our Guides](https://github.com/trek-view/gopro-tests).
 
 [Metadata samples and the camera user guides can also be found in our GoPro metadata repository on Github](https://github.com/trek-view/gopro-metadata).

@@ -53,8 +53,6 @@ We love the handle, Anders (_riverview_).
 
 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2020-02-14/river-thames-lesson.jpeg&amp;autoLoad=true"></iframe>
 
-And Trek View. Our lesson on rivers show children show how they change from source to mouth, and why so many towns and cities grew up around them (like Hampton Court, above). 
-
-[**Don't forget to enrol in for to access our Treehouse content**](https://treehouse.trekview.org).
+And Trek View. [Our lesson on rivers](https://www.tes.com/teaching-resources/shop/trekview) show children show how they change from source to mouth, and why so many towns and cities grew up around them (like Hampton Court, above). 
 
 Please do send me links to other Mapillary users who have uploaded trails, rivers, and other outdoor areas -- it's still winter here and I'd like to explore somewhere warm!

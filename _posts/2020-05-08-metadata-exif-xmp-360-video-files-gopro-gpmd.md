@@ -63,8 +63,6 @@ For this post I'm going to use an `.mp4` video filmed using a GoPro Fusion with 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iyIkDRERzz8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-If you want to follow along, [you can download the video I am using here](https://drive.google.com/file/d/1tGmvaWVNRo4ynR9FiMpQVX0tYBJt5ZsR/view?usp=sharing).
-
 ### GoPro Metadata Format (GPMF)
 
 Like EXIF or XMP standards for static image (and also video, as you'll see in this post) metadata, telemetry metadata is usually written in a standardised way so that it can be properly understood by software replaying the video.

@@ -130,7 +130,3 @@ From temperatures bleaching coral reefs to plastic pollution collecting in giant
 We need to do a lot more to protect our oceans, and that starts through education.
 
 Help us capture underwater images to inspire others to get involved in marine conservation efforts and keep a record of our oceans health.
-
-We'll provide the camera kit (including a 360 Bubble), you just need to provide the boat.
-
-[Apply to join our Trekker program here](/loan).

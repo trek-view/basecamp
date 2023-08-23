@@ -74,7 +74,7 @@ ffmpeg -i GS018421.mp4 -r 1 fps1/GS018421_%d.png
 
 Whilst `.png` will give you lossless image quality, it will result in fairly large file sizes, especially for 360 frames.
 
-<img class="img-fluid" src="/assets/images/blog/2022-03-11/GS018421_1.png" alt="Sample png output ffmpeg" title="Sample png output ffmpeg" />
+<img class="img-fluid" src="/assets/images/blog/2022-03-11/GS018422_1.png" alt="Sample png output ffmpeg" title="Sample png output ffmpeg" />
 
 In the sample video, you can see the first raw file above (measuring 16.6mb). The outputted files for the whole video measure between 16-20mb.
  
@@ -94,7 +94,7 @@ ffmpeg -i GS018421.mp4 -r 1 -q:v 2 jpg2/GS018421_%d.jpg
 
 Produces:
 
-<img class="img-fluid" src="/assets/images/blog/2022-03-11/GS018421_1_qv2.jpg" alt="Sample jpg qscale 2 output ffmpeg" title="Sample jpg qscale 2 output ffmpeg" />
+<img class="img-fluid" src="/assets/images/blog/2022-03-11/GS018422_1_qv2.jpg" alt="Sample jpg qscale 2 output ffmpeg" title="Sample jpg qscale 2 output ffmpeg" />
 
 Which has a filesize of 1.9mb. The outputted frames for the whole video range between 1.6mb and 1.9mb.
 
@@ -106,7 +106,7 @@ ffmpeg -i GS018421.mp4 -r 1 -q:v 31 jpg31/GS018421_%d.jpg
 
 Produces:
 
-<img class="img-fluid" src="/assets/images/blog/2022-03-11/GS018421_1_qv31.jpg" alt="Sample jpg qscale 31 output ffmpeg" title="Sample jpg qscale 31 output ffmpeg" />
+<img class="img-fluid" src="/assets/images/blog/2022-03-11/GS018422_1_qv31.jpg" alt="Sample jpg qscale 31 output ffmpeg" title="Sample jpg qscale 31 output ffmpeg" />
 
 Which has a filesize of 331kb. The outputted frames for the whole video range between 278kb and 335kb.
 

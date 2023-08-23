@@ -33,8 +33,6 @@ For this example, I'll use a sample video shot earlier this year by Brian Redmon
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3oHaGPzzK4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-If you want to follow along, [you can download the video I am using here](https://drive.google.com/file/d/1Jt9XIYM37iX2NQIXvgroA8ydfIvSziWc/view?usp=sharing).
-
 ### Camera Motion Metadata Spec Format (CAMM)
 
 Like EXIF or XMP standards for static image (and video) metadata, telemetry metadata is usually written in a standardised way so that it can be properly understood by software replaying the video.

@@ -42,5 +42,3 @@ The conversation was recorded remotely on September 30th, 2020.
 * Chris on Instagram: [https://instagram.com/Christo35mm](https://instagram.com/Christo35mm)
 
 I hope you enjoy listening as much as I enjoyed recording.
-
-p.s [don't forget to subscribe](https://www.expodition.org/). New episodes are released every 2 weeks. Stories of pirates, blowpipes, wrong turns and much more to come...

@@ -101,11 +101,3 @@ Rendering in GoPro Fusion Studio is memory intensive. I use a MacBook Pro with a
 _Note: Stitching video captures to video files is noticeably quicker and results in a significantly smaller output size._
 
 In any case, time to make a cup of tea...
-
-## Part 5
-
-Read Part 5 now: [Publish 360-Degree Photos to Street View](/blog/diy-google-street-view-part-5-uploading-photos-using-your-computer)
-
-_Update December 2019: [You can now access the Trek Pack Getting Started Guide online with all the latest information you need to create, process and publish your own Street View Tours](/trek-pack/version-one)._
-
-_Update June 2020: [A newer version of the Trek Pack (v2) exists, that superseeds the pack (v1) described in this post](/blog/announcing-trek-pack-v2)._

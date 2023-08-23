@@ -124,11 +124,3 @@ Many people will, rightly, be concerned about their privacy. Be prepared to tell
 Make sure you comply to local laws around public photography too.
 
 _Disclaimer: I'm not a legal professional._
-
-## Part 4
-
-Read Part 4 now: [Stitching 360-Degree Photos Using GoPro Fusion Studio](/blog/diy-google-street-view-part-4-processing-photos/)
-
-_Update December 2019: [You can now access the Trek Pack Getting Started Guide online with all the latest information you need to create, process and publish your own Street View Tours](/trek-pack/version-one)._
-
-_Update June 2020: [A newer version of the Trek Pack (v2) exists, that superseeds the pack (v1) described in this post](/blog/announcing-trek-pack-v2)._
