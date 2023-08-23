@@ -15,8 +15,6 @@ redirect_from:
 
 **Create customised maps and stories about places anywhere in the world.**
 
-Two weeks ago, [I wrote about creating your own virtual tours using Google's Tour Creator](/blog/build-virtual-expeditions-for-your-class/).
-
 This week I've been playing with Google Earth, creating a variety of Projects.
 
 Remember sitting around an over-head projector whilst friends showed you their holiday photos. I do... from watching old movies (sorry, Dad!).
@@ -53,7 +51,7 @@ I'll leave you to it...
 
 OK let's get down to business.
 
-[Like my last post](/blog/build-virtual-expeditions-for-your-class/), we'll create a tour of stunning Scotland.
+For todays post, I'll create a tour of stunning Scotland.
 
 On the left hand bar click the Project icon (map pin) and then click "create new tour".
 

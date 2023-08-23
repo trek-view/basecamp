@@ -23,7 +23,7 @@ It will prove handy to have a copy of [Google's CAMM Specification](https://deve
 
 ## CAMM cases 
 
-<img class="img-fluid" src="/assets/images/blog/2022-09-30/camm-case6-specification-meta.jpg" alt="CAMM Spec case6" title="CAMM Spec case6" />
+<img class="img-fluid" src="/assets/images/blog/2022-10-21/camm-case6-specification-meta.jpg" alt="CAMM Spec case6" title="CAMM Spec case6" />
 
 First it is important to understand the CAMM cases, and the data they hold. Each CAMM case reports different types of data (closely linked to the types of sensors inside cameras);
 

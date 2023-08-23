@@ -31,8 +31,6 @@ Sadly my budget wasn't going to stretch to a custom built bike, so I decided to 
 
 However, the vibrations, torso movements, etc. encountered on a bike often caused problems. From camera roll to shaking the camera out of position.
 
-[These are similar to the issues that ruled the Trek Pack out for kayaking and canoeing too](/blog/360-degree-view-water-tours).
-
 It became clear that I would need to secure the monopod to the bike frame rather than my body.
 
 ## Solutions for mounting the camera

@@ -73,7 +73,7 @@ The earliest camera on Google's own cars [was the R2](https://boingboing.net/200
 
 <img class="img-fluid" src="/assets/images/blog/2019-11-22/ladybug2-camera-mounted.jpg" alt="Google Street View Point Grey Research Ladybug2 Camera Mounted" title="Google Street View Ladybug2 Camera Mounted" />
 
-The Ladybug2 camera by Point Grey Research (now FLIR Systems) [could shoot video at 30 frames per second at a resoltion of 1024x768 (0.8 megapixels)]((https://www.youtube.com/watch?v=oOLB2n3rvUo)) and [capture 4.8 megapixel still images](https://mechatriks.in/pdf/PTGREY_Complete_Catalog.pdf).
+The Ladybug2 camera by Point Grey Research (now FLIR Systems) [could shoot video at 30 frames per second at a resoltion of 1024x768 (0.8 megapixels)](https://www.youtube.com/watch?v=oOLB2n3rvUo) and [capture 4.8 megapixel still images](https://mechatriks.in/pdf/PTGREY_Complete_Catalog.pdf).
 
 The latest FLIR Systems Ladybug camera is the [Ladybug5+](https://www.flir.co.uk/products/ladybug5plus/). Estimated cost to buy new: $19,995. [Source](https://360rumors.com/flir-ladybug5-8k-360-camera-has-six-23-inch-sony-sensors/).
 

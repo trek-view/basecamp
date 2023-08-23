@@ -19,7 +19,6 @@ If you've been following our blog over the years you will have seen a few post w
 
 * [My DIY Street View Bike (2019)](/blog/diy-street-view-bike-tours)
 * [DIY Street View Bike v2 (2020)](/blog/diy-street-view-bike-v2)
-* [Crowdsourcing safer bicycle lane design (2020)](/blog/challenge-map-amsterdam-by-bicycle)
 * [Measuring the Condition of Cycle Paths With Only Your Phone](/blog/measuring-condition-cycle-paths-phone)
 * [Trek View Trail Quality Index (2021)](/blog/trek-view-ride-quality-index)
 * [Trek View Trail Quality Index: An Alternative Method Using Computer Vision (2021)](/blog/trek-view-ride-quality-index-computer-vision-part-1)

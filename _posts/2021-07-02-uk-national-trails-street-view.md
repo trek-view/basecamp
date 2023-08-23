@@ -76,7 +76,7 @@ More info: [National Trails website](https://www.nationaltrail.co.uk/en_GB/trail
 
 ## Your walk here?
 
-Not sure how to get started? [This post will explain everything](/blog/trek-pack-v2-quick-start-virtual-photography).
+Not sure how to get started? [This post will explain everything](/blog/announcing-trek-pack-v2).
 
 I believe that together that we can capture imagery for over 10% of the UK's network this summer.
 

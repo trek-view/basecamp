@@ -17,10 +17,10 @@ redirect_from:
 
 Before reading this series of posts I recommend some pre-reading;
 
-* [An Introduction to the GoPro Metadata Format (GPMF) standard (video telemetry)](https://www.trekview.org/blog/2020/metadata-exif-xmp-360-video-files-gopro-gpmd/)
-* [An Introduction to the Camera Motion Metadata (CAMM) standard (video telemetry)](https://www.trekview.org/blog/2021/metadata-exif-xmp-360-video-files-camm-camera-motion-metadata-spec/)
+* [An Introduction to the GoPro Metadata Format (GPMF) standard (video telemetry)](/blog/metadata-exif-xmp-360-video-files-gopro-gpmd/)
+* [An Introduction to the Camera Motion Metadata (CAMM) standard (video telemetry)](/blog/metadata-exif-xmp-360-video-files-camm-camera-motion-metadata-spec/)
 
-When building Explorer we wanted a way for users to upload sequences to Google Street View. After a bit of digging we realised you could upload videos alongside a GPX files to be published. This process is described in our blog; [Creating a Video File Ready to be Uploaded to the Google Street View API](https://www.trekview.org/blog/2022/create-google-street-view-video-publish-api/).
+When building Explorer we wanted a way for users to upload sequences to Google Street View. After a bit of digging we realised you could upload videos alongside a GPX files to be published. This process is described in our blog; [Creating a Video File Ready to be Uploaded to the Google Street View API](/blog/create-google-street-view-video-publish-api/).
 
 Now, this approach works and there is nothing wrong with it per-se. However, it always slightly bugged me that the video need to be kept alongside the GPX file when sharing if you wanted to use it elsewhere. In many cases, using it elsewhere was also problematic.
 
@@ -30,7 +30,7 @@ In short, we had to bite the bullet and learn how to inject telemetry into the v
 
 ## What we already know (and can reuse)
 
-We can pack the video and prepare the GPS in the same way as described in; [Creating a Video File Ready to be Uploaded to the Google Street View API](https://www.trekview.org/blog/2022/create-google-street-view-video-publish-api/).
+We can pack the video and prepare the GPS in the same way as described in; [Creating a Video File Ready to be Uploaded to the Google Street View API](/blog/create-google-street-view-video-publish-api/).
 
 Which leaves us needing to;
 

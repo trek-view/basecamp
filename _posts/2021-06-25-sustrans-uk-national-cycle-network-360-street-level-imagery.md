@@ -15,7 +15,7 @@ redirect_from:
 
 **The network covers over 20,000km of the UK. With your help, we want to capture street-level images for every single one of those kilometers.**
 
-[Last month I talked about a crowdsourced approach to mapping cycling infrastructure using 360 images](/blog/crowdsourcing-safer-bicyle-lane-design) using [relatively low-cost kit](/blog/trek-pack-v2-quick-start-virtual-photography).
+[Last month I talked about a crowdsourced approach to mapping cycling infrastructure using 360 images](/blog/crowdsourcing-safer-bicyle-lane-design) using [relatively low-cost kit](/blog/announcing-trek-pack-v2).
 
 Here in the UK, the National Cycle Network is made up of 8,400 km of traffic-free paths with the remaining 12,101 km on-road.
 
@@ -70,7 +70,7 @@ More info: [Sustrans website](https://www.sustrans.org.uk/find-a-route-on-the-na
 
 ## Your ride here?
 
-Not sure how to get started? [This post will explain everything](/blog/trek-pack-v2-quick-start-virtual-photography).
+Not sure how to get started? [This post will explain everything](/blog/announcing-trek-pack-v2).
 
 I believe that together that we can capture imagery for over 10% of the UK's network this summer.
 

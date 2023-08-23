@@ -1,6 +1,6 @@
 ---
 date: 2019-08-23
-title: "DIY Google Street View (6/5): Increasing the Battery Life of Your GoPro Fusion"
+title: "DIY Google Street View (5/5): Increasing the Battery Life of Your GoPro Fusion"
 description: "Power your GoPro Fusion with an external power pack, the equivilant of 10 GoPro Fusion batteries."
 categories: guides
 tags: [Trek Pack, Google, Street View, GoPro, Fusion, Fusion Studio, Anker, PowerCore]
@@ -23,7 +23,6 @@ I received lots of comments after previos posts detailing how to build a DIY Tre
 * [DIY Google Street View (2/5): My Basic Kit for Creating Outdoor Street View Tours](/blog/diy-google-street-view-part-2-my-street-view-kit)
 * [DIY Google Street View (3/5): Preparing to Shoot 360-Degree Tours](/blog/diy-google-street-view-part-3-preparing-to-shoot)
 * [DIY Google Street View (4/5): Stitching 360-Degree Photos Using GoPro Fusion Studio](/blog/diy-google-street-view-part-4-processing-photos)
-* [DIY Google Street View (5/5): Publish 360-Degree Photos to Street View](/blog/diy-google-street-view-part-5-uploading-photos-using-your-computer) 
 
 Keep them coming in the comments.
 

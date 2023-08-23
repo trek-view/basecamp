@@ -138,7 +138,7 @@ This GIF explains it nicely;
 
 Mapillary's (now part of Meta) [OpenSFM](https://opensfm.org/) provides a good explanation (and of course, implementation), as to how 3D positions of points in a frame can be determined.
 
-<img class="img-fluid" src="/assets/images/blog/2023-03-02/openSFM.png" alt="Mapillary OpenSFM" title="Mapillary OpenSFM" />
+<img class="img-fluid" src="/assets/images/blog/2023-02-03/openSFM.png" alt="Mapillary OpenSFM" title="Mapillary OpenSFM" />
 
 OpenSfM finds the relative positions of images and creates smooth transitions between them. That process is called [Structure from Motion](https://en.wikipedia.org/wiki/Structure_from_motion). It works using photogrammetry by matching a few thousand points between images, and then figuring out the 3D positions of those points as well as the positions of the cameras simultaneously.
 

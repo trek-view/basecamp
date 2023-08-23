@@ -31,6 +31,7 @@ redirect_from:
   - /blog/2020/challenge-map-amsterdam-by-bicycle
   - /blog/2020/map-the-paths-hall-of-fame
   - /blog/2020/map-the-paths-desktop-uploader
+  - /blog/2020/mapping-the-unmapped-using-360-degree-photos
   - /blog/2021/map-the-paths-tours
   - /blog/2021/map-the-paths-whats-new-january
   - /blog/2021/how-map-the-paths-used-improve-accessibility
