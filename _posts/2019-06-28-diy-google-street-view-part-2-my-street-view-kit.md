@@ -82,8 +82,6 @@ The biggest limitation is battery life. I found shooting using a 5 second time-l
 
 In this mode I get around 3 hours of continuous shooting. To make sure I'd have enough for a 5 hour shoot, I also purchased an official [GoPro Fusion spare battery](https://gopro.com/en/gb/shop/accessories/rechargeable-battery/ASBBA-001.html) for £25 on Amazon. Don't be tempted by the cheap batteries available. I was, and discovered many were 75% less efficient than the official offerings.
 
-**Update (2019-08-23)**: [Read more about increasing the battery life of your GoPro Fusion to shoot videos here](/blog/diy-google-street-view-part-6-increasing-gopro-fusion-battery-life).
-
 <img class="img-fluid" src="/assets/images/blog/2019-06-28/trek-view-micro-sd-usb.jpg" alt="MicroSD card reader" title="MicroSD card reader" />
 
 You will also find having two USB MicroSD card readers makes to easier to manage photos on your, though this is optional. I'd recommend processing the photos without them first and see how you get on. If you do decide you want them, they can be bought cheaply for about £5 on eBay or Amazon.
