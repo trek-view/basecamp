@@ -49,7 +49,7 @@ redirect_from:
 
 <p>Back in 2019 I took a 360-degree camera and started filming hiking trails.</p>
 
-<p>They quickly attracted millions of views online and other hikers asked me how they could do the same. So I showed them</a>.</p>
+<p>They quickly attracted millions of views online and other hikers asked me how they could do the same. So I showed them.</p>
 
 <p>I created VR apps for schools allowing school children to go on virtual field trips -- many of whom had never left the cities in which they lived.</p>
 
