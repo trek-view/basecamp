@@ -1,7 +1,7 @@
 ---
 date: 2022-07-29
 title: "Enrich your Photos with Historic Weather Data"
-description: "In this post I will show you how to find the weather conditions at the time and location  a photo was taken."
+description: "In this post I will show you how to find the weather conditions at the time and location a photo was taken."
 categories: developers
 tags: [weather, OpenWeather, WeatherStack, WeatherBit, Meteostat]
 author_staff_member: dgreenwood
@@ -13,9 +13,9 @@ redirect_from:
   - /blog/2022/historic-weather-data-lookup
 ---
 
-**In this post I will show you how to find the weather conditions at the time and location  a photo was taken.**
+**In this post I will show you how to find the weather conditions at the time and location a photo was taken.**
 
-One of the things I wanted to do with Explorer was allow for filtering of images using the weather metrics.
+One of the things I wanted to do was allow for filtering of images using the weather metrics.
 
 For example, searching for sequence containing images with a wide visibility. Or searching for images in snowy conditions.
 
@@ -68,7 +68,7 @@ For the test photo that gives;
 https://api.weatherstack.com/historical?access_key=REDACTED&query=54.5255907,-3.003587&historical_date=2022-07-13&hourly=1&units=m&interval=1
 ```
 
-The response contains a few sections that are well suited to be used with Explorer.
+The response contains a few sections that are well suited for my use-case...
 
 1. The location of the weather station
 
@@ -154,7 +154,7 @@ Note, the hourly data section contains blobs of data representing hours during t
 
 All the fields are described in the [Weather Stack documentation here](https://weatherstack.com/documentation).
 
-For Explorer, I cannot think of another weather measurement I would choose to add -- the data is very comprehensive!
+I cannot think of another weather measurement I would choose to add -- the data is very comprehensive!
 
 ### meteostat API
 
@@ -220,25 +220,3 @@ Which returns 24 objects for each hour of that day;
 All the fields are described in the [meteostat documentation here](https://dev.meteostat.net/api/stations/hourly.html#response).
 
 Compared to Weather Stack it is more limited, that said, the key metrics I wanted to see; temperature, wind speed, and precipitation are all there.
-
-## My verdict
-
-I chose the WeatherStack API for Explorer.
-
-This was for two reasons. Firstly, I am lazy. Being able to make a single request for the data is much more preferable.
-
-Secondly, the WeatherStack API has lots more data. OK, it might be overkill for now, but its likely 
-
-At $9.99 / month with generous request limits (50,000 Calls / mo), I think it is good value.
-
-## Explorer logic for weather lookup
-
-WeatherStack's standard plan allows for 50,000 request per month.
-
-Keep in mind, Explorer Sequences can often contain 1000 or more photos. If Explorer was to lookup air quality against each image, the calls could quickly add up.
-
-I thought looking up weather for each photo was overkill. Given sequences are usually no more than twenty minutes long and photos in them usually no more than 5 seconds apart I decided to assign weather at sequence level.
-
-Explorer does this by taking the metadata from the first image in the sequence and making a request to the WeatherStack API. As noted earlier, the WeatherStack API returns a list of hourly measurements for the day specified. Explorer selects the hourly `time` value closest to that of the photo time.
-
-It is not perfect, but having a margin of error +/- 1 hour was deemed acceptable for how weather is used in Explorer.

@@ -20,7 +20,7 @@ Before reading this series of posts I recommend some pre-reading;
 * [An Introduction to the GoPro Metadata Format (GPMF) standard (video telemetry)](/blog/metadata-exif-xmp-360-video-files-gopro-gpmd/)
 * [An Introduction to the Camera Motion Metadata (CAMM) standard (video telemetry)](/blog/metadata-exif-xmp-360-video-files-camm-camera-motion-metadata-spec/)
 
-When building Explorer we wanted a way for users to upload sequences to Google Street View. After a bit of digging we realised you could upload videos alongside a GPX files to be published. This process is described in our blog; [Creating a Video File Ready to be Uploaded to the Google Street View API](/blog/create-google-street-view-video-publish-api/).
+I wanted a way for users to upload sequences to Google Street View. After a bit of digging I realised you could upload videos alongside a GPX files to be published. This process is described in our blog; [Creating a Video File Ready to be Uploaded to the Google Street View API](/blog/create-google-street-view-video-publish-api/).
 
 Now, this approach works and there is nothing wrong with it per-se. However, it always slightly bugged me that the video need to be kept alongside the GPX file when sharing if you wanted to use it elsewhere. In many cases, using it elsewhere was also problematic.
 

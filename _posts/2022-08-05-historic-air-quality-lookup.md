@@ -19,7 +19,7 @@ Did you read my post in 2020; [Measuring the Air Quality of Your Trek](/blog/mea
 
 The Atmotube PRO detected PM1, PM2.5, and PM10 pollutants, like dust, pollen, soot, and mold, plus a wide range of Volatile Organic Compounds (VOCs)
 
-Based on the feedback from readers who are far more knowledgeable in the field, it became clear the AtmoTube Pro works best when still and placed indoors. For measuring air quality on the move in an accurate way would be impossible. Even more so, it would also be unrealistic for all Explorer users to purchase an Atmotube PRO.
+Based on the feedback from readers who are far more knowledgeable in the field, it became clear the AtmoTube Pro works best when still and placed indoors. For measuring air quality on the move in an accurate way would be impossible. Even more so, it would also be unrealistic for everyone to purchase an Atmotube PRO in addition to an already expensive 360 camera.
 
 So I went back to the drawing board.
 
@@ -192,27 +192,3 @@ The biggest limitations I identified with this API were;
 * Data is only available going back to January 13th, 2022 at this time. Much less than the OpenWeather API.
 * The response does not include Ammonia (NH3) and Nitrogen monoxide (NO) reported by OpenWeather API (although for most cases, I am not sure how valuable these reading will be).
 * The `lat` and `lon` values returned is the photo location. There is no information about the weather station that recorded the measurements (which could be very far away).
-
-## My verdict
-
-I chose the OpenWeather API for Explorer.
-
-The data in each response is similar, with the OpenWeather API containing a few more measurements in the response (that I don't really need).
-
-Though ultimately it came down to cost. I could not justify (or afford) the monthly cost of the WeatherBit Historical Air Quality API with no additional features.
-
-## Explorer logic for air quality lookup
-
-OpenWeather's free plan has a few key restrictions -- limits 60 calls/minute and 1,000,000 calls/month.
-
-Keep in mind, Explorer Sequences can often contain 1000 or more photos. If Explorer was to lookup air quality against each image, the calls could quickly add up.
-
-I thought looking up air quality for each photo was overkill. Given sequences are usually no more than twenty minutes long and photos in them usually no more than 5 seconds apart I decided to assign air quality at sequence level.
-
-Explorer does this by taking the metadata from the first image in the sequence and making a request to the OpenWeather Air Pollution API. As noted earlier, the OpenWeather API requires a time range to be supplied in the request. In the same way I did before by snapping the time to the closest hours either side of the photo time.
-
-It is not perfect, but given air quality does not usually change particularly quickly, having a margin of error of +/- 1 hour was deemed acceptable for how air quality is used in Explorer.
-
-Note, if you are reading this trying to debug why air quality data is not showing against your sequence in Explorer it is probably because it was taken before the 27th November 2020 (the OpenWeather API data does not report Air Quality data before this point). 
-
-If you can recommend any other air quality data sources, please do share them with me -- I can add them to this post for others to benefit from.

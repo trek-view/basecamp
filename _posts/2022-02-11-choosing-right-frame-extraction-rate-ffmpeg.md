@@ -1,7 +1,7 @@
 ---
 date: 2022-02-11
 title: "Setting the right frame rate for video extraction using ffmpeg"
-description: "How we optimised the process of turning a video into frames to create virtual tours in Explorer using speed as a variable."
+description: "How we optimised the process of turning a video into frames using speed of travel as a variable."
 categories: developers
 tags: [FFMpeg, video, haversine]
 author_staff_member: dgreenwood
@@ -13,7 +13,7 @@ redirect_from:
   - /blog/2022/choosing-right-frame-extraction-rate-ffmpeg
 ---
 
-**How we optimised the process of turning a video into frames to create virtual tours in Explorer using speed as a variable.**
+**How we optimised the process of turning a video into frames using speed of travel as a variable.**
 
 [Last week I talked about the importance of considering framerate for timewarp videos when extracting frames from it](/blog/turn-gopro-timewarp-video-into-timelapse-images).
 
@@ -23,7 +23,7 @@ The MAX used on our v2 pack improved upon battery performance in video mode and 
 
 One of the biggest benefits of videos is that they can be recorded at a much higher frame rate. In video mode you can record up to 120 FPS @ 3k and 30 FPS @ 5.2k on the MAX. Ultimately, this means there is more footage for us to work with (and discard as needed), not afforded when using timelapse mode.
 
-Though extra frames come at a cost, and we had to apply some trade-offs when building Explorer.
+Though extra frames come at a cost, and I had to apply some trade-offs for my own use-cases...
 
 ## Why not extract all frames of the video?
 

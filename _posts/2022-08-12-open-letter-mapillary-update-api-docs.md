@@ -1,9 +1,9 @@
 ---
 date: 2022-08-12
 title: "An Open Letter to Mapillary: Update Your API Docs, Please"
-description: "In this post I will go through some of the challenges (mainly though lack of documentation) with the v4 Mapillary API we experienced when building Explorer."
+description: "In this post I will go through some of the challenges (mainly though lack of documentation) with the v4 Mapillary API."
 categories: developers
-tags: [Mapillary, Explorer]
+tags: [Mapillary]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2022-08-12/mapillary-web-api-requests-meta.jpg
 featured_image: /assets/images/blog/2022-08-12/mapillary-web-api-requests-sm.jpg
@@ -13,7 +13,7 @@ redirect_from:
   - /blog/2022/open-letter-mapillary-update-api-docs
 ---
 
-**In this post I will go through some of the challenges (mainly though lack of documentation) with the v4 Mapillary API we experienced when building Explorer.**
+**In this post I will go through some of the challenges (mainly though lack of documentation) with the v4 Mapillary API.**
 
 [Last year I was excited to hear about the new Mapillary API (v4), and the improvements and the future updates it would bring](/blog/migrating-from-mapillary-api-v3-to-v4).
 
@@ -23,21 +23,21 @@ It is a real shame, because it still lacks many of the key feature of v3 ([docs 
 
 In this post I documented some of our approaches to cover shortcomings in the Mapillary API and the documentation.
 
-## How Explorer uses Mapillary
+## How I use Mapillary
 
-Explorer allows users to upload street-level images and videos. In addition to mapping them (in a similar way to Mapillary and Street View), it also allows users to do a one-shot upload to these services.
+Firstly I upload street-level images and videos.
 
-In the case of Mapillary, Explorer uploads a zipped file of images for each Explorer sequence to Mapillary.
+To do this I upload a zipped file of sequence images to the Mapillary API.
 
 <img class="img-fluid" src="/assets/images/blog/2022-08-12/trek-view-mapillary-app.jpg" alt="Trek View Mapillary Developer App" title="Trek View Mapillary Developer App" />
 
-To initiate the upload, firstly, [Explorer authenticates the user to Mapillary](https://www.mapillary.com/developer/api-documentation/#authentication) using our OAuth app.
+To initiate the upload, firstly, [I authenticate to the user to Mapillary](https://www.mapillary.com/developer/api-documentation/#authentication) using our OAuth app.
 
-Once the user grants Explorer access to their account (and Mapillary provides an OAuth token) we can start the upload flow.
+Once the user grants my app access to their account (and Mapillary provides an OAuth token) we can start the upload flow.
 
-Explorer then checks to ensure each users token validity before upload and refreshes the token if needed, described in the Mapillary API documentation under refresh flow.
+I then check to ensure each users token validity before upload and refreshes the token if needed, described in the Mapillary API documentation under refresh flow.
 
-Now that Explorer has a valid token, the upload of images can begin. Note, during uploads Mapillary does not have a concept of Sequences. You simply upload images (in a `.zip` file). Mapillary then processes the uploaded images into one or more Sequence server side.
+Now I have a valid token, the upload of images can begin. Note, during uploads Mapillary does not have a concept of Sequences. You simply upload images (in a `.zip` file). Mapillary then processes the uploaded images into one or more Sequence server side.
 
 I am not 100% clear on how Sequences are created from uploaded images on the Mapillary server (e.g. how far images can be apart in a sequence, etc.), except for the fact that a Sequence can only hold 500 images. Thus, if 600 images, this will result in at least two Mapillary sequences.
 
@@ -58,9 +58,11 @@ The Mapillary API does provide the following responses at step 3 (from `https://
 ```
 The `cluster_id` is assume to be related to the Sequence in some way (more on that in a bit). We're not quite sure if it's the same as `sfm_cluster` in the docs (which references the [OpenSFM cluster processed by Mapillary](https://opensfm.org/)).
 
-This means whilst we can upload images, it appears very hard to tie an Explorer image/sequence uploaded to Mapillary, to corresponding Mapillary image/sequence. Two of the features we wanted to implement on Explorer, 1) the ability to track Mapillary upload status, and 2) the ability for a user to open the corresponding Mapillary sequence (on mapillary.com) from the Explorer web interface, as we do for other integration points (e.g. Street View).
+This means whilst we can upload images, it appears very hard to tie an uploaded image/sequence uploaded to Mapillary, to corresponding published Mapillary image/sequence.
 
-Therefore we started to Explorer potential workarounds to implement these two features...
+I wanted to implement the ability to track Mapillary upload status and the ability for a user to open the corresponding Mapillary sequence (on mapillary.com).
+
+Therefore I started to look at potential workarounds to implement these two features...
 
 ## Plan A (tl;dr, works, but lots of potential issues)
 
@@ -111,16 +113,16 @@ The response of this endpoint includes `captured_at`, `altitude`, and `geometry`
 
 Using this the latitude+longitude+altitude+time of each uploaded image could be compared to these values returned for each image on Mapillary API.
 
-If a match exist, we can be fairly certain that the image on Mapillary is the same as the one from the Explorer upload.
+If a match exist, we can be fairly certain that the image on Mapillary is the same as the one from the upload.
 
-The response of the Image endpoint also contains `sequence_id` which means if a match exists we can then link each Explorer image to both a Mapillary image ID and a Sequence on Mapillary.
+The response of the Image endpoint also contains `sequence_id` which means if a match exists we can then link each uploaded image to both a Mapillary image ID and a Sequence on Mapillary.
 
 Whilst this flow works (and is mostly documented), we decided that this approach was not viable;
 
 * It is excessive. The amount of requests needed to iterate through (potentially) thousands of images is problematic for both client and server at scale
 * I have a suspicion Mapillary adjusts the co-ordinates of some images. In cases where this happens, this approach will fail.
 * It assumes no other images have same x,y co-ordinates or time (which I can be 99% certain of, barring camera error where same location is reported).
-* There is no information about the status of the Sequence upload. The assumption is that if the images don't match between Mapillary and Explorer that the sequence is still uploading. Mapillary usually publishes sequences within 72 hours, so we could also assume if an image does not appear within 72 hours an error has occurred -- though this would be a massive assumption... and one I was not comfortable with.
+* There is no information about the status of the Sequence upload. The assumption is that if the images don't match between Mapillary and the upload that the sequence is still uploading. Mapillary usually publishes sequences within 72 hours, so we could also assume if an image does not appear within 72 hours an error has occurred -- though this would be a massive assumption... and one I was not comfortable with.
 
 As such, we came up with a Plan B by watching the request of Mapillary Web.
 
@@ -138,7 +140,7 @@ https://graph.mapillary.com/graphql?doc=query getNewSequences
 
 For us, [and others](https://forum.mapillary.com/t/how-to-query-user-info-from-v4/5378), the lack of ability to get information for an authenticated user is problematic. [This did exist in v3](https://web.archive.org/web/20201106093440/https://www.mapillary.com/developer/api-documentation/).
 
-One advantage we have with Explorer is being able to ask the user for their username during the OAuth process (and keep our fingers crossed they enter it correctly -- because there is no way to validate it is correct, remember, no endpoint for user info!).
+One advantage I have is being able to ask the user (me) for their username during the OAuth process (and keep our fingers crossed they enter it correctly -- because there is no way to validate it is correct, remember, no endpoint for user info!).
 
 Using the username we tried to query the `getNewSequences` using the `username` variable.
 
@@ -237,7 +239,7 @@ In the response from this endpoint, a `node` object with a `cluster_id` is inclu
 
 [Here is a full sample response for trekviewhq](https://gist.github.com/himynamesdave/f968885b1b60fdbea33bd11e0dd67dbd).
 
-With this information we can compare each upload reported by the API (each `node`) for a user against the upload `cluster_id`s for that user in Explorer (that we got when the upload was closed). If we get a match we can link the sequence on Mapillary to Sequence on Explorer.
+With this information we can compare each upload reported by the API (each `node`) for a user against the upload `cluster_id`s for that user (that we got when the upload was closed). If we get a match we can link the sequence on Mapillary to an upload.
 
 The `cluster_id` object also contains the upload state of the sequence, used to power one of the newer features in the Mapillary UI shows you the state of a sequence upload.
 
@@ -250,7 +252,7 @@ It shows four steps and their status; failed, success, or pending.
 3. Map data processing (`anonymization_status`)
 4. Map update (`tiler_status`)
 
-This information allows us to 1) link images uploaded by a user to an Image ID / Sequence ID on Mapillary, and 2) track the status of sequence uploaded by Explorer on Mapillary.
+This information allows us to 1) link images uploaded by a user to an Image ID / Sequence ID on Mapillary, and 2) track the status of sequence uploaded to Mapillary.
 
 The response also contains a `error_code` property, allowing the ability to identify the reason for potential failures.
 
@@ -266,4 +268,4 @@ It would be incredibly helpful to have some clarity on what we can expect in the
 
 Yours sincerely,
 
-Everyone at Trek View
+Trek View

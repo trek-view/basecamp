@@ -1,60 +1,57 @@
 ---
 date: 2022-03-25
 title: "Creating 360 Tours of the Best Ski Resorts in France (Part 1)"
-description: "And a brief update on using the GoPro MAX cold weather setup."
+description: "I look back at my imagery I've captured this season and show how you can do the same."
 categories: treks
 tags: [GoPro, MAX, battery, ski, winter, Alps, mountain]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-03-25/vallee-blanche-360-meta.JPG
-featured_image: /assets/images/blog/2022-03-25/vallee-blanche-360-sm.JPG
+image: /assets/images/blog/2022-03-25/tignes-street-level-view.png
+featured_image: /assets/images/blog/2022-03-25/tignes-street-level-view.png
 layout: post
 published: true
 redirect_from:
   - /blog/2022/creating-360-street-level-maps-europe-ski-resorts-part-1
 ---
 
-**And a brief update on using the GoPro MAX cold weather setup.**
+**I look back at my imagery I've captured this season and show how you can do the same.**
 
 [A few weeks ago I talked about the problems cold temperatures have on LiIon batteries, and how I was preparing my kit for cold weather](/blog/keeping-gopro-max-warm-extend-battery-life).
 
-As those that know me might have guessed, this is because I was going skiing!
+As those that know me might have guessed, this was in preperation for going skiing!
 
-Over the past 4 weeks I've visited the following French resorts:
+Here is some of the piste-level imagery I captured in the French Alps this year...
 
-* Val Thorens
-* Meribel
-* Courchevel
-* La Plagne
-* Les Arcs
-* Chamonix Valley
-	* Flegere
-	* Brevant
-	* Les Houches
-	* Grand Montets
-	* Le Tour
-* Tignes
-* Val D'Isere
+## Val Thorens, Meribel, and Courchevel
 
-After 4 weeks of skiing (and a few rest days) I am pleased to report the setup has held up perfectly.
+<img class="img-fluid" src="/assets/images/blog/2023-01-06/val-thorens-map.png" alt="Val Thorens, Meribel, and Courchevel map" title="Val Thorens, Meribel, and Courchevel map" />
 
-<img class="img-fluid" src="/assets/images/blog/2022-03-25/gopro-max-cold-weather-1-sm.jpg" alt="Trek Pack Cold Weather Helmet Cam" title="Trek Pack Cold Weather Helmet Cam" />
+[Explore it all here](https://www.mapillary.com/app/?lat=45.295186218182&lng=6.5789666618182&z=10&username%5B%5D=trekviewhq).
 
-That said, it has been very warm in the French Alps for the last month (as hot at 14 degrees in mid-March), which has, sadly, resulted in very little snowfall.
+## La Plagne and Les Arcs
 
-The blue skies that the Alps have seen over the last month have given me some amazing conditions for filming though.
+<img class="img-fluid" src="/assets/images/blog/2023-01-06/la-plagne-map.png" alt="La Plagne and Les Arcs map" title="La Plagne and Les Arcs map" />
 
-In total, finishing this morning, I've skied over 1500 kilometers across 27 days. In many resorts I have managed to capture almost every marked piste, and some amazing off-piste runs too.
+[Explore it all here](https://www.mapillary.com/app/?lat=45.510255285185&lng=6.70060485&z=10&username%5B%5D=trekviewhq).
 
-My aim now is to use the footage I've shot to create street level tours the pistes.
+## Chamonix Valley
 
-Next week I plan to start processing the videos. In summary there is;
+<img class="img-fluid" src="/assets/images/blog/2023-01-06/chamonix-map.png" alt="Chamonix Valley map" title="Chamonix Valley map" />
 
-* 3 terabytes of footage
-* Totalling a little over 59 hours
-* In 889 videos
+[Explore it all here](https://www.mapillary.com/app/?lat=45.96727777239363&lng=6.874316773334613&z=10&username%5B%5D=trekviewhq).
 
-I'll leave you with a little sneak peak from one of my all time favourite runs filmed last week, the Vallee Blanche off the Aiguille du Midi (3,842m) in Chamonix.
+## Tignes
 
-<iframe width="600" height="400" allowfullscreen style="border-style:none;" src="https://www.trekview.org/trekviewer.htm#panorama=https://www.trekview.org/assets/images/blog/2022-03-25/GS__0485.JPG&amp;autoLoad=true"></iframe>
+<img class="img-fluid" src="/assets/images/blog/2023-01-06/tignes-map.png" alt="Tignes and Val d'Isere map" title="Tignes and Val d'Isere map" />
 
-Stay tuned for a progress update in the next month or so!
+[Explore it all here](https://www.mapillary.com/app/?lat=45.452570735577&lng=6.8979346884615&z=10&username%5B%5D=trekviewhq).
+
+## How can I do this?
+
+Hopefully this has inspired many of you to try to record your own footage this season and place it on the map. The good news; it's not as difficult as you might think.
+
+Here is everything you need to know;
+
+1. [Buy a GoPro MAX and helmet mount](/blog/announcing-trek-pack-v2)
+2. [Set it up so that it performs well in cold weather](/blog/keeping-gopro-max-warm-extend-battery-life)
+3. Record footage in video mode (5.2k @ 24 FPS)
+4. [Break the footage up into frames (optional, not required if only for upload to Street View / Mapillary)](/blog/turn-360-video-into-timelapse-images-part-1)

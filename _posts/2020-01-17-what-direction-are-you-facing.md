@@ -119,7 +119,7 @@ As with pitch, you'll notice in the diagram there is a forward and backward conn
 
 ## Adjusted Headings
 
-<img class="img-fluid" src="/assets/images/blog/2020-01-17/tourer-pannellum-scene-connection.png" alt="Explorer Pannellum Scene" title="Explorer Pannellum Scene" />
+<img class="img-fluid" src="/assets/images/blog/2020-01-17/tourer-pannellum-scene-connection.png" alt="Pannellum Scene" title="Pannellum Scene" />
 
 One final calculation (I promise); adjusted heading.
 

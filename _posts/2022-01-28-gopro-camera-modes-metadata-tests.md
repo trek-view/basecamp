@@ -1,9 +1,9 @@
 ---
 date: 2022-01-28
 title: "The Quirks of GoPro Metadata (GPMD)"
-description: "What we've learned whilst building a library of GoPro camera test cases for Explorer."
+description: "What we've learned whilst building a library of GoPro camera test cases."
 categories: developers
-tags: [GoPro, MAX, Fusion, HERO 10, gpmf, gpmd, Explorer]
+tags: [GoPro, MAX, Fusion, HERO 10, gpmf, gpmd]
 author_staff_member: dgreenwood
 image: /assets/images/blog/2022-01-28/trekview-guide-test-cases.png
 featured_image: /assets/images/blog/2022-01-28/trekview-guide-test-cases-sm.png
@@ -13,13 +13,13 @@ redirect_from:
   - /blog/2022/gopro-camera-modes-metadata-tests
 ---
 
-**What we've learned whilst building a library of GoPro camera test cases for Explorer.**
+**What we've learned whilst building a library of GoPro camera test cases.**
 
 In 2022 I wrote an introductory post on the GoPro Metadata Format (GPMF / GPMD) for video telemetry.
 
 [You can read it here](/blog/metadata-exif-xmp-360-video-files-gopro-gpmd).
 
-As work on Explorer has progressed, we've been learning lots about how different GoPro cameras write metadata to the image and video files they produce.
+As my understanding has broadened, I have been learning lots about how different GoPro cameras write metadata to the image and video files they produce.
 
 Here are some of the quirks we've uncovered...
 

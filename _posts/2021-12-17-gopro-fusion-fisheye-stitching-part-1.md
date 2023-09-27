@@ -25,7 +25,7 @@ Many of these emails also ask for recommended alternatives to GoPro Fusion Studi
 
 The Fusion was officially discontinued in 2019, with the release of the Max. Since then new operating systems versions have been released, causing breaking changes in the GoPro Fusion Studio software.
 
-With the release of Explorer on the horizon, I decided to take a look at how easy it would be to bypass GoPro Fusion Studio software to stitch the images.
+As a result, I decided to take a look at how easy it would be to bypass GoPro Fusion Studio software to stitch the images.
 
 ## Pre-reading
 

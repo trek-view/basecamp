@@ -29,8 +29,6 @@ Although we tried to keep our [Trek Packs](/trek-pack) as cheap as possible (>$5
 
 For many, action cameras, or even-more-so, smartphones, are more versatile and readily accessible.
 
-This is why we're going to allow trekkers to upload regular photos taken on GoPro HERO cameras to Explorer.
-
 For these trekkers, we also wanted to allow them to brand their imagery in the same way as we will do with equirectangular photos (by using a logo in the nadir). I've documented how to add a nadir to a 360 equirectangular photo here:
 
 * [manually (using GIMP)](/blog/adding-a-custom-nadir-to-360-video-photo), and here:
@@ -97,9 +95,9 @@ Imagemagick provides a huge variety of functions to manipulate image files so [h
 
 We now need to know where to place the logo horizontally and vertically.
 
-For Explorer, we decided to place the watermark in the bottom right hand corner of the image.
+I think the best place for the watermark is in the bottom right hand corner of the image.
 
-To calculate this we need to use the photo width (2704) and height (2028), as well as the logo width (270) and height (270).
+To calculate this position we need to use the photo width (2704) and height (2028), as well as the logo width (270) and height (270).
 
 So we need to place it horizontally (2704-270) at 2434 pixels across, and vertically (2028-270) at 1758 pixels down, which gives us the following command:
 

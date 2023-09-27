@@ -50,8 +50,6 @@ Once you click save, the activity should be visible in your Strava account.
 
 Choose this option if you have lots of gpx files to upload, or want to provide others the ability to upload their own gpx files.
 
-When building Explorer, I wanted users to be easily able to upload their sequences to Strava in one click.
-
 Strava uses OAuth2 for authentication to their V3 API. I will not describe how to set this up in this post, [as it is explained in detail here](https://developers.strava.com/docs/authentication/). Where `<VALID TOKEN>` is referenced in this post, I am referring to a valid Oauth2 token.
 
 You can create an activity using the [Upload Activity (createUpload) endpoint](https://developers.strava.com/docs/reference/#api-Uploads-createUpload).
@@ -59,25 +57,22 @@ You can create an activity using the [Upload Activity (createUpload) endpoint](h
 This request takes a few parameters for this use-case:
 
 * `file`: the path to the gpx file
-* `name`: the name of the activity for the Strava UI (in Explorer, this is Sequence Name)
-* `description`: the description of the activity for the Strava UI (in Explorer, this is Sequence Description)
+* `name`: the name of the activity for the Strava UI
+* `description`: the description of the activity for the Strava UI
 * `data_type`: the format of the uploaded file. In this case is always `gpx`
-* `external_id` (optional): when uploaded from Explorer, is the Explorer sequence URL filter
 
 Here is an example request using Python and the requests module;
 
 ```python
 url = 'https://www.strava.com/api/v3/uploads'
 headers = {'Authorization': 'Bearer <VALID TOKEN>'}
-payload = {'file': 'path/to/file.gpx', 'name': 'NAME', 'description': 'DESCRIPTION', 'data_type': 'gpx', 'external_id': 'https://explorer.trekview.org/?sequence_uuid=b976328b-6cb5-4578-a297-a7845d592a2c'}
+payload = {'file': 'path/to/file.gpx', 'name': 'NAME', 'description': 'DESCRIPTION', 'data_type': 'gpx'}
 r = requests.post(url=url, headers=headers, data=payload)
 ```
 
-Explorer also has a concept of transport type (the method of transport used to capture the sequence).
+Strava also has a [SportType](https://developers.strava.com/docs/reference/#api-models-SportType), e.g. `Walk`.
 
-Each transport type in Explorer maps to an [SportType in Strava](https://developers.strava.com/docs/reference/#api-models-SportType). For example, the transport type `Earth > Hike` in Explorer maps to the Strava sport type `Walk`
-
-To update the activity on Strava with the activity details (the transport type used) the [Update Activity (updateActivityById) endpoint](https://developers.strava.com/docs/reference/#api-Activities-updateActivityById) on Strava can be used by passing the parameter;
+To update the activity on Strava with the activity details (the `SportType` type used) the [Update Activity (updateActivityById) endpoint](https://developers.strava.com/docs/reference/#api-Activities-updateActivityById) on Strava can be used by passing the parameter;
 
 * `sport_type` = Strava SportType defined in transport type
 

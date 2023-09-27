@@ -1,49 +1,44 @@
 ---
 date: 2023-01-06
-title: "Creating 360 Tours of the Best Ski Resorts in France (Part 2)"
-description: "I look back at my imagery from last season and show how you can do the same this year."
+title: "Creating 360 Tours of the Best Ski Resorts in France and Italy (Part 2)"
+description: "I look back at my imagery from this season and show how you can do the same this year."
 categories: treks
 tags: [GoPro, MAX, ski, winter, Alps, mountain]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2023-01-06/tignes-street-level-view.png
-featured_image: /assets/images/blog/2023-01-06/tignes-street-level-view.png
+image: /assets/images/blog/2023-01-06/courmayeur-meta.png
+featured_image: /assets/images/blog/2023-01-06/courmayeur-meta.png
 layout: post
 published: true
 redirect_from:
   - /blog/2023/creating-360-street-level-maps-europe-ski-resorts-part-2
+  - /blog/2023/creating-360-street-level-maps-europe-ski-resorts-part-3
 ---
 
-**I look back at my imagery from last season and show how you can do the same this year.**
+**I look back at my imagery from this season and show how you can do the same this year.**
 
-[Last March I promised you street-level imagery of some of the best French ski resorts](/blog/creating-360-street-level-maps-europe-ski-resorts-part-1).
+Another ski season is over, for me anyway.
 
-In this case I believe the saying _"better late than never"_ holds true.
+It has been another year of bad snow here in Europe, though there were a few very good weeks.
 
-With the ski season already well underway in the French Alps, here is the long promised imagery I shot last year.
+Here's where I've skied...
 
-## Val Thorens, Meribel, and Courchevel
+## Serre Chevallier (France)
 
-<img class="img-fluid" src="/assets/images/blog/2023-01-06/val-thorens-map.png" alt="Val Thorens, Meribel, and Courchevel map" title="Val Thorens, Meribel, and Courchevel map" />
+<img class="img-fluid" src="/assets/images/blog/2023-03-30/serre-chevallier.png" alt="Serre Chevallier" title="Serre Chevallier" />
 
-[Explore it all here](https://www.mapillary.com/app/?lat=45.295186218182&lng=6.5789666618182&z=10&username%5B%5D=trekviewhq).
+[Explore it all here](https://www.mapillary.com/app/user/trekviewhq?lat=44.935685791896&lng=6.4898815332022&z=17&x=0.47695653858615583&y=0.5627130934789792&zoom=0&focus=photo&pKey=1625747594515652).
 
-## La Plagne and Les Arcs
+## Courmayeur (Italy)
 
-<img class="img-fluid" src="/assets/images/blog/2023-01-06/la-plagne-map.png" alt="La Plagne and Les Arcs map" title="La Plagne and Les Arcs map" />
+<img class="img-fluid" src="/assets/images/blog/2023-03-30/courmayeur.png" alt="Courmayeur" title="Courmayeur" />
 
-[Explore it all here](https://www.mapillary.com/app/?lat=45.510255285185&lng=6.70060485&z=10&username%5B%5D=trekviewhq).
+[Explore it all here](https://www.mapillary.com/app/user/trekviewhq?lat=45.772465592161&lng=6.9122764561441&z=17&focus=map&pKey=1372695603514766&x=0.9047409299604711&y=0.5&zoom=0).
 
-## Chamonix Valley
+## La Thuile (Italy) / La Rosiere (France)
 
-<img class="img-fluid" src="/assets/images/blog/2023-01-06/chamonix-map.png" alt="Chamonix Valley map" title="Chamonix Valley map" />
+<img class="img-fluid" src="/assets/images/blog/2023-03-30/la-thuile-la-rosiere.png" alt="La Thuile and La Rosiere" title="La Thuile and La Rosiere" />
 
-[Explore it all here](https://www.mapillary.com/app/?lat=45.96727777239363&lng=6.874316773334613&z=10&username%5B%5D=trekviewhq).
-
-## Tignes
-
-<img class="img-fluid" src="/assets/images/blog/2023-01-06/tignes-map.png" alt="Tignes and Val d'Isere map" title="Tignes and Val d'Isere map" />
-
-[Explore it all here](https://www.mapillary.com/app/?lat=45.452570735577&lng=6.8979346884615&z=10&username%5B%5D=trekviewhq).
+[Explore it all here](https://www.mapillary.com/app/user/trekviewhq?lat=45.64851260795024&lng=6.883980008276922&z=13.088877003786871&focus=map&pKey=144406351661676).
 
 ## How can I do this?
 
@@ -54,7 +49,6 @@ Here is everything you need to know;
 1. [Buy a GoPro MAX and helmet mount](/blog/announcing-trek-pack-v2)
 2. [Set it up so that it performs well in cold weather](/blog/keeping-gopro-max-warm-extend-battery-life)
 3. Record footage in video mode (5.2k @ 24 FPS)
-4. [Break the footage up into frames (optional, not required if only for upload to apps)](/blog/turn-360-video-into-timelapse-images-part-1)
-5. Upload to [Trek View Explorer](https://www.trekview.org/), [Google Street View](https://streetviewstudio.maps.google.com), and [Facebook's Mapillary](https://www.mapillary.com/desktop-uploader).
+4. [Break the footage up into frames (optional, not required if only for upload to Street View / Mapillary)](/blog/turn-360-video-into-timelapse-images-part-1)
 
-Don't forget to tag us in the footage [@trekviewed](https://www.instagram.com/trekviewed/)!
+Need more inspiration? [Here is some more ski footage from my adventures last year](/blog/creating-360-street-level-maps-europe-ski-resorts-part-1).
