@@ -13,7 +13,7 @@ redirect_from:
   - 
 ---
 
-{{ post.description }}
+**Google recently launched three new API's delivering Solar, Air Quality and Pollen data, all of which sound very intriguing to me...**
 
 I've talked previously about online services to lookup environmental information, including [weather](blog/historic-weather-data-lookup) and [air quality](/blog/historic-air-quality-lookup).
 
@@ -55,6 +55,7 @@ curl -X POST -d '{
 Which returns;
 
 ```json
+{
   "solarPotential": {
     "maxArrayPanelsCount": 1373,
     "maxArrayAreaMeters2": 2247.3264,
@@ -259,7 +260,8 @@ Which returns;
           }
         }
       },
-    ],
+    ]
+}
 ```
 
 ## Air Quality API

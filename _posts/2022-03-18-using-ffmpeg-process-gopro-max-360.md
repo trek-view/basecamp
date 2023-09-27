@@ -212,7 +212,7 @@ Unsupported codec with id 98314 for input stream 3
 
 Here we can see the telemetry has also copied successfully into stream `0:3`. 
 
-You will also see that a second audio track (GoPro specific -- `GoPro AMB` track in stream `0:3`) has also copied successfully.
+You will also see that a second audio track (GoPro specific -- `GoPro AMB` track in stream `0:2`) has also copied successfully.
 
 The one thing I don't quite understand is why the output `.mp4` has a duration of `00:00:20.48`, yet the input `.360` has a duration of `00:00:20.22` -- a 0.26 second difference. If anyone reading this has any ideas as to why this occurs, please do drop me an email.
 
