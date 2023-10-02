@@ -85,7 +85,6 @@ Hopefully this has inspired many of you to try to record your own footage this s
 
 Here is everything you need to know;
 
-1. [Buy a GoPro MAX and helmet mount](/blog/announcing-trek-pack-v2)
-2. [Set it up so that it performs well in cold weather](/blog/keeping-gopro-max-warm-extend-battery-life)
-3. Record footage in video mode (5.2k @ 24 FPS)
-4. [Break the footage up into frames (optional, not required if only for upload to Street View)](/blog/turn-360-video-into-timelapse-images-part-1)
+1. [Build your own Trek Pack](/trek-pack)
+3. Record the footage of your adventure in video mode
+3. Upload it to Google Street View
