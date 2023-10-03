@@ -27,7 +27,7 @@ What really perked our interest in Meru was the fact many classed it as a more t
 
 <img class="img-fluid" src="/assets/images/blog/2023-09-22/P1040540.JPG" alt="Mount Meru Fig Tree" title="Mount Meru Fig Tree" />
 
-And so, afew years later, we set out to capture 360 footage of Mount Meru, with support from the [Greg Adventures team](https://gregadventures.com/) led by our guide, Salidi.
+And so, afew years later, we set out to capture 360 footage of Mount Meru, with support from the [Greg Adventures team](https://gregadventures.com/) led by our professional guide, Saladini Mshana.
 
 ## The Plan
 
