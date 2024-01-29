@@ -10,21 +10,23 @@ redirect_from:
 
 <div class="text-container">
 
-<img class="img-fluid" src="/assets/images/global/david-trek-pack.jpg" alt="David Hike" title="David Hike" />
-
 <p>Hi! My name's Dave.</p>
+
+<p><img class="img-fluid" src="/assets/images/global/david-trek-pack.jpg" alt="David Hike" title="David Hike" /></p>
 
 <p>In 2019 I took a GoPro Fusion 360-degree camera and started filming some of my hikes.</p>
 
 <p>They quickly attracted millions of views online and other hikers asked me how they could do the same. So I showed them.</p>
 
-<p>Hikes turned into mountain bike trails. Bike trails into ski runs. Ski runs into scuba dives...</p>
+<p><img class="img-fluid" src="/assets/images/global/david-ski-pack.jpg" alt="David Ski" title="David Ski" /></p>
 
-<img class="img-fluid" src="/assets/images/global/david-ski-pack.jpg" alt="David Ski" title="David Ski" />
+<p>Hikes turned into mountain bike trails. Bike trails into ski runs. Ski runs into scuba dives...</p>
 
 <p>At around the same time, I became interested in cartography. Being a geek at heart this quickly led to many late-night experiments building map making software. Others were interested in this software, so I shared that too.</p>
 
-<p>I quickly realised there was a huge interest for using street-level imagery to map various explorations -- like Street View, but for adventures.</p>
+<p><img class="img-fluid" src="/assets/images/global/streetview-stats.png" alt="Trek View Street View" title="Trek View Street View" /></p>
+
+<p>Looking at the numbers, I quickly realised there was a huge interest in using street-level imagery to map various explorations -- like Street View, but for adventures.</p>
 
 <p>And so Trek View became a thing.</p>
 
