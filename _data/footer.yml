@@ -1,16 +1,18 @@
 - links:
+  - name: Spotted a Trekker?
+    link: https://landing.mailerlite.com/webforms/landing/p3p7h9
   - name: Do It Yourself
     link: /trek-pack
-  - name: Podcast
-    link: https://www.trekview.org/blog/category/expodition/
-  - name: Google Maps
-    link: https://www.google.com/maps/contrib/102791008564816026951/photos/
+  - name: Upload Your Imagery
+    link: https://landing.mailerlite.com/webforms/landing/p3p7h9
 
 - links:
   - name: Blog
     link: /blog
   - name: About
     link: /about
+  - name: Podcast
+    link: https://www.trekview.org/blog/category/expodition/
   - name: Contact
     link: /contact
     

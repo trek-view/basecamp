@@ -32,4 +32,15 @@ Now those API methods are generally available to anyone. As such I've now decide
 
 gopro2gsv takes 360 timelapse photos and videos shot on GoPro cameras (currently the Fusion and MAX) and uploads them to Google Street View. You can also use gopro2gsv to optionally add your own nadir to the uploaded content.
 
+## Videos shot on GoPro
 
+Currently gopro2gsv works with 
+
+
+
+
+## An insight into our workflow
+
+Often we will shoot multiple timelapses with thousands of photos, or hour of video footage (often chaptered by the camera into many videos).
+
+To aid us automate this process we 
