@@ -2,6 +2,10 @@
   link: /blog
   new_window: false
   highlight: false
+- name: About
+  link: /about
+  new_window: false
+  highlight: false
 - name: Do it Yourself
   link: /trek-pack
   new_window: false

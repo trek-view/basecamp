@@ -10,15 +10,17 @@ redirect_from:
 
 <div class="text-container">
 
-<h3>What is Trek View?</h3>
+<img class="img-fluid" src="/assets/images/global/david-trek-pack.jpg" alt="David Hike" title="David Hike" />
 
-<p>Hi! I'm <a href="https://www.linkedin.com/in/himynamesdave/" target="_blank">Dave</a>.</p>
+<p>Hi! My name's Dave.</p>
 
 <p>In 2019 I took a GoPro Fusion 360-degree camera and started filming some of my hikes.</p>
 
 <p>They quickly attracted millions of views online and other hikers asked me how they could do the same. So I showed them.</p>
 
 <p>Hikes turned into mountain bike trails. Bike trails into ski runs. Ski runs into scuba dives...</p>
+
+<img class="img-fluid" src="/assets/images/global/david-ski-pack.jpg" alt="David Ski" title="David Ski" />
 
 <p>At around the same time, I became interested in cartography. Being a geek at heart this quickly led to many late-night experiments building map making software. Others were interested in this software, so I shared that too.</p>
 
@@ -30,6 +32,6 @@ redirect_from:
 
 <p>I hope you find some of the content here useful, and cannot wait to see your imagery on the map!</p>
 
-<p>-dave</p>
+<p>-<a href="https://www.himynamesdave.com/" target="_blank">dave</a></p>
 
 </div>

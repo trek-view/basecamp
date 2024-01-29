@@ -1,7 +1,7 @@
 ---
 title: Trek Pack v2
 heading: Trek Pack v2
-description: A backpack mounted 360-degree camera system designed to capture stunning 360-degree Street View tours in all terrains.
+description: A mounted 360-degree camera system designed to capture stunning 360-degree Street View tours in all terrains.
 image: /assets/images/pages/trek-pack/v2/trek-pack-v2-emptied.jpg
 layout: page
 ---
