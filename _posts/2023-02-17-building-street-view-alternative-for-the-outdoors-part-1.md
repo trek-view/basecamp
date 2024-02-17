@@ -5,8 +5,8 @@ description: "In this post I will walk you through my thinking about how such an
 categories: developers
 tags: [YouTube, Meta, Mapillary, Facebook, GoPro, OpenSFM]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2023-02-17/mapillary-web-api-requests-meta.jpg
-featured_image: /assets/images/blog/2023-02-03/mapillary-web-api-requests-meta.jpg
+image: /assets/images/blog/2022-02-17/mapillary-web-api-requests-meta.jpg
+featured_image: /assets/images/blog/2022-02-17/mapillary-web-api-requests-meta.jpg
 layout: post
 published: true
 redirect_from:
@@ -520,7 +520,7 @@ The response also shows us 361 of the images belong to `"sequence": "s1lP92nCJwp
 As an aside, going back to the confusion about `ClusterID` returned in the upload session response, I wanted to see what each images `sfm_cluster` was.
 
 ```shell
-GET 'https://graph.mapillary.com/images?creator_username=trekviewhq&make=GoPro&model=GoPro%20Max&start_captured_at=2021-08-28T10:20:36.000Z&end_captured_at=2021-08-28T10:06:42.000Z&fields=id%2Csfm_cluster&access_token=REVOKED'
+GET 'https://graph.mapillary.com/images?creator_username=trekviewhq&make=GoPro&model=GoPro%20Max&start_captured_at=2021-08-28T10:20:36.000Z&end_captured_at=2021-08-28T10:06:42.000Z&fields=id%2Csfm_cluster'
 ```
 
 Turns out the cluster ID of the response has nothing to do with SFM clusters as far as I can tell. There were XXX distinct `sfm_cluster.id` values as follows;
