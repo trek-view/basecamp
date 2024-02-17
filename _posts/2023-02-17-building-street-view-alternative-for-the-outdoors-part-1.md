@@ -33,7 +33,7 @@ The problem with these platforms is they were designed for street level images o
 
 Yes, they both work with trail imagery, users can upload photos and videos shot (mostly) anywhere. However, the user experience for those browsing the uploads is far from perfect.
 
-For me search is the biggest issue. Neither platform offers the ability to search on a specific criteria (e.g. elevation, type of trail, etc.). The assumption is you know where you want to drop into the imagery. For looking up what a store front looks like from an address, or if parking is easy, Mapillary and Street View are perfect. For trails, finding viewpoints or waymarkers is more important which you can't easily get an address or fixed point to search on.
+For me search is the biggest issue. Neither platform offers the ability to search on a specific criteria (e.g. elevation, type of trail, etc.). The assumption is you know where you want to drop into the imagery. For looking up what a store front looks like from an address, or if parking is easy, Mapillary and Street View are perfect. For trails, finding viewpoints or way-markers is more important which you can't easily get an address or fixed point to search on.
 
 ## What are the challenges with building your own street level image map?
 
@@ -55,7 +55,7 @@ For someone with a budget of less than $100/mo to run this, following the approa
 
 ### Database storage
 
-This is where the complexity can come in. In Street View you have interconnected blue lines. You can jump between images seemlessly in the interface.
+This is where the complexity can come in. In Street View you have interconnected blue lines. You can jump between images seamlessly in the interface.
 
 In the backend, I am assuming Street View and Mapillary use a graph database to join points with relationships. This is fairly easy at a sequence level, that is for images in a timelapse or a single video uploaded by a user. Though how do you define how sequences close to each other are connected? This is defined in the queries.
 
@@ -67,9 +67,11 @@ With time, these queries and processing logic can be tuned, but working spacial 
 
 Viewing a single 360 in a panoramic viewer like [Panelleum is easy](https://pannellum.org/).
 
-Introducing navigation arrows to allow user to move between photos with seemless (and not jerky) transitions is much more difficult.
+Introducing navigation arrows to allow user to move between photos with seamless (and not jerky) transitions is much more difficult.
 
 Jumping between images on Street View and Mapillary often looks smooth, with a blur effect employed as the frame moves. This seemingly simple feature is actually a little more complex than it might first appear.
+
+Finally, privacy. Street View and Mapillary employ blurring of personally identifiable information. Whilst there are a few open tools that can be used to do this, they're likely not as accurate and also require a fair bit of additional processing power, at cost, to run.
 
 In short, trying to build this from scratch to a level that would be acceptable for a user would not be easy.
 
