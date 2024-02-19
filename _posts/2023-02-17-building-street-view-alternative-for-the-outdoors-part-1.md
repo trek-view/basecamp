@@ -5,8 +5,8 @@ description: "In this post I will walk you through my thinking about how such an
 categories: developers
 tags: [YouTube, Meta, Mapillary, Facebook, GoPro, OpenSFM]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2022-02-17/mapillary-web-api-requests-meta.jpg
-featured_image: /assets/images/blog/2022-02-17/mapillary-web-api-requests-meta.jpg
+image: /assets/images/blog/2023-02-17/mapillary-web-api-requests-meta.jpg
+featured_image: /assets/images/blog/2023-02-17/mapillary-web-api-requests-meta.jpg
 layout: post
 published: true
 redirect_from:
