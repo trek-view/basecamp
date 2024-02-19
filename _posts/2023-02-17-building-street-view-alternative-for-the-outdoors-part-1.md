@@ -238,7 +238,7 @@ Based on previous experience uploading photos to Mapillary, I know a sequence ca
 
 Back to the point, this is not defining the actual Sequence UUID Mapillary will generate on the server.
 
-In my sequence above of 418 images, 361 are marked with `"MAPSequenceUUID": "0"` and 57 with `"MAPSequenceUUID": "1"`. I'll come back to this later when we look at the processed images, just keep it in mind for now.
+In my sequence above of 418 images, 361 are marked with `"MAPSequenceUUID": "0"` and 57 with `"MAPSequenceUUID": "1"`. I'll come back to this later when I look at the processed images, just keep it in mind for now.
 
 Onto videos...
 
@@ -343,7 +343,7 @@ However, I'm not sure if this is useful at all for what I need. Some quick Googl
 
 ### Using the Mapillary public API to link uploads to sequences
 
-We have three key bits of known info;
+I have three key bits of known info;
 
 1. The raw metadata in the photos/videos
 2. The description JSON file created by Mapillary Tools (from the photos/videos metadata)
@@ -412,7 +412,7 @@ The good news is this endpoint also supports more filtering (than just `creator_
 
 So using these, lets see if I can find the sequence ID for the photo I uploaded by taking the values in the description file.
 
-In the description file my first photo has a `MAPCaptureTime` = `2021_08_28_10_06_42_000` and last photo `2021_08_28_10_20_36_000`. So we get `2021-08-28T10:06:42.000Z` and `2021-08-28T10:20:36.000Z` for `start_captured_at` and `end_captured_at` time respectively.
+In the description file my first photo has a `MAPCaptureTime` = `2021_08_28_10_06_42_000` and last photo `2021_08_28_10_20_36_000`. So I get `2021-08-28T10:06:42.000Z` and `2021-08-28T10:20:36.000Z` for `start_captured_at` and `end_captured_at` time respectively.
 
 Note on video files, the Mapillary description JSON produced by Mapillary does not include actual times of video GPS. This data will need to be pulled from the metadata of the video itself. The start time of the video can be pulled from the first GPS time, and the end time can be calculated by pulling out the last GPS time in the metadata.
 
@@ -517,7 +517,7 @@ Here's the first tow results;
 
 Results appear to be sorted `captured_at` epoch time descending (put another way; the most recent photos first).
 
-In this case we get the same number of published photos as were included in the upload. Of course this might not always be true. It is completely possible for some photos to be discarded if they fail Mapillary's automated checks (e.g. are corrupt).
+In this case I get the same number of published photos as were included in the upload. Of course this might not always be true. It is completely possible for some photos to be discarded if they fail Mapillary's automated checks (e.g. are corrupt).
 
 The response also shows us 361 of the images belong to `"sequence": "s1lP92nCJwpxOaMEWRDX8b"` and 57 to `"sequence": "d7DlxwUTp6JZaIWKHGtnMQ"`. So this upload has created 2 sets of sequences.
 
@@ -540,7 +540,7 @@ In short `ClusterID` in upload != `sfm_cluster.id` returned via API, thus doesn'
 
 My API query assumes two things:
 
-1. we know the user which limits the images (which we do, b/c the assumption is they use Mapillary Tools)
+1. I know the user which limits the images (which I do, b/c the assumption is they use Mapillary Tools)
 2. the user does not have other photos shot at the same time. Now, this is not generally common; how can a user shoot many photos at the same time? True. Though keep in mind
     * some accounts are used for organisations. As such, one account may upload photos shot in different places by different people at the same time, or
     * a single person might shoot with two cameras, thus creating two sets of captures with the same time and similar GPS
@@ -622,58 +622,79 @@ So I turned to Chrome Developer tools to watch the requests the Mapillary Web ap
 
 <img class="img-fluid" src="/assets/images/blog/2023-02-17/mapillary-web-api-requests-sm.jpg" alt="Mapillary API Chrome Dev tools" title="Mapillary API Chrome Dev tools" />
 
-One of the first things we noticed when on the user page and opening the sidebar in the Mapillary web app, e.g. https://www.mapillary.com/app/user/trekviewhq, was that a request to get new sequences accepted a username variable (and returned a user id in the response -- needed for other endpoints).
+One of the first things I noticed when on the user page and opening the sidebar in the Mapillary web app, e.g. https://www.mapillary.com/app/user/trekviewhq, was that a request to get user info by passing username variable;
 
+```shell
+'https://graph.mapillary.com/graphql?doc=query getData($username: String!) {
+      user_by_username(username: $username) {
+        __typename created_at_seconds description id username stats {
+            distance {
+              km
+              __typename
+            }
+            images
+            __typename
+          }
+      }
+    }&operationName=getData&variables={"username":"trekviewhq"}'
 ```
-https://graph.mapillary.com/graphql?doc=query getNewSequences($username: trekviewhq)
-```
 
-Using the username we tried to query the `getNewSequences` using the `username` variable.
+Here comes the first issue. This endpoint, like all Mapillary API endpoint required authentication. I tried to use our applications `access_token`, but were denied with an unauthorised response.
 
-Here comes the first issue. This endpoint, like all Mapillary API endpoint required authentication. We tried to use our applications `access_token`, but were denied with an unauthorised response.
-
-We then noticed Mapillary hardcoded their own `access_token` in all requests from the web app to the API. Using their `access_token` we were able to successfully get a response from this endpoint.
+I then noticed Mapillary hardcoded their own `access_token` in all requests from the web app to the API (that access token = `MLY|4223665974375089|d62822dd792b6a823d0794ef26450398`). Using their `access_token` I was able to successfully get a response from this endpoint.
 
 This returns a response like so;
 
 ```json
-
 {
-  "data": {
-    "user_by_username": {
-      "id": "101176865463974",
-      "new_sequences": {
-        "sequence_keys": [
-          "T1jwvlYndsWVzhuDHOSb7i",
-          "UmFYLgu9n15aBxXbiQH6vs",
-          "BsUTIV4RDXhidW7aM6Zvte",
-          "Y52dBvChfEaUlLt0TyGMmP",
-          "LNShFtI5X9EnqZc07dDRYg",
-          "5wiWDzQ1oBrlAeFb27gTER",
-          "eBcQxLG1sKJalMomPOYjfU",
-          "updPmsU57SQ9T3MlhHWaLV"
-        ],
-        "geojson": "{XXXXXXXXX}",
-        "__typename": "MLYNewSequencesData"
-      },
-      "__typename": "User"
+    "data": {
+        "user_by_username": {
+            "__typename": "User",
+            "created_at_seconds": 1571314260,
+            "description": "Unleash your inner explorer and travel the globe without leaving home.\nhttps://www.trekview.org",
+            "id": "101176865463974",
+            "username": "trekviewhq",
+            "stats": {
+                "distance": {
+                    "km": 4189,
+                    "__typename": "MLYUserDistanceStats"
+                },
+                "images": 1188082,
+                "__typename": "MLYUserStats"
+            }
+        }
     },
-    "__typename": "Query"
-  },
-  "extensions": {
-    "is_final": true
-  }
+    "extensions": {
+        "is_final": true
+    }
 }
 ```
 
-[Full example response for trekviewhq](https://gist.github.com/himynamesdave/c940d1eb5311b74e14014e5aed102853).
+The endpoint returns a `data.user_by_username` object which contains `id` (needed for many of the other endpoints). The trekviewhq user id is `101176865463974`.
 
-The endpoint returns a `user_by_username` object which contains `id` (needed for many of the other endpoints). The trekviewhq user id is `101176865463974`.
+One of the endpoints I identified in the web app using the `user_id` in requests was the `getLatestActivity` query (also undocumented) which returns the uploads from the user sorted by most recent first (note, the response is paginated, you can use the `first` and `after` parameters to page through the response).
 
-One of the endpoints we identified in the web app using the `user_id` in requests was the `latestActivity` endpoint (also undocumented) which returns the uploads from the user sorted by most recent first (note, the response is paginated, you can use the `first` and `after` parameters to page through the response).
-
-```
-https://graph.mapillary.com/graphql?doc=query getLatestActivity($id: 101176865463974, $first: 50, $after: AQHRAAK9wQE4i9s139Bh_DJev3-CV-L_o9SmWd6lHElM3SI2-BW5djTqY-dphpwUdoskjd_4nBTCS58-oz6ni8RSbA)
+```shell
+'https://graph.mapillary.com/graphql?doc=query getLatestActivity($id: ID!, $first: Int, $after: ID, $hide_after: Int) {
+      fetch__User(id: $id) {
+        id
+        feed(first: $first, after: $after, hide_failed_sequences_after_days: $hide_after) {
+          page_info {
+            start_cursor
+            end_cursor
+            has_next_page
+            has_previous_page
+          }
+          nodes {
+            cluster_id type created_at_seconds captured_at_seconds thumb_url item_count image_id status initial_processing_status anonymization_status tiler_status error_code timezone
+            __typename
+          }
+          __typename
+        }
+        __typename
+      }
+      __typename
+    }&variables={"id":"101176865463974","first":200,"after":null,"hide_after":14}'
 ```
 
 This request takes variables:
@@ -681,55 +702,45 @@ This request takes variables:
 * `id`; the user ID obtained at last step (for trekviewhq = 101176865463974)
 * `first`; the number of items (`nodes`) to be returned (I think) -- the Mapillary web app uses `50`
 * `after`; seems to be some sort of ID but no idea for what -- for example, when scrolling to load more results in the sidebar, a request was made with the value for this variable `AQHRAAK9wQE4i9s139Bh_DJev3-CV-L_o9SmWd6lHElM3SI2-BW5djTqY-dphpwUdoskjd_4nBTCS58-oz6ni8RSbA`
-
-In the response from this endpoint, a `node` object with a `cluster_id` is included. This is the same `cluster_id` is also included in the response of the upload -- we now have a key to join upload and sequence in Mapillary!
+* `hide_after`: I'm guessing this is for the UI to prompt how many results should be printed in the sidebar at anytime (e.g only show 14 results each time)
 
 ```json
-{
-    "data":{
-        "fetch__User":{
-            "id":"XXXXXXXXXXX",
-            "feed":{
-                "page_info":{
-                    "start_cursor":null,
-                    "end_cursor":null,
-                    "has_next_page":false,
-                    "has_previous_page":false
+"data": {
+        "fetch__User": {
+            "id": "101176865463974",
+            "feed": {
+                "page_info": {
+                    "start_cursor": null,
+                    "end_cursor": "AQHRfgT-8baMlgzS7qKgvm3juNSASu1WNkqnj17anFuWpEqAiSFMXQgOm2MfEWuzlOXm9US41e54dWHHQ2dpxJ-0uA",
+                    "has_next_page": true,
+                    "has_previous_page": false
                 },
-                "nodes":[
+                "nodes": [
                     {
-                        "cluster_id":"XXXXXXXXXXX",
-                        "type":"UPLOAD",
-                        "thumb_url":null,
-                        "item_count":null,
-                        "image_id":null,
-                        "status":"IN_PROGRESS",
-                        "initial_processing_status":"IN_PROGRESS",
-                        "anonymization_status":"IN_PROGRESS",
-                        "tiler_status":"IN_PROGRESS",
-                        "error_code":"UNSET",
-                        "__typename":"ClusterLatestActivityItem"
-                    }
-                ],
-                "__typename":"UserFeedConnection"
-            },
-            "__typename":"User"
-        },
-        "__typename":"Query"
-    },
-    "extensions":{
-        "is_final":true
-    }
-}
+                        "cluster_id": "151552211058876",
+                        "type": "UPLOAD",
+                        "created_at_seconds": 1683759912,
+                        "captured_at_seconds": 1683629036,
+                        "thumb_url": "https://scontent-lhr8-1.xx.fbcdn.net/m1/v/t6/An8chQDyzKW9PWDh7tfNn_IHJgR1ZI_5wpxf7Il0WmsBHgjlyprG_1pc065QfZmMxD3wksqSjMa7Ho1SITzi08CHPOU2gDoylwby2gBHcJBkBP0Jw9mFCdvqgy-ed_MZvXE3v78K-ga7csmNBd_Qag8?stp=s256x128&ccb=10-5&oh=00_AfD40Tc6NQHagvbNx5y7rpQcuc41u_k8A8KZCyPJ_X9v5g&oe=65FB0E59&_nc_sid=201bca",
+                        "item_count": 43,
+                        "image_id": "202467835974822",
+                        "status": "FINISHED",
+                        "initial_processing_status": "FINISHED",
+                        "anonymization_status": "FINISHED",
+                        "tiler_status": "FINISHED",
+                        "error_code": "UNSET",
+                        "timezone": "EUROPE_MADRID",
+                        "__typename": "ClusterLatestActivityItem"
+                    },
 ```
 
-[Here is a full sample response for trekviewhq](https://gist.github.com/himynamesdave/f968885b1b60fdbea33bd11e0dd67dbd).
+In the response from this endpoint, a `data.feed.fetch__User.nodes` object with a `cluster_id` is included. This is the same `cluster_id` is also included in the response of the upload -- I now have a key to join upload and sequence in Mapillary!
 
-With this information we can compare each upload reported by the API (each `node`) for a user against the upload `cluster_id`s for that user (that we got when the upload was closed). If we get a match we can link the sequence on Mapillary to an upload.
+With this information I can compare each upload reported by the API (each `node`) for a user against the upload `cluster_id`s for that user (that I got when the upload was closed). If I get a match I can link the sequence on Mapillary to an upload.
 
 The `cluster_id` object also contains the upload state of the sequence (as shown in the Mapillary UI screenshot earlier in this post).
 
-It shows four steps and their status; failed, success, or pending. If all four pass, the sequence gets published.
+It shows four steps and their status; failed, success, or pending. If all four pass, the sequence gets published. Else an error will be reported, and an `error_code` printed.
 
 1. Image ingestion
 2. Image processing (`initial_processing_status`)
@@ -740,11 +751,83 @@ This information allows us to 1) link images uploaded by a user to an Image ID /
 
 The response also contains a `error_code` property, allowing the ability to identify the reason for potential failures.
 
+I also noticed a 
+
+```shell
+https://graph.mapillary.com/graphql?doc=query getNewSequences($username: String!) {
+      user_by_username(username: $username) {
+        id
+        new_sequences {
+          sequence_keys
+          geojson
+          __typename
+        }
+        __typename
+      }
+      __typename
+    }&operationName=getNewSequences&variables={"username":"trekviewhq"}'
+```
+
+```json
+{
+    "data": {
+        "user_by_username": {
+            "id": "101176865463974",
+            "new_sequences": {
+                "sequence_keys": [],
+                "geojson": "{\"type\":\"FeatureCollection\",\"features\":[]}",
+                "__typename": "MLYNewSequencesData"
+            },
+            "__typename": "User"
+        },
+        "__typename": "Query"
+    },
+    "extensions": {
+        "is_final": true
+    }
+}
+```
+
+Which doesn't appear too useful. I can't really deduce why the web app fires off this request.
+
+I can see the `getData` request data is also used to query for images;
+
+```shell
+'https://graph.mapillary.com/graphql?doc=query getData($id: ID!) {
+      fetch__MapImage(id: $id) {
+        __typename id thumb(size: SIZE_256) { id url __typename }
+      }
+    }&variables={"id":1447075489494186}
+'
+```
+
+Here I am requesting the same image ID that was returned from one of the documented endpoints...
+
+```json
+{
+    "data": {
+        "fetch__MapImage": {
+            "__typename": "MapImage",
+            "id": "1447075489494186",
+            "thumb": {
+                "id": "914990453696466",
+                "url": "https://scontent-lhr8-1.xx.fbcdn.net/m1/v/t6/An-46IbQjTAS-ZYc_D5swv4wqiJTu4-BhMPe-tlKH3893-VXviidgIvJV-U2aTG5ZxxPfmY-sVXXH7AxJtKY54JMKW4M5rC6mrQNN7YmsM19Bd0GUCmhqKu_KAPbCFtn8AJT8dHCgQXvFANTpsoQqA?stp=s256x128&ccb=10-5&oh=00_AfDgtAbp_qQhqtXWIjVSX8ZEMWhSGsHRByWOGPjGsq6VEw&oe=65FB245A&_nc_sid=201bca",
+                "__typename": "MLYMapImageThumbnail"
+            }
+        }
+    },
+    "extensions": {
+        "is_final": true
+    }
+}
+```
+
+
 ## In summary...
 
 Mapillary Tools and the Mapillary API allow us to upload files, find the uploads using the Mapillary API endpoints, store the Mapillary metadata in Trek View, and then finally render the points/sequences on the map (rendering the actual images from the server).
 
-However, if you've read this far you will probably be thinking; it's a very disjointed approach. My biggest worry is the use of the undocumented Mapillary APIs.
+However, if you've read this far you will probably be thinking; it's a very disjointed approach. My biggest worry is the requirement to use the undocumented Mapillary GraphQL API.
 
 As such, I decided, as per my original inclination, it would be better not to handle any uploads via my app, at least for the MVP.
 
