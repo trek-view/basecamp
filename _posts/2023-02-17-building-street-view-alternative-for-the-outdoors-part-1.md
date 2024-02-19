@@ -814,7 +814,7 @@ Which doesn't appear too useful. I can't really deduce why the web app fires off
 }
 ```
 
-Which was positive... there is data... just too much. Then I noticed `meldig` was actually another organisation, scanning the requests made by the web app;
+Which was positive... there is data... just too much (and I couldn't reverse engineer a filter/limit style variable into the request). Then I noticed `meldig` was actually another organisation, scanning the requests made by the web app;
 
 ```shell
 'https://graph.mapillary.com/graphql?doc=query getData($id: ID!) {
@@ -915,7 +915,6 @@ Here I am requesting the same image ID that was returned from one of the documen
     }
 }
 ```
-
 
 ## In summary...
 
