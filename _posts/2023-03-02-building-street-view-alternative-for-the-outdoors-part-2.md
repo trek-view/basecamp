@@ -5,10 +5,10 @@ description: "In this post I will walk you through my early design decisions and
 categories: developers
 tags: [YouTube, Meta, Mapillary, Facebook, GoPro, OpenSFM]
 author_staff_member: dgreenwood
-image: /assets/images/blog/2023-03-02/
-featured_image: /assets/images/blog/2023-03-02/
+image: /assets/images/blog/2023-03-02/mapillary-image-open.png
+featured_image: /assets/images/blog/2023-03-02/mapillary-image-open.png
 layout: post
-published: false
+published: true
 redirect_from:
   - 
 ---
@@ -26,7 +26,7 @@ Following on from my last post (which steered me away from some aspects of the a
   * description (optional, else blank)
   * transport type (required, dictionary of transport methods)
   * tags (optional list of alphanumeric tags)
-4. allow authenticated user to modify published sequences
+4. allow authenticated user to modify published sequences by
   * modify values for published sequences
   * delete imported sequences
 5. allow unauthenticated/authenticated users to browse sequences using
@@ -40,7 +40,7 @@ Following on from my last post (which steered me away from some aspects of the a
   * transport type (multi-select)
   * tags (multiselect)
   * camera make+model (multiselect)
-6. allow authenticated users to mark image as viewpoint (true/false)
+6. allow authenticated users to mark image as favourite (true/false)
 7. allow authenticated users to mark sequence as favourite (true/false)
 
 For this post I'll ignore some of the more trivial aspects of the app, like authentication.
@@ -142,6 +142,12 @@ We have a concept of images that are linked in a graph under the umbrella of a s
 
 e.g. Image 1 is joined to image 2 is joined to image 3.
 
+Part 1 uncovered how to get this data from Mapillary, here's a reminder of the API request used;
+
+```shell
+GET 'https://graph.mapillary.com/images?creator_username=trekviewhq&is_pano=true&make=GoPro&model=GoPro%20Max&start_captured_at=2021-08-28T10:20:36.000Z&end_captured_at=2021-08-28T10:06:42.000Z&fields=id,altitude,atomic_scale,camera_parameters,camera_type,captured_at,compass_angle,computed_altitude,computed_compass_angle,computed_geometry,computed_rotation,creator,exif_orientation,geometry,is_pano,make,model,height,width,sequence,thumb_original_url,thumb_256_url,thumb_1024_url,thumb_2048_url'
+```
+
 As noted earlier in this post a Sequence has the following values properties by the user;
 
 * `name` (optional, else sequence ID will be used)
@@ -201,16 +207,124 @@ For each sequence one or more image. For each image we hold the following data t
   * data.computed_geometry.coordinates: GeoJSON Point, location after running image processing.
 * `mapillary_computed_rotation`
   * data.computed_rotation: enum, corrected orientation of the image.
-* `mapillary_thumb_original_url` (seems to be full size image, not thumb)
-  * data.computed_rotation: string, URL to the original wide thumbnail.
-* `image_next_uuid`
-* `image_previous_image_uuid`
-* `calculated_image_next_heading`
-* `calculated_image_previous_heading`
+* `mapillary_thumb_original_url` (seems to be full size image, not thumbnail -- the name is confusing)
+  * data.thumb_original_url: string, URL to the original wide thumbnail.
+* `mapillary_thumb_256_url`
+  * data.thumb_256_url: string, URL to the 256px wide thumbnail.
+* `mapillary_thumb_1024_url`
+  * data.thumb_1024_url: string, URL to the 1024px wide thumbnail.
+* `mapillary_thumb_2048_url`
+  * data.thumb_2048_url: string, URL to the 2048px wide thumbnail.
 * `favourited_user_ids` (a list of user IDs who have marked the image viewpoint)
 
-Images can be joined in the graph using the `sequence_uuid` and `mapillary_captured_at` properties to get the image_next and image_previous values.
+It would _probably_ more efficient to retrieve this type of data in a graph database/ However, I have no experience building these to be spatially aware.
 
-To do this the images can first be sorted by `mapillary_captured_at` time with the earliest time (smallest epoch) first. This sort order defines how the images are connected.
+As such, Postgres + PostGIS seems to be the safest choice for an MVP. I do have some initial concerns about performance exposing this in an interactive map view (e.g. how to render the world map with all sequences/images in the DB) but these concerns can be accounted for in the design of the UX.
 
-The first image in the sequence has no image_previous values and the last image in the sequence has no image_next values.
+Also, as you'll see in the next part, we don't need to worry about queries to find the next image in a sequence...
+
+### Rendering images on map and the panoramic Viewer
+
+I'm going to confess right now, my designs are heavily inspired by Mapillary. I really believe they nailed the experience of navigating street-level imagery.
+
+<img class="img-fluid" src="/assets/images/blog/2023-03-02/mapillary-map-open.png" alt="Mapillary UI Map Open" title="Mapillary UI Map Open" />
+
+<img class="img-fluid" src="/assets/images/blog/2023-03-02/mapillary-image-open.png" alt="Mapillary UI Image Open" title="Mapillary UI Image Open" />
+
+What I am most inspired by:
+
+* the ability to toggle between the map and image view, with a mini-viewer in the bottom left (which can also be minimised)
+* the colour distinction between sequence your viewing on the map, making the separation between sequences easily visible
+* the point showing the image you're currently viewing and an interactive heading marker showing the direction your panning in the current image
+
+[Most of the heavy lifting for the map layer can be done through Mapbox](https://www.mapbox.com/maps).
+
+One of the biggest problems I foresee in this approach is rendering sequences/images at a macro->micro level.
+
+For example, when you visit the entry point of the Mapillary app it shows a worldwide map with green dots showing sequences, as you zoom in, the lines are broken out into image.
+
+<video controls width="600" height="400" muted>
+  <source src="/assets/images/blog/2023-03-02/mapillary-zoom.webm" type="video/webm" />
+</video>
+
+As you move between the Zoom levels you can see:
+
+1. grouped sequences (00:00:00 - 00:00:06)
+2. full sequences (00:00:06 - 00:00:15)
+3. full sequences with image points (00:00:15 - 00:00:18)
+
+At the lower zoom levels showing full sequences with image points, it's fairly easy. Ultimately at these Zoom levels the number of images / sequence returned by the API is fairly small.
+
+But assuming there are 10,000's of sequences (for context, I have more than 10k of content for sequences) how do render all of these at the highest zoom level (this could be potentially millions of API queries)?.
+
+I believe Mapillary use some sort of cached sequence table for higher zoom levels, perhaps showing the first point in a sequence on a map at these zoom level retrieved from a single table.
+
+Ulitmlatley this will require some trial and error to provide a seamless user experience when browsing the map.
+
+For the panorama viewer, the Mapillary web app uses [MapillaryJS](https://mapillary.github.io/mapillary-js/) which they've open-sourced under an MIT license. As such, it makes it a no-brainier for me to use for the viewer.
+
+The even better news is it works natively with Mapillary images which brings us navigation between images for free.
+
+[Try pasting the code below into the live editor](https://mapillary.github.io/mapillary-js/docs/main/init)...
+
+```js
+function render(props) {
+  let viewer;
+  let coverViewer;
+  function dispose() {
+    if (viewer) {
+      viewer.remove();
+    }
+  }
+  function disposeCover() {
+    if (coverViewer) {
+      coverViewer.remove();
+    }
+  }
+
+  const style = {height: '1200px', width: '50%', display: 'inline-block'};
+  const imageId = '1447075489494186';
+
+  function init(opts) {
+    const {accessToken, container} = opts;
+    const options = {accessToken, container};
+    viewer = new Viewer(options);
+    viewer.moveTo(imageId).catch(mapillaryErrorHandler);
+  }
+
+  function initCover(opts) {
+    const {accessToken, container} = opts;
+    const options = {
+      accessToken,
+      component: {cover: true},
+      container,
+      imageId,
+    };
+    coverViewer = new Viewer(options);
+  }
+
+  return (
+    <div>
+      <ViewerComponent init={init} dispose={dispose} style={style} />
+    </div>
+  );
+}
+```
+
+You'll see the ID provides the directional arrows on the ground as well as playbook options at the top.
+
+By watching the requests to Mapillary, you can see the current photo ID as the user moves between images (allowing the current highlighted map to stay updated).
+
+One downside of this approach is that that viewer will show arrows to nearby sequences from other users, potentially not imported to Trek View but present on Mapillary.
+
+In my view that's totally acceptable given the time saved with this approach. The user can see they've left the active sequence (or imported sequence) as the map view will not show an underlying connected sequence (nor will a user be able to mark the image/sequence in Trek View as a favourite because it won't exist).
+
+## In summary...
+
+I've ignore many of the generic elements of the web app, including authentication (probably Auth0), app framework (probably Django), etc.
+
+Though that wasn't the aim of these posts. I wanted to see if I could build a Street View or Mapillary alternative focused on exploration for no money.
+
+No money was a little ambitious, although a small VPS would probably be more than adequate for the implementation described above, but actually building this thing seems totally possible.
+
+Watch this space...
