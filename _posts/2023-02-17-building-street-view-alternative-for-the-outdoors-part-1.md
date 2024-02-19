@@ -352,7 +352,7 @@ We have three key bits of known info;
 Looking at the filters on the Mapillary API, it should be possible to find the sequences...
 
 ```shell
-GET https://graph.mapillary.com/images?creator_username=trekviewhq&fields=id,altitude,atomic_scale,camera_parameters,camera_type,captured_at,compass_angle,computed_altitude,computed_compass_angle,computed_geometry,computed_rotation,creator,exif_orientation,geometry,height,is_pano,make,model,width
+GET https://graph.mapillary.com/images?creator_username=trekviewhq&fields=id,altitude,atomic_scale,camera_parameters,camera_type,captured_at,compass_angle,computed_altitude,computed_compass_angle,computed_geometry,computed_rotation,creator,exif_orientation,geometry,height,is_pano,make,model,width,sequence,thumb_original_url
 ```
 
 Here's an example of the useful data that can be returned for an image (I have not included some `fields` not useful for this use-case;)
@@ -397,7 +397,9 @@ Here's an example of the useful data that can be returned for an image (I have n
             "is_pano": true,
             "make": "GoPro",
             "model": "GoPro Max",
-            "width": 5760
+            "width": 5760,
+            "sequence": "3bVlGmkTzsEOeK1BHvXuLq",
+            "thumb_original_url": "https://scontent-lhr8-1.xx.fbcdn.net/m1/v/t6/An9aelHvqqY2XkOUZyZzNmd2jJScV5d6XLmm2dpvUeVYu2DVoT_udUrvuLf0nY6-v9fU1vT52dxcZakYMe9siluxFQfletHcBuZWQJ9pEzp71CZcHZ8Vu5Au-JDCs_YMIDJyvtFmhgiwgSMgzen1pCo?ccb=10-5&oh=00_AfDfuA6juyZ4fdt1ZlTYECDamUFLR5LhZCcHFDwloPn6zQ&oe=65FA9E45&_nc_sid=201bca"
         }
 ```
 
@@ -419,7 +421,7 @@ The `make` shown is `GoPro` and `model` `GoPro MAX` (this IS reported in the Map
 Which gives me the following query;
 
 ```shell
-GET 'https://graph.mapillary.com/images?creator_username=trekviewhq&make=GoPro&model=GoPro%20Max&start_captured_at=2021-08-28T10:20:36.000Z&end_captured_at=2021-08-28T10:06:42.000Z&fields=id%2Caltitude%2Catomic_scale%2Ccamera_parameters%2Ccamera_type%2Ccaptured_at%2Ccompass_angle%2Ccomputed_altitude%2Ccomputed_compass_angle%2Ccomputed_geometry%2Ccomputed_rotation%2Ccreator%2Cexif_orientation%2Cgeometry%2Cheight%2Cis_pano%2Cmake%2Cmodel%2Cwidth%2Csequence&access_token=REVOKED'
+GET 'https://graph.mapillary.com/images?creator_username=trekviewhq&make=GoPro&model=GoPro%20Max&start_captured_at=2021-08-28T10:20:36.000Z&end_captured_at=2021-08-28T10:06:42.000Z&fields=id,altitude,atomic_scale,camera_parameters,camera_type,captured_at,compass_angle,computed_altitude,computed_compass_angle,computed_geometry,computed_rotation,creator,exif_orientation,geometry,height,is_pano,make,model,width,sequence,thumb_original_url'
 ```
 
 Returns 418 matches (the same number that were in my upload).
@@ -467,7 +469,8 @@ Here's the first tow results;
             "make": "GoPro",
             "model": "GoPro Max",
             "width": 5760,
-            "sequence": "d7DlxwUTp6JZaIWKHGtnMQ"
+            "sequence": "d7DlxwUTp6JZaIWKHGtnMQ",
+            "thumb_original_url": "https://scontent-lhr8-1.xx.fbcdn.net/m1/v/t6/An-46IbQjTAS-ZYc_D5swv4wqiJTu4-BhMPe-tlKH3893-VXviidgIvJV-U2aTG5ZxxPfmY-sVXXH7AxJtKY54JMKW4M5rC6mrQNN7YmsM19Bd0GUCmhqKu_KAPbCFtn8AJT8dHCgQXvFANTpsoQqA?ccb=10-5&oh=00_AfD3Yuz37KwIHQRBb71S0LtzSogkr-CbEqhUGy1pbz--Yw&oe=65FA7B9A&_nc_sid=201bca"
         },
         {
             "id": "1345201159514651",
@@ -507,7 +510,8 @@ Here's the first tow results;
             "make": "GoPro",
             "model": "GoPro Max",
             "width": 5760,
-            "sequence": "d7DlxwUTp6JZaIWKHGtnMQ"
+            "sequence": "d7DlxwUTp6JZaIWKHGtnMQ",
+            "thumb_original_url": "https://scontent-lhr8-1.xx.fbcdn.net/m1/v/t6/An8PcHhIe7SM0dYrMofubAXgk7plu4RTOU6fKsWn1W5UavD6hMUOyA_ZYAnMnB5znTSVrC_IqB5WXYi0GRl4FOEtKqFpeNcTbkVNEilxum2rLsUQCn0QPW7-ZGanwbnIQWxsVJ84BybR2WqLEulGZg?ccb=10-5&oh=00_AfCbRokwDTBeH7rWHNewrHZ8Zjvi4en0rs1BCYjpocL2lw&oe=65FAA9FC&_nc_sid=201bca"
         }
 ```
 
@@ -597,7 +601,7 @@ You can see this bounding box printed using this very handy website: http://bbox
 Which gives us the following query;
 
 ```shell
-GET 'https://graph.mapillary.com/images?bbox=50.8963246,-0.5591297,50.9011354,-0.5463302&creator_username=trekviewhq&make=GoPro&model=GoPro%20Max&start_captured_at=2021-08-28T10:20:36.000Z&end_captured_at=2021-08-28T10:06:42.000Z&fields=id%2Caltitude%2Catomic_scale%2Ccamera_parameters%2Ccamera_type%2Ccaptured_at%2Ccompass_angle%2Ccomputed_altitude%2Ccomputed_compass_angle%2Ccomputed_geometry%2Ccomputed_rotation%2Ccreator%2Cexif_orientation%2Cgeometry%2Cheight%2Cis_pano%2Cmake%2Cmodel%2Cwidth%2Csequence&access_token=REVOKED'
+GET 'https://graph.mapillary.com/images?bbox=50.8963246,-0.5591297,50.9011354,-0.5463302&creator_username=trekviewhq&make=GoPro&model=GoPro%20Max&start_captured_at=2021-08-28T10:20:36.000Z&end_captured_at=2021-08-28T10:06:42.000Z&fields=id%2Caltitude%2Catomic_scale%2Ccamera_parameters%2Ccamera_type%2Ccaptured_at%2Ccompass_angle%2Ccomputed_altitude%2Ccomputed_compass_angle%2Ccomputed_geometry%2Ccomputed_rotation%2Ccreator%2Cexif_orientation%2Cgeometry%2Cheight%2Cis_pano%2Cmake%2Cmodel%2Cwidth%2Csequence'
 ```
 
 Which returns the same results as before, however is more accurate in terms of getting only the images that were part of a specific upload.

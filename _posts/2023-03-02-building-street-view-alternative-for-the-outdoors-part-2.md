@@ -30,7 +30,7 @@ Following on from my last post (which steered me away from some aspects of the a
   * modify values for published sequences
   * delete imported sequences
 5. allow unauthenticated/authenticated users to browse sequences using
-  * capture data (to and from)
+  * capture date (to and from)
   * northern hemisphere season (winter, spring, summer, autumn)
   * username (Trek View username)
   * altitude meters (min / max)
@@ -144,48 +144,73 @@ e.g. Image 1 is joined to image 2 is joined to image 3.
 
 As noted earlier in this post a Sequence has the following values properties by the user;
 
-* name (optional, else sequence ID will be used)
-* description (optional, else blank)
-* transport type (required, dictionary of transport methods)
-* tags (optional list of alphanumeric tags)
+* `name` (optional, else sequence ID will be used)
+* `description` (optional, else blank)
+* `transport_type` (required, dictionary of transport methods)
+* `tags` (optional list of alphanumeric tags)
 
 And some that are auto assigned;
 
-* uuid 
+* `uuid`: Trek View Sequence ID
+* `owner_uuid`: Trek View user ID of Sequence owner
+* `mapillary_id`
+  * data.sequence: string, ID of the sequence, which is a group of images captured in succession.
+* `mapillary_make`
+  * data.make: string, the manufacturer name of the camera device.
+* `mapillary_model`
+  * data.model: string, the model or product series name of the camera device.
+* `mapillary_height`
+  * data.height: int, height of the original image uploaded.
+* `mapillary_width`
+  * data.height: int, width of the original image uploaded.
+* `mapillary_is_pano` (should always be true)
+  * data.is_pano: boolean, a true or false indicator for whether an image is 360 degree panorama.
+* `calculated_distance_meters`: (sum of distance between all ordered points in sequence, e.g. image 1 -> 2 -> 3)
+* `calculated_max_altitude_meters`: (image with highest mapillary_altitude)
+* `calculated_min_altitude_meters`: (image with lowest mapillary_altitude)
+* `calculated_elevation_change_meters`: (= calculated_max_altitude_meters - calculated_min_altitude_meters)
+* `calculated_average_speed_meters_second`: (speed = distance/time)
+* `calculated_sequence_bounding_box`: (discussed in part 1)
+* `calculated_nortern_hemisphere_season`: (spring, summer, autumn, winter)
+* `image_first_datetime`: timestamp of first image in sequence
+* `image_last_datetime`: timestamp of last image in sequence
+* `favourited_user_ids`: (a list of user IDs who have marked the sequence as a favourite)
 
-* mapillary_id (data.sequence)
-* mapillary_make (data.make)
-* mapillary_model (data.model)
-* mapillary_height (data.height)
-* mapillary_width (data.height)
-* mapillary_is_pano (data.is_pano), should always be true
-* calculated_distance_meters (sum of distance between all ordered points in sequence, e.g. image 1 -> 2 -> 3)
-* calculated_max_altitude_meters (image with highest mapillary_altitude)
-* calculated_min_altitude_meters (image with lowest mapillary_altitude)
-* calculated_elevation_change_meters (= calculated_max_altitude_meters - calculated_min_altitude_meters)
-* calculated_average_speed_meters_second (speed = distance/time)
-* trek_view_favourited_user_ids (a list of user IDs who have marked the sequence as a favourite)
-
-Note, the assumption here is that the photo values (make, model, height and width) are the same for all images in the sequence (thus don't need to be stored per image, as they seem to be in Mapillary)
+Note, the assumption here is that the photo values (make, model, height and width) are the same for all images in the sequence, which is true in the way we import images as sequences.
 
 For each sequence one or more image. For each image we hold the following data that is all auto-assigned
 
-* uuid
-* sequence_uuid (the sequence ID the image belongs too)
-* favourited_user_ids (a list of user IDs who have marked the image viewpoint)
-* mapillary_id (data.id)
-* mapillary_altitude (data.altitude)
-* mapillary_captured_at (data.captured_at)
-* mapillary_compass_angle (data.compass_angle)
-* mapillary_geometry_latitude_longitude (data.geometry.coordinates)
-* mapillary_computed_altitude (data.computed_altitude)
-* mapillary_computed_compass_angle (data.computed_compass_angle)
-* mapillary_computed_latitude_longitude (data.computed_geometry.coordinates)
-* mapillary_computed_rotation (data.computed_rotation)
-* calculated_next_image_uuid
-* calculated_next_image_distance_meters
-* calculated_previous_image_uuid
+* `uuid`: Trek View Image ID
+* `owner_uuid`: Trek View user ID of Imgae owner
+* `sequence_uuid`: The sequence ID the image belongs too
+* `mapillary_id`
+  * data.id: string, ID of the image
+* `mapillary_altitude`
+  * data.altitude: float, original altitude from camera Exif calculated from sea level.
+* `mapillary_captured_at`
+  * data.captured_at: timestamp, capture time.
+* `mapillary_compass_angle`
+  * data.compass_angle: float, original compass angle of the image.
+* `mapillary_geometry_coordinates`
+  * data.geometry.coordinates: GeoJSON Point geometry.
+* `mapillary_computed_altitude`
+  * data.computed_altitude: float, altitude after running image processing, from sea level.
+* `mapillary_computed_compass_angle`
+  * data.computed_compass_angle: float, compass angle after running image processing.
+* `mapillary_computed_coordinates`
+  * data.computed_geometry.coordinates: GeoJSON Point, location after running image processing.
+* `mapillary_computed_rotation`
+  * data.computed_rotation: enum, corrected orientation of the image.
+* `mapillary_thumb_original_url` (seems to be full size image, not thumb)
+  * data.computed_rotation: string, URL to the original wide thumbnail.
+* `image_next_uuid`
+* `image_previous_image_uuid`
+* `calculated_image_next_heading`
+* `calculated_image_previous_heading`
+* `favourited_user_ids` (a list of user IDs who have marked the image viewpoint)
 
-Images can be joined in the graph using the `sequence_uuid` and `mapillary_captured_at` properties.
+Images can be joined in the graph using the `sequence_uuid` and `mapillary_captured_at` properties to get the image_next and image_previous values.
 
-To do this the images can first be sorted by `mapillary_captured_at` time with the earliest time (smallest epoch) first. This sort order defines how the images are connected. The first image has a n
+To do this the images can first be sorted by `mapillary_captured_at` time with the earliest time (smallest epoch) first. This sort order defines how the images are connected.
+
+The first image in the sequence has no image_previous values and the last image in the sequence has no image_next values.
