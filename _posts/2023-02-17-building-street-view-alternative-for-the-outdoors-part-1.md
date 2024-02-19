@@ -701,8 +701,8 @@ This request takes variables:
 
 * `id`; the user ID obtained at last step (for trekviewhq = 101176865463974)
 * `first`; the number of items (`nodes`) to be returned (I think) -- the Mapillary web app uses `50`
-* `after`; seems to be some sort of ID but no idea for what -- for example, when scrolling to load more results in the sidebar, a request was made with the value for this variable `AQHRAAK9wQE4i9s139Bh_DJev3-CV-L_o9SmWd6lHElM3SI2-BW5djTqY-dphpwUdoskjd_4nBTCS58-oz6ni8RSbA`
-* `hide_after`: I'm guessing this is for the UI to prompt how many results should be printed in the sidebar at anytime (e.g only show 14 results each time)
+* `after`; seems to refer to the `end_cursor` returned in the response, allowing for pagination
+* `hide_after`: I'm guessing this is for the UI to prompt how many results should be printed in the sidebar at anytime (e.g only show 14 results each time -- but load 50)
 
 ```json
 "data": {
@@ -754,7 +754,7 @@ The response also contains a `error_code` property, allowing the ability to iden
 I also noticed a 
 
 ```shell
-https://graph.mapillary.com/graphql?doc=query getNewSequences($username: String!) {
+'https://graph.mapillary.com/graphql?doc=query getNewSequences($username: String!) {
       user_by_username(username: $username) {
         id
         new_sequences {
@@ -788,9 +788,103 @@ https://graph.mapillary.com/graphql?doc=query getNewSequences($username: String!
 }
 ```
 
-Which doesn't appear too useful. I can't really deduce why the web app fires off this request.
+Which doesn't appear too useful. I can't really deduce why the web app fires off this request. I thought this might be due to the fact I hadn't uploaded any sequence to this account in some time (more than 3 months). So I tried another user that I know had uploaded recently ([using the weekly leaderboard](https://www.mapillary.com/app/leaderboard));
 
-I can see the `getData` request data is also used to query for images;
+```shell
+'https://graph.mapillary.com/graphql?doc=query getNewSequences($username: String!) {
+      user_by_username(username: $username) {
+        id
+        new_sequences {
+          sequence_keys
+          geojson
+          __typename
+        }
+        __typename
+      }
+      __typename
+    }&operationName=getNewSequences&variables={"username":"meldig"}'
+```
+
+```json
+{
+    "error": {
+        "code": 1,
+        "message": "Please reduce the amount of data you're asking for, then retry your request"
+    }
+}
+```
+
+Which was positive... there is data... just too much. Then I noticed `meldig` was actually another organisation, scanning the requests made by the web app;
+
+```shell
+'https://graph.mapillary.com/graphql?doc=query getData($id: ID!) {
+      fetch__Organization(id: $id) {
+        __typename id name
+      }
+    }&operationName=getData&variables={"id":"313561900207618"}'
+```
+
+```json
+{
+    "data": {
+        "fetch__Organization": {
+            "__typename": "Organization",
+            "id": "313561900207618",
+            "name": "Metropole Europeenne de Lille"
+        }
+    },
+    "extensions": {
+        "is_final": true
+    }
+}
+```
+
+I couldn't find a way to see all users belonging to an organisation, either via public or private endpoints, however, in the web app I did see the user `melimmergis`... but notice their last upload was 2018.
+
+So I simply selected another user, `allen`... 
+
+```shell
+'https://graph.mapillary.com/graphql?doc=query getNewSequences($username: String!) {
+      user_by_username(username: $username) {
+        id
+        new_sequences {
+          sequence_keys
+          geojson
+          __typename
+        }
+        __typename
+      }
+      __typename
+    }&operationName=getNewSequences&variables={"username":"allen"}'
+```
+
+Which returns a response with many sequences (I've removed them all here, so that the response shows just one).
+
+```json
+{
+    "data": {
+        "user_by_username": {
+            "id": "103216498583817",
+            "new_sequences": {
+                "sequence_keys": [
+                    "u8v5JabHqDiGcxVPl7oF3n",
+                ],
+                "geojson": "{\"type\":\"FeatureCollection\",\"features\":[{\"type\":\"Feature\",\"id\":null,\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-83.4901036\",\"31.3582213\"]},\"properties\":{\"sequence_id\":\"u8v5JabHqDiGcxVPl7oF3n\",\"captured_at\":1706992886000,\"creator_id\":103216498583817,\"is_pano\":false,\"id\":906383747631804,\"compass_angle\":166.093}},{\"type\":\"Feature\",\"id\":null,\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-83.4900508\",\"31.3580392\"]},\"properties\":{\"sequence_id\":\"u8v5JabHqDiGcxVPl7oF3n\",\"captured_at\":1706992886000,\"creator_id\":103216498583817,\"is_pano\":false,\"id\":419141010491322,\"compass_angle\":166.389}},{\"type\":\"Feature\",\"id\":null,\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-83.4900043\",\"31.3578752\"]},\"properties\":{\"sequence_id\":\"u8v5JabHqDiGcxVPl7oF3n\",\"captured_at\":1706992886000,\"creator_id\":103216498583817,\"is_pano\":false,\"id\":936066941580572,\"compass_angle\":166.285}},{\"type\":\"Feature\",\"id\":null,\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-83.4899522\",\"31.3576929\"]},\"properties\":{\"sequence_id\":\"u8v5JabHqDiGcxVPl7oF3n\",\"captured_at\":1706992886000,\"creator_id\":103216498583817,\"is_pano\":false,\"id\":945449730475092,\"compass_angle\":166.248}},{\"type\":\"Feature\",\"id\":null,\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-83.4899105\",\"31.3575474\"]},\"properties\":{\"sequence_id\":\"u8v5JabHqDiGcxVPl7oF3n\",\"captured_at\":1706992886000,\"creator_id\":103216498583817,\"is_pano\":false,\"id\":1173380166988511,\"compass_angle\":166.256}},{\"type\":\"Feature\",\"id\":null,\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-83.4898582\",\"31.3573648\"]},\"properties\":{\"sequence_id\":\"u8v5JabHqDiGcxVPl7oF3n\",\"captured_at\":1706992886000,\"creator_id\":103216498583817,\"is_pano\":false,\"id\":3714639455474598,\"compass_angle\":166.18}},{\"type\":\"Feature\",\"id\":null,\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-83.4898109\",\"31.3572006\"]},\"properties\":{\"sequence_id\":\"u8v5JabHqDiGcxVPl7oF3n\",\"captured_at\":1706992886000,\"creator_id\":103216498583817,\"is_pano\":false,\"id\":925779662542557,\"compass_angle\":166.307}},{\"type\":\"Feature\",\"id\":null,\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-83.4897693\",\"31.3570548\"]},\"properties\":{\"sequence_id\":\"u8v5JabHqDiGcxVPl7oF3n\",\"captured_at\":1706992886000,\"creator_id\":103216498583817,\"is_pano\":false,\"id\":436255598970654,\"compass_angle\":166.303}},{\"type\":\"Feature\",\"id\":null,\"geometry\":{\"type\":\"Point\",\"coordinates\":[\"-83.4897173\",\"31.3568726\"]},\"properties\":{\"sequence_id\":\"u8v5JabHqDiGcxVPl7oF3n\",\"captured_at\":1706992886000,\"creator_id\":103216498583817,\"is_pano\":false,\"id\":1343561052947434,\"compass_angle\":166.303}}]",
+                "__typename": "MLYNewSequencesData"
+            },
+            "__typename": "User"
+        },
+        "__typename": "Query"
+    },
+    "extensions": {
+        "is_final": true
+    }
+}
+```
+
+For each sequence a set of geojson points is printed, listing the image (and other data) for that sequence. It's very similar response to the search image endpoint covered earlier, using the sequence id filter.
+
+Changing focus, I could also see the `getData` request is also used to query for images;
 
 ```shell
 'https://graph.mapillary.com/graphql?doc=query getData($id: ID!) {
