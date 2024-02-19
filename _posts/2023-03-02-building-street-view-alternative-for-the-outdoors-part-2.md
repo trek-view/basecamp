@@ -138,16 +138,9 @@ Now I needed to decide what data returned by the Image search endpoint needed to
 
 ### Database design
 
-I knew from the start a graph database was needed.
+We have a concept of images that are linked in a graph under the umbrella of a sequence.
 
-I toyed with the idea of a graph database, but I wasn't really sure for this data it was required. Performing graph queries on a relational database to retrieve the relationships of level 1 (e.g. what is this point linked to) is fairly easy. Getting lower level relations is much harder in an RDB, but these types of queries, at least for the foreseeable future would not be required.
-
-Arguably the most developer RDB for geospatial data is Postgres, and more specifically [PostGIS](https://postgis.net/).
-
-Our app would be storing two key concepts;
-
-* sequences, that contain
-* images
+e.g. Image 1 is joined to image 2 is joined to image 3.
 
 As noted earlier in this post a Sequence has the following values properties by the user;
 
@@ -158,38 +151,41 @@ As noted earlier in this post a Sequence has the following values properties by 
 
 And some that are auto assigned;
 
-* uuid
+* uuid 
+
 * mapillary_id (data.sequence)
 * mapillary_make (data.make)
 * mapillary_model (data.model)
 * mapillary_height (data.height)
 * mapillary_width (data.height)
 * mapillary_is_pano (data.is_pano), should always be true
+* calculated_distance_meters (sum of distance between all ordered points in sequence, e.g. image 1 -> 2 -> 3)
+* calculated_max_altitude_meters (image with highest mapillary_altitude)
+* calculated_min_altitude_meters (image with lowest mapillary_altitude)
+* calculated_elevation_change_meters (= calculated_max_altitude_meters - calculated_min_altitude_meters)
+* calculated_average_speed_meters_second (speed = distance/time)
+* trek_view_favourited_user_ids (a list of user IDs who have marked the sequence as a favourite)
 
 Note, the assumption here is that the photo values (make, model, height and width) are the same for all images in the sequence (thus don't need to be stored per image, as they seem to be in Mapillary)
 
-For each sequence one or more image 
+For each sequence one or more image. For each image we hold the following data that is all auto-assigned
 
+* uuid
+* sequence_uuid (the sequence ID the image belongs too)
+* favourited_user_ids (a list of user IDs who have marked the image viewpoint)
+* mapillary_id (data.id)
+* mapillary_altitude (data.altitude)
+* mapillary_captured_at (data.captured_at)
+* mapillary_compass_angle (data.compass_angle)
+* mapillary_geometry_latitude_longitude (data.geometry.coordinates)
+* mapillary_computed_altitude (data.computed_altitude)
+* mapillary_computed_compass_angle (data.computed_compass_angle)
+* mapillary_computed_latitude_longitude (data.computed_geometry.coordinates)
+* mapillary_computed_rotation (data.computed_rotation)
+* calculated_next_image_uuid
+* calculated_next_image_distance_meters
+* calculated_previous_image_uuid
 
+Images can be joined in the graph using the `sequence_uuid` and `mapillary_captured_at` properties.
 
-
-8760
-
-
-information we could limit the time range to 15 minutes which would 
-2. Paginate through all pages using dates 
-We could page 5000
-
-
-
-
-
-
-
-
-
-
-
-
-As such, my plan is to hardcode the 
-
+To do this the images can first be sorted by `mapillary_captured_at` time with the earliest time (smallest epoch) first. This sort order defines how the images are connected. The first image has a n
