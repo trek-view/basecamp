@@ -159,61 +159,91 @@ And some that are auto assigned;
 
 * `uuid`: Trek View Sequence ID
 * `owner_uuid`: Trek View user ID of Sequence owner
-* `mapillary_id`
+* `mapillary.id`
   * data.sequence: string, ID of the sequence, which is a group of images captured in succession.
-* `mapillary_make`
+* `mapillary.make`
   * data.make: string, the manufacturer name of the camera device.
-* `mapillary_model`
+* `mapillary.model`
   * data.model: string, the model or product series name of the camera device.
-* `mapillary_height`
+* `mapillary.height`
   * data.height: int, height of the original image uploaded.
-* `mapillary_width`
+* `mapillary.width`
   * data.height: int, width of the original image uploaded.
-* `mapillary_is_pano` (should always be true)
+* `mapillary.is_pano` (should always be true)
   * data.is_pano: boolean, a true or false indicator for whether an image is 360 degree panorama.
-* `calculated_distance_meters`: (sum of distance between all ordered points in sequence, e.g. image 1 -> 2 -> 3)
-* `calculated_max_altitude_meters`: (image with highest mapillary_altitude)
-* `calculated_min_altitude_meters`: (image with lowest mapillary_altitude)
-* `calculated_elevation_change_meters`: (= calculated_max_altitude_meters - calculated_min_altitude_meters)
-* `calculated_average_speed_meters_second`: (speed = distance/time)
-* `calculated_sequence_bounding_box`: (discussed in part 1)
-* `calculated_nortern_hemisphere_season`: (spring, summer, autumn, winter)
-* `image_first_datetime`: timestamp of first image in sequence
-* `image_last_datetime`: timestamp of last image in sequence
+* `calculated.distance_meters`: (sum of distance between all ordered points in sequence, e.g. image 1 -> 2 -> 3)
+* `calculated.max_altitude_meters`: (image with highest mapillary_altitude)
+* `calculated.min_altitude_meters`: (image with lowest mapillary_altitude)
+* `calculated.elevation_change_meters`: (= calculated_max_altitude_meters - calculated_min_altitude_meters)
+* `calculated.average_speed_meters_second`: (speed = distance/time)
+* `calculated.sequence_bounding_box`: (discussed in part 1)
+* `calculated.nortern_hemisphere_season`: (spring, summer, autumn, winter)
+* `image.first_datetime`: timestamp of first image in sequence
+* `image.first_coordinates`: co-ordinated of first image
+* `image.last_datetime`: timestamp of last image in sequence
+* `image.last_coordinates`: co-ordinated of last image
+* `weather.temperature_celsius`
+* `weather.wind_speed_kmh`
+* `weather.wind_direction_degrees`
+* `weather.weather_descriptions`
+* `weather.precipitation_mm`
+* `weather.humidity_pc`
+* `weather.visibility_km`
+* `weather.pressure_millibar`
+* `weather.cloudcover_pc`
+* `weather.heatindex_celsius`
+* `weather.dewpoint_celsius`
+* `weather.windchill_celsius`
+* `weather.windgust_kmh`
+* `weather.feelslike_celsius`
+* `weather.uv_index_celsius`
+* `air_quality.aqi`
+* `air_quality.co`
+* `air_quality.no`
+* `air_quality.no2`
+* `air_quality.o3`
+* `air_quality.so2`
+* `air_quality.pm2_5`
+* `air_quality.pm10`
+* `air_quality.nh3`
 * `favourited_user_ids`: (a list of user IDs who have marked the sequence as a favourite)
 
 Note, the assumption here is that the photo values (make, model, height and width) are the same for all images in the sequence, which is true in the way we import images as sequences.
+
+All `weather.` data is pulled from hourly weather information using `image.first_datetime` and `image.first_coordinates` of the first photo in sequence. Data is pulled from WeatherStack ([as described here](/blog/historic-weather-data-lookup)).
+
+All `air_quality.` data is pulled from the OpenWeather Air Pollution API using `image.first_datetime` and `image.first_coordinates` of the first photo in sequence. Also described in ([this post](/blog/historic-weather-data-lookup)).
 
 For each sequence one or more image. For each image we hold the following data that is all auto-assigned
 
 * `uuid`: Trek View Image ID
 * `owner_uuid`: Trek View user ID of Imgae owner
 * `sequence_uuid`: The sequence ID the image belongs too
-* `mapillary_id`
+* `mapillary.id`
   * data.id: string, ID of the image
-* `mapillary_altitude`
+* `mapillary.altitude`
   * data.altitude: float, original altitude from camera Exif calculated from sea level.
-* `mapillary_captured_at`
+* `mapillary.captured_at`
   * data.captured_at: timestamp, capture time.
-* `mapillary_compass_angle`
+* `mapillary.compass_angle`
   * data.compass_angle: float, original compass angle of the image.
-* `mapillary_geometry_coordinates`
+* `mapillary.geometry_coordinates`
   * data.geometry.coordinates: GeoJSON Point geometry.
-* `mapillary_computed_altitude`
+* `mapillary.computed_altitude`
   * data.computed_altitude: float, altitude after running image processing, from sea level.
-* `mapillary_computed_compass_angle`
+* `mapillary.computed_compass_angle`
   * data.computed_compass_angle: float, compass angle after running image processing.
-* `mapillary_computed_coordinates`
+* `mapillary.computed_coordinates`
   * data.computed_geometry.coordinates: GeoJSON Point, location after running image processing.
-* `mapillary_computed_rotation`
+* `mapillary.computed_rotation`
   * data.computed_rotation: enum, corrected orientation of the image.
-* `mapillary_thumb_original_url` (seems to be full size image, not thumbnail -- the name is confusing)
+* `mapillary.thumb_original_url` (seems to be full size image, not thumbnail -- the name is confusing)
   * data.thumb_original_url: string, URL to the original wide thumbnail.
-* `mapillary_thumb_256_url`
+* `mapillary.thumb_256_url`
   * data.thumb_256_url: string, URL to the 256px wide thumbnail.
-* `mapillary_thumb_1024_url`
+* `mapillary.thumb_1024_url`
   * data.thumb_1024_url: string, URL to the 1024px wide thumbnail.
-* `mapillary_thumb_2048_url`
+* `mapillary.thumb_2048_url`
   * data.thumb_2048_url: string, URL to the 2048px wide thumbnail.
 * `favourited_user_ids` (a list of user IDs who have marked the image viewpoint)
 
@@ -327,4 +357,4 @@ Though that wasn't the aim of these posts. I wanted to see if I could build a St
 
 No money was a little ambitious, although a small VPS would probably be more than adequate for the implementation described above, but actually building this thing seems totally possible.
 
-Watch this space...
+In the next post I'll show you some early designs...
