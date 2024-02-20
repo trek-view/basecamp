@@ -158,7 +158,8 @@ As noted earlier in this post a Sequence has the following values properties by 
 And some that are auto assigned;
 
 * `uuid`: Trek View Sequence ID
-* `owner_uuid`: Trek View user ID of Sequence owner
+* `sequence.is_published`: boolean, if user has published
+* `user.uuid`: Trek View user ID of Sequence owner
 * `mapillary.id`
   * data.sequence: string, ID of the sequence, which is a group of images captured in succession.
 * `mapillary.make`
@@ -217,8 +218,8 @@ All `air_quality.` data is pulled from the OpenWeather Air Pollution API using `
 For each sequence one or more image. For each image we hold the following data that is all auto-assigned
 
 * `uuid`: Trek View Image ID
-* `owner_uuid`: Trek View user ID of Imgae owner
-* `sequence_uuid`: The sequence ID the image belongs too
+* `user.uuid`: Trek View user ID of Imgae owner
+* `sequence.uuid`: The sequence ID the image belongs too
 * `mapillary.id`
   * data.id: string, ID of the image
 * `mapillary.altitude`
@@ -251,7 +252,26 @@ It would _probably_ more efficient to retrieve this type of data in a graph data
 
 As such, Postgres + PostGIS seems to be the safest choice for an MVP. I do have some initial concerns about performance exposing this in an interactive map view (e.g. how to render the world map with all sequences/images in the DB) but these concerns can be accounted for in the design of the UX.
 
-Also, as you'll see in the next part, we don't need to worry about queries to find the next image in a sequence...
+Also, as you'll see in the next section (_Rendering images on map and the panoramic Viewer_), we don't need to worry about queries to find the next image in a sequence,
+
+Finally, we have the concept of users. Excluding authentication details, which will be managed by a third party (probably Auth0), I wanted to include statistics about the user.
+
+Both Mapillary and Google Street View do this...
+
+<img class="img-fluid" src="/assets/images/blog/2023-03-02/Mapillary-stats.png" alt="Mapillary User Statistics" title="Mapillary User Statistics" />
+
+<img class="img-fluid" src="/assets/images/blog/2023-03-02/Street-View-Studio-stats.png" alt="Street View User Statistics" title="Street View User Statistics" />
+
+I'd like to include 
+
+* A count of sequences
+* Total length of sequences (km)
+* Number of sequence marked as favourite
+* A count of images
+* Number of images marked as favourite
+
+As it stands, I don't know if it's better to create a summary of this data on an automated basis, or query it each time from the database.
+
 
 ### Rendering images on map and the panoramic Viewer
 
@@ -293,7 +313,7 @@ Ulitmlatley this will require some trial and error to provide a seamless user ex
 
 For the panorama viewer, the Mapillary web app uses [MapillaryJS](https://mapillary.github.io/mapillary-js/) which they've open-sourced under an MIT license. As such, it makes it a no-brainier for me to use for the viewer.
 
-The even better news is it works natively with Mapillary images which brings us navigation between images for free.
+The even better news is it works natively with Mapillary images which brings us navigation between images for free (I don't need to store information about the connected photos locally).
 
 [Try pasting the code below into the live editor](https://mapillary.github.io/mapillary-js/docs/main/init)...
 
@@ -357,4 +377,8 @@ Though that wasn't the aim of these posts. I wanted to see if I could build a St
 
 No money was a little ambitious, although a small VPS would probably be more than adequate for the implementation described above, but actually building this thing seems totally possible.
 
-In the next post I'll show you some early designs...
+Here are some early mockups...
+
+<iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVNu3rhjM=/?moveToViewport=-8653,-637,15233,7305&embedId=786181742316" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+
+More soon!
