@@ -11,14 +11,12 @@
     link: /blog
   - name: About
     link: /about
-  - name: Podcast
-    link: https://www.trekview.org/blog/category/expodition/
   - name: Contact
     link: /contact
     
 - links:
-  - name: Slack Community
-    link: https://join.slack.com/t/trekview/shared_invite/zt-1gb4upchi-52pmWhPiwhFaAQqm0vWmJg
+  - name: Forum
+    link: https://campfire.trekview.org
     social_icon: 
     new_window: true
   - name: Github

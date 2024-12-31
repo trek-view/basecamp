@@ -5,7 +5,11 @@ description: We're building a Street View alternative for explorers
 image: /assets/images/global/trek-view-360-degree-tour.jpg
 layout: page
 redirect_from:
-  -
+  - /blog/2019/hello-trekkers
+  - /blog/2019/location-codes-unmapped-hiking-trails
+  - /blog/2020/what-is-a-nadir
+  - /blog/2020/gps-101
+
 ---
 
 <div class="text-container">
