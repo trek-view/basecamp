@@ -40,6 +40,10 @@ redirect_from:
 
 <p>And so Trek View became a thing.</p>
 
+<p>I am currently trying to build a web app on-top of Mapillary to upload, search and explore 360 degree street-level imagery of adventures. It's still a work in progress, but make sure to join the forum to keep up-to-date on progress.</p>
+
+<p><img class="img-fluid" src="/assets/images/global/explorer-mvp.jpeg" alt="Trek View Street View" title="Trek View Street View" /></p>
+
 <p>My aim is to keep as much of this project freely available, via <a href="/blog">how-to guides on our blog</a>, <a target="_blank" href="https://campfire.trekview.org">deep discussions on the forum</a>, and <a target="_blank" href="https://github.com/trek-view/">open-source software on GitHub</a>.</p>
 
 <p>I hope you find the content here useful, and cannot wait to see your imagery on the map!</p>
