@@ -9,8 +9,3 @@
 - name: Forum
   link: https://campfire.trekview.org
   new_window: true
-  highlight: false
-- name: Spotted a Trekker?
-  link: https://dashboard.mailerlite.com/forms/791569/111330035451823458/share
-  new_window: false
-  highlight: true

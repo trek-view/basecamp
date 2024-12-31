@@ -1,10 +1,6 @@
 - links:
-  - name: Spotted a Trekker?
-    link: https://dashboard.mailerlite.com/forms/791569/111330035451823458/share
-  - name: Do It Yourself
-    link: /trek-pack
-  - name: Upload Your Imagery
-    link: https://dashboard.mailerlite.com/forms/791569/111330035451823458/share
+  - name: 
+    link: 
 
 - links:
   - name: Blog
@@ -12,7 +8,7 @@
   - name: About
     link: /about
   - name: Contact
-    link: /contact
+    link: https://campfire.trekview.org/about
     
 - links:
   - name: Forum
