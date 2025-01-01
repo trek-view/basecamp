@@ -1,7 +1,7 @@
 ---
 title: About
 heading: About
-description: We're building a Street View alternative for explorers
+description: The story behind Trek View.
 image: /assets/images/global/trek-view-360-degree-tour.jpg
 layout: page
 redirect_from:
@@ -10,7 +10,7 @@ redirect_from:
 
 <div class="text-container">
 
-<p>Hi! My name's <a href="https://www.linkedin.com/in/himynamesdave/" target="_blank">Dave</a>.</p>
+<p>Hi! My name's Dave.</p>
 
 <p>In 2019 I took a GoPro Fusion 360-degree camera and started filming some of my hikes.</p>
 
@@ -36,18 +36,20 @@ redirect_from:
 
 <p><img class="img-fluid" src="/assets/images/global/streetview-stats.png" alt="Trek View Street View" title="Trek View Street View" /></p>
 
-<p>Looking at the numbers, I realised there was a huge interest for using street-level imagery to map exploration of the natural world -- like Street View, but for adventures.</p>
-
 <p>And so Trek View became a thing.</p>
 
-<p>I am currently trying to build a web app on-top of Mapillary to upload, search and explore 360 degree street-level imagery of adventures. It's still a work in progress, but make sure to join the forum to keep up-to-date on progress.</p>
+<p>Looking at the numbers, I realised there was a huge interest for using street-level imagery to map exploration of the natural world -- like Street View, but for adventures.</p>
+
+<p>Imagine being able to filter the imagery by altitude, elevation changes, terrain, distance, how they were taken (hike, ski, bike, etc.).</p>
 
 <p><img class="img-fluid" src="/assets/images/global/explorer-mvp.jpeg" alt="Trek View Street View" title="Trek View Street View" /></p>
 
-<p>My aim is to keep as much of this project freely available, via <a href="/blog">how-to guides on our blog</a>, <a target="_blank" href="https://campfire.trekview.org">deep discussions on the forum</a>, and <a target="_blank" href="https://github.com/trek-view/">open-source software on GitHub</a>.</p>
+<p>This is exactly what I am currently working on. <a href="/blueprint">Read the full blueprint of what is in my mind here</a>.</p>
+
+<p>My aim is to keep as much of this project freely available via <a href="/blog">how-to guides on our blog</a> and <a target="_blank" href="https://campfire.trekview.org">community forum</a>. Whilst trying to keep as much of the code developed <a target="_blank" href="https://github.com/trek-view/">open-source on GitHub</a>.</p>
 
 <p>I hope you find the content here useful, and cannot wait to see your imagery on the map!</p>
 
-<p>-dave</p>
+<p>-<a target="_blank" href="https://campfire.trekview.org/about">dave</a></p>
 
 </div>

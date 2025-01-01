@@ -6,11 +6,11 @@
   link: /about
   new_window: false
   highlight: false
+- name: Blueprint
+  link: /blueprint
+  new_window: false
+  highlight: false
 - name: Forum
   link: https://campfire.trekview.org
-  new_window: true
-  highlight: false
-- name: Upload 360s
-  link: https://campfire.trekview.org/t/welcome-to-trek-view-forum/5
   new_window: true
   highlight: false

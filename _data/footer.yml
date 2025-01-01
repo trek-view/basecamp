@@ -1,12 +1,12 @@
 - links:
-  - name: Upload 360s
-    link: https://campfire.trekview.org/t/welcome-to-trek-view-forum/5
+  - name: About
+    link: /about
+  - name: Blueprint
+    link: /blueprint
 
 - links:
   - name: Blog
     link: /blog
-  - name: About
-    link: /about
   - name: Contact
     link: https://campfire.trekview.org/about
     
