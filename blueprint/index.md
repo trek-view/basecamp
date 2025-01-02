@@ -10,8 +10,6 @@ redirect_from:
 
 <div class="text-container">
 
-<h2>Overview</h2>
-
 <p>Since the inception of Trek View I've wanted to build a map platform similar to Street View, but designed for adventurers.</p>
 
 <p>I have over 100 terabytes of footage on the map, it's just incredibly hard to search and share.</p>
@@ -22,7 +20,7 @@ redirect_from:
 
 <p>Now I am building it.</p>
 
-<h2>What's wrong with Street View or Mapillary?</h2>
+<h3>What's wrong with Street View or Mapillary?</h3>
 
 <p>Nothing.</p>
 
@@ -36,15 +34,15 @@ redirect_from:
 
 <p>The assumption is you know where you want to drop into the imagery. For looking up what a store front looks like from an address, or if parking is easy, Mapillary and Street View are perfect. For trails, finding viewpoints or way-markers is more important which you can't easily get an address or fixed point to search on.</p>
 
-<h2>What are the challenges with building a street level image map?</h2>
+<h3>What are the challenges with building a street level image map?</h3>
 
 <p>What seems like a fairly simple tool, a map with images you can drop into, unravels to be very complex (and expensive) once you get under the hood...</p>
 
-<h3>Data types/size</h3>
+<h4>Data types/size</h4>
 
 <p>My backup of GoPro imagery and video is more than 100 Tbs, and growing quickly. That is just imagery I've shot!</p>
 
-<p>To give a basic storage estimate using [Amazon S3 storage](https://aws.amazon.com/s3/pricing/) (I know there are cheaper options), it costs $0.023 per GB for storage. So $0.023 * 30000 = $690/mo!</p>
+<p>To give a basic storage estimate using [Amazon S3 storage](https://aws.amazon.com/s3/pricing/) (I know there are cheaper options), it costs $0.023 per GB for storage. So $0.023 * 100000 = $2300/mo!</p>
 
 <p>These services also charge for bandwidth usage. For example, you pay for requests made against your S3 buckets and objects. Assuming a user views 30 or 40 images per session, the costs get huge!</p>
 
@@ -54,7 +52,7 @@ redirect_from:
 
 <p>For someone with a budget of less than $100/mo to run this, following the approach of hosting all the data myself is impossible.</p>
 
-<h3>Database storage</h3>
+<h4>Database storage</h4>
 
 <p>This is where the complexity can come in. In Street View you have interconnected blue lines. You can jump between images seamlessly in the interface.</p>
 
@@ -64,7 +62,7 @@ redirect_from:
 
 <p>With time, these queries and processing logic can be tuned, but working spacial data is tough (at least for someone that doesn't work full-time in this area).</p>
 
-<h3>User interface</h3>
+<h4>User interface</h4>
 
 <p>Viewing a single 360 in a panoramic viewer like [Panelleum is easy](https://pannellum.org/).</p>
 
@@ -76,7 +74,7 @@ redirect_from:
 
 <p>In short, trying to build this from scratch to a level that would be acceptable for a user would not be easy.</p>
 
-<h2>My hacky plan...</h2>
+<h3>My hacky plan</h3>
 
 <p>I'm used to working with limitations like this, and quite enjoy it.</p>
 
@@ -89,33 +87,48 @@ redirect_from:
   <li>They offer an open-source panoramic browser <a target="_blank" href="https://github.com/mapillary/mapillary-js">MapillaryJS</a> -- as used in Mapillary web</li>
 </ul>
 
-<p>With this in mind, I am using Mapillary as a backend as follows...</p>
+<p>With this in mind, I decided to use Mapillary as a backend as follows...</p>
 
 <ol>
-  <li>allow user to upload photos or videos via a Trek View web application to Mapillary</li>
-  <li>the Mapillary processed metadata for each sequence uploaded is stored in Trek View web application</li>
-  <li>a user views images in Trek View web application (the images themselves are loaded from Mapillary servers)</li>
+  <li>allow user to upload photos or videos via a Trek View web application direct to Mapillary</li>
+  <li>the Mapillary processed metadata for each sequence uploaded is stored in Trek View web application, but the actual images live on the Mapillary server</li>
+  <li>a user requests images using the metadata stored in the Trek View web application database, but the images themselves are loaded from Mapillary servers (the URL of which lives in the metadata inside the Trek View database)</li>
 </ol>
 
-<p>From here I can do neat things like:</p>
-
-<ul>
-  <li>Allow users to group sequences into larger ones (e.g. to create an entire trail)</li>
-  <li>Expose a search and filter on the map</li>
-  <li>Show weather, air quality, etc for each image (and also expose via search)</li>
-  <li>Use "adventure" specific views, including elevation, length of sequence, descriptive info, etc.</li>
-</ul>
-
-<p>Here are some mockups I've created to try and illustrate what I have in my mind;</p>
-
-<iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVNu3rhjM=/?moveToViewport=-8653,-637,15233,7305&embedId=786181742316" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
-
-<h2>The massive risk of this plan</h2>
+<h3>The massive risk of this plan</h3>
 
 <p>The obvious risk with this plan, and I hate it, is that Facebook (aka Mapillary) can kill this product at anytime.</p>
 
-<p>If Facebook shut-down Mapillary entierly or simply stop allowing users to upload or retrieve images for free my product is dead in the water.</p>
+<p>If Facebook shut-down Mapillary entirely or simply stop allowing users to upload or retrieve images for free my product is dead in the water.</p>
 
 <p>As this is a hobby project which I'm quite happy to use as a learning experience I am reluctantly happy to overlook this issue. However, I do expect to wake up one day for my map to be broken. To be clear, if this was a commercial project, I would not proceed any further with this approach (I'm putting this warning here for the many I have spoken to considering some form of competing commercial product to Street View or Mapillary. You have been warned!).</p>
+
+<h3>The proposed app</h3>
+
+<p>Once I have this data in a database I can build neat features on-top of it including:</p>
+
+<h4>Adventure specific search</h4>
+
+<p><img class="img-fluid" src="/assets/images/blueprint/trek-view-map-search.jpg" alt="Trek View Map Search" title="Trek View Map Search" /></p>
+
+<p>Search and filter sequences you want to see. Filter by the activity. Filter by the time of year they were captured. Filter by the weather...</p>
+
+<h4>Enrich sequences</h4>
+
+<p>Add additional metadata to each sequence, including weather and air quality, sowing this to the user when viewing a sequence, and also exposing it via search.</p>
+
+<h4>More intuitive navigation of imagery</h4>
+
+<p><img class="img-fluid" src="/assets/images/blueprint/trek-view-map.jpg" alt="Trek View Map" title="Trek View Map" /></p>
+
+<p>Using trail specific views, including navigating the images in a sequence by elevation.</p>
+
+<h4>Grouping of sequences</h4>
+
+<p><img class="img-fluid" src="/assets/images/blueprint/trek-view-map-trail.jpg" alt="Trek View Map Trail" title="Trek View Map Trail" /></p>
+
+<p><em>Image taken from Ride with GPS</em></p>
+
+<p>Allow users to group sequences into larger ones (e.g. to create an entire trail) and add descriptive information to aid users considering visiting the trail themselves.</p>
 
 </div>
