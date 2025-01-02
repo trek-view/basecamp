@@ -131,4 +131,10 @@ redirect_from:
 
 <p>Allow users to group sequences into larger ones (e.g. to create an entire trail) and add descriptive information to aid users considering visiting the trail themselves.</p>
 
+<h3>Stay up-to-date with my progress</h3>
+
+<p>I'll be posting regular updates to all Trek View forum members. If you'd like to hear about the latest developments with the project, make sure to sign up.</p>
+
+<div class="cta button alt"><a href="https://campfire.trekview.org/t/welcome-to-trek-view-forum/5" target="_blank">Sign up here...</a></div>
+
 </div>
