@@ -52,7 +52,7 @@ redirect_from:
 
 <p>p.s I'll be posting regular updates to all Trek View forum members. If you'd like to hear about the latest developments with the project, make sure to sign up.</p>
 
-<div class="cta button alt"><a href="https://campfire.trekview.org/t/welcome-to-trek-view-forum/5" target="_blank">Sign up here...</a></div>
+<div class="cta button"><a href="https://campfire.trekview.org/t/welcome-to-trek-view-forum/5" target="_blank">Sign up here...</a></div>
 
 <p>-<a target="_blank" href="https://campfire.trekview.org/about">dave</a></p>
 
