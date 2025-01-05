@@ -42,7 +42,7 @@ redirect_from:
 
 <p>My backup of GoPro imagery and video is more than 100 Tbs, and growing quickly. That is just imagery I've shot!</p>
 
-<p>To give a basic storage estimate using [Amazon S3 storage](https://aws.amazon.com/s3/pricing/) (I know there are cheaper options), it costs $0.023 per GB for storage. So $0.023 * 100000 = $2300/mo!</p>
+<p>To give a basic storage estimate using <a target="_blank" href="https://aws.amazon.com/s3/pricing/">Amazon S3 storage</a> (I know there are cheaper options), it costs $0.023 per GB for storage. So $0.023 * 100000 = $2300/mo!</p>
 
 <p>These services also charge for bandwidth usage. For example, you pay for requests made against your S3 buckets and objects. Assuming a user views 30 or 40 images per session, the costs get huge!</p>
 
@@ -64,7 +64,7 @@ redirect_from:
 
 <h4>User interface</h4>
 
-<p>Viewing a single 360 in a panoramic viewer like [Panelleum is easy](https://pannellum.org/).</p>
+<p>Viewing a single 360 in a panoramic viewer like <a target="_blank" href="https://pannellum.org/">Panelleum is easy</a>.</p>
 
 <p>Introducing navigation arrows to allow user to move between photos with seamless (and not jerky) transitions is much more difficult.</p>
 
