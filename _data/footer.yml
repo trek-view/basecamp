@@ -1,24 +1,18 @@
 - links:
-  - name: Spotted a Trekker?
-    link: https://dashboard.mailerlite.com/forms/791569/111330035451823458/share
-  - name: Do It Yourself
-    link: /trek-pack
-  - name: Upload Your Imagery
-    link: https://dashboard.mailerlite.com/forms/791569/111330035451823458/share
+  - name: About
+    link: /about
+  - name: Blueprint
+    link: /blueprint
 
 - links:
   - name: Blog
     link: /blog
-  - name: About
-    link: /about
-  - name: Podcast
-    link: https://www.trekview.org/blog/category/expodition/
   - name: Contact
-    link: /contact
+    link: https://campfire.trekview.org/about
     
 - links:
-  - name: Slack Community
-    link: https://join.slack.com/t/trekview/shared_invite/zt-1gb4upchi-52pmWhPiwhFaAQqm0vWmJg
+  - name: Forum
+    link: https://campfire.trekview.org/t/welcome-to-trek-view-forum/5
     social_icon: 
     new_window: true
   - name: Github
