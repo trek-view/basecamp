@@ -14,7 +14,7 @@ show_drafts: false
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: assets/images/icons/siteicon.png
-description: We're building a Street View alternative for explorers
+description: Help build an open street-level map of the natural world
 author:
   name:
 twitter:
@@ -25,8 +25,9 @@ facebook:
     publisher:
     admins: 
 social:
-  name:
+  name: Trek View
   links:
+    - https://www.instagram.com/trekviewed/
     
 # -----
 # Build

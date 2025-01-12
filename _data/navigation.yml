@@ -6,11 +6,15 @@
   link: /about
   new_window: false
   highlight: false
-- name: Blueprint
-  link: /blueprint
+- name: Do it Yourself
+  link: /trek-pack
   new_window: false
   highlight: false
-- name: Forum
-  link: https://campfire.trekview.org
-  new_window: true
-  highlight: false
+- name: Spotted a Trekker?
+  link: https://dashboard.mailerlite.com/forms/791569/111330035451823458/share
+  new_window: false
+  highlight: true
+- name: Upload Your Imagery
+  link: https://dashboard.mailerlite.com/forms/791569/111330035451823458/share
+  new_window: false
+  highlight: true
