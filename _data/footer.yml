@@ -8,13 +8,9 @@
   - name: Blog
     link: /blog
   - name: Contact
-    link: https://campfire.trekview.org/about
-    
-- links:
-  - name: Forum
-    link: https://campfire.trekview.org/t/welcome-to-trek-view-forum/5
-    social_icon: 
-    new_window: true
+    link: https://docs.google.com/forms/d/e/1FAIpQLSdNzdHTEjFabxNr5Y9QGEdhTfCPm69uaRWlsB4Gvt6WnO1PRQ/viewform?usp=header
+
+- links:    
   - name: Github
     link: https://github.com/trek-view/
     social_icon: 

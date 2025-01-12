@@ -46,14 +46,12 @@ redirect_from:
 
 <p>This is exactly what I am currently working on. <a href="/blueprint">Read the full blueprint of what is in my mind here</a>.</p>
 
-<p>My aim is to keep as much of this project freely available via <a href="/blog">how-to guides on our blog</a> and <a target="_blank" href="https://campfire.trekview.org/t/welcome-to-trek-view-forum/5">community forum</a>. Whilst trying to keep as much of the code developed <a target="_blank" href="https://github.com/trek-view/">open-source on GitHub</a>.</p>
+<p>My aim is to keep as much of this project freely available via <a href="/blog">how-to guides on our blog</a> and keeping much of the code developed <a target="_blank" href="https://github.com/trek-view/">open-source on GitHub</a>.</p>
 
 <p>I hope you find the content here useful, and cannot wait to see your imagery on the map!</p>
 
-<p>p.s I'll be posting regular updates to all Trek View forum members. If you'd like to hear about the latest developments with the project, make sure to sign up.</p>
+<div class="cta button"><a href="https://79e67d4c.sibforms.com/serve/MUIFANNfBEbClvf_drT_FzGBaswxuPNG_cHVgQ5mFZGkLPrk0WrQZZgcpO7X3ePXVJ2FdyPp7WXSOnlcwN2wna3tomLPykRQwh02ibaM3iFgaNzLYZjcJkU7c-H97wrMonHhry-x22GWAcSTW72ap9Hik_ZZRN9_-dFK7a3vppsWctLCcdO0aIxFxhsLbq1C9qdz2e0CPek58gX1" target="_blank">Register your interest in the project</a></div>
 
-<div class="cta button"><a href="https://campfire.trekview.org/t/welcome-to-trek-view-forum/5" target="_blank">Sign up here...</a></div>
-
-<p>-<a target="_blank" href="https://campfire.trekview.org/about">dave</a></p>
+<p>-dave</p>
 
 </div>

@@ -135,6 +135,6 @@ redirect_from:
 
 <p>I'll be posting regular updates to all Trek View forum members. If you'd like to hear about the latest developments with the project, make sure to sign up.</p>
 
-<div class="cta button"><a href="https://campfire.trekview.org/t/welcome-to-trek-view-forum/5" target="_blank">Sign up here...</a></div>
+<div class="cta button"><a href="https://79e67d4c.sibforms.com/serve/MUIFANNfBEbClvf_drT_FzGBaswxuPNG_cHVgQ5mFZGkLPrk0WrQZZgcpO7X3ePXVJ2FdyPp7WXSOnlcwN2wna3tomLPykRQwh02ibaM3iFgaNzLYZjcJkU7c-H97wrMonHhry-x22GWAcSTW72ap9Hik_ZZRN9_-dFK7a3vppsWctLCcdO0aIxFxhsLbq1C9qdz2e0CPek58gX1" target="_blank">Register your interest in the project</a></div>
 
 </div>
