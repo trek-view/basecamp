@@ -220,3 +220,32 @@ Which returns 24 objects for each hour of that day;
 All the fields are described in the [meteostat documentation here](https://dev.meteostat.net/api/stations/hourly.html#response).
 
 Compared to Weather Stack it is more limited, that said, the key metrics I wanted to see; temperature, wind speed, and precipitation are all there.
+
+## Storing this data in the image
+
+ExifTool supports many standard tags, but you can also define custom XMP tags.
+
+Beware, custom tags will typically not be read by other software.
+
+Firstly, you need to create a custom `.config` file describing your new tags.
+
+In it you can define your tagnames, e.g. `temperature_c` and `wind_speed_k` in this example
+
+`MyExifConfig.config`...
+
+```
+%Image::ExifTool::UserDefined = (
+    'Image::ExifTool::Exif::Main' => {
+        0xc7c1 => { Name => 'temperature_c', Writable => 'string' },
+        0xc7c2 => { Name => 'wind_speed_k', Writable => 'string' },
+    },
+);
+
+1;  # Required to indicate the file ends correctly
+```
+
+Which can be used as follows;
+
+```shell
+exiftool -config MyExifConfig.config -temperature_c="15" -wind_speed_k="25" image.jpg
+```
