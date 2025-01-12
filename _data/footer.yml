@@ -10,7 +10,9 @@
   - name: Contact
     link: https://docs.google.com/forms/d/e/1FAIpQLSdNzdHTEjFabxNr5Y9QGEdhTfCPm69uaRWlsB4Gvt6WnO1PRQ/viewform?usp=header
 
-- links:    
+- links:
+  - name: Trek Pack
+    link: /trek-pack
   - name: Github
     link: https://github.com/trek-view/
     social_icon: 
