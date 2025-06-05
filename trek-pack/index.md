@@ -12,7 +12,7 @@ layout: page
 
 <img class="img-fluid" src="/assets/images/pages/trek-pack/v2/trek-pack-v2-emptied.jpg" alt="Trek Pack v2" title="Trek Pack v2">
 
-<p>Some of you will have already seen our <a href="/trek-pack/v1/">Trek Pack v1</a>. A few of you reading this probably own one too.</p>
+<p>Some of you will have already seen our <a target="_blank" href="https://docs.google.com/document/d/1oSqSrrQsz7gIDRz7vZsDl7QcjCrFhcG_82nEpbR52tQ/edit?usp=sharing">Trek Pack v1</a>. A few of you reading this probably own one too.</p>
 
 <p>Our v1's have covered over 100,000 of kilometers.</p>
 
@@ -26,24 +26,20 @@ layout: page
 
 <h4>Hike Pack</h4>
 
-<img class="img-fluid" src="/assets/images/pages/trek-pack/v2/trek-pack-hike.jpg" alt="Trek Pack v2 Hike" title="Trek Pack v2 Hike">
+<img class="img-fluid" src="/assets/images/pages/trek-pack/v2/trek-pack-hike-multi-day.jpg" alt="Trek Pack v2 Hike" title="Trek Pack v2 Multi-day Hike">
 
-<h4>Multi-day Hike Pack</h4>
-
-<img class="img-fluid" src="/assets/images/pages/trek-pack/v2/trek-pack-hike-multi-day.jpg" alt="Trek Pack v2 Multi-day Hike" title="Trek Pack v2 Multi-day Hike">
+<div class="cta button"><a target="_blank" href="https://docs.google.com/document/d/1yGxcXvqZUjf7ZY5FLXhcNmo9B5y8OvbHeB8jyhwlr3k/edit#heading=h.dlbngdf3ch11">DIY BUILD INSTRUCTIONS</a></div>
 
 <h4>Bike Pack</h4>
 
 <img class="img-fluid" src="/assets/images/pages/trek-pack/v2/trek-pack-bike.jpg" alt="Trek Pack v2 Bike" title="Trek Pack v2 Bike">
 
+<div class="cta button"><a target="_blank" href="https://docs.google.com/document/d/1yGxcXvqZUjf7ZY5FLXhcNmo9B5y8OvbHeB8jyhwlr3k/edit#heading=h.88wsclu26g1n">DIY BUILD INSTRUCTIONS</a></div>
+
 <h4>Dive Pack</h4>
 
 <img class="img-fluid" src="/assets/images/pages/trek-pack/v2/trek-pack-dive.jpg" alt="Trek Pack v2 Dive" title="Trek Pack v2 Dive">
 
-<h4>Build a Trek Pack</h4>
-
-<p>Use our Trek Pack v2 documentation as a starting point. The v2 Getting Started Guide linked below contains details of all the equipment you will need to buy and how to put it all together to build your very own Trek Pack.</p>
-
-<div class="cta button"><a href="/trek-pack/v2/table-of-contents/">BUILD A TREK PACK</a></div>
+<div class="cta button"><a target="_blank" href="https://docs.google.com/document/d/1yGxcXvqZUjf7ZY5FLXhcNmo9B5y8OvbHeB8jyhwlr3k/edit#heading=h.88wsclu26g1n">DIY BUILD INSTRUCTIONS</a></div>
 
 </div>
