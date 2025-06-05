@@ -1,16 +1,4 @@
-- name: Blog
-  link: /blog
-  new_window: false
-  highlight: false
-- name: About
-  link: /about
-  new_window: false
-  highlight: false
-- name: Blueprint
-  link: /blueprint
-  new_window: false
-  highlight: false
-- name: Contact
-  link: https://docs.google.com/forms/d/e/1FAIpQLSdNzdHTEjFabxNr5Y9QGEdhTfCPm69uaRWlsB4Gvt6WnO1PRQ/viewform?usp=header
+- name: Explore the Map
+  link: https://www.mapillary.com/app/user/trekviewed?all_coverage=false&lat=42.4529053869542&lng=28.487160830945868&z=2.399052812751536&menu=false&showNerf=false
   new_window: true
-  highlight: false
+  highlight: true

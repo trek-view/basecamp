@@ -1,19 +1,19 @@
 - links:
+  - name: Explore the Map
+    link: https://www.mapillary.com/app/user/trekviewed?all_coverage=false&lat=42.4529053869542&lng=28.487160830945868&z=2.399052812751536&menu=false&showNerf=false
+
+- links:
   - name: About
     link: /about
-  - name: Blueprint
-    link: /blueprint
-
-- links:
   - name: Blog
     link: /blog
-  - name: Contact
-    link: https://docs.google.com/forms/d/e/1FAIpQLSdNzdHTEjFabxNr5Y9QGEdhTfCPm69uaRWlsB4Gvt6WnO1PRQ/viewform?usp=header
-
-- links:
   - name: Trek Pack
     link: /trek-pack
+
+- links:
+  - name: Contact
+    link: /contact
+  - name: Newsletter
+    link: https://79e67d4c.sibforms.com/serve/MUIFANNfBEbClvf_drT_FzGBaswxuPNG_cHVgQ5mFZGkLPrk0WrQZZgcpO7X3ePXVJ2FdyPp7WXSOnlcwN2wna3tomLPykRQwh02ibaM3iFgaNzLYZjcJkU7c-H97wrMonHhry-x22GWAcSTW72ap9Hik_ZZRN9_-dFK7a3vppsWctLCcdO0aIxFxhsLbq1C9qdz2e0CPek58gX1
   - name: Github
     link: https://github.com/trek-view/
-    social_icon: 
-    new_window: true

@@ -115,14 +115,16 @@ Unfortunately, Mapillary does not currently have a documented endpoint for uploa
 
 Install it as follows...
 
+
 ```shell
-mkdir mapillary_tools
+mkdir mapillary_tools && \
 cd mapillary_tools
-python3 -m venv mapillary_tools_venv
-source mapillary_tools_venv/bin/activate
-pip3 install mapillary_tools
+python3 -m venv mapillary_tools_venv && \
+source mapillary_tools_venv/bin/activate && \
+pip3 install --upgrade mapillary_tools && \
 mapillary_tools --help
 ```
+
 
 #### Uploading Photos using Mapillary tools
 

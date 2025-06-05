@@ -32,25 +32,23 @@ redirect_from:
 
 <p><a target="_blank" href="https://www.google.com/maps/@51.4563312,-0.3053058,3a,75y,350.97h,81.79t/data=!3m8!1e1!3m6!1sAF1QipNmVmigsg509kQZomk8IPLpCJI_e5zqE9XG3Och!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNmVmigsg509kQZomk8IPLpCJI_e5zqE9XG3Och%3Dw203-h100-k-no-pi6.665524-ya158.31541-ro6.1872463-fo100!7i5760!8i2880?entry=ttu">Rivers</a>, <a target="_blank" href="https://www.google.com/maps/@50.182347,-5.6064845,3a,75y,198.61h,82.92t/data=!3m8!1e1!3m6!1sAF1QipNE0fQf6J1XjTi3etd4meq4hq3IHDr5WWVPBg45!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNE0fQf6J1XjTi3etd4meq4hq3IHDr5WWVPBg45%3Dw203-h100-k-no-pi-0.5345772-ya235.52203-ro-4.914188-fo100!7i5760!8i2880?entry=ttu">Coastlines</a>... and many thousands more kilometers of adventures.</p>
 
-<p>My images quickly attracted millions of views in Street View. Viewers asked me how they could do the same, so I showed them.</p>
-
-<p><img class="img-fluid" src="/assets/images/global/streetview-stats.png" alt="Trek View Street View" title="Trek View Street View" /></p>
+<p>My images quickly attracted millions of views in Mapillary. Viewers asked me how they could do the same, so I showed them.</p>
 
 <p>And so Trek View became a thing.</p>
 
-<p>Looking at the numbers, I realised there was a huge interest for using street-level imagery to map exploration of the natural world -- like Street View, but for adventures.</p>
+<p>Looking at the numbers, I realised there was a huge interest for using street-level imagery to map exploration of the natural world -- like Mapillary, but for adventures.</p>
 
 <p>Imagine being able to filter the imagery by altitude, elevation changes, terrain, distance, how they were taken (hike, ski, bike, etc.).</p>
 
-<p><img class="img-fluid" src="/assets/images/global/explorer-mvp.jpeg" alt="Trek View Street View" title="Trek View Street View" /></p>
+<p>This is exactly what I am working towards.</p>
 
-<p>This is exactly what I am currently working on. <a href="/blueprint">Read the full blueprint of what is in my mind here</a>.</p>
+<p>My aim is share my research and findings in the open, via <a href="/blog">how-to guides on our blog</a> and the <a target="_blank" href="https://github.com/trek-view/">code developed on GitHub</a>.</p>
 
-<p>My aim is to keep as much of this project freely available via <a href="/blog">how-to guides on our blog</a> and keeping much of the code developed <a target="_blank" href="https://github.com/trek-view/">open-source on GitHub</a>.</p>
+<p>To be the first to hear about progress on this project, subscribe to our newsletter (maximum 1 email per month, and even that might be ambitious!).</p>
 
-<p>I hope you find the content here useful, and cannot wait to see your imagery on the map!</p>
+<div class="cta button"><a href="https://79e67d4c.sibforms.com/serve/MUIFANNfBEbClvf_drT_FzGBaswxuPNG_cHVgQ5mFZGkLPrk0WrQZZgcpO7X3ePXVJ2FdyPp7WXSOnlcwN2wna3tomLPykRQwh02ibaM3iFgaNzLYZjcJkU7c-H97wrMonHhry-x22GWAcSTW72ap9Hik_ZZRN9_-dFK7a3vppsWctLCcdO0aIxFxhsLbq1C9qdz2e0CPek58gX1" target="_blank">Subscribe now</a></div>
 
-<div class="cta button"><a href="https://79e67d4c.sibforms.com/serve/MUIFANNfBEbClvf_drT_FzGBaswxuPNG_cHVgQ5mFZGkLPrk0WrQZZgcpO7X3ePXVJ2FdyPp7WXSOnlcwN2wna3tomLPykRQwh02ibaM3iFgaNzLYZjcJkU7c-H97wrMonHhry-x22GWAcSTW72ap9Hik_ZZRN9_-dFK7a3vppsWctLCcdO0aIxFxhsLbq1C9qdz2e0CPek58gX1" target="_blank">Register your interest in the project</a></div>
+<p>I hope you find my content here useful, and hope it inspires you to share your adventures on the map too!</p>
 
 <p>-dave</p>
 
