@@ -11,6 +11,8 @@
     link: /trek-pack
 
 - links:
+  - name: Community
+    link: https://discord.gg/CNyE8FwG
   - name: Contact
     link: /contact
   - name: Newsletter
