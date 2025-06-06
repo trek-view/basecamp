@@ -52,7 +52,7 @@ redirect_from:
 
 <div class="cta button"><a href="https://79e67d4c.sibforms.com/serve/MUIFANNfBEbClvf_drT_FzGBaswxuPNG_cHVgQ5mFZGkLPrk0WrQZZgcpO7X3ePXVJ2FdyPp7WXSOnlcwN2wna3tomLPykRQwh02ibaM3iFgaNzLYZjcJkU7c-H97wrMonHhry-x22GWAcSTW72ap9Hik_ZZRN9_-dFK7a3vppsWctLCcdO0aIxFxhsLbq1C9qdz2e0CPek58gX1" target="_blank">Subscribe Now</a></div>
 
-<p>I hope you find my content here useful, and that it inspires you to share your adventures on the map too!</p>
+<p>I hope you find my content here useful, and that it inspires you to share your adventures on the map!</p>
 
 <p>-dave</p>
 
