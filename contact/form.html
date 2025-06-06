@@ -14,15 +14,19 @@ layout: page
 		  action="https://formspree.io/f/xvgrzzbz"
 		  method="POST"
 		>
-		<input type="hidden" name="_next" value="/contact/success.html" />
+		<input type="hidden" name="_next" value="/contact/success/" />
 		<input type="text" name="_gotcha" style="display:none" />
 		  <label>
 		    Your email:
-		    <input type="email" name="email">
+		    <input type="email" name="email" required>
 		  </label>
+		  <label for="name">
+		  	Your name
+  			<input type="text" name="name" required>
+  		  </label>
 		  <label>
 		    Your message:
-		    <textarea name="message"></textarea>
+		    <textarea name="message" required></textarea>
 		  </label>
 		  <!-- your other form fields go here -->
 		  <button type="submit">Send</button>
