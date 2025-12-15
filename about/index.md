@@ -44,10 +44,6 @@ redirect_from:
 
 <p>My aim is share my research, findings, and adventures in the open, via <a href="/blog">how-to guides on our blog</a> and the <a target="_blank" href="https://github.com/trek-view/">code developed on GitHub</a>.</p>
 
-<p>You can also join our Discord server to chat with others in our growing community.</p>
-
-<div class="cta button"><a href="https://discord.gg/CNyE8FwG" target="_blank">Join our Community</a></div>
-  
 <p>To be the first to hear about progress on this project, subscribe to our newsletter (maximum 1 email per month, and even that might be ambitious!).</p>
 
 <div class="cta button"><a href="https://79e67d4c.sibforms.com/serve/MUIFANNfBEbClvf_drT_FzGBaswxuPNG_cHVgQ5mFZGkLPrk0WrQZZgcpO7X3ePXVJ2FdyPp7WXSOnlcwN2wna3tomLPykRQwh02ibaM3iFgaNzLYZjcJkU7c-H97wrMonHhry-x22GWAcSTW72ap9Hik_ZZRN9_-dFK7a3vppsWctLCcdO0aIxFxhsLbq1C9qdz2e0CPek58gX1" target="_blank">Subscribe Now</a></div>

@@ -1,7 +1,3 @@
-- name: Join the Community
-  link: https://discord.gg/CNyE8FwG
-  new_window: true
-  highlight: true
 - name: Start Exploring Now
   link: https://www.mapillary.com/app/user/trekviewed?all_coverage=false&lat=42.4529053869542&lng=28.487160830945868&z=2.399052812751536&menu=false&showNerf=false
   new_window: true
